@@ -74,6 +74,15 @@ class Rapport:
         self.pf = self.R["portefeuille"]
         self.ix = self.R["indice"]
         self.weights = {l["ticker"]: l["poids"] for l in self.pf["lignes"]}
+        # historiques (research/histoire/histoire.json), facultatif
+        self.hist = {}
+        hp = os.environ.get("PEG_HISTOIRE", os.path.join(ROOT, "..", "research", "histoire", "histoire.json"))
+        if os.path.exists(hp):
+            try:
+                for h in json.load(open(hp, encoding="utf-8")):
+                    self.hist[h["ticker"]] = h
+            except Exception as e:
+                print("histoire.json illisible :", e)
 
     # ------------------------------------------------------------------
     def v(self, t):
@@ -311,6 +320,35 @@ class Rapport:
                 rows.append([f"{self.name(t)} ({t})", d["price_source"], d["source_note"]])
         return table(["Valeur", "Cours", "Consensus et données"], rows)
 
+    def tab_hist(self, t):
+        h = self.hist.get(t)
+        if not h or not h.get("financials"):
+            return f"<!-- historique manquant : {t} -->"
+        cur = self.cur(t)
+        rows = []
+        for f in h["financials"]:
+            rev = f.get("revenue")
+            rc = f.get("revenue_currency") or cur
+            unit = {"USD": "Md$", "EUR": "Md€", "TWD": "Md NT$"}.get(rc, rc)
+            rows.append([f.get("year"), f"{fr(rev, 1)} {unit}" if rev is not None else "n.d.",
+                         pctraw(f["revenue_growth_pct"], 0) if f.get("revenue_growth_pct") is not None else "n.d.",
+                         (fr(f["op_margin_pct"], 1) + " %") if f.get("op_margin_pct") is not None else "n.d.",
+                         fr(f["eps"], 2) if f.get("eps") is not None else "n.d.",
+                         (fr(f["fcf"], 1) + " " + unit) if f.get("fcf") is not None else "n.d.",
+                         fr(f["shares_m"], 0) if f.get("shares_m") is not None else "n.d."])
+        basis = next((f.get("eps_basis") for f in h["financials"] if f.get("eps_basis")), "")
+        return table(["Exercice", "Chiffre d'affaires", "Croissance", "Marge opérationnelle", f"BPA ({basis})" if basis else "BPA", "Flux de trésorerie libre", "Actions (M)"], rows)
+
+    def timeline(self, t):
+        h = self.hist.get(t)
+        if not h or not h.get("milestones"):
+            return f"<!-- chronologie manquante : {t} -->"
+        out = []
+        for m in h["milestones"]:
+            amt = f" ({m['amount']})" if m.get("amount") else ""
+            out.append(f"- **{m.get('date', '')}** : {m.get('event', '')}{amt}")
+        return "\n".join(out)
+
     def render(self, template):
         out = template
         # inclusions de fichiers de rédaction : {{include:chemin}} (relatif au dossier redaction/)
@@ -328,9 +366,25 @@ class Rapport:
             out = out.replace("{{" + k + "}}", fn())
         out = out.replace("{{nb_quintets}}", str(len(self.quintets)))
         out = out.replace("{{nb_univers}}", str(len(self.V)))
-        for m in re.findall(r"\{\{(fiche|scen):([A-Za-z0-9.\-]+)\}\}", out):
+        for m in re.findall(r"\{\{(fiche|scen|hist|timeline):([A-Za-z0-9.\-]+)\}\}", out):
             kind, t = m
-            out = out.replace("{{" + kind + ":" + t + "}}", self.fiche(t) if kind == "fiche" else self.scen(t))
+            fn = {"fiche": self.fiche, "scen": self.scen, "hist": self.tab_hist, "timeline": self.timeline}[kind]
+            out = out.replace("{{" + kind + ":" + t + "}}", fn(t))
+        # scalaires d'historique : {{hs:TICKER:champ}} (champs de premier niveau ou de stock)
+        def hscalar(m):
+            t, field = m.group(1), m.group(2)
+            h = self.hist.get(t)
+            if not h:
+                return "n.d."
+            v = h.get(field, (h.get("stock") or {}).get(field))
+            if v is None:
+                return "n.d."
+            if field.endswith("_pct"):
+                return pctraw(v, 0)
+            if isinstance(v, float):
+                return fr(v, 2)
+            return str(v)
+        out = re.sub(r"\{\{hs:([A-Za-z0-9.\-]+):([a-z_0-9]+)\}\}", hscalar, out)
         # valeurs scalaires : {{v:TICKER:champ}} et {{pf:champ}} / {{ix:champ}}
         def scalar(m):
             kind, t, field = m.group(1), m.group(2), m.group(3)

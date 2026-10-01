@@ -11,6 +11,7 @@ Usage : python3 article.py --resume outputs/resume.json --content article/conten
 import argparse
 import html
 import json
+import os
 import re
 
 JOURNAL = "La Gazette du PEG"
@@ -38,8 +39,8 @@ def md_to_html(md):
         if not ln.strip():
             i += 1
             continue
-        if ln.startswith("<!--infographic:"):
-            out.append(ln)  # marqueur remplacé plus tard
+        if ln.startswith("<!--"):
+            out.append(ln)  # marqueur d'infographie (remplacé plus tard) ou commentaire
             i += 1
             continue
         m = re.match(r"^(#{1,4})\s+(.*)", ln)
@@ -212,10 +213,55 @@ def svg_scatter(resume):
     return "\n".join(g)
 
 
+def svg_hist(h, cur):
+    """Petits multiples : chiffre d'affaires (barres) et BPA (barres), même échelle de temps, une mesure par graphique."""
+    fin = [f for f in h.get("financials", []) if f.get("year")]
+    if not fin:
+        return ""
+    unit = {"USD": "Md$", "EUR": "Md€", "TWD": "Md NT$"}.get(fin[0].get("revenue_currency") or cur, cur)
+    panels = [("Chiffre d'affaires, " + unit, [f.get("revenue") for f in fin]), ("BPA, " + ({"USD": "$", "EUR": "€", "TWD": "NT$"}.get(cur, cur)), [f.get("eps") for f in fin])]
+    W, H, left, bottom, top = 720, 230, 60, 30, 28
+    pw = (W - 30) / 2
+    g = [f'<svg class="chart" viewBox="0 0 {W} {H}" role="img" aria-label="Historique du chiffre d\'affaires et du BPA">']
+    g.append('<style>.lab{font:11px system-ui,sans-serif;fill:var(--fg)}.ax{font:11px system-ui,sans-serif;fill:var(--muted)}.grid{stroke:var(--grid)}</style>')
+    for pi, (title, vals) in enumerate(panels):
+        x0 = 10 + pi * pw
+        nums = [v for v in vals if v is not None]
+        if not nums:
+            continue
+        vmax = max(max(nums), 0) * 1.12 or 1
+        vmin = min(min(nums), 0)
+        def y(v):
+            return top + (vmax - v) / (vmax - vmin) * (H - top - bottom)
+        g.append(f'<text class="lab" x="{x0 + left}" y="{top - 10}" font-weight="700">{html.escape(title)}</text>')
+        step = 10 ** max(0, len(str(int(vmax))) - 1)
+        if vmax / step < 3:
+            step /= 2
+        v = 0
+        while v <= vmax:
+            g.append(f'<line class="grid" x1="{x0 + left}" y1="{y(v):.1f}" x2="{x0 + pw - 10}" y2="{y(v):.1f}"/>')
+            g.append(f'<text class="ax" x="{x0 + left - 4}" y="{y(v) + 4:.1f}" text-anchor="end">{fr(v, 0, False) if v >= 10 else fr(v, 1, False)}</text>')
+            v += step
+        n = len(fin)
+        bw = (pw - left - 10) / n
+        for i, (f, val) in enumerate(zip(fin, vals)):
+            bx = x0 + left + i * bw + bw * 0.15
+            g.append(f'<text class="ax" x="{bx + bw * 0.35:.1f}" y="{H - 10}" text-anchor="middle">{f["year"]}</text>')
+            if val is None:
+                continue
+            yb, y0 = y(val), y(0)
+            top_y, hgt = (min(yb, y0), abs(y0 - yb))
+            g.append(f'<rect x="{bx:.1f}" y="{top_y:.1f}" width="{bw * 0.7:.1f}" height="{hgt:.1f}" rx="3" fill="var(--c1)"><title>{f["year"]} : {fr(val, 2, False)}</title></rect>')
+            if i == n - 1 or i == 0:
+                g.append(f'<text class="ax" x="{bx + bw * 0.35:.1f}" y="{top_y - 4:.1f}" text-anchor="middle">{fr(val, 1 if abs(val) < 100 else 0, False)}</text>')
+    g.append("</svg>")
+    return "\n".join(g)
+
+
 CSS = """
-:root{--bg:#f7f5ef;--fg:#1b1b1b;--muted:#5c5c5c;--card:#ffffff;--grid:#d9d6cc;--rule:#1b1b1b;--c1:#3b6ea5;--c2:#b4552d;--c3:#5f7a4e;--accent:#8a1c1c}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#121416;--fg:#ececec;--muted:#a5a5a5;--card:#1c1f23;--grid:#33383d;--rule:#ececec;--c1:#7fb0e6;--c2:#f08a5a;--c3:#9ec38a;--accent:#f0a5a5}}
-:root[data-theme="dark"]{--bg:#121416;--fg:#ececec;--muted:#a5a5a5;--card:#1c1f23;--grid:#33383d;--rule:#ececec;--c1:#7fb0e6;--c2:#f08a5a;--c3:#9ec38a;--accent:#f0a5a5}
+:root{--bg:#f7f5ef;--fg:#1b1b1b;--muted:#5c5c5c;--card:#ffffff;--grid:#d9d6cc;--rule:#1b1b1b;--c1:#2a78d6;--c2:#eb6834;--c3:#1baf7a;--accent:#8a1c1c}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#121416;--fg:#ececec;--muted:#a5a5a5;--card:#1c1f23;--grid:#33383d;--rule:#ececec;--c1:#3987e5;--c2:#d95926;--c3:#199e70;--accent:#f0a5a5}}
+:root[data-theme="dark"]{--bg:#121416;--fg:#ececec;--muted:#a5a5a5;--card:#1c1f23;--grid:#33383d;--rule:#ececec;--c1:#3987e5;--c2:#d95926;--c3:#199e70;--accent:#f0a5a5}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 Georgia,"Times New Roman",serif}
 .wrap{max-width:900px;margin:0 auto;padding:16px}
@@ -240,9 +286,11 @@ code{font:13px ui-monospace,monospace;background:var(--card);padding:1px 4px;bor
 .chart{width:100%;height:auto;background:var(--card);border:1px solid var(--grid);border-radius:6px;margin:8px 0 18px}
 figure{margin:16px 0}figcaption{font:12px system-ui,sans-serif;color:var(--muted);margin-top:-12px}
 button.theme{font:13px system-ui,sans-serif;background:var(--card);color:var(--fg);border:1px solid var(--grid);border-radius:6px;padding:4px 10px;cursor:pointer}
+.toc{font:14px/1.6 system-ui,sans-serif;background:var(--card);border:1px solid var(--grid);border-radius:6px;padding:10px 16px;margin:12px 0 18px;columns:2;column-gap:24px}.toc-title{font-weight:700;margin-bottom:4px;column-span:all}.toc ol{margin:0;padding-left:18px}.toc a{text-decoration:none}
 footer{font:12px/1.5 system-ui,sans-serif;color:var(--muted);border-top:1px solid var(--rule);margin-top:30px;padding-top:10px}
 a{color:var(--c1)}
-@media print{button.theme{display:none}.chart{break-inside:avoid}h2{break-after:avoid}table{font-size:11px}body{font-size:12.5px}}
+@media print{button.theme{display:none}.chart{break-inside:avoid}h2{break-after:avoid}table{font-size:11px}body{font-size:13px;line-height:1.5}figure,blockquote,.box{break-inside:avoid}h3{break-after:avoid}}
+@media print{.long h2.chapter{break-before:page}}
 @page{size:A4;margin:14mm 12mm}
 """
 
@@ -253,6 +301,8 @@ def main():
     ap.add_argument("--content", default="article/contenu.md")
     ap.add_argument("--out", default="article.html")
     ap.add_argument("--date", default="1er octobre 2026")
+    ap.add_argument("--hist", default=os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "research", "histoire", "histoire.json"))
+    ap.add_argument("--long", action="store_true", help="mise en page longue : saut de page avant chaque chapitre à l'impression")
     args = ap.parse_args()
     resume = json.load(open(args.resume, encoding="utf-8"))
     md = open(args.content, encoding="utf-8").read()
@@ -264,6 +314,31 @@ def main():
     }
     for key, (cap, svg) in figs.items():
         body = body.replace(f"<!--infographic:{key}-->", f"<figure>{svg}<figcaption>{cap} — calculs du modèle portefeuille.py, {args.date}.</figcaption></figure>")
+    # historiques par valeur : <!--infographic:hist:TICKER-->
+    hist = {}
+    if args.hist and os.path.exists(args.hist):
+        for h in json.load(open(args.hist, encoding="utf-8")):
+            hist[h["ticker"]] = h
+    def rep_hist(m):
+        t = m.group(1)
+        h = hist.get(t)
+        if not h:
+            return ""
+        cur = resume["valeurs"].get(t, {}).get("currency", "USD")
+        src = h.get("financials_source") or "rapports annuels et communiqués cités dans research/histoire/"
+        return f"<figure>{svg_hist(h, cur)}<figcaption>Historique {html.escape(t)} — {html.escape(src)}.</figcaption></figure>"
+    body = re.sub(r"<!--infographic:hist:([A-Za-z0-9.\-]+)-->", rep_hist, body)
+    if args.long:
+        # sommaire : ancres sur les chapitres, liste insérée après le premier h1
+        heads = re.findall(r"<h2>(.*?)</h2>", body)
+        n = [0]
+        def anchor(m):
+            n[0] += 1
+            return f'<h2 class="chapter" id="ch{n[0]}">{m.group(1)}</h2>'
+        body = re.sub(r"<h2>(.*?)</h2>", anchor, body)
+        toc = '<nav class="toc"><div class="toc-title">Sommaire</div><ol>' + "".join(
+            f'<li><a href="#ch{i + 1}">{re.sub("<.*?>", "", h)}</a></li>' for i, h in enumerate(heads)) + "</ol></nav>"
+        body = re.sub(r"(</h1>)", r"\1" + toc.replace("\\", "\\\\"), body, count=1)
     title = re.search(r"<h1>(.*?)</h1>", body)
     title = re.sub("<.*?>", "", title.group(1)) if title else "Portefeuille PEG"
     page = f"""<!doctype html>
@@ -275,7 +350,7 @@ def main():
 <style>{CSS}</style>
 </head>
 <body>
-<div class="wrap">
+<div class="wrap{" long" if args.long else ""}">
 <header class="masthead"><div class="title">{JOURNAL}</div><div class="meta">Édition du {args.date} · <button class="theme" onclick="toggleTheme()">Thème clair / sombre</button></div></header>
 <div class="disclaimer">{DISCLAIMER_TITLE}</div>
 {body}
