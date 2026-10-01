@@ -1,0 +1,916 @@
+{
+  "candidates": [
+    {
+      "ticker": "NU",
+      "name": "Nu Holdings Ltd.",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "adr_ratio": "Direct US listing of Class A ordinary shares (no ADR)",
+      "region": "South America",
+      "country": "Brazil (Cayman-incorporated; operations Brazil/Mexico/Colombia)",
+      "sector": "Digital banking / fintech",
+      "price": 12.67,
+      "price_date": "2026-09-30",
+      "w52_high": null,
+      "w52_low": null,
+      "market_cap_usd_bn": null,
+      "beta": null,
+      "dividend_yield_pct": null,
+      "eps_basis": "Consensus EPS as published by aggregators (Yahoo Finance / WallStreetZen); basis not explicitly labelled - Nu reports IFRS net income and an adjusted net income (ex share-based comp). Treat as IFRS/adjusted.",
+      "eps_fy0": null,
+      "eps_fy0_label": "FY2025 (Dec) actual - not sourced this session",
+      "eps_f1": 0.88,
+      "eps_f1_label": "FY2026 (Dec) consensus",
+      "eps_f2": 1.15,
+      "eps_f2_label": "FY2027 (Dec) consensus",
+      "eps_f3": 1.41,
+      "eps_f3_label": "FY2028 (Dec) consensus",
+      "fy_end_month": 12,
+      "ltg_pct": null,
+      "price_target": 13.23,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "megatrend": "Financial inclusion / branchless digital banking in Latin America (Brazil, Mexico, Colombia); low-cost-to-serve model taking share from incumbent banks",
+      "thesis_short": "Largest digital bank outside Asia; consensus EPS 0.88->1.15->1.41 (FY26-28). Indicative PEG: P/E on FY27 EPS 11.02x / growth 30.7% = 0.36. Stock fell 10% on 28 Sep 2026 on reports of preliminary talks to buy UK neobank Monzo; Goldman reiterated a 'double' call on 29 Sep 2026.",
+      "key_risk": "Potential Monzo acquisition (capital allocation / dilution / UK execution), Brazil credit quality and rate cycle, Mexico/Colombia ramp costs, estimate dispersion is wide (FY27 low 0.81 / high 1.38).",
+      "one_offs_note": "None identified in the sources retrieved. Note dispute between data sets: Yahoo-type average shows FY26 0.85 / FY27 1.11; WallStreetZen-type shows 0.88 / 1.15 / 1.41. Used the latter (full 3-year set); both imply ~30% growth FY27 vs FY26.",
+      "pea_eligible_listing": "No (Cayman/US listing; no EU listing identified)",
+      "notes": "Price: TradingKey article dated 30 Sep 2026 gives close $12.67 (+2.55%), consistent with the 29 Sep close of $12.35 reported by 24/7 Wall St. Another snippet quoted a 30 Sep intraday range of $12.13-12.60 (likely mid-session) - minor conflict, kept $12.67. 52-week range, market cap, beta, LTG and Zacks rank not retrieved (search budget exhausted).",
+      "sources": [
+        {
+          "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262193359-stocks-nu-holdings-stock-forecast-september-30-2026-tradingkey",
+          "what": "Close $12.67 on 30 Sep 2026 (+2.55%); Monzo talks; record quarterly profit",
+          "date": "2026-09-30"
+        },
+        {
+          "url": "https://247wallst.com/investing/2026/09/29/nu-holdings-keeps-imploding-goldman-sachs-rieterated-its-belief-that-nu-shares-are-going-to-double/",
+          "what": "Close $12.35 on 29 Sep 2026; -10.01% on 28 Sep on Monzo talks; Goldman reiterates",
+          "date": "2026-09-29"
+        },
+        {
+          "url": "https://www.wallstreetzen.com/stocks/us/nyse/nu/stock-forecast",
+          "what": "Consensus EPS FY26 $0.88 (0.70-1.05), FY27 $1.15 (0.81-1.38), FY28 $1.41 (1.18-1.82); 1Y price target $13.23",
+          "date": "Sep 2026 (as returned by search)"
+        },
+        {
+          "url": "https://finance.yahoo.com/quote/NU/analysis/",
+          "what": "Average analyst EPS FY26 $0.85, FY27 $1.11 (alternative data set)",
+          "date": "Sep 2026 (as returned by search)"
+        }
+      ]
+    },
+    {
+      "ticker": "MELI",
+      "name": "MercadoLibre, Inc.",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "adr_ratio": "Direct US listing (Delaware-incorporated); no ADR",
+      "region": "South America",
+      "country": "Uruguay (HQ) / Argentina origin; US-incorporated",
+      "sector": "E-commerce + fintech (Mercado Pago) + logistics + advertising",
+      "price": 1728.53,
+      "price_date": "2026-09-30",
+      "w52_high": null,
+      "w52_low": null,
+      "market_cap_usd_bn": null,
+      "beta": null,
+      "dividend_yield_pct": null,
+      "eps_basis": "US GAAP (MercadoLibre does not publish non-GAAP EPS; consensus is GAAP diluted EPS)",
+      "eps_fy0": null,
+      "eps_fy0_label": "FY2025 (Dec) actual - not sourced this session",
+      "eps_f1": 44.93,
+      "eps_f1_label": "FY2026 (Dec) consensus (17 analysts, StockAnalysis)",
+      "eps_f2": 64.11,
+      "eps_f2_label": "FY2027 (Dec) consensus (19 analysts, StockAnalysis)",
+      "eps_f3": 81.45,
+      "eps_f3_label": "FY2028 (Dec) consensus (StockAnalysis)",
+      "fy_end_month": 12,
+      "ltg_pct": null,
+      "price_target": 2298.18,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "megatrend": "LatAm e-commerce penetration + embedded fintech/credit (Mercado Pago) + logistics network + retail media; multi-country compounding (Brazil, Mexico, Argentina)",
+      "thesis_short": "LatAm's compounding ecosystem. Consensus GAAP EPS 44.93->64.11->81.45 (FY26-28). Indicative PEG: P/E on FY27 EPS 26.96x / growth 42.7% = 0.63. Caveat: FY26/FY27 estimates were cut sharply over the last 90 days (from $59.70/$83.09) as margin investment in credit, logistics and Argentina weighed; stock fell 13% after Q1 2026 results.",
+      "key_risk": "Margin compression from credit-book expansion and logistics/first-party retail investment; continuing downward EPS revisions; Argentina/Brazil macro and FX; competition (Amazon, Shopee/Temu).",
+      "one_offs_note": "No specific one-off flagged in retrieved sources. Alternative data set (WallStreetZen): FY26 $40.23 (31.07-49.18), FY27 $57.95 (low 48.78) - kept StockAnalysis set (analyst-count disclosed).",
+      "pea_eligible_listing": "No (US company; no EU listing)",
+      "notes": "Price is the 30 Sep 2026 close from Benzinga/MarketBeat. EPS basis is GAAP, so the PEG is not strictly 'non-GAAP' - MELI has no adjusted EPS. 52-week range, market cap, beta, LTG, Zacks rank not retrieved (search budget exhausted).",
+      "sources": [
+        {
+          "url": "https://www.benzinga.com/quote/MELI",
+          "what": "Last close $1,728.53 on 30 Sep 2026",
+          "date": "2026-09-30"
+        },
+        {
+          "url": "https://stockanalysis.com/stocks/meli/forecast/",
+          "what": "Consensus EPS FY26 $44.93 (17 analysts), FY27 $64.11 (19), FY28 $81.45; 90-days-ago estimates $59.70 / $83.09",
+          "date": "Sep 2026 (as returned by search)"
+        },
+        {
+          "url": "https://www.wallstreetzen.com/stocks/us/nasdaq/meli/stock-forecast",
+          "what": "Alt consensus FY26 $40.23, FY27 $57.95; 1Y price target $2,298.18",
+          "date": "Sep 2026 (as returned by search)"
+        },
+        {
+          "url": "https://www.tikr.com/blog/mercadolibre-stock-fell-13-after-q1-2026-earnings-was-the-selloff-justified",
+          "what": "Stock fell 13% after Q1 2026 results",
+          "date": "2026 (Q1 results season)"
+        }
+      ]
+    },
+    {
+      "ticker": "STNE",
+      "name": "StoneCo Ltd.",
+      "exchange": "NASDAQ",
+      "currency": "USD (price) / BRL (consensus EPS)",
+      "adr_ratio": "Direct listing of Class A shares (no ADR)",
+      "region": "South America",
+      "country": "Brazil (Cayman-incorporated)",
+      "sector": "SME payments, banking and credit (Brazil)",
+      "price": 9.28,
+      "price_date": "2026-09-29 (last confirmed close; 30 Sep 2026 intraday range $9.24-9.51, exact close not found)",
+      "w52_high": 19.95,
+      "w52_low": null,
+      "market_cap_usd_bn": null,
+      "beta": null,
+      "dividend_yield_pct": null,
+      "eps_basis": "Adjusted basic EPS from continuing operations (company non-IFRS metric used for guidance); consensus figures in BRL",
+      "eps_fy0": null,
+      "eps_fy0_label": "FY2025 (Dec) actual adjusted basic EPS - not sourced this session",
+      "eps_f1": 10.06,
+      "eps_f1_label": "FY2026 (Dec) consensus, BRL (9 analysts; range 8.44-10.98). Company guidance R$10.8-11.4",
+      "eps_f2": 11.71,
+      "eps_f2_label": "FY2027 (Dec) consensus, BRL (10 analysts; range 9.80-13.51). Company guidance R$11.8-13.4 (cut from >=R$15.0)",
+      "eps_f3": null,
+      "eps_f3_label": "FY2028 - not found",
+      "fy_end_month": 12,
+      "ltg_pct": null,
+      "price_target": 14.3,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "megatrend": "Digitisation of Brazilian SME payments and banking; credit to merchants",
+      "thesis_short": "Cheap but de-rated: consensus adj. EPS R$10.06 -> R$11.71 (FY26->FY27), growth 16.4%; 2027 EPS guidance cut ~29% to R$11.8-13.4 after Linx divestiture and macro headwinds. PEG not computed here (USD price vs BRL EPS - central model must apply BRL/USD). Fails the 20% growth hurdle on consensus; massive buybacks (R$3.0bn LTM, share count -40.3m) support EPS.",
+      "key_risk": "Rising NPLs in merchant credit book, Brazil rate/macro, guidance credibility after the 29% cut, revenue miss in Q2 2026; stock at new 52-week low (25 Sep 2026).",
+      "one_offs_note": "Linx software business divested (discontinued operations) - compare 'continuing operations' EPS only. Q2 2026 adj basic EPS from continuing ops R$2.40 (+8.6% YoY).",
+      "pea_eligible_listing": "No",
+      "notes": "Price conflict: ad-hoc-news gives $9.28 as the 29 Sep 4pm quote and the 30 Sep open; StockAnalysis gives a 30 Sep range of $9.24-9.51. Exact 30 Sep close not retrieved. 52w high $19.95 from ad-hoc-news. Avg analyst target $14.30 (as of 30 Sep 2026); consensus Hold.",
+      "sources": [
+        {
+          "url": "https://www.ad-hoc-news.de/boerse/news/nebenwerte/stoneco-stock-faces-a-hold-consensus-after-ubs-target-cut/70203033",
+          "what": "Opened $9.28 on 30 Sep 2026 / last $9.28 on 29 Sep; 52w high $19.95; avg target $14.30; Hold consensus",
+          "date": "2026-09-30"
+        },
+        {
+          "url": "https://stockanalysis.com/stocks/stne/",
+          "what": "30 Sep 2026 intraday low $9.24 / high $9.51",
+          "date": "2026-09-30"
+        },
+        {
+          "url": "https://finance.yahoo.com/quote/STNE/analysis/",
+          "what": "Consensus EPS FY26 R$10.06 (9 analysts, 8.44-10.98), FY27 R$11.71 (10 analysts, 9.80-13.51)",
+          "date": "Sep 2026 (as returned by search)"
+        },
+        {
+          "url": "https://www.riotimesonline.com/stoneco-misses-estimates-slashes-2027-guidance-by-29/",
+          "what": "2027 adj basic EPS guidance cut to R$11.8-13.4 from >=R$15.0; 2027 adj gross profit guidance R$7.2-8.3bn (prior floor R$10.2bn); 2026 adj EPS guidance R$10.8-11.4",
+          "date": "Sep 2026 (Q2 2026 results)"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/0001745431/000207097926000275/stoneco_earningsrelease2q2.htm",
+          "what": "Q2 2026 6-K: adj basic EPS cont. ops R$2.40 (+8.6% YoY, +9.8% QoQ); R$3.0bn buybacks LTM, -40.3m shares",
+          "date": "Q2 2026 release"
+        },
+        {
+          "url": "https://www.dailypolitical.com/2026/09/25/stoneco-nasdaqstne-sets-new-52-week-low-time-to-sell.html",
+          "what": "New 52-week low on 25 Sep 2026",
+          "date": "2026-09-25"
+        }
+      ]
+    },
+    {
+      "ticker": "PAGS",
+      "name": "PagSeguro Digital Ltd.",
+      "exchange": "NYSE",
+      "currency": "USD (price) / BRL (consensus EPS); one USD FY26 figure also found",
+      "adr_ratio": "Direct listing of Class A shares (no ADR)",
+      "region": "South America",
+      "country": "Brazil (Cayman-incorporated)",
+      "sector": "SME payments and digital banking (PagBank)",
+      "price": 8.9,
+      "price_date": "2026-09-30",
+      "w52_high": null,
+      "w52_low": null,
+      "market_cap_usd_bn": null,
+      "beta": null,
+      "dividend_yield_pct": null,
+      "eps_basis": "Aggregator consensus; basis not labelled (PagSeguro reports GAAP/IFRS and non-GAAP net income). Figures in BRL per share.",
+      "eps_fy0": null,
+      "eps_fy0_label": "FY2025 (Dec) actual - not sourced this session",
+      "eps_f1": 8.61,
+      "eps_f1_label": "FY2026 (Dec) consensus, BRL (8 analysts; 7.98-8.81). MarketBeat USD equivalent for current FY: $1.66",
+      "eps_f2": 9.71,
+      "eps_f2_label": "FY2027 (Dec) consensus, BRL (8 analysts; 8.84-10.99)",
+      "eps_f3": null,
+      "eps_f3_label": "FY2028 - not found",
+      "fy_end_month": 12,
+      "ltg_pct": null,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "megatrend": "Brazilian SME payments digitisation and neobanking; credit growth replacing payments as core engine",
+      "thesis_short": "Deep value: P/E on FY26 USD EPS ($1.66) = 5.36x; BRL consensus growth FY27 vs FY26 = 12.8% -> indicative PEG ~0.42 (mixed-currency, treat as rough). Growth below the 20% Lynch hurdle; UBS cut its target on 29 Sep 2026 citing growth concerns. Reported to trade at a ~55% discount to peers.",
+      "key_risk": "Slowing TPV growth, credit risk as lending scales, Brazil rate environment, persistent de-rating of Brazilian acquirers.",
+      "one_offs_note": "None flagged in retrieved sources.",
+      "pea_eligible_listing": "No",
+      "notes": "Price: Google Finance snippet gives $8.90 for 30 Sep 2026; Yahoo article gives $8.80 for 29 Sep; another snippet gives $8.90 for 28 Sep. Kept $8.90 / 30 Sep. Price target not retrieved (UBS cut noted, level not captured).",
+      "sources": [
+        {
+          "url": "https://www.google.com/finance/quote/PAGS:NYSE?hl=en",
+          "what": "Close $8.90 on 30 Sep 2026",
+          "date": "2026-09-30"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/pagseguro-digital-ltd-pags-stock-221503519.html",
+          "what": "Close $8.80 on 29 Sep 2026",
+          "date": "2026-09-29"
+        },
+        {
+          "url": "https://finance.yahoo.com/quote/PAGS/analysis/",
+          "what": "Consensus EPS FY26 R$8.61 (8 analysts), FY27 R$9.71 (8 analysts); Q3 2026 est R$2.13",
+          "date": "Sep 2026 (as returned by search)"
+        },
+        {
+          "url": "https://www.thestockobserver.com/2026/09/29/pagseguro-digital-nysepags-stock-price-target-lowered-at-ubs-group.html",
+          "what": "UBS lowers price target; analysts expect $1.66 EPS for current FY (USD)",
+          "date": "2026-09-29"
+        },
+        {
+          "url": "https://gokhshtein.com/news/2026-09-19-pagseguro-trading-at-55-discount-to-peers-ahead-of-earnings",
+          "what": "Trading at 55% discount to peers",
+          "date": "2026-09-19"
+        }
+      ]
+    },
+    {
+      "ticker": "INTR",
+      "name": "Inter & Co, Inc.",
+      "exchange": "NASDAQ",
+      "currency": "USD (price) / consensus EPS currency not labelled by aggregator - magnitude consistent with BRL",
+      "adr_ratio": "Direct listing of Class A shares (also BDR INBR32 on B3)",
+      "region": "South America",
+      "country": "Brazil (Cayman-incorporated)",
+      "sector": "Digital banking super-app",
+      "price": 5.34,
+      "price_date": "2026-09-30",
+      "w52_high": null,
+      "w52_low": null,
+      "market_cap_usd_bn": null,
+      "beta": null,
+      "dividend_yield_pct": null,
+      "eps_basis": "Aggregator consensus (StockAnalysis); basis not labelled (Inter reports IFRS). Currency not labelled - almost certainly BRL per share.",
+      "eps_fy0": null,
+      "eps_fy0_label": "FY2025 (Dec) actual - not sourced this session",
+      "eps_f1": 4.0,
+      "eps_f1_label": "FY2026 (Dec) consensus (range 3.04-4.63) - currency see eps_basis",
+      "eps_f2": 5.16,
+      "eps_f2_label": "FY2027 (Dec) consensus (range 3.38-5.83)",
+      "eps_f3": 6.28,
+      "eps_f3_label": "FY2028 (Dec) consensus (range 3.81-7.77)",
+      "fy_end_month": 12,
+      "ltg_pct": null,
+      "price_target": 9.0,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "megatrend": "Brazilian digital banking / super-app (banking, shopping, investments, credit) plus US expansion (Inter Global)",
+      "thesis_short": "High growth, cheap optically: consensus EPS 4.00 -> 5.16 -> 6.28 (FY26-28), growth 29.0% FY27 vs FY26 and ~22% FY28. PEG not computed here (USD price vs BRL EPS; central model to apply FX). 1Y target $9.00 vs $5.34 price. Very wide estimate dispersion (FY27 low 3.38 / high 5.83).",
+      "key_risk": "Margin squeeze (funding cost vs. loan yields), credit quality in a high-rate Brazil, execution of ROE targets, estimate dispersion.",
+      "one_offs_note": "None flagged in retrieved sources.",
+      "pea_eligible_listing": "No",
+      "notes": "Price $5.34 at 30 Sep 2026 close per MarketBeat snippet (+4.09% vs $5.13). EPS currency must be confirmed by the central model before computing P/E (if BRL, USD-equivalent EPS is roughly a fifth of the figures shown).",
+      "sources": [
+        {
+          "url": "https://www.marketbeat.com/stocks/NASDAQ/INTR/",
+          "what": "Price $5.34 at 30 Sep 2026 close, +4.09% from $5.13",
+          "date": "2026-09-30"
+        },
+        {
+          "url": "https://stockanalysis.com/stocks/intr/forecast/",
+          "what": "Consensus EPS FY26 4.00 (3.04-4.63), FY27 5.16 (3.38-5.83), FY28 6.28 (3.81-7.77)",
+          "date": "Sep 2026 (as returned by search)"
+        },
+        {
+          "url": "https://www.wallstreetzen.com/stocks/us/nasdaq/intr/stock-forecast",
+          "what": "1Y price target $9.00",
+          "date": "Sep 2026 (as returned by search)"
+        },
+        {
+          "url": "https://www.investing.com/news/earnings/inter-and-co-earnings-on-deck-can-growth-plans-survive-margin-squeeze-93CH-4664588",
+          "what": "Margin squeeze concerns ahead of results",
+          "date": "2026"
+        }
+      ]
+    },
+    {
+      "ticker": "DLO",
+      "name": "dLocal Limited",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "adr_ratio": "Direct listing of Class A shares (no ADR)",
+      "region": "South America",
+      "country": "Uruguay (Cayman-incorporated)",
+      "sector": "Cross-border payments infrastructure for emerging markets",
+      "price": 13.78,
+      "price_date": "2026-09-30",
+      "w52_high": null,
+      "w52_low": null,
+      "market_cap_usd_bn": null,
+      "beta": null,
+      "dividend_yield_pct": null,
+      "eps_basis": "Aggregator consensus in USD; basis not labelled (dLocal reports IFRS and an adjusted net income). Treat as IFRS/adjusted.",
+      "eps_fy0": null,
+      "eps_fy0_label": "FY2025 (Dec) actual - not sourced this session",
+      "eps_f1": 0.84,
+      "eps_f1_label": "FY2026 (Dec) consensus (range 0.74-0.94); Yahoo shows 0.86, StocksGuide 0.87",
+      "eps_f2": 1.06,
+      "eps_f2_label": "FY2027 (Dec) consensus (range 0.98-1.22)",
+      "eps_f3": null,
+      "eps_f3_label": "FY2028 - not found",
+      "fy_end_month": 12,
+      "ltg_pct": null,
+      "price_target": 15.17,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "megatrend": "Global merchants (streaming, ride-hailing, e-commerce, SaaS) monetising emerging markets (LatAm, Africa, Asia) via one API - secular TPV growth independent of US AI capex",
+      "thesis_short": "Asset-light EM payments rail: consensus EPS $0.84 -> $1.06 (FY26->FY27), growth 26.2%. Indicative PEG: P/E on FY27 EPS 13.0x / 26.2% = 0.5. Consensus target raised to $15.17 from $14.40 on 19 Sep 2026; Q2 2026 beat on revenue but missed on EPS.",
+      "key_risk": "Take-rate compression from large merchants, FX/convertibility shocks (Argentina, Nigeria, Egypt-type events), merchant concentration, EPS volatility (Q2 2026 miss).",
+      "one_offs_note": "None flagged in retrieved sources (note dLocal's EPS has historically been affected by FX gains/losses on EM currencies - verify FY26 base).",
+      "pea_eligible_listing": "No",
+      "notes": "Price $13.78 for 30 Sep 2026 as returned by search (Google Finance / Stockopedia quote). Price target: consensus $15.17 (19 Sep 2026); WallStreetZen 1Y target $18.00.",
+      "sources": [
+        {
+          "url": "https://www.google.com/finance/beta/quote/DLO:NASDAQ?hl=en",
+          "what": "Close $13.78 on 30 Sep 2026",
+          "date": "2026-09-30"
+        },
+        {
+          "url": "https://stockanalysis.com/stocks/dlo/forecast/",
+          "what": "Consensus EPS FY26 $0.84 (0.74-0.94), FY27 $1.06 (0.98-1.22)",
+          "date": "Sep 2026 (as returned by search)"
+        },
+        {
+          "url": "https://finance.yahoo.com/quote/DLO/analysis/",
+          "what": "Average FY26 EPS $0.86",
+          "date": "Sep 2026 (as returned by search)"
+        },
+        {
+          "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-dlocal-tops-revenue-in-q2-2026-but-eps-misses-93CH-4859491",
+          "what": "Q2 2026: revenue beat, EPS miss",
+          "date": "2026 (Q2 results)"
+        },
+        {
+          "url": "https://www.wallstreetzen.com/stocks/us/nasdaq/dlo/stock-forecast",
+          "what": "Consensus target raised to $15.17 from $14.40 (19 Sep 2026); WSZ 1Y target $18.00",
+          "date": "2026-09-19"
+        }
+      ]
+    },
+    {
+      "ticker": "XP",
+      "name": "XP Inc.",
+      "exchange": "NASDAQ",
+      "currency": "USD (price) / consensus EPS not currency-labelled by MarketScreener summary - magnitude consistent with BRL",
+      "adr_ratio": "Direct listing of Class A shares (BDR XPBR31 on B3)",
+      "region": "South America",
+      "country": "Brazil (Cayman-incorporated)",
+      "sector": "Investment platform / wealth management / brokerage",
+      "price": 21.0,
+      "price_date": "2026-09-30",
+      "w52_high": null,
+      "w52_low": null,
+      "market_cap_usd_bn": null,
+      "beta": null,
+      "dividend_yield_pct": null,
+      "eps_basis": "S&P Global consensus via MarketScreener; basis not labelled (XP reports IFRS and adjusted net income). Currency likely BRL.",
+      "eps_fy0": null,
+      "eps_fy0_label": "FY2025 (Dec) actual - not sourced this session",
+      "eps_f1": 11.08,
+      "eps_f1_label": "FY2026 (Dec) consensus (range 9.88-11.69) - currency see eps_basis",
+      "eps_f2": 12.73,
+      "eps_f2_label": "FY2027 (Dec) consensus (range 11.63-13.57)",
+      "eps_f3": null,
+      "eps_f3_label": "FY2028 - not found",
+      "fy_end_month": 12,
+      "ltg_pct": null,
+      "price_target": 22.5,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "megatrend": "Disintermediation of Brazil's bank-dominated savings pool toward independent investment platforms; falling Selic re-rates equities/funds flows",
+      "thesis_short": "Consensus EPS 11.08 -> 12.73 (FY26->FY27), growth 14.9% - below the 20% hurdle. PEG not computed here (USD price vs BRL EPS). 19 analysts, consensus score 4.2/5 (14 Sep 2026); 1Y target $22.50 vs $21.00. Q2 2026 revenue R$5.06bn beat.",
+      "key_risk": "Brazil rate cycle and retail flows, pressure on take-rates, competition from BTG/incumbent banks, capital-return policy changes.",
+      "one_offs_note": "None flagged in retrieved sources.",
+      "pea_eligible_listing": "No",
+      "notes": "Price: GuruFocus snippet - shares +3.6% to $21.00 on 30 Sep 2026. Dividend yield not retrieved (XP pays dividends/buybacks).",
+      "sources": [
+        {
+          "url": "https://www.gurufocus.com/news/9104298/xp-inc-xp-shares-surge-36-what-gf-score-of-87-tells-investors",
+          "what": "Shares +3.6% to $21.00 on 30 Sep 2026",
+          "date": "2026-09-30"
+        },
+        {
+          "url": "https://www.marketscreener.com/quote/stock/XP-INC-82575356/consensus/",
+          "what": "S&P Global consensus EPS FY26 11.08 (9.88-11.69), FY27 12.73 (11.63-13.57)",
+          "date": "Sep 2026 (as returned by search)"
+        },
+        {
+          "url": "https://www.tradingkey.com/markets/stocks/xp/forecast",
+          "what": "19 analysts, consensus 4.2/5 as of 14 Sep 2026",
+          "date": "2026-09-14"
+        },
+        {
+          "url": "https://www.wallstreetzen.com/stocks/us/nasdaq/xp/stock-forecast",
+          "what": "1Y price target $22.50",
+          "date": "Sep 2026 (as returned by search)"
+        },
+        {
+          "url": "https://www.sci-tech-today.com/news/xp-inc-q2-2026-earnings/",
+          "what": "Q2 2026 revenue R$5.06bn (beat)",
+          "date": "2026 (Q2 results)"
+        }
+      ]
+    },
+    {
+      "ticker": "GLOB",
+      "name": "Globant S.A.",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "adr_ratio": "Direct listing of common shares (Luxembourg SA); no ADR",
+      "region": "South America",
+      "country": "Argentina origin / Luxembourg-domiciled",
+      "sector": "Digital engineering & AI services",
+      "price": 34.7,
+      "price_date": "2026-09-30",
+      "w52_high": null,
+      "w52_low": null,
+      "market_cap_usd_bn": null,
+      "beta": null,
+      "dividend_yield_pct": null,
+      "eps_basis": "Non-GAAP (adjusted) diluted EPS - Globant guides and is covered on non-GAAP EPS",
+      "eps_fy0": null,
+      "eps_fy0_label": "FY2025 (Dec) actual non-GAAP EPS - not sourced this session",
+      "eps_f1": 6.2,
+      "eps_f1_label": "FY2026 (Dec) consensus (21 analysts; 6.05-6.36). Alt: WSZ 6.44 (6.00-6.84)",
+      "eps_f2": 6.57,
+      "eps_f2_label": "FY2027 (Dec) consensus (20 analysts; 6.10-6.78). Alt: WSZ 6.92 (6.20-7.78)",
+      "eps_f3": null,
+      "eps_f3_label": "FY2028 - not found",
+      "fy_end_month": 12,
+      "ltg_pct": null,
+      "price_target": 72.56,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "megatrend": "Enterprise AI adoption / digital transformation outsourcing (nearshore LatAm talent)",
+      "thesis_short": "Optically very cheap: P/E on FY27 non-GAAP EPS 5.28x, but growth only 6.0% -> indicative PEG 0.89. Fails the 20% growth test; this is a value/turnaround case (AI disruption fears on IT services), not a Lynch growth case. Q2 2026 EPS lagged estimates. WSZ 1Y target $72.56 looks stale vs. $34.70 price.",
+      "key_risk": "Generative-AI deflation of billable hours, client budget cuts, Argentina cost base/FX, continued negative revisions; possible value trap.",
+      "one_offs_note": "None flagged; verify whether the $6.20 figure is genuinely non-GAAP given the ~5x P/E (possible data anomaly - cross-check recommended).",
+      "pea_eligible_listing": "Luxembourg-domiciled company but only NYSE listing identified - PEA eligibility doubtful; verify",
+      "notes": "Price $34.70 close 30 Sep 2026 (StockAnalysis); $33.94 on 29 Sep. The P/E of ~5x on consensus non-GAAP EPS is unusual - the central model should sanity-check the EPS base against the latest guidance before relying on it.",
+      "sources": [
+        {
+          "url": "https://stockanalysis.com/stocks/glob/",
+          "what": "Close $34.70 on 30 Sep 2026; $33.94 on 29 Sep 2026",
+          "date": "2026-09-30"
+        },
+        {
+          "url": "https://finance.yahoo.com/quote/GLOB/analysis/",
+          "what": "Consensus EPS FY26 $6.20 (21 analysts; 6.05-6.36), FY27 $6.57 (20 analysts; 6.10-6.78)",
+          "date": "Sep 2026 (as returned by search)"
+        },
+        {
+          "url": "https://www.wallstreetzen.com/stocks/us/nyse/glob/stock-forecast",
+          "what": "Alt consensus FY26 $6.44, FY27 $6.92; 1Y target $72.56",
+          "date": "Sep 2026 (as returned by search)"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/globant-glob-q2-earnings-lag-220503557.html",
+          "what": "Q2 2026 earnings lag estimates",
+          "date": "2026 (Q2 results)"
+        }
+      ]
+    },
+    {
+      "ticker": "VTEX",
+      "name": "VTEX",
+      "exchange": "NYSE",
+      "currency": "USD",
+      "adr_ratio": "Direct listing of Class A shares (no ADR)",
+      "region": "South America",
+      "country": "Brazil (Cayman-incorporated)",
+      "sector": "Enterprise commerce SaaS",
+      "price": 3.65,
+      "price_date": "2026-09-30",
+      "w52_high": null,
+      "w52_low": null,
+      "market_cap_usd_bn": null,
+      "beta": null,
+      "dividend_yield_pct": null,
+      "eps_basis": "Aggregator consensus in USD; basis not labelled (VTEX reports non-GAAP net income; consensus most likely non-GAAP)",
+      "eps_fy0": null,
+      "eps_fy0_label": "FY2025 (Dec) actual - not sourced this session",
+      "eps_f1": 0.18,
+      "eps_f1_label": "FY2026 (Dec) consensus (range 0.14-0.27)",
+      "eps_f2": 0.24,
+      "eps_f2_label": "FY2027 (Dec) consensus (range 0.18-0.34)",
+      "eps_f3": null,
+      "eps_f3_label": "FY2028 - not found",
+      "fy_end_month": 12,
+      "ltg_pct": null,
+      "price_target": 6.01,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "megatrend": "Composable / headless enterprise commerce software for large retailers and brands (LatAm, Europe, US)",
+      "thesis_short": "Small-cap SaaS turning profitable: consensus EPS $0.18 -> $0.24 (FY26->FY27), growth 33.3%. Indicative PEG: P/E on FY27 15.21x / 33.3% = 0.46. Consensus Buy, avg target $6.01 (10 analysts, S&P Global) vs $3.65. Q2 2026: EPS beat, margins up, but revenue growth slowing.",
+      "key_risk": "Decelerating revenue growth, small float/liquidity, competition from Shopify/Salesforce/commercetools, low absolute EPS makes PEG noisy.",
+      "one_offs_note": "None flagged in retrieved sources.",
+      "pea_eligible_listing": "No",
+      "notes": "Price $3.65 for 30 Sep 2026 per StockAnalysis snippet. Market cap not retrieved (sub-$1bn small cap - liquidity constraint for a concentrated portfolio).",
+      "sources": [
+        {
+          "url": "https://stockanalysis.com/stocks/vtex/",
+          "what": "Price $3.65 as of 30 Sep 2026",
+          "date": "2026-09-30"
+        },
+        {
+          "url": "https://stockanalysis.com/stocks/vtex/forecast/",
+          "what": "Consensus EPS FY26 $0.18 (0.14-0.27), FY27 $0.24 (0.18-0.34); Buy, target $6.01 (10 analysts)",
+          "date": "Sep 2026 (as returned by search)"
+        },
+        {
+          "url": "https://www.investing.com/news/company-news/vtex-q2-2026-slides-margins-surge-as-revenue-growth-slows-93CH-4844573",
+          "what": "Q2 2026 slides: margins surge, revenue growth slows",
+          "date": "2026 (Q2 results)"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/vtex-vtex-q2-earnings-surpass-214010969.html",
+          "what": "Q2 2026 EPS beat",
+          "date": "2026 (Q2 results)"
+        }
+      ]
+    },
+    {
+      "ticker": "AFYA",
+      "name": "Afya Limited",
+      "exchange": "NASDAQ",
+      "currency": "USD (price); EPS figure from MarketBeat-type source, currency not labelled",
+      "adr_ratio": "Direct listing of Class A shares (no ADR)",
+      "region": "South America",
+      "country": "Brazil (Cayman-incorporated)",
+      "sector": "Medical education & physician digital services",
+      "price": 13.73,
+      "price_date": "2026-09-25 (last confirmed close; last trade $13.06 reported 26 Sep 2026; 30 Sep close not found)",
+      "w52_high": null,
+      "w52_low": null,
+      "market_cap_usd_bn": null,
+      "beta": null,
+      "dividend_yield_pct": null,
+      "eps_basis": "Aggregator 'current year' EPS (likely adjusted); currency not labelled; Afya reports IFRS and adjusted net income in BRL",
+      "eps_fy0": null,
+      "eps_fy0_label": "FY2025 (Dec) actual - not sourced this session",
+      "eps_f1": 1.86,
+      "eps_f1_label": "FY2026 (Dec) 'current year' consensus (MarketBeat-type source) - currency unlabelled",
+      "eps_f2": null,
+      "eps_f2_label": "FY2027 (Dec) consensus - not found this session",
+      "eps_f3": null,
+      "eps_f3_label": "FY2028 - not found",
+      "fy_end_month": 12,
+      "ltg_pct": null,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "megatrend": "Structural shortage of physicians in Brazil; regulated medical-school seats; digital clinical tools",
+      "thesis_short": "Defensive compounder with regulated moat (medical seats); only FY26 EPS (1.86) sourced - PEG cannot be computed from this session's data. Stock fell 4.9% on 25 Sep 2026 on unusually high volume. Keep as a data-gap candidate for the central model to complete.",
+      "key_risk": "Regulatory changes to medical-seat authorisations (Mais Medicos), tuition/FIES exposure, BRL depreciation, small float.",
+      "one_offs_note": "None flagged.",
+      "pea_eligible_listing": "No",
+      "notes": "Insufficient data: 30 Sep close and FY27 consensus not retrieved (search budget exhausted). An older snippet mentioned EPS growing 25.66% from $1.52 to $1.91 'in the coming year' - stale, not used.",
+      "sources": [
+        {
+          "url": "https://www.thecerbatgem.com/2026/09/26/afya-nasdaqafya-sees-unusually-high-trading-volume-still-a-buy.html",
+          "what": "Traded as low as $13.15, last $13.06; previous close $13.73 (Friday 25 Sep 2026); analysts expect 1.86 EPS for current year",
+          "date": "2026-09-26"
+        },
+        {
+          "url": "https://www.thestockobserver.com/2026/09/25/afya-nasdaqafya-stock-price-down-4-9-whats-next.html",
+          "what": "Stock down 4.9% on 25 Sep 2026",
+          "date": "2026-09-25"
+        }
+      ]
+    },
+    {
+      "ticker": "PAX",
+      "name": "Patria Investments Limited",
+      "exchange": "NASDAQ",
+      "currency": "USD",
+      "adr_ratio": "Direct listing of Class A shares (no ADR)",
+      "region": "South America",
+      "country": "Brazil/LatAm (Cayman-incorporated)",
+      "sector": "Alternative asset management",
+      "price": 10.13,
+      "price_date": "2026-09-17 (latest close found; 30 Sep close not retrieved)",
+      "w52_high": null,
+      "w52_low": null,
+      "market_cap_usd_bn": null,
+      "beta": null,
+      "dividend_yield_pct": null,
+      "eps_basis": "Consensus EPS (StocksGuide) in USD - basis unlabelled; Patria guides on Fee-Related Earnings (FRE) per share, a non-GAAP metric",
+      "eps_fy0": null,
+      "eps_fy0_label": "FY2025 (Dec) actual - not sourced (consensus FY27 is described as +185% vs FY25, implying a depressed FY25 GAAP base)",
+      "eps_f1": 1.35,
+      "eps_f1_label": "FY2026 (Dec) consensus (1.29-1.42). Company FRE/share guidance FY26: $1.42-1.54 ($225-245m)",
+      "eps_f2": 1.54,
+      "eps_f2_label": "FY2027 (Dec) consensus. Company FRE/share target FY27: $1.60-1.80 ($260-290m)",
+      "eps_f3": null,
+      "eps_f3_label": "FY2028 - not found",
+      "fy_end_month": 12,
+      "ltg_pct": null,
+      "price_target": 13.0,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "megatrend": "Institutionalisation of LatAm savings / growth of private markets (PE, infrastructure, credit, real assets) across Brazil, Chile, Colombia, Mexico",
+      "thesis_short": "Fee-driven compounder at a single-digit multiple: consensus EPS $1.35 -> $1.54 (FY26->FY27), growth 14.1%; P/E on FY27 6.58x -> indicative PEG 0.47. On FRE/share guidance ($1.42-1.54 -> $1.60-1.80) growth is ~15%. Q2 2026 FRE $57.1m (+24% YoY), fee-earning AUM $48.9bn (+32% YoY). Growth below 20% but valuation very low; 1Y target $13.00.",
+      "key_risk": "Performance-fee (carry) outlook cooling, fundraising cyclicality, LatAm FX on USD-reported fees, small-cap liquidity.",
+      "one_offs_note": "FY25 GAAP EPS was depressed (consensus FY27 described as +185% vs FY25) - use FRE/share for like-for-like growth.",
+      "pea_eligible_listing": "No",
+      "notes": "Price is the 17 Sep 2026 close ($10.13); early-Sep range ~$10-11. Dividend yield not retrieved (Patria pays a quarterly dividend).",
+      "sources": [
+        {
+          "url": "https://stockanalysis.com/stocks/pax/history/",
+          "what": "Close $10.13 on 17 Sep 2026",
+          "date": "2026-09-17"
+        },
+        {
+          "url": "https://stocksguide.com/en/forecast/Patria-Investments-KYG694511059",
+          "what": "Consensus EPS FY26 $1.35 (1.29-1.42), FY27 $1.54 (+185.19% vs FY25)",
+          "date": "Sep 2026 (as returned by search)"
+        },
+        {
+          "url": "https://ir.patria.com/static-files/db900fe0-90b8-4b23-ba03-4746ca56b07e",
+          "what": "2Q26 presentation (31 Jul 2026): FY26 FRE guidance $225-245m ($1.42-1.54/share); FY27 FRE target $260-290m ($1.60-1.80/share)",
+          "date": "2026-07-31"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/patria-pax-q2-2026-earnings-024442596.html",
+          "what": "Q2 2026: FRE ~$57.1m (+24% YoY, +13% QoQ); FEAUM $48.9bn (+32% YoY)",
+          "date": "2026-07-31"
+        },
+        {
+          "url": "https://www.wallstreetzen.com/stocks/us/nasdaq/pax/stock-forecast",
+          "what": "1Y price target $13.00",
+          "date": "Sep 2026 (as returned by search)"
+        }
+      ]
+    },
+    {
+      "ticker": "VINP",
+      "name": "Vinci Compass Investments Ltd.",
+      "exchange": "NASDAQ",
+      "currency": "USD (price) / consensus EPS currency not labelled - magnitude consistent with BRL",
+      "adr_ratio": "Direct listing of Class A shares (no ADR)",
+      "region": "South America",
+      "country": "Brazil (Cayman-incorporated)",
+      "sector": "Alternative asset management",
+      "price": 9.32,
+      "price_date": "2026-09-18 (latest price found; 30 Sep close not retrieved)",
+      "w52_high": null,
+      "w52_low": null,
+      "market_cap_usd_bn": null,
+      "beta": null,
+      "dividend_yield_pct": null,
+      "eps_basis": "Aggregator consensus (StockAnalysis); basis and currency not labelled; Vinci reports in BRL (IFRS and adjusted distributable earnings)",
+      "eps_fy0": null,
+      "eps_fy0_label": "FY2025 (Dec) actual - not sourced",
+      "eps_f1": 5.44,
+      "eps_f1_label": "FY2026 (Dec) consensus - currency see eps_basis",
+      "eps_f2": null,
+      "eps_f2_label": "FY2027 (Dec) consensus not given numerically; source states EPS growth of +25.96% from FY26 to FY27 and a FY27 forward P/E of 7.42x",
+      "eps_f3": null,
+      "eps_f3_label": "FY2028 - not found",
+      "fy_end_month": 12,
+      "ltg_pct": null,
+      "price_target": 13.5,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "megatrend": "LatAm alternatives / wealth platforms (Vinci + Compass merger builds a pan-LatAm asset manager)",
+      "thesis_short": "Post-merger (Vinci + Compass) asset manager: consensus FY26 EPS 5.44 (likely BRL), FY27 growth +25.96% per StockAnalysis, FY27 forward P/E 7.42x -> indicative PEG ~0.29 (from sourced P/E and growth, not from a numeric FY27 EPS). Consensus Hold, target $13.50 vs $9.32.",
+      "key_risk": "Merger integration (Compass), BRL/CLP FX on USD-quoted stock, fundraising cyclicality, low liquidity, Hold consensus.",
+      "one_offs_note": "Merger-related costs and purchase accounting likely distort FY25/FY26 IFRS EPS - use adjusted distributable earnings.",
+      "pea_eligible_listing": "No",
+      "notes": "Thin data set: FY27 EPS not retrieved numerically; price is the 18 Sep 2026 level. Flagged as a lower-priority candidate.",
+      "sources": [
+        {
+          "url": "https://www.marketbeat.com/stocks/NASDAQ/VINP/",
+          "what": "Price $9.32 as of 18 Sep 2026",
+          "date": "2026-09-18"
+        },
+        {
+          "url": "https://stockanalysis.com/stocks/vinp/forecast/",
+          "what": "Consensus FY26 EPS 5.44; FY27 EPS growth +25.96%; FY27 forward P/E 7.42x; Hold; target $13.50",
+          "date": "Sep 2026 (as returned by search)"
+        }
+      ]
+    },
+    {
+      "ticker": "BMA",
+      "name": "Banco Macro S.A.",
+      "exchange": "NYSE (ADR)",
+      "currency": "USD",
+      "adr_ratio": "ADR ratio not verified by a source this session (commonly 1 ADR = 10 Class B shares - confirm)",
+      "region": "South America",
+      "country": "Argentina",
+      "sector": "Banking (Argentina)",
+      "price": 65.97,
+      "price_date": "2026-09-28 (latest close found; 30 Sep close not retrieved)",
+      "w52_high": 106.15,
+      "w52_low": null,
+      "market_cap_usd_bn": null,
+      "beta": null,
+      "dividend_yield_pct": null,
+      "eps_basis": "Consensus EPS per ADR in USD (MarketBeat-type aggregator); underlying accounts are IFRS with IAS 29 hyperinflation restatement",
+      "eps_fy0": null,
+      "eps_fy0_label": "FY2025 (Dec) actual - not sourced",
+      "eps_f1": 8.35,
+      "eps_f1_label": "FY2026 (Dec) consensus, USD per ADR",
+      "eps_f2": 10.81,
+      "eps_f2_label": "FY2027 (Dec) consensus, USD per ADR",
+      "eps_f3": null,
+      "eps_f3_label": "FY2028 - not found",
+      "fy_end_month": 12,
+      "ltg_pct": null,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": true,
+      "megatrend": "Argentine credit re-penetration after macro stabilisation (private credit/GDP among the lowest in the world); normalisation from inflation-linked to lending-driven earnings",
+      "thesis_short": "Lowest PEG in the screen on paper: consensus EPS $8.35 -> $10.81 (FY26->FY27), growth 29.5%; P/E on FY27 6.1x -> indicative PEG 0.21. BUT Argentine bank earnings are distorted by hyperinflation accounting and macro/political volatility; Q2 2026 beat EPS forecast yet stock slipped; trades ~34-38% below 52-week high ($106.15). Flagged cyclical/macro-driven.",
+      "key_risk": "Argentine political risk (2027 election cycle), peso devaluation, NPL build as credit expands fast, IAS 29 accounting noise, sovereign exposure.",
+      "one_offs_note": "IAS 29 hyperinflation accounting and holdings of inflation-linked/sovereign instruments distort reported EPS year to year; FY25/FY26 bases should be checked for monetary-position gains/losses.",
+      "pea_eligible_listing": "No",
+      "notes": "Price $65.97 is the 28 Sep 2026 close (Google Finance / Morningstar snippet). The 52-week high $106.15 is from an ad-hoc-news note that put the stock 33.5% below it at that time.",
+      "sources": [
+        {
+          "url": "https://www.google.com/finance/beta/quote/BMA:NYSE",
+          "what": "Close $65.97 on 28 Sep 2026",
+          "date": "2026-09-28"
+        },
+        {
+          "url": "https://www.marketbeat.com/stocks/NYSE/BMA/earnings/",
+          "what": "Consensus EPS FY26 $8.35, FY27 $10.81 (+29.46%)",
+          "date": "Sep 2026 (as returned by search)"
+        },
+        {
+          "url": "https://www.ad-hoc-news.de/boerse/news/nebenwerte/banco-macro-stock-trades-33-5-percent-below-its-52-week-high-of-usd-106-15/70184388",
+          "what": "52-week high $106.15",
+          "date": "Sep 2026"
+        },
+        {
+          "url": "https://m.investing.com/news/transcripts/earnings-call-transcript-banco-macro-beats-q2-2026-eps-forecast-as-stock-slips-93CH-4870237?ampMode=1",
+          "what": "Q2 2026 EPS beat, stock slips",
+          "date": "2026 (Q2 results)"
+        }
+      ]
+    },
+    {
+      "ticker": "GFNORTEO.MX",
+      "name": "Grupo Financiero Banorte, S.A.B. de C.V.",
+      "exchange": "BMV (Mexico)",
+      "currency": "MXN",
+      "adr_ratio": "Local listing; OTC ADR GBOOY exists (ratio not verified this session)",
+      "region": "South America",
+      "country": "Mexico",
+      "sector": "Banking / financial group",
+      "price": 191.0,
+      "price_date": "2026-09-30",
+      "w52_high": null,
+      "w52_low": null,
+      "market_cap_usd_bn": null,
+      "beta": null,
+      "dividend_yield_pct": null,
+      "eps_basis": "Analyst consensus (Banorte IR analyst-coverage page / aggregators), MXN per share, IFRS-based reported net income",
+      "eps_fy0": null,
+      "eps_fy0_label": "FY2025 (Dec) actual - not sourced",
+      "eps_f1": 21.97,
+      "eps_f1_label": "FY2026 (Dec) consensus, MXN",
+      "eps_f2": 24.08,
+      "eps_f2_label": "FY2027 (Dec) consensus, MXN",
+      "eps_f3": null,
+      "eps_f3_label": "FY2028 - not found",
+      "fy_end_month": 12,
+      "ltg_pct": null,
+      "price_target": 223.93,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "megatrend": "Mexican banking under-penetration + nearshoring-driven credit demand; digital bank (Bineo) optionality",
+      "thesis_short": "Quality Mexican bank at a low multiple: consensus EPS MXN 21.97 -> 24.08 (FY26->FY27), growth 9.6%; P/E on FY27 7.93x -> indicative PEG 0.83. Fails the 20% growth hurdle; it is a yield/value name rather than a Lynch fast grower. Consensus target MXN 223.93 (+17%). Q2 2026: revenue +12%, net income +6%.",
+      "key_risk": "Mexican rate cuts compressing NIM, US tariff/nearshoring reversal, peso volatility, political/regulatory risk.",
+      "one_offs_note": "None flagged in retrieved sources.",
+      "pea_eligible_listing": "No (Mexican listing)",
+      "notes": "Price MXN 191.00 on 30 Sep 2026 per Google Finance/Rankia snippets. Dividend yield not retrieved (Banorte historically pays a high payout). ADR GBOOY (OTC) not researched.",
+      "sources": [
+        {
+          "url": "https://www.google.com/finance/quote/GFNORTEO:BMV?hl=es",
+          "what": "Price MXN 191.00 on 30 Sep 2026",
+          "date": "2026-09-30"
+        },
+        {
+          "url": "https://investors.banorte.com/es/stock/analyst-coverage",
+          "what": "Analyst consensus EPS FY26 MXN 21.97, FY27 MXN 24.08; average target MXN 223.93",
+          "date": "Sep 2026 (as returned by search)"
+        },
+        {
+          "url": "https://es-us.finanzas.yahoo.com/noticias/reporte-2t-banorte-ingresos-suben-224728921.html",
+          "what": "Q2 2026: revenue +12%, net income +6%",
+          "date": "2026 (Q2 results)"
+        }
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "ticker": "ITUB",
+      "reason": "Mature incumbent bank: ADR closed $8.53 on 30 Sep 2026 (+5.9% that day, MarketBeat); consensus EPS per ADR FY26 $0.90 / FY27 $1.00 (alt set $0.82 / $0.86, StockAnalysis) = 5-11% growth, far below the 20% Lynch hurdle; Q2 2026 missed by $0.01."
+    },
+    {
+      "ticker": "BAP",
+      "reason": "Credicorp (Peru): last close found $377.90 on 11 Sep 2026; consensus EPS FY26 100.15 / FY27 112.49 (PEN, +12%; alt FY26 101.62), ROE ~20% in Q2 2026 - quality but only ~12% growth and needs PEN/USD conversion for P/E; fails the 20% hurdle."
+    },
+    {
+      "ticker": "CIB",
+      "reason": "Grupo Cibest/Bancolombia: ADR $93.77 on 29 Sep 2026; Simply Wall St shows EPS growth ~3% p.a.; no full-year consensus EPS retrieved; Colombian 2027 GDP forecast cut to 2.4%."
+    },
+    {
+      "ticker": "GGAL",
+      "reason": "Grupo Financiero Galicia: ADR closed $37.24 on 30 Sep 2026 (1 ADR = 10 Class B shares per HL listing), but consensus EPS data inconsistent across sources (FY26 3.69 vs 4.57 USD; FY27 ARS 950.39) and distorted by IAS 29 hyperinflation accounting - excluded for data quality; Argentine bank exposure already represented by BMA."
+    },
+    {
+      "ticker": "SUPV",
+      "reason": "Grupo Supervielle: ~$8.79 early Sep 2026; only ARS-denominated consensus (285.07) and a Q2 2026 EPS miss ($0.13 vs $0.15) found; small-cap Argentine bank with unusable data set."
+    },
+    {
+      "ticker": "BPAC11.SA",
+      "reason": "BTG Pactual: R$64.10 on 30 Sep 2026 (+1.99%), trailing EPS R$4.74, but no forward consensus EPS retrieved; consensus target R$65.74 implies little upside (XP raised net-income estimates +18%/+19% for 2026/2027)."
+    },
+    {
+      "ticker": "TOTS3.SA",
+      "reason": "Totvs: R$33.43 on 30 Sep 2026 (-3.49%), trailing EPS R$2.44-2.46, recent ~20% drawdown; no forward consensus EPS retrieved this session - cannot compute PEG."
+    },
+    {
+      "ticker": "DESP",
+      "reason": "Despegar - acquired by Prosus (per task instruction: excluded)."
+    },
+    {
+      "ticker": "ARCE",
+      "reason": "Arco Platform - taken private (per task instruction: excluded)."
+    },
+    {
+      "ticker": "NVNI",
+      "reason": "Nuvini - excluded per task instruction (micro-cap)."
+    },
+    {
+      "ticker": "LWSA3.SA",
+      "reason": "Locaweb - excluded per task instruction."
+    },
+    {
+      "ticker": "BBD",
+      "reason": "Bradesco - excluded per task instruction (mature bank)."
+    },
+    {
+      "ticker": "BBAS3.SA",
+      "reason": "Banco do Brasil - excluded per task instruction (state-controlled, mature)."
+    },
+    {
+      "ticker": "MPAGO",
+      "reason": "Mercado Pago - not separately listed; exposure via MELI."
+    },
+    {
+      "ticker": "EVTC",
+      "reason": "Evertec (Puerto Rico/LatAm payments) - identified as a possible addition but not researched: web-search budget exhausted before the lookup."
+    },
+    {
+      "ticker": "B3SA3.SA",
+      "reason": "B3 (Brazilian exchange, digital market infrastructure) - identified as a possible addition but not researched: web-search budget exhausted before the lookup."
+    }
+  ],
+  "notes": "Data collection constraints: this session's WebSearch budget (200 calls, shared) was exhausted after the second round of lookups, and direct HTTPS fetches are denied by the network proxy (403 on CONNECT), so no further cross-checks, 52-week ranges, market caps, betas, LTG rates, Zacks ranks, dividend yields or FY2025 actuals could be retrieved - those fields are null everywhere. Every number present comes from a search result listed in 'sources'; nothing was estimated. Where two aggregators disagreed, the full 3-year or analyst-count-disclosed set was kept and the alternative is recorded in the labels/notes. Currency caveat: for the Brazilian names quoted in USD (STNE, PAGS, INTR, XP, VINP, AFYA) the consensus EPS retrieved is in BRL (or unlabelled but magnitude-consistent with BRL); the central model must apply a BRL/USD rate (not sourced here) before computing P/E and PEG - no indicative PEG was computed for them, only the EPS growth rate. Indicative PEGs (P/E on FY27 EPS / FY27-vs-FY26 growth) where price and EPS share a currency: BMA 0.21 (distorted by hyperinflation accounting; cyclical), NU 0.36, VTEX 0.46, PAX 0.47, DLO 0.50, MELI 0.63 (GAAP), GFNORTEO 0.83, GLOB 0.89 (6% growth). VINP ~0.29 from a sourced FY27 forward P/E of 7.42x and +25.96% growth. Names clearing the 20%+ growth hurdle on consensus: NU (~31%), MELI (~43%, GAAP, heavy recent downward revisions), INTR (~29%, BRL), DLO (~26%), VTEX (~33%, tiny base), BMA (~29%, Argentina), VINP (~26%, BRL). Prices: 30 Sep 2026 closes were found for NU, MELI, PAGS, INTR, DLO, XP, GLOB, VTEX, GFNORTEO; latest available closes were used (with dates) for STNE (29 Sep), AFYA (25 Sep), PAX (17 Sep), VINP (18 Sep), BMA (28 Sep). Scope note: AFYA is education rather than fintech/platform but was on the seed list; its data set is incomplete (FY27 EPS missing)."
+}

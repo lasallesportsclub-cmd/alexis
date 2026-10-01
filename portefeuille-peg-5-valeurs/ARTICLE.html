@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cinq valeurs pour battre le Nasdaq 100 : le portefeuille PEG qui refuse de payer la mode — La Gazette du PEG</title>
+<style>
+:root{--bg:#f7f5ef;--fg:#1b1b1b;--muted:#5c5c5c;--card:#ffffff;--grid:#d9d6cc;--rule:#1b1b1b;--c1:#3b6ea5;--c2:#b4552d;--c3:#5f7a4e;--accent:#8a1c1c}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#121416;--fg:#ececec;--muted:#a5a5a5;--card:#1c1f23;--grid:#33383d;--rule:#ececec;--c1:#7fb0e6;--c2:#f08a5a;--c3:#9ec38a;--accent:#f0a5a5}}
+:root[data-theme="dark"]{--bg:#121416;--fg:#ececec;--muted:#a5a5a5;--card:#1c1f23;--grid:#33383d;--rule:#ececec;--c1:#7fb0e6;--c2:#f08a5a;--c3:#9ec38a;--accent:#f0a5a5}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 Georgia,"Times New Roman",serif}
+.wrap{max-width:900px;margin:0 auto;padding:16px}
+header.masthead{border-top:4px solid var(--rule);border-bottom:1px solid var(--rule);padding:12px 0;margin-bottom:8px;display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px}
+.masthead .title{font:700 34px/1 Georgia,serif;letter-spacing:-.5px}
+.masthead .meta{font:13px system-ui,sans-serif;color:var(--muted)}
+.disclaimer{font:12px/1.4 system-ui,sans-serif;color:var(--muted);border:1px dashed var(--grid);padding:8px 10px;margin:8px 0 18px}
+h1{font:700 30px/1.15 Georgia,serif;margin:14px 0 8px}
+h2{font:700 22px/1.2 Georgia,serif;margin:28px 0 8px;border-bottom:1px solid var(--grid);padding-bottom:4px}
+h3{font:700 17px/1.25 system-ui,sans-serif;margin:20px 0 6px}
+h4{font:600 15px/1.25 system-ui,sans-serif;margin:14px 0 4px;color:var(--muted)}
+p{margin:0 0 12px}
+.lead{font-size:19px;line-height:1.5;color:var(--fg)}
+.box{background:var(--card);border-left:4px solid var(--c2);padding:12px 16px;margin:16px 0;font-family:system-ui,sans-serif;font-size:15px}
+.tablewrap{overflow-x:auto;margin:10px 0 16px}
+table{border-collapse:collapse;width:100%;font:13.5px/1.35 system-ui,sans-serif}
+th,td{padding:6px 8px;border-bottom:1px solid var(--grid);text-align:left;vertical-align:top;white-space:nowrap}
+td:first-child,th:first-child{white-space:normal}
+th{background:var(--card);font-weight:600}
+blockquote{margin:12px 0;padding:8px 14px;border-left:3px solid var(--c1);color:var(--muted);font-style:italic}
+code{font:13px ui-monospace,monospace;background:var(--card);padding:1px 4px;border-radius:3px}
+.chart{width:100%;height:auto;background:var(--card);border:1px solid var(--grid);border-radius:6px;margin:8px 0 18px}
+figure{margin:16px 0}figcaption{font:12px system-ui,sans-serif;color:var(--muted);margin-top:-12px}
+button.theme{font:13px system-ui,sans-serif;background:var(--card);color:var(--fg);border:1px solid var(--grid);border-radius:6px;padding:4px 10px;cursor:pointer}
+footer{font:12px/1.5 system-ui,sans-serif;color:var(--muted);border-top:1px solid var(--rule);margin-top:30px;padding-top:10px}
+a{color:var(--c1)}
+@media print{button.theme{display:none}.chart{break-inside:avoid}h2{break-after:avoid}table{font-size:11px}body{font-size:12.5px}}
+@page{size:A4;margin:14mm 12mm}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="masthead"><div class="title">La Gazette du PEG</div><div class="meta">Édition du 1er octobre 2026 · <button class="theme" onclick="toggleTheme()">Thème clair / sombre</button></div></header>
+<div class="disclaimer">Titre de journal fictif : « La Gazette du PEG » ne correspond à aucune publication existante. Analyse quantitative et datée, qui ne constitue pas un conseil en investissement personnalisé.</div>
+<h1>Cinq valeurs pour battre le Nasdaq 100 : le portefeuille PEG qui refuse de payer la mode</h1>
+<p><em>Nu Holdings, Rheinmetall, Broadcom, Uber, TSMC. Quatre continents, cinq moteurs de bénéfices, et un seul critère emprunté à Peter Lynch : ne jamais payer la croissance plus d'une fois son taux. Au 30 septembre 2026, ce portefeuille cote 16,3 fois les bénéfices des douze prochains mois ; le Nasdaq 100, 22,9. Nos hypothèses, volontairement sous le consensus, lui donnent +21,0 % par an sur quatre ans contre +9,9 % pour l'indice. Voici pourquoi, ce qui peut mal tourner, et à quel prix nous achèterions ce que nous avons écarté.</em></p>
+<h2>En bref</h2>
+<ul><li><strong>Le pari</strong> : cinq entreprises dont les bénéfices croissent de +40 % en 2027 au consensus, achetées 16,3 fois les bénéfices. Le PEG long terme du portefeuille (P/E divisé par la croissance que nous retenons jusqu'en 2030) est de 0,93 ; celui de l'indice, 1,52.</li><li><strong>Le rendement</strong> : +21,0 % par an en espérance, +21,8 % en scénario central, -4,2 % si tout déçoit, +35,0 % si tout réussit. L'indice : +9,9 %, +10,4 %, -11,8 %, +22,6 %. 100 investis deviennent 214 contre 146.</li><li><strong>Le risque</strong> : deux lignes qui déçoivent ensemble ramènent le portefeuille à +11,4 % par an, juste au-dessus de l'indice. La probabilité de finir sous l'indice, quand chaque ligne tire son scénario indépendamment, est de 5,3 %.</li><li><strong>Ce que nous n'achetons pas</strong> : la mémoire au sommet du cycle, les belles entreprises à prix plein, et deux noms que les dossiers ont fait sortir au dernier moment, Eli Lilly et Siemens Energy.</li></ul>
+<div class="tablewrap"><table><thead><tr><th>Valeur</th><th>Thème</th><th>Poids</th><th>Cours 30/09</th><th>P/E 12 mois</th><th>BPA 2027</th><th>PEG long terme</th><th>Espéré</th><th>Cours 2030 (central)</th><th>Zone d'achat</th></tr></thead><tbody><tr><td><strong>Nu Holdings</strong></td><td>Fintech émergente</td><td>25 %</td><td>12,66 $</td><td>11,6</td><td>+35 %</td><td>0,58</td><td><strong>+25,5 %</strong></td><td>33,92 $</td><td>21,81 $</td></tr><tr><td><strong>Rheinmetall AG</strong></td><td>Défense</td><td>20 %</td><td>956,40 €</td><td>19,3</td><td>+44 %</td><td>0,97</td><td><strong>+21,5 %</strong></td><td>2 017 €</td><td>989,00 €</td></tr><tr><td><strong>Broadcom</strong></td><td>IA calcul</td><td>20 %</td><td>351,19 $</td><td>19,1</td><td>+55 %</td><td>0,96</td><td><strong>+22,3 %</strong></td><td>745,28 $</td><td>367,64 $</td></tr><tr><td><strong>Uber Technologies</strong></td><td>Mobilité et robotaxi</td><td>20 %</td><td>68,51 $</td><td>16,0</td><td>+37 %</td><td>1,00</td><td><strong>+16,9 %</strong></td><td>124,05 $</td><td>68,51 $</td></tr><tr><td><strong>TSMC</strong></td><td>IA fonderie et équipement</td><td>15 %</td><td>456,19 $</td><td>22,7</td><td>+28 %</td><td>1,34</td><td><strong>+15,4 %</strong></td><td>854,85 $</td><td>340,94 $</td></tr><tr><td><strong>Portefeuille</strong></td><td></td><td>100 %</td><td></td><td>16,3</td><td>+40 %</td><td>0,93</td><td><strong>+21,0 %</strong></td><td></td><td></td></tr><tr><td>Nasdaq 100 reconstitué</td><td></td><td></td><td></td><td>22,9</td><td>+28 %</td><td>1,52</td><td>+9,9 %</td><td></td><td></td></tr></tbody></table></div>
+<figure><svg class="chart" viewBox="0 0 720 308" role="img" aria-label="Fourchette des rendements annuels par scénario">
+<style>.lab{font:13px system-ui,sans-serif;fill:var(--fg)}.ax{font:11px system-ui,sans-serif;fill:var(--muted)}.grid{stroke:var(--grid);stroke-width:1}</style>
+<line class="grid" x1="168.1" y1="25" x2="168.1" y2="283"/>
+<text class="ax" x="168.1" y="298" text-anchor="middle">-10 %</text>
+<line class="grid" x1="269.1" y1="25" x2="269.1" y2="283"/>
+<text class="ax" x="269.1" y="298" text-anchor="middle">+0 %</text>
+<line class="grid" x1="370.2" y1="25" x2="370.2" y2="283"/>
+<text class="ax" x="370.2" y="298" text-anchor="middle">+10 %</text>
+<line class="grid" x1="471.3" y1="25" x2="471.3" y2="283"/>
+<text class="ax" x="471.3" y="298" text-anchor="middle">+20 %</text>
+<line class="grid" x1="572.4" y1="25" x2="572.4" y2="283"/>
+<text class="ax" x="572.4" y="298" text-anchor="middle">+30 %</text>
+<line class="grid" x1="673.5" y1="25" x2="673.5" y2="283"/>
+<text class="ax" x="673.5" y="298" text-anchor="middle">+40 %</text>
+<line x1="269.1" y1="25" x2="269.1" y2="283" stroke="var(--fg)" stroke-width="1.5"/>
+<text class="lab" x="112" y="51.0" text-anchor="end" font-weight="400">NU</text>
+<rect x="290.8" y="40.0" width="347.0" height="14" rx="7" fill="var(--c1)" opacity="0.35"/>
+<circle cx="551.6" cy="47.0" r="6" fill="var(--c1)"/>
+<text class="ax" x="643.8" y="51.0">+36,5 %</text>
+<text class="ax" x="284.8" y="51.0" text-anchor="end">+2,1 %</text>
+<text class="lab" x="112" y="85.0" text-anchor="end" font-weight="400">RHM</text>
+<rect x="238.5" y="74.0" width="392.7" height="14" rx="7" fill="var(--c1)" opacity="0.35"/>
+<circle cx="490.6" cy="81.0" r="6" fill="var(--c1)"/>
+<text class="ax" x="637.2" y="85.0">+35,8 %</text>
+<text class="ax" x="232.5" y="85.0" text-anchor="end">-3,0 %</text>
+<text class="lab" x="112" y="119.0" text-anchor="end" font-weight="400">AVGO</text>
+<rect x="237.3" y="108.0" width="422.4" height="14" rx="7" fill="var(--c1)" opacity="0.35"/>
+<circle cx="487.3" cy="115.0" r="6" fill="var(--c1)"/>
+<text class="ax" x="665.7" y="119.0">+38,6 %</text>
+<text class="ax" x="231.3" y="119.0" text-anchor="end">-3,2 %</text>
+<text class="lab" x="112" y="153.0" text-anchor="end" font-weight="400">UBER</text>
+<rect x="150.8" y="142.0" width="464.8" height="14" rx="7" fill="var(--c1)" opacity="0.35"/>
+<circle cx="430.9" cy="149.0" r="6" fill="var(--c1)"/>
+<text class="ax" x="621.6" y="153.0">+34,3 %</text>
+<text class="ax" x="144.8" y="153.0" text-anchor="end">-11,7 %</text>
+<text class="lab" x="112" y="187.0" text-anchor="end" font-weight="400">TSM</text>
+<rect x="166.3" y="176.0" width="372.2" height="14" rx="7" fill="var(--c1)" opacity="0.35"/>
+<circle cx="450.1" cy="183.0" r="6" fill="var(--c1)"/>
+<text class="ax" x="544.4" y="187.0">+26,6 %</text>
+<text class="ax" x="160.3" y="187.0" text-anchor="end">-10,2 %</text>
+<text class="lab" x="112" y="221.0" text-anchor="end" font-weight="700">Portefeuille</text>
+<rect x="227.2" y="210.0" width="395.8" height="14" rx="7" fill="var(--c2)" opacity="0.35"/>
+<circle cx="489.5" cy="217.0" r="6" fill="var(--c2)"/>
+<text class="ax" x="629.0" y="221.0">+35,0 %</text>
+<text class="ax" x="221.2" y="221.0" text-anchor="end">-4,2 %</text>
+<text class="lab" x="112" y="255.0" text-anchor="end" font-weight="700">Nasdaq 100</text>
+<rect x="150.3" y="244.0" width="347.2" height="14" rx="7" fill="var(--c3)" opacity="0.35"/>
+<circle cx="374.0" cy="251.0" r="6" fill="var(--c3)"/>
+<text class="ax" x="503.5" y="255.0">+22,6 %</text>
+<text class="ax" x="144.3" y="255.0" text-anchor="end">-11,8 %</text>
+<text class="ax" x="120" y="18">Rendement annuel sur 4 ans : barre = pessimiste → optimiste, point = central</text>
+</svg><figcaption>Fourchettes de scénarios — calculs du modèle portefeuille.py, 1er octobre 2026.</figcaption></figure>
+<h2>Pourquoi ces cinq-là</h2>
+<p>Le Nasdaq 100 a gagné 20 % depuis le 1er janvier 2026. Il cote 22,9 fois les bénéfices des douze prochains mois, porte 38 % d'infrastructure d'intelligence artificielle, et un quart de ses bénéfices reconstitués viennent de deux fabricants de mémoire, Micron et SanDisk, au sommet d'un cycle de prix. Pour le battre sur quatre ans, il faut soit parier que l'IA continue plus fort que lui (et alors autant l'acheter), soit trouver des bénéfices qui croissent aussi vite, payés moins cher. C'est la seconde voie.</p>
+<p>Nous avons passé 159 valeurs au crible sur quatre continents : les 31 premiers poids de l'indice, les goulots d'étranglement de l'IA, et des candidates en Europe, en Asie et en Amérique latine, avec le consensus de bénéfices de chacune et un cours du 30 septembre. Puis une règle, celle de Peter Lynch : le PEG. Le P/E (le cours divisé par le bénéfice par action) divisé par la croissance annuelle de ce bénéfice. Sous 1, la croissance est bon marché ; à 2, elle est payée au prix fort. Les cycliques n'ont pas de PEG : un P/E de 7 sur Micron, dont la marge brute dépasse 85 %, est un signal de sommet, pas une aubaine.</p>
+<p>Le graphique ci-dessous place chaque valeur du classement par son P/E et sa croissance. Les cinq retenues sont sous la diagonale du PEG égal à 1, ou juste dessus pour TSMC. Nu Holdings est la banque la moins chère du monde pour sa rentabilité (PEG 0,58) parce qu'elle est brésilienne, à trois jours d'une élection. Rheinmetall (PEG 0,97) a perdu la moitié de sa valeur pendant que son carnet montait à 80 milliards. Broadcom (PEG 0,96) fabrique les puces sur mesure de Google, Meta, OpenAI et Anthropic et guide un doublement de son chiffre d'affaires IA deux années de suite. Uber (PEG 1,00) est au bas de sa fourchette de 52 semaines parce que le marché la croit tuée par le robotaxi. TSMC (PEG 1,34) est la plus chère des cinq et la seule achetée au-dessus de sa zone : c'est le péage de toute la chaîne de l'IA, et nous la payons pour cela.</p>
+<p>Pour chaque ligne, nous avons retenu une croissance de 2027 à 2030 inférieure au consensus : 20 % pour Nu quand le consensus 2027 dit +35 %, 20 % pour Rheinmetall contre +44 %, 20 % pour Broadcom contre +55 %, 16 % pour Uber contre +37 %, 17 % pour TSMC contre +28 %. Et nous n'avons compté sur aucune hausse de multiple au-delà d'un PEG de 1,5. Si les multiples ne bougent pas du tout, le portefeuille rapporte encore +19,3 % par an.</p>
+<figure><svg class="chart" viewBox="0 0 720 420" role="img" aria-label="P/E contre croissance">
+<style>.lab{font:11px system-ui,sans-serif;fill:var(--fg)}.ax{font:11px system-ui,sans-serif;fill:var(--muted)}.grid{stroke:var(--grid)}</style>
+<line class="grid" x1="50.0" y1="20" x2="50.0" y2="380"/>
+<text class="ax" x="50.0" y="395" text-anchor="middle">0 %</text>
+<line class="grid" x1="212.5" y1="20" x2="212.5" y2="380"/>
+<text class="ax" x="212.5" y="395" text-anchor="middle">10 %</text>
+<line class="grid" x1="375.0" y1="20" x2="375.0" y2="380"/>
+<text class="ax" x="375.0" y="395" text-anchor="middle">20 %</text>
+<line class="grid" x1="537.5" y1="20" x2="537.5" y2="380"/>
+<text class="ax" x="537.5" y="395" text-anchor="middle">30 %</text>
+<line class="grid" x1="700.0" y1="20" x2="700.0" y2="380"/>
+<text class="ax" x="700.0" y="395" text-anchor="middle">40 %</text>
+<line class="grid" x1="50" y1="380.0" x2="700" y2="380.0"/>
+<text class="ax" x="45" y="384.0" text-anchor="end">0x</text>
+<line class="grid" x1="50" y1="335.0" x2="700" y2="335.0"/>
+<text class="ax" x="45" y="339.0" text-anchor="end">10x</text>
+<line class="grid" x1="50" y1="290.0" x2="700" y2="290.0"/>
+<text class="ax" x="45" y="294.0" text-anchor="end">20x</text>
+<line class="grid" x1="50" y1="245.0" x2="700" y2="245.0"/>
+<text class="ax" x="45" y="249.0" text-anchor="end">30x</text>
+<line class="grid" x1="50" y1="200.0" x2="700" y2="200.0"/>
+<text class="ax" x="45" y="204.0" text-anchor="end">40x</text>
+<line class="grid" x1="50" y1="155.0" x2="700" y2="155.0"/>
+<text class="ax" x="45" y="159.0" text-anchor="end">50x</text>
+<line class="grid" x1="50" y1="110.0" x2="700" y2="110.0"/>
+<text class="ax" x="45" y="114.0" text-anchor="end">60x</text>
+<line class="grid" x1="50" y1="65.0" x2="700" y2="65.0"/>
+<text class="ax" x="45" y="69.0" text-anchor="end">70x</text>
+<line class="grid" x1="50" y1="20.0" x2="700" y2="20.0"/>
+<text class="ax" x="45" y="24.0" text-anchor="end">80x</text>
+<line x1="50.0" y1="380.0" x2="700.0" y2="200.0" stroke="var(--c3)" stroke-dasharray="6 4"/>
+<text class="ax" x="650.0" y="194.0">PEG = 1</text>
+<line x1="50.0" y1="380.0" x2="700.0" y2="110.0" stroke="var(--c3)" stroke-dasharray="6 4"/>
+<text class="ax" x="650.0" y="104.0">PEG = 1,5</text>
+<circle cx="293.8" cy="302.9" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="342.5" cy="166.1" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="350.5" y="170.1" font-weight="400">AMD</text>
+<circle cx="375.0" cy="294.0" r="7" fill="var(--c2)" opacity="1"/>
+<text class="lab" x="383.0" y="298.0" font-weight="700">AVGO</text>
+<circle cx="342.5" cy="177.1" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="350.5" y="181.1" font-weight="400">MRVL</text>
+<circle cx="326.2" cy="277.6" r="7" fill="var(--c2)" opacity="1"/>
+<text class="lab" x="334.2" y="281.6" font-weight="700">TSM</text>
+<circle cx="277.5" cy="231.4" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="212.5" cy="226.6" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="212.5" cy="248.3" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="212.5" cy="224.4" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="342.5" cy="189.7" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="456.2" cy="97.2" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="464.2" y="101.2" font-weight="400">ALAB</text>
+<circle cx="456.2" cy="263.7" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="464.2" y="267.7" font-weight="400">CRDO</text>
+<circle cx="407.5" cy="200.9" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="407.5" cy="257.0" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="342.5" cy="250.6" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="196.2" cy="292.0" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="293.8" cy="268.7" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="293.8" cy="275.5" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="310.0" cy="274.0" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="245.0" cy="283.0" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="196.2" cy="223.1" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="407.5" cy="281.7" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="415.5" y="285.7" font-weight="400">RDDT</text>
+<circle cx="310.0" cy="311.7" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="318.0" y="315.7" font-weight="400">APP</text>
+<circle cx="537.5" cy="20.0" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="545.5" y="24.0" font-weight="400">PLTR</text>
+<circle cx="261.2" cy="296.9" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="375.0" cy="327.8" r="7" fill="var(--c2)" opacity="1"/>
+<text class="lab" x="383.0" y="331.8" font-weight="700">NU</text>
+<circle cx="407.5" cy="229.9" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="375.0" cy="292.7" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="383.0" y="296.7" font-weight="400">SE</text>
+<circle cx="342.5" cy="185.3" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="310.0" cy="308.0" r="7" fill="var(--c2)" opacity="1"/>
+<text class="lab" x="318.0" y="312.0" font-weight="700">UBER</text>
+<circle cx="456.2" cy="20.0" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="464.2" y="24.0" font-weight="400">TSLA</text>
+<circle cx="537.5" cy="20.0" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="545.5" y="24.0" font-weight="400">SPCX</text>
+<circle cx="196.2" cy="229.6" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="212.5" cy="199.7" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="375.0" cy="86.8" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="383.0" y="90.8" font-weight="400">INTC</text>
+<circle cx="163.8" cy="285.8" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="131.2" cy="301.1" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="245.0" cy="247.2" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="293.8" cy="20.0" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="301.8" y="24.0" font-weight="400">PANW</text>
+<circle cx="407.5" cy="274.4" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="342.5" cy="313.3" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="350.5" y="317.3" font-weight="400">ORCL</text>
+<circle cx="342.5" cy="253.2" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="293.8" cy="224.6" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="245.0" cy="217.6" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="245.0" cy="275.5" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="293.8" cy="250.6" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="293.8" cy="311.2" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="212.5" cy="295.2" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="212.5" cy="303.4" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="196.2" cy="214.8" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="212.5" cy="306.1" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="293.8" cy="284.8" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="245.0" cy="218.1" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="375.0" cy="177.2" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="383.0" y="181.2" font-weight="400">2454.TW</text>
+<circle cx="245.0" cy="324.5" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="342.5" cy="235.4" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="293.8" cy="358.6" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="301.8" y="362.6" font-weight="400">6669.TW</text>
+<circle cx="245.0" cy="322.3" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="342.5" cy="318.4" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="350.5" y="322.4" font-weight="400">DLO</text>
+<circle cx="180.0" cy="355.9" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="456.2" cy="307.0" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="464.2" y="311.0" font-weight="400">VTEX</text>
+<circle cx="212.5" cy="349.1" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="220.5" y="353.1" font-weight="400">AFYA</text>
+<circle cx="245.0" cy="349.5" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="253.0" y="353.5" font-weight="400">PAX</text>
+<circle cx="180.0" cy="343.6" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="342.5" cy="281.8" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="180.0" cy="348.9" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="188.0" y="352.9" font-weight="400">CPA</text>
+<circle cx="212.5" cy="314.2" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="180.0" cy="341.7" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="261.2" cy="263.3" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="342.5" cy="293.2" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="407.5" cy="233.2" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="375.0" cy="283.8" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="375.0" cy="257.6" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="456.2" cy="27.6" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="464.2" y="31.6" font-weight="400">5274.TWO</text>
+<circle cx="456.2" cy="269.1" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="464.2" y="273.1" font-weight="400">2383.TW</text>
+<circle cx="342.5" cy="297.8" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="293.8" cy="247.1" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="293.8" cy="288.6" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="342.5" cy="261.8" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="245.0" cy="328.1" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="212.5" cy="327.4" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="342.5" cy="306.1" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="350.5" y="310.1" font-weight="400">1810.HK</text>
+<circle cx="293.8" cy="325.4" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="301.8" y="329.4" font-weight="400">300750.SZ</text>
+<circle cx="293.8" cy="322.6" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="301.8" y="326.6" font-weight="400">9992.HK</text>
+<circle cx="293.8" cy="271.7" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="293.8" cy="238.3" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="407.5" cy="202.1" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="342.5" cy="254.4" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="245.0" cy="250.4" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="293.8" cy="224.8" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="375.0" cy="216.0" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="293.8" cy="267.5" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="277.5" cy="127.7" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="285.5" y="131.7" font-weight="400">VACN</text>
+<circle cx="277.5" cy="260.6" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="245.0" cy="268.9" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="245.0" cy="281.5" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="196.2" cy="281.6" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="375.0" cy="293.0" r="7" fill="var(--c2)" opacity="1"/>
+<text class="lab" x="383.0" y="297.0" font-weight="700">RHM</text>
+<circle cx="277.5" cy="299.6" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="407.5" cy="231.7" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="375.0" cy="216.8" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="245.0" cy="243.5" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="277.5" cy="259.1" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="277.5" cy="276.5" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="293.8" cy="246.2" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="358.8" cy="293.7" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="375.0" cy="238.8" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="375.0" cy="339.3" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="383.0" y="343.3" font-weight="400">FLUT</text>
+<circle cx="228.8" cy="310.3" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="212.5" cy="327.1" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="407.5" cy="249.9" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="293.8" cy="254.3" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="342.5" cy="219.2" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="245.0" cy="310.3" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="228.8" cy="259.7" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="212.5" cy="230.0" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="245.0" cy="235.8" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="212.5" cy="304.4" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="310.0" cy="205.6" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="342.5" cy="167.0" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="350.5" y="171.0" font-weight="400">GEV</text>
+<circle cx="342.5" cy="264.1" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="456.2" cy="20.0" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="464.2" y="24.0" font-weight="400">HIMS</text>
+<circle cx="342.5" cy="302.8" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="350.5" y="306.8" font-weight="400">PODD</text>
+<circle cx="537.5" cy="250.2" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="545.5" y="254.2" font-weight="400">TMDX</text>
+<circle cx="245.0" cy="227.5" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="375.0" cy="188.2" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="407.5" cy="96.9" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="415.5" y="100.9" font-weight="400">SHOP</text>
+<circle cx="505.0" cy="173.0" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="513.0" y="177.0" font-weight="400">DASH</text>
+<circle cx="293.8" cy="20.0" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="301.8" y="24.0" font-weight="400">COIN</text>
+<circle cx="245.0" cy="252.7" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="245.0" cy="252.1" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="342.5" cy="255.9" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="407.5" cy="20.0" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="415.5" y="24.0" font-weight="400">CRWD</text>
+<circle cx="505.0" cy="20.0" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="513.0" y="24.0" font-weight="400">NET</text>
+<circle cx="375.0" cy="20.0" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="383.0" y="24.0" font-weight="400">DDOG</text>
+<circle cx="212.5" cy="267.6" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="407.5" cy="284.0" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="lab" x="415.5" y="288.0" font-weight="400">ALNY</text>
+<circle cx="375.0" cy="244.5" r="4" fill="var(--c1)" opacity="0.55"/>
+<circle cx="245.0" cy="259.2" r="4" fill="var(--c1)" opacity="0.55"/>
+<text class="ax" x="360" y="415" text-anchor="middle">croissance centrale retenue du BPA (hyp.), % par an</text>
+<text class="ax" x="14" y="210" transform="rotate(-90 14 210)" text-anchor="middle">P/E NTM</text>
+</svg><figcaption>Nuage P/E contre croissance — calculs du modèle portefeuille.py, 1er octobre 2026.</figcaption></figure>
+<h2>Ce que promet chaque ligne, et son point faible</h2>
+<p><strong>Nu Holdings (25 %).</strong> 139 millions de clients, un résultat net trimestriel passé au-dessus du milliard de dollars (+49 %), une rentabilité des fonds propres de 33 %, un coût de fonctionnement de 19,5 % des revenus quand les banques classiques dépassent 30 %. Le Mexique vient d'obtenir sa licence de banque, les États-Unis ont ouvert en septembre. Rendement espéré : +25,5 % par an ; même le scénario pessimiste reste positif (+2,1 %), parce que le titre cote 11,6 fois les bénéfices. Le point faible : le crédit brésilien. Le défaut des ménages est au record depuis 2011, les créances de Nu à plus de 90 jours montent (6,9 %), l'impôt sur les banques passe de 15 à 20 % d'ici 2028, et l'élection des 4 et 25 octobre peut changer les règles. Nous vendons si les créances 90+ dépassent 7,5 % deux trimestres de suite.</p>
+<p><strong>Rheinmetall (20 %).</strong> Obus de 155 mm, blindés, défense aérienne : les capacités que l'Europe n'a plus et qu'elle paie. Ventes +39 % au premier semestre, carnet potentiel de 80 milliards d'euros, 100 à 120 visés fin 2026, budget allemand de défense de 83 à 106 milliards entre 2026 et 2027. Le titre a pourtant perdu 52 % depuis son record : trésorerie négative à cause des acomptes, retards de livraison, frégate annulée, et chaque rumeur de paix lui coûte 5 %. Rendement espéré : +21,5 % par an avec une croissance de 20 %, la moitié de ce que dit le consensus. Le point faible : la paix, ou plutôt le relâchement budgétaire qui la suivrait. Le patron, lui, a acheté pour 9 millions d'euros d'actions en juin.</p>
+<p><strong>Broadcom (20 %).</strong> Le silicium sur mesure de l'IA : les TPU de Google, les puces de Meta, d'OpenAI et d'Anthropic, qui s'est engagé à hauteur de 161 milliards de dollars auprès de Broadcom selon son projet de prospectus. Chiffre d'affaires IA de 16,7 milliards au dernier trimestre (+221 %), guidance de 115 milliards en 2027 et 230 en 2028. Rendement espéré : +22,3 % par an. Le point faible : six clients seulement, une marge brute qui recule avec le mix, et Broadcom qui finance ses propres clients (jusqu'à 42 milliards prêtés à Anthropic, garanties sur des racks logés dans un véhicule de 35 milliards). Si le capex de l'IA plafonne en 2027, le doublement n'arrive pas.</p>
+<p><strong>Uber (20 %).</strong> 208 millions d'utilisateurs, 58 milliards de dollars de réservations par trimestre (+22 %), plus de 10 milliards de flux de trésorerie libre par an, et un titre en baisse de 17 % cette année. Le marché pense que Waymo (500 000 courses par semaine) et Tesla (Cybercab ouvert au public à Austin) se passeront d'Uber. Uber pense l'inverse : plus de 30 partenaires autonomes signés, 100 000 véhicules visés à partir de 2027, et le patron a acheté pour 10 millions de dollars d'actions le 10 septembre. Rendement espéré : +16,9 % par an avec seulement 16 % de croissance. Le point faible : c'est le dossier le moins sûr des cinq, et le rachat de Delivery Hero pour 14,8 milliards, financé par la dette, éloigne les rachats d'actions.</p>
+<p><strong>TSMC (15 %).</strong> 72,5 % du marché de la fonderie, une marge brute de 67,7 %, une croissance 2026 relevée à plus de 40 %, et un packaging « si tendu qu'il limite la croissance des clients », dit son patron. Quel que soit le gagnant entre NVIDIA et les puces sur mesure, c'est TSMC qui les fabrique. Rendement espéré : +15,4 % par an, le plus faible des cinq, parce que nous retenons 17 % de croissance quand le consensus dit 27 à 33 %, et parce que le titre cote au-dessus de sa zone d'achat (456,19 $ contre 340,94 $). Le point faible n'a pas de prix : Taïwan. D'où le poids le plus faible et l'achat en deux fois.</p>
+<h2>Le portefeuille face au Nasdaq 100 et aux alternatives</h2>
+<div class="tablewrap"><table><thead><tr><th></th><th>Portefeuille</th><th>Nasdaq 100 reconstitué (41 lignes, 78,6 % du poids)</th><th>Portefeuille équipondéré</th></tr></thead><tbody><tr><td>P/E des 12 prochains mois</td><td>16,3</td><td>22,9</td><td>—</td></tr><tr><td>Croissance du BPA 2027 (consensus, pondérée)</td><td>+40 %</td><td>+28 %</td><td>—</td></tr><tr><td>Croissance retenue 2027-2031 (hyp., pondérée)</td><td>+18,8 %</td><td>+15,1 %</td><td>—</td></tr><tr><td>PEG long terme</td><td>0,93</td><td>1,52</td><td>—</td></tr><tr><td>Bêta</td><td>1,39</td><td>1,59</td><td>—</td></tr><tr><td>Rendement annuel, scénario pessimiste</td><td>-4,2 %</td><td>-11,8 %</td><td>-4,8 %</td></tr><tr><td>Rendement annuel, scénario central</td><td>+21,8 %</td><td>+10,4 %</td><td>+21,3 %</td></tr><tr><td>Rendement annuel, scénario optimiste</td><td>+35,0 %</td><td>+22,6 %</td><td>+34,6 %</td></tr><tr><td><strong>Rendement annuel espéré (25/50/25)</strong></td><td><strong>+21,0 %</strong></td><td><strong>+9,9 %</strong></td><td>+20,5 %</td></tr><tr><td>Valeur de 100 investis en 2030 (espérance)</td><td>214</td><td>146</td><td>—</td></tr></tbody></table></div>
+<figure><svg class="chart" viewBox="0 0 720 360" role="img" aria-label="Rendement espéré et pire cas">
+<style>.lab{font:13px system-ui,sans-serif;fill:var(--fg)}.ax{font:11px system-ui,sans-serif;fill:var(--muted)}</style>
+<line x1="371.3" y1="30" x2="371.3" y2="335" stroke="var(--fg)"/>
+<text class="lab" x="222" y="62" text-anchor="end">Portefeuille 5 valeurs</text>
+<rect x="371.3" y="40" width="215.5" height="22" fill="var(--c2)" rx="4"/>
+<text class="ax" x="591.7" y="55">espéré +21,0 %</text>
+<rect x="371.3" y="64" width="27.1" height="16" fill="var(--c3)" rx="4" opacity="0.8"/>
+<text class="ax" x="403.4" y="75">pire cas +2,6 %</text>
+<text class="lab" x="222" y="120" text-anchor="end">Équipondéré 20 %</text>
+<rect x="371.3" y="98" width="210.3" height="22" fill="var(--c2)" rx="4"/>
+<text class="ax" x="586.6" y="113">espéré +20,5 %</text>
+<text class="lab" x="222" y="178" text-anchor="end">4 lignes (NU, RHM, AVGO, UBER)</text>
+<rect x="371.3" y="156" width="222.4" height="22" fill="var(--c2)" rx="4"/>
+<text class="ax" x="598.7" y="171">espéré +21,7 %</text>
+<rect x="334.7" y="180" width="36.6" height="16" fill="var(--c3)" rx="4" opacity="0.8"/>
+<text class="ax" x="376.3" y="191">pire cas -3,6 %</text>
+<text class="lab" x="222" y="236" text-anchor="end">3 lignes (NU, RHM, AVGO)</text>
+<rect x="371.3" y="214" width="237.4" height="22" fill="var(--c2)" rx="4"/>
+<text class="ax" x="613.6" y="229">espéré +23,1 %</text>
+<rect x="358.4" y="238" width="12.9" height="16" fill="var(--c3)" rx="4" opacity="0.8"/>
+<text class="ax" x="376.3" y="249">pire cas -1,3 %</text>
+<text class="lab" x="222" y="294" text-anchor="end">Nasdaq 100 reconstitué</text>
+<rect x="371.3" y="272" width="101.6" height="22" fill="var(--c2)" rx="4"/>
+<text class="ax" x="477.9" y="287">espéré +9,9 %</text>
+<rect x="250.5" y="296" width="120.7" height="16" fill="var(--c3)" rx="4" opacity="0.8"/>
+<text class="ax" x="376.3" y="307">pire cas -11,8 %</text>
+<text class="ax" x="230" y="22">Rendement annuel : espéré (25/50/25) et pire cas (pessimiste, croissance −5 pts, multiples figés)</text>
+</svg><figcaption>Barres comparatives — calculs du modèle portefeuille.py, 1er octobre 2026.</figcaption></figure>
+<p>Le tableau ci-dessus compare le portefeuille à l'indice reconstitué ligne par ligne, et le graphique place le portefeuille, ses variantes et l'indice sur une même échelle. Nous avons testé vingt-cinq autres compositions. Remplacer Broadcom par NVIDIA coûte un point d'espérance et ajoute du bêta ; par Eli Lilly ou Siemens Energy, deux à trois points et une probabilité de finir sous l'indice presque doublée ; par Alnylam, rien sur l'espérance, mais un dossier qui tient à un seul médicament. Remplacer TSMC par Alchip, le concepteur taïwanais d'ASIC, fait jeu égal (+21,4 % contre +21,0 %) depuis que le consensus large de FactSet a remplacé celui de trois analystes : nous ne l'avons pas fait, parce qu'Alchip dépend d'un client pour 60 % de ses ventes. Mettre un tiers du capital dans l'ETF Nasdaq 100 ramène l'espérance à +17,6 % sans améliorer les pires cas, puisque l'indice est à la fois plus cher et plus exposé à l'IA.</p>
+<h2>Les stress tests</h2>
+<div class="tablewrap"><table><thead><tr><th>Scénario (valeurs visées en pessimiste, le reste en central)</th><th>Portefeuille</th><th>Nasdaq 100 (central)</th><th>Écart</th></tr></thead><tbody><tr><td>tout en central</td><td>+21,8 %</td><td>+10,4 %</td><td>+11,4 pt</td></tr><tr><td>NU seul en pessimiste</td><td>+15,9 %</td><td>+10,4 %</td><td>+5,5 pt</td></tr><tr><td>RHM seul en pessimiste</td><td>+18,0 %</td><td>+10,4 %</td><td>+7,6 pt</td></tr><tr><td>AVGO seul en pessimiste</td><td>+18,0 %</td><td>+10,4 %</td><td>+7,6 pt</td></tr><tr><td>UBER seul en pessimiste</td><td>+18,3 %</td><td>+10,4 %</td><td>+7,9 pt</td></tr><tr><td>TSM seul en pessimiste</td><td>+19,0 %</td><td>+10,4 %</td><td>+8,7 pt</td></tr><tr><td>double choc (2 plus grosses lignes en pessimiste)</td><td>+11,4 %</td><td>+10,4 %</td><td>+1,0 pt</td></tr><tr><td>krach du thème dominant (Fintech émergente : NU)</td><td>+15,9 %</td><td>+10,4 %</td><td>+5,5 pt</td></tr><tr><td>tout en pessimiste</td><td>-4,2 %</td><td>+10,4 %</td><td>-14,5 pt</td></tr><tr><td>tout en optimiste</td><td>+35,0 %</td><td>+10,4 %</td><td>+24,6 pt</td></tr></tbody></table></div>
+<p>Le tableau se lit ainsi : chaque ligne met une ou plusieurs valeurs dans leur scénario pessimiste et laisse le reste en central. Une seule ligne qui déçoit ne fait pas perdre le portefeuille face à l'indice (+10,4 % en central). Deux lignes qui déçoivent ensemble, Nu et l'une des trois lignes à 20 %, le ramènent à +11,4 % : l'avantage disparaît presque. Un krach de l'IA (Broadcom et TSMC en pessimiste) laisse +15,0 %, et l'indice, à 38 % d'IA, ferait bien pire. Tout en pessimiste : -4,2 % par an, contre -11,8 % pour l'indice, parce que le portefeuille part de multiples plus bas. Le pire cas calculé (tout pessimiste, cinq points de croissance en moins sur chaque ligne, multiples figés) donne +2,6 % : ce n'est pas un rendement, c'est un plancher sous nos hypothèses, et un krach général des marchés, à la 2022, n'y figure pas.</p>
+<h2>Ce que nous n'achetons pas, et à quel prix nous le ferions</h2>
+<ul><li><strong>Micron, SK hynix, Samsung, SanDisk, Tokyo Electron, Disco</strong> : P/E de 4 à 8 sur des bénéfices de mémoire au record. Le patron de SK hynix attend 2027 comme « la pire année de l'histoire du secteur du point de vue de l'offre », mais les capex mémoire bondissent de 46 % en 2027 et plusieurs analystes voient la surcapacité dès 2028, dans notre horizon. Nous les reprendrions au creux du cycle, quand le P/E sera haut parce que les bénéfices auront chuté : c'est la règle de Lynch sur les cycliques.</li><li><strong>Eli Lilly</strong> : le consensus voit la croissance du bénéfice tomber de 29 % en 2027 à 10,5 % en 2028, sous la pression des prix (TrumpRx à 245 $ par mois, Medicare) et de Novo. À 25,9 fois les bénéfices, le PEG long terme ressort à 2,00. Nous y reviendrions sous 579,80 $, ou si le consensus 2028 remontait au-dessus de 20 %.</li><li><strong>Siemens Energy</strong> : carnet record de 162 milliards d'euros et éligible au PEA, mais une part de marché de 42 % contre 27 % historiquement, et un flux de trésorerie dopé par les acomptes. Barclays parle de pic de cycle. Nous l'achèterions sous 100 €.</li><li><strong>NVIDIA</strong> : PEG 1,14, rendement espéré +17,8 %. Remplacée par Broadcom, dont les contrats sont nominatifs et pluriannuels. Zone d'achat : 200,05 $.</li><li><strong>ASML, Vertiv, Schneider, Prysmian, GE Vernova</strong> : les goulots de l'équipement et de l'électricité, à 25-35 fois les bénéfices pour 12 à 18 % de croissance. Belles entreprises, prix plein.</li><li><strong>Apple, Microsoft, Meta, Costco, Walmart</strong> : les piliers de l'indice, PEG de 1,5 à 4. Ils font la stabilité du Nasdaq 100, pas sa surperformance.</li><li><strong>Alchip et Alnylam</strong> : les deux dossiers de la liste d'attente ont aussi eu leur deep dive. Alchip (PEG 1,07) vit à 60 % d'un seul client, Amazon, qui a déjà internalisé une partie de la conception ; Alnylam (PEG 0,97) vit à 88 % d'un seul médicament et vient d'abaisser sa guidance. Avec CATL, Sea, Xiaomi et Pop Mart, ils attendent leur déclencheur, détaillé dans le rapport complet.</li></ul>
+<h2>La critique : les questions qui fâchent</h2>
+<ol><li><strong>Cinq lignes, c'est un pari, pas une allocation.</strong> Une ligne à 25 %, quatre à 15-20 %. Deux déceptions simultanées effacent l'avantage (+11,4 % contre +10,4 %). C'est voulu : l'objectif est de battre l'indice, pas de dormir tranquille.</li><li><strong>Nos hypothèses font le résultat.</strong> Avec cinq points de croissance en moins sur chaque ligne et des multiples figés, le portefeuille rapporte +14,3 % au lieu de +21,0 %. Si le consensus 2027 de Nu ou de Rheinmetall est faux de dix points, la ligne perd quatre à cinq points de rendement.</li><li><strong>Deux lignes dépendent du même capex et de la même île.</strong> Broadcom et TSMC font 35 % du capital. Nous avons pris deux positions différentes dans la chaîne, mais un retournement du capex IA ou une crise à Taïwan les frapperait ensemble, et l'indice aussi.</li><li><strong>Uber est une conviction, pas une certitude.</strong> Le dossier lui donne 45 % de chances de réfuter l'ours. Il est dans le portefeuille parce que le prix escompte déjà l'échec et que le patron achète ; il en sort si les réservations ralentissent sous 15 %.</li><li><strong>Le change n'est pas compté.</strong> Quatre lignes cotent en dollars, Nu gagne en réaux, TSMC en dollars taïwanais. Une baisse de 10 % du dollar coûte 8 points de performance cumulée à un investisseur en euros.</li><li><strong>Les données ne sont pas toutes de la même qualité.</strong> Le consensus américain vient de Zacks (30/09/2026) ; celui de Rheinmetall, de compilations allemandes (deux sources divergent de 4 € sur 2026) ; celui de TSMC pour 2028 est converti du dollar taïwanais. Chaque chiffre du portefeuille a été recoupé sur deux sources au moins, et les écarts sont notés dans les dossiers.</li><li><strong>Le PEA n'y trouve pas son compte.</strong> Seule Rheinmetall est éligible. Les quatre autres vont en compte-titres, avec le prélèvement forfaitaire de 30 % et des retenues à la source de 15 % (États-Unis) à 21 % (Taïwan).</li><li><strong>Ce que le portefeuille rate si la mode continue.</strong> Si la mémoire reste au sommet deux ans de plus, si NVIDIA garde 85 % du calcul IA, si Anthropic et SpaceX entrent dans l'indice à 2 000 milliards, le Nasdaq 100 fera mieux que ses +22,6 % optimistes et nous courrons derrière.</li></ol>
+<h2>Mode d'emploi</h2>
+<p><strong>Acheter en deux fois</strong> : moitié maintenant, moitié avant la fin de l'année, pour quatre lignes. Pour Nu, en une fois si l'on accepte le risque de l'élection brésilienne, sinon après le 25 octobre. Pour TSMC, la seconde moitié après les résultats du 15 octobre, ou sous 340,94 $.</p>
+<p><strong>Surveiller cinq dates</strong> : 15 octobre (TSMC), fin octobre ou 3 novembre (Uber), 5 novembre (Rheinmetall, et fin de l'offre sur Delivery Hero), 12 novembre (Nu), 10 décembre (Broadcom). Et une par semaine en octobre : les sondages brésiliens.</p>
+<p><strong>Une règle de vente par ligne</strong> : Nu, créances à plus de 90 jours au-dessus de 7,5 % deux trimestres de suite ; Rheinmetall, cash-flow négatif sur l'année ou carnet potentiel sous 90 milliards ; Broadcom, chiffre d'affaires IA 2027 sous 95 milliards ; Uber, réservations sous 15 % de croissance deux trimestres de suite ; TSMC, marge brute sous 60 %.</p>
+<p><strong>Rééquilibrer une fois par an</strong>, au 30 septembre, ou dès qu'une ligne dépasse 35 % du total. Vendre la moitié d'une ligne dont le PEG dépasse 2 ; renforcer celle dont le PEG repasse sous 0,8 sans déclencher sa règle de vente.</p>
+<h2>Méthode et sources</h2>
+<p><strong>Les quatre mots à connaître.</strong> Le <em>BPA</em> est le bénéfice par action ; <em>non-GAAP</em> signifie qu'on retire les charges non monétaires (rémunération en actions, amortissements d'acquisitions) pour voir le bénéfice « d'exploitation » tel que les analystes le prévoient. Le <em>P/E</em> (price/earnings) est le cours divisé par le BPA : 16 fois, c'est seize années de bénéfices pour rembourser l'achat. <em>NTM</em> (next twelve months) désigne les douze prochains mois : nous prenons un quart de 2026 et trois quarts de 2027, puisque nous sommes au 1er octobre. Le <em>PEG</em> est le P/E divisé par la croissance annuelle du BPA en pour cent : Peter Lynch achète sous 1, considère 0,5 comme une aubaine et 2 comme un prix plein.</p>
+<p><strong>Comment nous calculons.</strong> Pour chaque valeur, trois scénarios de croissance du BPA sur quatre ans (pessimiste, central, optimiste, pondérés 25/50/25) et une règle de multiple de sortie : un P/E qui converge vers la croissance, sans jamais dépasser 1,5 fois cette croissance ni un plafond propre à chaque valeur. Le rendement annuel est le produit de la croissance des bénéfices, de la variation du multiple et des dividendes. Les cycliques (mémoire, équipement) ne reçoivent pas de PEG : leurs bénéfices de 2030 sont pris à 35, 65 ou 130 % du niveau actuel. Le Nasdaq 100 est reconstitué ligne par ligne avec les mêmes règles, à partir des poids du QQQ au 30/09/2026.</p>
+<p><strong>D'où viennent les chiffres.</strong> Consensus Zacks du 30/09/2026 pour les valeurs américaines et les ADR (via le dépôt public elgateaux/bourse) ; Yahoo Finance, MarketScreener, StockAnalysis, StocksGuide, aktien.guide et courtiers cités pour l'Europe, l'Asie et l'Amérique latine (recherches du 01/10/2026) ; cours de clôture et taux de change du 30/09/2026 (Google Finance). Les hypothèses de croissance 2027-2030 sont éditoriales, marquées « hyp. » et justifiées une par une dans le rapport complet. Tous les tableaux et graphiques de cet article sont générés par le programme <code>portefeuille.py</code> à partir des fichiers CSV ; aucun chiffre n'est recopié à la main.</p>
+<p><strong>Ce que ce n'est pas.</strong> Ce n'est pas un conseil en investissement personnalisé, et les scénarios ne sont pas des prévisions. Un investisseur qui suit ce portefeuille accepte des baisses de 30 à 50 % sur une ligne sans vendre, et un écart de performance avec l'indice qui peut être négatif pendant un an ou deux.</p>
+<footer>Titre de journal fictif : « La Gazette du PEG » ne correspond à aucune publication existante. Analyse quantitative et datée, qui ne constitue pas un conseil en investissement personnalisé. Chiffres générés depuis les CSV du modèle (portefeuille.py) ; sources citées avec leur date dans le rapport complet.</footer>
+</div>
+<script>
+function toggleTheme(){var r=document.documentElement;var cur=r.getAttribute('data-theme');var dark=window.matchMedia('(prefers-color-scheme: dark)').matches;var now=cur?cur:(dark?'dark':'light');var nxt=now==='dark'?'light':'dark';r.setAttribute('data-theme',nxt);try{localStorage.setItem('theme',nxt)}catch(e){}}
+try{var t=localStorage.getItem('theme');if(t){document.documentElement.setAttribute('data-theme',t)}}catch(e){}
+</script>
+</body></html>

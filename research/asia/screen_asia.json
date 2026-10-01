@@ -1,0 +1,3002 @@
+{
+  "as_of": "2026-10-01",
+  "region": "Asia",
+  "candidates": [
+    {
+      "ticker": "2330.TW",
+      "name": "Taiwan Semiconductor Manufacturing (TSMC)",
+      "exchange": "TWSE",
+      "listing_to_buy": "2330.TW (or NYSE ADR TSM)",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": "TSM",
+      "adr_ratio": "1 ADR = 5 ordinary shares",
+      "currency": "TWD",
+      "country": "Taiwan",
+      "sector": "Semiconductors (foundry)",
+      "megatrend": "AI accelerators / leading-edge foundry",
+      "price": 2505.0,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": 2010.0,
+      "fy_end_month": 12,
+      "eps_basis": "TW-GAAP/IFRS reported EPS (consensus, no large non-GAAP adjustments)",
+      "fy2025": null,
+      "fy2026": 97.6,
+      "fy2027": 124.4,
+      "fy2028": 152.6,
+      "fy2029": null,
+      "ltg_pct": 39.94,
+      "beta": 1.26,
+      "dividend_yield_pct": 1.05,
+      "w52_low": 1325.0,
+      "w52_high": 2535.0,
+      "price_target": null,
+      "zacks_rank": 1,
+      "zacks_rank_date": "2026-09 (ADR TSM; earlier reading #2)",
+      "cyclical": false,
+      "one_offs_note": "None flagged. Q2 2026 EPS +77% YoY is operational (AI demand, margin expansion).",
+      "latest_results_summary": "Q2 2026 (quarter to 30 Jun 2026): revenue NT$1,270.38bn (+36.0% YoY), net income NT$706.56bn, diluted EPS NT$27.25 (+77.4% YoY), US$4.31 per ADR; USD revenue $40.20bn (+33.7% YoY).",
+      "guidance": "FY2026 USD revenue growth 'slightly above 40%'. Q3 2026 revenue $44.6-45.8bn, gross margin 65-67%, operating margin 56-58% (July 2026).",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "Monopoly-like position in leading-edge AI silicon; consensus EPS +27.6% (2027) and +22.7% (2028) on a 2027 P/E around 20x gives PEG < 1.",
+      "key_risk": "Geopolitics (Taiwan Strait), export controls, AI capex digestion; price near 52-week high.",
+      "notes": "Price: gurufocus quotes 2,505.00 TWD 'as of Sep 30, 2026'; investing.com shows a previous close of 2,475.00 TWD as of 30 Sep (likely 29 Sep close). Consensus range 2026 80.7-108.5, 2027 103.1-144.5, 2028 120.3-206.5 TWD. 3-year EPS growth forecast 39.94% (fullratio). PEG readings on TSM: 1.37 (gurufocus 2026-09-18), 0.96, 0.99.",
+      "sources": [
+        {
+          "url": "https://valueinvesting.io/2330.TW/estimates",
+          "date": "2026-09",
+          "what": "consensus EPS 2026/2027/2028 TWD with ranges"
+        },
+        {
+          "url": "https://stockanalysis.com/stocks/tsm/forecast/",
+          "date": "2026-09",
+          "what": "EPS growth 47.3%/27.6%/22.7%"
+        },
+        {
+          "url": "https://www.gurufocus.com/stock/TPE:2330/summary",
+          "date": "2026-09-30",
+          "what": "price 2,505 TWD, beta 1.26"
+        },
+        {
+          "url": "https://www.investing.com/equities/taiwan-semicon",
+          "date": "2026-09-30",
+          "what": "previous close 2,475 TWD"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/0001046179/000104617926000451/a2q26e_withguidancexfinal.htm",
+          "date": "2026-07",
+          "what": "Q2 2026 results and Q3 guidance"
+        },
+        {
+          "url": "https://fullratio.com/stocks/nyse-tsm/peg-ratio",
+          "date": "2026-09",
+          "what": "3y EPS growth 39.94%, PEG"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/tsmc-tsm-registers-bigger-fall-214505555.html",
+          "date": "2026-09",
+          "what": "Zacks Rank #1"
+        }
+      ]
+    },
+    {
+      "ticker": "3661.TW",
+      "name": "Alchip Technologies",
+      "exchange": "TWSE",
+      "listing_to_buy": "3661.TW",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": null,
+      "adr_ratio": null,
+      "currency": "TWD",
+      "country": "Taiwan",
+      "sector": "Semiconductors (ASIC design services)",
+      "megatrend": "Custom AI accelerators (ASIC) for hyperscalers",
+      "price": 3770.0,
+      "price_date": "2026-09-24",
+      "market_cap_usd_bn": null,
+      "fy_end_month": 12,
+      "eps_basis": "TW-GAAP reported EPS (consensus; 3-4 analysts only)",
+      "fy2025": null,
+      "fy2026": 171.28,
+      "fy2027": 296.71,
+      "fy2028": 399.15,
+      "fy2029": null,
+      "ltg_pct": 37.2,
+      "beta": 1.14,
+      "dividend_yield_pct": 0.83,
+      "w52_low": 2480.0,
+      "w52_high": null,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "Q2 2026 revenue -18.7% YoY (customer program transition) despite +82.6% QoQ; 2026 consensus implies a very steep H2 ramp.",
+      "latest_results_summary": "Q2 2026 (26 Aug 2026): revenue $241.7M (+82.6% QoQ, -18.7% YoY vs $297.4M), net income $51.8M (+20.7% YoY), EPS NT$20.01 vs NT$19.91 forecast. N3 AI accelerator entered mass production late May 2026.",
+      "guidance": "July 2026 revenue a company record; management expects sequential growth in Q3 and Q4 2026. Next-generation N2 program described as a 'much larger opportunity' (market scale compared with $80-100bn).",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "Pure play on custom AI ASIC ramp (N3 then N2 programs); consensus EPS +73% in 2027 and +35% in 2028 on a 2027 P/E around 13x gives one of the lowest PEGs in Asia.",
+      "key_risk": "Extreme customer concentration (single hyperscaler program), lumpy revenue, thin analyst coverage (3-4 estimates), beta up to 2.18 per some sources.",
+      "notes": "No 30 Sep 2026 close found; closes: 3,665 (21 Sep), 3,715 (22 Sep), 3,770 (24 Sep). Market cap TWD 336.11bn (stockanalysis). Beta 1.14 (other source 2.18). Dividend yield 0.83-1.2%, annual dividend 34.41 TWD.",
+      "sources": [
+        {
+          "url": "https://www.stockopedia.com/share-prices/alchip-technologies-TPE:3661/",
+          "date": "2026-09",
+          "what": "consensus EPS 2026 171.28 (4), 2027 296.71 (3), 2028 399.15 (3)"
+        },
+        {
+          "url": "https://simplywall.st/stocks/tw/semiconductors/twse-3661/alchip-technologies-shares/future",
+          "date": "2026-09",
+          "what": "EPS growth 37.2% pa"
+        },
+        {
+          "url": "https://www.globenewswire.com/news-release/2026/08/26/3351381/0/en/alchip-technologies-reports-2026-second-quarter-financial-results.html",
+          "date": "2026-08-26",
+          "what": "Q2 2026 results"
+        },
+        {
+          "url": "https://ca.investing.com/news/transcripts/earnings-call-transcript-alchip-q2-2026-tops-eps-view-as-ai-ramp-drives-growth-93CH-4800784",
+          "date": "2026-08",
+          "what": "call: July record, N2 opportunity"
+        },
+        {
+          "url": "https://companiesmarketcap.com/alchip-technologies/stock-price-history/",
+          "date": "2026-09-24",
+          "what": "price history Sep 2026"
+        },
+        {
+          "url": "https://stockanalysis.com/quote/tpe/3661/statistics/",
+          "date": "2026-09",
+          "what": "market cap, 52w low, beta, yield"
+        }
+      ]
+    },
+    {
+      "ticker": "3711.TW",
+      "name": "ASE Technology Holding",
+      "exchange": "TWSE",
+      "listing_to_buy": "3711.TW (or NYSE ADR ASX)",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": "ASX",
+      "adr_ratio": "1 ADR = 2 ordinary shares",
+      "currency": "TWD",
+      "country": "Taiwan",
+      "sector": "Semiconductors (OSAT / advanced packaging)",
+      "megatrend": "AI advanced packaging & test (LEAP: CoWoS, EMIB)",
+      "price": 663.0,
+      "price_date": "2026-09-21",
+      "market_cap_usd_bn": null,
+      "fy_end_month": 12,
+      "eps_basis": "TW-GAAP reported EPS (consensus)",
+      "fy2025": null,
+      "fy2026": 13.0,
+      "fy2027": 17.01,
+      "fy2028": null,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 1.4,
+      "dividend_yield_pct": 1.13,
+      "w52_low": 143.0,
+      "w52_high": 729.0,
+      "price_target": 570.69,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": true,
+      "one_offs_note": "Q2 2026 included 'nonoperating items'; EPS +86% 2026 and +43% 2027 are consensus growth rates.",
+      "latest_results_summary": "Q2 2026 (30 Jul 2026): revenue NT$191.1bn (+10% QoQ, +27% YoY), net income NT$21.1bn (+49% QoQ, +180% YoY), diluted EPS NT$4.61.",
+      "guidance": "LEAP (advanced packaging) revenue tracking above $3.5bn in 2026, aim to double in 2027; general-segment growth raised to ~20% (from 13%); ATM +35% for 2026; 2026 capex raised to ~$10.5bn.",
+      "ceo_quote": {
+        "original": "We have a very awkward and peculiar position because we're capacity-constrained.",
+        "french": "Nous sommes dans une position très étrange et particulière, car nous sommes contraints par nos capacités.",
+        "date": "2026-07-30",
+        "source": "COO Dr. Tien Wu, Q2 2026 earnings call (finance.biggo.com)"
+      },
+      "thesis_short": "Capacity-constrained leader in AI packaging/test; consensus EPS +43% in 2027 on a 2027 P/E around 39x (PEG ~0.9); price above consensus target.",
+      "key_risk": "Price already above consensus target (570.69); OSAT cyclicality; capacity-constrained execution and heavy capex.",
+      "notes": "No 30 Sep 2026 close found; 663.00 TWD close on 21 Sep 2026 (Yahoo). Market cap NT$2.57T. 2028 consensus not found.",
+      "sources": [
+        {
+          "url": "https://www.stockopedia.com/share-prices/ase-technology-holding-co-TPE:3711/",
+          "date": "2026-09",
+          "what": "consensus EPS 2026 13.00 / 2027 17.01, target 570.69"
+        },
+        {
+          "url": "https://finance.biggo.com/news/TW_3711.TW_2026-07-30",
+          "date": "2026-07-30",
+          "what": "Q2 2026 call: results, LEAP, capex, Tien Wu quote"
+        },
+        {
+          "url": "https://finance.yahoo.com/quote/3711.TW/",
+          "date": "2026-09-21",
+          "what": "close 663.00 TWD"
+        },
+        {
+          "url": "https://www.tradingview.com/symbols/TWSE-3711/",
+          "date": "2026-09",
+          "what": "market cap, 52w range, beta, yield"
+        }
+      ]
+    },
+    {
+      "ticker": "3017.TW",
+      "name": "Asia Vital Components (AVC)",
+      "exchange": "TWSE",
+      "listing_to_buy": "3017.TW",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": null,
+      "adr_ratio": null,
+      "currency": "TWD",
+      "country": "Taiwan",
+      "sector": "Electronic components (thermal / liquid cooling)",
+      "megatrend": "AI server liquid cooling",
+      "price": 3400.0,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": null,
+      "fy_end_month": 12,
+      "eps_basis": "TW-GAAP reported EPS (consensus, 13-17 analysts)",
+      "fy2025": null,
+      "fy2026": 94.9,
+      "fy2027": 135.0,
+      "fy2028": 146.0,
+      "fy2029": null,
+      "ltg_pct": 40.9,
+      "beta": 1.33,
+      "dividend_yield_pct": 0.75,
+      "w52_low": 340.5,
+      "w52_high": 1585.0,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "None flagged.",
+      "latest_results_summary": "Q2 2026 (12 Aug 2026): revenue TWD 49.1bn (+66% YoY, flat QoQ), gross margin 32.57% (record), EPS TWD 24.37 (+21% QoQ, +137% YoY); server products 66% of sales.",
+      "guidance": "Stronger H2 2026; Q3 revenue expected to exceed Q2; liquid cooling adoption to widen; ASIC-related revenue to surpass GPU next year.",
+      "ceo_quote": {
+        "original": "This quarter's growth focus has shifted from revenue expansion to earnings quality.",
+        "french": "Ce trimestre, l'axe de croissance s'est déplacé de l'expansion du chiffre d'affaires vers la qualité des bénéfices.",
+        "date": "2026-08-12",
+        "source": "Senior Finance Manager Chen Yen-Liang, Q2 2026 call (investing.com transcript)"
+      },
+      "thesis_short": "Leading AI liquid-cooling supplier; 2027 consensus EPS +42% on a 2027 P/E around 25x (PEG ~0.6); growth slows to +8% in 2028 per consensus.",
+      "key_risk": "2028 consensus growth collapses to single digits; margin pressure from component costs; 52-week range in search results (340.5-1,585) is stale vs price 3,400, so data quality is doubtful.",
+      "notes": "52-week range reported by search (340.5-1,585) is inconsistent with the 3,400 close; treat as unreliable. Market cap 1.09T TWD. Stockopedia next-FY EPS 96.15.",
+      "sources": [
+        {
+          "url": "https://simplywall.st/stocks/tw/tech/twse-3017/asia-vital-components-shares/future",
+          "date": "2026-09",
+          "what": "consensus EPS 2026 94.9 / 2027 135 / 2028 146; growth 40.9% pa"
+        },
+        {
+          "url": "https://www.investing.com/equities/avc",
+          "date": "2026-09-30",
+          "what": "close 3,400 TWD"
+        },
+        {
+          "url": "https://finance.biggo.com/news/TW_3017.TW_2026-08-12",
+          "date": "2026-08-12",
+          "what": "Q2 2026 results and outlook"
+        },
+        {
+          "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-asia-vital-q2-2026-profit-surge-lifts-shares-54-93CH-4855587",
+          "date": "2026-08-12",
+          "what": "call transcript, quote"
+        },
+        {
+          "url": "https://www.investing.com/pro/TWSE:3017/explorer/marketcap",
+          "date": "2026-09",
+          "what": "market cap, beta, yield"
+        }
+      ]
+    },
+    {
+      "ticker": "5274.TWO",
+      "name": "ASPEED Technology",
+      "exchange": "TPEx (Taipei Exchange)",
+      "listing_to_buy": "5274.TWO",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": null,
+      "adr_ratio": null,
+      "currency": "TWD",
+      "country": "Taiwan",
+      "sector": "Semiconductors (server BMC chips)",
+      "megatrend": "AI/cloud server management silicon",
+      "price": 19835.0,
+      "price_date": "2026-09-24",
+      "market_cap_usd_bn": null,
+      "fy_end_month": 12,
+      "eps_basis": "TW-GAAP reported EPS (consensus, 16 analysts)",
+      "fy2025": null,
+      "fy2026": 188.0,
+      "fy2027": 275.0,
+      "fy2028": 446.0,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": null,
+      "dividend_yield_pct": null,
+      "w52_low": null,
+      "w52_high": null,
+      "price_target": 19311.06,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "None flagged.",
+      "latest_results_summary": "H1 2026: revenue NT$7,018M (+63% YoY), net income NT$3,256M (+115%), EPS NT$78.28 basic, gross margin 71% (vs 67%).",
+      "guidance": "Chairman expects revenue to grow significantly in 2026 and 2027 on agentic-AI server demand; AST2700 BMC ramping faster than usual; long-term gross margin target ~70%.",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "Near-monopoly in server BMC chips with strong pricing (AST2700); consensus EPS +46% (2027) and +62% (2028), but 2027 P/E around 72x gives PEG ~1.6.",
+      "key_risk": "Very rich multiple; price above consensus target; small-cap liquidity on TPEx; component cost pressure on margins.",
+      "notes": "Price 19,835 TWD on 24 Sep 2026 (marketscreener); no 30 Sep close found. 2026-2028 EPS from marketscreener consensus table.",
+      "sources": [
+        {
+          "url": "https://www.marketscreener.com/quote/stock/ASPEED-TECHNOLOGY-INC-15688898/finances/",
+          "date": "2026-09",
+          "what": "consensus EPS 2026 188 / 2027 275 / 2028 446"
+        },
+        {
+          "url": "https://www.marketscreener.com/quote/stock/ASPEED-TECHNOLOGY-INC-15688898/consensus/",
+          "date": "2026-09",
+          "what": "16 analysts Buy, target 19,311.06"
+        },
+        {
+          "url": "https://in.marketscreener.com/quote/stock/ASPEED-TECHNOLOGY-INC-15688898/",
+          "date": "2026-09-24",
+          "what": "price 19,835"
+        },
+        {
+          "url": "https://www.marketscreener.com/quote/stock/ASPEED-TECHNOLOGY-INC-15688898/",
+          "date": "2026-08",
+          "what": "H1 2026 results"
+        },
+        {
+          "url": "https://www.taipeitimes.com/News/biz/archives/2026/06/04/2003858478",
+          "date": "2026-06-04",
+          "what": "Chris Lin outlook"
+        }
+      ]
+    },
+    {
+      "ticker": "2383.TW",
+      "name": "Elite Material (EMC)",
+      "exchange": "TWSE",
+      "listing_to_buy": "2383.TW",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": null,
+      "adr_ratio": null,
+      "currency": "TWD",
+      "country": "Taiwan",
+      "sector": "Electronic materials (copper-clad laminate)",
+      "megatrend": "AI server PCB materials (high-end CCL)",
+      "price": 4920.0,
+      "price_date": "2026-09-29",
+      "market_cap_usd_bn": 52.65,
+      "fy_end_month": 12,
+      "eps_basis": "TW-GAAP reported EPS (consensus, 19 analysts)",
+      "fy2025": null,
+      "fy2026": 115.2,
+      "fy2027": 227.7,
+      "fy2028": 364.1,
+      "fy2029": null,
+      "ltg_pct": 36.65,
+      "beta": 1.68,
+      "dividend_yield_pct": 0.5,
+      "w52_low": 1085.0,
+      "w52_high": 6470.0,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "None flagged.",
+      "latest_results_summary": "Q2 2026 (30 Jul 2026): sales TWD 47,275.19M vs 22,507.69M a year earlier; net income TWD 9,873.4M vs 3,477.88M; EPS TWD 27.55 vs 10.02; gross margin 33.9% (vs 29.4% in Q1). Ranked world No.1 CCL supplier by Prismark.",
+      "guidance": "Factories fully loaded; expects tight production, broad customer demand and expanding capacity to support growth over the coming year (no numeric guidance).",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "Dominant high-end CCL supplier for AI servers; consensus EPS +98% (2027) and +60% (2028) on a 2027 P/E around 22x gives PEG ~0.2-0.4.",
+      "key_risk": "Stock already 4.5x off its 52-week low with beta ~1.7; AI server capex digestion; material-spec changes (glass substrate) could bypass CCL.",
+      "notes": "Price 4,920 = previous close as of 29 Sep 2026 (investing.com); no explicit 30 Sep close. 2026 range 108.84-129.53 (valueinvesting). Market cap 1.76T TWD (~$52.65B). Foreign broker target NT$10,200 (biggo, broker-specific).",
+      "sources": [
+        {
+          "url": "https://stockanalysis.com/quote/tpe/2383/forecast/",
+          "date": "2026-09",
+          "what": "consensus EPS 2026 115.2 (19), 2027 227.7 (19), 2028 364.1 (9); growth 181.8%/97.7%/59.9%"
+        },
+        {
+          "url": "https://valueinvesting.io/2383.TW/estimates",
+          "date": "2026-09",
+          "what": "2026 range 108.84-129.53"
+        },
+        {
+          "url": "https://www.investing.com/equities/elite-matl",
+          "date": "2026-09-29",
+          "what": "previous close 4,920"
+        },
+        {
+          "url": "https://www.digitimes.com/news/a20260730PD224/elite-material-demand-materials-capacity-sales.html",
+          "date": "2026-07-30",
+          "what": "Q2 2026 record result, outlook"
+        },
+        {
+          "url": "https://www.marketscreener.com/news/elite-material-co-ltd-reports-earnings-results-for-the-second-quarter-and-six-months-ended-june-3-ce7f51d3d08bf321",
+          "date": "2026-07",
+          "what": "Q2 2026 figures"
+        },
+        {
+          "url": "https://stockanalysis.com/quote/tpe/2383/market-cap/",
+          "date": "2026-09",
+          "what": "market cap"
+        },
+        {
+          "url": "https://simplywall.st/stocks/tw/tech/twse-2383/elite-material-shares",
+          "date": "2026-09",
+          "what": "earnings growth 36.65% pa"
+        }
+      ]
+    },
+    {
+      "ticker": "3037.TW",
+      "name": "Unimicron Technology",
+      "exchange": "TWSE",
+      "listing_to_buy": "3037.TW",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": null,
+      "adr_ratio": null,
+      "currency": "TWD",
+      "country": "Taiwan",
+      "sector": "PCB / IC substrates",
+      "megatrend": "AI GPU/ASIC ABF substrates",
+      "price": 1175.0,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": null,
+      "fy_end_month": 12,
+      "eps_basis": "TW-GAAP reported EPS (Yahoo consensus 15-16 analysts; likely stale vs Q2 run-rate)",
+      "fy2025": null,
+      "fy2026": 15.47,
+      "fy2027": 31.23,
+      "fy2028": null,
+      "fy2029": null,
+      "ltg_pct": 64.7,
+      "beta": 2.31,
+      "dividend_yield_pct": 0.17,
+      "w52_low": 144.87,
+      "w52_high": 1230.0,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": true,
+      "one_offs_note": "Q2 2025 EPS was only NT$0.02 (trough), so YoY growth rates are off a depressed base.",
+      "latest_results_summary": "Q2 2026 (29 Jul 2026): net sales NT$42,890M (+15% QoQ, +32% YoY), net income NT$13,342M (+148% YoY), EPS NT$8.45 (Q1: 3.28; Q2 2025: 0.02); gross margin 24.8% (+6.8pt QoQ); AI data-center 61% of revenue.",
+      "guidance": "Q3 2026 revenue and gross margin to grow from Q2; AI share of substrates could reach 70% in H2; 2026 capex raised to >NT$53.7bn plus NT$17.5bn long-lead equipment.",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "Substrate leader for AI GPUs/ASICs; consensus 2027 EPS +102% on 2027 P/E ~38x (PEG ~0.4), and H1 2026 EPS (11.73) already exceeds the stale 2026 consensus of 15.47.",
+      "key_risk": "Highly cyclical substrate pricing (beta >2, EPS went to ~0 in 2025); heavy capex; stock 8x off its 52-week low.",
+      "notes": "Yahoo consensus (2026 15.47, range 11.84-21.12; 2027 31.23, range 21.27-50.49) looks stale relative to Q2 2026 EPS 8.45. Market cap 1.93-1.945T TWD. Beta 2.51 / 2.31 / 1.80 depending on source. LTG 64.7% EPS pa (simplywall, Feb 2026).",
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/quote/3037.TW/analysis/",
+          "date": "2026-09",
+          "what": "consensus EPS 2026 15.47 (16), 2027 31.23 (15)"
+        },
+        {
+          "url": "https://stockanalysis.com/quote/tpe/3037/history/",
+          "date": "2026-09-30",
+          "what": "close 1,175 TWD"
+        },
+        {
+          "url": "https://finance.biggo.com/quote/3037.TW/earnings-call/TW_3037.TW_2026-07-29",
+          "date": "2026-07-29",
+          "what": "Q2 2026 results and guidance"
+        },
+        {
+          "url": "https://stockanalysis.com/quote/tpe/3037/statistics/",
+          "date": "2026-09",
+          "what": "market cap, 52w, beta, yield"
+        },
+        {
+          "url": "https://simplywall.st/stocks/tw/tech/twse-3037/unimicron-technology-shares/future",
+          "date": "2026-02",
+          "what": "EPS growth 64.7% pa"
+        }
+      ]
+    },
+    {
+      "ticker": "2454.TW",
+      "name": "MediaTek",
+      "exchange": "TWSE",
+      "listing_to_buy": "2454.TW",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": null,
+      "adr_ratio": null,
+      "currency": "TWD",
+      "country": "Taiwan",
+      "sector": "Semiconductors (fabless)",
+      "megatrend": "AI ASIC for cloud + edge AI SoCs",
+      "price": 4920.0,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": null,
+      "fy_end_month": 12,
+      "eps_basis": "TW-GAAP reported EPS (consensus for 2026; 2027 only broker estimates)",
+      "fy2025": null,
+      "fy2026": 66.31,
+      "fy2027": null,
+      "fy2028": null,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": null,
+      "dividend_yield_pct": null,
+      "w52_low": null,
+      "w52_high": null,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "None flagged.",
+      "latest_results_summary": "Q2 2026 call (Yahoo summary): AI ASIC momentum drives record results; ASIC revenue doubled, triggering a two-day limit-up (biggo).",
+      "guidance": "AI ASIC revenue could reach up to $12.3bn next year (broker/industry estimate, chipsourcetek); foreign brokers model 2027 EPS 'doubling'.",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "Re-rated on cloud AI ASIC wins; but no 2027 consensus found and price (4,920) implies ~74x 2026 EPS, so PEG cannot be computed honestly.",
+      "key_risk": "Valuation already discounts the ASIC ramp; smartphone SoC cycle; data gap for 2027/2028 consensus.",
+      "notes": "Re-check requested: no 2027/2028 consensus found in two searches. Broker 2027 EPS estimates seen: 122 TWD, 118.6, Goldman Sachs 122.72, 141.06 (biggo). Alternative 2026 consensus 69.91 (stocksguide), range 59.86-71.99 (valueinvesting). Note the 30 Sep close 4,920.00 TWD coincides with Elite Material's figure; confirmed by a second search (investing historical) but treat with caution. Market cap reported above NT$5T.",
+      "sources": [
+        {
+          "url": "https://valueinvesting.io/2454.TW/estimates",
+          "date": "2026-09",
+          "what": "2026 consensus 66.31 (59.86-71.99); 2027 not available"
+        },
+        {
+          "url": "https://stockanalysis.com/quote/tpe/2454/",
+          "date": "2026-09-30",
+          "what": "close 4,920 TWD"
+        },
+        {
+          "url": "https://www.investing.com/equities/mediatek-historical-data",
+          "date": "2026-09-30",
+          "what": "close 4,920 TWD"
+        },
+        {
+          "url": "https://finance.biggo.com/news/WcIh8p0BYH_ypPqOhLYa",
+          "date": "2026-09",
+          "what": "ASIC revenue doubling, NT$5,000 target, 2027 EPS broker estimates"
+        },
+        {
+          "url": "https://finance.yahoo.com/technology/ai/articles/mediatek-inc-tpe-2454-q2-010316865.html",
+          "date": "2026-07",
+          "what": "Q2 2026 call highlights"
+        }
+      ]
+    },
+    {
+      "ticker": "6857.T",
+      "name": "Advantest",
+      "exchange": "TSE Prime",
+      "listing_to_buy": "6857.T (OTC ADR ATEYY)",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": "ATEYY",
+      "adr_ratio": "1 ADR = 1 ordinary share (unsponsored OTC)",
+      "currency": "JPY",
+      "country": "Japan",
+      "sector": "Semiconductor test equipment",
+      "megatrend": "AI accelerator / HBM testing",
+      "price": 34270.0,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": null,
+      "fy_end_month": 3,
+      "eps_basis": "IFRS reported EPS (consensus, 28 analysts)",
+      "fy2025": null,
+      "fy2026": null,
+      "fy2027": 653.08,
+      "fy2028": 815.89,
+      "fy2029": null,
+      "ltg_pct": 19.9,
+      "beta": null,
+      "dividend_yield_pct": null,
+      "w52_low": 14470.0,
+      "w52_high": 38730.0,
+      "price_target": 42138.1,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": true,
+      "one_offs_note": "None flagged; FY2027 includes a management-flagged 'temporary digestion period' in H2.",
+      "latest_results_summary": "Q1 FY2027 (Apr-Jun 2026, reported 29 Jul 2026): sales ¥367.5bn (+39.3% YoY, +12.0% QoQ), net income ¥174.8bn (+93.8%), net margin 47.6%.",
+      "guidance": "FY to March 2027 raised: sales ¥1,714.0bn (+51.9%), operating income ¥846.0bn, net income ¥660.0bn (record); temporary digestion in H2 then re-acceleration.",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "Dominant SoC/HBM tester; FY2028 EPS +25% but FY2027 P/E ~52x gives PEG ~2; expensive for Lynch unless FY2028 estimates keep rising.",
+      "key_risk": "Test-equipment cyclicality (digestion flagged for H2 FY2027); 52-week range 14,470-38,730 shows volatility; price near high.",
+      "notes": "Fiscal year ends March: fy2027 = year ending Mar 2027 (653.08, range 359.37-895.97), fy2028 = Mar 2028 (815.89). LTG 19.9%/19.5% EPS pa (simplywall). Market cap ¥24.80T. 35 analysts; target 42,138.1 (23,000-55,000).",
+      "sources": [
+        {
+          "url": "https://stocksguide.com/en/forecast/Advantest-JP3122400009",
+          "date": "2026-09",
+          "what": "consensus EPS FY2027 653.08, FY2028 815.89, 28 analysts"
+        },
+        {
+          "url": "https://www.investing.com/equities/advantest-corp.-historical-data",
+          "date": "2026-09-30",
+          "what": "close 34,270 JPY"
+        },
+        {
+          "url": "https://www.investing.com/news/company-news/advantest-q1-fy26-slides-record-results-raised-guidance-on-ai-demand-93CH-4821155",
+          "date": "2026-07-29",
+          "what": "Q1 results, raised guidance"
+        },
+        {
+          "url": "https://simplywall.st/stocks/jp/semiconductors/tse-6857/advantest-shares/future",
+          "date": "2026-09",
+          "what": "EPS growth 19.9% pa"
+        },
+        {
+          "url": "https://www.gurufocus.com/stock/TSE:6857/summary",
+          "date": "2026-09",
+          "what": "52w range, market cap, price target"
+        }
+      ]
+    },
+    {
+      "ticker": "8035.T",
+      "name": "Tokyo Electron",
+      "exchange": "TSE Prime",
+      "listing_to_buy": "8035.T (OTC ADR TOELY)",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": "TOELY",
+      "adr_ratio": "1 ADR = 0.5 ordinary share (pre-split; check post-split)",
+      "currency": "JPY",
+      "country": "Japan",
+      "sector": "Semiconductor equipment",
+      "megatrend": "AI-driven WFE upcycle (DRAM/HBM, leading-edge logic)",
+      "price": 11815.0,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": 161.95,
+      "fy_end_month": 3,
+      "eps_basis": "J-GAAP reported EPS (consensus, PRE-SPLIT basis)",
+      "fy2025": null,
+      "fy2026": null,
+      "fy2027": 1624.53,
+      "fy2028": null,
+      "fy2029": null,
+      "ltg_pct": 19.5,
+      "beta": null,
+      "dividend_yield_pct": 1.19,
+      "w52_low": 5155.0,
+      "w52_high": 16252.0,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": true,
+      "one_offs_note": "5-for-1 stock split (record date 30 Sep 2026, effective 1 Oct 2026): price shown is split-adjusted, EPS consensus is pre-split. Multiply price by 5 (or divide EPS by 5) before computing P/E.",
+      "latest_results_summary": "Management raised WFE market outlook to $150bn+ in 2026 and $190bn+ in 2027 (20%+ growth) and targets FY2027 sales of ¥3T+ (from search summary; no quarterly figures retrieved).",
+      "guidance": "FY to March 2027 sales ¥3T+; WFE market $190bn+ in 2027.",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "Core WFE play; consensus FY2027 EPS +16% and LTG ~19.5% pa; on split-consistent numbers P/E around 36x gives PEG ~1.9.",
+      "key_risk": "WFE cyclicality and China exposure; split creates data confusion across providers.",
+      "notes": "Consensus FY2027 1,624.53 (range 1,461.90-1,887.05, stocksguide) or 1,681 (stockopedia) or 1,480 (+16%, simplywall) - all pre-split. FY2028 consensus not found. Market cap ¥25.81T ($161.95B as of Aug 2026). Split-adjusted 52w range 5,155-16,252.",
+      "sources": [
+        {
+          "url": "https://stocksguide.com/en/forecast/Tokyo-Electron-JP3571400005",
+          "date": "2026-09",
+          "what": "FY2027 EPS 1,624.53 (1,461.90-1,887.05)"
+        },
+        {
+          "url": "https://www.tel.com/news/ir/2026/qncnjq00000000ld-att/20260529_001_e.pdf",
+          "date": "2026-05-29",
+          "what": "5-for-1 split notice, effective 2026-10-01"
+        },
+        {
+          "url": "https://en.macromicro.me/series/2761/jp-8035_jpx-close",
+          "date": "2026-09-30",
+          "what": "close 11,815 (split-adjusted)"
+        },
+        {
+          "url": "https://simplywall.st/stocks/mx/semiconductors/bmv-8035-n/tokyo-electron-shares/future",
+          "date": "2026-09",
+          "what": "earnings growth 19.5% pa; FY2027 EPS 1,480 (+16%)"
+        },
+        {
+          "url": "https://companiesmarketcap.com/tokyo-electron/marketcap/",
+          "date": "2026-08",
+          "what": "market cap $161.95B"
+        },
+        {
+          "url": "https://stockanalysis.com/quote/tyo/8035/dividend/",
+          "date": "2026-09",
+          "what": "dividend 149.60, yield 1.19%"
+        }
+      ]
+    },
+    {
+      "ticker": "6146.T",
+      "name": "DISCO Corporation",
+      "exchange": "TSE Prime",
+      "listing_to_buy": "6146.T",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": "DSCSY",
+      "adr_ratio": "unsponsored OTC ADR",
+      "currency": "JPY",
+      "country": "Japan",
+      "sector": "Semiconductor equipment (dicing/grinding)",
+      "megatrend": "AI/HBM wafer processing (grinders, dicers)",
+      "price": 54220.0,
+      "price_date": "2026-09-25",
+      "market_cap_usd_bn": null,
+      "fy_end_month": 3,
+      "eps_basis": "J-GAAP reported EPS (consensus, 16-21 analysts)",
+      "fy2025": null,
+      "fy2026": null,
+      "fy2027": 1335.8,
+      "fy2028": null,
+      "fy2029": null,
+      "ltg_pct": 15.78,
+      "beta": null,
+      "dividend_yield_pct": null,
+      "w52_low": null,
+      "w52_high": null,
+      "price_target": 79810.0,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": true,
+      "one_offs_note": "None flagged.",
+      "latest_results_summary": "Q1 FY2027 (Apr-Jun 2026, 23 Jul 2026): net sales ¥114.3bn (+27.1%), operating income ¥49,033M (+42.2%), net income ¥34.2bn (+44.0%), EPS ¥315.51 (vs 219.23); gross margin 71.4%.",
+      "guidance": "Q2 FY2027 forecast: sales ¥128.5bn, operating income ¥55.9bn, net income ¥39.6bn; H1 sales ¥242.8bn (+24.8%). Dividend forecast raised.",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "High-margin HBM/AI tooling; consensus FY2027 EPS 1,335.8 (another source: 1,716 for calendar 2027, +28%); P/E ~40x with LTG ~16% gives PEG > 2.",
+      "key_risk": "Expensive vs LTG; equipment cyclicality; FY2028 consensus not found.",
+      "notes": "FY2027 = year ending Mar 2027: 1,335.8 (range 1,141.7-1,599.66). Simplywall quotes 'per-share earnings +28% to ¥1,716 for 2027' (calendar basis). Price: 54,220 close on 25 Sep 2026; no 30 Sep close found. Target ¥79,810 (21 analysts S&P). LTG 15.78%/16.1% pa.",
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/quote/6146.T/analysis/",
+          "date": "2026-09",
+          "what": "consensus EPS FY2027 1,335.8 (16 analysts)"
+        },
+        {
+          "url": "https://www.webull.com/news/15290568693785600",
+          "date": "2026-08",
+          "what": "EPS 2027 1,716 (+28%), 21 analysts"
+        },
+        {
+          "url": "https://stockanalysis.com/quote/tyo/6146/forecast/",
+          "date": "2026-09",
+          "what": "target 79,810"
+        },
+        {
+          "url": "https://finance.yahoo.com/quote/6146.T/history/",
+          "date": "2026-09-25",
+          "what": "close 54,220"
+        },
+        {
+          "url": "https://note.com/kabubake/n/n70b070aeff0a?hl=en",
+          "date": "2026-07-23",
+          "what": "Q1 FY2027 results and Q2 forecast"
+        },
+        {
+          "url": "https://simplywall.st/stocks/jp/semiconductors/tse-6146/disco-shares",
+          "date": "2026-09",
+          "what": "earnings growth 15.78% pa"
+        }
+      ]
+    },
+    {
+      "ticker": "6920.T",
+      "name": "Lasertec",
+      "exchange": "TSE Prime",
+      "listing_to_buy": "6920.T",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": "LSRCF",
+      "adr_ratio": "OTC ordinary (no ADR ratio)",
+      "currency": "JPY",
+      "country": "Japan",
+      "sector": "Semiconductor inspection equipment (EUV mask)",
+      "megatrend": "EUV / High-NA mask inspection for 2nm and below",
+      "price": 41130.0,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": null,
+      "fy_end_month": 6,
+      "eps_basis": "J-GAAP reported EPS (consensus, 14-15 analysts)",
+      "fy2025": null,
+      "fy2026": 801.89,
+      "fy2027": 1018.59,
+      "fy2028": 1239.18,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": null,
+      "dividend_yield_pct": null,
+      "w52_low": null,
+      "w52_high": null,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": true,
+      "one_offs_note": "None flagged. Fiscal year ends June: fy2026 = year ended June 2026 (forecast EPS ¥801.89, from results); fy2027 = year ending June 2027.",
+      "latest_results_summary": "FY2026 (year to 30 Jun 2026, reported Aug 2026): revenue ¥230.5bn, operating profit ¥105.3bn, net profit ¥72bn; EPS ~¥801.89.",
+      "guidance": "FY2027 (to June 2027): revenue ¥290bn, operating margin 43%; orders guidance ¥300-400bn came in below investor expectations (>¥400bn).",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "Sole-source EUV mask inspection; consensus EPS +21% in FY2027 and +22% in FY2028 on a FY2027 P/E ~40x gives PEG ~1.9.",
+      "key_risk": "Order guidance disappointed; margin guidance below expectations (Morningstar); lumpy orders tied to a handful of customers.",
+      "notes": "Market cap ¥4.10T (1 Oct 2026). Price 41,130 on 30 Sep 2026 (Morningstar). 25.8% growth outlook cited by ad-hoc-news.",
+      "sources": [
+        {
+          "url": "https://stocksguide.com/en/forecast/Lasertec-JP3979200007",
+          "date": "2026-09",
+          "what": "consensus EPS FY2027 1,018.59, FY2028 1,239.18"
+        },
+        {
+          "url": "https://www.morningstar.com/stocks/xtks/6920/quote",
+          "date": "2026-09-30",
+          "what": "close 41,130"
+        },
+        {
+          "url": "https://m.investing.com/news/earnings/lasertec-fiscal-2026-results-meet-plans-2027-outlook-trails-estimates-93CH-4840556?ampMode=1",
+          "date": "2026-08",
+          "what": "FY2026 results, FY2027 outlook"
+        },
+        {
+          "url": "https://mlq.ai/stocks/6920.T/market-cap/",
+          "date": "2026-10-01",
+          "what": "market cap ¥4.10T"
+        }
+      ]
+    },
+    {
+      "ticker": "6525.T",
+      "name": "KOKUSAI ELECTRIC",
+      "exchange": "TSE Prime",
+      "listing_to_buy": "6525.T",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": "KOKSF",
+      "adr_ratio": "OTC ordinary",
+      "currency": "JPY",
+      "country": "Japan",
+      "sector": "Semiconductor equipment (batch ALD/CVD)",
+      "megatrend": "DRAM/HBM & 3D NAND deposition capex",
+      "price": 9578.0,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": null,
+      "fy_end_month": 3,
+      "eps_basis": "IFRS reported EPS (consensus; fiscal-year labelling by data provider, see notes)",
+      "fy2025": null,
+      "fy2026": null,
+      "fy2027": 189.65,
+      "fy2028": 258.1,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": null,
+      "dividend_yield_pct": null,
+      "w52_low": null,
+      "w52_high": null,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": true,
+      "one_offs_note": "Earlier full-year forecast was cut for ¥14bn of delayed equipment shipments pushed into the next fiscal year (timing shift, not a loss).",
+      "latest_results_summary": "June-2026 quarter: revenue ¥75bn (+46% YoY), operating margin 21% (-223bp). Management raised fiscal-year revenue guidance by 21% and operating-margin guidance by 389bp (Morningstar).",
+      "guidance": "Raised full-year revenue (+21%) and operating margin (+389bp) guidance after the June quarter.",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "Memory-capex leveraged ALD/CVD specialist; consensus EPS +36% in FY2028 on a FY2027 P/E ~50x gives PEG ~1.4.",
+      "key_risk": "Memory capex cyclicality, China exposure, shipment-timing volatility.",
+      "notes": "Stocksguide labels FY2027 189.65 / FY2028 258.10 (+36.09%); Kokusai's fiscal year ends March, so fy2027 = year ending Mar 2027 assumed. No beta/yield/52w found.",
+      "sources": [
+        {
+          "url": "https://stocksguide.com/en/forecast/KOKUSAI-ELECTRIC-JP3293330001",
+          "date": "2026-09",
+          "what": "EPS FY2027 189.65, FY2028 258.10"
+        },
+        {
+          "url": "https://en.kabutan.com/jp/stocks/6525",
+          "date": "2026-09-30",
+          "what": "close 9,578"
+        },
+        {
+          "url": "https://www.morningstar.com/company-reports/1494105-kokusai-electric-earnings-massive-guidance-raise-keeps-us-positive-near-term-fair-value-up-5",
+          "date": "2026-08",
+          "what": "guidance raise, June-quarter figures"
+        }
+      ]
+    },
+    {
+      "ticker": "4062.T",
+      "name": "Ibiden",
+      "exchange": "TSE Prime",
+      "listing_to_buy": "4062.T",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": "IBIDF",
+      "adr_ratio": "OTC ordinary",
+      "currency": "JPY",
+      "country": "Japan",
+      "sector": "IC package substrates",
+      "megatrend": "AI GPU/CPU package substrates",
+      "price": 11030.0,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": null,
+      "fy_end_month": 3,
+      "eps_basis": "IFRS reported EPS (consensus, 17 analysts)",
+      "fy2025": null,
+      "fy2026": 277.3,
+      "fy2027": 367.42,
+      "fy2028": null,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": null,
+      "dividend_yield_pct": null,
+      "w52_low": null,
+      "w52_high": null,
+      "price_target": 10184.0,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": true,
+      "one_offs_note": "None flagged.",
+      "latest_results_summary": "Q1 FY2027 (Apr-Jun 2026, 4 Aug 2026): revenue ¥123.2bn (+26.4%), operating profit ¥26.9bn, net profit ¥17.92bn (+40.8%); electronics segment OP ¥21.4bn on GPU/high-end CPU demand.",
+      "guidance": "FY to March 2027 raised: revenue ¥550bn (from 500), operating profit ¥127bn (from 90), net profit ¥84bn.",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "Key AI substrate supplier with guidance raised sharply; consensus FY2027 EPS +32% vs FY2026, but FY2028 growth only ~12% per investing.com; P/E ~30x on FY2027.",
+      "key_risk": "FY2028 growth deceleration (12.11% per consensus growth table); customer concentration (Nvidia/Intel/AMD); price above consensus target 10,184.",
+      "notes": "fy2026 = year ended Mar 2026 (277.3, consensus/actual per investing). fy2028 EPS value not found, only +12.11% growth. Price 11,030 close 30 Sep 2026.",
+      "sources": [
+        {
+          "url": "https://www.investing.com/equities/ibiden-co-ltd-consensus-estimates",
+          "date": "2026-09",
+          "what": "FY2026 277.3, FY2027 367.42 (17), FY2028 growth 12.11%"
+        },
+        {
+          "url": "https://stockanalysis.com/quote/tyo/4062/history/",
+          "date": "2026-09-30",
+          "what": "close 11,030"
+        },
+        {
+          "url": "https://www.investing.com/news/earnings/ibiden-q1-profit-surges-41-on-ai-chipmaking-boost-4832935",
+          "date": "2026-08-04",
+          "what": "Q1 results and raised guidance"
+        },
+        {
+          "url": "https://simplywall.st/stocks/jp/tech/tse-4062/ibidenltd-shares/news/ibiden-coltd-tse4062-released-earnings-last-week-and-analyst/amp",
+          "date": "2026-08",
+          "what": "target 10,184"
+        }
+      ]
+    },
+    {
+      "ticker": "5803.T",
+      "name": "Fujikura",
+      "exchange": "TSE Prime",
+      "listing_to_buy": "5803.T",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": "FKURF",
+      "adr_ratio": "OTC ordinary",
+      "currency": "JPY",
+      "country": "Japan",
+      "sector": "Optical fibre & cable",
+      "megatrend": "AI data-center optical connectivity",
+      "price": 5229.0,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": null,
+      "fy_end_month": 3,
+      "eps_basis": "J-GAAP reported EPS (consensus; share-basis ambiguity, see notes)",
+      "fy2025": null,
+      "fy2026": null,
+      "fy2027": 127.5,
+      "fy2028": 161.4,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": null,
+      "dividend_yield_pct": null,
+      "w52_low": null,
+      "w52_high": null,
+      "price_target": 7369.0,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": true,
+      "one_offs_note": "Guidance includes 'reduced impact from hydrogen-related factors'; provider EPS figures (127.5 vs 177) may differ by share basis after a corporate action.",
+      "latest_results_summary": "Q1 FY2027 (Apr-Jun 2026, Aug 2026): net sales ¥402,009M (+50.1%), operating profit ¥104,828M (+155.1%) on hyperscaler optical demand.",
+      "guidance": "FY to March 2027 raised: net sales ¥1,755.0bn (+48.4%), operating profit ¥432.0bn (+128.9%).",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "Hyperscaler optical-fibre winner with guidance more than doubling profit; consensus FY2028 EPS +27% on FY2027 P/E ~41x (PEG ~1.5) using marketscreener figures, but the 177 figure would give P/E ~30x.",
+      "key_risk": "Data-center optical demand digestion; conflicting EPS bases between providers; stock previously hit limit-down on results despite record profits.",
+      "notes": "Marketscreener: FY2027 127.5, FY2028 161.4. Stockopedia: next-FY consensus 177 with FY2027 EPS growth +87.39% and target 7,369 (47.8% above 4,986 on 26 Sep). Close 5,229 on 30 Sep 2026 (investing historical).",
+      "sources": [
+        {
+          "url": "https://www.marketscreener.com/quote/stock/FUJIKURA-LTD-6491074/finances/",
+          "date": "2026-09",
+          "what": "EPS FY2027 127.5, FY2028 161.4"
+        },
+        {
+          "url": "https://www.stockopedia.com/share-prices/fujikura-TYO:5803/",
+          "date": "2026-09-26",
+          "what": "next-FY EPS 177, target 7,369, price 4,986"
+        },
+        {
+          "url": "https://www.investing.com/equities/fujikura-ltd.-historical-data",
+          "date": "2026-09-30",
+          "what": "close 5,229"
+        },
+        {
+          "url": "https://pluang.com/en/news-feed/saham-fujikura-botol-ai-dan-peluang-pertumbuhan-laba",
+          "date": "2026-08",
+          "what": "Q1 FY2027 results and raised guidance"
+        }
+      ]
+    },
+    {
+      "ticker": "6501.T",
+      "name": "Hitachi",
+      "exchange": "TSE Prime",
+      "listing_to_buy": "6501.T (OTC ADR HTHIY)",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": "HTHIY",
+      "adr_ratio": "1 ADR = 0.1 ordinary share",
+      "currency": "JPY",
+      "country": "Japan",
+      "sector": "Industrial conglomerate (grid, digital, rail)",
+      "megatrend": "Power grids / data-center electrification + Lumada digital",
+      "price": 5536.0,
+      "price_date": "2026-09-28",
+      "market_cap_usd_bn": null,
+      "fy_end_month": 3,
+      "eps_basis": "IFRS reported EPS (consensus)",
+      "fy2025": null,
+      "fy2026": null,
+      "fy2027": 216.7,
+      "fy2028": 259.7,
+      "fy2029": null,
+      "ltg_pct": 20.04,
+      "beta": null,
+      "dividend_yield_pct": 1.01,
+      "w52_low": 3822.0,
+      "w52_high": 6039.0,
+      "price_target": 5964.29,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "Hitachi's EPS history includes large divestment gains in prior years (e.g. Hitachi Astemo/Metals); consensus FY2027 is 'statutory' per simplywall.",
+      "latest_results_summary": "Q1 FY2027 (Apr-Jun 2026, 29 Jul 2026): revenue ¥2,709.6bn (+20%), adjusted EBITA ¥323.5bn (+¥86.0bn, margin 11.9%); Lumada 43% of revenue.",
+      "guidance": "FY to March 2027 raised: revenue ¥11,700.0bn (+¥600bn), adjusted EBITA ¥1,520.0bn (+¥100bn).",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "Grid + digital compounder with LTG ~20%; FY2027 P/E ~25x, FY2028 EPS +20% gives PEG ~1.3.",
+      "key_risk": "Conglomerate execution; FX; valuation already re-rated (near 52-week high 6,039).",
+      "notes": "FY2027 consensus: 216.7 (stocksguide) or 206 (+16%/+15%, simplywall); FY2028 259.7. Erste FY2027 $1.38 vs consensus $1.37, FY2028 $1.65 (ADR). Close 5,536 on 28 Sep 2026; no 30 Sep close found. Market cap ¥24.83T.",
+      "sources": [
+        {
+          "url": "https://stocksguide.com/en/forecast/Hitachi-JP3788600009",
+          "date": "2026-09",
+          "what": "EPS FY2027 216.7, FY2028 259.7"
+        },
+        {
+          "url": "https://simplywall.st/stocks/jp/capital-goods/tse-6501/hitachi-shares/news/hitachi-ltd-just-recorded-a-13-eps-beat-heres-what-analysts",
+          "date": "2026-08",
+          "what": "statutory EPS 206 (+16%)"
+        },
+        {
+          "url": "https://www.investing.com/equities/hitachi,-ltd.",
+          "date": "2026-09-28",
+          "what": "close 5,536"
+        },
+        {
+          "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-hitachi-q1-2026-revenue-jumps-20-as-outlook-rises-93CH-4818987",
+          "date": "2026-07-29",
+          "what": "Q1 results, raised guidance"
+        },
+        {
+          "url": "https://stockanalysis.com/quote/tyo/6501/statistics/",
+          "date": "2026-09",
+          "what": "market cap, 52w, yield, EPS growth 20.04%"
+        }
+      ]
+    },
+    {
+      "ticker": "6861.T",
+      "name": "Keyence",
+      "exchange": "TSE Prime",
+      "listing_to_buy": "6861.T (OTC ADR KYCCF)",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": "KYCCF",
+      "adr_ratio": "OTC ordinary",
+      "currency": "JPY",
+      "country": "Japan",
+      "sector": "Factory automation sensors / machine vision",
+      "megatrend": "Factory automation & AI-enabled machine vision",
+      "price": 80480.0,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": null,
+      "fy_end_month": 3,
+      "eps_basis": "J-GAAP reported EPS (consensus, 16 analysts)",
+      "fy2025": null,
+      "fy2026": null,
+      "fy2027": 1979.79,
+      "fy2028": 2396.07,
+      "fy2029": null,
+      "ltg_pct": 9.7,
+      "beta": null,
+      "dividend_yield_pct": 0.68,
+      "w52_low": 51510.0,
+      "w52_high": 87920.0,
+      "price_target": 97866.67,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "None flagged.",
+      "latest_results_summary": "Q1 FY2027 (quarter to 20 Jun 2026, 28 Jul 2026): net sales ¥346.6bn (+32.8%), operating income ¥187.1bn (+44.7%, margin 54.0%), net income ¥139.1bn (+51.0%); overseas +39%.",
+      "guidance": "Keyence does not give numeric guidance; analyst consensus 'Strong Buy', target 97,866.67.",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "Best-in-class margins and 30%+ current growth, but consensus FY2028 EPS +21% and LTG only 9.7% pa on a FY2027 P/E ~41x gives PEG ~2-4; too expensive for Lynch.",
+      "key_risk": "Capex cycle normalisation; valuation; LTG below 15% threshold.",
+      "notes": "FY2027 range 1,819.72-2,338.04; FY2028 range 2,287.34-2,619.51 (investing). Erste FY2027 $14.41, FY2028 $16.04 (ADR). Market cap ¥19.52T.",
+      "sources": [
+        {
+          "url": "https://www.investing.com/equities/keyence-consensus-estimates",
+          "date": "2026-09",
+          "what": "consensus EPS FY2027 1,979.79, FY2028 2,396.07"
+        },
+        {
+          "url": "https://stockanalysis.com/quote/tyo/6861/",
+          "date": "2026-09-30",
+          "what": "close 80,480"
+        },
+        {
+          "url": "https://www.tipranks.com/news/company-announcements/keyence-delivers-33-sales-surge-and-51-profit-jump-in-first-quarter",
+          "date": "2026-07-28",
+          "what": "Q1 FY2027 results"
+        },
+        {
+          "url": "https://simplywall.st/stocks/jp/tech/tse-6861/keyence-shares/future",
+          "date": "2026-09",
+          "what": "EPS growth 9.7% pa"
+        },
+        {
+          "url": "https://stockanalysis.com/quote/tyo/6861/statistics/",
+          "date": "2026-09",
+          "what": "market cap, 52w, yield, target"
+        }
+      ]
+    },
+    {
+      "ticker": "8136.T",
+      "name": "Sanrio",
+      "exchange": "TSE Prime",
+      "listing_to_buy": "8136.T",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": "SNROF",
+      "adr_ratio": "OTC ordinary",
+      "currency": "JPY",
+      "country": "Japan",
+      "sector": "Character IP licensing",
+      "megatrend": "Global character IP / licensing (Hello Kitty etc.)",
+      "price": 1187.5,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": null,
+      "fy_end_month": 3,
+      "eps_basis": "J-GAAP reported EPS (consensus, POST 5:1 split basis for fy2027; fy2028 only available pre-split)",
+      "fy2025": null,
+      "fy2026": null,
+      "fy2027": 52.86,
+      "fy2028": null,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": null,
+      "dividend_yield_pct": null,
+      "w52_low": null,
+      "w52_high": null,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "5-for-1 stock split effective 1 Apr 2026 (record date 31 Mar 2026). Marketscreener EPS 249.1 (FY2027) / 294.5 (FY2028) are on the pre-split share count; simplywall 52.86 (+15%) is post-split.",
+      "latest_results_summary": "Q1 FY2027 (Apr-Jun 2026, 10 Aug 2026) results published; company FY3/2027 forecast: net sales ¥229.8bn (+18.4%), adjusted operating profit ¥88.8bn (+13.2%), net profit ¥63.8bn (+16.8%).",
+      "guidance": "FY to March 2027: sales ¥229.8bn (+18.4%), adjusted OP ¥88.8bn (+13.2%), net profit ¥63.8bn (+16.8%).",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "Global IP licensing compounder; consensus EPS +15% (FY2027) and ~+18% (FY2028, pre-split 294.5 vs 249.1) on a FY2027 P/E ~22x gives PEG ~1.3-1.5.",
+      "key_risk": "Hit-driven character cycle (Hello Kitty/Kuromi), China/Asia consumer demand, split-related data errors.",
+      "notes": "fy2028 left null: only pre-split figure 294.5 found (÷5 would be ~58.9, derived, not sourced). Price 1,187.5 close 30 Sep 2026; 1,212 on 18 Sep.",
+      "sources": [
+        {
+          "url": "https://simplywall.st/stocks/jp/retail/tse-8136/sanrio-shares/news/sanrio-company-ltd-tse8136-first-quarter-results-heres-what",
+          "date": "2026-08",
+          "what": "FY2027 EPS 52.86 (+15%), 12 analysts"
+        },
+        {
+          "url": "https://www.marketscreener.com/quote/stock/SANRIO-COMPANY-LTD-6491193/finances/",
+          "date": "2026-09",
+          "what": "EPS 2027 249.1, 2028 294.5 (pre-split basis)"
+        },
+        {
+          "url": "https://corporate.sanrio.co.jp/en/ir/assets/pdf/stock_benefit_en_260212.pdf",
+          "date": "2026-02-12",
+          "what": "5:1 split notice"
+        },
+        {
+          "url": "https://www.investing.com/equities/sanrio-co-ltd-historical-data",
+          "date": "2026-09-30",
+          "what": "close 1,187.5"
+        },
+        {
+          "url": "https://finance.biggo.com/news/ir_8136.T_20260810_524d50ed89b4",
+          "date": "2026-08-10",
+          "what": "Q1 FY2027 presentation, FY forecast"
+        }
+      ]
+    },
+    {
+      "ticker": "012450.KS",
+      "name": "Hanwha Aerospace",
+      "exchange": "KRX (KOSPI)",
+      "listing_to_buy": "012450.KS",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": null,
+      "adr_ratio": null,
+      "currency": "KRW",
+      "country": "South Korea",
+      "sector": "Defense & aerospace",
+      "megatrend": "Global defense rearmament (K9/Chunmoo exports, Europe/Middle East)",
+      "price": 1034000.0,
+      "price_date": "2026-09-28",
+      "market_cap_usd_bn": null,
+      "fy_end_month": 12,
+      "eps_basis": "K-IFRS reported EPS (consensus, 20-21 analysts)",
+      "fy2025": null,
+      "fy2026": 47865.61,
+      "fy2027": 59474.45,
+      "fy2028": 74543.0,
+      "fy2029": null,
+      "ltg_pct": 21.3,
+      "beta": 0.83,
+      "dividend_yield_pct": 0.66,
+      "w52_low": 783000.0,
+      "w52_high": 1655000.0,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "Consolidates Hanwha Ocean (shipbuilding) since 2024-25; results include shipbuilding and space (Nuri launch) segments.",
+      "latest_results_summary": "Q2 2026 (Aug 2026): revenue KRW 9.2929T (+47% YoY), operating profit KRW 1.3655T (+59%), first quarter above 1T won operating profit.",
+      "guidance": "Chunmoo 2026 delivery guidance raised from 50 to 80 units; H2 focus on Middle East and Europe orders.",
+      "ceo_quote": {
+        "original": "The second quarter saw strong growth, driven by robust performance in the land defense sector and stable results from Hanwha Ocean.",
+        "french": "Le deuxième trimestre a connu une forte croissance, portée par la solide performance de la défense terrestre et les résultats stables de Hanwha Ocean.",
+        "date": "2026-08",
+        "source": "Hanwha Aerospace official, Q2 2026 results (The Elec / Korea Herald)"
+      },
+      "thesis_short": "Korea's defense export champion; consensus EPS +24% (2027) and +25% (2028, Mirae) on a 2027 P/E ~17x gives PEG ~0.7, with beta 0.83.",
+      "key_risk": "Order timing (Poland, Middle East), shipbuilding cyclicality via Hanwha Ocean, stock 37% below its 52-week high after a sharp de-rating.",
+      "notes": "fy2028 74,543 is Mirae Asset's estimate (not consensus); Mirae 2026F 49,301 / 2027F 60,956. Price: 1,034,000 shown by marketscreener for 28 Sep 2026; Yahoo also shows 1,034,000 (+1.27%, previous close 1,021,000) around 1 Oct 2026. Market cap 51.81T KRW (30 Sep 2026). LTG EPS 21.3% pa (simplywall).",
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/quote/012450.KS/analysis/",
+          "date": "2026-09",
+          "what": "consensus EPS 2026 47,865.61 (20), 2027 59,474.45 (21)"
+        },
+        {
+          "url": "https://securities.miraeasset.com/bbs/download/2142495.pdf?attachmentId=2142495",
+          "date": "2026",
+          "what": "Mirae 2026F 49,301 / 2027F 60,956 / 2028F 74,543"
+        },
+        {
+          "url": "https://www.marketscreener.com/quote/stock/HANWHA-AEROSPACE-CO-LTD-6493920/quotes/",
+          "date": "2026-09-28",
+          "what": "close 1,034,000"
+        },
+        {
+          "url": "https://www.thelec.net/news/articleView.html?idxno=12727",
+          "date": "2026-08",
+          "what": "Q2 2026 results, quote"
+        },
+        {
+          "url": "https://stockanalysis.com/quote/krx/012450/market-cap/",
+          "date": "2026-09-30",
+          "what": "market cap 51.81T, 52w, beta, yield"
+        },
+        {
+          "url": "https://simplywall.st/stocks/kr/capital-goods/kose-a012450/hanwha-aerospace-shares/future",
+          "date": "2026-09",
+          "what": "EPS growth 21.3% pa"
+        }
+      ]
+    },
+    {
+      "ticker": "207940.KS",
+      "name": "Samsung Biologics",
+      "exchange": "KRX (KOSPI)",
+      "listing_to_buy": "207940.KS",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": null,
+      "adr_ratio": null,
+      "currency": "KRW",
+      "country": "South Korea",
+      "sector": "Biologics CDMO",
+      "megatrend": "Outsourced biologics manufacturing (antibodies, ADC, peptides)",
+      "price": 1391000.0,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": null,
+      "fy_end_month": 12,
+      "eps_basis": "K-IFRS reported EPS (consensus, 20-21 analysts)",
+      "fy2025": null,
+      "fy2026": 41170.33,
+      "fy2027": 49078.6,
+      "fy2028": 56966.0,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 0.21,
+      "dividend_yield_pct": null,
+      "w52_low": 1228000.0,
+      "w52_high": 1987000.0,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "Samsung Bioepis spin-off (2025) changed the consolidation perimeter; announced PolyPeptide acquisition by year-end 2026.",
+      "latest_results_summary": "Q2 2026 (23 Jul 2026): revenue KRW 1,321bn (+30.2% YoY), operating profit KRW 586bn (+22.9%).",
+      "guidance": "FY2026 revenue growth +15-20% YoY, targeting the upper end; Rockville (US) plant revenue recognition from Q3 2026.",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "Largest CDMO by capacity with US onshoring; consensus EPS +19% (2027) and +16% (2028, Mirae) on a 2027 P/E ~28x gives PEG ~1.5; low beta 0.21.",
+      "key_risk": "Biosecure/geopolitical shifts, pricing pressure, PolyPeptide integration; growth below 20%.",
+      "notes": "fy2028 56,966 from Mirae Asset report (not consensus); alternative set 40,821.19 / 47,797.61 / 60,321.53 (stockopedia). Market cap 64.391T KRW.",
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/quote/207940.KS/analysis/",
+          "date": "2026-09",
+          "what": "consensus EPS 2026 41,170.33 (20), 2027 49,078.6 (21)"
+        },
+        {
+          "url": "https://securities.miraeasset.com/bbs/download/2146125.pdf?attachmentId=2146125",
+          "date": "2026",
+          "what": "Mirae 2028 EPS 56,966"
+        },
+        {
+          "url": "https://www.investing.com/equities/samsung-biologics-co-ltd",
+          "date": "2026-09-30",
+          "what": "close 1,391,000"
+        },
+        {
+          "url": "https://samsungbiologics.com/media/company-news/samsung-biologics-reports-second-quarter-2026-financial-results",
+          "date": "2026-07-23",
+          "what": "Q2 2026 results, guidance"
+        },
+        {
+          "url": "https://finance.yahoo.com/quote/207940.KS/key-statistics/",
+          "date": "2026-09",
+          "what": "market cap, 52w, beta"
+        }
+      ]
+    },
+    {
+      "ticker": "267260.KS",
+      "name": "HD Hyundai Electric",
+      "exchange": "KRX (KOSPI)",
+      "listing_to_buy": "267260.KS",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": null,
+      "adr_ratio": null,
+      "currency": "KRW",
+      "country": "South Korea",
+      "sector": "Power equipment (transformers, switchgear)",
+      "megatrend": "AI data-center / grid electrification (North America)",
+      "price": 662000.0,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": 18.71,
+      "fy_end_month": 12,
+      "eps_basis": "K-IFRS reported EPS (consensus)",
+      "fy2025": null,
+      "fy2026": 27351.55,
+      "fy2027": 34360.17,
+      "fy2028": null,
+      "fy2029": null,
+      "ltg_pct": 22.0,
+      "beta": 0.85,
+      "dividend_yield_pct": 1.1,
+      "w52_low": 538000.0,
+      "w52_high": 1430000.0,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": true,
+      "one_offs_note": "None flagged.",
+      "latest_results_summary": "Q2 2026 (28 Jul 2026): sales KRW 1.1418T (+26% YoY), operating profit KRW 287.0bn (+37%); order backlog $8.49bn (+29%), Q2 new orders $1.44bn (+44%).",
+      "guidance": "'Stable growth to continue in the second half' (no numeric guidance found).",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "Transformer/switchgear supplier to US AI data centers with record backlog; consensus EPS +26% (2027) on a 2027 P/E ~19x gives PEG ~0.75; price 54% below 52-week high.",
+      "key_risk": "Transformer pricing cycle peak, US tariffs, 2028 consensus not found; stock halved from its high.",
+      "notes": "2026 range 24,880.82-29,032 (alt 26,697.60); 2027 range 30,336-37,863.11. 29 analysts (27 buy). Market cap 25.59T KRW ($18.71-22.62B depending on date). LTG 22% pa 3y (simplywall; alt 20.46%/28.7%). Beta 0.85 (TradingView) or 1.18 (Yahoo 5y).",
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/quote/267260.KS/analysis/",
+          "date": "2026-09",
+          "what": "consensus EPS 2026 27,351.55, 2027 34,360.17 with ranges"
+        },
+        {
+          "url": "https://in.investing.com/equities/hyundai-electric-energy-systems-historical-data",
+          "date": "2026-09-30",
+          "what": "close 662,000 (-2.79%)"
+        },
+        {
+          "url": "https://en.sedaily.com/finance/2026/07/28/hd-hyundai-electric-q2-operating-profit-jumps-373-percent",
+          "date": "2026-07-28",
+          "what": "Q2 2026 results, backlog"
+        },
+        {
+          "url": "https://stockanalysis.com/quote/krx/267260/",
+          "date": "2026-09",
+          "what": "market cap, 52w, beta, yield"
+        },
+        {
+          "url": "https://simplywall.st/stocks/kr/capital-goods/kose-a267260/hd-hyundai-electric-shares",
+          "date": "2026-09",
+          "what": "earnings growth 22% pa"
+        }
+      ]
+    },
+    {
+      "ticker": "079550.KS",
+      "name": "LIG Nex1 (LIG Defense & Aerospace)",
+      "exchange": "KRX (KOSPI)",
+      "listing_to_buy": "079550.KS",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": null,
+      "adr_ratio": null,
+      "currency": "KRW",
+      "country": "South Korea",
+      "sector": "Defense electronics / missiles",
+      "megatrend": "Air-defense exports (Cheongung-II / M-SAM to Middle East)",
+      "price": 682000.0,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": null,
+      "fy_end_month": 12,
+      "eps_basis": "K-IFRS reported EPS (Mirae Asset estimates; consensus next-FY 16,343 per Stockopedia)",
+      "fy2025": null,
+      "fy2026": 19037.0,
+      "fy2027": 28262.0,
+      "fy2028": null,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 0.75,
+      "dividend_yield_pct": 0.44,
+      "w52_low": 360000.0,
+      "w52_high": 1118000.0,
+      "price_target": 1067894.74,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "None flagged; company renamed LIG Defense & Aerospace on 5 Jan 2026.",
+      "latest_results_summary": "Q2 2026: revenue KRW 1.11T (+17.4% YoY), operating profit KRW 105.7bn (+29.5%); order backlog KRW 24.57T (~$17.8bn) at end-June 2026.",
+      "guidance": "No numeric guidance found; 19 analysts 'Buy', average target KRW 1,067,894.74.",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "Missile/air-defense exporter with backlog ~5x revenue; Mirae EPS +48% in 2027 on a 2027 P/E ~24x gives PEG ~0.5; stock 39% below 52-week high.",
+      "key_risk": "fy2026/fy2027 figures are a single broker (Mirae), not consensus; trailing P/E 52x; export timing (UAE/Saudi).",
+      "notes": "Stockopedia consensus next-FY EPS 16,343 is lower than Mirae 2026F 19,037. Market cap 14.9T KRW, 21.85M shares. Close 682,000 on 30 Sep 2026.",
+      "sources": [
+        {
+          "url": "https://securities.miraeasset.com/bbs/download/2137916.pdf?attachmentId=2137916",
+          "date": "2026",
+          "what": "Mirae 2026F 19,037 / 2027F 28,262"
+        },
+        {
+          "url": "https://www.stockopedia.com/share-prices/lig-nex-1-co-KRX:079550/",
+          "date": "2026-09",
+          "what": "consensus next-FY EPS 16,343"
+        },
+        {
+          "url": "https://www.marketscreener.com/quote/stock/LIG-NEX1-CO-LTD-26105819/consensus/",
+          "date": "2026-09",
+          "what": "19 analysts Buy, target 1,067,894.74"
+        },
+        {
+          "url": "https://finance.yahoo.com/quote/079550.KS/history/",
+          "date": "2026-09-30",
+          "what": "close 682,000"
+        },
+        {
+          "url": "https://tobe-insight.com/en/lig-da-company-analysis-2026/",
+          "date": "2026",
+          "what": "Q2 2026 results, backlog 24.57T"
+        },
+        {
+          "url": "https://www.tradingview.com/symbols/KRX-079550/",
+          "date": "2026-09",
+          "what": "market cap, 52w, beta, yield"
+        }
+      ]
+    },
+    {
+      "ticker": "042700.KS",
+      "name": "Hanmi Semiconductor",
+      "exchange": "KRX (KOSPI)",
+      "listing_to_buy": "042700.KS",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": null,
+      "adr_ratio": null,
+      "currency": "KRW",
+      "country": "South Korea",
+      "sector": "Semiconductor equipment (TC bonders for HBM)",
+      "megatrend": "HBM4 bonding equipment",
+      "price": 256500.0,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": null,
+      "fy_end_month": 12,
+      "eps_basis": "K-IFRS reported EPS (consensus, 5-7 analysts)",
+      "fy2025": null,
+      "fy2026": 3389.97,
+      "fy2027": 5610.83,
+      "fy2028": null,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 2.15,
+      "dividend_yield_pct": 0.31,
+      "w52_low": 81400.0,
+      "w52_high": 426000.0,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": true,
+      "one_offs_note": "None flagged.",
+      "latest_results_summary": "Q2 2026 (14 Jul 2026): revenue KRW 251.1bn (+39.5% YoY), operating profit KRW 130.3bn (+51.0%), operating margin 51.9% (record); Micron 46% of revenue.",
+      "guidance": "2026 sales KRW 785bn and operating profit KRW 369.4bn expected (record, margin 47.1%) per Korean press/analyst expectations.",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "HBM4 TC-bonder leader; consensus EPS +65% in 2027 on a 2027 P/E ~46x gives PEG ~0.7, after the stock halved from its high.",
+      "key_risk": "Beta 2.15; competition (Hanwha Semitech, hybrid bonders); customer concentration (SK hynix/Micron); thin coverage.",
+      "notes": "Stockopedia next-FY EPS 3,260 (older). Market cap 24.33T KRW (30 Sep 2026). 2028 consensus not found.",
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/quote/042700.KS/analysis/",
+          "date": "2026-09",
+          "what": "consensus EPS 2026 3,389.97 (5), 2027 5,610.83 (7)"
+        },
+        {
+          "url": "https://stockanalysis.com/quote/krx/042700/market-cap/",
+          "date": "2026-09-30",
+          "what": "close 256,500, market cap 24.33T"
+        },
+        {
+          "url": "https://www.ajupress.com/view/20260714114870211",
+          "date": "2026-07-14",
+          "what": "Q2 2026 results, 2026 expectations"
+        },
+        {
+          "url": "https://stockanalysis.com/quote/krx/042700/statistics/",
+          "date": "2026-09",
+          "what": "52w, beta, yield"
+        }
+      ]
+    },
+    {
+      "ticker": "000660.KS",
+      "name": "SK hynix",
+      "exchange": "KRX (KOSPI)",
+      "listing_to_buy": "000660.KS",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": "HXSCL",
+      "adr_ratio": "OTC (unsponsored); no NYSE ADR",
+      "currency": "KRW",
+      "country": "South Korea",
+      "sector": "Memory semiconductors (DRAM/HBM/NAND)",
+      "megatrend": "HBM for AI accelerators",
+      "price": 1776000.0,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": null,
+      "fy_end_month": 12,
+      "eps_basis": "K-IFRS reported EPS (consensus, 40 analysts)",
+      "fy2025": null,
+      "fy2026": 353341.91,
+      "fy2027": 470265.62,
+      "fy2028": 498807.48,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": null,
+      "dividend_yield_pct": null,
+      "w52_low": null,
+      "w52_high": null,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": true,
+      "one_offs_note": "Peak-cycle memory margins (76% operating margin in Q2 2026); EPS consensus assumes the supercycle persists through 2028.",
+      "latest_results_summary": "Q2 2026 (29 Jul 2026): revenue KRW 79.32T (+51% QoQ, +257% YoY), operating profit KRW 60.54T (+557% YoY), operating margin 76% (record); DRAM ASP +30% QoQ; HBM4 mass-production shipments began.",
+      "guidance": "Broader HBM4 ramp in H2 2026 (no numeric guidance given).",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "Peak-cycle earnings: 2027 P/E ~3.8x with consensus EPS +33% looks like PEG ~0.1, but memory is cyclical and 2028 growth flattens to +6%.",
+      "key_risk": "Memory cycle reversal (classic Lynch cyclical trap: low P/E at peak); HBM competition from Samsung/Micron; capex.",
+      "notes": "Prior pass already covers this name; updated figures: 2026 range 281,586.09-399,503.66; 2027 range 325,173-610,284.25 (Yahoo). 2028 498,807.48 from a single provider. Close 1,776,000 (macromicro/investing); another source 1,765,000.",
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/quote/000660.KS/analysis/",
+          "date": "2026-09",
+          "what": "consensus EPS 2026 353,341.91, 2027 470,265.62 (40 analysts)"
+        },
+        {
+          "url": "https://stocksguide.com/en/forecast/SK-hynix-KR7000660001",
+          "date": "2026-09",
+          "what": "2028 EPS 498,807.48"
+        },
+        {
+          "url": "https://en.macromicro.me/series/38855/kr-000660_krx-close",
+          "date": "2026-09-30",
+          "what": "close 1,776,000"
+        },
+        {
+          "url": "https://news.skhynix.com/en/q2-2026-business-results/",
+          "date": "2026-07-29",
+          "what": "Q2 2026 results"
+        }
+      ]
+    },
+    {
+      "ticker": "005930.KS",
+      "name": "Samsung Electronics",
+      "exchange": "KRX (KOSPI)",
+      "listing_to_buy": "005930.KS (or GDR SMSN on LSE)",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": "SMSN (LSE GDR)",
+      "adr_ratio": "1 GDR = 0.5 ordinary share",
+      "currency": "KRW",
+      "country": "South Korea",
+      "sector": "Memory, foundry, smartphones",
+      "megatrend": "HBM/DRAM supercycle + foundry recovery",
+      "price": 268500.0,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": null,
+      "fy_end_month": 12,
+      "eps_basis": "K-IFRS reported EPS (consensus, 30-34 analysts)",
+      "fy2025": null,
+      "fy2026": 43592.33,
+      "fy2027": 52028.27,
+      "fy2028": 49527.3,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": null,
+      "dividend_yield_pct": null,
+      "w52_low": null,
+      "w52_high": null,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": true,
+      "one_offs_note": "Memory peak-cycle earnings; 2028 consensus already below 2027 (cycle roll-over embedded).",
+      "latest_results_summary": "H1 2026 revenue KRW 305.4T (+98.7% YoY) driven by semiconductors/AI (search summary).",
+      "guidance": "Not found.",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "Cheap on peak earnings (2027 P/E ~5x) but consensus EPS falls in 2028 (49,527 vs 52,028): negative growth, PEG not meaningful.",
+      "key_risk": "Memory cycle, HBM qualification vs SK hynix, foundry losses.",
+      "notes": "Prior pass covers this name; two consensus sets: valueinvesting 2026 38,249.3 (11,546.8-51,673.8) / 2027 48,770.4 / 2028 49,527.3; stockanalysis 2026 43,592.33 (30) / 2027 52,028.27 (34). Close 268,500 (268.50K) on 30 Sep 2026.",
+      "sources": [
+        {
+          "url": "https://stockanalysis.com/quote/krx/005930/forecast/",
+          "date": "2026-09",
+          "what": "consensus EPS 2026 43,592.33, 2027 52,028.27"
+        },
+        {
+          "url": "https://valueinvesting.io/005930.KS/estimates",
+          "date": "2026-09",
+          "what": "2026/2027/2028 consensus set incl. 2028 49,527.3"
+        },
+        {
+          "url": "https://www.investing.com/equities/samsung-electronics-co-ltd-historical-data",
+          "date": "2026-09-30",
+          "what": "close 268,500"
+        }
+      ]
+    },
+    {
+      "ticker": "0700.HK",
+      "name": "Tencent Holdings",
+      "exchange": "HKEX",
+      "listing_to_buy": "0700.HK (OTC ADR TCEHY)",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": "TCEHY",
+      "adr_ratio": "1 ADR = 1 ordinary share",
+      "currency": "HKD (price); EPS consensus in RMB",
+      "country": "China",
+      "sector": "Internet (games, social, fintech, cloud/AI)",
+      "megatrend": "China AI platforms (Hunyuan, WeChat agents) + games",
+      "price": 431.0,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": null,
+      "fy_end_month": 12,
+      "eps_basis": "Non-IFRS (adjusted) EPS, RMB (consensus 35-37 analysts)",
+      "fy2025": null,
+      "fy2026": 29.73,
+      "fy2027": 32.65,
+      "fy2028": null,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 0.74,
+      "dividend_yield_pct": 1.23,
+      "w52_low": 411.0,
+      "w52_high": 683.0,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "Non-IFRS strips SBC and investment gains/losses; new AI products dragged Q2 2026 non-IFRS operating profit by RMB 10.5bn (core ex-AI +19%).",
+      "latest_results_summary": "Q2 2026 (12 Aug 2026): revenue RMB 204.8bn (+11%), non-IFRS net profit RMB 68.4bn (+9%), diluted EPS RMB 7.433 (+9%); operating capex RMB 51.8bn (+190%), free cash flow negative.",
+      "guidance": "No numeric guidance; AI capex surge continues.",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "Quality compounder near its 52-week low, but consensus non-IFRS EPS growth is only ~10% (2027) on a P/E ~12x (PEG ~1.2); below the 15% growth screen.",
+      "key_risk": "AI capex compressing FCF/margins, regulation, growth < 15%.",
+      "notes": "Price in HKD, EPS in RMB (convert before P/E). Erste FY2026 $4.02 / FY2027 $4.21 (ADR). Market cap 5.53T HKD (other sources 3.88-4.28T). Alternative 2026 consensus 28.98.",
+      "sources": [
+        {
+          "url": "https://stockanalysis.com/quote/hkg/0700/forecast/",
+          "date": "2026-09",
+          "what": "non-IFRS EPS 2026 29.73 (37), 2027 32.65 (35)"
+        },
+        {
+          "url": "https://au.finance.yahoo.com/quote/0700.HK/history/",
+          "date": "2026-09-30",
+          "what": "close 431.00 HKD"
+        },
+        {
+          "url": "https://www.prnewswire.com/apac/news-releases/tencent-announces-2026-second-quarter-results-302849608.html",
+          "date": "2026-08-12",
+          "what": "Q2 2026 results"
+        },
+        {
+          "url": "https://twelvedata.com/markets/354132/stock/hkex/0700/statistics",
+          "date": "2026-09",
+          "what": "52w, beta, yield, market cap"
+        }
+      ]
+    },
+    {
+      "ticker": "BABA",
+      "name": "Alibaba Group",
+      "exchange": "NYSE (ADR) / HKEX 9988",
+      "listing_to_buy": "BABA (NYSE) or 9988.HK",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": "BABA",
+      "adr_ratio": "1 ADR = 8 ordinary shares",
+      "currency": "USD (ADR); HK line in HKD",
+      "country": "China",
+      "sector": "E-commerce & cloud/AI",
+      "megatrend": "AI cloud (Qwen models, 45% cloud growth)",
+      "price": 108.76,
+      "price_date": "2026-09-29",
+      "market_cap_usd_bn": null,
+      "fy_end_month": 3,
+      "eps_basis": "Non-GAAP diluted EPS per ADS, USD (consensus)",
+      "fy2025": null,
+      "fy2026": null,
+      "fy2027": 5.91,
+      "fy2028": null,
+      "fy2029": null,
+      "ltg_pct": 30.1,
+      "beta": null,
+      "dividend_yield_pct": null,
+      "w52_low": null,
+      "w52_high": null,
+      "price_target": 187.45,
+      "zacks_rank": 5,
+      "zacks_rank_date": "2026-09/10",
+      "cyclical": false,
+      "one_offs_note": "FY2027 (to Mar 2027) non-GAAP net income falling ~38% YoY on heavy AI/quick-commerce investment; FY2028 Erste estimate 8.41 implies a rebound off a depressed base.",
+      "latest_results_summary": "June-2026 quarter (20 Aug 2026): revenue RMB 268,953M / US$39,639M (+9%), non-GAAP net income RMB 20,715M (-38% YoY); Alibaba Cloud external revenue +45%, AI products triple-digit growth for 12th quarter; quarterly EPS $1.26 missed $1.94 consensus.",
+      "guidance": "No numeric guidance found.",
+      "ceo_quote": {
+        "original": "We delivered a strong quarter, driven by the improving commercialization of our full-stack AI capabilities.",
+        "french": "Nous avons réalisé un solide trimestre, porté par la commercialisation croissante de nos capacités d'IA full-stack.",
+        "date": "2026-08-20",
+        "source": "Eddie Wu, CEO, June-quarter 2026 results press release (SEC 6-K)"
+      },
+      "thesis_short": "AI-cloud optionality at ~18x depressed FY2027 EPS; Zacks LTG 30% but earnings currently falling and Zacks Rank #5 (Strong Sell).",
+      "key_risk": "Earnings down 38% YoY on investment, repeated EPS misses (stock -27% YTD 2026), regulatory/geopolitical risk; FY2028 consensus not found (Erste only).",
+      "notes": "Consensus FY2027 5.91 (8 Sep 2026, marketbeat); Erste FY2027 5.82 (18 Sep), FY2028 8.41 (Erste, not consensus). 9988.HK close 106.30 HKD on 30 Sep 2026. PEG readings: 0.52 (Zacks), 0.44, 5.24 (gurufocus). LTG 30.10% (Zacks 5y) / 25.2% pa.",
+      "sources": [
+        {
+          "url": "https://www.marketbeat.com/instant-alerts/estimates-erste-group-bank-forecasts-higher-earnings-for-alibaba-group-2026-09-14/",
+          "date": "2026-09-14",
+          "what": "consensus FY2027 5.91; Erste FY2027 5.81, FY2028 8.41"
+        },
+        {
+          "url": "https://www.cnn.com/markets/stocks/BABA",
+          "date": "2026-09-29",
+          "what": "BABA price 108.76"
+        },
+        {
+          "url": "https://www.cnbc.com/quotes/9988-HK",
+          "date": "2026-09-30",
+          "what": "9988 close 106.30 HKD"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/0001577552/000110465926099220/tm2623667d1_ex99-1.htm",
+          "date": "2026-08-20",
+          "what": "June quarter 2026 results, Eddie Wu quote"
+        },
+        {
+          "url": "https://www.zacks.com/stock/quote/BABA/detailed-earning-estimates",
+          "date": "2026-10",
+          "what": "LTG 30.10%, PEG 0.52, Zacks Rank 5"
+        },
+        {
+          "url": "https://www.tikr.com/blog/alibaba-stock-is-down-nearly-27-in-2026-as-earnings-keep-missing-estimates-heres-what-the-next-report-has-to-show",
+          "date": "2026-09",
+          "what": "EPS miss 1.26 vs 1.94"
+        }
+      ]
+    },
+    {
+      "ticker": "PDD",
+      "name": "PDD Holdings (Pinduoduo / Temu)",
+      "exchange": "NASDAQ",
+      "listing_to_buy": "PDD",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": "PDD",
+      "adr_ratio": "1 ADS = 4 ordinary shares",
+      "currency": "USD (price); EPS consensus in CNY per ADS",
+      "country": "China",
+      "sector": "E-commerce (domestic + Temu cross-border)",
+      "megatrend": "Low-cost cross-border e-commerce",
+      "price": 77.65,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": 110.42,
+      "fy_end_month": 12,
+      "eps_basis": "Non-GAAP diluted EPS per ADS, CNY (consensus)",
+      "fy2025": null,
+      "fy2026": 68.23,
+      "fy2027": 82.59,
+      "fy2028": 97.63,
+      "fy2029": null,
+      "ltg_pct": 10.26,
+      "beta": -0.01,
+      "dividend_yield_pct": null,
+      "w52_low": 71.94,
+      "w52_high": 139.41,
+      "price_target": 113.57,
+      "zacks_rank": 3,
+      "zacks_rank_date": "2026-09/10",
+      "cyclical": false,
+      "one_offs_note": "2026 non-GAAP profit falling (Q2 -13% YoY) on merchant support/Temu investment; consensus cut 11.99% over 90 days.",
+      "latest_results_summary": "Q2 2026 (24 Aug 2026): revenue RMB 112.4bn (+8%), non-GAAP net income RMB 28.5bn (-13%), non-GAAP diluted EPS per ADS RMB 19.33 (vs 22.07).",
+      "guidance": "No numeric guidance (company policy).",
+      "ceo_quote": {
+        "original": "Since the start of the year, global trade and regulatory landscapes have continued to evolve, creating significant challenges while also presenting new opportunities.",
+        "french": "Depuis le début de l'année, les environnements commerciaux et réglementaires mondiaux ont continué d'évoluer, créant des défis importants tout en offrant de nouvelles opportunités.",
+        "date": "2026-08-24",
+        "source": "Lei Chen, Co-Chairman and Co-CEO, Q2 2026 results (SEC 6-K)"
+      },
+      "thesis_short": "Very cheap on consensus (2027 P/E ~7x in CNY terms, EPS +21% 2027 / +18% 2028): PEG ~0.3-0.6, but earnings are currently falling and LTG (gurufocus) only 10%.",
+      "key_risk": "Tariffs/de minimis changes for Temu, domestic price war, zero shareholder returns, governance opacity; 2026 EPS declining.",
+      "notes": "Consensus ranges: 2026 50.05-79.17, 2027 53.16-100.35, 2028 60.75-125.42 CNY. PEG 0.58/0.71/0.65 by source. Beta ranges -0.03 to 1.22. Other close 77.50 (29 Sep).",
+      "sources": [
+        {
+          "url": "https://stockanalysis.com/stocks/pdd/forecast/",
+          "date": "2026-09",
+          "what": "consensus EPS 2026 68.23, 2027 82.59, 2028 97.63 CNY; estimates -11.99% 90d"
+        },
+        {
+          "url": "https://www.benzinga.com/quote/PDD",
+          "date": "2026-09-30",
+          "what": "price 77.65"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/0001737806/000110465926100534/tm2623874d1_ex99-1.htm",
+          "date": "2026-08-24",
+          "what": "Q2 2026 results, Lei Chen quote"
+        },
+        {
+          "url": "https://sg.finance.yahoo.com/quote/PDD/key-statistics/",
+          "date": "2026-09-29",
+          "what": "market cap 110.42B, 52w, beta"
+        },
+        {
+          "url": "https://www.gurufocus.com/term/peg-ratio/PDD",
+          "date": "2026-10",
+          "what": "3-5y EPS growth 10.26%, PEG"
+        },
+        {
+          "url": "https://www.wallstreetzen.com/stocks/us/nasdaq/pdd/stock-forecast",
+          "date": "2026-09",
+          "what": "target 113.57"
+        }
+      ]
+    },
+    {
+      "ticker": "NTES",
+      "name": "NetEase",
+      "exchange": "NASDAQ (ADR) / HKEX 9999",
+      "listing_to_buy": "NTES or 9999.HK",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": "NTES",
+      "adr_ratio": "1 ADS = 5 ordinary shares",
+      "currency": "USD (ADR price); EPS consensus in CNY per ADS",
+      "country": "China",
+      "sector": "Online games",
+      "megatrend": "Global games IP / China gaming",
+      "price": 121.16,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": null,
+      "fy_end_month": 12,
+      "eps_basis": "Non-GAAP EPS per ADS, CNY (consensus)",
+      "fy2025": null,
+      "fy2026": 61.73,
+      "fy2027": 72.11,
+      "fy2028": null,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 0.79,
+      "dividend_yield_pct": 2.44,
+      "w52_low": 168.8,
+      "w52_high": 248.0,
+      "price_target": 161.0,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "H1 2026 non-GAAP net income -8% YoY; Q2 EPS missed by 22.65%.",
+      "latest_results_summary": "Q2 2026 (20 Aug 2026): revenue RMB 30.1bn (+7%), games & related VAS RMB 25bn (+10%), non-GAAP net income RMB 7.7bn, non-GAAP EPS US$1.78 per ADS; revenue beat 2.14%, EPS miss 22.65%.",
+      "guidance": "No numeric guidance.",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "Cash-rich games publisher on ~12x 2027 non-GAAP EPS with consensus +17% growth (PEG ~0.7) and 2.4% yield; but recent earnings are shrinking.",
+      "key_risk": "Hit-driven pipeline, China games regulation, H1 2026 profit decline, 2028 consensus not found.",
+      "notes": "52-week range and yield refer to the HK line (9999: 192.60 HKD close 30 Sep 2026; market cap 621.04B HKD). Consensus ranges 2026 57.37-64.64, 2027 65.66-81.25 CNY.",
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/quote/NTES/analysis/",
+          "date": "2026-09",
+          "what": "non-GAAP EPS 2026 61.73, 2027 72.11 CNY"
+        },
+        {
+          "url": "https://stockanalysis.com/stocks/ntes/",
+          "date": "2026-09-30",
+          "what": "NTES close 121.16; 9999 close 192.60"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/0001110646/000110465926098940/tm2623482d1_ex99-1.htm",
+          "date": "2026-08-20",
+          "what": "Q2 2026 results"
+        },
+        {
+          "url": "https://stockanalysis.com/quote/hkg/9999/",
+          "date": "2026-09",
+          "what": "market cap, 52w, beta, yield (HK line)"
+        },
+        {
+          "url": "https://www.wallstreetzen.com/stocks/us/nasdaq/ntes/stock-forecast",
+          "date": "2026-09",
+          "what": "target 161"
+        }
+      ]
+    },
+    {
+      "ticker": "1810.HK",
+      "name": "Xiaomi",
+      "exchange": "HKEX",
+      "listing_to_buy": "1810.HK (OTC ADR XIACY)",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": "XIACY",
+      "adr_ratio": "1 ADR = 5 ordinary shares",
+      "currency": "HKD (price); EPS consensus in CNY",
+      "country": "China",
+      "sector": "Smartphones, IoT, EVs",
+      "megatrend": "EV + AI ecosystem (SU7/YU7)",
+      "price": 25.24,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": null,
+      "fy_end_month": 12,
+      "eps_basis": "Normalized/adjusted EPS, CNY (Yahoo consensus 17-19 analysts)",
+      "fy2025": null,
+      "fy2026": 1.02,
+      "fy2027": 1.41,
+      "fy2028": null,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 0.69,
+      "dividend_yield_pct": null,
+      "w52_low": 21.3,
+      "w52_high": 59.9,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "Adjusted net profit down three consecutive quarters (memory cost surge); 2026 is a trough year in consensus.",
+      "latest_results_summary": "Q2 2026 (Aug 2026): revenue RMB 108.9bn (-6.1%), adjusted net profit RMB 6.2bn (-27.6%), gross margin 19.8%; EV deliveries 104,199 (+28.2%), EV segment revenue RMB 24.9bn.",
+      "guidance": "No numeric guidance found.",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "EV ramp plus AIoT at ~16x 2027 adjusted EPS (price 25.24 HKD vs 1.41 CNY) with consensus EPS +38% rebound in 2027 (PEG ~0.4) after a trough 2026; stock 58% below its high.",
+      "key_risk": "Memory-cost margin squeeze, smartphone decline, EV price war/delivery execution; consensus sets disagree widely.",
+      "notes": "Alternative consensus set (valueinvesting.io) shows 1.9 / 2.4 / 3.1 'HKD' for 2026-2028 (growth 14%/25.7%/28.4%), inconsistent with Yahoo's 1.02/1.41 CNY and with Q2 run-rate (adj NP RMB 6.2bn/quarter); Yahoo set retained. 'Market cap $657.20B' from search is almost certainly HKD. Diluted EPS ttm 1.810.",
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/quote/1810.HK/analysis/",
+          "date": "2026-09",
+          "what": "normalized EPS 2026 1.02 (17), 2027 1.41 (19) CNY"
+        },
+        {
+          "url": "https://valueinvesting.io/1810.HK/estimates",
+          "date": "2026-09",
+          "what": "alternative set 1.9/2.4/3.1"
+        },
+        {
+          "url": "https://stockanalysis.com/quote/hkg/1810/",
+          "date": "2026-09-30",
+          "what": "close 25.24 HKD"
+        },
+        {
+          "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-xiaomi-q2-2026-profit-holds-as-evs-and-ai-grow-93CH-4865241",
+          "date": "2026-08",
+          "what": "Q2 2026 results"
+        },
+        {
+          "url": "https://finance.yahoo.com/quote/1810.HK/key-statistics/",
+          "date": "2026-09-30",
+          "what": "52w, beta, market cap (currency ambiguous)"
+        }
+      ]
+    },
+    {
+      "ticker": "300750.SZ",
+      "name": "CATL (Contemporary Amperex Technology)",
+      "exchange": "Shenzhen (A) / HKEX 3750 (H)",
+      "listing_to_buy": "3750.HK (H-share, accessible) or 300750.SZ via Stock Connect",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": null,
+      "adr_ratio": null,
+      "currency": "CNY",
+      "country": "China",
+      "sector": "EV & energy-storage batteries",
+      "megatrend": "EV batteries + grid energy storage (ESS +87%)",
+      "price": 286.8,
+      "price_date": "2026-09-29",
+      "market_cap_usd_bn": 207.88,
+      "fy_end_month": 12,
+      "eps_basis": "PRC GAAP/IFRS reported EPS, CNY (consensus 12 analysts)",
+      "fy2025": null,
+      "fy2026": 18.37,
+      "fy2027": 25.38,
+      "fy2028": 29.9,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 0.43,
+      "dividend_yield_pct": 2.77,
+      "w52_low": 285.74,
+      "w52_high": 468.75,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": true,
+      "one_offs_note": "None flagged; large buyback announced with H1 results.",
+      "latest_results_summary": "H1 2026 (24 Jul 2026): net profit RMB 43.28bn (+41.98%), revenue RMB 276.92bn (+54.80%); power battery revenue RMB 192.12bn (+46.02%), energy storage RMB 53.26bn (+87.54%); overseas EV battery share 33.7%.",
+      "guidance": "No numeric guidance found.",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "Global battery leader at its 52-week low: 2027 P/E ~11x with consensus EPS +38% (2027) and +18% (2028) gives PEG ~0.3-0.6, plus ~2.8% yield.",
+      "key_risk": "EV/ESS price competition, EU/US trade barriers, A-share price near 52-week low (285.74) signals de-rating; 2026 consensus sets differ (18.37 vs 20.73).",
+      "notes": "Yahoo 2026 consensus 18.37 (range 15.43-21.7, 12 analysts); marketscreener 2026 20.73 / 2027 25.38 / 2028 29.9. Dividend yield 2.88%/2.77% (Google) vs 0.84% (Morningstar). A-share close 286.80 on 29 Sep 2026; no 30 Sep close found.",
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/quote/300750.SZ/analysis/",
+          "date": "2026-09",
+          "what": "consensus EPS 2026 18.37 (15.43-21.7)"
+        },
+        {
+          "url": "https://www.marketscreener.com/quote/stock/CATL-CONTEMPORARY-AMPEREX-44486738/finances/",
+          "date": "2026-09",
+          "what": "EPS 2026 20.73, 2027 25.38, 2028 29.9"
+        },
+        {
+          "url": "https://www.morningstar.com/stocks/xshe/300750/quote",
+          "date": "2026-09-29",
+          "what": "close 286.80"
+        },
+        {
+          "url": "https://cnevpost.com/2026/07/24/catl-h1-profit-share-buyback/",
+          "date": "2026-07-24",
+          "what": "H1 2026 results"
+        },
+        {
+          "url": "https://companiesmarketcap.com/catl/marketcap/",
+          "date": "2026-09",
+          "what": "market cap $207.88B"
+        },
+        {
+          "url": "https://www.google.com/finance/beta/quote/300750:SHE",
+          "date": "2026-09",
+          "what": "52w, beta, yield"
+        }
+      ]
+    },
+    {
+      "ticker": "9992.HK",
+      "name": "Pop Mart International",
+      "exchange": "HKEX",
+      "listing_to_buy": "9992.HK",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": "PMRTY",
+      "adr_ratio": "OTC ADR",
+      "currency": "HKD (price); EPS consensus in CNY",
+      "country": "China",
+      "sector": "Collectible toys / character IP",
+      "megatrend": "Global pop-culture IP (Labubu, Starry People)",
+      "price": 152.6,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": null,
+      "fy_end_month": 12,
+      "eps_basis": "IFRS reported EPS, CNY (Yahoo consensus 13-14 analysts; currency label on Yahoo ambiguous, cross-checked with Stockopedia CNY 10.67)",
+      "fy2025": null,
+      "fy2026": 8.81,
+      "fy2027": 10.69,
+      "fy2028": 13.55,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 1.05,
+      "dividend_yield_pct": 1.65,
+      "w52_low": 140.1,
+      "w52_high": 339.8,
+      "price_target": 218.37,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "Overseas revenue -11% in H1 2026 (Labubu fade); founder admits 20% growth target will 'most likely' be missed; estimates revised down into September 2026.",
+      "latest_results_summary": "H1 2026 (20 Aug 2026): revenue RMB 17.173bn (+23.8%), adjusted net profit RMB 5.156bn (+9.5%), net profit RMB 5.038bn (+10.1%), gross margin 69.7%; Greater China +47.3%, overseas -11%.",
+      "guidance": "Founder Wang Ning: company will 'most likely' miss its 20% revenue-growth target for 2026; buyback plan announced.",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "De-rated IP play (-55% from high) at ~13x 2027 EPS (152.6 HKD vs 10.69 CNY) with consensus EPS +21% (2027) and +27% (2028): PEG ~0.5-0.6.",
+      "key_risk": "Fad risk (overseas sales already falling), inventory build, estimate downgrades; consensus may still be too high.",
+      "notes": "Alternative set (stocksguide) HK$10.91 / 18.05 / 20.65 not retained. Market cap 216.66B HKD. Diluted EPS ttm 11.100 HKD.",
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/quote/9992.HK/analysis/",
+          "date": "2026-09",
+          "what": "consensus EPS 2026 8.81 (13), 2027 10.69 (14), 2028 13.55"
+        },
+        {
+          "url": "https://www.stockopedia.com/share-prices/pop-mart-international-HKG:9992/",
+          "date": "2026-09",
+          "what": "next-FY consensus CNY 10.67, target HK$218.37"
+        },
+        {
+          "url": "https://finance.yahoo.com/quote/9992.HK/history/",
+          "date": "2026-09-30",
+          "what": "close 152.60"
+        },
+        {
+          "url": "https://www.morningstar.com/news/pr-newswire/20260820cn30497/pop-mart-reports-first-half-2026-financial-results-announces-future-stock-buyback-plan",
+          "date": "2026-08-20",
+          "what": "H1 2026 results"
+        },
+        {
+          "url": "https://chinabizinsider.com/pop-mart-revenue-rises-24-as-overseas-growth-reverses-and-inventory-piles-up/",
+          "date": "2026-08",
+          "what": "overseas -11%, Wang Ning comment"
+        },
+        {
+          "url": "https://finance.yahoo.com/quote/9992.HK/key-statistics/",
+          "date": "2026-09",
+          "what": "market cap, 52w, beta, yield"
+        }
+      ]
+    },
+    {
+      "ticker": "BHARTIARTL.NS",
+      "name": "Bharti Airtel",
+      "exchange": "NSE",
+      "listing_to_buy": "BHARTIARTL.NS",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": null,
+      "adr_ratio": null,
+      "currency": "INR",
+      "country": "India",
+      "sector": "Telecom",
+      "megatrend": "India/Africa mobile ARPU uplift & data growth",
+      "price": 1757.0,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": null,
+      "fy_end_month": 3,
+      "eps_basis": "Ind-AS reported EPS (consensus, 24 analysts)",
+      "fy2025": null,
+      "fy2026": null,
+      "fy2027": 63.79,
+      "fy2028": 81.68,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 0.67,
+      "dividend_yield_pct": 1.32,
+      "w52_low": 1740.5,
+      "w52_high": 2174.5,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "Reported profit includes Africa FX/one-off items in some quarters (not quantified here).",
+      "latest_results_summary": "Q1 FY27 (Apr-Jun 2026, 5 Aug 2026): consolidated net profit Rs 8,167cr (+37.3% YoY; another report 8,424cr +42%), revenue Rs 58,539cr (+18.4% YoY, +5.7% QoQ), India ARPU Rs 264 (vs 250).",
+      "guidance": "No numeric guidance; postpaid additions 1M (record), 5M smartphone adds.",
+      "ceo_quote": {
+        "original": "Our post-paid strategy continues to deliver strong outcomes with the highest ever customer addition of 1 million. We added 5 million smartphone customers with an industry leading ARPU of Rs264.",
+        "french": "Notre stratégie postpayée continue de produire d'excellents résultats, avec un record de 1 million de clients ajoutés. Nous avons gagné 5 millions de clients smartphone avec un ARPU de 264 roupies, le meilleur du secteur.",
+        "date": "2026-08-05",
+        "source": "Gopal Vittal, Executive Vice Chairman, Q1 FY27 results (Forbes India)"
+      },
+      "thesis_short": "Duopoly telecom with ARPU repair; consensus FY2028 EPS +28% on a FY2027 P/E ~28x gives PEG ~1.0; stock at its 52-week low with beta 0.67.",
+      "key_risk": "Tariff-hike timing, capex/spectrum, Africa FX; price at 52-week low signals sentiment shift.",
+      "notes": "Market cap Rs 11,04,997 Cr (30 Sep 2026). Close 1,757.00 (-0.8%) on 30 Sep 2026.",
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/quote/BHARTIARTL.NS/analysis/",
+          "date": "2026-09",
+          "what": "consensus EPS FY2027 63.79, FY2028 81.68 (24 analysts)"
+        },
+        {
+          "url": "https://univest.in/blogs/bharti-airtel-share-price-prediction-for-tomorrow-1-october-2026",
+          "date": "2026-09-30",
+          "what": "close 1,757"
+        },
+        {
+          "url": "https://www.forbesindia.com/article/news/bharti-airtel-posts-37-percent-rise-in-q1-profit-on-growth-in-india-africa/2996701/1",
+          "date": "2026-08-05",
+          "what": "Q1 FY27 results, Vittal quote"
+        },
+        {
+          "url": "https://www.tickertape.in/stocks/bharti-airtel-BRTI",
+          "date": "2026-09-30",
+          "what": "market cap, 52w, beta, yield"
+        }
+      ]
+    },
+    {
+      "ticker": "POLYCAB.NS",
+      "name": "Polycab India",
+      "exchange": "NSE",
+      "listing_to_buy": "POLYCAB.NS",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": null,
+      "adr_ratio": null,
+      "currency": "INR",
+      "country": "India",
+      "sector": "Wires & cables, FMEG",
+      "megatrend": "India electrification / power & solar capex",
+      "price": 8026.0,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": null,
+      "fy_end_month": 3,
+      "eps_basis": "Ind-AS reported EPS (consensus, 30-32 analysts)",
+      "fy2025": null,
+      "fy2026": null,
+      "fy2027": 218.0,
+      "fy2028": 289.7,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 1.04,
+      "dividend_yield_pct": 0.56,
+      "w52_low": 6663.0,
+      "w52_high": 10126.0,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": true,
+      "one_offs_note": "None flagged.",
+      "latest_results_summary": "Q1 FY27 (Apr-Jun 2026, 17 Jul 2026): net profit Rs 796.7cr (+33%), revenue Rs 8,209.7cr (+39%), EBITDA Rs 1,136.2cr (+32.5%), EBITDA margin 13.8% (-70bp).",
+      "guidance": "No numeric guidance; 'strong momentum' into FY2027.",
+      "ceo_quote": {
+        "original": "We have entered FY2027 with strong momentum, achieving our highest-ever first-quarter revenue and profit performance.",
+        "french": "Nous avons abordé l'exercice 2027 avec une forte dynamique, en réalisant le meilleur premier trimestre de notre histoire en chiffre d'affaires comme en bénéfice.",
+        "date": "2026-07-17",
+        "source": "Inder T. Jaisinghani, Chairman & MD, Q1 FY27 results (Business Standard)"
+      },
+      "thesis_short": "India's cable leader riding grid/solar capex; consensus FY2028 EPS +33% on FY2027 P/E ~37x gives PEG ~1.1.",
+      "key_risk": "Copper price pass-through, new entrants (UltraTech/Adani) compressing margins, high multiple.",
+      "notes": "FY2027 consensus 218 (+15%, simplywall latest) vs 187.45 (Yahoo, older); FY2028 289.7 (marketscreener). Market cap Rs 1,25,831.60 Cr (22 Sep 2026).",
+      "sources": [
+        {
+          "url": "https://simplywall.st/stocks/in/capital-goods/nse-polycab/polycab-india-shares/news/earnings-beat-polycab-india-limited-just-beat-analyst-foreca-1",
+          "date": "2026-07",
+          "what": "FY2027 EPS 218 (+15%), 30 analysts"
+        },
+        {
+          "url": "https://www.marketscreener.com/quote/stock/POLYCAB-INDIA-LIMITED-58674735/finances/",
+          "date": "2026-09",
+          "what": "FY2028 EPS 289.7"
+        },
+        {
+          "url": "https://finance.yahoo.com/quote/POLYCAB.NS/analysis/",
+          "date": "2026-09",
+          "what": "FY2027 187.45 (older)"
+        },
+        {
+          "url": "https://icicidirect.com/stocks/polycab-india-ltd-share-price",
+          "date": "2026-09-30",
+          "what": "price 8,026"
+        },
+        {
+          "url": "https://www.business-standard.com/markets/capital-market-news/polycab-india-posts-33-yoy-increase-in-q1-pat-126071700505_1.html",
+          "date": "2026-07-17",
+          "what": "Q1 FY27 results, quote"
+        },
+        {
+          "url": "https://www.indmoney.com/stocks/polycab-india-ltd-share-price",
+          "date": "2026-09-22",
+          "what": "market cap, 52w, beta, yield"
+        }
+      ]
+    },
+    {
+      "ticker": "TRENT.NS",
+      "name": "Trent (Tata group)",
+      "exchange": "NSE",
+      "listing_to_buy": "TRENT.NS",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": null,
+      "adr_ratio": null,
+      "currency": "INR",
+      "country": "India",
+      "sector": "Apparel retail (Zudio, Westside)",
+      "megatrend": "India value-fashion formalisation",
+      "price": 2622.0,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": null,
+      "fy_end_month": 3,
+      "eps_basis": "Ind-AS reported EPS (Yahoo consensus 14-15 analysts)",
+      "fy2025": null,
+      "fy2026": null,
+      "fy2027": 59.5,
+      "fy2028": 72.83,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": null,
+      "dividend_yield_pct": null,
+      "w52_low": null,
+      "w52_high": null,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "None flagged.",
+      "latest_results_summary": "Q1 FY27 (Apr-Jun 2026): consolidated net profit Rs 518.07cr (+21.98%), revenue Rs 5,754.71cr (vs 4,883.48cr); standalone PAT Rs 532cr (+26%), revenue Rs 5,666cr (+19%); 1,312 stores (982 Zudio, 301 Westside); EBITDA margin 19.6%.",
+      "guidance": "No numeric guidance; 20 net store additions in Q1.",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "Zudio roll-out compounder; consensus FY2028 EPS +22% on FY2027 P/E ~44x gives PEG ~2; growth has slowed to ~20%.",
+      "key_risk": "Decelerating same-store growth, rich valuation, competing consensus figure (40.42) for FY2027.",
+      "notes": "Another source shows FY2027 EPS 40.42 (different panel). Market cap Rs 1,39,316 Cr (30 Sep 2026).",
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/quote/TRENT.NS/analysis/",
+          "date": "2026-09",
+          "what": "consensus EPS FY2027 59.5 (15), FY2028 72.83 (14)"
+        },
+        {
+          "url": "https://www.icicidirect.com/stocks/trent-ltd-share-price",
+          "date": "2026-09-30",
+          "what": "price 2,622, market cap 1,39,316 Cr"
+        },
+        {
+          "url": "https://www.sahi.com/news/trent-q1-consolidated-net-profit-rises-to-5-3b-rupees-vs-4-29b-yoy-187-PE1_CORP",
+          "date": "2026-08",
+          "what": "Q1 FY27 consolidated results"
+        },
+        {
+          "url": "https://www.storyboard18.com/brand-makers/trent-adds-22-zudio-stores-in-q1-over-80-of-new-outlets-in-tier-ii-iii-markets-ws-l-106875.htm",
+          "date": "2026-08",
+          "what": "Q1 FY27 standalone, store count"
+        }
+      ]
+    },
+    {
+      "ticker": "COFORGE.NS",
+      "name": "Coforge",
+      "exchange": "NSE",
+      "listing_to_buy": "COFORGE.NS",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": null,
+      "adr_ratio": null,
+      "currency": "INR",
+      "country": "India",
+      "sector": "IT services (AI-led engineering)",
+      "megatrend": "AI-led IT services / large-deal consolidation",
+      "price": 1752.0,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": null,
+      "fy_end_month": 3,
+      "eps_basis": "Ind-AS reported EPS (consensus, 27 analysts; post 1:5 split basis)",
+      "fy2025": null,
+      "fy2026": null,
+      "fy2027": 57.0,
+      "fy2028": 68.32,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": null,
+      "dividend_yield_pct": null,
+      "w52_low": null,
+      "w52_high": null,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "Q1 FY27 profit +110% YoY reflects the Encora acquisition and a low base (acquisition costs a year earlier).",
+      "latest_results_summary": "Q1 FY27 (28 Jul 2026): revenue Rs 5,527.7cr / $592.2M (+49% INR, +33% USD), net profit Rs 518.6cr (+110%), EBITDA margin 20.3%, EBIT margin 16%; NTM signed order book $2.23bn.",
+      "guidance": "FY27 EBIT margin guidance 15.5% (already exceeded at 16%); management expects 'very robust growth' through FY27.",
+      "ceo_quote": {
+        "original": "We expect the rest of the year to also reflect very robust growth, starting with Q2 itself.",
+        "french": "Nous nous attendons à ce que le reste de l'année affiche également une croissance très robuste, dès le deuxième trimestre.",
+        "date": "2026-07-28",
+        "source": "Sudhir Singh, CEO, Q1 FY27 earnings call (Deccan Herald)"
+      },
+      "thesis_short": "Fastest-growing Indian IT mid-cap; consensus FY2028 EPS +20% on FY2027 P/E ~31x gives PEG ~1.5.",
+      "key_risk": "AI deflation of IT services, Encora integration, US BFSI/travel client exposure.",
+      "notes": "Consensus ranges FY2027 49.91-66.8, FY2028 60.3-78.9 (Yahoo); marketscreener 58.13 / 71.88. Market cap Rs 77,491.89 Cr (1 Oct 2026). Close 1,752.00 (+1.80%, prev 1,721).",
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/quote/COFORGE.NS/analysis/",
+          "date": "2026-09",
+          "what": "consensus EPS FY2027 57 (27), FY2028 68.32 (27)"
+        },
+        {
+          "url": "https://in.marketscreener.com/quote/stock/COFORGE-LIMITED-9059315/consensus/",
+          "date": "2026-09",
+          "what": "EPS 58.13 / 71.88"
+        },
+        {
+          "url": "https://www.business-standard.com/markets/coforge-ltd-share-price-24978.html",
+          "date": "2026-09-30",
+          "what": "close 1,752.00"
+        },
+        {
+          "url": "https://www.deccanherald.com/business/companies/fy27-an-exceptional-growth-year-for-coforge-ceo-sudhir-singh-4090919",
+          "date": "2026-07-28",
+          "what": "Q1 FY27 results, CEO quote"
+        },
+        {
+          "url": "https://companiesmarketcap.com/inr/coforge/marketcap/",
+          "date": "2026-10-01",
+          "what": "market cap 77,491.89 Cr"
+        }
+      ]
+    },
+    {
+      "ticker": "PERSISTENT.NS",
+      "name": "Persistent Systems",
+      "exchange": "NSE",
+      "listing_to_buy": "PERSISTENT.NS",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": null,
+      "adr_ratio": null,
+      "currency": "INR",
+      "country": "India",
+      "sector": "IT services / software engineering",
+      "megatrend": "AI-led digital engineering",
+      "price": null,
+      "price_date": null,
+      "market_cap_usd_bn": null,
+      "fy_end_month": 3,
+      "eps_basis": "Ind-AS reported EPS (consensus, 34-35 analysts)",
+      "fy2025": null,
+      "fy2026": 121.12,
+      "fy2027": 146.98,
+      "fy2028": null,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": null,
+      "dividend_yield_pct": null,
+      "w52_low": null,
+      "w52_high": null,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "None flagged.",
+      "latest_results_summary": "Not retrieved (budget).",
+      "guidance": "Not retrieved.",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "Consensus FY2027 EPS +21% vs FY2026; FY2028 and price not retrieved, so PEG incomplete.",
+      "key_risk": "Data incomplete (no price, no FY2028); AI deflation of IT services.",
+      "notes": "fy2026 = year ended Mar 2026 (121.12, range 112.80-126.19); fy2027 146.98 (range 129.88-158.10). 34 analysts: 21 buy, 9 sell, 4 hold. Price not searched within budget.",
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/quote/PERSISTENT.BO/analysis/",
+          "date": "2026-09",
+          "what": "consensus EPS FY2026 121.12, FY2027 146.98"
+        },
+        {
+          "url": "https://in.marketscreener.com/quote/stock/PERSISTENT-SYSTEMS-LIMITE-9059922/consensus/",
+          "date": "2026-09",
+          "what": "analyst ratings"
+        }
+      ]
+    },
+    {
+      "ticker": "SE",
+      "name": "Sea Limited",
+      "exchange": "NYSE",
+      "listing_to_buy": "SE",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": "SE",
+      "adr_ratio": "1 ADS = 1 Class A share",
+      "currency": "USD",
+      "country": "Singapore",
+      "sector": "E-commerce (Shopee), fintech (Monee), games (Garena)",
+      "megatrend": "South-East Asia digital economy",
+      "price": 97.36,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": 67.99,
+      "fy_end_month": 12,
+      "eps_basis": "Normalized/adjusted EPS, USD (consensus)",
+      "fy2025": null,
+      "fy2026": 3.87,
+      "fy2027": 5.25,
+      "fy2028": null,
+      "fy2029": null,
+      "ltg_pct": 28.82,
+      "beta": 1.51,
+      "dividend_yield_pct": null,
+      "w52_low": 77.05,
+      "w52_high": 199.3,
+      "price_target": 156.65,
+      "zacks_rank": 4,
+      "zacks_rank_date": "2026-09/10",
+      "cyclical": false,
+      "one_offs_note": "None flagged; Q2 2026 EPS missed despite revenue beat.",
+      "latest_results_summary": "Q2 2026 (10 Aug 2026): revenue $7.8bn (+48% YoY), adjusted EBITDA $917M (+11%), net income $458M (+11%); all three segments double-digit growth.",
+      "guidance": "Shopee 2026 GMV growth ~25% reiterated; 'on track to exceed $1bn full-year adjusted EBITDA' (as quoted in the search summary; likely segment-level).",
+      "ceo_quote": {
+        "original": "Our strong momentum from the first quarter has continued into the second. Sea generated $7.8 billion in revenue at 48% year-on-year and over $917 million in adjusted EBITDA.",
+        "french": "Notre forte dynamique du premier trimestre s'est poursuivie au deuxième. Sea a généré 7,8 milliards de dollars de chiffre d'affaires, en hausse de 48 % sur un an, et plus de 917 millions de dollars d'EBITDA ajusté.",
+        "date": "2026-08-10",
+        "source": "Forrest Li, Chairman & CEO, Q2 2026 results (Business Wire)"
+      },
+      "thesis_short": "SEA super-app with 48% revenue growth; consensus EPS +36% in 2027 on a 2027 P/E ~19x gives PEG ~0.5 (Zacks PEG 0.61); stock halved from its high.",
+      "key_risk": "Zacks Rank #4 (downward revisions), EPS misses, TikTok Shop competition, margin reinvestment; 2028 consensus not found.",
+      "notes": "Alternative consensus 3.74 / 5.09; Zacks 3.82 / 5.19. 29 analysts 'Strong Buy', target 156.65 (105-195). LTG 3-5y 28.82% (Zacks). Morgan Stanley $153 (15 Sep 2026), Arete $152 (7 Sep 2026).",
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/quote/SE/analysis/",
+          "date": "2026-09",
+          "what": "normalized EPS 2026 3.87, 2027 5.25"
+        },
+        {
+          "url": "https://stockanalysis.com/stocks/se/forecast/",
+          "date": "2026-09",
+          "what": "target 156.65 (29 analysts)"
+        },
+        {
+          "url": "https://finance.yahoo.com/quote/SE/",
+          "date": "2026-09-30",
+          "what": "close 97.36"
+        },
+        {
+          "url": "https://www.morningstar.com/news/business-wire/20260810021050/sea-limited-reports-second-quarter-2026-results",
+          "date": "2026-08-10",
+          "what": "Q2 2026 results, Forrest Li quote"
+        },
+        {
+          "url": "https://www.zacks.com/stock/quote/SE/detailed-earning-estimates",
+          "date": "2026-10",
+          "what": "LTG 28.82%, PEG 0.61, Zacks Rank 4"
+        },
+        {
+          "url": "https://sg.finance.yahoo.com/quote/SE/key-statistics/",
+          "date": "2026-09",
+          "what": "market cap, 52w, beta"
+        }
+      ]
+    },
+    {
+      "ticker": "S63.SI",
+      "name": "Singapore Technologies Engineering",
+      "exchange": "SGX",
+      "listing_to_buy": "S63.SI",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": "SGGKF",
+      "adr_ratio": "OTC ordinary",
+      "currency": "SGD",
+      "country": "Singapore",
+      "sector": "Defense, aerospace MRO, smart city",
+      "megatrend": "Defense spending + aerospace MRO",
+      "price": 10.87,
+      "price_date": "2026-09-25",
+      "market_cap_usd_bn": null,
+      "fy_end_month": 12,
+      "eps_basis": "SFRS(I)/IFRS reported EPS (consensus)",
+      "fy2025": null,
+      "fy2026": 0.34,
+      "fy2027": 0.39,
+      "fy2028": 0.44,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": null,
+      "dividend_yield_pct": null,
+      "w52_low": null,
+      "w52_high": null,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "2026 EPS growth of 126.67% vs 2025 (per provider) likely reflects a 2025 one-off/base effect; check 2025 reported EPS.",
+      "latest_results_summary": "H1 2026 (14 Aug 2026): net profit S$512.1M (+27.1%), revenue S$6.57bn (+11.1%), order book S$35.7bn (S$5.7bn to be delivered in rest of 2026).",
+      "guidance": "Expects to finish 2026 strongly on order book and pipeline (no numeric guidance).",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "Defensive compounder; consensus EPS +15% (2027) and +13% (2028) on 2027 P/E ~28x gives PEG ~1.9; below the 15% growth bar.",
+      "key_risk": "Valuation re-rated (price up ~7% in two weeks of September), growth ~13-15%; no 30 Sep close found.",
+      "notes": "Prices: 10.13 (16 Sep), 10.52 (22 Sep), 10.87 (25 Sep 2026).",
+      "sources": [
+        {
+          "url": "https://stocksguide.com/en/forecast/Singapore-Technologies-Engineering-SG1F60858221",
+          "date": "2026-09",
+          "what": "EPS 2026 0.34, 2027 0.39, 2028 0.44"
+        },
+        {
+          "url": "https://www.moomoo.com/stock/S63-SG",
+          "date": "2026-09-25",
+          "what": "price 10.87"
+        },
+        {
+          "url": "https://www.stengg.com/en/newsroom/news-releases/st-engineering-delivers-strong-1h2026-performance/",
+          "date": "2026-08-14",
+          "what": "H1 2026 results, order book"
+        }
+      ]
+    },
+    {
+      "ticker": "GRAB",
+      "name": "Grab Holdings",
+      "exchange": "NASDAQ",
+      "listing_to_buy": "GRAB",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": "GRAB",
+      "adr_ratio": "1 share = 1 Class A",
+      "currency": "USD",
+      "country": "Singapore",
+      "sector": "Ride-hailing, delivery, fintech",
+      "megatrend": "South-East Asia super-app",
+      "price": null,
+      "price_date": null,
+      "market_cap_usd_bn": null,
+      "fy_end_month": 12,
+      "eps_basis": "Adjusted EPS, USD (consensus 3-4 analysts)",
+      "fy2025": null,
+      "fy2026": 0.13,
+      "fy2027": 0.14,
+      "fy2028": 0.19,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": null,
+      "dividend_yield_pct": null,
+      "w52_low": null,
+      "w52_high": null,
+      "price_target": 5.86,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "Early-profitability stage: EPS figures tiny, P/E very high.",
+      "latest_results_summary": "Not retrieved (budget).",
+      "guidance": "Not retrieved.",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "Consensus EPS 0.13 -> 0.14 (+8%) in 2027 then 0.19 in 2028; on a ~$5 price the P/E is ~35x with low 2027 growth: PEG > 3, not a Lynch candidate.",
+      "key_risk": "Thin coverage (3-4 analysts), competition, low near-term EPS growth; price not retrieved.",
+      "notes": "Ranges: 2026 0.09-0.16, 2027 0.12-0.17; 2028 ~0.19 derived by provider from $840,274,000 earnings. 26 analysts 'Strong Buy', target $5.86.",
+      "sources": [
+        {
+          "url": "https://stockanalysis.com/stocks/grab/forecast/",
+          "date": "2026-09",
+          "what": "consensus EPS 2026 0.13, 2027 0.14, 2028 ~0.19; target 5.86"
+        }
+      ]
+    },
+    {
+      "ticker": "034020.KS",
+      "name": "Doosan Enerbility",
+      "exchange": "KRX (KOSPI)",
+      "listing_to_buy": "034020.KS",
+      "pea_eligible": "No (non-EU)",
+      "adr_ticker": null,
+      "adr_ratio": null,
+      "currency": "KRW",
+      "country": "South Korea",
+      "sector": "Power equipment (nuclear, gas turbines)",
+      "megatrend": "Nuclear/SMR & gas-turbine power build-out",
+      "price": null,
+      "price_date": null,
+      "market_cap_usd_bn": null,
+      "fy_end_month": 12,
+      "eps_basis": "K-IFRS reported EPS (consensus)",
+      "fy2025": null,
+      "fy2026": 592.57,
+      "fy2027": 1039.58,
+      "fy2028": 807.0,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": null,
+      "dividend_yield_pct": null,
+      "w52_low": null,
+      "w52_high": null,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": true,
+      "one_offs_note": "2027 consensus EPS (1,039.58) likely includes a one-off (e.g. disposal gain) since 2028 falls back to 807.",
+      "latest_results_summary": "Not retrieved (budget).",
+      "guidance": "Revenue CAGR ~+7% 2024-2028 per consensus (koalagains).",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "Consensus EPS +75% in 2027 then -22% in 2028: growth not durable; PEG not meaningful.",
+      "key_risk": "Lumpy project earnings, 2028 EPS decline, price not retrieved.",
+      "notes": "Price not searched within budget.",
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/quote/034020.KS/analysis/",
+          "date": "2026-09",
+          "what": "consensus EPS 2026 592.57, 2027 1,039.58"
+        },
+        {
+          "url": "https://koalagains.com/stocks/KOSPI/034020/future-performance",
+          "date": "2026",
+          "what": "2028 EPS 807, revenue CAGR +7%"
+        }
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "ticker": "3443.TW",
+      "reason": "Global Unichip: only next-FY consensus EPS 46.20 TWD and LTG 23.9% found; no per-year 2026/2027 figures (target 4,598.13, 18 analysts Strong Buy)."
+    },
+    {
+      "ticker": "2360.TW",
+      "reason": "Chroma ATE: only next-FY consensus EPS 44.52 TWD and growth rates (+113% 2026E, +50% 2027E); no per-year consensus figures."
+    },
+    {
+      "ticker": "2449.TW",
+      "reason": "King Yuan Electronics: not searched (budget)."
+    },
+    {
+      "ticker": "7011.T",
+      "reason": "Mitsubishi Heavy Industries: consensus FY2027 EPS 107.19-127 JPY (+4%) and FY2028 126 JPY; growth far below 15%."
+    },
+    {
+      "ticker": "7013.T",
+      "reason": "IHI: FY2027 EPS 167 JPY, consensus net income 128,496M (FY2027) / 140,862M (FY2028) = ~10% growth; below threshold."
+    },
+    {
+      "ticker": "6503.T",
+      "reason": "Mitsubishi Electric: FY2027 EPS 263 (or 218) JPY, FY2028 growth only 10.99%; FY2028 EPS value not found."
+    },
+    {
+      "ticker": "6758.T",
+      "reason": "Sony: no usable FY2027/FY2028 EPS consensus in JPY found (only revenue 12.74T/12.81T and old EPS 218); growth low."
+    },
+    {
+      "ticker": "7974.T",
+      "reason": "Nintendo: FY2027 EPS consensus 358-429.53 JPY, down 3.8% YoY; FY2028 not found."
+    },
+    {
+      "ticker": "6098.T",
+      "reason": "Recruit: FY2027 EPS 347.78 JPY (14 analysts); FY2028 only as net income 731,161M (17 analysts), no per-share consensus; growth unclear."
+    },
+    {
+      "ticker": "9984.T",
+      "reason": "SoftBank Group: not searched (budget); earnings dominated by investment gains (Vision Fund/Arm), unsuitable for PEG."
+    },
+    {
+      "ticker": "4063.T",
+      "reason": "Shin-Etsu Chemical: not searched (budget); commodity-exposed (PVC/silicon), typically <15% EPS growth."
+    },
+    {
+      "ticker": "6526.T",
+      "reason": "Socionext: FY2027 EPS 57.05 JPY (5 analysts); FY2028 EPS not found (only revenue 267.81B); price not retrieved."
+    },
+    {
+      "ticker": "5801.T",
+      "reason": "Furukawa Electric: FY2027 EPS 126.65 JPY (9 analysts) vs 660 on another provider (share-basis conflict); FY2028 not found."
+    },
+    {
+      "ticker": "064350.KS",
+      "reason": "Hyundai Rotem: only 2026 EPS 10,736.01 KRW; 2027/2028 given only as P/E 10.03/7.95 (median target 306,000 KRW)."
+    },
+    {
+      "ticker": "196170.KQ",
+      "reason": "Alteogen: consensus 2026 7,236.58 KRW (5 analysts) vs marketscreener 7,760 / 2027 10,722; biotech royalty earnings, thin coverage, price not retrieved."
+    },
+    {
+      "ticker": "CPNG",
+      "reason": "Coupang: consensus sets conflict badly (2026 EPS -0.43 GAAP vs 0.36/0.50; 2027 0.27 vs 0.67/0.87); no reliable adjusted consensus."
+    },
+    {
+      "ticker": "3690.HK",
+      "reason": "Meituan: loss-making in 2026 (adjusted EPS -77.39 RMB cents FY26E per CMBI; consensus LPS 0.66 CNY) -> forward P/E undefined; FY27E 554.26 / FY28E 801.81 cents (single broker)."
+    },
+    {
+      "ticker": "TCOM",
+      "reason": "Trip.com: no 2027/2028 consensus EPS found (2026 EPS 23.67, currency unclear); Q1 2026 EPS miss."
+    },
+    {
+      "ticker": "1211.HK",
+      "reason": "BYD: consensus in mixed currencies (2026 4.2 USD, 2027 5.31 USD; CNY 4.39; HK$5.30), price war; 2028 not found."
+    },
+    {
+      "ticker": "9660.HK",
+      "reason": "Horizon Robotics: loss-making through 2027 (EPS -0.21 USD 2026, -0.07 2027), breakeven ~2028."
+    },
+    {
+      "ticker": "0981.HK",
+      "reason": "SMIC: consensus only in USD (0.13 / 0.18, 2026/2027) with no HKD/CNY basis; price not retrieved."
+    },
+    {
+      "ticker": "0388.HK",
+      "reason": "HKEX: consensus EPS 15.6 / 16.1 / 17.2 HKD (2026-2028), growth 3-7%."
+    },
+    {
+      "ticker": "2020.HK",
+      "reason": "Anta Sports: consensus EPS 5.131 / 5.633 / 6.178 CNY (2026-2028), growth ~9-10%."
+    },
+    {
+      "ticker": "6181.HK",
+      "reason": "Laopu Gold: 2026 consensus EPS 39.89 CNY (+2.7%, cut from 45.73); 2027/2028 not found; growth collapsing."
+    },
+    {
+      "ticker": "2015.HK",
+      "reason": "Li Auto: non-GAAP EPS 1.39 CNY (2026, range -3.37 to 6.9) / 6.06 (2027): huge dispersion, 2026 near break-even."
+    },
+    {
+      "ticker": "ETERNAL.NS",
+      "reason": "Eternal (Zomato): no per-share consensus found (PAT FY27 ~675cr / FY28 ~810cr; EPS Mar 2027 0.40 INR); P/E in the hundreds."
+    },
+    {
+      "ticker": "MMYT",
+      "reason": "MakeMyTrip: FY2027 consensus EPS $1.96 (+25.6%, range 1.68-2.30); FY2028 only management projection $2.56 (not consensus); price not retrieved."
+    },
+    {
+      "ticker": "RELIANCE.NS",
+      "reason": "Reliance Industries: FY2027 EPS 64.41-67.35 INR (+17%); FY2028 not found; conglomerate/commodity mix."
+    },
+    {
+      "ticker": "DIXON.NS",
+      "reason": "Dixon Technologies: FY2027 EPS 265.53 INR (29 analysts, 199.48-320); FY2028 not found; price not retrieved."
+    },
+    {
+      "ticker": "BAJFINANCE.NS",
+      "reason": "Bajaj Finance: no INR consensus EPS found (only USD-labelled 31.15 / 49.70 of unclear basis)."
+    },
+    {
+      "ticker": "HDFCBANK.NS",
+      "reason": "HDFC Bank: FY2027 EPS 56.6 INR (37 analysts); FY2028 figure inconsistent (192.66); bank, growth ~16%."
+    },
+    {
+      "ticker": "ICICIBANK.NS",
+      "reason": "ICICI Bank: consensus only for ADR in USD (FY2027 1.66, Erste FY2028 1.97); bank."
+    },
+    {
+      "ticker": "INDIGO.NS",
+      "reason": "InterGlobe Aviation: FY2027 EPS 185.13 INR (13 analysts, 151.7-242.9) vs 122.75 elsewhere; FY2028 not found; airline cyclical (fuel)."
+    }
+  ],
+  "notes": "Method: all figures come from WebSearch (extended mode) result summaries dated September/October 2026; each record lists the URLs used. WebSearch returns an AI summary of pages, not the raw page, so a figure's exact publication date is often only 'as of September 2026'; the 'date' field in sources reflects the best available date. Fiscal-year convention: fyXXXX = fiscal year ENDING in calendar year XXXX (Japan/India March year-ends: fy2027 = Apr 2026-Mar 2027; Lasertec June year-end). For March year-end companies 'complete' means fy2027+fy2028 (the two unreported years), for December year-ends fy2026+fy2027. Prices: 30 Sep 2026 close where found; otherwise the latest close found with its exact date (Alchip 24 Sep, ASE 21 Sep, Aspeed 24 Sep, Elite Material 29 Sep, Disco 25 Sep, Hitachi 28 Sep, Hanwha 28 Sep, CATL 29 Sep, ST Engineering 25 Sep, BABA 29 Sep). Known data hazards: Tokyo Electron 5:1 split effective 1 Oct 2026 (price split-adjusted, EPS pre-split); Sanrio 5:1 split Apr 2026 (fy2028 only available pre-split, left null); MediaTek 30 Sep close 4,920 equals Elite Material's figure (confirmed by a second search but suspicious) and no 2027 consensus found; Unimicron Yahoo consensus looks stale vs Q2 run-rate; AVC 52-week range from search is inconsistent with price; Xiaomi/Pop Mart/Tencent/NetEase/PDD EPS are in CNY while prices are in HKD/USD - convert before computing P/E; Xiaomi 'market cap $657.20B' is almost certainly HKD. Market caps in USD given only where a USD figure was found; local-currency market caps are in 'notes'. Beta/yield/52w are from aggregator statistics pages and vary by provider. Zacks Rank only for US-listed ADRs where found (TSM #1, PDD #3, SE #4, BABA #5). Candidates with complete two-year forward consensus: 34 of 41 records (incomplete: MediaTek, Tokyo Electron, Disco, Ibiden, Sanrio, Alibaba, Persistent) (see summary in NOTES.md). Search budget used: 185 of 200 WebSearch calls; WebFetch/curl not attempted (blocked by policy)."
+}

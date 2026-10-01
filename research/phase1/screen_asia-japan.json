@@ -1,0 +1,1037 @@
+{
+ "candidates": [
+  {
+   "currency": "JPY",
+   "region": "Asia",
+   "country": "Japan",
+   "exchange": "Tokyo Stock Exchange (Prime)",
+   "pea_eligible_listing": "No (Japanese listing; not PEA-eligible; EUR investors use compte-titres or OTC ADR)",
+   "zacks_rank": null,
+   "zacks_rank_date": "not retrieved (search budget exhausted)",
+   "beta": null,
+   "w52_high": null,
+   "w52_low": null,
+   "dividend_yield_pct": null,
+   "market_cap_usd_bn": null,
+   "eps_f3": null,
+   "eps_f3_label": "not found",
+   "fy_end_month": 3,
+   "ticker": "6857.T",
+   "name": "Advantest Corp",
+   "sector": "Semiconductor test equipment (SoC/memory testers)",
+   "price": 34270.0,
+   "price_date": "2026-09-30",
+   "eps_fy0": 517.33,
+   "eps_fy0_label": "FY ending Mar-2026 (DERIVED: stocksguide F1 653.08 / 1.2624; not a direct source)",
+   "eps_f1": 653.08,
+   "eps_f1_label": "FY ending Mar-2027 (stocksguide avg of 28 analysts; Simply Wall St post-results update says JPY663, +28%)",
+   "eps_f2": null,
+   "eps_f2_label": "FY ending Mar-2028 not found (only 'EPS to grow 19.9% p.a.' from Simply Wall St)",
+   "ltg_pct": 19.9,
+   "price_target": null,
+   "eps_basis": "Japanese sell-side consensus is on REPORTED net income per share (no non-GAAP/adjusted EPS consensus exists for Tokyo listings); Advantest reports under IFRS; consensus = IFRS diluted EPS",
+   "cyclical": true,
+   "megatrend": "AI accelerator / HBM testing (test intensity rising with chiplets and HBM)",
+   "key_risk": "Direct dependency on Nvidia/AI-accelerator volumes (violates 'independent of big US AI names'); SPE cycle at/near peak; P/E 52x on F1",
+   "thesis_short": "Near-monopoly (with Teradyne) on AI GPU/HBM testers; F1 EPS +26% (28 analysts) but P/E 52.5x on F1 => indicative PEG(F1) 2.0, PEG on 19.9% LTG 2.6. Expensive, cyclical, AI-dependent: flagged cyclical=true.",
+   "one_offs_note": "None identified in search results; guidance for FY Mar-2027 was revised (direction/figures not captured).",
+   "notes": "Price JPY34,270 close 30-Sep-2026 (investing.com historical data). Only one query possible per data point (session search budget exhausted at 200 calls shared with other agents): cross-check NOT done. Simply Wall St (post-Q1 results) gives JPY663 for FY2027 vs stocksguide 653.08: kept stocksguide (28 analysts) but difference is small.",
+   "sources": [
+    {
+     "url": "https://www.investing.com/equities/advantest-corp.-historical-data",
+     "what": "closing price 30-Sep-2026 = JPY34,270",
+     "date": "2026-09-30"
+    },
+    {
+     "url": "https://stocksguide.com/en/forecast/Advantest-JP3122400009",
+     "what": "consensus EPS FY2027 JPY653.08 (28 analysts, +26.24% vs FY2026), high 895.97 / low 359.37",
+     "date": "2026-10-01 (search run date)"
+    },
+    {
+     "url": "https://simplywall.st/stocks/jp/semiconductors/tse-6857/advantest-shares/news/advantest-corporation-just-beat-eps-by-12-heres-what-analyst",
+     "what": "post-results consensus: EPS +28% to JPY663 for FY2027",
+     "date": "2026-10-01 (search run date)"
+    },
+    {
+     "url": "https://simplywall.st/stocks/us/semiconductors/otc-atey.y/advantest/future",
+     "what": "EPS forecast to grow 19.9% per annum (LTG proxy)",
+     "date": "2026-10-01 (search run date)"
+    },
+    {
+     "url": "https://finance.yahoo.com/quote/6857.T/",
+     "what": "quote page (price reference)",
+     "date": "2026-10-01 (search run date)"
+    }
+   ],
+   "adr_ratio": "ATEYY (OTC) exists; ratio not verified in this run"
+  },
+  {
+   "currency": "JPY",
+   "region": "Asia",
+   "country": "Japan",
+   "exchange": "Tokyo Stock Exchange (Prime)",
+   "pea_eligible_listing": "No (Japanese listing; not PEA-eligible; EUR investors use compte-titres or OTC ADR)",
+   "zacks_rank": null,
+   "zacks_rank_date": "not retrieved (search budget exhausted)",
+   "beta": null,
+   "w52_high": null,
+   "w52_low": null,
+   "dividend_yield_pct": null,
+   "market_cap_usd_bn": null,
+   "eps_f3": null,
+   "eps_f3_label": "not found",
+   "fy_end_month": 3,
+   "ticker": "8035.T",
+   "name": "Tokyo Electron Ltd",
+   "sector": "Semiconductor production equipment (etch, deposition, coater/developer)",
+   "price": 11505.0,
+   "price_date": "2026-09-29 (search summary claimed no 30-Sep close; 30-Sep-2026 is a Wednesday so this is doubtful - verify)",
+   "eps_fy0": 1255.82,
+   "eps_fy0_label": "FY ending Mar-2026 (DERIVED: stocksguide F1 1,624.53 / 1.2936; not a direct source)",
+   "eps_f1": 1624.53,
+   "eps_f1_label": "FY ending Mar-2027 (stocksguide average; high 1,887.05 / low 1,461.90; 24 analysts for net profit)",
+   "eps_f2": 1662.0,
+   "eps_f2_label": "FY ending Mar-2028 (MarketScreener consensus)",
+   "ltg_pct": null,
+   "price_target": null,
+   "eps_basis": "Japanese sell-side consensus is on REPORTED net income per share (no non-GAAP/adjusted EPS consensus exists for Tokyo listings); TEL reports under J-GAAP; consensus = reported EPS",
+   "cyclical": true,
+   "megatrend": "Leading-edge logic/DRAM/HBM capex; 3D NAND; backside power; record FY2026 sales JPY2.44tn, H1 FY2027 guided +33%",
+   "key_risk": "WFE cycle peak (F2 growth only +2.3% per consensus = plateau); China export controls; PRICE FIGURE INCONSISTENT with EPS (implies P/E ~7x) - likely data error or unadjusted split, must be re-verified",
+   "thesis_short": "Best-in-class Japanese WFE maker. F1 EPS +29% but F2 flat (+2.3%) = peak-cycle profile. Indicative P/E(F2) 6.9x on the JPY11,505 price looks implausible for TEL (historically 20-30x) so the price or the EPS basis is wrong; indicative PEG(F2) = 3.0 on F2 growth. Cyclical=true; Lynch: low P/E on a cyclical at the top is a sell signal.",
+   "one_offs_note": "None identified.",
+   "notes": "DATA WARNING: price JPY11,505 (29-Sep-2026, Yahoo/stockopedia summary) vs consensus EPS JPY1,624 gives P/E 7x, which contradicts TEL's usual valuation; either the price is mis-captured or a stock split occurred in 2026. Central model should re-verify before use. No second query possible (budget exhausted).",
+   "sources": [
+    {
+     "url": "https://finance.yahoo.com/quote/8035.T/",
+     "what": "close JPY11,505 on 29-Sep-2026 (as summarised)",
+     "date": "2026-09-29"
+    },
+    {
+     "url": "https://stocksguide.com/en/forecast/Tokyo-Electron-JP3571400005",
+     "what": "consensus EPS FY2027 JPY1,624.53 (+29.36% vs FY2026), high 1,887.05, low 1,461.90",
+     "date": "2026-10-01 (search run date)"
+    },
+    {
+     "url": "https://www.marketscreener.com/quote/stock/TOKYO-ELECTRON-LIMITED-6491071/finances/",
+     "what": "EPS forecast FY2028 JPY1,662",
+     "date": "2026-10-01 (search run date)"
+    },
+    {
+     "url": "https://ninescrolls.com/news/tokyo-electron-posts-record-jpy-2-44-trillion-fy2026-guides-first-half-fy2027",
+     "what": "record FY2026 sales JPY2.44tn; H1 FY2027 guided +33%",
+     "date": "2026-10-01 (search run date)"
+    }
+   ],
+   "adr_ratio": "TOELY (OTC) exists; ratio not verified in this run"
+  },
+  {
+   "currency": "JPY",
+   "region": "Asia",
+   "country": "Japan",
+   "exchange": "Tokyo Stock Exchange (Prime)",
+   "pea_eligible_listing": "No (Japanese listing; not PEA-eligible; EUR investors use compte-titres or OTC ADR)",
+   "zacks_rank": null,
+   "zacks_rank_date": "not retrieved (search budget exhausted)",
+   "beta": null,
+   "w52_high": null,
+   "w52_low": null,
+   "dividend_yield_pct": null,
+   "market_cap_usd_bn": null,
+   "eps_f3": null,
+   "eps_f3_label": "not found",
+   "fy_end_month": 3,
+   "ticker": "6146.T",
+   "name": "DISCO Corp",
+   "sector": "Semiconductor dicing/grinding equipment and blades",
+   "price": 54220.0,
+   "price_date": "2026-09-26 (latest found; 30-Sep close not captured)",
+   "eps_fy0": null,
+   "eps_fy0_label": "FY ending Mar-2026 not found",
+   "eps_f1": 1715.0,
+   "eps_f1_label": "FY ending Mar-2027 ('next financial year' consensus, Stockopedia)",
+   "eps_f2": null,
+   "eps_f2_label": "not found",
+   "ltg_pct": null,
+   "price_target": 80320.0,
+   "eps_basis": "Japanese sell-side consensus is on REPORTED net income per share (no non-GAAP/adjusted EPS consensus exists for Tokyo listings); DISCO reports under J-GAAP; consensus = reported EPS",
+   "cyclical": true,
+   "megatrend": "Advanced packaging / HBM / SiC: grinding and dicing intensity rises with chiplets and HBM stacking",
+   "key_risk": "SPE cycle; valuation 31.6x F1 with no growth figure sourced; HBM/CoWoS customer concentration (TSMC, SK Hynix)",
+   "thesis_short": "Monopoly-like (70-80% share) in dicers/grinders, consumables-rich model. P/E(F1) 31.6x; growth rate not sourced so PEG not computable here. Analyst PT JPY80,320 (+48%). Cyclical=true (SPE).",
+   "one_offs_note": "None identified.",
+   "notes": "Price is 26-Sep-2026 (Stockopedia), not 30-Sep. Single-source consensus; no cross-check possible.",
+   "sources": [
+    {
+     "url": "https://www.stockopedia.com/share-prices/disco-TYO:6146/",
+     "what": "price JPY54,220 (26-Sep-2026); consensus EPS next FY JPY1,715; PT JPY80,320 (+48.14%)",
+     "date": "2026-09-26"
+    },
+    {
+     "url": "https://finance.yahoo.com/quote/6146.T/analysis/",
+     "what": "analyst estimates page (reference)",
+     "date": "2026-10-01 (search run date)"
+    }
+   ],
+   "adr_ratio": "DSCSY (OTC) exists; ratio not verified"
+  },
+  {
+   "currency": "JPY",
+   "region": "Asia",
+   "country": "Japan",
+   "exchange": "Tokyo Stock Exchange (Prime)",
+   "pea_eligible_listing": "No (Japanese listing; not PEA-eligible; EUR investors use compte-titres or OTC ADR)",
+   "zacks_rank": null,
+   "zacks_rank_date": "not retrieved (search budget exhausted)",
+   "beta": null,
+   "w52_high": null,
+   "w52_low": null,
+   "dividend_yield_pct": null,
+   "market_cap_usd_bn": null,
+   "eps_f3": null,
+   "eps_f3_label": "not found",
+   "fy_end_month": 6,
+   "ticker": "6920.T",
+   "name": "Lasertec Corp",
+   "sector": "EUV mask inspection equipment",
+   "price": 41130.0,
+   "price_date": "2026-09-30",
+   "eps_fy0": null,
+   "eps_fy0_label": "FY ending Jun-2026 not found",
+   "eps_f1": 863.0,
+   "eps_f1_label": "FY ending Jun-2027 ('next financial year' consensus, Stockopedia)",
+   "eps_f2": null,
+   "eps_f2_label": "not found",
+   "ltg_pct": null,
+   "price_target": 48812.0,
+   "eps_basis": "Japanese sell-side consensus is on REPORTED net income per share (no non-GAAP/adjusted EPS consensus exists for Tokyo listings); Lasertec reports under J-GAAP; consensus = reported EPS",
+   "cyclical": true,
+   "megatrend": "EUV / High-NA EUV adoption at 2nm and below; actinic mask inspection",
+   "key_risk": "Lumpy orders, KLA competition in actinic inspection, short-seller history; P/E 47.7x on F1; FY ends June (calendarise)",
+   "thesis_short": "Sole supplier of actinic EUV mask inspection (ACTIS). P/E(F1) 47.7x; no growth figure sourced => PEG not computable. PT JPY48,812 (+19%). Cyclical=true.",
+   "one_offs_note": "None identified.",
+   "notes": "Price 30-Sep-2026 JPY41,130 (as summarised from Yahoo/TradingView). Single source for consensus.",
+   "sources": [
+    {
+     "url": "https://finance.yahoo.com/quote/6920.T/",
+     "what": "price JPY41,130 on 30-Sep-2026",
+     "date": "2026-09-30"
+    },
+    {
+     "url": "https://www.stockopedia.com/share-prices/lasertec-TYO:6920/",
+     "what": "consensus EPS next FY JPY863; PT JPY48,812",
+     "date": "2026-10-01 (search run date)"
+    }
+   ],
+   "adr_ratio": "LSRCY (OTC) exists; ratio not verified"
+  },
+  {
+   "currency": "JPY",
+   "region": "Asia",
+   "country": "Japan",
+   "exchange": "Tokyo Stock Exchange (Prime)",
+   "pea_eligible_listing": "No (Japanese listing; not PEA-eligible; EUR investors use compte-titres or OTC ADR)",
+   "zacks_rank": null,
+   "zacks_rank_date": "not retrieved (search budget exhausted)",
+   "beta": null,
+   "w52_high": null,
+   "w52_low": null,
+   "dividend_yield_pct": null,
+   "market_cap_usd_bn": null,
+   "eps_f3": null,
+   "eps_f3_label": "not found",
+   "fy_end_month": 3,
+   "ticker": "7735.T",
+   "name": "SCREEN Holdings",
+   "sector": "Wafer cleaning equipment",
+   "price": 12805.0,
+   "price_date": "2026-09-19 (latest found; 30-Sep close not captured)",
+   "eps_fy0": null,
+   "eps_fy0_label": "FY ending Mar-2026 not found",
+   "eps_f1": 621.0,
+   "eps_f1_label": "FY ending Mar-2027 ('next financial year' consensus, Stockopedia)",
+   "eps_f2": null,
+   "eps_f2_label": "not found",
+   "ltg_pct": null,
+   "price_target": null,
+   "eps_basis": "Japanese sell-side consensus is on REPORTED net income per share (no non-GAAP/adjusted EPS consensus exists for Tokyo listings); SCREEN reports under J-GAAP; consensus = reported EPS",
+   "cyclical": true,
+   "megatrend": "Advanced-node cleaning steps (single-wafer) for logic/HBM",
+   "key_risk": "Pure WFE cyclical; China exposure; guidance for H1 and FY Mar-2027 was revised (direction not captured)",
+   "thesis_short": "#1 in single-wafer cleaning. P/E(F1) 20.6x - cheapest of the Japanese SPE names - but growth not sourced; cyclical=true; Lynch would distrust a low P/E at the top.",
+   "one_offs_note": "None identified.",
+   "notes": "Price dated 19-Sep-2026 only. Single source for consensus.",
+   "sources": [
+    {
+     "url": "https://www.stockopedia.com/share-prices/screen-holdings-TYO:7735/",
+     "what": "price JPY12,805 (19-Sep-2026); consensus EPS next FY JPY621",
+     "date": "2026-09-19"
+    },
+    {
+     "url": "https://www.marketscreener.com/quote/stock/SCREEN-HOLDINGS-CO-LTD-6491440/",
+     "what": "guidance revision for H1 and FY Mar-2027 (reference)",
+     "date": "2026-10-01 (search run date)"
+    }
+   ],
+   "adr_ratio": "DINRF (OTC) exists; ratio not verified"
+  },
+  {
+   "currency": "JPY",
+   "region": "Asia",
+   "country": "Japan",
+   "exchange": "Tokyo Stock Exchange (Prime)",
+   "pea_eligible_listing": "No (Japanese listing; not PEA-eligible; EUR investors use compte-titres or OTC ADR)",
+   "zacks_rank": null,
+   "zacks_rank_date": "not retrieved (search budget exhausted)",
+   "beta": null,
+   "w52_high": null,
+   "w52_low": null,
+   "dividend_yield_pct": null,
+   "market_cap_usd_bn": null,
+   "eps_f3": null,
+   "eps_f3_label": "not found",
+   "fy_end_month": 3,
+   "ticker": "6525.T",
+   "name": "KOKUSAI ELECTRIC Corp",
+   "sector": "Batch ALD/CVD deposition equipment",
+   "price": 9578.0,
+   "price_date": "2026-09-30 (Stockopedia PT math uses a JPY9,300 close - two prices captured)",
+   "eps_fy0": null,
+   "eps_fy0_label": "FY ending Mar-2026 not found",
+   "eps_f1": 243.0,
+   "eps_f1_label": "FY ending Mar-2027 ('next financial year' consensus, Stockopedia)",
+   "eps_f2": null,
+   "eps_f2_label": "not found",
+   "ltg_pct": null,
+   "price_target": 11309.0,
+   "eps_basis": "Japanese sell-side consensus is on REPORTED net income per share (no non-GAAP/adjusted EPS consensus exists for Tokyo listings); KOKUSAI reports under IFRS; consensus = reported EPS",
+   "cyclical": true,
+   "megatrend": "DRAM/HBM and 3D NAND deposition (batch ALD) - memory capex up-cycle",
+   "key_risk": "Memory-capex cyclical (Samsung/SK Hynix/Micron); P/E 39x on F1; KKR overhang history",
+   "thesis_short": "Batch-deposition leader geared to the HBM/DRAM capex cycle. P/E(F1) 39.4x at JPY9,578; growth not sourced => PEG n/a. PT JPY11,309 (+21.6% vs JPY9,300 close). Cyclical=true.",
+   "one_offs_note": "None identified.",
+   "notes": "Two prices captured (JPY9,578 'updated 30-Sep' and JPY9,300 close used for PT upside); kept 9,578. Single-source consensus.",
+   "sources": [
+    {
+     "url": "https://www.stockopedia.com/share-prices/kokusai-electric-TYO:6525/",
+     "what": "price JPY9,578 (30-Sep-2026); consensus EPS next FY JPY243; PT JPY11,309 (+21.6% vs 9,300)",
+     "date": "2026-09-30"
+    },
+    {
+     "url": "https://stockanalysis.com/quote/tyo/6525/statistics/",
+     "what": "statistics page (reference)",
+     "date": "2026-10-01 (search run date)"
+    }
+   ],
+   "adr_ratio": "none known"
+  },
+  {
+   "currency": "JPY",
+   "region": "Asia",
+   "country": "Japan",
+   "exchange": "Tokyo Stock Exchange (Prime)",
+   "pea_eligible_listing": "No (Japanese listing; not PEA-eligible; EUR investors use compte-titres or OTC ADR)",
+   "zacks_rank": null,
+   "zacks_rank_date": "not retrieved (search budget exhausted)",
+   "beta": null,
+   "w52_high": null,
+   "w52_low": null,
+   "dividend_yield_pct": null,
+   "market_cap_usd_bn": null,
+   "eps_f3": null,
+   "eps_f3_label": "not found",
+   "fy_end_month": 3,
+   "ticker": "4062.T",
+   "name": "IBIDEN Co",
+   "sector": "IC package substrates (FC-BGA) for CPU/GPU",
+   "price": 11030.0,
+   "price_date": "2026-09-30",
+   "eps_fy0": null,
+   "eps_fy0_label": "FY ending Mar-2026 not found",
+   "eps_f1": 304.0,
+   "eps_f1_label": "FY ending Mar-2027 ('next financial year' consensus, Stockopedia page 'ibiden'); a second Stockopedia page ('ibiden-co') shows JPY224 - CONFLICT",
+   "eps_f2": null,
+   "eps_f2_label": "FY ending Mar-2028: only growth rates found (+51.42% per one source, +33.57% per another)",
+   "ltg_pct": null,
+   "price_target": 10184.0,
+   "eps_basis": "Japanese sell-side consensus is on REPORTED net income per share (no non-GAAP/adjusted EPS consensus exists for Tokyo listings); IBIDEN reports under J-GAAP; consensus = reported EPS",
+   "cyclical": false,
+   "megatrend": "AI/data-center package substrates (GPU/ASIC FC-BGA, Ono plant ramp)",
+   "key_risk": "Customer concentration (Nvidia/Intel/AMD => indirectly an AI-capex play); conflicting consensus (304 vs 224; FY27 growth +16.5% vs -14.1%); substrate pricing cycle",
+   "thesis_short": "Top-tier FC-BGA substrate maker ramping Ono plant for AI GPUs. P/E(F1) 36.3x on JPY304 (49.2x on JPY224). With +16.5% FY27 growth indicative PEG 2.2; FY28 growth (+34-51%) is where the case lies. Flag: data conflict between sources.",
+   "one_offs_note": "None identified; FY Mar-2026 may carry ramp-up costs (not confirmed).",
+   "notes": "Two Stockopedia pages give JPY304 and JPY224 for 'next FY'; growth tables conflict (FY27E +16.54% / FY28E +51.42% vs FY27E -14.07% / FY28E +33.57%). Kept 304 (page matching the 30-Sep price). Simply Wall St: PT lifted to JPY10,184 after results (below current price).",
+   "sources": [
+    {
+     "url": "https://www.stockopedia.com/share-prices/ibiden-TYO:4062/",
+     "what": "price JPY11,030 (30-Sep-2026); consensus EPS next FY JPY304; FY27E +16.54%, FY28E +51.42%",
+     "date": "2026-09-30"
+    },
+    {
+     "url": "https://www.stockopedia.com/share-prices/ibiden-co-TYO:4062/",
+     "what": "alternative consensus JPY224; FY27E -14.07%, FY28E +33.57%",
+     "date": "2026-10-01 (search run date)"
+    },
+    {
+     "url": "https://simplywall.st/stocks/jp/tech/tse-4062/ibidenltd-shares/news/ibiden-coltd-tse4062-released-earnings-last-week-and-analyst/amp",
+     "what": "analysts lifted PT to JPY10,184 after results",
+     "date": "2026-10-01 (search run date)"
+    },
+    {
+     "url": "https://finance.yahoo.com/technology/ai/articles/3-japanese-ai-stocks-own-001950947.html",
+     "what": "Ibiden cited among 3 Japanese AI stocks (Sep-2026)",
+     "date": "2026-10-01 (search run date)"
+    }
+   ],
+   "adr_ratio": "IBIDF (OTC) exists; ratio not verified"
+  },
+  {
+   "currency": "JPY",
+   "region": "Asia",
+   "country": "Japan",
+   "exchange": "Tokyo Stock Exchange (Prime)",
+   "pea_eligible_listing": "No (Japanese listing; not PEA-eligible; EUR investors use compte-titres or OTC ADR)",
+   "zacks_rank": null,
+   "zacks_rank_date": "not retrieved (search budget exhausted)",
+   "beta": null,
+   "w52_high": null,
+   "w52_low": null,
+   "dividend_yield_pct": null,
+   "market_cap_usd_bn": null,
+   "eps_f3": null,
+   "eps_f3_label": "not found",
+   "fy_end_month": 3,
+   "ticker": "5803.T",
+   "name": "Fujikura Ltd",
+   "sector": "Optical fiber/cable and connectivity for data centers",
+   "price": 5229.0,
+   "price_date": "2026-09-30",
+   "eps_fy0": 127.5,
+   "eps_fy0_label": "UNCERTAIN: a source shows 'forecast EPS 127.5 for fiscal 2027'; could be FY Mar-2026 post-split or a low FY27 estimate - treat with caution",
+   "eps_f1": 177.0,
+   "eps_f1_label": "FY ending Mar-2027 ('next financial year' consensus, Stockopedia); stocksguide shows JPY555.38 avg of 15 analysts (likely pre-split basis)",
+   "eps_f2": null,
+   "eps_f2_label": "not found",
+   "ltg_pct": null,
+   "price_target": null,
+   "eps_basis": "Japanese sell-side consensus is on REPORTED net income per share (no non-GAAP/adjusted EPS consensus exists for Tokyo listings); Fujikura reports under J-GAAP; consensus = reported EPS",
+   "cyclical": false,
+   "megatrend": "AI data-center optical connectivity (ultra-high-density fiber, MPO), US hyperscaler capex, FTTH",
+   "key_risk": "Share-count/split ambiguity in the data (177 vs 555 vs 127.5); hyperscaler capex digestion; copper/aluminium prices",
+   "thesis_short": "Lynch-style 'picks and shovels' for AI data centers without GPU dependency: fiber/cable demand from hyperscalers. P/E(F1) 29.5x on JPY177; if FY0 is 127.5 the growth is +38.8% => indicative PEG 0.76 (very attractive) - but the EPS basis is ambiguous (possible 2026 split) and must be verified.",
+   "one_offs_note": "None identified.",
+   "notes": "Price JPY5,229 close 30-Sep-2026 (investing.com). Three different EPS figures captured (177 / 127.5 / 555.38): the 555.38 is almost exactly 3x 177-185, consistent with a 3-for-1 split in 2026 (hypothesis, not sourced). Central model must confirm share count before using.",
+   "sources": [
+    {
+     "url": "https://www.investing.com/equities/fujikura-ltd.-historical-data",
+     "what": "close JPY5,229 on 30-Sep-2026",
+     "date": "2026-09-30"
+    },
+    {
+     "url": "https://www.stockopedia.com/share-prices/fujikura-TYO:5803/",
+     "what": "consensus EPS next FY JPY177",
+     "date": "2026-10-01 (search run date)"
+    },
+    {
+     "url": "https://www.marketscreener.com/quote/stock/FUJIKURA-LTD-6491074/finances/",
+     "what": "forecast EPS 127.5 (fiscal 2027 per summary)",
+     "date": "2026-10-01 (search run date)"
+    },
+    {
+     "url": "https://stocksguide.com/en/forecast/Fujikura-JP3811000003",
+     "what": "avg EPS estimate JPY555.38 (15 analysts; basis unclear)",
+     "date": "2026-10-01 (search run date)"
+    }
+   ],
+   "adr_ratio": "FKURF (OTC) exists; ratio not verified"
+  },
+  {
+   "currency": "JPY",
+   "region": "Asia",
+   "country": "Japan",
+   "exchange": "Tokyo Stock Exchange (Prime)",
+   "pea_eligible_listing": "No (Japanese listing; not PEA-eligible; EUR investors use compte-titres or OTC ADR)",
+   "zacks_rank": null,
+   "zacks_rank_date": "not retrieved (search budget exhausted)",
+   "beta": null,
+   "w52_high": null,
+   "w52_low": null,
+   "dividend_yield_pct": null,
+   "market_cap_usd_bn": null,
+   "eps_f3": null,
+   "eps_f3_label": "not found",
+   "fy_end_month": 3,
+   "ticker": "6501.T",
+   "name": "Hitachi Ltd",
+   "sector": "Diversified industrial: grid/power (Hitachi Energy), rail, Lumada digital",
+   "price": 5536.0,
+   "price_date": "2026-09-27 (latest found; 30-Sep close not captured)",
+   "eps_fy0": 178.16,
+   "eps_fy0_label": "FY ending Mar-2026 (DERIVED: stocksguide F1 219.06 / 1.2296; not a direct source)",
+   "eps_f1": 219.06,
+   "eps_f1_label": "FY ending Mar-2027 (stocksguide avg of 18 analysts, +22.96% vs FY2026); Stockopedia shows JPY217",
+   "eps_f2": null,
+   "eps_f2_label": "FY ending Mar-2028 not found",
+   "ltg_pct": null,
+   "price_target": 6567.0,
+   "eps_basis": "Japanese sell-side consensus is on REPORTED net income per share (no non-GAAP/adjusted EPS consensus exists for Tokyo listings); Hitachi reports under IFRS; consensus = IFRS EPS (Hitachi also publishes 'Adjusted EBITA' but consensus EPS is reported)",
+   "cyclical": false,
+   "megatrend": "Electrification / grid build-out (transformers, HVDC) + data-center power; rail; Lumada AI/OT",
+   "key_risk": "Grid-equipment capacity ramp execution; conglomerate discount; JPY appreciation; M&A integration",
+   "thesis_short": "Power-grid and digital compounder with drivers independent of Nvidia (transformer/HVDC backlog). P/E(F1) 25.3x, F1 EPS growth +23% (18 analysts) => indicative PEG(F1) 1.10. Fits Lynch screen; PT JPY6,567 (+18.6%).",
+   "one_offs_note": "FY Mar-2026 may include gains on business disposals (Hitachi has a history of portfolio exits) - not confirmed in results captured.",
+   "notes": "Price JPY5,536 dated 27-Sep-2026 (Stockopedia); 30-Sep close not captured. Two consensus figures (217 vs 219.06) agree within 1%.",
+   "sources": [
+    {
+     "url": "https://www.stockopedia.com/share-prices/hitachi-TYO:6501/",
+     "what": "price JPY5,536 (27-Sep-2026); consensus EPS next FY JPY217; PT JPY6,567 (+18.62%)",
+     "date": "2026-09-27"
+    },
+    {
+     "url": "https://stocksguide.com/en/forecast/Hitachi-JP3788600009",
+     "what": "avg EPS FY2027 JPY219.06 (18 analysts, +22.96% vs FY2026)",
+     "date": "2026-10-01 (search run date)"
+    },
+    {
+     "url": "https://www.marketscreener.com/quote/stock/HITACHI-LTD-6492458/finances/",
+     "what": "estimates page (reference)",
+     "date": "2026-10-01 (search run date)"
+    }
+   ],
+   "adr_ratio": "HTHIY (OTC) exists; ratio not verified"
+  },
+  {
+   "currency": "JPY",
+   "region": "Asia",
+   "country": "Japan",
+   "exchange": "Tokyo Stock Exchange (Prime)",
+   "pea_eligible_listing": "No (Japanese listing; not PEA-eligible; EUR investors use compte-titres or OTC ADR)",
+   "zacks_rank": null,
+   "zacks_rank_date": "not retrieved (search budget exhausted)",
+   "beta": null,
+   "w52_high": null,
+   "w52_low": null,
+   "dividend_yield_pct": null,
+   "market_cap_usd_bn": null,
+   "eps_f3": null,
+   "eps_f3_label": "not found",
+   "fy_end_month": 3,
+   "ticker": "7011.T",
+   "name": "Mitsubishi Heavy Industries",
+   "sector": "Gas turbines, defense, aerospace, nuclear",
+   "price": 3806.0,
+   "price_date": "2026-09-30",
+   "eps_fy0": null,
+   "eps_fy0_label": "FY ending Mar-2026 not found",
+   "eps_f1": 126.0,
+   "eps_f1_label": "FY ending Mar-2027 ('next financial year' consensus, Stockopedia)",
+   "eps_f2": null,
+   "eps_f2_label": "FY ending Mar-2028: net income projections exist on MarketScreener but EPS figure not captured",
+   "ltg_pct": null,
+   "price_target": 5450.58,
+   "eps_basis": "Japanese sell-side consensus is on REPORTED net income per share (no non-GAAP/adjusted EPS consensus exists for Tokyo listings); MHI reports under IFRS; consensus = reported EPS",
+   "cyclical": false,
+   "megatrend": "Data-center and grid power (gas turbines, GTCC backlog), Japan defense spending (2% GDP), nuclear restart",
+   "key_risk": "P/E 30x on F1 already prices the turbine/defense cycle; execution on turbine capacity; FY0/growth not sourced",
+   "thesis_short": "Dual megatrend (gas turbines for AI data centers + Japanese rearmament) with no GPU dependency. P/E(F1) 30.2x; growth not sourced => PEG n/a here. PT JPY5,450.58 (+40.5%, 16 analysts Buy).",
+   "one_offs_note": "None identified.",
+   "notes": "Price JPY3,806 on 30-Sep-2026 (prev close 3,839). Single-source consensus; no FY0 or F2 EPS captured.",
+   "sources": [
+    {
+     "url": "https://www.investing.com/equities/mitsubishi-heavy-industries,-ltd.",
+     "what": "price JPY3,806 on 30-Sep-2026 (prev close 3,839)",
+     "date": "2026-09-30"
+    },
+    {
+     "url": "https://www.stockopedia.com/share-prices/mitsubishi-heavy-industries-TYO:7011/",
+     "what": "consensus EPS next FY JPY126",
+     "date": "2026-10-01 (search run date)"
+    },
+    {
+     "url": "https://www.tradingview.com/symbols/TSE-7011/forecast/",
+     "what": "avg PT JPY5,450.58 (+40.52%), 16 analysts, Buy",
+     "date": "2026-10-01 (search run date)"
+    },
+    {
+     "url": "https://uk.marketscreener.com/quote/stock/MITSUBISHI-HEAVY-INDUSTRI-6491254/finances/",
+     "what": "FY2028 net income projections (EPS not captured)",
+     "date": "2026-10-01 (search run date)"
+    }
+   ],
+   "adr_ratio": "MHVYF (OTC) exists; ratio not verified"
+  },
+  {
+   "currency": "JPY",
+   "region": "Asia",
+   "country": "Japan",
+   "exchange": "Tokyo Stock Exchange (Prime)",
+   "pea_eligible_listing": "No (Japanese listing; not PEA-eligible; EUR investors use compte-titres or OTC ADR)",
+   "zacks_rank": null,
+   "zacks_rank_date": "not retrieved (search budget exhausted)",
+   "beta": null,
+   "w52_high": null,
+   "w52_low": null,
+   "dividend_yield_pct": null,
+   "market_cap_usd_bn": null,
+   "eps_f3": null,
+   "eps_f3_label": "not found",
+   "fy_end_month": 3,
+   "ticker": "7013.T",
+   "name": "IHI Corp",
+   "sector": "Aero engines (civil aftermarket, PW1100G), defense, ammonia/energy",
+   "price": 2682.0,
+   "price_date": "2026-09-30 (as captured; day move -3.04%)",
+   "eps_fy0": null,
+   "eps_fy0_label": "FY ending Mar-2026 not found",
+   "eps_f1": 167.0,
+   "eps_f1_label": "FY ending Mar-2027 ('next financial year' consensus, Stockopedia) - possible split-basis ambiguity",
+   "eps_f2": null,
+   "eps_f2_label": "not found",
+   "ltg_pct": null,
+   "price_target": 3879.0,
+   "eps_basis": "Japanese sell-side consensus is on REPORTED net income per share (no non-GAAP/adjusted EPS consensus exists for Tokyo listings); IHI consensus = reported EPS (company GAAP)",
+   "cyclical": false,
+   "megatrend": "Civil aero-engine aftermarket (spare parts/MRO) + Japan defense + ammonia co-firing",
+   "key_risk": "PW1100G (GTF) compensation/one-offs; low margin history; split-basis ambiguity in EPS data",
+   "thesis_short": "Cheapest industrial on the list: P/E(F1) 16.1x with aero-aftermarket and defense tailwinds. Growth not sourced => PEG n/a; PT JPY3,879 (+37.9%, 11 analysts Buy). Watch for GTF one-offs.",
+   "one_offs_note": "Historical PW1100G provisions/reversals can distort a fiscal year (not quantified in captured results).",
+   "notes": "Single-source consensus; FY0/F2 not captured.",
+   "sources": [
+    {
+     "url": "https://www.stockopedia.com/share-prices/ihi-TYO:7013/",
+     "what": "price JPY2,682 (-3.04%); consensus EPS next FY JPY167",
+     "date": "2026-09-30"
+    },
+    {
+     "url": "https://stockanalysis.com/quote/tyo/7013/",
+     "what": "PT JPY3,879 (+37.90%), 11 analysts Buy",
+     "date": "2026-10-01 (search run date)"
+    }
+   ],
+   "adr_ratio": "IHICY (OTC) exists; ratio not verified"
+  },
+  {
+   "currency": "JPY",
+   "region": "Asia",
+   "country": "Japan",
+   "exchange": "Tokyo Stock Exchange (Prime)",
+   "pea_eligible_listing": "No (Japanese listing; not PEA-eligible; EUR investors use compte-titres or OTC ADR)",
+   "zacks_rank": null,
+   "zacks_rank_date": "not retrieved (search budget exhausted)",
+   "beta": null,
+   "w52_high": null,
+   "w52_low": null,
+   "dividend_yield_pct": null,
+   "market_cap_usd_bn": null,
+   "eps_f3": null,
+   "eps_f3_label": "not found",
+   "fy_end_month": 3,
+   "ticker": "6503.T",
+   "name": "Mitsubishi Electric Corp",
+   "sector": "Factory automation, power systems, defense electronics, HVAC",
+   "price": 5205.0,
+   "price_date": "2026-09-30",
+   "eps_fy0": null,
+   "eps_fy0_label": "FY ending Mar-2026 not found",
+   "eps_f1": 263.0,
+   "eps_f1_label": "FY ending Mar-2027 ('next financial year' consensus, Stockopedia)",
+   "eps_f2": null,
+   "eps_f2_label": "not found",
+   "ltg_pct": null,
+   "price_target": 6813.0,
+   "eps_basis": "Japanese sell-side consensus is on REPORTED net income per share (no non-GAAP/adjusted EPS consensus exists for Tokyo listings); Mitsubishi Electric reports under IFRS; consensus = reported EPS",
+   "cyclical": false,
+   "megatrend": "Japan defense (radars, missiles electronics), grid/power equipment, FA recovery, data-center cooling",
+   "key_risk": "FA exposure to China capex; growth figure not sourced; conglomerate",
+   "thesis_short": "Defense electronics + power/grid + FA. P/E(F1) 19.8x; growth not sourced => PEG n/a. PT JPY6,813 (+30.9%).",
+   "one_offs_note": "None identified.",
+   "notes": "Single-source consensus; FY0/F2 not captured.",
+   "sources": [
+    {
+     "url": "https://www.investing.com/equities/mitsubishi-electric-corp.",
+     "what": "price JPY5,205 on 30-Sep-2026",
+     "date": "2026-09-30"
+    },
+    {
+     "url": "https://www.stockopedia.com/share-prices/mitsubishi-electric-TYO:6503/",
+     "what": "consensus EPS next FY JPY263; PT JPY6,813",
+     "date": "2026-10-01 (search run date)"
+    }
+   ],
+   "adr_ratio": "MIELY (OTC) exists; ratio not verified"
+  },
+  {
+   "currency": "JPY",
+   "region": "Asia",
+   "country": "Japan",
+   "exchange": "Tokyo Stock Exchange (Prime)",
+   "pea_eligible_listing": "No (Japanese listing; not PEA-eligible; EUR investors use compte-titres or OTC ADR)",
+   "zacks_rank": null,
+   "zacks_rank_date": "not retrieved (search budget exhausted)",
+   "beta": null,
+   "w52_high": null,
+   "w52_low": null,
+   "dividend_yield_pct": null,
+   "market_cap_usd_bn": null,
+   "eps_f3": null,
+   "eps_f3_label": "not found",
+   "fy_end_month": 3,
+   "ticker": "6504.T",
+   "name": "Fuji Electric Co",
+   "sector": "Power electronics, power semiconductors (SiC/IGBT), energy systems",
+   "price": 13665.0,
+   "price_date": "2026-09-29 (latest found)",
+   "eps_fy0": null,
+   "eps_fy0_label": "FY ending Mar-2026 not found",
+   "eps_f1": 763.74,
+   "eps_f1_label": "FY ending Mar-2027 - COMPANY GUIDANCE (updated), not analyst consensus",
+   "eps_f2": null,
+   "eps_f2_label": "not found",
+   "ltg_pct": null,
+   "price_target": 16556.0,
+   "eps_basis": "Japanese sell-side consensus is on REPORTED net income per share (no non-GAAP/adjusted EPS consensus exists for Tokyo listings); Fuji Electric reports under J-GAAP; figure used is company guidance EPS",
+   "cyclical": false,
+   "megatrend": "Grid upgrades / renewables integration, data-center power (UPS), power semis for EV/industrial",
+   "key_risk": "Power-semi pricing (SiC oversupply), China; F1 is guidance not consensus; growth not sourced",
+   "thesis_short": "Mid-cap grid/power-electronics play (market cap JPY1.99tn). P/E 17.9x on company-guided EPS JPY763.74; growth not sourced => PEG n/a. 24 analysts raised PTs; PT JPY16,556 (+21.2%).",
+   "one_offs_note": "None identified.",
+   "notes": "Market cap JPY1.99tn (stockanalysis, 29-Sep-2026) - USD conversion not done (no sourced FX rate). F1 is company guidance.",
+   "sources": [
+    {
+     "url": "https://stockanalysis.com/quote/tyo/6504/",
+     "what": "price JPY13,665 (29-Sep-2026); market cap JPY1.99T; PT JPY16,556 (+21.15%), 9 analysts Buy",
+     "date": "2026-09-29"
+    },
+    {
+     "url": "https://simplywall.st/community/narratives/jp/capital-goods/tse-6504/fuji-electric-shares/qrnzb8xy-renewable-demand-and-grid-improvements-will-drive-earnings-outlook-through-2026/updates/24-analysts-have-raised-their-price-target-on-fuji-electric-fro",
+     "what": "updated guidance EPS JPY763.74 for FY Mar-2027; 24 analysts raised PT",
+     "date": "2026-10-01 (search run date)"
+    }
+   ],
+   "adr_ratio": "FELTY (OTC) exists; ratio not verified"
+  },
+  {
+   "currency": "JPY",
+   "region": "Asia",
+   "country": "Japan",
+   "exchange": "Tokyo Stock Exchange (Prime)",
+   "pea_eligible_listing": "No (Japanese listing; not PEA-eligible; EUR investors use compte-titres or OTC ADR)",
+   "zacks_rank": null,
+   "zacks_rank_date": "not retrieved (search budget exhausted)",
+   "beta": null,
+   "w52_high": null,
+   "w52_low": null,
+   "dividend_yield_pct": null,
+   "market_cap_usd_bn": null,
+   "eps_f3": null,
+   "eps_f3_label": "not found",
+   "fy_end_month": 3,
+   "ticker": "6861.T",
+   "name": "Keyence Corp",
+   "sector": "Factory-automation sensors, vision, measurement (direct sales)",
+   "price": 80480.0,
+   "price_date": "2026-09-30",
+   "eps_fy0": null,
+   "eps_fy0_label": "FY ending Mar-2026 not found",
+   "eps_f1": 2335.0,
+   "eps_f1_label": "FY ending Mar-2027 ('next financial year' consensus, Stockopedia)",
+   "eps_f2": null,
+   "eps_f2_label": "not found",
+   "ltg_pct": null,
+   "price_target": 97866.67,
+   "eps_basis": "Japanese sell-side consensus is on REPORTED net income per share (no non-GAAP/adjusted EPS consensus exists for Tokyo listings); Keyence reports under J-GAAP; consensus = reported EPS",
+   "cyclical": false,
+   "megatrend": "Automation / labour scarcity; reshoring capex; 50%+ operating margin compounder",
+   "key_risk": "Growth typically ~10%: PEG likely >2 at 34x; FA capex cycle; strong JPY",
+   "thesis_short": "Highest-quality FA franchise but P/E(F1) 34.5x with historical ~10% growth => likely PEG >2 (growth not sourced). PT JPY97,866.67 (+21.6%, Strong Buy). Included for completeness; probably fails PEG<=1.5.",
+   "one_offs_note": "None identified.",
+   "notes": "Single-source consensus.",
+   "sources": [
+    {
+     "url": "https://www.investing.com/equities/keyence",
+     "what": "price JPY80,480 on 30-Sep-2026 (+1.26%)",
+     "date": "2026-09-30"
+    },
+    {
+     "url": "https://www.stockopedia.com/share-prices/keyence-TYO:6861/",
+     "what": "consensus EPS next FY JPY2,335",
+     "date": "2026-10-01 (search run date)"
+    },
+    {
+     "url": "https://www.tradingview.com/symbols/TSE-6861/forecast/",
+     "what": "avg PT JPY97,866.67 (+21.60%), Strong Buy",
+     "date": "2026-10-01 (search run date)"
+    }
+   ],
+   "adr_ratio": "KYCCF (OTC) exists; ratio not verified"
+  },
+  {
+   "currency": "JPY",
+   "region": "Asia",
+   "country": "Japan",
+   "exchange": "Tokyo Stock Exchange (Prime)",
+   "pea_eligible_listing": "No (Japanese listing; not PEA-eligible; EUR investors use compte-titres or OTC ADR)",
+   "zacks_rank": null,
+   "zacks_rank_date": "not retrieved (search budget exhausted)",
+   "beta": null,
+   "w52_high": null,
+   "w52_low": null,
+   "dividend_yield_pct": null,
+   "market_cap_usd_bn": null,
+   "eps_f3": null,
+   "eps_f3_label": "not found",
+   "fy_end_month": 3,
+   "ticker": "6758.T",
+   "name": "Sony Group Corp",
+   "sector": "Games (PlayStation), music, pictures, image sensors",
+   "price": 3759.0,
+   "price_date": "2026-09-30",
+   "eps_fy0": null,
+   "eps_fy0_label": "FY ending Mar-2026 not found",
+   "eps_f1": 218.0,
+   "eps_f1_label": "FY ending Mar-2027 ('next financial year' consensus, Stockopedia)",
+   "eps_f2": null,
+   "eps_f2_label": "FY ending Mar-2028: only growth rate found (+5.89%); derived 230.84 NOT entered",
+   "ltg_pct": null,
+   "price_target": 4856.0,
+   "eps_basis": "Japanese sell-side consensus is on REPORTED net income per share (no non-GAAP/adjusted EPS consensus exists for Tokyo listings); Sony reports under IFRS; consensus = IFRS EPS (post Sony Financial spin-off)",
+   "cyclical": false,
+   "megatrend": "Entertainment IP / anime / live services; image sensors for smartphones and automotive",
+   "key_risk": "Low EPS growth (~6% for FY28 per consensus) => PEG ~2.9; game-console cycle; image-sensor exposure to Apple",
+   "thesis_short": "Quality entertainment conglomerate, cheap P/E(F1) 17.2x and Strong Buy PT JPY4,856 (+29%), but consensus EPS growth FY28 only +5.9% => indicative PEG ~2.9. Fails Lynch growth hurdle.",
+   "one_offs_note": "FY Mar-2026 includes Sony Financial Group spin-off (Oct-2025) effects - distorts YoY comparisons.",
+   "notes": "Single-source consensus; F2 growth +5.89% from Stockopedia growth table.",
+   "sources": [
+    {
+     "url": "https://stockanalysis.com/quote/tyo/6758/",
+     "what": "price JPY3,759 on 30-Sep-2026; PT JPY4,856 (+29.19%), Strong Buy",
+     "date": "2026-09-30"
+    },
+    {
+     "url": "https://www.stockopedia.com/share-prices/sony-TYO:6758/",
+     "what": "consensus EPS next FY JPY218; FY2028E EPS growth +5.89%",
+     "date": "2026-10-01 (search run date)"
+    }
+   ],
+   "adr_ratio": "SONY (NYSE), 1 ADR = 1 ordinary share (not re-verified this run)"
+  },
+  {
+   "currency": "JPY",
+   "region": "Asia",
+   "country": "Japan",
+   "exchange": "Tokyo Stock Exchange (Prime)",
+   "pea_eligible_listing": "No (Japanese listing; not PEA-eligible; EUR investors use compte-titres or OTC ADR)",
+   "zacks_rank": null,
+   "zacks_rank_date": "not retrieved (search budget exhausted)",
+   "beta": null,
+   "w52_high": null,
+   "w52_low": null,
+   "dividend_yield_pct": null,
+   "market_cap_usd_bn": null,
+   "eps_f3": null,
+   "eps_f3_label": "not found",
+   "fy_end_month": 3,
+   "ticker": "8136.T",
+   "name": "Sanrio Co",
+   "sector": "Character IP licensing (Hello Kitty etc.), theme parks, retail",
+   "price": 1177.5,
+   "price_date": "2026-09-30 (late-Sep quote; post 5-for-1 split)",
+   "eps_fy0": null,
+   "eps_fy0_label": "FY ending Mar-2026 not found (company guides FY3/2027 net profit +16.8% YoY)",
+   "eps_f1": 53.0,
+   "eps_f1_label": "FY ending Mar-2027 ('next financial year' consensus, Stockopedia, post-split); MarketScreener shows 249.1 (pre-split basis = 49.8 post-split)",
+   "eps_f2": null,
+   "eps_f2_label": "not found",
+   "ltg_pct": null,
+   "price_target": null,
+   "eps_basis": "Japanese sell-side consensus is on REPORTED net income per share (no non-GAAP/adjusted EPS consensus exists for Tokyo listings); Sanrio reports under J-GAAP; company guides 'adjusted operating profit' but EPS consensus = reported net profit per share",
+   "cyclical": false,
+   "megatrend": "Global character-IP boom (Asia/US licensing, collab merchandising, Gen-Z kawaii), inbound tourism Japan",
+   "key_risk": "Fad/hit-driven licensing revenue; China licensing exposure; post-split data confusion (53 vs 249.1)",
+   "thesis_short": "Classic Lynch consumer story independent of AI: licensing-led, asset-light, +18% sales / +17% net profit guided for FY3/2027. P/E(F1) 22.2x on JPY53; on guided +16.8% profit growth indicative PEG 1.32. Eligible on PEG<=1.5.",
+   "one_offs_note": "None identified in FY3/2027 guidance (sales JPY229.8bn +18.4%, adj OP JPY88.8bn +13.2%, NP JPY63.8bn +16.8%).",
+   "notes": "5-for-1 split explains 249.1 (MarketScreener) vs 53 (Stockopedia). Price JPY1,177.5 captured late Sept 2026 (exact day not confirmed).",
+   "sources": [
+    {
+     "url": "https://www.investing.com/equities/sanrio-co-ltd",
+     "what": "price JPY1,177.5 (late Sep-2026)",
+     "date": "2026-09-30"
+    },
+    {
+     "url": "https://www.stockopedia.com/share-prices/sanrio-co-TYO:8136/",
+     "what": "consensus EPS next FY JPY53",
+     "date": "2026-10-01 (search run date)"
+    },
+    {
+     "url": "https://www.marketscreener.com/quote/stock/SANRIO-COMPANY-LTD-6491193/finances/",
+     "what": "FY2027 EPS 249.1 (pre-split basis)",
+     "date": "2026-10-01 (search run date)"
+    },
+    {
+     "url": "https://quartr.com/companies/sanrio-company-ltd_16880",
+     "what": "FY3/2027 company forecast: sales JPY229.8bn (+18.4%), adj OP JPY88.8bn (+13.2%), NP JPY63.8bn (+16.8%)",
+     "date": "2026-10-01 (search run date)"
+    }
+   ],
+   "adr_ratio": "SNROF (OTC) exists; ratio not verified"
+  },
+  {
+   "currency": "JPY",
+   "region": "Asia",
+   "country": "Japan",
+   "exchange": "Tokyo Stock Exchange (Prime)",
+   "pea_eligible_listing": "No (Japanese listing; not PEA-eligible; EUR investors use compte-titres or OTC ADR)",
+   "zacks_rank": null,
+   "zacks_rank_date": "not retrieved (search budget exhausted)",
+   "beta": null,
+   "w52_high": null,
+   "w52_low": null,
+   "dividend_yield_pct": null,
+   "market_cap_usd_bn": null,
+   "eps_f3": null,
+   "eps_f3_label": "not found",
+   "fy_end_month": 3,
+   "ticker": "6098.T",
+   "name": "Recruit Holdings",
+   "sector": "HR technology (Indeed, Glassdoor), staffing, matching platforms",
+   "price": 17350.0,
+   "price_date": "2026-09-23 (latest found; 30-Sep close not captured)",
+   "eps_fy0": null,
+   "eps_fy0_label": "FY ending Mar-2026 not found",
+   "eps_f1": 459.0,
+   "eps_f1_label": "FY ending Mar-2027 ('next financial year' consensus, Stockopedia); Yahoo (older) shows 347.78 for 'next year' - CONFLICT",
+   "eps_f2": null,
+   "eps_f2_label": "not found",
+   "ltg_pct": null,
+   "price_target": null,
+   "eps_basis": "Japanese sell-side consensus is on REPORTED net income per share (no non-GAAP/adjusted EPS consensus exists for Tokyo listings); Recruit reports under IFRS; consensus = IFRS EPS (company also reports adjusted EPS - not captured)",
+   "cyclical": false,
+   "megatrend": "AI-driven hiring/matching (Indeed), labour-market digitisation",
+   "key_risk": "US hiring cycle (Indeed revenue); conflicting consensus (459 vs 347.78); price level JPY17,350 not cross-checked",
+   "thesis_short": "AI-enabled HR platform. P/E(F1) 37.8x on JPY459 (49.9x on JPY347.78); growth not sourced => PEG n/a. Data conflicts; low priority on PEG basis.",
+   "one_offs_note": "Buybacks and possible investment gains (not captured).",
+   "notes": "Price dated 23-Sep-2026. Two conflicting consensus figures; kept the more recent Stockopedia 459.",
+   "sources": [
+    {
+     "url": "https://www.investing.com/equities/recruit-holdings",
+     "what": "price JPY17,350 (23-Sep-2026)",
+     "date": "2026-09-23"
+    },
+    {
+     "url": "https://www.stockopedia.com/share-prices/recruit-holdings-co-TYO:6098/",
+     "what": "consensus EPS next FY JPY459",
+     "date": "2026-10-01 (search run date)"
+    },
+    {
+     "url": "https://finance.yahoo.com/quote/6098.T/analysis/",
+     "what": "avg EPS next year 347.78 (older update)",
+     "date": "2026-10-01 (search run date)"
+    }
+   ],
+   "adr_ratio": "RCRUY (OTC) exists; ratio not verified"
+  }
+ ],
+ "excluded": [
+  {
+   "ticker": "7974.T",
+   "reason": "Nintendo: price JPY7,944 (30-Sep-2026), consensus EPS FY Mar-2027 JPY382 (Stockopedia), FY2026 est 364.5; growth only ~3-6% for FY27-28 => P/E 20.8x / PEG >3. Fails Lynch growth hurdle. Sources: stockopedia.com/share-prices/nintendo-TYO:7974/, investing.com/equities/nintendo-ltd"
+  },
+  {
+   "ticker": "5802.T",
+   "reason": "Sumitomo Electric: price JPY1,995 (15-Sep-2026, post 4-for-1 split), consensus EPS next FY JPY108 (Stockopedia) with Simply Wall St forecasting EPS to SINK 14% in FY2027; dividend JPY39/yr post-split (~1.95%). Negative F1 growth => no PEG. Sources: stockopedia.com/share-prices/sumitomo-electric-industries-TYO:5802/, simplywall.st ... tse-5802 ... just-beat-analyst-forecasts, marketscreener financial result May-12-2026"
+  },
+  {
+   "ticker": "4063.T",
+   "reason": "Shin-Etsu Chemical: price JPY6,041 (1-Oct-2026 quote), TTM EPS JPY256.2 (P/E 23.6x), Q1 FY27 net JPY130.83bn; no FY Mar-2027 consensus captured; mature PVC/wafer cyclical with single-digit growth => PEG unattractive. Sources: gurufocus.com/stock/TSE:4063/summary, stockanalysis.com/quote/tyo/4063/"
+  },
+  {
+   "ticker": "5801.T",
+   "reason": "Furukawa Electric: price JPY3,785 (28-Sep-2026), TTM EPS JPY102.97 (Yahoo) vs 'avg EPS forecast JPY585.57' (stocksguide) and PT JPY6,190 (10 analysts, S&P Global) - figures mutually inconsistent (probable 2026 split not adjusted); could not source a usable FY Mar-2027 consensus. Interesting AI-fiber theme (same as Fujikura) - revisit if data verified. Sources: investing.com/equities/furukawa-electric-co.,-ltd., stockanalysis.com/quote/tyo/5801/forecast/, stocksguide.com/en/forecast/Furukawa-Electric-JP3827200001"
+  },
+  {
+   "ticker": "7012.T",
+   "reason": "Kawasaki Heavy: price JPY2,345.5 (30-Sep-2026), consensus EPS next FY JPY144 (Stockopedia) => P/E 16.3x but net margin ~4.7% and conflicting EPS basis (524.67 pre-split figure); growth not sourced. Lower quality than MHI/IHI on the same defense theme. Sources: stockopedia.com/share-prices/kawasaki-heavy-industries-TYO:7012/, simplywall.st tse-7012 earnings-growth-and-47-margin"
+  },
+  {
+   "ticker": "9984.T",
+   "reason": "SoftBank Group: NOT RESEARCHED - web search budget (200/session, shared) exhausted before this query; also a holding company whose EPS is driven by investment revaluations (Arm/OpenAI) - PEG not meaningful."
+  },
+  {
+   "ticker": "6723.T",
+   "reason": "Renesas: NOT RESEARCHED - search budget exhausted; MCU/analog cyclical with Altium/Wolfspeed write-down history."
+  },
+  {
+   "ticker": "6526.T",
+   "reason": "Socionext: NOT RESEARCHED - search budget exhausted; custom-SoC design house (AI/auto ASICs) worth a follow-up query."
+  },
+  {
+   "ticker": "7729.T",
+   "reason": "Tokyo Seimitsu: NOT RESEARCHED - search budget exhausted; SPE cyclical (probers/dicers)."
+  },
+  {
+   "ticker": "6323.T",
+   "reason": "Rorze: NOT RESEARCHED - search budget exhausted; wafer-transfer robots, SPE cyclical, FY ends February."
+  },
+  {
+   "ticker": "6383.T",
+   "reason": "Daifuku: NOT RESEARCHED - search budget exhausted; material handling / semi AMHS."
+  },
+  {
+   "ticker": "7741.T",
+   "reason": "Hoya: NOT RESEARCHED - search budget exhausted; EUV mask blanks + eyecare, usually PEG >2."
+  },
+  {
+   "ticker": "6976.T",
+   "reason": "Taiyo Yuden: NOT RESEARCHED - search budget exhausted; MLCC cyclical."
+  },
+  {
+   "ticker": "6981.T",
+   "reason": "Murata: NOT RESEARCHED - search budget exhausted; MLCC cyclical, smartphone exposure."
+  },
+  {
+   "ticker": "6762.T",
+   "reason": "TDK: NOT RESEARCHED - search budget exhausted; batteries/HDD heads, Apple exposure."
+  },
+  {
+   "ticker": "6594.T",
+   "reason": "Nidec: NOT RESEARCHED - search budget exhausted; governance/accounting issues in 2025-26."
+  },
+  {
+   "ticker": "9983.T",
+   "reason": "Fast Retailing: NOT RESEARCHED - search budget exhausted; FY ends August; typically P/E 30x+ for ~10% growth."
+  },
+  {
+   "ticker": "6954.T",
+   "reason": "Fanuc: NOT RESEARCHED - search budget exhausted; FA cyclical, China exposure."
+  },
+  {
+   "ticker": "6273.T",
+   "reason": "SMC: NOT RESEARCHED - search budget exhausted; pneumatics, FA cyclical."
+  },
+  {
+   "ticker": "6506.T",
+   "reason": "Yaskawa: NOT RESEARCHED - search budget exhausted; servo/robots, China exposure."
+  },
+  {
+   "ticker": "7832.T",
+   "reason": "Bandai Namco: NOT RESEARCHED - search budget exhausted; IP/toys - compare with Sanrio."
+  },
+  {
+   "ticker": "9766.T",
+   "reason": "Konami: NOT RESEARCHED - search budget exhausted; games/amusement."
+  },
+  {
+   "ticker": "285A.T",
+   "reason": "Kioxia Holdings (added from AI-stock screen): NAND memory pure play, cyclical=true by rule; not researched further (budget)."
+  },
+  {
+   "ticker": "4674.T",
+   "reason": "Cresco (added from AI-stock screen, +22.4% earnings growth, 8.1% net margin): small-cap IT services; not researched further (budget)."
+  },
+  {
+   "ticker": "3687.T",
+   "reason": "Fixstars (added from AI-stock screen, GPU cloud 'AIBooster'): micro-cap; not researched further (budget)."
+  }
+ ],
+ "notes": "JAPAN screen, analysis date 1-Oct-2026. FISCAL YEARS: all candidates close in March except Lasertec (June) - F1 = FY ending Mar-2027 (Jun-2027 for Lasertec), F2 = FY ending Mar-2028; calendarise per the method. EPS BASIS: no non-GAAP consensus exists for Tokyo listings; all consensus figures are reported EPS (IFRS or J-GAAP as stated per name); Fuji Electric F1 is company guidance. DATA LIMITS: the session web-search budget (200 calls, shared across the workflow's agents) was exhausted after 25 queries in this agent, so (1) each data point rests on a SINGLE search result (no second-query cross-check), (2) FY0 actuals, F2/F3, LTG, beta, 52-week range, dividend yield, Zacks Rank and USD market caps were almost never captured (set to null), (3) 17 seed names could not be researched at all (listed in excluded with 'NOT RESEARCHED'). WebFetch/curl are blocked for every finance and company host (403 from proxy), verified. DERIVED FIELDS: eps_fy0 for Advantest, TEL and Hitachi are derived from F1 and the sourced growth % (labelled DERIVED). Indicative PEGs in thesis_short use P/E on F1 and F1 growth where F2 is missing. KEY FLAGS: Tokyo Electron price JPY11,505 vs EPS 1,624 implies P/E 7x - almost certainly a data/split error, re-verify. Fujikura EPS basis ambiguous (177 / 127.5 / 555.38 - likely a 2026 split). Ibiden and Recruit have conflicting consensus figures. Sanrio figures are post 5-for-1 split; Sumitomo Electric post 4-for-1 split. LYNCH READ-OUT (indicative, single-source): best PEG profiles = Fujikura (~0.8 if the 38.8% growth is right), Hitachi (1.1, 18 analysts), Sanrio (1.3 on guided profit growth); mid-cap industrials IHI (16x), Fuji Electric (18x), Mitsubishi Electric (20x) are cheap but their growth rates were not captured; all six SPE names (Advantest, TEL, Disco, Lasertec, Screen, Kokusai) are flagged cyclical=true (peak WFE/HBM capex) and Advantest/Ibiden are Nvidia-dependent, which conflicts with the 'independent of US AI names' rule. Prices: Japanese close of 30-Sep-2026 where captured; otherwise the latest dated quote found (date given per name)."
+}

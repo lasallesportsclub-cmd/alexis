@@ -1,0 +1,260 @@
+import json
+
+NA = "Not PEA-eligible (non-EU issuer, no EU listing)"
+BUDGET = "Zacks Rank, LTG, beta, dividend, 52-week range, price target and market cap not sourced: the session's web-search budget (200/200) was exhausted and direct HTTPS to data hosts is blocked (proxy 403)."
+
+def c(**k):
+    base = dict(eps_fy0=None, eps_fy0_label="FY2025 (Dec) – not sourced", eps_f3=None, eps_f3_label="FY2028 (Dec) – not sourced",
+                fy_end_month=12, ltg_pct=None, zacks_rank=None, zacks_rank_date="", beta=None, dividend_yield_pct=None,
+                market_cap_usd_bn=None, w52_high=None, w52_low=None, price_target=None, pea_eligible_listing=NA,
+                region="South America", currency="USD", one_offs_note="", notes="", sector="", key_risk="")
+    base.update(k)
+    return base
+
+candidates = [
+c(ticker="EMBJ", name="Embraer S.A. (ADR; NYSE ticker changed from ERJ to EMBJ)", country="Brazil", exchange="NYSE",
+  sector="Aerospace & Defense", price=76.87, price_date="2026-09-29",
+  eps_f1=2.82, eps_f1_label="FY2026 (Dec) consensus EPS per ADR, USD – Yahoo Finance average of 5 analysts (Seeking Alpha shows 2.74)",
+  eps_f2=3.66, eps_f2_label="FY2027 (Dec) consensus EPS per ADR, USD – Yahoo Finance average of 4 analysts (Zacks Research FY2027 estimate 3.32 per 22 Sep 2026 report)",
+  eps_basis="Adjusted (non-IFRS) EPS per ADR in USD as compiled by Yahoo Finance / Zacks consensus; Embraer reports IFRS and publishes adjusted net income. Statutory (IFRS) 2026 EPS forecast R$4.38 per share (Simply Wall St).",
+  adr_ratio="1 ADR = 4 ordinary shares (EMBJ3 on B3) – from general knowledge, NOT re-verified this session",
+  cyclical=False,
+  megatrend="Aerospace supply-chain scarcity (Boeing/Airbus backlogs and 737/A320 delivery delays push airlines to E2 regional jets and keep pricing firm); defense re-armament (C-390/KC-390 export wins); urban air mobility (Eve eVTOL). Growth driver independent of US AI capex.",
+  thesis_short="Indicative PEG 2027 ≈ 0.70: P/E 2027 = 76.87/3.66 = 21.0x; EPS growth 2027 vs 2026 = 3.66/2.82 − 1 = +29.8%. Using the Zacks FY2027 estimate of $3.32 instead: P/E 23.2x, growth +17.7%, PEG ≈ 1.31. Record Q2 2026 revenue and margin gains, Q2 2026 adjusted EPS $1.19 vs $0.59 consensus; Zacks raised its Q3 2026 estimate from $0.79 to $0.80 on 17 Sep 2026. Best non-cyclical Lynch fit in the LatAm screen.",
+  key_risk="Supply chain (engine deliveries) and backlog execution; BRL/USD; US tariff exposure on Brazilian-built aircraft; consensus dispersion for FY2027 ($3.66 Yahoo vs $3.32 Zacks) materially changes the PEG (0.70 vs 1.31).",
+  one_offs_note="Q2 2026 adjusted EPS was 2x consensus – verify whether tax credits or FX on IFRS net income inflated the quarter before using it as a run-rate; FY2025 base EPS not sourced so FY2026 growth vs FY2025 cannot be computed here.",
+  notes="Ticker change: NYSE ERJ -> EMBJ; B3 EMBJ3. Price $76.87 is the 29 Sep 2026 close (30 Sep close not found; an earlier result gave $73.61 on 3 Sep 2026). " + BUDGET,
+  sources=[
+   {"url":"https://finance.yahoo.com/quote/EMBJ/","what":"Close $76.87 on 29 Sep 2026 (+0.44%)","date":"2026-09-29"},
+   {"url":"https://stockanalysis.com/stocks/embj/","what":"EMBJ price overview, confirms NYSE ticker EMBJ","date":"2026-09-29"},
+   {"url":"https://finance.yahoo.com/quote/EMBJ/analysis/","what":"Consensus EPS FY2026 $2.82 (5 analysts), FY2027 $3.66 (4 analysts)","date":"accessed 2026-10-01"},
+   {"url":"https://seekingalpha.com/symbol/EMBJ/earnings/estimates","what":"Consensus EPS Dec-2026 $2.74","date":"accessed 2026-10-01"},
+   {"url":"https://www.dailypolitical.com/2026/09/22/zacks-research-analysts-boost-earnings-estimates-for-embj.html","what":"Zacks Research FY2027 EPS $3.32; Q3 2026 raised $0.79 -> $0.80 on 17 Sep 2026","date":"2026-09-22"},
+   {"url":"https://www.ad-hoc-news.de/boerse/news/nebenwerte/embraer-stock-reports-record-q2-revenue-and-margin-gains/70199958","what":"Q2 2026 record revenue, adjusted EPS $1.19 vs $0.59 consensus","date":"Q2 2026 results (Aug 2026)"},
+   {"url":"https://simplywall.st/stocks/br/capital-goods/bovespa-embj3/embraer-shares/news/embraer-sa-bvmfembj3-released-earnings-last-week-and-analyst","what":"Statutory 2026 EPS forecast R$4.38; analysts lifted PT to R$101","date":"Aug 2026"}
+  ]),
+c(ticker="CPA", name="Copa Holdings, S.A. (Class A shares, NYSE)", country="Panama", exchange="NYSE", sector="Airlines",
+  price=131.85, price_date="2026-09-30",
+  eps_f1=16.38, eps_f1_label="FY2026 (Dec) consensus EPS, USD – WallStreetZen (range $13.23–$19.80)",
+  eps_f2=19.99, eps_f2_label="FY2027 (Dec) consensus EPS, USD – WallStreetZen (range $17.20–$24.80)",
+  eps_f3=23.57, eps_f3_label="FY2028 (Dec) consensus EPS, USD – WallStreetZen (range $20.58–$28.52)",
+  eps_basis="Consensus EPS in USD as compiled by WallStreetZen (basis not stated by the source; Copa reports IFRS and discloses adjusted net income excluding fuel-hedge mark-to-market and FX items – treat as adjusted/non-GAAP consensus).",
+  adr_ratio="Not an ADR – Class A common shares listed directly on NYSE",
+  price_target=175.22,
+  cyclical=False,
+  megatrend="Latin American middle-class air-travel penetration and intra-regional connectivity via the Panama 'Hub of the Americas' (lowest unit cost among full-service LatAm carriers, 737 MAX fleet renewal). Driver independent of US AI.",
+  thesis_short="Indicative PEG 2027 ≈ 0.30: P/E 2027 = 131.85/19.99 = 6.6x; EPS growth 2027 vs 2026 = 19.99/16.38 − 1 = +22.0%; 2028 growth +17.9% (23.57/19.99). P/E 2026 = 8.0x. Cheapest growth in the screen, but Copa lagged Q2 2026 EPS and revenue estimates (Zacks/Yahoo, Aug 2026) and airlines carry demand/fuel cyclicality that Lynch would discount. 1-year analyst PT $175.22 (WallStreetZen).",
+  key_risk="Jet fuel and LatAm FX (COP, BRL, ARS); demand cyclicality of airlines; Panama hub capacity/airport fees; Q2 2026 miss shows estimate risk; low multiple may reflect structural discount rather than mispricing.",
+  one_offs_note="Fuel-hedge and FX gains/losses can distort IFRS net income; the consensus above is treated as adjusted. FY2025 actual EPS not sourced.",
+  notes="Price $131.85 is the 30 Sep 2026 close (prev close $133.05). Not a commodity/oil/mining name so cyclical=false per instruction, but the central model should consider airline demand-cyclicality (fuel, FX). " + BUDGET + " Copa does pay a regular dividend but the yield was not sourced.",
+  sources=[
+   {"url":"https://finance.yahoo.com/quote/CPA/","what":"Close $131.85 on 30 Sep 2026 (−0.90% from $133.05)","date":"2026-09-30"},
+   {"url":"https://www.wallstreetzen.com/stocks/us/nyse/cpa/stock-forecast","what":"Consensus EPS 2026 $16.38, 2027 $19.99, 2028 $23.57 with ranges; 1Y price target $175.22","date":"accessed 2026-10-01"},
+   {"url":"https://finance.yahoo.com/markets/stocks/articles/copa-holdings-cpa-lags-q2-003523978.html","what":"Copa lagged Q2 2026 earnings and revenue estimates","date":"Aug 2026"},
+   {"url":"https://simplywall.st/stocks/us/transportation/nyse-cpa/copa-holdings/news/a-look-at-copa-holdings-nysecpa-valuation-after-share-price","what":"Share price surge on 2026 growth optimism; valuation note","date":"2026"},
+   {"url":"https://www.zacks.com/stock/research/CPA/company-reports","what":"Zacks company report page (rank not captured)","date":"accessed 2026-10-01"}
+  ]),
+c(ticker="PAM", name="Pampa Energía S.A. (ADR)", country="Argentina", exchange="NYSE", sector="Integrated energy (Vaca Muerta oil & gas, power generation, petrochemicals)",
+  price=77.15, price_date="2026-09-30",
+  eps_f1=9.69, eps_f1_label="FY2026 (Dec) Zacks consensus EPS per ADR, USD (up 12.7% in 60 days; +39.8% vs prior year per Zacks); Seeking Alpha consensus $9.84",
+  eps_f2=None, eps_f2_label="FY2027 (Dec) – consensus not found (one source listed 2027 as provisional only)",
+  eps_basis="Zacks consensus EPS per ADR in USD (Zacks compiles adjusted/non-GAAP where companies report it). Pampa reports IFRS; Argentine hyperinflation (IAS 29) and ARS FX accounting can distort reported figures.",
+  adr_ratio="1 ADR = 25 ordinary shares (PAMP on BYMA) – from general knowledge, NOT re-verified this session",
+  cyclical=True,
+  megatrend="Vaca Muerta shale ramp (Rincón de Aranda oil block) and Argentina's shift to energy exporter (gas pipelines, LNG, power market normalisation under Milei deregulation). Independent of US AI.",
+  thesis_short="Indicative PEG on FY2026 ≈ 0.20: P/E 2026 = 77.15/9.69 = 8.0x; FY2026 EPS growth +39.8% (Zacks; another source cites +60.4%). FY2027 consensus not found so no F2 PEG. Zacks 2026 sales estimate $2.55bn (+27.4%). Power EBITDA guided ~$600m 2026, $600–700m 2027, $560m 2028 (Simply Wall St). CYCLICAL (oil/gas): per the method, use the NTM-EPS-multiple model, not PEG.",
+  key_risk="Oil price (Brent), Argentine macro/political reversal of deregulation, ARS devaluation and capital controls, hyperinflation accounting, 2027 EPS visibility is weak (no consensus found).",
+  one_offs_note="Argentine FX gains/losses and IAS 29 hyperinflation restatements routinely distort annual net income; FY2026 +39.8% growth includes the Rincón de Aranda production step-up – not a normalised run-rate.",
+  notes="Price $77.15 is the 30 Sep 2026 close (prev close $76.84). FY2025 EPS not sourced directly (Zacks states FY2026 is +39.8% vs prior year). " + BUDGET,
+  sources=[
+   {"url":"https://www.investing.com/equities/pampa-energia-sa","what":"PAM $77.15 on 30 Sep 2026; prev close $76.84 on 29 Sep","date":"2026-09-30"},
+   {"url":"https://finance.yahoo.com/markets/stocks/articles/heres-why-add-pam-stock-171800512.html","what":"Zacks consensus FY2026 EPS $9.69 (+12.7% in 60 days, +39.8% y/y); 2026 sales $2.55bn (+27.4%)","date":"2026 (Zacks article)"},
+   {"url":"https://seekingalpha.com/symbol/PAM/earnings/estimates","what":"Consensus EPS Dec-2026 $9.84","date":"accessed 2026-10-01"},
+   {"url":"https://www.nasdaq.com/articles/can-pampa-pam-run-higher-on-rising-earnings-estimates","what":"Rising estimate revisions; 2026 EPS growth cited at 60.4% in one source","date":"2026"},
+   {"url":"https://simplywall.st/stocks/us/utilities/nyse-pam/pampa-energia","what":"Power EBITDA guidance $600m 2026, $600–700m 2027, $560m 2028","date":"accessed 2026-10-01"}
+  ]),
+c(ticker="VIST", name="Vista Energy, S.A.B. de C.V. (ADS)", country="Mexico (domicile); operations in Argentina (Vaca Muerta)", exchange="NYSE", sector="Oil & gas E&P (shale)",
+  price=66.71, price_date="2026-09-28",
+  eps_f1=9.60, eps_f1_label="FY2026 (Dec) consensus EPS per ADS, USD – StockAnalysis forecast page (Yahoo shows 163.61 MXN avg of 5 analysts, range 129.84–187.61 MXN; ChartMill shows $4.64 – unreconciled)",
+  eps_f2=None, eps_f2_label="FY2027 (Dec) – no USD consensus found; Yahoo shows 178.87 MXN (7 analysts, range 114.74–233.57 MXN, +9.3% vs 2026 MXN figure); ChartMill shows $6.33 (2027) and $9.29 (2028) on a different, unreconciled basis",
+  eps_basis="Consensus EPS per ADS; Vista reports IFRS in USD. Sources disagree on currency/basis (StockAnalysis USD 9.60; Yahoo in MXN; ChartMill USD 4.64/6.33/9.29) – basis could not be reconciled this session.",
+  adr_ratio="1 ADS = 1 Series A share (VISTA on BMV) – from general knowledge, NOT re-verified this session",
+  ltg_pct=27.0,
+  cyclical=True,
+  megatrend="Vaca Muerta pure-play oil growth and Argentine crude exports (Oldelval/VMOS pipeline capacity); 2026–2028 outlook raised after Bandurria Sur and Bajo del Toro acquisitions; ~70% adjusted EBITDA margin guidance. Independent of US AI.",
+  thesis_short="Indicative P/E 2026 = 66.71/9.60 = 6.9x on the StockAnalysis USD figure. PEG cannot be computed reliably: Yahoo's MXN series implies only +9.3% growth in 2027 (PEG ≈ 0.75), while ChartMill's series implies +36% (2027) and +47% (2028) on a base half as large. Simply Wall St annualised earnings-growth estimate 27% (used as ltg_pct). CYCLICAL (oil): apply the cyclical NTM-multiple model, not PEG; cheap only if Brent holds.",
+  key_risk="Brent price; Argentine export-pipeline capacity and political risk; integration of 2025–26 acquisitions (debt); consensus basis confusion (MXN vs USD) must be resolved before any PEG is used.",
+  one_offs_note="2025–2026 acquisitions (Petronas LACh stake, Bandurria Sur, Bajo del Toro) create inorganic step-ups in EPS; FX translation into MXN by Yahoo distorts the series.",
+  notes="Price $66.71 is the 28 Sep 2026 close (25 Sep close $67.43); the 30 Sep close was not found. " + BUDGET,
+  sources=[
+   {"url":"https://finance.yahoo.com/quote/VIST/history/","what":"VIST $66.71 on 28 Sep 2026 (−0.30%)","date":"2026-09-28"},
+   {"url":"https://stockanalysis.com/stocks/vist/","what":"Close $67.43 on 25 Sep 2026 (−1.27%)","date":"2026-09-25"},
+   {"url":"https://stockanalysis.com/stocks/vist/forecast/","what":"EPS forecast 2026 $9.60 (USD)","date":"accessed 2026-10-01"},
+   {"url":"https://finance.yahoo.com/quote/VIST/analysis/","what":"Consensus EPS 2026 163.61 MXN (5 analysts), 2027 178.87 MXN (7 analysts) with ranges","date":"accessed 2026-10-01"},
+   {"url":"https://www.chartmill.com/stock/quote/VIST/analyst-ratings","what":"EPS estimates $4.64 (2026), $6.33 (2027), $9.29 (2028)","date":"accessed 2026-10-01"},
+   {"url":"https://simplywall.st/stocks/us/energy/nyse-vist/vista-energy-de","what":"Annualised earnings growth estimate 27%","date":"accessed 2026-10-01"},
+   {"url":"https://www.theglobeandmail.com/investing/markets/stocks/VIST-N/pressreleases/1871546/vista-energy-raises-2026-2028-outlook-after-bandurria-sur-and-bajo-del-toro-acquisitions/","what":"Vista raises 2026–2028 outlook after Bandurria Sur and Bajo del Toro acquisitions","date":"2026"},
+   {"url":"https://finance.yahoo.com/energy/articles/vista-energys-2026-outlook-shale-165601160.html","what":"2026 outlook: shale expansion, ~70% adjusted EBITDA margins","date":"2026"}
+  ]),
+c(ticker="PAC", name="Grupo Aeroportuario del Pacífico, S.A.B. de C.V. (ADS)", country="Mexico", exchange="NYSE", sector="Airport infrastructure (12 Mexican airports incl. Guadalajara, Tijuana; Montego Bay & Kingston, Jamaica)",
+  price=205.70, price_date="2026-09-30",
+  eps_fy0=11.45, eps_fy0_label="FY2025 (Dec) EPS per ADS, USD – reported by the consensus source as '2025 estimates' ($11.45); may be the actual FY2025 figure – unverified",
+  eps_f1=12.86, eps_f1_label="FY2026 (Dec) consensus EPS per ADS, USD (+12.3% vs $11.45)",
+  eps_f2=None, eps_f2_label="FY2027 (Dec) – consensus not found; management flagged high uncertainty for 2027",
+  eps_basis="Consensus EPS per ADS in USD (basis not stated by source; GAP reports IFRS, no material non-GAAP adjustments – treat as IFRS/GAAP-like). TTM EPS to 30 Jun 2026 $10.99 (+4.0% y/y, Macrotrends).",
+  adr_ratio="1 ADS = 10 Series B shares (GAPB on BMV) – from general knowledge, NOT re-verified this session",
+  cyclical=False,
+  megatrend="Mexico nearshoring and cross-border traffic (Tijuana CBX bridge, Guadalajara tech hub), Caribbean tourism (Montego Bay), and high-margin non-aeronautical revenue (guided +21–24% in 2026). Independent of US AI.",
+  thesis_short="Indicative PEG on FY2026 ≈ 1.30: P/E 2026 = 205.70/12.86 = 16.0x; FY2026 EPS growth +12.3%. Below Lynch's 20% growth bar and no FY2027 consensus found. 2026 guidance: aeronautical revenue +1–4%, non-aero +21–24%, EBITDA +10–12%. Q2 2026 EPS $2.80 missed the $3.10 consensus; Zacks Research upgraded the stock on 23 Sep 2026 (new rank not captured); brokerage consensus 'Hold' (MarketBeat, 13 Aug 2026).",
+  key_risk="Mexican regulatory/concession-fee changes and tariff reviews; MXN/USD; oil-price and geopolitical sensitivity of traffic (flagged by management for 2027); Mexico macro softness; recent downgrade and Q2 miss.",
+  one_offs_note="Concession-fee and construction-services accounting (IFRIC 12) inflate revenue without cash impact; check FY2025 base for any one-off tax items.",
+  notes="Price $205.70 is the 30 Sep 2026 close. " + BUDGET,
+  sources=[
+   {"url":"https://www.marketbeat.com/stocks/NYSE/PAC/forecast/","what":"PAC close $205.70 on 30 Sep 2026","date":"2026-09-30"},
+   {"url":"https://www.gurufocus.com/stock/PAC/summary","what":"Consensus EPS 2026 $12.86 vs 2025 $11.45","date":"accessed 2026-10-01"},
+   {"url":"https://www.macrotrends.net/stocks/charts/PAC/grupo-aeroportuario-del-pacifico,-sa-de-cv/eps-earnings-per-share-diluted","what":"TTM EPS to 30 Jun 2026 $10.99 (+4.01% y/y)","date":"2026-06-30"},
+   {"url":"https://www.theglobeandmail.com/investing/markets/stocks/PAC-N/pressreleases/3328003/grupo-aeroportuario-del-pacifico-balances-growth-and-headwinds/","what":"2026 guidance (aero +1–4%, non-aero +21–24%, EBITDA +10–12%); Q2 2026 EPS $2.80 vs $3.10 consensus; 2027 uncertainty flagged","date":"2026"},
+   {"url":"https://www.thecerbatgem.com/2026/09/23/grupo-aeroportuario-del-pacifico-nysepac-stock-rating-upgraded-by-zacks-research.html","what":"Zacks Research upgraded PAC","date":"2026-09-23"},
+   {"url":"https://www.marketbeat.com/instant-alerts/grupo-aeroportuario-del-pacifico-sa-de-cv-nysepac-given-consensus-recommendation-of-hold-by-brokerages-2026-08-13/","what":"Brokerage consensus 'Hold'","date":"2026-08-13"}
+  ]),
+c(ticker="ARCO", name="Arcos Dorados Holdings Inc. (Class A shares, NYSE) – McDonald's master franchisee for Latin America", country="British Virgin Islands (incorporation); HQ Montevideo, Uruguay; largest market Brazil", exchange="NYSE", sector="Restaurants / consumer",
+  price=7.12, price_date="2026-09-29",
+  eps_f1=0.81, eps_f1_label="FY2026 (Dec) consensus EPS, USD – Yahoo Finance average (StockAnalysis/WallStreetZen show $0.76, range $0.71–$0.82)",
+  eps_f2=0.85, eps_f2_label="FY2027 (Dec) consensus EPS, USD – Yahoo Finance average (StockAnalysis/WallStreetZen show $0.87, range $0.81–$0.91)",
+  eps_basis="Consensus EPS in USD as compiled by Yahoo Finance / StockAnalysis (Arcos reports IFRS; Zacks-style consensus is adjusted for non-recurring items – basis not explicitly stated by sources).",
+  adr_ratio="Not an ADR – Class A shares listed directly on NYSE (also ARCO.BA CEDEAR-type listing in Buenos Aires: 23,020 ARS on 30 Sep 2026)",
+  cyclical=False,
+  megatrend="Latin American consumer formalisation and QSR penetration (Brazil, Mexico, Argentina recovery), digital/loyalty and delivery mix, restaurant-count expansion. Independent of US AI.",
+  thesis_short="Indicative PEG 2027 ≈ 1.7 on Yahoo figures: P/E 2027 = 7.12/0.85 = 8.4x; growth 2027 vs 2026 = 0.85/0.81 − 1 = +4.9%. On StockAnalysis figures: P/E 2027 = 7.12/0.87 = 8.2x; growth +14.5%; PEG ≈ 0.56. Cheap multiple but consensus growth is well below Lynch's 20% bar; Q1 and Q2 2026 both beat EPS forecasts with record Q2 sales (Investing.com transcripts).",
+  key_risk="Brazil/Argentina FX and inflation; consumer weakness; beef/commodity cost inflation; royalty step-ups under the McDonald's MFA; low growth means multiple is unlikely to re-rate.",
+  one_offs_note="Argentine subsidiaries use hyperinflation accounting (IAS 29); FX translation effects distort reported EPS year to year.",
+  notes="Price $7.12 is the 29 Sep 2026 NYSE close (30 Sep close not found). Two consensus sources diverge (Yahoo 0.81/0.85 vs StockAnalysis 0.76/0.87); Yahoo used as primary, both live pages so recency could not be ranked. " + BUDGET,
+  sources=[
+   {"url":"https://sg.finance.yahoo.com/quote/ARCO/","what":"ARCO (NYSE) $7.12 at close 29 Sep 2026 (−0.28%)","date":"2026-09-29"},
+   {"url":"https://finance.yahoo.com/quote/ARCO.BA/","what":"ARCO.BA 23,020 ARS on 30 Sep 2026","date":"2026-09-30"},
+   {"url":"https://finance.yahoo.com/quote/ARCO/analysis/","what":"Consensus EPS 2026 $0.81, 2027 $0.85","date":"accessed 2026-10-01"},
+   {"url":"https://stockanalysis.com/stocks/arco/forecast/","what":"Consensus EPS 2026 $0.76 (0.71–0.82), 2027 $0.87 (0.81–0.91)","date":"accessed 2026-10-01"},
+   {"url":"https://www.investing.com/news/transcripts/earnings-call-transcript-arcos-dorados-tops-q2-2026-forecasts-as-sales-hit-record-93CH-4858662","what":"Q2 2026 beat, record sales","date":"Aug 2026"},
+   {"url":"https://finance.yahoo.com/markets/stocks/articles/arcos-dorados-arco-surpasses-q2-123002813.html","what":"Q2 2026 beat vs Zacks consensus","date":"Aug 2026"}
+  ]),
+c(ticker="ASR", name="Grupo Aeroportuario del Sureste, S.A.B. de C.V. (ASUR, ADS)", country="Mexico", exchange="NYSE", sector="Airport infrastructure (Cancún, Colombia, Puerto Rico)",
+  price=243.96, price_date="2026-09-28",
+  eps_f1=None, eps_f1_label="FY2026 (Dec) – NOT SOURCED (search budget exhausted)",
+  eps_f2=None, eps_f2_label="FY2027 (Dec) – NOT SOURCED",
+  eps_basis="Not sourced (ASUR reports IFRS; consensus would be IFRS-based)",
+  adr_ratio="1 ADS = 10 Series B shares (ASURB on BMV) – from general knowledge, NOT re-verified this session",
+  cyclical=False,
+  megatrend="Caribbean/Cancún tourism and Mexican airport-traffic growth; Puerto Rico and Colombia diversification.",
+  thesis_short="DATA INCOMPLETE – price only. Close $243.96 on 28 Sep 2026 (+0.31%), down 5.27% over the prior month. No consensus EPS obtained, so no PEG. Included as a PAC peer the central model may wish to complete; likely similar low-teens growth profile to PAC (unverified).",
+  key_risk="Cancún traffic dependence, Mexican concession regulation, MXN; data not sourced.",
+  notes="Only the price was captured before the web-search budget ran out; all EPS fields null. " + BUDGET,
+  sources=[
+   {"url":"https://stockanalysis.com/stocks/asr/","what":"ASR close $243.96 on 28 Sep 2026 (+0.31%); −5.27% over past month","date":"2026-09-28"},
+   {"url":"https://www.investing.com/equities/grupo-aeroportuario-sur-adr","what":"ASR quote page","date":"accessed 2026-10-01"}
+  ]),
+c(ticker="OMAB", name="Grupo Aeroportuario del Centro Norte, S.A.B. de C.V. (OMA, ADS)", country="Mexico", exchange="NASDAQ", sector="Airport infrastructure (Monterrey and 12 other northern/central Mexican airports)",
+  price=104.12, price_date="2026-09-24",
+  eps_f1=None, eps_f1_label="FY2026 (Dec) – NOT SOURCED (search budget exhausted)",
+  eps_f2=None, eps_f2_label="FY2027 (Dec) – NOT SOURCED",
+  eps_basis="Not sourced (OMA reports IFRS)",
+  adr_ratio="1 ADS = 8 Series B shares (OMAB on BMV) – from general knowledge, NOT re-verified this session",
+  cyclical=False,
+  megatrend="Nearshoring in northern Mexico (Monterrey industrial hub) driving business and cargo traffic; hotel/commercial non-aero expansion.",
+  thesis_short="DATA INCOMPLETE – price only. $104.12 on 24 Sep 2026 (vs $111.00 on 3–4 Aug 2026 and $108.27 in late July). No consensus EPS obtained, so no PEG. Most nearshoring-levered of the three Mexican airport groups; the central model may wish to complete the sheet.",
+  key_risk="Monterrey concentration, US–Mexico trade/tariff risk, concession regulation, MXN; data not sourced.",
+  notes="Only the price was captured (24 Sep 2026, not 30 Sep). " + BUDGET,
+  sources=[
+   {"url":"https://finance.yahoo.com/quote/OMAB/","what":"OMAB $104.12 as of 24 Sep 2026; $111.00 on 3–4 Aug 2026 (prev close $106.73); $108.27 late July 2026","date":"2026-09-24"},
+   {"url":"https://www.marketbeat.com/stocks/NASDAQ/OMAB/forecast/","what":"OMAB forecast page (figures not captured)","date":"accessed 2026-10-01"}
+  ]),
+c(ticker="TGS", name="Transportadora de Gas del Sur S.A. (ADS)", country="Argentina", exchange="NYSE", sector="Gas midstream (pipelines, NGL processing, Vaca Muerta gathering)",
+  price=25.91, price_date="2026-09-30",
+  eps_f1=None, eps_f1_label="FY2026 (Dec) – NOT SOURCED (search budget exhausted)",
+  eps_f2=None, eps_f2_label="FY2027 (Dec) – NOT SOURCED",
+  eps_basis="Not sourced (TGS reports IFRS with IAS 29 hyperinflation adjustments; consensus typically in USD per ADS)",
+  adr_ratio="1 ADS = 5 Class B shares (TGSU2 on BYMA) – from general knowledge, NOT re-verified this session",
+  cyclical=False,
+  megatrend="Vaca Muerta gas evacuation (Perito Moreno pipeline expansion, Vaca Muerta Sur), Argentine LNG export projects and tariff normalisation – regulated toll-road-like exposure to the shale ramp without direct commodity-price risk.",
+  thesis_short="DATA INCOMPLETE – price only. Close $25.91 on 30 Sep 2026 (high $26.09, low $25.695, +0.70%). No consensus EPS obtained, so no PEG. Included as the non-commodity way to play Vaca Muerta alongside PAM/VIST; the central model may wish to complete the sheet.",
+  key_risk="Argentine tariff regulation (ENARGAS), ARS/USD, hyperinflation accounting, political reversal; data not sourced.",
+  one_offs_note="IAS 29 hyperinflation restatements and ARS FX results distort reported EPS – use USD consensus if the central model completes the sheet.",
+  notes="Only the price was captured (30 Sep 2026 close from Investing.com historical data). " + BUDGET,
+  sources=[
+   {"url":"https://www.investing.com/equities/transportadora-de-gas-del-sur-sa-historical-data","what":"TGS ADR $25.91 on 30 Sep 2026 (H 26.09 / L 25.695, +0.70%)","date":"2026-09-30"},
+   {"url":"https://finance.yahoo.com/quote/TGS/","what":"TGS quote page","date":"accessed 2026-10-01"}
+  ]),
+c(ticker="LTM", name="LATAM Airlines Group S.A. (ADS)", country="Chile", exchange="NYSE", sector="Airlines",
+  price=52.45, price_date="2026-09-25",
+  eps_f1=None, eps_f1_label="FY2026 (Dec) – NOT SOURCED (search budget exhausted)",
+  eps_f2=None, eps_f2_label="FY2027 (Dec) – NOT SOURCED",
+  eps_basis="Not sourced (LATAM reports IFRS; consensus per ADS in USD)",
+  adr_ratio="1 ADS = 2,000 common shares (LTM on Santiago) post-2022 restructuring – from general knowledge, NOT re-verified this session",
+  cyclical=False,
+  megatrend="Post-Chapter-11 consolidation of South American aviation (largest carrier in Brazil, Chile, Peru, Colombia), Delta JV, premium/cargo mix; LatAm air-travel penetration. Independent of US AI.",
+  thesis_short="DATA INCOMPLETE – price only. $52.45 at close 25 Sep 2026 ($51.35 on 17 Sep 2026); on 30 Sep 2026 the stock moved +0.75–1.47% intraday but the close was not captured. No consensus EPS obtained, so no PEG. Included as the scale peer to Copa; the central model may wish to complete the sheet.",
+  key_risk="Fuel, BRL/CLP/COP FX, leverage post-restructuring, airline demand cyclicality, Brazilian competition (Azul/Gol); data not sourced.",
+  notes="Only the price was captured (25 Sep 2026). " + BUDGET,
+  sources=[
+   {"url":"https://stockanalysis.com/stocks/ltm/","what":"LTM $52.45 at close 25 Sep 2026","date":"2026-09-25"},
+   {"url":"https://finance.yahoo.com/quote/LTM/","what":"LTM quote page; 30 Sep 2026 move +0.75–1.47%, close not captured","date":"2026-09-30"},
+   {"url":"https://www.marketbeat.com/stocks/NYSE/LTM/forecast/","what":"LTM forecast page (figures not captured); $51.35 on 17 Sep 2026","date":"2026-09-17"}
+  ]),
+]
+
+NS = "Not screened: the session's web-search budget (200/200) was exhausted before price or consensus EPS could be sourced for this name"
+excluded = [
+ {"ticker":"YPF","reason":"Oil cyclical at an earnings peak, no valid PEG: price $51.37 (29 Sep 2026); consensus FY2026 EPS $4.53 (Yahoo; Seeking Alpha $3.65) then 2027E EPS growth −20.34% (TradingKey); quarterly path Q3-26E $1.92, Q4-26E $1.33, Q1-27E $1.27, Q2-27E $1.67; 3 analysts 'Buy' with avg PT $41.67, i.e. BELOW the price (StockAnalysis). Lynch rule: falling forward EPS on a cyclical = sell signal, not a buy."},
+ {"ticker":"TS","reason":"Cyclical (OCTG/steel pipes, oil-capex driven). Price $55.43 (22 Sep 2026) sourced, but consensus EPS not sourced before the search budget was exhausted – cannot compute PEG."},
+ {"ticker":"CX","reason":"GDP-cyclical cement. Price $9.71 (25 Sep 2026; Form 144 filed for a 30 Sep 2026 sale implies ≈$9.56 = $888,046.70/92,790 ADS) sourced, but consensus EPS not sourced before the search budget was exhausted."},
+ {"ticker":"WEGE3.SA","reason":NS + " (local BRL listing only; no US ADR)."},
+ {"ticker":"RENT3.SA","reason":NS + " (local BRL listing only)."},
+ {"ticker":"CEPU","reason":"Central Puerto – " + NS + "."},
+ {"ticker":"LOMA","reason":"Loma Negra – " + NS + " (cement, GDP-cyclical)."},
+ {"ticker":"WALMEX.MX","reason":NS + " (mature consumer staple, local MXN listing)."},
+ {"ticker":"FMX","reason":"FEMSA – " + NS + "."},
+ {"ticker":"KOF","reason":"Coca-Cola FEMSA – " + NS + "."},
+ {"ticker":"BIMBOA.MX","reason":"Grupo Bimbo – " + NS + " (local MXN listing)."},
+ {"ticker":"SCCO","reason":"Cyclical (copper mining). " + NS + "."},
+ {"ticker":"GMEXICOB.MX","reason":"Grupo México – cyclical (copper/mining). " + NS + "."},
+ {"ticker":"VALE","reason":"Cyclical (iron ore). " + NS + "."},
+ {"ticker":"PBR","reason":"Petrobras – cyclical (oil, state-controlled). " + NS + "."},
+ {"ticker":"EC","reason":"Ecopetrol – cyclical (oil, state-controlled). " + NS + "."},
+ {"ticker":"SUZ","reason":"Suzano – cyclical (pulp). " + NS + "."},
+ {"ticker":"RAIZ4.SA","reason":"Raízen – " + NS + " (sugar/ethanol, commodity-linked)."},
+ {"ticker":"CSAN","reason":"Cosan – " + NS + "."},
+ {"ticker":"RAIL3.SA","reason":"Rumo – " + NS + " (local BRL listing)."},
+ {"ticker":"UGP","reason":"Ultrapar – " + NS + "."},
+ {"ticker":"PRIO3.SA","reason":"Prio – cyclical (oil E&P). " + NS + "."},
+ {"ticker":"BRAV3.SA","reason":"Brava Energia – cyclical (oil E&P). " + NS + "."},
+ {"ticker":"FALABELLA.SN","reason":NS + " (local CLP listing)."},
+ {"ticker":"CENCOSUD.SN","reason":NS + " (local CLP listing)."},
+ {"ticker":"SQM","reason":"Cyclical (lithium/iodine). " + NS + "."},
+ {"ticker":"AKO.B","reason":"Embotelladora Andina – " + NS + "."},
+ {"ticker":"AMX","reason":"América Móvil – " + NS + " (mature telecom)."},
+ {"ticker":"VIV","reason":"Telefônica Brasil – " + NS + " (mature telecom)."},
+ {"ticker":"TIMB","reason":"TIM Brasil – " + NS + " (mature telecom)."},
+ {"ticker":"ENELCHILE.SN","reason":"Excluded by the seed list ('no')."},
+ {"ticker":"TV","reason":"Grupo Televisa – excluded by the seed list ('no')."},
+ {"ticker":"AZUL","reason":"Excluded by the seed list ('no')."},
+ {"ticker":"GOL","reason":"Excluded by the seed list ('no')."},
+]
+
+notes = ("LATIN AMERICA SCREEN (industrials, aerospace, energy, infrastructure, consumer) – analysis date 1 Oct 2026, reference close 30 Sep 2026 (a Wednesday; where only a 24–29 Sep close was found it is dated explicitly). "
+ "DATA CONSTRAINT: the session-wide WebSearch budget (200/200) was exhausted after ~20 queries for this agent, and every direct HTTPS route to data hosts (Yahoo, StockAnalysis, Zacks, Nasdaq, MarketBeat, Google Finance) returns proxy 403. Consequently: (a) full EPS sheets exist for 6 names (EMBJ, CPA, PAM, VIST, PAC, ARCO); (b) 4 further names (ASR, OMAB, TGS, LTM) are included with price only and null EPS, clearly labelled DATA INCOMPLETE, for the central model to complete; (c) Zacks Rank, LTG (except VIST), beta, dividend yield, 52-week range, market cap and most price targets are null for every name; (d) the remaining seeds are in 'excluded' with the reason that they were not screened – NOT a judgement on their merits. No number was estimated or recalled from memory; ADR ratios are the only items taken from general knowledge and are flagged as unverified. "
+ "INDICATIVE RANKING ON PEG (P/E on F2 / growth F2 vs F1, or on F1 where F2 missing): PAM ≈ 0.20 (F1 basis, CYCLICAL), CPA ≈ 0.30 (F2), EMBJ ≈ 0.70 (F2; 1.31 on the Zacks FY27 estimate), ARCO ≈ 0.56–1.7 (source-dependent), PAC ≈ 1.30 (F1), VIST not computable (CYCLICAL; consensus basis MXN vs USD unreconciled, P/E 2026 6.9x on the USD figure). "
+ "SUGGESTED DEEP DIVES: (1) Embraer – only non-cyclical name combining +20–30% consensus EPS growth, record Q2 2026 beat, upward Zacks revisions and a megatrend (aerospace supply-chain scarcity, defense) independent of US AI; resolve the Yahoo $3.66 vs Zacks $3.32 FY2027 gap. (2) Copa – PEG 0.30 with +22%/+18% growth in 2027/2028, but the Q2 2026 miss and airline cyclicality argue for a haircut to growth and a low exit P/E. (3) Vaca Muerta cluster (PAM, VIST, TGS) – apply the cyclical NTM-multiple model, not PEG; TGS is the regulated, non-commodity way in but its sheet is empty. (4) Mexican airports (PAC, ASR, OMAB) – quality infrastructure but ~12% growth puts PEG ≥ 1.3; marginal for a Lynch 20%-growth screen. "
+ "ONE-OFFS TO WATCH: Argentine names (PAM, TGS, ARCO's Argentine units) use IAS 29 hyperinflation accounting and carry ARS FX results; Vista's EPS step-up is partly inorganic (2025–26 acquisitions); Embraer's Q2 2026 2x beat needs a one-off check. "
+ "EPS BASIS: all consensus figures are USD per US-listed share/ADS as compiled by Yahoo Finance, StockAnalysis/WallStreetZen, Seeking Alpha or Zacks (adjusted/non-GAAP where the company reports it; IFRS otherwise) – the exact basis is stated per candidate. None of the candidates is PEA-eligible.")
+
+out = {"candidates": candidates, "excluded": excluded, "notes": notes}
+path = "/tmp/claude-0/-home-user-alexis/3bc0b42d-80a9-547d-9561-569ee1797a89/scratchpad/phase1/screen_latam-industrials-energy-consumer.json"
+with open(path, "w") as f:
+    json.dump(out, f, ensure_ascii=False, indent=2)
+# sanity checks
+req = ["ticker","name","currency","region","price","price_date","eps_f1","eps_f2","sources","cyclical","megatrend","eps_basis"]
+for cd in candidates:
+    missing = [r for r in req if r not in cd]
+    assert not missing, (cd["ticker"], missing)
+    for s in cd["sources"]:
+        assert "url" in s and "what" in s
+print("OK", len(candidates), "candidates,", len(excluded), "excluded;", path)

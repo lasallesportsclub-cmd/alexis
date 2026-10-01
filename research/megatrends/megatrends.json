@@ -1,0 +1,1247 @@
+{
+ "as_of": "2026-10-01",
+ "macro": {
+  "us10y_pct": 5.29,
+  "brent_usd": 97.46,
+  "eurusd": 1.1325,
+  "usdbrl": 5.2038,
+  "usdtwd": 31.883,
+  "usdjpy": 157.39,
+  "sources": [
+   {
+    "url": "https://tradingeconomics.com/united-states/government-bond-yield",
+    "date": "2026-09-30",
+    "what": "US 10Y 5.29 % (+4 pb) le 30/09/2026"
+   },
+   {
+    "url": "https://www.cnbc.com/2026/09/30/treasury-yields-bonds-selloff.html",
+    "date": "2026-09-30",
+    "what": "10 ans à 5,298 % en séance le 30/09/2026"
+   },
+   {
+    "url": "https://www.investing.com/commodities/brent-oil-historical-data",
+    "date": "2026-09-30",
+    "what": "Brent clôture 97,46 $ (ouverture 95,73, plus haut 97,49)"
+   },
+   {
+    "url": "https://fortune.com/article/price-of-oil-09-30-2026/",
+    "date": "2026-09-30",
+    "what": "Brent 97,44 $/b, -4,95 % sur 24 h"
+   },
+   {
+    "url": "https://www.babypips.com/news/financial-forex-market-recap-2026-09-30",
+    "date": "2026-09-30",
+    "what": "EUR/USD clôture 1,1325 ; DXY 101,37"
+   },
+   {
+    "url": "https://tradingeconomics.com/japan/currency",
+    "date": "2026-09-30",
+    "what": "USD/JPY 157,39 (+0,06 %)"
+   },
+   {
+    "url": "https://tradingeconomics.com/brazil/currency",
+    "date": "2026-09-30",
+    "what": "USD/BRL 5,2038 (+0,03 %)"
+   },
+   {
+    "url": "https://tradingeconomics.com/taiwan/currency",
+    "date": "2026-09-30",
+    "what": "USD/TWD 31,883 (+0,16 %) ; TAIFEX 31,852"
+   }
+  ]
+ },
+ "trends": [
+  {
+   "name": "Accélérateurs d'IA et silicium sur mesure (GPU/XPU/TPU)",
+   "summary": "Les capex des hyperscalers dépassent 600 Md$ en 2026 et doivent encore monter « significativement » en 2027 (Alphabet). Nvidia (revenu DC +117 % a/a au T2 FY2027) et Broadcom (revenu semi IA +221 %) captent l'essentiel de la valeur ; les ASIC sur mesure (TPU, Trainium, MTIA, OpenAI/Broadcom) croissent plus vite que les GPU. Les engagements de calcul d'Anthropic (518 Md$) et les levées d'OpenAI (30 Md$ à 1 400 Md$ de valorisation) montrent que la demande reste financée, mais de plus en plus par de la dette et des montages circulaires.",
+   "market_size_now": "Accélérateurs IA : 174,69 Md$ en 2026 (Mordor Intelligence) ; capex 2026 des cinq grands hyperscalers (Amazon ~220, Alphabet 195-205, Meta 130-145, Microsoft FY27 >50 Md$/trimestre, Oracle ≤95 Md$ brut FY27) : 600-634 Md$ pour les cinq guidant en année civile (SupercycleHQ, sept. 2026).",
+   "market_size_2030": "518,12 Md$ en 2031 (Mordor, TCAC 24,3 % 2026-2031) ; Bloomberg Intelligence : >600 Md$ en 2033 (TCAC 16 %) dont ASIC sur mesure 120 Md$ (TCAC 27 %). Capex 2027 attendus : Google 284,8, Amazon 256,5, Microsoft 207,6, Meta 185,6 Md$ (agrégateurs d'estimations).",
+   "cagr_pct": "24,3 % (Mordor 2026-2031) ; ASIC sur mesure 44,6 % (Introl) ; 16 % (Bloomberg Intelligence, à 2033)",
+   "who_captures_value": "Nvidia (marge brute ~75 %, « compute is revenue ») et Broadcom (revenu semi IA 16,7 Md$ au T3 FY26, 56 % du CA, guidance 21,7 Md$ au T4) ont le pricing power ; TSMC capte la rente de fonderie (2 nm à 30 000 $/plaquette, réservé jusqu'en 2028). Les hyperscalers compressent leurs coûts via les ASIC (Broadcom, Marvell, MediaTek) ; les néoclouds (CoreWeave, Nebius) restent déficitaires malgré des backlogs record.",
+   "bottlenecks": [
+    "CoWoS (TSMC) : écart offre/demande ~20 % mi-2026, ~10 % fin 2026 (TrendForce)",
+    "HBM : marché sous-approvisionné, SK hynix ~58 % de part, 70 % sur HBM4 pour Rubin (UBS)",
+    "Énergie et transformateurs (délais 48-60 mois) pour les campus GW",
+    "Financement : OpenAI n'a pas pu boucler 18 Md$ de financement lié aux puces Broadcom (mai 2026)"
+   ],
+   "leaders": [
+    {
+     "company": "Nvidia",
+     "ticker": "NVDA",
+     "listing": "Nasdaq",
+     "why": "Revenu T2 FY2027 (clos 26/07/2026) 96,2 Md$ (+106 %), data center 89,0 Md$ (+117 %) ; FY se clôt en janvier"
+    },
+    {
+     "company": "Broadcom",
+     "ticker": "AVGO",
+     "listing": "Nasdaq",
+     "why": "ASIC/XPU pour Google, Meta, OpenAI, Anthropic ; revenu semi IA 16,7 Md$ T3 FY26 (+221 %), FY clos en octobre/novembre"
+    },
+    {
+     "company": "TSMC",
+     "ticker": "2330 / TSM",
+     "listing": "TWSE / NYSE (ADR)",
+     "why": "Fondeur de tous les accélérateurs ; croissance 2026 relevée à >40 %, capex 60-64 Md$"
+    },
+    {
+     "company": "AMD",
+     "ticker": "AMD",
+     "listing": "Nasdaq",
+     "why": "Accord OpenAI 6 GW d'accélérateurs à partir du S2 2026"
+    },
+    {
+     "company": "Marvell",
+     "ticker": "MRVL",
+     "listing": "Nasdaq",
+     "why": "XPU sur mesure et connectivité ; data center +46 % a/a au T2 FY2027"
+    },
+    {
+     "company": "Alphabet (TPU)",
+     "ticker": "GOOGL",
+     "listing": "Nasdaq",
+     "why": "TPU : 5 GW pour Anthropic, accord 3,5 GW Anthropic/Google/Broadcom ; capex 2026 195-205 Md$"
+    },
+    {
+     "company": "Amazon (Trainium)",
+     "ticker": "AMZN",
+     "listing": "Nasdaq",
+     "why": ">1 M de Trainium2 déployés pour Claude ; capex ~220 Md$ 2026"
+    },
+    {
+     "company": "Oracle",
+     "ticker": "ORCL",
+     "listing": "NYSE",
+     "why": "RPO 664 Md$ ; capex FY27 ≤95 Md$ brut ; OCI +121 % au T1 FY2027"
+    }
+   ],
+   "quotes": [
+    {
+     "speaker": "Jensen Huang, fondateur et CEO",
+     "company": "Nvidia",
+     "original": "AI has reached its inflection point. It's doing useful work. Its tokens are productive and profitable. Now, compute is revenue. And demand is accelerating.",
+     "french": "L'IA a atteint son point d'inflexion. Elle fait un travail utile. Ses tokens sont productifs et rentables. Désormais, le calcul, c'est du chiffre d'affaires. Et la demande accélère.",
+     "date": "2026-08-26",
+     "source": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/default.aspx"
+    },
+    {
+     "speaker": "Hock Tan, President et CEO",
+     "company": "Broadcom",
+     "original": "Demand for our custom AI accelerators and networking continues to be very strong. Q3 AI semiconductor revenue of $16.7 billion grew 221% year-over-year, and 54% quarter-over-quarter. In Q4 the momentum continues, and we expect AI semiconductor revenue to accelerate to $21.7 billion, up 236% year-over-year.",
+     "french": "La demande pour nos accélérateurs d'IA sur mesure et notre réseau reste très forte. Le chiffre d'affaires semi-conducteurs IA du T3, 16,7 milliards de dollars, a progressé de 221 % sur un an et de 54 % sur un trimestre. Au T4 la dynamique se poursuit et nous attendons une accélération du chiffre d'affaires semi-conducteurs IA à 21,7 milliards de dollars, en hausse de 236 % sur un an.",
+     "date": "2026-09-09",
+     "source": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial"
+    }
+   ],
+   "key_documents": [
+    {
+     "title": "Anthropic – projet de prospectus S-1 (engagements de calcul 518 Md$ : Broadcom 161,2, Google 111,1, Amazon 110, Microsoft 31,4 Md$ ; ~80 % fermes)",
+     "date": "2026-09",
+     "source": "https://finance.yahoo.com/technology/ai/articles/anthropic-1-518-billion-commitment-165731037.html",
+     "why": "Quantifie la demande captive par fournisseur de silicium sur plusieurs années"
+    },
+    {
+     "title": "OpenAI – levée visée de 30 Md$ à 1 400 Md$ de valorisation (IPO repoussée)",
+     "date": "2026-09-29",
+     "source": "https://bloomberg.com/news/articles/2026-09-29/openai-targets-30-billion-in-new-funding-at-1-4-trillion-value",
+     "why": "Capacité de financement du premier acheteur de calcul ; 10 GW Nvidia (jusqu'à 100 Md$ d'investissement), 6 GW AMD, puces Broadcom ; incident de financement de 18 Md$ en mai 2026"
+    },
+    {
+     "title": "Nvidia – résultats T2 FY2027 (8-K) et prévision de +70 % de croissance FY2028 (CNBC)",
+     "date": "2026-08-26",
+     "source": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27pr.htm",
+     "why": "Référence de guidance pour toute la chaîne"
+    }
+   ],
+   "risks": [
+    "Financement circulaire et dette : OpenAI (18 Md$ non bouclés), néoclouds à beta 7 (CoreWeave) ; un ralentissement des levées casserait les carnets",
+    "Substitution GPU → ASIC : pression sur les marges de Nvidia si TPU/Trainium gagnent l'inférence (2/3 du calcul IA)",
+    "Décalage capex/amortissements : ~690 Md$ de capex 2026 ; retour sur investissement non prouvé pour les clients finaux"
+   ],
+   "sources": [
+    {
+     "url": "https://supercyclehq.com/blog/reports/hyperscaler-capex-september-2026",
+     "date": "2026-09",
+     "what": "Point capex hyperscalers sept. 2026 (Amazon 220, Alphabet 195-205, Meta 130-145, MSFT, Oracle)"
+    },
+    {
+     "url": "https://introl.com/blog/hyperscaler-capex-690-billion-microsoft-azure-power-bottleneck-2026",
+     "date": "2026",
+     "what": "Capex hyperscalers 690 Md$ 2026"
+    },
+    {
+     "url": "https://www.mordorintelligence.com/industry-reports/ai-accelerators-market",
+     "date": "2026",
+     "what": "Marché accélérateurs IA 174,69 Md$ 2026 → 518,12 Md$ 2031, TCAC 24,3 %"
+    },
+    {
+     "url": "https://assets.bbhub.io/professional/sites/41/Bloomberg-Intelligence-AI-Accelerators-Deep-Dive-January-Update.pdf",
+     "date": "2026-01",
+     "what": "BI : >600 Md$ en 2033, ASIC 120 Md$ (27 %)"
+    },
+    {
+     "url": "https://404kresearch.substack.com/p/anthropic-s-1-deep-dive-the-growth",
+     "date": "2026-09",
+     "what": "Détail S-1 Anthropic par fournisseur"
+    },
+    {
+     "url": "https://www.investing.com/news/stock-market-news/broadcom-shares-slump-as-openais-18b-custom-chip-deal-hits-financing-snag-4669333",
+     "date": "2026-05",
+     "what": "Financement 18 Md$ OpenAI/Broadcom non bouclé"
+    },
+    {
+     "url": "https://www.cnbc.com/2026/08/26/nvidia-nvda-earnings-report-q2-2027-live-updates.html",
+     "date": "2026-08-26",
+     "what": "Huang : +70 % de croissance FY2028"
+    },
+    {
+     "url": "https://www.fool.com/earnings/call-transcripts/2026/09/09/broadcom-avgo-q3-2026-earnings-call-transcript/",
+     "date": "2026-09-09",
+     "what": "Transcript Broadcom T3 FY26"
+    }
+   ]
+  },
+  {
+   "name": "Mémoire IA et packaging avancé (HBM, DRAM/NAND, CoWoS)",
+   "summary": "Supercycle mémoire : Micron a réalisé 54,2 Md$ de revenu au T4 FY2026 (+379 % a/a) et 133,2 Md$ sur l'exercice (+256 %). TrendForce attend encore +10-15 % sur la DRAM conventionnelle et +15-20 % sur la NAND au T4 2026. Le CEO de SK hynix juge 2027 « la pire année de l'histoire du secteur du point de vue de l'offre ». Mais les capex mémoire bondissent (+46,5 % en 2027) et plusieurs analystes voient un retournement en surcapacité dès 2028.",
+   "market_size_now": "HBM 2026 : 54,6 Md$ (+58 %, BofA) ; Micron FY2026 (clos août 2026) : 133,2 Md$ de revenu. CoWoS TSMC : 120-140 k plaquettes/mois fin 2026 + 50-60 k chez les OSAT (TrendForce).",
+   "market_size_2030": "HBM : 60,1 Md$ en 2034 (TrendX, TCAC 28,6 %) ; TrendForce : pénurie de packaging 2,5D s'atténuant à partir de 2027 (CoWoS ~170 k pl./mois en 2027). Capex DRAM+NAND 2027 : 80,4 Md$ (+46,5 %).",
+   "cagr_pct": "HBM 25,6 % (Mordor 2026-2031) à 28,6 % (TrendX 2026-2034) ; prix DRAM conv. +90-95 % au T1 2026 puis +10-15 % au T4 2026 (TrendForce)",
+   "who_captures_value": "Les trois fabricants de DRAM (SK hynix ~58 % du HBM, Samsung ~25 %, Micron ~17 %) captent la rente de prix (marge brute Micron 87 % selon HWBusters) ; TSMC sur le CoWoS ; les équipementiers de niche (Disco 70-80 % des amincisseurs HBM, Advantest, BESI/ASMPT en hybrid bonding). Les clients (hyperscalers, OEM) subissent la hausse des coûts.",
+   "bottlenecks": [
+    "Capacité HBM4 (SK hynix ~70 % de part sur Rubin)",
+    "CoWoS-L/S de TSMC réservé ; écart offre/demande 20 %→10 % fin 2026",
+    "Priorité donnée aux produits serveur : pénurie côté consommateur (PC/smartphones)",
+    "Délais de construction des nouvelles fabs (SK : ~500 Md$ pour 4 fabs, première en 2027)"
+   ],
+   "leaders": [
+    {
+     "company": "SK hynix",
+     "ticker": "000660",
+     "listing": "KRX (Corée)",
+     "why": "Leader HBM (~58 %), ~70 % du HBM4 pour Nvidia Rubin"
+    },
+    {
+     "company": "Micron",
+     "ticker": "MU",
+     "listing": "Nasdaq",
+     "why": "Revenu T4 FY26 54,2 Md$, EPS ajusté 33,42 $, offre « beaucoup plus tendue » en 2027-2028"
+    },
+    {
+     "company": "Samsung Electronics",
+     "ticker": "005930",
+     "listing": "KRX",
+     "why": "Part HBM projetée >30 % en 2026 ; capacité DRAM/NAND la plus large"
+    },
+    {
+     "company": "TSMC",
+     "ticker": "2330 / TSM",
+     "listing": "TWSE / NYSE",
+     "why": "CoWoS 120-140 k plaquettes/mois fin 2026, +60 % en 2027"
+    },
+    {
+     "company": "Disco",
+     "ticker": "6146",
+     "listing": "TSE (Tokyo)",
+     "why": "70-80 % du marché des amincisseurs ultra-fins pour HBM"
+    },
+    {
+     "company": "Advantest",
+     "ticker": "6857",
+     "listing": "TSE",
+     "why": "Testeurs IA/HBM ; profit opérationnel FY (mars 2027) attendu +70 %"
+    },
+    {
+     "company": "ASE Technology",
+     "ticker": "3711 / ASX",
+     "listing": "TWSE / NYSE",
+     "why": "OSAT : 50-60 k plaquettes/mois de capacité 2,5D additionnelle"
+    }
+   ],
+   "quotes": [
+    {
+     "speaker": "Sanjay Mehrotra, Chairman, President et CEO",
+     "company": "Micron",
+     "original": "Micron delivered an exceptional fiscal Q4 with significant records in revenue, gross margin, and EPS, each exceeding the high end of our guidance.",
+     "french": "Micron a réalisé un quatrième trimestre fiscal exceptionnel, avec des records significatifs de chiffre d'affaires, de marge brute et de BPA, chacun dépassant le haut de notre fourchette de prévisions.",
+     "date": "2026-09-30",
+     "source": "https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000018/a2026q4ex991-pressrelease.htm"
+    },
+    {
+     "speaker": "Kwak Noh-jung, CEO",
+     "company": "SK hynix",
+     "original": "[2027 will be] the worst year in the industry's history from the supply perspective",
+     "french": "[2027 sera] la pire année de l'histoire du secteur du point de vue de l'offre",
+     "date": "2026-07",
+     "source": "https://finance.yahoo.com/technology/ai/articles/2027-could-memory-worst-supply-141339156.html (interview Reuters, juillet 2026)"
+    }
+   ],
+   "key_documents": [
+    {
+     "title": "TrendForce – « AI Server Demand Sustains Memory Contract Price Increases in 4Q26 »",
+     "date": "2026-09-30",
+     "source": "https://www.trendforce.com/presscenter/news/20260930-13258.html",
+     "why": "Référence de prix contractuels DRAM/NAND/HBM pour le T4 2026"
+    },
+    {
+     "title": "Micron – communiqué T4 et exercice 2026 (8-K)",
+     "date": "2026-09-30",
+     "source": "https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000018/a2026q4ex991-pressrelease.htm",
+     "why": "Revenu 54,2 Md$, perspective d'offre tendue en 2027-2028"
+    },
+    {
+     "title": "TrendForce – écart offre/demande CoWoS de 20 % à 10 % fin 2026",
+     "date": "2026-06-15",
+     "source": "https://www.trendforce.com/news/2026/06/15/news-tsmc-cowos-supply-demand-gap-reportedly-seen-narrowing-from-20-to-10-by-end-2026-as-capacity-expands/",
+     "why": "Capacités CoWoS TSMC et OSAT 2026-2027"
+    }
+   ],
+   "risks": [
+    "Cycle : capex DRAM 2027 +51,6 % (58,6 Md$) ; retournement possible en surcapacité en 2028-2029 si la demande IA se modère",
+    "Concentration client : quelques hyperscalers et Nvidia dictent les volumes HBM",
+    "Géopolitique (Corée/Taïwan, contrôles à l'export vers la Chine) et change (USD/TWD 31,88, USD/KRW)"
+   ],
+   "sources": [
+    {
+     "url": "https://www.trendforce.com/presscenter/news/20260930-13258.html",
+     "date": "2026-09-30",
+     "what": "Prix contractuels T4 2026 : DRAM +10-15 %, HBM incl. +15-20 %, NAND +15-20 %"
+    },
+    {
+     "url": "https://www.trendforce.com/presscenter/news/20260202-12911.html",
+     "date": "2026-02-02",
+     "what": "T1 2026 : hausses record (+90-95 % DRAM conv.)"
+    },
+    {
+     "url": "https://siliconanalysts.com/analysis/hbm4-market-share-race-2026",
+     "date": "2026",
+     "what": "Parts HBM 2026 : SK hynix ~58 %, Samsung ~25 %, Micron ~17 % ; UBS 70 % HBM4"
+    },
+    {
+     "url": "https://www.design-reuse.com/news/202529413-samsung-s-share-in-hbm-market-projected-to-surpass-30-in-2026/",
+     "date": "2026",
+     "what": "BofA : HBM 54,6 Md$ en 2026 (+58 %)"
+    },
+    {
+     "url": "https://www.cnbc.com/2026/09/30/micron-mu-q4-earnings-report-2026.html",
+     "date": "2026-09-30",
+     "what": "Micron T4 FY26 : 54,2 Md$, EPS 33,42 $ vs 31,61 attendu"
+    },
+    {
+     "url": "https://seekingalpha.com/news/4615108-sa-asks-are-memory-chipmakers-building-too-much-capacity",
+     "date": "2026",
+     "what": "Capex DRAM+NAND 2027 80,4 Md$ (+46,5 %), DRAM 58,6 Md$ (+51,6 %)"
+    },
+    {
+     "url": "https://247wallst.com/investing/2026/07/30/top-chip-analyst-semiconductor-oversupply-is-nearly-impossible-before-2028-why-hes-bullish-on-memory/",
+     "date": "2026-07-30",
+     "what": "Surcapacité improbable avant 2028"
+    },
+    {
+     "url": "https://www.digitimes.com/news/a20260730PD220/advantest-demand-2026-forecast-outlook.html",
+     "date": "2026-07-30",
+     "what": "Advantest relève sa prévision FY2026"
+    }
+   ]
+  },
+  {
+   "name": "Équipements semi-conducteurs et fonderie (EUV/High-NA, 2 nm, test/découpe)",
+   "summary": "Le marché mondial des équipements de fabrication (WFE) passe de 116,9 Md$ (2025, record) à 143,9 Md$ en 2026 (+23,1 %) et ~175 Md$ en 2027 (+21,8 %) selon SEMI, avec un record de 229 Md$ d'équipements au total en 2028. ASML a relevé sa guidance 2026 à 36-40 Md€ (16 EUV livrés au T2, premier High-NA reconnu en production chez Intel 18A). TSMC a relevé sa croissance 2026 à plus de 40 % et son capex à 60-64 Md$ ; le 2 nm pèse 3 % du revenu plaquettes au T2 2026 et serait réservé jusqu'en 2028.",
+   "market_size_now": "WFE 2026 : 143,9 Md$ (SEMI) ; ASML 2026 : 36-40 Md€ de ventes ; capex TSMC 2026 : 60-64 Md$ ; capex mémoire 2027 : 80,4 Md$.",
+   "market_size_2030": "WFE 2027 ~175 Md$ ; équipements totaux 229 Md$ en 2028 (SEMI). TSMC : « demande très forte jusqu'en 2029-2030 » (C.C. Wei).",
+   "cagr_pct": "WFE +23,1 % (2026) puis +21,8 % (2027) selon SEMI ; Advantest profit opérationnel +70 % FY (mars 2027)",
+   "who_captures_value": "Monopoles ou quasi-monopoles : ASML (EUV/High-NA, marge brute 51-53 %), TSMC (2 nm à ~30 000 $ la plaquette, 3 à 4 points de dilution de marge temporaire), Disco (amincissement HBM), Advantest (test SoC/HBM), BESI (hybrid bonding). Les fondeurs challengers (Intel, Samsung) et les fabs mémoire paient la facture.",
+   "bottlenecks": [
+    "Capacité 2 nm TSMC réservée jusqu'en 2028 (prix 30 000 $/plaquette)",
+    "Cadence de production ASML (91 systèmes au T2 dont 16 EUV) et courbe d'apprentissage High-NA",
+    "Capacité de test : Advantest doit augmenter sa production de plus de 70 % d'ici fin 2026",
+    "Main-d'œuvre et énergie pour les fabs américaines (TSMC : +100 Md$ en Arizona, total 265 Md$)"
+   ],
+   "leaders": [
+    {
+     "company": "ASML",
+     "ticker": "ASML",
+     "listing": "Euronext Amsterdam / Nasdaq",
+     "why": "Monopole EUV/High-NA ; guidance 2026 relevée à 36-40 Md€"
+    },
+    {
+     "company": "TSMC",
+     "ticker": "2330 / TSM",
+     "listing": "TWSE / NYSE",
+     "why": "Croissance 2026 >40 %, capex 60-64 Md$, 2 nm en rampe"
+    },
+    {
+     "company": "Applied Materials",
+     "ticker": "AMAT",
+     "listing": "Nasdaq",
+     "why": "Premier équipementier WFE (dépôt, gravure, implant)"
+    },
+    {
+     "company": "Lam Research",
+     "ticker": "LRCX",
+     "listing": "Nasdaq",
+     "why": "Gravure/dépôt, exposé au capex mémoire +46,5 % en 2027"
+    },
+    {
+     "company": "KLA",
+     "ticker": "KLAC",
+     "listing": "Nasdaq",
+     "why": "Métrologie/inspection, intensité croissante au 2 nm"
+    },
+    {
+     "company": "Tokyo Electron",
+     "ticker": "8035",
+     "listing": "TSE",
+     "why": "Coater/developer et gravure, n°1 japonais"
+    },
+    {
+     "company": "Advantest",
+     "ticker": "6857",
+     "listing": "TSE",
+     "why": "Testeurs IA : profit opérationnel FY attendu +70 % (vs +26 %)"
+    },
+    {
+     "company": "Disco",
+     "ticker": "6146",
+     "listing": "TSE",
+     "why": "Découpe/amincissement, 70-80 % du marché HBM"
+    }
+   ],
+   "quotes": [
+    {
+     "speaker": "Christophe Fouquet, CEO",
+     "company": "ASML",
+     "original": "The combination of continued strong momentum in customer demand and our ability to respond to that by driving higher output through strengths in our supply chain, our manufacturing, and our installed teams in the field are the primary drivers of our improved guidance.",
+     "french": "La combinaison d'une dynamique toujours forte de la demande client et de notre capacité à y répondre en augmentant la production grâce aux forces de notre chaîne d'approvisionnement, de notre fabrication et de nos équipes installées sur le terrain sont les principaux moteurs du relèvement de notre guidance.",
+     "date": "2026-07-15",
+     "source": "https://www.fool.com/earnings/call-transcripts/2026/07/15/asml-asml-q2-2026-earnings-call-transcript/"
+    },
+    {
+     "speaker": "C.C. Wei, Chairman et CEO",
+     "company": "TSMC",
+     "original": "We are witnessing a kind of new industry, the AI industry... The gap between demand and supply remains very big. I believe from this day on all the way to probably 2029, 2030, the demand is very strong.",
+     "french": "Nous assistons à la naissance d'une sorte de nouvelle industrie, l'industrie de l'IA… L'écart entre la demande et l'offre reste très important. Je crois qu'à partir d'aujourd'hui et jusqu'en 2029, 2030 probablement, la demande est très forte.",
+     "date": "2026-07-16",
+     "source": "https://www.fool.com/earnings/call-transcripts/2026/07/16/tsm-tsm-q2-2026-earnings-call-transcript/"
+    }
+   ],
+   "key_documents": [
+    {
+     "title": "SEMI – prévision équipements : WFE 143,9 Md$ (2026), ~175 Md$ (2027), total record 229 Md$ (2028)",
+     "date": "2026",
+     "source": "https://www.semi.org/en/semi-press-release/global-semiconductor-equipment-sales-forecast-to-reach-a-record-229-billion-dollars-in-2028-semi-reports",
+     "why": "Trajectoire officielle du marché des équipements"
+    },
+    {
+     "title": "ASML – présentation résultats T2 2026",
+     "date": "2026-07-15",
+     "source": "https://ourbrand.asml.com/asset/9078cf4d-91fd-4dd9-a5d5-d1caab6dc046/2026_07_15_Presentation-Investor-Relations-Q2-2026.pdf",
+     "why": "16 EUV livrés, 1 High-NA reconnu, guidance 36-40 Md€"
+    },
+    {
+     "title": "TSMC – communiqué T2 2026 (6-K) : capex 60-64 Md$, +100 Md$ Arizona",
+     "date": "2026-07-16",
+     "source": "https://www.sec.gov/Archives/edgar/data/0001046179/000104617926000451/a2q26e_withguidancexfinal.htm",
+     "why": "Guidance de capex du client n°1 des équipementiers"
+    }
+   ],
+   "risks": [
+    "Cycle de capex : si la mémoire ou les hyperscalers coupent en 2028, les équipementiers sont les premiers touchés (effet d'amplification)",
+    "Contrôles à l'export (Chine = part importante des ventes d'ASML, AMAT, LRCX, TEL)",
+    "Dilution de marge TSMC au 2 nm (3-4 points) et surcoûts des fabs hors Taïwan"
+   ],
+   "sources": [
+    {
+     "url": "https://www.semi.org/en/semi-press-release/global-semiconductor-equipment-sales-forecast-to-reach-a-record-229-billion-dollars-in-2028-semi-reports",
+     "date": "2026",
+     "what": "WFE 116,9 (2025) → 143,9 (2026) → ~175 Md$ (2027) ; 229 Md$ total 2028"
+    },
+    {
+     "url": "https://www.investing.com/news/company-news/asml-q2-2026-slides-outlook-raised-on-ai-demand-high-na-milestone-93CH-4792166",
+     "date": "2026-07-15",
+     "what": "ASML T2 : 9,3 Md€, 91 systèmes, 16 EUV, EUV 57 % des ventes systèmes"
+    },
+    {
+     "url": "https://finance.yahoo.com/markets/stocks/articles/tsmc-q2-2026-earnings-record-112109987.html",
+     "date": "2026-07-16",
+     "what": "TSMC : revenu NT$1 270,38 Md (+36 %), BPA NT$27,25 (+77,4 %)"
+    },
+    {
+     "url": "https://finance.biggo.com/news/US_TSM_2026-07-16",
+     "date": "2026-07-16",
+     "what": "Croissance 2026 relevée à >40 %, capex 64 Md$, 2 nm 3 % du revenu"
+    },
+    {
+     "url": "https://tech-insider.org/ca/tsmc-2nm-wafer-price-2026/",
+     "date": "2026",
+     "what": "Plaquette 2 nm ~30 000 $, réservée jusqu'en 2028"
+    },
+    {
+     "url": "https://www.bloomberg.com/news/articles/2026-07-29/advantest-lifts-outlook-after-demand-for-ai-chip-testers-soars",
+     "date": "2026-07-29",
+     "what": "Advantest : profit opérationnel +70 % attendu"
+    }
+   ]
+  },
+  {
+   "name": "Électricité et réseau pour les data centers (transformateurs, switchgear, turbines à gaz, nucléaire/SMR, câbles)",
+   "summary": "L'AIE attend un doublement de la consommation des data centers de 485 TWh (2025) à ~945-950 TWh en 2030. Les carnets explosent : GE Vernova 176 Md$ de backlog et 116 GW de turbines à gaz (réservations jusqu'en 2031), Siemens Energy 162 Md€ de backlog dont 51 Md€ en Grid Technologies, Prysmian ~17 Md€ en transmission. Les délais atteignent 48-60 mois pour un transformateur HT et 52-104 semaines pour le switchgear MT. Les hyperscalers ont signé 13 accords nucléaires (>9,8 GW) ; Meta jusqu'à 6,6 GW.",
+   "market_size_now": "Consommation DC 485 TWh (2025, AIE) ; backlogs : GEV 176 Md$ (T2 2026), Siemens Energy 162 Md€ (T3 FY26), Prysmian ~17 Md€ transmission, Nexans 7,7 Md€ (PWR-Transmission).",
+   "market_size_2030": "~945-950 TWh en 2030 (~3 % de l'électricité mondiale) ; États-Unis +240 TWh (+130 % vs 2024), Chine +175 TWh. GEV : production de turbines 20 GW/an au T3 2026, 24 GW en 2028, 30 GW en 2030 ; revenu ~52 Md$ en 2028 avec 20 % de marge EBITDA ajustée.",
+   "cagr_pct": "Consommation DC : doublement 2025-2030 (≈ +14 %/an) ; commandes Grid Technologies Siemens Energy +28 % a/a ; commandes data center Eaton +~85 % a/a (T2 2026)",
+   "who_captures_value": "Oligopoles d'équipements à carnets pluriannuels et pricing power : turbines à gaz (GE Vernova, Siemens Energy, Mitsubishi Heavy), transformateurs/switchgear (Siemens Energy, Hitachi Energy, Eaton, Schneider ; prix +77 % depuis 2019), câbles HT (Prysmian, Nexans, NKT), refroidissement/alimentation (Vertiv, marge opérationnelle ajustée 23-24 %). Les producteurs nucléaires (Constellation) signent des PPA à 18-20 ans ; les SMR (Oklo, NuScale) restent pré-revenus.",
+   "bottlenecks": [
+    "Transformateurs HT : délais 48-60 mois (128 semaines en moyenne, GSU 144 semaines)",
+    "Switchgear MT 15 kV : 52-80 semaines ; 38 kV : 78-104 semaines",
+    "Turbines à gaz : GEV prend des réservations pour 2031 ; Siemens Energy ~70 GW de carnet",
+    "Raccordement réseau et permis ; main-d'œuvre électrique qualifiée"
+   ],
+   "leaders": [
+    {
+     "company": "GE Vernova",
+     "ticker": "GEV",
+     "listing": "NYSE",
+     "why": "Backlog 176 Md$, 116 GW gaz, guidance 2026 relevée (FCF6,5-7,5 Md$)"
+    },
+    {
+     "company": "Siemens Energy",
+     "ticker": "ENR",
+     "listing": "Xetra (Francfort)",
+     "why": "Backlog record 162 Md€ ; Grid Technologies 51 Md€, marge 18-20 %"
+    },
+    {
+     "company": "Vertiv",
+     "ticker": "VRT",
+     "listing": "NYSE",
+     "why": "Alimentation/refroidissement DC ; ventes T2 +24 %, guidance 2026 relevée sur tous les indicateurs"
+    },
+    {
+     "company": "Eaton",
+     "ticker": "ETN",
+     "listing": "NYSE",
+     "why": "Commandes DC +~85 %, contenu 3,4 M$/MW, BPA ajusté 2026 13,40-13,60 $"
+    },
+    {
+     "company": "Hitachi Energy (Hitachi)",
+     "ticker": "6501",
+     "listing": "TSE",
+     "why": "Transformateurs/HVDC, délais 48-60 mois"
+    },
+    {
+     "company": "Schneider Electric",
+     "ticker": "SU",
+     "listing": "Euronext Paris",
+     "why": "Distribution électrique et refroidissement DC (Motivair)"
+    },
+    {
+     "company": "Prysmian",
+     "ticker": "PRY",
+     "listing": "Borsa Italiana",
+     "why": "EBITDA record T2 730 M€, backlog transmission ~17 Md€ (+2 Md€ attribués)"
+    },
+    {
+     "company": "Constellation Energy",
+     "ticker": "CEG",
+     "listing": "Nasdaq",
+     "why": "Plus grand parc nucléaire US ; PPA Microsoft ~16 Md$/20 ans (Crane 835 MW, mise en service S2 2027)"
+    }
+   ],
+   "quotes": [
+    {
+     "speaker": "Scott Strazik, CEO",
+     "company": "GE Vernova",
+     "original": "With a backlog of $176 billion, continued revenue growth and margin expansion, and significant free cash flow generation, GE Vernova's momentum is building, and we are raising our 2026 financial guidance. We now expect to have at least 125 GW of gas equipment under contract by year-end 2026. To meet this demand, we remain on track to deliver 20 GW of annual gas turbine output in the third quarter of 2026, with 24 GW in 2028, and we are implementing actions to produce 30 GW in 2030.",
+     "french": "Avec un carnet de commandes de 176 milliards de dollars, une croissance continue du chiffre d'affaires, une expansion des marges et une génération significative de flux de trésorerie disponible, la dynamique de GE Vernova se renforce et nous relevons nos prévisions financières 2026. Nous attendons désormais au moins 125 GW d'équipements gaz sous contrat d'ici fin 2026. Pour répondre à cette demande, nous restons en bonne voie pour livrer 20 GW de turbines à gaz par an au troisième trimestre 2026, 24 GW en 2028, et nous mettons en œuvre des actions pour produire 30 GW en 2030.",
+     "date": "2026-07-22",
+     "source": "https://www.gevernova.com/news/articles/ge-vernova-releases-second-quarter-2026-financial-results"
+    },
+    {
+     "speaker": "Christian Bruch, President et CEO",
+     "company": "Siemens Energy",
+     "original": "Global electricity demand – and consequently for our products – remained strong in the third quarter. We delivered record orders, revenue, and profitability, while continuing to improve efficiency.",
+     "french": "La demande mondiale d'électricité – et par conséquent pour nos produits – est restée forte au troisième trimestre. Nous avons réalisé des commandes, un chiffre d'affaires et une rentabilité records, tout en continuant d'améliorer notre efficacité.",
+     "date": "2026-08-05",
+     "source": "https://assets.siemens-energy.com/dam/d0147174-31a9-4a78-b062-b49d00428fc4/earnings-release-q3-fy2026-en-pdf_Original%20file.pdf"
+    }
+   ],
+   "key_documents": [
+    {
+     "title": "AIE – « Energy and AI » : consommation DC 485 TWh (2025) → ~945 TWh (2030)",
+     "date": "2025-04",
+     "source": "https://www.iea.org/reports/energy-and-ai/energy-supply-for-ai",
+     "why": "Scénario de référence de la demande électrique des data centers"
+    },
+    {
+     "title": "GE Vernova – communiqué T2 2026 (8-K) : backlog 176 Md$, 116 GW gaz",
+     "date": "2026-07-22",
+     "source": "https://www.sec.gov/Archives/edgar/data/0001996810/000199681026000147/gevpressrelease2q26.htm",
+     "why": "Guidance de production de turbines 2026-2030"
+    },
+    {
+     "title": "Siemens Energy – Earnings Release T3 FY2026 : backlog 162 Md€, Grid 51 Md€",
+     "date": "2026-08-05",
+     "source": "https://assets.siemens-energy.com/dam/d0147174-31a9-4a78-b062-b49d00428fc4/earnings-release-q3-fy2026-en-pdf_Original%20file.pdf",
+     "why": "Carnet transformateurs et expansion de capacité +50 % d'ici 2030"
+    },
+    {
+     "title": "Approbation FERC (1er juin 2026) du PPA Microsoft–Constellation (Crane Clean Energy Center, 835 MW, ~16 Md$ sur 20 ans)",
+     "date": "2026-06-01",
+     "source": "https://smrintel.com/nuclear-data-center-deals/",
+     "why": "Premier redémarrage nucléaire financé par un hyperscaler ; mise en service S2 2027"
+    }
+   ],
+   "risks": [
+    "Report ou annulation de campus DC si le financement IA se grippe : les carnets 2028-2031 sont des réservations, pas toujours du cash",
+    "Entrée de capacités (Siemens Energy +50 % transformateurs/GIS d'ici 2030, FPS, concurrents asiatiques) → normalisation des prix",
+    "Exécution et marge : GEV a manqué le consensus de BPA au T2 2026 ; Vertiv a chuté de ~10 % sur un manque de ventes malgré la hausse de guidance"
+   ],
+   "sources": [
+    {
+     "url": "https://www.gridreadiness.com/blog/power-transformer-lead-times-ai-data-center-2026.html",
+     "date": "2026",
+     "what": "Délais transformateurs HT 48-60 mois (ABB, Siemens Energy, Hitachi), GEV 60+"
+    },
+    {
+     "url": "https://syaala.com/blog/transformer-lead-times-2026",
+     "date": "2026",
+     "what": "128 semaines en moyenne, GSU 144 semaines, prix +77 % depuis 2019"
+    },
+    {
+     "url": "https://www.industrialsage.com/switchgear-lead-times-2026/",
+     "date": "2026-06",
+     "what": "Switchgear MT 52-80 / 78-104 semaines (Terrapin)"
+    },
+    {
+     "url": "https://www.utilitydive.com/news/ge-vernova-gas-turbine-backlog-climbs-to-116-gw/826039/",
+     "date": "2026-07",
+     "what": "116 GW (53 backlog + 63 réservations)"
+    },
+    {
+     "url": "https://www.utilitydive.com/news/siemens-gas-turbine-backlog-nears-70-gw-as-company-expands-manufacturing/827390/",
+     "date": "2026-08",
+     "what": "Siemens Energy ~70 GW de turbines"
+    },
+    {
+     "url": "https://www.datacenterdynamics.com/en/news/iea-data-center-energy-consumption-set-to-double-by-2030-to-945twh/",
+     "date": "2025-04",
+     "what": "AIE 945 TWh 2030"
+    },
+    {
+     "url": "https://axis-intelligence.com/nuclear-energy-for-data-centers/",
+     "date": "2026-05",
+     "what": "13 accords nucléaires, >9,8 GW"
+    },
+    {
+     "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-prysmian-lifts-2026-outlook-after-record-q2-93CH-4822973",
+     "date": "2026-07",
+     "what": "Prysmian EBITDA record 730 M€, backlog ~17 Md€"
+    },
+    {
+     "url": "https://www.globenewswire.com/news-release/2026/07/29/3334962/0/en/2026-Half-year-results-Nexans-delivering-on-its-strategy-of-profitable-growth-and-raises-full-year-guidance.html",
+     "date": "2026-07-29",
+     "what": "Nexans S1 2026, backlog 7,7 Md€"
+    },
+    {
+     "url": "https://www.prnewswire.com/news-releases/vertiv-reports-strong-second-quarter-2026-with-diluted-eps-growth-of-53-adjusted-diluted-eps-growth-of-60-raises-full-year-2026-guidance-across-all-key-metrics-302837598.html",
+     "date": "2026-07-29",
+     "what": "Vertiv T2 2026"
+    },
+    {
+     "url": "https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-reports-record-second-quarter-2026-results.html",
+     "date": "2026-07-31",
+     "what": "Eaton T2 2026 : commandes DC +~85 %"
+    }
+   ]
+  },
+  {
+   "name": "IA physique : robotaxis (Waymo, Tesla, Uber), humanoïdes, drones",
+   "summary": "Waymo réalise ~500 000 courses payantes par semaine dans 14 métropoles US avec ~4 000 véhicules (sept. 2026), après une levée de 16 Md$ à 126 Md$ de valorisation ; l'objectif d'1 M de courses/semaine fin 2026 n'est pas encore atteint. Le Nevada a autorisé Tesla à déployer jusqu'à 5 000 robotaxis en 12 mois ; Uber agrège plus de 30 partenaires AV mais a perdu Waymo à Phoenix. Humanoïdes : ~25 000 unités livrées au S1 2026 (+432 %), 95 % par la Chine (Unitree vise 20 000 en 2026) ; Tesla a démarré Optimus à Fremont à cadence « très lente ». Drones : l'Ukraine en produit 4 millions par an ; le marché européen du drone militaire doublerait d'ici 2030.",
+   "market_size_now": "Waymo ~500 k courses/semaine (sept. 2026) ; humanoïdes 5,41 Md$ en 2026 (MarketsandMarkets), ~25 000 unités au S1 2026 (IDC) ; drones militaires Europe 9,47 Md$ (2024, Grand View).",
+   "market_size_2030": "Humanoïdes : Goldman Sachs 38 Md$ en 2035 et >250 000 unités en 2030 ; MarketsandMarkets 50,27 Md$ en 2035 (TCAC 28,1 %). Drones militaires Europe 19,46 Md$ en 2030 (TCAC 12,9 %) ; anti-drones Europe 4,16 Md$ en 2030 (TCAC 27,5 %).",
+   "cagr_pct": "Humanoïdes 28,1 % (M&M 2026-2035) ; livraisons +432 % S1 2026 ; drones militaires Europe 12,9 % ; anti-drones Europe 27,5 %",
+   "who_captures_value": "À ce stade, la valeur est captée par les fournisseurs de composants et de calcul (Nvidia, lidars, capteurs, moteurs/réducteurs chinois) et par les plateformes de demande (Uber, Grab) plutôt que par les opérateurs, encore déficitaires (Waymo) ou pré-revenus (Optimus). Dans les drones, les producteurs à bas coût (Ukraine, Chine) et les intégrateurs défense (Hanwha, Rheinmetall, Axon pour le contre-drone) monétisent.",
+   "bottlenecks": [
+    "Réglementation ville par ville (permis Nevada : Tesla 5 000, Waymo 1 000)",
+    "Coût et disponibilité des véhicules/robots (Optimus : 10 000 pièces uniques, cadence initiale « quite slow »)",
+    "Sécurité et assurance ; acceptation sociale",
+    "Chaîne d'approvisionnement des actionneurs (Chine 95 % des livraisons d'humanoïdes)"
+   ],
+   "leaders": [
+    {
+     "company": "Alphabet (Waymo)",
+     "ticker": "GOOGL",
+     "listing": "Nasdaq",
+     "why": "~500 k courses payantes/semaine, 14 métropoles, levée 16 Md$ à 126 Md$"
+    },
+    {
+     "company": "Tesla",
+     "ticker": "TSLA",
+     "listing": "Nasdaq",
+     "why": "Robotaxi (Nevada 5 000 véhicules autorisés) et Optimus en production à Fremont"
+    },
+    {
+     "company": "Uber",
+     "ticker": "UBER",
+     "listing": "NYSE",
+     "why": ">30 partenaires AV ; « la plus grande plateforme mondiale de véhicules autonomes » (Khosrowshahi)"
+    },
+    {
+     "company": "Nvidia",
+     "ticker": "NVDA",
+     "listing": "Nasdaq",
+     "why": "Calcul embarqué (Thor) et simulation pour robots et AV"
+    },
+    {
+     "company": "Hanwha Aerospace",
+     "ticker": "012450",
+     "listing": "KRX",
+     "why": "Systèmes terrestres/drones ; carnet 38,3 T KRW"
+    },
+    {
+     "company": "Axon",
+     "ticker": "AXON",
+     "listing": "Nasdaq",
+     "why": "Contre-drone >100 M$ de revenu ; CA T2 +35 %"
+    },
+    {
+     "company": "Rocket Lab",
+     "ticker": "RKLB",
+     "listing": "Nasdaq",
+     "why": "Lanceurs et satellites ; backlog 2,36 Md$ ; Neutron attendu"
+    },
+    {
+     "company": "Unitree (non coté, IPO Shanghai en cours)",
+     "ticker": "n/a",
+     "listing": "n/a",
+     "why": "~5 500 humanoïdes livrés en 2025, objectif 20 000 en 2026"
+    }
+   ],
+   "quotes": [
+    {
+     "speaker": "Elon Musk, CEO",
+     "company": "Tesla",
+     "original": "Optimus will be the biggest product ever, but it is a very complex problem to solve.",
+     "french": "Optimus sera le plus grand produit de tous les temps, mais c'est un problème très complexe à résoudre.",
+     "date": "2026-07-22",
+     "source": "https://www.fool.com/earnings/call-transcripts/2026/08/05/tesla-tsla-q2-2026-earnings-call-transcript/"
+    },
+    {
+     "speaker": "Dara Khosrowshahi, CEO",
+     "company": "Uber",
+     "original": "We're investing from a position of strength, as we accelerate our cross-platform strategy at a global scale and build the world's largest platform for autonomous vehicles.",
+     "french": "Nous investissons en position de force, en accélérant notre stratégie multiplateforme à l'échelle mondiale et en construisant la plus grande plateforme mondiale de véhicules autonomes.",
+     "date": "2026-08-05",
+     "source": "https://www.sec.gov/Archives/edgar/data/0001543151/000154315126000027/uberq226earningspressrelea.htm"
+    }
+   ],
+   "key_documents": [
+    {
+     "title": "Permis Nevada : Tesla jusqu'à 5 000 robotaxis sur 12 mois, Waymo 1 000, Uber",
+     "date": "2026-08-20",
+     "source": "https://techcrunch.com/2026/08/20/tesla-uber-and-waymo-all-get-the-ok-to-operate-thousands-of-robotaxis-in-nevada/",
+     "why": "Première autorisation de flotte à grande échelle pour Tesla"
+    },
+    {
+     "title": "Waymo – levée de 16 Md$ à 126 Md$ de valorisation, expansion à 20+ villes (Tokyo, Londres)",
+     "date": "2026-02-02",
+     "source": "https://electrek.co/2026/02/02/waymo-raises-16-billion-round-at-126-billion-valuation-plans-expansion/",
+     "why": "Capacité de financement du leader"
+    },
+    {
+     "title": "IDC – livraisons d'humanoïdes S1 2026 : ~25 000 (+432 %), Chine 95 %",
+     "date": "2026",
+     "source": "https://finance.yahoo.com/technology/ai/articles/humanoid-robot-shipments-jump-432-025835160.html",
+     "why": "Données réelles de volume, pas de projection"
+    }
+   ],
+   "risks": [
+    "Rentabilité : Waymo plafonne à ~500 k courses/semaine vs objectif 1 M ; coût par véhicule et assurance",
+    "Accident majeur ou retrait de permis (effet d'arrêt réglementaire)",
+    "Déflation chinoise des humanoïdes et dépendance aux composants chinois pour les acteurs occidentaux"
+   ],
+   "sources": [
+    {
+     "url": "https://thechargeport.com/robotaxi-tracker",
+     "date": "2026-09",
+     "what": "Waymo ~500 k courses/semaine, 14 métropoles, ~4 000 véhicules"
+    },
+    {
+     "url": "https://techcrunch.com/2026/08/01/ubers-autonomous-vehicle-deal-tracker/",
+     "date": "2026-08-01",
+     "what": "Uber >30 partenaires AV ; fin du partenariat Waymo à Phoenix (juillet 2026)"
+    },
+    {
+     "url": "https://www.goldmansachs.com/insights/articles/the-global-market-for-robots-could-reach-38-billion-by-2035",
+     "date": "2024",
+     "what": "Goldman : 38 Md$ en 2035, >250 k unités en 2030"
+    },
+    {
+     "url": "https://www.marketsandmarkets.com/PressReleases/humanoid-robot.asp",
+     "date": "2026",
+     "what": "5,41 Md$ (2026) → 50,27 Md$ (2035), TCAC 28,1 %"
+    },
+    {
+     "url": "https://www.eweek.com/news/unitree-20000-humanoid-robots-2026-china/",
+     "date": "2026",
+     "what": "Unitree : 20 000 unités visées en 2026 vs ~5 500 en 2025"
+    },
+    {
+     "url": "https://electrek.co/2026/04/22/tesla-optimus-production-fremont-model-sx-line/",
+     "date": "2026-04-22",
+     "what": "Optimus : production Fremont fin juillet/août, cadence « quite slow »"
+    },
+    {
+     "url": "https://www.grandviewresearch.com/horizon/outlook/military-drone-market/europe",
+     "date": "2026",
+     "what": "Drones militaires Europe 9,47 Md$ (2024) → 19,46 Md$ (2030)"
+    },
+    {
+     "url": "https://www.atlanticcouncil.org/blogs/ukrainealert/ukraines-drone-wall-is-europes-first-line-of-defense-against-russia/",
+     "date": "2026",
+     "what": "Ukraine : 4 M de drones/an (Umerov)"
+    }
+   ]
+  },
+  {
+   "name": "Réarmement européen et défense",
+   "summary": "L'OTAN vise 5 % du PIB en 2035 (3,5 % cœur + 1,5 % connexe). Le budget allemand passe de 86 Md€ (2025) à 108,2 Md€ (2026) et ~152,8 Md€ en 2029, même si un rapport évoque seulement 3,05 % du PIB en 2029. L'instrument SAFE de l'UE (150 Md€ de prêts, 19 États, premiers décaissements début 2026, 38 Md€ approuvés en janvier) finance des achats conjoints livrables d'ici 2030. Carnets : Rheinmetall 80,5 Md€, Leonardo ~59 Md€, Saab 318 Md SEK (book-to-bill 2,7x), Hanwha Aerospace 38,3 T KRW.",
+   "market_size_now": "Budget défense allemand 2026 : 108,2 Md€ ; SAFE 150 Md€ ; carnets S1 2026 : Rheinmetall 80,5 Md€, Leonardo ~59 Md€ (52,6 hors IDV), Saab 318 Md SEK, Hanwha Aerospace 38,3 T KRW, Hensoldt 10,4 Md€.",
+   "market_size_2030": "Allemagne ~152,8 Md€ en 2029 (3,5 % du PIB visé) ; ReArm Europe/Readiness 2030 : jusqu'à 800 Md€ mobilisés ; livraisons SAFE exigées d'ici 2030.",
+   "cagr_pct": "Budget allemand : 86 → 152,8 Md€ 2025-2029 (≈ +15 %/an) ; commandes Saab +141 % a/a (T2 2026) ; commandes Leonardo +45 % (S1 2026) ; ventes Rheinmetall +39 % (S1 2026)",
+   "who_captures_value": "Les primes européens avec capacité industrielle en place : Rheinmetall (marge T2 17,1 %, cible ~19 %), Saab (marge EBIT 11 %, Gripen à 30/an), Leonardo (EBITA +34 %), Hanwha (marge opérationnelle 14,7 % sur K9/Chunmoo), Hensoldt (électronique). Le pricing power est fort tant que les capacités sont saturées ; les sous-traitants (munitions, électronique, optronique) suivent. Les cash-flows restent négatifs chez certains (Rheinmetall FCF opérationnel -1,6 Md€ au S1) à cause des acomptes.",
+   "bottlenecks": [
+    "Capacité industrielle (munitions, blindés, missiles) et main-d'œuvre",
+    "Processus budgétaires nationaux et politiques (coalition allemande, Italie, France)",
+    "Préférence européenne de SAFE vs offres américaines/coréennes",
+    "Trésorerie : acomptes et BFR (Rheinmetall)"
+   ],
+   "leaders": [
+    {
+     "company": "Rheinmetall",
+     "ticker": "RHM",
+     "listing": "Xetra",
+     "why": "Backlog 80,5 Md€, ventes S1 +39 %, guidance 2026 13,7-14,2 Md€"
+    },
+    {
+     "company": "Leonardo",
+     "ticker": "LDO",
+     "listing": "Borsa Italiana",
+     "why": "Commandes S1 16,3 Md€ (+45 %), backlog ~59 Md€, guidance relevée"
+    },
+    {
+     "company": "Saab",
+     "ticker": "SAAB B",
+     "listing": "Nasdaq Stockholm",
+     "why": "Backlog record 318 Md SEK, commandes +141 %, Gripen à 30/an"
+    },
+    {
+     "company": "Hanwha Aerospace",
+     "ticker": "012450",
+     "listing": "KRX",
+     "why": "Ventes T2 +47 %, OP 1 365 Md KRW, backlog 38,3 T KRW (K9 Finlande, Chunmoo Estonie)"
+    },
+    {
+     "company": "Hensoldt",
+     "ticker": "HAG",
+     "listing": "Xetra",
+     "why": "Commandes S1 2,81 Md€ (x2), backlog 10,4 Md€"
+    },
+    {
+     "company": "BAE Systems",
+     "ticker": "BA.",
+     "listing": "LSE",
+     "why": "Premier prime européen par le chiffre d'affaires"
+    },
+    {
+     "company": "Thales",
+     "ticker": "HO",
+     "listing": "Euronext Paris",
+     "why": "Électronique de défense, radars, missiles (MBDA 37,5 %)"
+    },
+    {
+     "company": "Kongsberg",
+     "ticker": "KOG",
+     "listing": "Oslo Børs",
+     "why": "Missiles NSM/JSM, systèmes air-défense NASAMS"
+    }
+   ],
+   "quotes": [
+    {
+     "speaker": "Armin Papperger, CEO",
+     "company": "Rheinmetall",
+     "original": "We have achieved record growth and are well on the way to meeting our annual targets, which remain very ambitious. We owe this not only to a very strong order book and the significant expansion of capacity, but also, above all, to the outstanding performance of our workforce",
+     "french": "Nous avons réalisé une croissance record et sommes en bonne voie pour atteindre nos objectifs annuels, qui restent très ambitieux. Nous le devons non seulement à un carnet de commandes très solide et à l'expansion significative de nos capacités, mais aussi et surtout à la performance exceptionnelle de nos collaborateurs",
+     "date": "2026-08-06",
+     "source": "https://www.rheinmetall.com/en/media/news-watch/news/2026/08/2026-08-06-rheinmetall-news-half-yearly-financial-report-h1"
+    },
+    {
+     "speaker": "Micael Johansson, President et CEO",
+     "company": "Saab",
+     "original": "We have a record order backlog, SEK 318 billion, very strong prospects for the future growth.",
+     "french": "Nous avons un carnet de commandes record, 318 milliards de couronnes suédoises, des perspectives très solides pour la croissance future.",
+     "date": "2026-07-17",
+     "source": "https://www.investing.com/news/transcripts/earnings-call-transcript-saab-posts-record-q2-2026-results-on-defense-demand-93CH-4797747"
+    }
+   ],
+   "key_documents": [
+    {
+     "title": "Engagement OTAN de La Haye : 5 % du PIB en 2035 (3,5 % + 1,5 %)",
+     "date": "2025-06",
+     "source": "https://www.nato.int/en/what-we-do/introduction-to-nato/funding-nato",
+     "why": "Cible politique qui ancre les trajectoires budgétaires 2026-2035"
+    },
+    {
+     "title": "Règlement SAFE – 150 Md€ de prêts, allocation indicative par État, 38 Md€ approuvés en janvier 2026",
+     "date": "2026-01",
+     "source": "https://euperspectives.eu/2026/01/brussels-approve-e38bn-defence-loans/",
+     "why": "Flux de financement UE pour achats conjoints livrables d'ici 2030 (Allemagne non participante)"
+    },
+    {
+     "title": "Trajectoire budgétaire allemande : 86 Md€ (2025) → 108,2 Md€ (2026) → 152,8 Md€ (2029) ; fonds spécial 100 Md€, exemption du frein à l'endettement >1 % du PIB",
+     "date": "2025-10-22",
+     "source": "https://www.business-sweden.com/insights/blogs/germany-a-new-era-for-investment/germanys-record-defence-modernisation-drive-as-of-22-october-2025/",
+     "why": "Plus gros budget européen ; principal client de Rheinmetall/Hensoldt"
+    },
+    {
+     "title": "Rheinmetall – rapport semestriel 2026 (backlog 80,5 Md€, guidance réduite après annulation F126)",
+     "date": "2026-08-06",
+     "source": "https://www.rheinmetall.com/Rheinmetall%20Group/Presse/News/Documents/2026/08/2026-08-06-Rheinmetall-News-Half-Yearly-Financial-Report-H1.pdf",
+     "why": "Montre que même le leader subit des annulations de programmes"
+    }
+   ],
+   "risks": [
+    "Cessez-le-feu/accord en Ukraine ou changement politique (élections allemandes, pression budgétaire) réduisant l'urgence",
+    "Annulations/retards de programmes (frégate F126 : -300 M€ de ventes Rheinmetall) et exécution industrielle",
+    "Valorisations déjà élevées ; cash-flows négatifs liés aux acomptes ; Allemagne hors SAFE"
+   ],
+   "sources": [
+    {
+     "url": "https://en.wikipedia.org/wiki/Agreement_on_5%25_NATO_defence_spending_by_2035",
+     "date": "2025",
+     "what": "Accord 5 % OTAN"
+    },
+    {
+     "url": "https://www.newsonair.gov.in/germany-will-not-reach-defence-spending-target-of-3-5-in-2029",
+     "date": "2026",
+     "what": "Rapport : Allemagne à 3,05 % du PIB en 2029"
+    },
+    {
+     "url": "https://www.grosswald.org/safe-defence-loans-tracker/",
+     "date": "2026",
+     "what": "Suivi SAFE pays par pays, 19 participants"
+    },
+    {
+     "url": "https://www.leonardo.com/en/press-release-detail/-/detail/30-07-2026-leonardo-h1-q2-2026-financial-results",
+     "date": "2026-07-30",
+     "what": "Leonardo S1 2026"
+    },
+    {
+     "url": "https://www.investing.com/news/company-news/saab-q2-2026-slides-record-backlog-141-order-growth-on-major-wins-93CH-4797770",
+     "date": "2026-07-17",
+     "what": "Saab T2 2026"
+    },
+    {
+     "url": "https://www.kedglobal.com/earnings/newsView/ked202607310006",
+     "date": "2026-07-31",
+     "what": "Hanwha Aerospace T2 2026 : OP record >1 T KRW, backlog 38,3 T KRW"
+    },
+    {
+     "url": "https://www.grosswald.org/hensoldt-leonardo-h1-2026-results-order-intake-doubles-10-4-billion-backlog-leonardo-guidance-upgrade/",
+     "date": "2026-07",
+     "what": "Hensoldt S1 2026"
+    },
+    {
+     "url": "https://www.grosswald.org/rheinmetall-h1-2026-results-39-percent-sales-growth-80-5-billion-backlog-negative-operating-cash-flow-f126-guidance-cut/",
+     "date": "2026-08-06",
+     "what": "Rheinmetall S1 : FCF -1 616 M€, guidance 13,7-14,2 Md€"
+    }
+   ]
+  },
+  {
+   "name": "Finance digitale et plateformes dans les marchés émergents (Nu, MercadoLibre, Sea, Grab, Coupang, UPI, Brésil)",
+   "summary": "Nubank a dépassé 1 Md$ de résultat net trimestriel (T2 2026 : >1,1 Md$, +49 %, ROE 33 %, 139 M de clients). MercadoLibre a franchi 10 Md$ de revenus trimestriels (+50 %) au prix d'une marge opérationnelle de 6,7 % (-550 pb). Sea (+48 %) et Grab (+22 %) accélèrent, Coupang ralentit (+4 % publié, perte opérationnelle de 556 M$). Au Brésil, le Selic baisse (13,75 % en septembre) mais les défauts des ménages atteignent un record (5,8 % en juillet, 84 M de défaillants) à dix jours d'une élection serrée (Lula 40 / F. Bolsonaro 36 au 1er tour, second tour à égalité). En Inde, NPCI introduit un MDR de 0,4 % sur les paiements UPI marchands >2 000 ₹ à partir du 15 octobre 2026.",
+   "market_size_now": "Nu : 139 M de clients, 5,9 Md$ de revenu brut trimestriel ; MELI : GMV 21,9 Md$ et TPV 101,0 Md$ au T2 ; Sea : 7,8 Md$ de revenu T2, livre de prêts Monee 11,1 Md$ ; Grab : 54 M d'utilisateurs transactionnels mensuels ; Coupang : 8,9 Md$ de revenu T2.",
+   "market_size_2030": "Pas de projection sectorielle unique sourcée ; indicateurs de capacité : Nu lance sa banque au Mexique (16 M de clients), Shopee vise 1 Md$ d'EBITDA ajusté en 2026, MELI investit en logistique/crédit/IA.",
+   "cagr_pct": "Croissance de revenu T2 2026 : Nu +39 %, MELI +50 % (+43 % à change constant), Sea +48 %, Grab +22 %, Coupang +4 % (+10 % cc)",
+   "who_captures_value": "Les plateformes à faible coût de service et données propriétaires (Nu : ratio d'efficacité 20 %, ARPAC 17 $ ; Sea : Shopee + Monee) captent la marge ; les acteurs en phase d'investissement (MELI, Coupang) la cèdent temporairement. Au Brésil, les banques traditionnelles perdent des parts ; en Inde, le MDR UPI crée pour la première fois un revenu sur ~4 % des transactions marchands (>2 000 ₹, plafond 300 ₹).",
+   "bottlenecks": [
+    "Qualité du crédit brésilien : défaut des ménages 5,8 % (record depuis 2011), 28,9 % du revenu familial consacré au service de la dette",
+    "Taux : Selic 13,75 % encore très restrictif ; USD/BRL 5,20",
+    "Réglementation des paiements (plafonds d'échange, MDR UPI, open finance)",
+    "Concurrence sur le e-commerce (Temu/Shein, TikTok Shop) pesant sur les marges de MELI/Coupang/Sea"
+   ],
+   "leaders": [
+    {
+     "company": "Nu Holdings",
+     "ticker": "NU",
+     "listing": "NYSE",
+     "why": ">1,1 Md$ de résultat net T2, ROE 33 %, 139 M de clients"
+    },
+    {
+     "company": "MercadoLibre",
+     "ticker": "MELI",
+     "listing": "Nasdaq",
+     "why": "Revenu T2 10,2 Md$ (+50 %), TPV +56 % ; marge sous pression"
+    },
+    {
+     "company": "Sea Limited",
+     "ticker": "SE",
+     "listing": "NYSE (ADR)",
+     "why": "Revenu +48 %, Monee +62,5 %, Shopee vers 1 Md$ d'EBITDA"
+    },
+    {
+     "company": "Grab",
+     "ticker": "GRAB",
+     "listing": "Nasdaq",
+     "why": "EBITDA ajusté +54 %, 54 M MTU record"
+    },
+    {
+     "company": "Coupang",
+     "ticker": "CPNG",
+     "listing": "NYSE",
+     "why": "Croissance ralentie (+10 % cc), perte opérationnelle 556 M$ : contre-exemple"
+    },
+    {
+     "company": "Itaú Unibanco",
+     "ticker": "ITUB",
+     "listing": "B3 / NYSE",
+     "why": "Référence bancaire brésilienne pour le cycle de crédit"
+    },
+    {
+     "company": "StoneCo / PagSeguro",
+     "ticker": "STNE / PAGS",
+     "listing": "Nasdaq / NYSE",
+     "why": "Acquéreurs brésiliens exposés aux PME et au Selic"
+    }
+   ],
+   "quotes": [
+    {
+     "speaker": "David Vélez, fondateur et CEO",
+     "company": "Nu Holdings",
+     "original": "Thirteen years ago, we started with a simple hypothesisthat a bank built on technology with no branches and no legacy to defend could serve hundreds of millions of people better and at a fraction of the cost. Today, I am proud to announce that in the past quarter, for the first time, we generated more than $1 billion in net income.",
+     "french": "Il y a treize ans, nous sommes partis d'une hypothèse simple : une banque construite sur la technologie, sans agences et sans héritage à défendre, pouvait servir des centaines de millions de personnes mieux et pour une fraction du coût. Aujourd'hui, je suis fier d'annoncer qu'au trimestre écoulé, pour la première fois, nous avons généré plus d'un milliard de dollars de résultat net.",
+     "date": "2026-08-20",
+     "source": "https://international.nubank.com.br/company/nu-holdings-ltd-reports-second-quarter-2026-financial-results/"
+    },
+    {
+     "speaker": "Forrest Li, Chairman et Group CEO",
+     "company": "Sea Limited",
+     "original": "Our strong momentum from the first quarter has continued into the second. Our investments have enabled Shopee and Monee to continue to strengthen our market leadership while improving... We will continue to invest prudently in serving more users and serving them better, broadening our foundation for profitable growth into the future.",
+     "french": "Notre forte dynamique du premier trimestre s'est poursuivie au deuxième. Nos investissements ont permis à Shopee et Monee de continuer à renforcer notre leadership tout en améliorant… Nous continuerons d'investir prudemment pour servir plus d'utilisateurs et mieux les servir, en élargissant notre base de croissance rentable pour l'avenir.",
+     "date": "2026-08-11",
+     "source": "https://cdn.sea.com/investor/2Q2026/wFBC39MbqnfLb3MGY6LP/2026.08.11%20Sea%20Second%20Quarter%202026%20Results.pdf"
+    }
+   ],
+   "key_documents": [
+    {
+     "title": "NPCI – FAQ MDR UPI : 0,4 % sur P2M >2 000 ₹ à partir du 15/10/2026, plafond 300 ₹, exemptions petits commerçants",
+     "date": "2026-09-16",
+     "source": "https://www.scconline.com/blog/post/2026/09/16/npci-released-upi-mdr-faqs-explained/",
+     "why": "Première monétisation des paiements UPI marchands (86 % des transactions <500 ₹ non concernées)"
+    },
+    {
+     "title": "Copom – baisse du Selic à 13,75 % (15-16 septembre 2026), sans guidance",
+     "date": "2026-09-16",
+     "source": "https://www.riotimesonline.com/brazil-selic-cut-95-percent-copom-september-2026/",
+     "why": "Cycle d'assouplissement lent (25 pb par réunion depuis mars 2026, départ 15,00 %)"
+    },
+    {
+     "title": "Sondages présidentiels brésiliens (1er tour le 4 octobre 2026, 2e tour le 25 octobre) : Datafolha 22-24 sept. Lula 40 / Flávio Bolsonaro 36, 2e tour 47-45",
+     "date": "2026-09-24",
+     "source": "https://www.riotimesonline.com/datafolha-poll-lula-40-flavio-36-runoff-tie-september-24-2026/",
+     "why": "Risque binaire sur BRL, taux et fiscalité des fintechs"
+    },
+    {
+     "title": "Nu Holdings – 6-K résultats T2 2026",
+     "date": "2026-08",
+     "source": "https://www.sec.gov/Archives/edgar/data/0001691493/000129281426004222/nupr2q26_6k.htm",
+     "why": "Franchissement du milliard de résultat net trimestriel"
+    }
+   ],
+   "risks": [
+    "Cycle de crédit brésilien : défaut des ménages record (5,8 %), 83,98 M de défaillants (Serasa, août), plan gouvernemental de rachat de dettes jusqu'à -95 % avant l'élection",
+    "Élection du 4 octobre 2026 : second tour à égalité statistique ; volatilité BRL (5,20) et risque fiscal/réglementaire sur les fintechs",
+    "Compression des marges par l'investissement et la concurrence (MELI marge op. 6,7 %, Coupang en perte) ; devises émergentes face à un dollar à 101,4 (DXY)"
+   ],
+   "sources": [
+    {
+     "url": "https://www.businesswire.com/news/home/20260805925866/en/MercadoLibre-Inc.-Reports-Second-Quarter-2026-Financial-Results",
+     "date": "2026-08-05",
+     "what": "MELI T2 2026 : revenu 10,2 Md$ +50 %, marge op. 6,7 %, GMV 21,9 Md$, TPV 101,0 Md$"
+    },
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/0001855612/000185561226000123/a2026q2-earningspressrelea.htm",
+     "date": "2026-08",
+     "what": "Grab T2 2026"
+    },
+    {
+     "url": "https://ir.aboutcoupang.com/news-events/news/news-details/2026/Coupang-Announces-Results-for-Second-Quarter-2026/default.aspx",
+     "date": "2026-08-04",
+     "what": "Coupang T2 2026 : revenu 8,9 Md$ +4 %, perte op. 556 M$"
+    },
+    {
+     "url": "https://www.riotimesonline.com/brazil-old-household-debts-treasury-purchase-2026/",
+     "date": "2026",
+     "what": "Défaut des ménages 5,8 % en juillet 2026 (record depuis 2011)"
+    },
+    {
+     "url": "https://nplreo.prime-yield.com/brazil-consumer-defaults-edge-up-in-june-serasa-says/",
+     "date": "2026-07",
+     "what": "Serasa : 50,9 % des adultes en défaut en juin 2026 ; 83,98 M en août"
+    },
+    {
+     "url": "https://www.riotimesonline.com/brazil-copom-selic-14-percent-fourth-cut-2026/",
+     "date": "2026",
+     "what": "Historique des baisses du Selic 2026"
+    },
+    {
+     "url": "https://www.indianewsnetwork.com/en/npci-implements-0-4-mdr-upi-transactions-over-2-000-2026-20260916",
+     "date": "2026-09-16",
+     "what": "MDR UPI 0,4 %"
+    }
+   ]
+  },
+  {
+   "name": "GLP-1/obésité et plateformes biotech",
+   "summary": "Lilly a réalisé 23,0 Md$ de revenus au T2 2026 (+48 %) et relevé sa guidance 2026 à 85-87 Md$ de revenus et 35,50-37,00 $ de BPA non-GAAP (BPA 2025 : 24,21 $). Novo Nordisk a relevé sa guidance mais ne croît que de 7 % à change constant. 2026 est l'année des pilules : Wegovy oral (janvier, 149 $/mois) et Foundayo/orforglipron de Lilly (FDA 1er avril 2026, 149-349 $/mois en cash). Les accords TrumpRx ramènent les injectables à 350 $ puis 245 $/mois et ouvrent Medicare mi-2026. Les prévisions 2030 divergent : 95 Md$ (Goldman), 130 Md$ (UBS, abaissé), 150 Md$ (TD Cowen), 200 Md$ pour les incrétines (JPM).",
+   "market_size_now": "Lilly : guidance revenus 2026 85-87 Md$ ; Novo : ventes T2 2026 12,1 Md$ ; pilules : Wegovy oral 18 000 prescriptions la première semaine ; prix cash DTC injectables 499 $/mois (avant TrumpRx).",
+   "market_size_2030": "GLP-1 mondiaux 2030 : 95 Md$ (Goldman Sachs, abaissé de 130), 130 Md$ (UBS, abaissé de >150), 150 Md$ (TD Cowen, relevé de 139 ; obésité 58 Md$), 200 Md$ incrétines (J.P. Morgan).",
+   "cagr_pct": "Revenus Lilly T2 2026 +48 % ; Novo ventes ajustées +7 % cc ; cible 2026 Lilly implique un BPA +47-53 % vs 2025 (35,50-37,00 vs 24,21 $)",
+   "who_captures_value": "Duopole Lilly/Novo, mais la valeur se déplace vers Lilly (orforglipron, tirzepatide, pipeline retatrutide) ; les prix unitaires baissent (TrumpRx 245 $/mois, pilules 149 $) et le volume compense. Les plateformes de distribution directe (LillyDirect, NovoCare, télésanté type Hims & Hers) captent une part de la marge de distribution ; les CDMO et fabricants de dispositifs profitent du volume.",
+   "bottlenecks": [
+    "Capacité de production (injectables et principes actifs oraux) et chaîne du froid",
+    "Accès/remboursement : Medicare à partir de mi-2026 à 245 $/mois, copay 50 $",
+    "Pression sur les prix (nation la plus favorisée, compounding) et érosion de part de Novo"
+   ],
+   "leaders": [
+    {
+     "company": "Eli Lilly",
+     "ticker": "LLY",
+     "listing": "NYSE",
+     "why": "Revenus T2 +48 % ; BPA 2026 35,50-37,00 $ ; Foundayo lancé en avril 2026"
+    },
+    {
+     "company": "Novo Nordisk",
+     "ticker": "NOVO B / NVO",
+     "listing": "Nasdaq Copenhague / NYSE",
+     "why": "Wegovy oral depuis janvier 2026 ; guidance 2026 relevée mais croissance faible"
+    },
+    {
+     "company": "Vertex Pharmaceuticals",
+     "ticker": "VRTX",
+     "listing": "Nasdaq",
+     "why": "Plateforme (mucoviscidose, douleur, rare) ; BPA non-GAAP 2026 attendu 18,86 $"
+    },
+    {
+     "company": "Alnylam",
+     "ticker": "ALNY",
+     "listing": "Nasdaq",
+     "why": "Plateforme ARNi ; Amvuttra >1 Md$ par trimestre mais guidance 2026 abaissée"
+    },
+    {
+     "company": "Hims & Hers",
+     "ticker": "HIMS",
+     "listing": "NYSE",
+     "why": "Distribution télésanté ; revenu T2 +38 %, encore déficitaire"
+    },
+    {
+     "company": "Insulet",
+     "ticker": "PODD",
+     "listing": "Nasdaq",
+     "why": "Dispositifs diabète (Omnipod) ; guidance ventes abaissée à 20-22 % sur le type 2"
+    },
+    {
+     "company": "Natera",
+     "ticker": "NTRA",
+     "listing": "Nasdaq",
+     "why": "Diagnostic (MRD oncologie) ; >1 M de tests/trimestre"
+    }
+   ],
+   "quotes": [
+    {
+     "speaker": "David A. Ricks, Chair et CEO",
+     "company": "Eli Lilly",
+     "original": "Lilly's momentum continues, as we delivered 48% revenue growth and raised our full-year guidance,",
+     "french": "La dynamique de Lilly se poursuit : nous avons réalisé une croissance de 48 % du chiffre d'affaires et relevé nos prévisions annuelles,",
+     "date": "2026-08-05",
+     "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-second-quarter-2026-financial-results-raises-full"
+    },
+    {
+     "speaker": "Mike Doustdar, President et CEO",
+     "company": "Novo Nordisk",
+     "original": "The increased U.S. GLP-1 momentum, combined with continued growth and new launches in International Operations, has led us to further raise our 2026 guidance for both adjusted sales and adjusted operating profit,",
+     "french": "La dynamique accrue des GLP-1 aux États-Unis, combinée à la poursuite de la croissance et aux nouveaux lancements dans les opérations internationales, nous a conduits à relever encore nos prévisions 2026 pour les ventes ajustées comme pour le résultat opérationnel ajusté,",
+     "date": "2026-08-04",
+     "source": "https://www.biospace.com/press-releases/novo-nordisk-reports-adjusted-operating-profit-of-dkk-33-389-million-for-q2-2026-and-raises-full-year-outlook"
+    }
+   ],
+   "key_documents": [
+    {
+     "title": "Accords Maison-Blanche / Lilly / Novo (TrumpRx) : injectables 350 $ → 245 $/mois, Medicare 245 $ et copay 50 $ dès mi-2026, pilules 149 $",
+     "date": "2025-11-06",
+     "source": "https://www.cnbc.com/2025/11/06/trump-eli-lilly-novo-nordisk-deal-obesity-drug-prices.html",
+     "why": "Fixe le cadre de prix/volume 2026-2028 aux États-Unis"
+    },
+    {
+     "title": "FDA – approbation de Foundayo (orforglipron) le 1er avril 2026 ; prix cash 149-349 $/mois",
+     "date": "2026-04-01",
+     "source": "https://www.drugs.com/orforglipron.html",
+     "why": "Premier GLP-1 oral à petite molécule, sans contrainte de production de peptides"
+    },
+    {
+     "title": "Lilly – 8-K résultats T2 2026 et guidance relevée",
+     "date": "2026-08-05",
+     "source": "https://www.sec.gov/Archives/edgar/data/0000059478/000005947826000077/q226lillysalesandearningsp.htm",
+     "why": "Revenus 85-87 Md$, BPA 35,50-37,00 $"
+    }
+   ],
+   "risks": [
+    "Prix : accords MFN/TrumpRx (-30 % vs DTC) et arrivée de génériques du sémaglutide hors États-Unis ; UBS et Goldman ont abaissé leurs prévisions 2030",
+    "Concurrence et pipeline : échecs cliniques des actifs de nouvelle génération (cité par UBS), amylines, molécules chinoises",
+    "Risque spécifique Novo (perte de part, croissance +7 %) et concentration de la valeur sur Lilly (P/E élevé, beta 0,50)"
+   ],
+   "sources": [
+    {
+     "url": "https://finance.yahoo.com/sectors/healthcare/articles/glp-1-sales-forecast-jumps-171933527.html",
+     "date": "2026",
+     "what": "TD Cowen : 150 Md$ en 2030 (obésité 58 Md$)"
+    },
+    {
+     "url": "https://finance.yahoo.com/news/ubs-slashes-global-glp-1-134731245.html",
+     "date": "2026",
+     "what": "UBS abaisse à 130 Md$ (de >150)"
+    },
+    {
+     "url": "https://www.goldmansachs.com/insights/articles/the-anti-obesity-drug-market-may-prove-smaller-than-expected",
+     "date": "2025",
+     "what": "Goldman : 95 Md$ en 2030 (de 130)"
+    },
+    {
+     "url": "https://www.cnbc.com/2026/08/05/eli-lilly-lly-earnings-q2-2026.html",
+     "date": "2026-08-05",
+     "what": "Lilly T2 2026 : 23,0 Md$ +48 %"
+    },
+    {
+     "url": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-fourth-quarter-2025-financial-results-and-provides",
+     "date": "2026-02-04",
+     "what": "BPA non-GAAP 2025 : 24,21 $ (+86 %)"
+    },
+    {
+     "url": "https://www.investing.com/news/stock-market-news/novo-nordisks-q2-profit-beats-forecasts-raises-outlook-4835293",
+     "date": "2026-08-04",
+     "what": "Novo T2 2026 : ventes +7 % cc, profit op. ajusté +11 %"
+    },
+    {
+     "url": "https://www.npr.org/sections/shots-health-news/2026/01/05/nx-s1-5667020/wegovy-pill-obesity-weight-loss",
+     "date": "2026-01-05",
+     "what": "Wegovy oral disponible, 149 $/mois, 18 000 prescriptions la première semaine"
+    },
+    {
+     "url": "https://kffhealthnews.org/medicare/cheaper-glp-1-weight-loss-medicare-bridge-wegovy-zepbound-foundayo/",
+     "date": "2026",
+     "what": "Couverture Medicare mi-2026, 245 $/mois, copay 50 $"
+    }
+   ]
+  }
+ ],
+ "notes": "Toutes les valeurs proviennent de résultats de recherche web datés (WebSearch, mode étendu) ; aucune n'est estimée. Prix de référence : clôture du 30/09/2026. Exercices fiscaux libellés par l'année civile de clôture (Nvidia janvier 2027 = FY2027 ; Oracle mai 2027 = FY2027 ; Micron août 2026 = FY2026). La citation de la co-CEO de Waymo (objectif 1 M de courses/semaine) date de février 2026, hors fenêtre juin-septembre, et n'a donc pas été retenue ; une citation d'Uber (5 août 2026) la remplace. Aucune citation verbatim de Leonardo (30/07/2026) n'a été trouvée."
+}

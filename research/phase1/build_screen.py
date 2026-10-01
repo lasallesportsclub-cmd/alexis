@@ -1,0 +1,448 @@
+import json
+
+NA = ""
+def src(url, what, date=""):
+    d = {"url": url, "what": what}
+    if date:
+        d["date"] = date
+    return d
+
+candidates = [
+ {
+  "ticker": "VRT", "name": "Vertiv Holdings Co", "exchange": "NYSE", "currency": "USD", "region": "US", "country": "United States",
+  "sector": "Data-center thermal & power infrastructure", "pea_eligible_listing": "No (US-domiciled)", "adr_ratio": "n/a (ordinary US listing)",
+  "price": 241.31, "price_date": "2026-09-30 (close; fell 2.83% from 248.34)",
+  "market_cap_usd_bn": None, "fy_end_month": 12,
+  "eps_basis": "Adjusted diluted EPS (non-GAAP), consensus",
+  "eps_fy0": None, "eps_fy0_label": "FY ending Dec-2025 (actual not sourced; Zacks article implies ~+47% growth into 2026)",
+  "eps_f1": 6.71, "eps_f1_label": "FY ending Dec-2026 (28 analysts, range 6.52-6.91)",
+  "eps_f2": 9.10, "eps_f2_label": "FY ending Dec-2027 (28 analysts, range 7.57-11.81)",
+  "eps_f3": 11.19, "eps_f3_label": "FY ending Dec-2028 (range 9.55-14.39)",
+  "ltg_pct": None, "zacks_rank": None, "zacks_rank_date": NA, "beta": None, "dividend_yield_pct": None,
+  "w52_high": None, "w52_low": None, "price_target": 375.81,
+  "cyclical": False, "megatrend": "AI data-center build-out: liquid cooling, power distribution, prefabricated modular DC",
+  "thesis_short": "Picks-and-shovels on every GPU rack (cooling + power). Q2-26 adj EPS +60%, FY26 guidance raised across the board. Indicative PEG: P/E on 2027 EPS = 241.31/9.10 = 26.5x; 2027 growth = 9.10/6.71-1 = +35.6% -> PEG ~0.74. 2028 adds another +23%.",
+  "key_risk": "Hyperscaler capex digestion; competition (Schneider, Eaton, Nvidia reference designs squeezing pricing); margin pressure if liquid cooling commoditises.",
+  "one_offs_note": "None identified in sources.",
+  "notes": "Price from MarketBeat alert dated 2026-09-30 and stockinvest.us (248.34 -> 241.31). EPS consensus from stockanalysis forecast page (date not shown by source). FY2025 actual adjusted EPS not retrieved before search budget exhausted. Secondary fields (beta, yield, 52w, Zacks Rank, market cap) not sourced -> null.",
+  "sources": [
+    src("https://www.marketbeat.com/instant-alerts/price-vertiv-nyse-vrt-stock-falls-26-should-you-sell-2026-09-30/", "Price move on 30 Sep 2026", "2026-09-30"),
+    src("https://stockinvest.us/stock/VRT", "30 Sep 2026 close 241.31 (from 248.34, -2.83%)"),
+    src("https://stockanalysis.com/stocks/vrt/forecast/", "Consensus adj EPS 2026 6.71 / 2027 9.10 / 2028 11.19 with ranges and analyst counts"),
+    src("https://investors.vertiv.com/news/news-details/2026/Vertiv-Reports-Strong-Second-Quarter-2026-with-Diluted-EPS-Growth-of-53-Adjusted-Diluted-EPS-Growth-of-60-Raises-Full-Year-2026-Guidance-Across-All-Key-Metrics/default.aspx", "Q2 2026 results: adjusted diluted EPS +60%, FY2026 guidance raised"),
+    src("https://www.wallstreetzen.com/stocks/us/nyse/vrt/stock-forecast", "1-year consensus price target 375.81"),
+    src("https://finance.yahoo.com/technology/ai/articles/buy-5-ai-infrastructure-stocks-123100433.html", "Zacks: 2026 revenue growth 34%, earnings growth 47% expected")
+  ]
+ },
+ {
+  "ticker": "GEV", "name": "GE Vernova Inc.", "exchange": "NYSE", "currency": "USD", "region": "US", "country": "United States",
+  "sector": "Power equipment (gas turbines, grid, wind)", "pea_eligible_listing": "No (US-domiciled)", "adr_ratio": "n/a (ordinary US listing)",
+  "price": 962.49, "price_date": "2026-09-30 (investing.com close)",
+  "market_cap_usd_bn": None, "fy_end_month": 12,
+  "eps_basis": "Consensus EPS (stockanalysis; basis not stated by source - GE Vernova reports GAAP EPS and guides on adj. EBITDA margin/FCF)",
+  "eps_fy0": None, "eps_fy0_label": "FY ending Dec-2025 (not sourced)",
+  "eps_f1": 14.72, "eps_f1_label": "FY ending Dec-2026 (stockanalysis average; CONFLICT: intellectia.ai shows 23.11 for FY2026 - see notes)",
+  "eps_f2": 22.21, "eps_f2_label": "FY ending Dec-2027 (range 15.70-26.71)",
+  "eps_f3": 30.52, "eps_f3_label": "FY ending Dec-2028 (range 20.04-38.23)",
+  "ltg_pct": None, "zacks_rank": None, "zacks_rank_date": NA, "beta": None, "dividend_yield_pct": None,
+  "w52_high": None, "w52_low": None, "price_target": 1129.55,
+  "cyclical": False, "megatrend": "Electrification & AI power demand: gas turbines, grid equipment, nuclear (SMR) - $163B backlog",
+  "thesis_short": "Scarce gas-turbine and grid capacity sold out into 2028+; pricing power on a $163B backlog. Indicative PEG: P/E on 2027 EPS = 962.49/22.21 = 43.3x; 2027 growth = 22.21/14.72-1 = +50.9% (cap 50) -> PEG ~0.87; on 2028: 31.5x / +37.4% -> ~0.84. If the alternative 2026 figure (23.11) is right, 2027 growth is negative and the PEG breaks - must be re-verified.",
+  "key_risk": "Execution on turbine capacity ramp; wind segment losses; very high absolute multiple (43x 2027) leaves no room for order slippage; 2026 consensus conflict between sources.",
+  "one_offs_note": "None identified; but 2026 EPS figure disputed across sources (14.72 vs 23.11).",
+  "notes": "Two 2026 EPS figures surfaced: 14.72 (stockanalysis series consistent with 2027 22.21 / 2028 30.52) and 23.11 (intellectia.ai). Kept 14.72 because it is internally consistent with the 2027/2028 series from the same source; flag for verification by central model. Price target from WallStreetZen.",
+  "sources": [
+    src("https://www.investing.com/equities/ge-vernova-llc", "30 Sep 2026 close 962.49"),
+    src("https://stockanalysis.com/stocks/gev/forecast/", "Consensus EPS 2026 14.72 / 2027 22.21 (15.70-26.71) / 2028 30.52 (20.04-38.23)"),
+    src("https://intellectia.ai/stock/GEV/earnings", "Alternative 2026 EPS estimate 23.11 (conflict)"),
+    src("https://www.wallstreetzen.com/stocks/us/nyse/gev/stock-forecast", "1-year price target 1,129.55"),
+    src("https://blog.mexc.com/finance/gev-stock-price-prediction-2026-how-high-163b-backlog/", "$163B backlog"),
+    src("https://www.tipranks.com/stocks/gev/earnings/q2-2026-report", "Q2 2026 earnings report reference")
+  ]
+ },
+ {
+  "ticker": "CLS", "name": "Celestica Inc.", "exchange": "NYSE (also TSX: CLS)", "currency": "USD", "region": "US", "country": "Canada",
+  "sector": "EMS / hyperscaler networking & AI server ODM", "pea_eligible_listing": "No (Canada-domiciled; TSX listing not PEA-eligible)", "adr_ratio": "n/a (ordinary NYSE listing of Canadian shares)",
+  "price": 355.08, "price_date": "2026-09-30 (stockanalysis; day range 354.00-376.76)",
+  "market_cap_usd_bn": None, "fy_end_month": 12,
+  "eps_basis": "Adjusted EPS (non-GAAP), company guidance for FY26 and Zacks consensus for FY27",
+  "eps_fy0": None, "eps_fy0_label": "FY ending Dec-2025 (not sourced)",
+  "eps_f1": 11.30, "eps_f1_label": "FY ending Dec-2026 (company raised guidance at Q2-26; stale 19-analyst consensus shows 10.29)",
+  "eps_f2": 19.01, "eps_f2_label": "FY ending Dec-2027 (Zacks consensus per Yahoo article, moved to 19.01 over last 60 days; CONFLICT: 20-analyst average 14.96 on stockanalysis)",
+  "eps_f3": None, "eps_f3_label": "FY ending Dec-2028 (not sourced)",
+  "ltg_pct": None, "zacks_rank": None, "zacks_rank_date": NA, "beta": None, "dividend_yield_pct": None,
+  "w52_high": None, "w52_low": None, "price_target": 447.19,
+  "cyclical": False, "megatrend": "AI data-center networking (800G/1.6T switches) and custom AI rack assembly for hyperscalers",
+  "thesis_short": "Fastest EPS compounder on the list at a teen multiple. FY26 guide: revenue $20.5B (+65%), adj EPS 11.30; management says 2027 growth accelerates beyond 65% with EPS growing faster than revenue. Indicative PEG: P/E on 2027 EPS = 355.08/19.01 = 18.7x; growth +68% (cap 50) -> PEG ~0.37; with the conservative 14.96: 23.7x / +32% -> ~0.73.",
+  "key_risk": "Customer concentration (a handful of hyperscalers), thin EMS margins, wide 2027 estimate dispersion (14.96 vs 19.01), any hyperscaler capex pause hits immediately.",
+  "one_offs_note": "None identified in sources.",
+  "notes": "F1 uses company guidance (11.30, Q2-26 release, late Jul-2026) because the 10.29 consensus predates it. F2 keeps the most recent figure (19.01, Zacks) per the conflict rule; 14.96 given as alternative. Price target 447.19 from MarketBeat consensus dated 2026-09-29 (WallStreetZen shows 361.40).",
+  "sources": [
+    src("https://stockanalysis.com/stocks/cls/", "Price 355.08 on 30 Sep 2026 (range 354.00-376.76); consensus EPS 2026 10.29 (19 analysts) / 2027 14.96 (20 analysts)"),
+    src("https://www.marketbeat.com/instant-alerts/consensus-celestica-inc-nyse-cls-stock-has-consensus-price-target-of-44719-2026-09-29/", "Consensus price target 447.19", "2026-09-29"),
+    src("https://seekingalpha.com/news/4619751-celestica-projects-20_5b-2026-revenue-and-11_30-adjusted-eps-as-it-outlines-2027-growth", "FY2026 outlook: revenue $20.5B, adjusted EPS $11.30; 2027 growth acceleration beyond 65%"),
+    src("https://finance.yahoo.com/markets/stocks/articles/investors-buy-cls-stock-earnings-150400732.html", "Zacks: 2027 EPS estimate moved to 19.01 over past 60 days"),
+    src("https://corporate.celestica.com/news-releases/news-release-details/celestica-announces-second-quarter-2026-financial-results", "Q2 2026 results release"),
+    src("https://www.wallstreetzen.com/stocks/us/nyse/cls/stock-forecast", "Alternative price target 361.40")
+  ]
+ },
+ {
+  "ticker": "CRDO", "name": "Credo Technology Group Holding Ltd", "exchange": "NASDAQ", "currency": "USD", "region": "US", "country": "Cayman Islands (HQ San Jose, CA)",
+  "sector": "AI connectivity semis (AECs, optical DSPs, retimers)", "pea_eligible_listing": "No (non-EU domicile, US listing)", "adr_ratio": "n/a (ordinary US listing)",
+  "price": 192.35, "price_date": "2026-09-30 (investing.com)",
+  "market_cap_usd_bn": None, "fy_end_month": 4,
+  "eps_basis": "Non-GAAP diluted EPS (consensus / finviz estimate)",
+  "eps_fy0": None, "eps_fy0_label": "FY ending 2-May-2026 (actual not sourced)",
+  "eps_f1": 5.94, "eps_f1_label": "FY ending ~Apr/May-2027 (Zacks consensus as of 16-Jun-2026 - STALE, Q1 FY27 printed 1.20 non-GAAP; finviz forward P/E 26.73 implies a higher current F1)",
+  "eps_f2": 9.65, "eps_f2_label": "FY ending ~Apr/May-2028 (finviz 'EPS next Y' - assumed to be FY2028; basis/date not stated)",
+  "eps_f3": None, "eps_f3_label": "not sourced",
+  "ltg_pct": None, "zacks_rank": None, "zacks_rank_date": NA, "beta": None, "dividend_yield_pct": None,
+  "w52_high": None, "w52_low": None, "price_target": None,
+  "cyclical": False, "megatrend": "AI scale-out/scale-up connectivity: active electrical cables and optical DSPs for GPU clusters",
+  "thesis_short": "Pure play on copper/optical links inside AI clusters; Q1 FY27 non-GAAP EPS 1.20 (GAAP 0.67). Indicative PEG (low confidence, stale F1): P/E on F2 = 192.35/9.65 = 19.9x; F2 vs F1 growth +62% (cap 50) -> PEG ~0.40. Even if F1 is ~7.2 (finviz fwd P/E), PEG stays < 0.7.",
+  "key_risk": "Extreme customer concentration (two hyperscalers), AEC commoditisation, very volatile stock; consensus figures here are stale/ambiguous and must be refreshed.",
+  "one_offs_note": "None identified.",
+  "notes": "Fiscal year ends Saturday nearest 30 April (FY26 ended 2 May 2026). F1 5.94 is the Zacks consensus reported 16-Jun-2026 (WTOP) and is likely revised up after Q1 FY27 beat; finviz shows forward P/E 26.73 and 'EPS next Y' 9.65 but does not label the fiscal year. Price target not sourced.",
+  "sources": [
+    src("https://www.investing.com/equities/credo-technology-holding", "Price 192.35 on 30 Sep 2026"),
+    src("https://www.sec.gov/Archives/edgar/data/0001807794/000162828026059795/credoq12027ex-991.htm", "Q1 FY2027 8-K: GAAP EPS 0.67, non-GAAP EPS 1.20"),
+    src("https://finviz.com/stock?t=CRDO", "EPS next Y 9.65; forward P/E 26.73"),
+    src("https://wtop.com/news/2026/06/7-best-semiconductor-stocks-for-2026/", "Consensus EPS estimate rose from 4.60 to 5.94 over two months as of 16 Jun 2026", "2026-06"),
+    src("https://www.sec.gov/Archives/edgar/data/0001807794/000162828026039474/credoq42026ex-991.htm", "Q4 FY2026 8-K (FY26 actuals; figures not captured)")
+  ]
+ },
+ {
+  "ticker": "ALAB", "name": "Astera Labs, Inc.", "exchange": "NASDAQ", "currency": "USD", "region": "US", "country": "United States",
+  "sector": "AI connectivity semis (PCIe/CXL retimers, scale-up switches)", "pea_eligible_listing": "No (US-domiciled)", "adr_ratio": "n/a (ordinary US listing)",
+  "price": 345.16, "price_date": "2026-09-30 (investing.com)",
+  "market_cap_usd_bn": None, "fy_end_month": 12,
+  "eps_basis": "Non-GAAP EPS consensus",
+  "eps_fy0": None, "eps_fy0_label": "FY ending Dec-2025 (not sourced)",
+  "eps_f1": 4.03, "eps_f1_label": "FY ending Dec-2026",
+  "eps_f2": 6.39, "eps_f2_label": "FY ending Dec-2027",
+  "eps_f3": None, "eps_f3_label": "not sourced",
+  "ltg_pct": None, "zacks_rank": None, "zacks_rank_date": NA, "beta": None, "dividend_yield_pct": None,
+  "w52_high": None, "w52_low": None, "price_target": 389.95,
+  "cyclical": False, "megatrend": "AI rack connectivity: PCIe 6/CXL, Scorpio fabric switches, UALink scale-up",
+  "thesis_short": "Connectivity 'toll road' inside AI servers with a widening product stack (Aries, Taurus, Scorpio). Indicative PEG: P/E on 2027 = 345.16/6.39 = 54.0x; growth 6.39/4.03-1 = +58.6% (cap 50) -> PEG ~1.08. Expensive on absolute P/E; works only if 2028 keeps 40%+.",
+  "key_risk": "Nvidia NVLink/in-house silicon displacing merchant retimers; concentration on a few hyperscalers/AMD; 54x forward multiple.",
+  "one_offs_note": "None identified.",
+  "notes": "Consensus from stockanalysis forecast page (date not shown). Price target 389.95 = 26 analysts polled by S&P Global (via Robinhood).",
+  "sources": [
+    src("https://www.investing.com/equities/astera-labs", "Price 345.16 on 30 Sep 2026"),
+    src("https://stockanalysis.com/stocks/alab/forecast/", "Consensus EPS 2026 4.03 / 2027 6.39"),
+    src("https://robinhood.com/us/en/stocks/ALAB/", "26 analysts (S&P Global) Buy, average PT 389.95")
+  ]
+ },
+ {
+  "ticker": "APP", "name": "AppLovin Corporation", "exchange": "NASDAQ", "currency": "USD", "region": "US", "country": "United States",
+  "sector": "AI-driven advertising software (Axon engine)", "pea_eligible_listing": "No (US-domiciled)", "adr_ratio": "n/a (ordinary US listing)",
+  "price": None, "price_date": "not sourced - TradingView summary only gives a 305-335 range for late Aug/Sep 2026",
+  "market_cap_usd_bn": None, "fy_end_month": 12,
+  "eps_basis": "GAAP diluted EPS consensus (AppLovin reports no adjusted EPS; guides adjusted EBITDA)",
+  "eps_fy0": None, "eps_fy0_label": "FY ending Dec-2025 (not sourced)",
+  "eps_f1": 16.07, "eps_f1_label": "FY ending Dec-2026 (18 analysts; alt source 15.94, range 13.46-17.41)",
+  "eps_f2": 21.42, "eps_f2_label": "FY ending Dec-2027 (20 analysts; alt source 20.79, range 17.49-23.84)",
+  "eps_f3": 27.76, "eps_f3_label": "FY ending Dec-2028 (17 analysts; alt source 26.33)",
+  "ltg_pct": None, "zacks_rank": None, "zacks_rank_date": NA, "beta": None, "dividend_yield_pct": None,
+  "w52_high": None, "w52_low": None, "price_target": 501.94,
+  "cyclical": False, "megatrend": "AI-optimised advertising / mobile & e-commerce performance marketing (not AI infrastructure)",
+  "thesis_short": "Highest-margin AI monetisation story outside the mega-caps; revenue 8.2B (2026) -> 10.7B (2027) -> 13.5B (2028). Indicative PEG using the 305-335 price range cited by TradingView: P/E on 2027 = 14.2-15.6x; growth 21.42/16.07-1 = +33.3% -> PEG ~0.43-0.47. Not an infrastructure name - included because the seed list asked for it and the PEG is the lowest in the set.",
+  "key_risk": "Platform dependence (Apple/Google policy), short-seller allegations on data practices, ad-cycle sensitivity, 30 Sep close not sourced.",
+  "one_offs_note": "None identified.",
+  "notes": "Exact 30 Sep 2026 close not retrieved before search budget exhausted; central model must supply the price. Two consensus sets found (stockanalysis 16.07/21.42/27.76 vs WallStreetZen 15.94/20.79/26.33); kept the stockanalysis set with analyst counts. PT 501.94 = 33 analysts polled by S&P Global (public.com); WallStreetZen shows 528.",
+  "sources": [
+    src("https://stockanalysis.com/stocks/app/forecast/", "Consensus EPS 2026 16.07 (18) / 2027 21.42 (20) / 2028 27.76 (17); revenue 8.2B/10.7B/13.5B"),
+    src("https://www.wallstreetzen.com/stocks/us/nasdaq/app/stock-forecast", "Alternative consensus 15.94 / 20.79 / 26.33 with ranges; PT 528"),
+    src("https://public.com/stocks/app/forecast-price-target", "33 analysts (S&P Global) Buy, average PT 501.94"),
+    src("https://www.tradingview.com/symbols/NASDAQ-APP/", "Price range ~305-335 in late Aug/Sep 2026 (no 30 Sep close captured)")
+  ]
+ },
+ {
+  "ticker": "MRVL", "name": "Marvell Technology, Inc.", "exchange": "NASDAQ", "currency": "USD", "region": "US", "country": "United States (Delaware; ops Santa Clara)",
+  "sector": "Custom AI silicon (XPU) & optical/electrical interconnect", "pea_eligible_listing": "No (US-domiciled)", "adr_ratio": "n/a (ordinary US listing)",
+  "price": 264.21, "price_date": "2026-09-30 (close; 263.27 on 29 Sep)",
+  "market_cap_usd_bn": None, "fy_end_month": 1,
+  "eps_basis": "Non-GAAP EPS consensus",
+  "eps_fy0": None, "eps_fy0_label": "FY ending Jan-2026 (not sourced)",
+  "eps_f1": 4.05, "eps_f1_label": "FY ending Jan-2027",
+  "eps_f2": 6.24, "eps_f2_label": "FY ending Jan-2028 (non-GAAP net income +60.5% y/y per source)",
+  "eps_f3": None, "eps_f3_label": "not sourced",
+  "ltg_pct": None, "zacks_rank": None, "zacks_rank_date": NA, "beta": None, "dividend_yield_pct": None,
+  "w52_high": None, "w52_low": None, "price_target": 289.11,
+  "cyclical": False, "megatrend": "Custom AI accelerators for hyperscalers (AWS Trainium, Microsoft Maia) + 1.6T optical DSPs",
+  "thesis_short": "Second-largest custom-silicon house after Broadcom. Indicative PEG: P/E on FY28 (Jan-2028) = 264.21/6.24 = 42.3x; growth 6.24/4.05-1 = +54% (cap 50) -> PEG ~0.85. But P/E on FY27 is 65x - the stock already prices the FY28 ramp.",
+  "key_risk": "Loss/share shift of a custom XPU program (Amazon Trainium 3 sourcing), 65x NTM multiple, consensus calendarisation (Jan FY).",
+  "one_offs_note": "None identified.",
+  "notes": "FY27/FY28 non-GAAP EPS figures surfaced in search summary (TipRanks/Yahoo result set); 43 analysts (S&P Global) Strong Buy, PT 289.11 via stockanalysis. Price 264.21 is a 3x move vs late-2025 levels - central model should sanity-check.",
+  "sources": [
+    src("https://stockanalysis.com/stocks/mrvl/", "Close 264.21 on 30 Sep 2026; 263.27 on 29 Sep"),
+    src("https://stockanalysis.com/stocks/mrvl/forecast/", "43 analysts (S&P Global) Strong Buy, average PT 289.11"),
+    src("https://www.tipranks.com/stocks/mrvl/earnings-calendar", "Consensus non-GAAP EPS FY2027 4.05 / FY2028 6.24 (fiscal years ending 31 Jan)"),
+    src("https://finance.yahoo.com/markets/stocks/articles/marvell-price-prediction-case-double-160238631.html", "Marvell price/EPS context, FY2028 net income +60.5%")
+  ]
+ },
+ {
+  "ticker": "LRCX", "name": "Lam Research Corporation", "exchange": "NASDAQ", "currency": "USD", "region": "US", "country": "United States",
+  "sector": "Semiconductor equipment (etch/deposition; NAND, DRAM/HBM, advanced packaging)", "pea_eligible_listing": "No (US-domiciled)", "adr_ratio": "n/a (ordinary US listing)",
+  "price": 328.51, "price_date": "2026-10-01 (investing.com quote; likely 30 Sep close - verify)",
+  "market_cap_usd_bn": 411.11, "fy_end_month": 6,
+  "eps_basis": "Non-GAAP EPS consensus",
+  "eps_fy0": None, "eps_fy0_label": "FY ending Jun-2026 (actual not sourced; source states FY27 9.51 = +63.32% vs FY26, implying ~5.8; TTM EPS 5.76)",
+  "eps_f1": 9.51, "eps_f1_label": "FY ending Jun-2027 (+63.3% y/y)",
+  "eps_f2": 10.75, "eps_f2_label": "FY ending Jun-2028 (single research forecast, NOT a broad consensus)",
+  "eps_f3": None, "eps_f3_label": "not sourced",
+  "ltg_pct": None, "zacks_rank": None, "zacks_rank_date": NA, "beta": None, "dividend_yield_pct": None,
+  "w52_high": None, "w52_low": None, "price_target": 373.77,
+  "cyclical": True, "megatrend": "AI memory supercycle (HBM/DRAM/NAND capex) and advanced packaging",
+  "thesis_short": "WFE leader riding the HBM/NAND capex wave; FY27 EPS +63%. Indicative PEG on F1: P/E 328.51/9.51 = 34.5x / +50 (cap) -> 0.69, but on FY28 (10.75, +13%) P/E 30.6x -> PEG ~2.4: classic cyclical-peak profile. Per Lynch rules treat as CYCLICAL (no PEG; model EPS as multiple of NTM).",
+  "key_risk": "Cyclical peak in WFE after stock roughly doubled; China export controls; FY28 growth collapses to +13% on the only forecast found.",
+  "one_offs_note": "None identified; growth +63% in FY27 is a cycle effect, not structural.",
+  "notes": "Older Zacks article (Yahoo, pre-2026) showed FY26 4.79 / FY27 5.57 - superseded by the 9.51 figure. Market cap 411.11B and TTM EPS 5.76 from investing.com. Two PT figures: 373.77 (35 analysts S&P Global) and 309.50 (34 analysts).",
+  "sources": [
+    src("https://www.investing.com/equities/lam-research-corp", "Price 328.51 as of 1 Oct 2026; TTM EPS 5.76; market cap 411.11B"),
+    src("https://seekingalpha.com/symbol/LRCX/earnings/estimates", "FY2027 EPS consensus 9.51, +63.32% vs FY2026"),
+    src("https://stockanalysis.com/stocks/lrcx/forecast/", "35 analysts (S&P Global) Strong Buy, PT 373.77"),
+    src("https://pandaforecast.com/stock_forecasts/forecast_lrcx/", "Single forecast FY2028 EPS 10.75"),
+    src("https://finance.yahoo.com/news/semiconductor-sales-continue-soar-4-140000511.html", "Older Zacks estimates FY26 4.79 / FY27 5.57 (superseded)")
+  ]
+ },
+ {
+  "ticker": "KLAC", "name": "KLA Corporation", "exchange": "NASDAQ", "currency": "USD", "region": "US", "country": "United States",
+  "sector": "Semiconductor process control / metrology", "pea_eligible_listing": "No (US-domiciled)", "adr_ratio": "n/a (ordinary US listing; figures split-adjusted)",
+  "price": 194.93, "price_date": "2026-09-30 (close, post-split)",
+  "market_cap_usd_bn": None, "fy_end_month": 6,
+  "eps_basis": "Non-GAAP (adjusted) EPS, split-adjusted",
+  "eps_fy0": 3.71, "eps_fy0_label": "FY ending Jun-2026 (pre-report consensus +11.4% vs FY25 3.33; actual not captured)",
+  "eps_f1": 5.06, "eps_f1_label": "FY ending Jun-2027 (Yahoo average; alt 4.98 = +34.2% per Barchart/Yahoo article)",
+  "eps_f2": 5.30, "eps_f2_label": "FY ending Jun-2028 (single analyst model 'about 5.3' - NOT a consensus)",
+  "eps_f3": None, "eps_f3_label": "not sourced",
+  "ltg_pct": None, "zacks_rank": None, "zacks_rank_date": NA, "beta": None, "dividend_yield_pct": None,
+  "w52_high": None, "w52_low": None, "price_target": None,
+  "cyclical": True, "megatrend": "Advanced-node and HBM yield management (process control intensity rising with AI chips)",
+  "thesis_short": "Highest-margin semicap with structural share gains in process control. Indicative PEG on F1: P/E 194.93/5.06 = 38.5x / +36.4% -> ~1.06 (1.14 using 4.98). FY28 at ~5.3 (+5%) screams cycle peak -> treat as CYCLICAL under Lynch rules.",
+  "key_risk": "WFE cycle peak; China (~30% of sales) export restrictions; FY28 growth stall on the only model found; post-split figures easy to mis-state.",
+  "one_offs_note": "Stock split in 2026 (figures split-adjusted); none in earnings.",
+  "notes": "Price and EPS are post-split. FY26 3.71 is the pre-report projection from a Yahoo/Barchart preview; the Q4 FY26 8-K exists (SEC link) but numbers were not captured. Price target not sourced.",
+  "sources": [
+    src("https://stockanalysis.com/stocks/klac/", "Close 194.93 on 30 Sep 2026"),
+    src("https://finance.yahoo.com/markets/stocks/articles/expect-kla-corporations-q4-2026-134547408.html", "FY2026 adj EPS 3.71 (+11.4% vs 3.33 FY25); FY2027 4.98 (+34.2%)"),
+    src("https://finance.yahoo.com/quote/KLAC/analysis/", "Next-year (FY2027) average estimate 5.06"),
+    src("https://simplywall.st/stocks/us/semiconductors/nasdaq-klac/kla/future", "Analyst model: revenue 14B (2026) -> 18.3B (2028), split-adjusted EPS ~5.3 by 2028"),
+    src("https://www.sec.gov/Archives/edgar/data/0000319201/000031920126000024/exhibit991earningsrelease7.htm", "Q4 FY2026 earnings release 8-K (figures not captured)")
+  ]
+ },
+ {
+  "ticker": "LITE", "name": "Lumentum Holdings Inc.", "exchange": "NASDAQ", "currency": "USD", "region": "US", "country": "United States",
+  "sector": "Optical components & lasers for AI data centers", "pea_eligible_listing": "No (US-domiciled)", "adr_ratio": "n/a (ordinary US listing)",
+  "price": 971.26, "price_date": "2026-09-30 (close)",
+  "market_cap_usd_bn": None, "fy_end_month": 6,
+  "eps_basis": "Non-GAAP EPS consensus",
+  "eps_fy0": None, "eps_fy0_label": "FY ending Jun-2026 (not sourced)",
+  "eps_f1": 21.67, "eps_f1_label": "FY ending Jun-2027 (25 analysts)",
+  "eps_f2": 34.52, "eps_f2_label": "FY ending Jun-2028 (19 analysts)",
+  "eps_f3": None, "eps_f3_label": "not sourced",
+  "ltg_pct": None, "zacks_rank": None, "zacks_rank_date": NA, "beta": None, "dividend_yield_pct": None,
+  "w52_high": None, "w52_low": None, "price_target": 1149.0,
+  "cyclical": True, "megatrend": "Optical interconnect for AI clusters: EML/CW lasers, 1.6T transceivers, co-packaged optics",
+  "thesis_short": "Laser bottleneck supplier to every optical transceiver maker. Indicative PEG: P/E on FY28 = 971.26/34.52 = 28.1x; growth 34.52/21.67-1 = +59% (cap 50) -> PEG ~0.56; P/E on FY27 44.8x. Flagged cyclical (optical components historically boom/bust) - central model may treat as growth if it judges the AI optics cycle structural.",
+  "key_risk": "Optical-cycle reversal (inventory digestion as in 2023), customer concentration (transceiver OEMs/hyperscalers), parabolic share price (~$971) with no 52w data sourced.",
+  "one_offs_note": "None identified.",
+  "notes": "Consensus from Yahoo Finance analysis page (analyst counts given). PT 1,149 = 26 analysts polled by S&P Global via stockanalysis.",
+  "sources": [
+    src("https://finance.yahoo.com/quote/LITE/", "Close 971.26 on 30 Sep 2026"),
+    src("https://finance.yahoo.com/quote/LITE/analysis/", "FY2027 EPS avg 21.67 (25 analysts); FY2028 34.52 (19 analysts)"),
+    src("https://stockanalysis.com/stocks/lite/forecast/", "26 analysts (S&P Global) Buy, PT 1,149"),
+    src("https://www.sec.gov/Archives/edgar/data/0001633978/000162828026055726/lite_ex991xq4fy26.htm", "Q4 FY2026 earnings release 8-K (figures not captured)")
+  ]
+ },
+ {
+  "ticker": "ETN", "name": "Eaton Corporation plc", "exchange": "NYSE", "currency": "USD", "region": "US", "country": "Ireland (HQ Dublin; operational HQ Cleveland, OH)",
+  "sector": "Electrical equipment / data-center power distribution", "pea_eligible_listing": "Uncertain: Irish-domiciled plc (EU) but sole listing is NYSE in USD - check broker", "adr_ratio": "n/a (ordinary NYSE listing)",
+  "price": 429.71, "price_date": "2026-09-30 (close)",
+  "market_cap_usd_bn": None, "fy_end_month": 12,
+  "eps_basis": "Adjusted EPS (non-GAAP) consensus; FY26 company guidance 13.40-13.60",
+  "eps_fy0": None, "eps_fy0_label": "FY ending Dec-2025 (not sourced)",
+  "eps_f1": 13.35, "eps_f1_label": "FY ending Dec-2026 (consensus; guidance raised in Jul-2026 to 13.40-13.60)",
+  "eps_f2": 15.80, "eps_f2_label": "FY ending Dec-2027 (range 13.81-18.13)",
+  "eps_f3": 18.01, "eps_f3_label": "FY ending Dec-2028 (range 15.94-20.60)",
+  "ltg_pct": None, "zacks_rank": None, "zacks_rank_date": NA, "beta": None, "dividend_yield_pct": None,
+  "w52_high": None, "w52_low": None, "price_target": 456.50,
+  "cyclical": False, "megatrend": "Electrification: data-center switchgear/UPS, grid hardening, electrified industry",
+  "thesis_short": "Lower-beta way to own data-center power with 11-13% organic growth. Indicative PEG: P/E on 2027 = 429.71/15.80 = 27.2x; growth 15.80/13.35-1 = +18.4% -> PEG ~1.48 (at the 1.5 threshold); 2028 +14% drops it to ~1.7. Quality, but the cheapest growth is elsewhere on this list.",
+  "key_risk": "Growth too slow for the multiple (PEG at threshold); industrial-cycle exposure in vehicle/aerospace segments; premium valuation vs peers.",
+  "one_offs_note": "None identified.",
+  "notes": "PT 456.50 from Defense World consensus article dated 2026-09-30 (WallStreetZen shows 426.15). Beta/yield/52w not sourced.",
+  "sources": [
+    src("https://www.macrotrends.net/stocks/charts/ETN/eaton/stock-price-history", "Close 429.71 on 30 Sep 2026"),
+    src("https://stockanalysis.com/stocks/etn/forecast/", "Consensus adj EPS 2026 13.35 / 2027 15.80 (13.81-18.13) / 2028 18.01 (15.94-20.60)"),
+    src("https://www.defenseworld.net/2026/09/30/eaton-corporation-plc-nyseetn-stock-has-consensus-price-target-of-456-50.html", "Consensus PT 456.50", "2026-09-30"),
+    src("https://tickeron.com/earnings/ETN/", "FY2026 guidance raised in July: 11-13% organic growth, adj EPS 13.40-13.60")
+  ]
+ },
+ {
+  "ticker": "VST", "name": "Vistra Corp.", "exchange": "NYSE", "currency": "USD", "region": "US", "country": "United States",
+  "sector": "Independent power producer (nuclear, gas, retail)", "pea_eligible_listing": "No (US-domiciled)", "adr_ratio": "n/a (ordinary US listing)",
+  "price": 140.83, "price_date": "2026-09-29 (close; 30 Sep pre-market 139.50 - 30 Sep close not captured)",
+  "market_cap_usd_bn": None, "fy_end_month": 12,
+  "eps_basis": "Consensus EPS (basis not stated by source; Vistra guides on ongoing-operations adjusted EBITDA/FCF, not EPS)",
+  "eps_fy0": None, "eps_fy0_label": "FY ending Dec-2025 (not sourced)",
+  "eps_f1": 8.62, "eps_f1_label": "FY ending Dec-2026 (stockanalysis; alt source 9.12)",
+  "eps_f2": 10.73, "eps_f2_label": "FY ending Dec-2027",
+  "eps_f3": 12.20, "eps_f3_label": "FY ending Dec-2028",
+  "ltg_pct": None, "zacks_rank": None, "zacks_rank_date": NA, "beta": None, "dividend_yield_pct": None,
+  "w52_high": None, "w52_low": None, "price_target": 217.58,
+  "cyclical": False, "megatrend": "Power for AI: nuclear/gas generation contracted to hyperscalers (long-term PPAs)",
+  "thesis_short": "Cheapest growth in the set after a ~30% drawdown in 2026: Indicative PEG: P/E on 2027 = 140.83/10.73 = 13.1x; growth 10.73/8.62-1 = +24.5% -> PEG ~0.54 (0.74 using 9.12 base); 2028 +13.7%. 20 analysts Strong Buy, PT 217.58 (+54%).",
+  "key_risk": "Power-price/gas-price sensitivity and hedging roll-off; PJM/ERCOT regulatory intervention on data-center co-location; EPS basis not confirmed (GAAP EPS swings with hedge mark-to-market).",
+  "one_offs_note": "Vistra GAAP EPS is distorted by derivative mark-to-market; confirm consensus is adjusted.",
+  "notes": "30 Sep close not captured; 29 Sep close 140.83 used. 2026 EPS conflict (8.62 vs 9.12) - kept stockanalysis 8.62 (matches PT source), alt noted. PT 217.58 = 20 analysts S&P Global; WallStreetZen 228.83.",
+  "sources": [
+    src("https://stockanalysis.com/stocks/vst/forecast/", "20 analysts Strong Buy, PT 217.58; 2026 EPS 8.62"),
+    src("https://finance.yahoo.com/quote/VST/analysis/", "2026 average 9.12; 2027 average 10.73; close 140.83 on 29 Sep 2026, pre-market 139.50 on 30 Sep"),
+    src("https://www.wallstreetzen.com/stocks/us/nyse/vst/stock-forecast", "2028 EPS 12.20; PT 228.83"),
+    src("https://247wallst.com/investing/2026/09/14/vistras-price-has-edged-downward-throught-2026-one-analyst-says-its-due-to-double-soon/", "Share price down through 2026; analyst sees doubling", "2026-09-14")
+  ]
+ },
+ {
+  "ticker": "ANET", "name": "Arista Networks, Inc.", "exchange": "NYSE", "currency": "USD", "region": "US", "country": "United States",
+  "sector": "Data-center networking (Ethernet switching, EOS)", "pea_eligible_listing": "No (US-domiciled)", "adr_ratio": "n/a (ordinary US listing)",
+  "price": 204.09, "price_date": "2026-09-30 (close)",
+  "market_cap_usd_bn": None, "fy_end_month": 12,
+  "eps_basis": "Non-GAAP EPS consensus",
+  "eps_fy0": None, "eps_fy0_label": "FY ending Dec-2025 (not sourced)",
+  "eps_f1": 4.11, "eps_f1_label": "FY ending Dec-2026 (consensus; one analyst 4.08)",
+  "eps_f2": 5.19, "eps_f2_label": "FY ending Dec-2027 (post-Q2-26 consensus; older article showed 3.97 - superseded)",
+  "eps_f3": 5.77, "eps_f3_label": "FY ending Dec-2028 (single analyst revision, NOT consensus)",
+  "ltg_pct": None, "zacks_rank": None, "zacks_rank_date": NA, "beta": None, "dividend_yield_pct": None,
+  "w52_high": None, "w52_low": None, "price_target": 230.74,
+  "cyclical": False, "megatrend": "AI back-end/front-end Ethernet networking for GPU clusters (scale-out)",
+  "thesis_short": "Record $3B quarter in Q2-26 on AI networking. Indicative PEG: P/E on 2027 = 204.09/5.19 = 39.3x; growth 5.19/4.11-1 = +26.3% -> PEG ~1.50 (exactly at threshold). The lone 2028 estimate (+11%) suggests deceleration - needs broader consensus.",
+  "key_risk": "Hyperscaler concentration (Meta, Microsoft), white-box/Nvidia Spectrum-X competition, decelerating 2028 growth on the only estimate found.",
+  "one_offs_note": "None identified.",
+  "notes": "PT 230.74 from MarketBeat consensus dated 2026-09-30. The 3.97 FY27 figure in an older Yahoo/Barchart preview is pre-revision and discarded.",
+  "sources": [
+    src("https://www.investing.com/equities/arista-networks-historical-data", "Close 204.09 on 30 Sep 2026"),
+    src("https://www.marketbeat.com/instant-alerts/consensus-arista-networks-inc-nyse-anet-stock-has-consensus-price-target-of-23074-according-to-brokerages-2026-09-30/", "Consensus PT 230.74", "2026-09-30"),
+    src("https://seekingalpha.com/article/4938565-arista-networks-stock-q2-justify-higher-price-target", "Consensus non-GAAP EPS 2026 4.11 -> 2027 5.19; analyst revisions 2026 4.08 / 2028 5.77"),
+    src("https://tickeron.com/earnings/ANET/", "Q2 2026 recap: record $3B quarter on AI demand"),
+    src("https://finance.yahoo.com/markets/stocks/articles/expect-arista-networks-q2-2026-005607206.html", "Older preview: FY27 adj EPS 3.97 (+21.4%) - superseded")
+  ]
+ },
+ {
+  "ticker": "AXON", "name": "Axon Enterprise, Inc.", "exchange": "NASDAQ", "currency": "USD", "region": "US", "country": "United States",
+  "sector": "Public-safety technology (TASER, body cams, AI software, drones)", "pea_eligible_listing": "No (US-domiciled)", "adr_ratio": "n/a (ordinary US listing)",
+  "price": 426.83, "price_date": "2026-09-30 (GuruFocus; another source shows 424.75 close on 28 Sep)",
+  "market_cap_usd_bn": None, "fy_end_month": 12,
+  "eps_basis": "Adjusted (non-GAAP) EPS consensus",
+  "eps_fy0": None, "eps_fy0_label": "FY ending Dec-2025 (not sourced)",
+  "eps_f1": 7.65, "eps_f1_label": "FY ending Dec-2026 (range 6.32-8.80)",
+  "eps_f2": 10.54, "eps_f2_label": "FY ending Dec-2027 (range 8.41-12.05)",
+  "eps_f3": None, "eps_f3_label": "not sourced",
+  "ltg_pct": None, "zacks_rank": None, "zacks_rank_date": NA, "beta": None, "dividend_yield_pct": None,
+  "w52_high": None, "w52_low": None, "price_target": None,
+  "cyclical": False, "megatrend": "Physical AI for public safety: AI-assisted evidence (Draft One), drones-as-first-responder, real-time ops",
+  "thesis_short": "Down ~30% in September 2026 - a Lynch-style reset on a 30%+ grower. Indicative PEG: P/E on 2027 = 426.83/10.54 = 40.5x; growth 10.54/7.65-1 = +37.8% -> PEG ~1.07. Independent driver (government budgets) from hyperscaler capex.",
+  "key_risk": "Large GAAP/non-GAAP gap (stock comp), valuation de-rating already under way, procurement cycles; 2028 consensus and price target not sourced.",
+  "one_offs_note": "Stock-based compensation makes GAAP EPS far below adjusted; stale article citing 'EPS +155.8% to 4.17 in fiscal 2027' is on a different basis and ignored.",
+  "notes": "TIKR article states ~73% upside to 2027 targets but no numeric PT captured. Q4-25 revenue 797M (+39%) from company IR.",
+  "sources": [
+    src("https://www.gurufocus.com/news/9103894/axon-enterprise-axon-leads-industrial-sector-decline-in-september-2026", "Price 426.83 on 30 Sep 2026; -30.15% over the past month"),
+    src("https://stockanalysis.com/stocks/axon/forecast/", "Consensus adj EPS 2026 7.65 (6.32-8.80) / 2027 10.54 (8.41-12.05)"),
+    src("https://www.tikr.com/blog/axon-stock-is-down-30-in-2026-can-73-upside-to-2027-bring-buyers-back", "Stock down 30% in 2026; ~73% upside to 2027 targets"),
+    src("https://investor.axon.com/2026-02-24-Axon-reports-Q4-2025-revenue-of-797-million,-up-39-year-over-year", "Q4 2025 revenue 797M, +39% y/y", "2026-02-24")
+  ]
+ },
+ {
+  "ticker": "SNPS", "name": "Synopsys, Inc.", "exchange": "NASDAQ", "currency": "USD", "region": "US", "country": "United States",
+  "sector": "EDA software & IP (incl. Ansys simulation)", "pea_eligible_listing": "No (US-domiciled)", "adr_ratio": "n/a (ordinary US listing)",
+  "price": 415.09, "price_date": "2026-09-30 (investing.com)",
+  "market_cap_usd_bn": None, "fy_end_month": 10,
+  "eps_basis": "Non-GAAP EPS - COMPANY GUIDANCE/TARGETS (FY26 guidance, FY27 investor-day target), not consensus",
+  "eps_fy0": None, "eps_fy0_label": "FY ending Oct-2025 (not sourced)",
+  "eps_f1": 15.07, "eps_f1_label": "FY ending Oct-2026 (midpoint of raised guidance 15.04-15.10)",
+  "eps_f2": 19.08, "eps_f2_label": "FY ending Oct-2027 (midpoint of investor-day target 19.04-19.12; BofA says well ahead of consensus)",
+  "eps_f3": None, "eps_f3_label": "not sourced (company targets mid-20% non-GAAP EPS CAGR FY26-FY30)",
+  "ltg_pct": None, "zacks_rank": None, "zacks_rank_date": NA, "beta": None, "dividend_yield_pct": None,
+  "w52_high": None, "w52_low": None, "price_target": None,
+  "cyclical": False, "megatrend": "AI chip design explosion: every custom accelerator needs EDA/IP; agentic AI design tools (AgentEngineer)",
+  "thesis_short": "Toll-booth on all semiconductor design with a company-guided mid-20% EPS CAGR to 2030. Indicative PEG (company figures): P/E on FY27 = 415.09/19.08 = 21.8x; growth 19.08/15.07-1 = +26.6% -> PEG ~0.82. Cheapest quality-software name in the screen; FY27 figure must be swapped for Street consensus (BofA notes targets are above consensus).",
+  "key_risk": "Ansys integration/dilution, China export licensing of EDA, figures used are management targets (optimistic bias); consensus and price target not sourced.",
+  "one_offs_note": "FY2026 includes first full year of Ansys (acquired Jul-2025) - growth partly inorganic.",
+  "notes": "No Street consensus captured for FY26/FY27; company guidance (Q3 FY26 release, Aug-2026) and investor-day targets (Sep-2026) used and labelled as such. Revenue FY27 midpoint 11.15B.",
+  "sources": [
+    src("https://www.investing.com/equities/synopsys-inc", "Price 415.09 on 30 Sep 2026"),
+    src("https://www.prnewswire.com/news-releases/synopsys-posts-financial-results-for-third-quarter-fiscal-year-2026-302860810.html", "FY2026 non-GAAP EPS guidance raised to 15.04-15.10"),
+    src("https://www.prnewswire.com/news-releases/synopsys-details-growth-strategy-and-long-term-financial-model-at-2026-investor-day-302894684.html", "FY2027 non-GAAP EPS 19.04-19.12; revenue midpoint 11.15B; mid-20% EPS growth FY26-FY30"),
+    src("https://stocktwits.com/news-articles/markets/equity/synopsys-long-term-earnings-targets-come-in-well-ahead-of-consensus-bof-a-says-firm-lifts-target-by-100/cZD0TzcRBiS", "BofA: long-term targets well ahead of consensus; PT raised by $100")
+  ]
+ },
+ {
+  "ticker": "DELL", "name": "Dell Technologies Inc.", "exchange": "NYSE", "currency": "USD", "region": "US", "country": "United States",
+  "sector": "AI servers, storage, PCs", "pea_eligible_listing": "No (US-domiciled)", "adr_ratio": "n/a (ordinary US listing)",
+  "price": 537.95, "price_date": "2026-09-30 (close; another source 542.50)",
+  "market_cap_usd_bn": None, "fy_end_month": 1,
+  "eps_basis": "Non-GAAP EPS consensus (Visible Alpha via S&P Global, Aug-2026); alternative set noted",
+  "eps_fy0": None, "eps_fy0_label": "FY ending Jan-2026 (not sourced)",
+  "eps_f1": 19.12, "eps_f1_label": "FY ending Jan-2027 (Visible Alpha consensus, Aug-2026; CONFLICT: alt source 25.89)",
+  "eps_f2": 23.20, "eps_f2_label": "FY ending Jan-2028 (Visible Alpha; alt source 30.93)",
+  "eps_f3": None, "eps_f3_label": "not sourced",
+  "ltg_pct": None, "zacks_rank": None, "zacks_rank_date": NA, "beta": None, "dividend_yield_pct": None,
+  "w52_high": None, "w52_low": None, "price_target": None,
+  "cyclical": True, "megatrend": "Enterprise/sovereign/neocloud AI server deployments (Nvidia-based racks), storage for AI",
+  "thesis_short": "Largest merchant AI-server vendor. Indicative PEG: P/E on FY28 = 537.95/23.20 = 23.2x; growth 23.20/19.12-1 = +21.3% -> PEG ~1.09 (0.89 on the alt set 25.89/30.93). Flagged cyclical (hardware, PC refresh, memory-cost pass-through); price level (~4x late-2025) must be sanity-checked.",
+  "key_risk": "Low-margin AI servers, memory/component inflation, lumpy neocloud orders, consensus discrepancy between sources, no PT sourced.",
+  "one_offs_note": "None identified.",
+  "notes": "Two consensus sets: 19.12/23.20 (Visible Alpha, S&P Global preview Aug-2026) vs 25.89/30.93 (other, undated). Kept the dated/attributed one. Price 537.95 from stockanalysis; 24/7 Wall St article dated 2026-09-30 corroborates strong 2026 run.",
+  "sources": [
+    src("https://stockanalysis.com/stocks/dell/", "Close 537.95 on 30 Sep 2026 (alt 542.50)"),
+    src("https://www.spglobal.com/market-intelligence/en/news-insights/research/2026/08/dell-earnings-preview-fiscal-q2-2027", "Visible Alpha consensus: FY2027 EPS 19.12, FY2028 23.20", "2026-08"),
+    src("https://finance.yahoo.com/quote/DELL/analysis/", "Alternative consensus FY2027 25.89 / FY2028 30.93 (as surfaced in search)"),
+    src("https://247wallst.com/investing/2026/09/30/dell-is-quietly-riding-one-of-the-biggest-tech-trends/", "Dell AI-server narrative", "2026-09-30")
+  ]
+ }
+]
+
+excluded = [
+ {"ticker": "NBIS", "reason": "Negative EPS: consensus 2026 -2.17, 2027 -0.99, 2028 +0.06 (stockanalysis); no PEG possible. Price 241.88 intraday 30 Sep 2026. Netherlands-domiciled."},
+ {"ticker": "CRWV", "reason": "Negative EPS: consensus 2026 -5.2, 2027 -3.9 (Yahoo/finviz); heavy debt-funded capex; no PEG. Price 87.12 on 30 Sep 2026; PT 140.81 (40 analysts)."},
+ {"ticker": "RKLB", "reason": "Near-zero/negative EPS: 2026 consensus -0.04 (stockanalysis); no 2027/2028 EPS sourced. Price 69.68 close 30 Sep 2026; PT 109.37."},
+ {"ticker": "ORCL", "reason": "PEG > 2: FY May-2027 non-GAAP EPS consensus 8.14 = only +6.7% vs FY26 7.63 (capex/interest burden); at 137.69 (30 Sep 2026, investing.com) P/E 16.9x / 6.7% = PEG ~2.5. Q1 FY27 rev +30% but EPS growth too slow for Lynch screen."},
+ {"ticker": "PLTR", "reason": "PEG > 1.5: 2026 adj EPS 1.61, 2027 2.32 (+44%); at 187.05 close 30 Sep 2026 P/E on 2027 = 80.6x -> PEG ~1.83. PT 195.57 (~+2.6%) offers no upside."},
+ {"ticker": "CDNS", "reason": "PEG > 2: 2026 non-GAAP 8.05-8.15 guidance, 2027 consensus 9.53 (+17%), 2028 11.16 (+16%); at 331.65 close 30 Sep 2026 P/E on 2027 = 34.8x -> PEG ~2.05. Great business, too slow for the multiple (SNPS screens cheaper)."},
+ {"ticker": "MPWR", "reason": "PEG > 1.5: 2026 non-GAAP 24.02, 2027 30.33 (+26%), 2028 36.91 (+16%); at 1,347.22 close 30 Sep 2026 P/E on 2027 = 44.4x -> PEG ~1.69, rising to ~2.3 on 2028 growth."},
+ {"ticker": "CEG", "reason": "PEG > 2: 2026 adj operating EPS guidance 11.50-12.50 (consensus ~12.14), 2027 consensus 13.12 (+8%); at 254.02 (30 Sep 2026) P/E on 2027 = 19.4x -> PEG ~2.4 on consensus even though management targets 20%+ base EPS growth to 2029. VST screens far cheaper for the same megatrend."},
+ {"ticker": "APH", "reason": "2027/2028 consensus not sourced and figures confused by the Sep-2026 2-for-1 split (Q3 EPS guide 0.70-0.71 post-split vs 1.40-1.42 pre-split); 2026 EPS avg 5.32 appears pre-split. Price 84.58 close 30 Sep 2026; PT 99.39. Cannot compute PEG - good business, revisit with clean data."},
+ {"ticker": "COHR", "reason": "No full-year consensus sourced: only Q1 FY27 non-GAAP EPS guidance 1.85-2.05 (Aug-2026 8-K) and PT 397.63; price 295.83 as of 27 Sep 2026. PEG not computable within this run; strong optical megatrend candidate to re-screen (orders visible into calendar 2028)."},
+ {"ticker": "CIEN", "reason": "No current full-year consensus sourced: only a stale Sep-2025 Zacks FY27 figure (3.67) that conflicts with forward P/E 33.0 at 342.81 (30 Sep 2026); trailing P/E 76.6. Cannot compute PEG; stock also -22% over the last 30 days per Tickeron."},
+ {"ticker": "SMCI", "reason": "FY26 base and FY28 consensus not sourced -> no growth rate/PEG; FY Jun-2027 consensus 4.34 gives P/E 9.5x at 41.07 (30 Sep 2026) but consensus is Hold with PT 42.38 (~+3%) - low multiple reflects margin/governance doubts (Lynch: a low P/E is not a bargain by itself)."},
+ {"ticker": "AMAT", "reason": "Semicap cyclical with FY Oct-2026 consensus not sourced (only FY27: Yahoo avg 18.48, 34 analysts; MS 20.92; alt 16.20); at 511.45 close 30 Sep 2026 P/E on FY27 = 27.7x. Stock doubled in 2026, Morgan Stanley issued a 'stark warning' and cut its target - cyclical-peak profile; no PEG computable."},
+ {"ticker": "WDC", "reason": "HDD/storage cyclical: Zacks expects FY Jun-2027 revenue +38.1% and EPS +82.9% (peak-cycle growth); no price/EPS levels sourced (search budget exhausted). Lynch rule: no PEG on cyclicals at peak."},
+ {"ticker": "SNDK", "reason": "NAND memory cyclical: Zacks expects FY Jun-2027 revenue and EPS growth >100% (classic peak); no price/EPS levels sourced (search budget exhausted). Lynch rule: no PEG on memory cyclicals."},
+ {"ticker": "TXN", "reason": "No data sourced (search budget exhausted); analog cyclical with historically low-teens EPS growth at best - not a 20%+ Lynch grower."},
+ {"ticker": "INTC", "reason": "No data sourced (search budget exhausted); turnaround/foundry story with depressed and uncertain EPS - not a PEG candidate."},
+ {"ticker": "QCOM", "reason": "No data sourced (search budget exhausted); handset-exposed, single-digit expected EPS growth, Apple modem loss - not a PEG candidate."}
+]
+
+notes = ("Screen built 1 Oct 2026 from 24 WebSearch (extended) queries; the session's web-search budget (200/200, shared with other agents) was exhausted "
+ "before second-pass verification, and every financial host (Yahoo, StockAnalysis, MarketBeat, Zacks, SEC, Investing.com, Finviz, TipRanks, Macrotrends, etc.) is "
+ "denied by the egress proxy (CONNECT 403), so WebFetch/curl could not be used. Consequences: (1) beta, dividend yield, 52-week high/low, Zacks Rank, LTG and market cap "
+ "(except LRCX) are null; (2) FY0 actuals are mostly null; (3) each EPS figure comes from a single search pass - where two figures surfaced, the most recent/attributed one "
+ "was kept and the alternative is written in the label/notes (GEV 2026, CLS 2027, DELL FY27/28, VST 2026, KLAC FY27, APP all years); (4) APP has no 30 Sep close; "
+ "VST uses the 29 Sep close; LRCX uses a 1 Oct quote; (5) SNPS uses company guidance/targets, not consensus. Several prices (MRVL 264, DELL 538, LITE 971, KLAC post-split 195, "
+ "ORCL 138) are far from late-2025 levels and should be sanity-checked by the central model before PEG recomputation. Indicative PEG = (price / EPS_F2) / min(growth F2 vs F1 in %, 50). "
+ "Cheapest indicative PEGs: CLS ~0.37-0.73, CRDO ~0.40 (stale F1), APP ~0.45, VST ~0.54, LITE ~0.56 (cyclical flag), LRCX ~0.69 (cyclical), VRT ~0.74, SNPS ~0.82 (company figures), "
+ "MRVL ~0.85, GEV ~0.87, KLAC ~1.06 (cyclical), AXON ~1.07, ALAB ~1.08, DELL ~1.09 (cyclical), ETN ~1.48, ANET ~1.50. Megatrend clusters: AI power/electrification (VRT, GEV, ETN, VST), "
+ "AI connectivity/optics (CRDO, ALAB, LITE, MRVL, ANET, CLS), semicap cycle (LRCX, KLAC), design software (SNPS), AI monetisation/physical AI outside hyperscaler capex (APP, AXON). "
+ "Ten largest Nasdaq-100 weights were skipped as instructed. Celestica is Canadian and Eaton Irish-domiciled; Credo is Cayman-domiciled; none are PEA-eligible via a euro listing.")
+
+out = {"candidates": candidates, "excluded": excluded, "notes": notes}
+path = "/tmp/claude-0/-home-user-alexis/3bc0b42d-80a9-547d-9561-569ee1797a89/scratchpad/phase1/screen_us-ai-infra.json"
+with open(path, "w") as f:
+    json.dump(out, f, indent=2, ensure_ascii=False)
+print("candidates:", len(candidates), "excluded:", len(excluded))
+req = ["ticker","name","currency","region","price","price_date","eps_f1","eps_f2","sources","cyclical","megatrend","eps_basis"]
+for c in candidates:
+    missing = [k for k in req if k not in c]
+    assert not missing, (c["ticker"], missing)
+print("schema check ok; bytes:", len(json.dumps(out)))

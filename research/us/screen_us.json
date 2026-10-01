@@ -1,0 +1,2611 @@
+{
+ "as_of": "2026-10-01",
+ "region": "US",
+ "candidates": [
+  {
+   "ticker": "VRT",
+   "name": "Vertiv Holdings",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Industrials / data-center power & cooling",
+   "megatrend": "4 Électricité & réseau DC",
+   "price": 241.31,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 101.879,
+   "fy_end_month": 12,
+   "eps_basis": "non-GAAP (adjusted diluted EPS)",
+   "fy2025": 4.2,
+   "fy2026": 6.71,
+   "fy2027": 9.1,
+   "fy2028": 11.19,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 2.07,
+   "dividend_yield_pct": 0.1,
+   "w52_low": 144.0,
+   "w52_high": 379.94,
+   "price_target": 357.08,
+   "zacks_rank": null,
+   "zacks_rank_date": "",
+   "cyclical": false,
+   "one_offs_note": "Aucune charge exceptionnelle majeure signalée ; contribution des acquisitions +5 % aux ventes T2 2026.",
+   "latest_results_summary": "T2 2026 (29/07/2026) : ventes 3,274 Md$ (+24 % ; organique +18 %), résultat opérationnel ajusté 738 M$ (+51 %), BPA ajusté +60 % ; titre -10,4 % le jour des résultats sur des ventes inférieures aux attentes malgré la hausse de guidance.",
+   "guidance": "FY2026 : BPA dilué ajusté 6,65-6,75 $ (+58-61 %), marge opérationnelle ajustée 23,3-24,3 % ; guidance relevée sur tous les indicateurs clés.",
+   "ceo_quote": {
+    "original": "pleased with what we see in July and full confidence in H2 execution and backlog",
+    "french": "satisfait de ce que nous voyons en juillet et pleinement confiant dans l'exécution du second semestre et dans le carnet de commandes",
+    "date": "2026-07-29",
+    "source": "https://www.investing.com/news/transcripts/earnings-call-transcript-vertiv-tops-q2-2026-eps-forecast-shares-rise-premarket-93CH-4824087"
+   },
+   "thesis_short": "Fournisseur n°1 d'alimentation et refroidissement liquide pour campus IA ; BPA x2,2 entre 2025 et 2027 selon le consensus.",
+   "key_risk": "Dépendance au cycle de capex des hyperscalers ; valorisation élevée (beta 2,07) ; concurrence Schneider/Eaton.",
+   "notes": "Citation du CEO Giordano Albertazzi partielle (extrait de transcript). Consensus 2026 : 6,71 $ (28 analystes, 6,52-6,91) chez Yahoo ; 6,53 $ chez StockAnalysis. Zacks Rank non trouvé.",
+   "sources": [
+    {
+     "url": "https://www.marketbeat.com/instant-alerts/price-vertiv-nyse-vrt-stock-falls-26-should-you-sell-2026-09-30",
+     "date": "2026-09-30",
+     "what": "Clôture 241,31 $ (-2,83 %), beta 2,07, 52 semaines, dividende 0,25 $"
+    },
+    {
+     "url": "https://www.marketbeat.com/stocks/NYSE/VRT/forecast/",
+     "date": "2026-09",
+     "what": "Objectif moyen 357,08 $ (29 analystes), médiane 345 $"
+    },
+    {
+     "url": "https://finance.yahoo.com/quote/VRT/analysis/",
+     "date": "2026-09",
+     "what": "Consensus BPA 2026 6,71 $ ; 2027 9,10 $"
+    },
+    {
+     "url": "https://stockanalysis.com/stocks/vrt/forecast/",
+     "date": "2026-09",
+     "what": "2028 : 11,19 $ (9,55-14,39)"
+    },
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/1674101/000167410126000006/exhibit991vrt02112026.htm",
+     "date": "2026-02-11",
+     "what": "BPA ajusté 2025 : 4,20 $ (+47 %)"
+    },
+    {
+     "url": "https://www.prnewswire.com/news-releases/vertiv-reports-strong-second-quarter-2026-with-diluted-eps-growth-of-53-adjusted-diluted-eps-growth-of-60-raises-full-year-2026-guidance-across-all-key-metrics-302837598.html",
+     "date": "2026-07-29",
+     "what": "Résultats T2 2026 et guidance"
+    }
+   ]
+  },
+  {
+   "ticker": "GEV",
+   "name": "GE Vernova",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Industrials / power equipment",
+   "megatrend": "4 Électricité & réseau DC",
+   "price": 962.49,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 252.96,
+   "fy_end_month": 12,
+   "eps_basis": "GAAP diluted EPS (consensus) ; société guide sur EBITDA ajusté et FCF",
+   "fy2025": 17.69,
+   "fy2026": 14.72,
+   "fy2027": 22.21,
+   "fy2028": 30.52,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 0.94,
+   "dividend_yield_pct": 0.21,
+   "w52_low": 530.16,
+   "w52_high": 1195.94,
+   "price_target": 1171.87,
+   "zacks_rank": 3,
+   "zacks_rank_date": "2026-09-16",
+   "cyclical": false,
+   "one_offs_note": "BPA 2025 (17,69 $) inclut un gain fiscal de 2,9 Md$ (reprise de provision pour dépréciation d'actifs d'impôt différé) : non récurrent, ce qui explique le recul apparent du BPA 2026.",
+   "latest_results_summary": "T2 2026 (22/07/2026) : backlog 176 Md$ ; 116 GW de turbines à gaz (53 GW en carnet + 63 GW en réservations) contre 100 GW trois mois plus tôt ; BPA inférieur au consensus mais guidance relevée.",
+   "guidance": "2026 : revenus 44,5-45,5 Md$, marge EBITDA ajustée 12-14 %, FCF 6,5-7,5 Md$ ; 2028 : ~52 Md$ de revenus et 20 % de marge EBITDA ajustée (vs 45 Md$ / 14 % auparavant) ; ≥125 GW de gaz sous contrat fin 2026 ; 20 GW/an de production au T3 2026, 24 GW en 2028, 30 GW en 2030.",
+   "ceo_quote": {
+    "original": "With a backlog of $176 billion, continued revenue growth and margin expansion, and significant free cash flow generation, GE Vernova's momentum is building, and we are raising our 2026 financial guidance. We now expect to have at least 125 GW of gas equipment under contract by year-end 2026.",
+    "french": "Avec un carnet de commandes de 176 milliards de dollars, une croissance continue du chiffre d'affaires, une expansion des marges et une génération significative de flux de trésorerie disponible, la dynamique de GE Vernova se renforce et nous relevons nos prévisions financières 2026. Nous attendons désormais au moins 125 GW d'équipements gaz sous contrat d'ici fin 2026.",
+    "date": "2026-07-22",
+    "source": "https://www.gevernova.com/news/articles/ge-vernova-releases-second-quarter-2026-financial-results"
+   },
+   "thesis_short": "Oligopole des turbines à gaz avec visibilité jusqu'en 2031 ; BPA consensus x2 entre 2026 et 2028.",
+   "key_risk": "Exécution industrielle (éolien offshore), BPA T2 raté ; dépendance aux campus DC financés par la dette IA.",
+   "notes": "Consensus BPA StockAnalysis : 2026 14,72 $ (10,81-18,24), 2027 22,21 $ (15,70-26,71), 2028 30,52 $ (20,04-38,23). Jefferies objectif 1 185 $ (17/09/2026).",
+   "sources": [
+    {
+     "url": "https://www.investing.com/equities/ge-vernova-llc",
+     "date": "2026-09-30",
+     "what": "Prix 962,49 $, capitalisation 252,96 Md$, 52 semaines 530,16-1 195,94, beta 0,94, dividende 2,00 $ (0,21 %)"
+    },
+    {
+     "url": "https://www.marketbeat.com/instant-alerts/price-ge-vernova-nyse-gev-stock-falls-13-time-to-sell-2026-09-30/",
+     "date": "2026-09-30",
+     "what": "Objectif consensus 1 171,87 $"
+    },
+    {
+     "url": "https://stockanalysis.com/stocks/gev/forecast/",
+     "date": "2026-09",
+     "what": "Consensus BPA 2026-2028"
+    },
+    {
+     "url": "https://www.foreignpolicyjournal.com/2026/09/16/ge-vernova-nyse-gev-stock-holds-zacks-rank-3-as-earnings-estimates-slip-and-valuation-concerns-mount/",
+     "date": "2026-09-16",
+     "what": "Zacks Rank 3"
+    },
+    {
+     "url": "https://www.gevernova.com/sites/default/files/gev_webcast_pressrelease_01282026.pdf",
+     "date": "2026-01-28",
+     "what": "FY2025 : BPA 17,69 $, EBITDA ajusté 3,2 Md$, FCF 3,7 Md$, gain fiscal 2,9 Md$"
+    },
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/0001996810/000199681026000147/gevpressrelease2q26.htm",
+     "date": "2026-07-22",
+     "what": "Communiqué T2 2026"
+    }
+   ]
+  },
+  {
+   "ticker": "CLS",
+   "name": "Celestica",
+   "exchange": "NYSE / TSX",
+   "currency": "USD",
+   "country": "Canada",
+   "sector": "Technology hardware / AI networking & servers (EMS/ODM)",
+   "megatrend": "1 Accélérateurs IA (infrastructure)",
+   "price": 361.43,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 41.71,
+   "fy_end_month": 12,
+   "eps_basis": "non-GAAP (adjusted EPS)",
+   "fy2025": 6.05,
+   "fy2026": 11.24,
+   "fy2027": 14.96,
+   "fy2028": 19.75,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 1.46,
+   "dividend_yield_pct": null,
+   "w52_low": 173.23,
+   "w52_high": 474.03,
+   "price_target": 477.22,
+   "zacks_rank": 1,
+   "zacks_rank_date": "2026-08",
+   "cyclical": true,
+   "one_offs_note": "Marge opérationnelle ajustée record 8,2 % au T2 2026 ; activité EMS historiquement cyclique (concentration hyperscalers).",
+   "latest_results_summary": "T2 2026 : BPA ajusté 2,54 $ vs 2,29 $ (consensus Zacks) ; marge opérationnelle ajustée 8,2 % (record) ; nouvelle hausse de guidance (« beat-and-raise »).",
+   "guidance": "2026 : revenus 20,5 Md$ (vs 19 Md$), BPA ajusté 11,30 $ (vs 10,15 $), soit +65 % / +87 % ; 2027 : croissance des revenus supérieure aux +65 % de 2026, BPA ajusté croissant plus vite que les revenus.",
+   "ceo_quote": {
+    "original": "[adjusted operating margin of 8.2%] represents another new high for the company, demonstrating the strength of our execution",
+    "french": "[la marge opérationnelle ajustée de 8,2 %] représente un nouveau record pour l'entreprise, démontrant la solidité de notre exécution",
+    "date": "2026-07",
+    "source": "https://corporate.celestica.com/news-releases/news-release-details/celestica-announces-second-quarter-2026-financial-results"
+   },
+   "thesis_short": "Fournisseur de commutateurs 800G/1,6T et serveurs IA pour hyperscalers ; BPA x2,5 2025→2027 au consensus, PER prospectif modéré.",
+   "key_risk": "Concentration clients, marges fines d'un EMS, cyclicité ; risque de normalisation si les hyperscalers internalisent.",
+   "notes": "Citation du CEO Rob Mionis reprise d'un résumé de communiqué (segment entre crochets reformulé). 2027 : 14,96 $ (20 analystes, 12,20-19,90) ; 2028 : ~19,75 $ consensus cité par Seeking Alpha. FY2025 réel : 6,05 $.",
+   "sources": [
+    {
+     "url": "https://stockanalysis.com/stocks/cls/statistics/",
+     "date": "2026-09-30",
+     "what": "Clôture 361,43 $, capitalisation 41,71 Md$, beta 1,46, 52 semaines 173,23-474,03, objectif 477,22 $"
+    },
+    {
+     "url": "https://seekingalpha.com/news/4619751-celestica-projects-20_5b-2026-revenue-and-11_30-adjusted-eps-as-it-outlines-2027-growth",
+     "date": "2026-07",
+     "what": "Guidance 2026 et perspectives 2027"
+    },
+    {
+     "url": "https://finance.yahoo.com/markets/stocks/articles/zacks-investment-ideas-feature-highlights-084500679.html",
+     "date": "2026-08",
+     "what": "Zacks Rank 1, +75 % 2026, +29 % 2027"
+    },
+    {
+     "url": "https://seekingalpha.com/article/4928501-celestica-q2-2026-beat-raise-accelerate-and-still-31-percent-off-the-high",
+     "date": "2026-08",
+     "what": "Consensus 2027 14,96 $ ; 2028 19,75 $"
+    }
+   ]
+  },
+  {
+   "ticker": "CRDO",
+   "name": "Credo Technology Group",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "country": "Cayman Islands / US",
+   "sector": "Semiconductors / AI connectivity (AEC, DSP optiques, retimers)",
+   "megatrend": "1 Accélérateurs IA (interconnexion)",
+   "price": 192.35,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 36.21,
+   "fy_end_month": 4,
+   "eps_basis": "non-GAAP",
+   "fy2025": null,
+   "fy2026": null,
+   "fy2027": 6.17,
+   "fy2028": 9.14,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 3.22,
+   "dividend_yield_pct": null,
+   "w52_low": 86.48,
+   "w52_high": 308.67,
+   "price_target": 280.1,
+   "zacks_rank": null,
+   "zacks_rank_date": "",
+   "cyclical": true,
+   "one_offs_note": "Clôture fiscale fin avril : FY2027 = exercice se terminant en avril 2027. Septième trimestre consécutif de croissance à trois chiffres ; concentration sur 4 hyperscalers.",
+   "latest_results_summary": "T1 FY2027 (clos ~2 août 2026, publié 01/09/2026) : revenu record 479,0 M$ (+115 % a/a, +10 % t/t), marge brute non-GAAP 68 %, résultat net non-GAAP 236,3 M$ (+140 %), BPA 1,20 $ vs 1,12 $ attendu.",
+   "guidance": "T2 FY2027 : revenus 525-535 M$ ; croissance FY2027 relevée à plus de 85 %.",
+   "ceo_quote": {
+    "original": "[Credo] delivered revenue of $479.0 million and non-GAAP net income of $236.3 million",
+    "french": "[Credo] a réalisé un chiffre d'affaires de 479,0 millions de dollars et un résultat net non-GAAP de 236,3 millions de dollars",
+    "date": "2026-09-01",
+    "source": "https://investors.credosemi.com/news-events/news/news-details/2026/Credo-Technology-Group-Holding-Ltd-Reports-First-Quarter-of-Fiscal-Year-2027-Financial-Results/"
+   },
+   "thesis_short": "Câbles électriques actifs (AEC) devenus standard des racks IA ; BPA +48 % attendu FY2027→FY2028.",
+   "key_risk": "Beta 3,22, concentration client extrême, risque de substitution optique/CPO.",
+   "notes": "BPA réel FY2026 (avril 2026) non capturé → null. Consensus FY2027 6,17 $ (18 analystes, 5,98-6,64) ; FY2028 9,14 $ (7,75-11,51). Citation du CEO Bill Brennan reprise d'un résumé du communiqué. Objectif : 280,1 $ (StockAnalysis), 264,89 $ (MarketBeat).",
+   "sources": [
+    {
+     "url": "https://www.investing.com/equities/credo-technology-holding",
+     "date": "2026-09-30",
+     "what": "Prix 192,35 $, capitalisation 36,21 Md$, 52 semaines 86,48-308,67, beta 3,22"
+    },
+    {
+     "url": "https://stockanalysis.com/stocks/crdo/forecast/",
+     "date": "2026-09",
+     "what": "Objectif 280,1 $ ; consensus FY2027/FY2028"
+    },
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/1807794/000162828026059795/credoq12027ex-991.htm",
+     "date": "2026-09-01",
+     "what": "Communiqué T1 FY2027"
+    }
+   ]
+  },
+  {
+   "ticker": "ALAB",
+   "name": "Astera Labs",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Semiconductors / AI fabric (PCIe, Scorpio switches, retimers)",
+   "megatrend": "1 Accélérateurs IA (interconnexion)",
+   "price": 355.97,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 61.755,
+   "fy_end_month": 12,
+   "eps_basis": "non-GAAP",
+   "fy2025": 1.84,
+   "fy2026": 3.97,
+   "fy2027": 4.55,
+   "fy2028": 5.92,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 3.78,
+   "dividend_yield_pct": null,
+   "w52_low": 97.89,
+   "w52_high": 499.48,
+   "price_target": 389.95,
+   "zacks_rank": 1,
+   "zacks_rank_date": "2026-08",
+   "cyclical": false,
+   "one_offs_note": "BPA 2025 pro forma dilué non-GAAP 1,84 $ ; forte dilution potentielle (~185 M d'actions). Titre -13,9 % depuis les résultats T2.",
+   "latest_results_summary": "T2 2026 (04/08/2026) : revenu record 392,4 M$ (+27 % t/t, +104 % a/a), marge brute non-GAAP 73,7 %, marge opérationnelle non-GAAP 39,1 %, BPA non-GAAP 0,80 $ (+15,94 % vs consensus Zacks).",
+   "guidance": "T3 2026 : revenus 540-560 M$ (+40 % t/t au point médian, rampe Scorpio X-Series), BPA non-GAAP 1,16-1,21 $.",
+   "ceo_quote": {
+    "original": "We expect momentum to accelerate in Q3 as Scorpio fabric switches become our largest product family, one quarter ahead of our prior expectations. This milestone will mark our evolution into a complete AI fabric infrastructure provider.",
+    "french": "Nous attendons une accélération de la dynamique au T3, les commutateurs de fabric Scorpio devenant notre première famille de produits, un trimestre plus tôt que prévu. Cette étape marquera notre évolution vers un fournisseur complet d'infrastructure de fabric IA.",
+    "date": "2026-08-04",
+    "source": "https://ir.asteralabs.com/news-releases/news-release-details/astera-labs-reports-second-quarter-2026-financial-results"
+   },
+   "thesis_short": "Connectivité PCIe/CXL/UALink au cœur des racks Nvidia et ASIC ; guidance T3 implique un BPA annualisé bien supérieur au consensus 2026.",
+   "key_risk": "Beta 3,78 ; dispersion extrême du consensus 2027 (3,43-8,12 $) ; dépendance à Nvidia/AWS.",
+   "notes": "Consensus : 2026 3,97 $ (Zacks), 2027 4,55 $ (3,43-8,12), 2028 5,92 $ (3,49-10,20). Objectif 389,95 $ (Yahoo), 348,47 $ (WallStreetZen).",
+   "sources": [
+    {
+     "url": "https://finance.yahoo.com/quote/ALAB/",
+     "date": "2026-09-30",
+     "what": "Clôture 355,97 $, capitalisation 61,755 Md$, 52 semaines 97,89-499,48, beta 3,78, objectif 389,95 $"
+    },
+    {
+     "url": "https://www.tradingview.com/news/zacks:73c7ed5bb094b:0-why-zacks-rank-1-astera-labs-is-primed-for-growth/",
+     "date": "2026-08",
+     "what": "Zacks Rank 1 ; consensus 2026 3,97 $"
+    },
+    {
+     "url": "https://ir.asteralabs.com/news-releases/news-release-details/astera-labs-reports-fourth-quarter-and-full-year-2025-financial",
+     "date": "2026-02-10",
+     "what": "FY2025 : revenu 852,5 M$, BPA non-GAAP pro forma 1,84 $"
+    }
+   ]
+  },
+  {
+   "ticker": "ANET",
+   "name": "Arista Networks",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Networking / AI & cloud switching",
+   "megatrend": "1 Accélérateurs IA (réseau)",
+   "price": 204.09,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 256.823,
+   "fy_end_month": 12,
+   "eps_basis": "non-GAAP",
+   "fy2025": 2.98,
+   "fy2026": 4.11,
+   "fy2027": 5.19,
+   "fy2028": 5.03,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 1.62,
+   "dividend_yield_pct": null,
+   "w52_low": 114.52,
+   "w52_high": 214.89,
+   "price_target": 230.74,
+   "zacks_rank": 1,
+   "zacks_rank_date": "2026-09",
+   "cyclical": false,
+   "one_offs_note": "Pas de dividende. Valeur 2028 issue d'un seul analyste (Seeking Alpha), non consensus.",
+   "latest_results_summary": "T2 2026 (04/08/2026) : premier trimestre à 3 Md$ (3,04 Md$ vs 2,83 Md$ attendu), BPA non-GAAP 1,02 $ (+39,7 %) vs 0,88 $, BPA GAAP 0,95 $ ; titre +12 %.",
+   "guidance": "FY2026 : revenus relevés à 12,6 Md$ (+40 %) ; T3 : ~3,3 Md$, marge brute non-GAAP ~63 %, marge opérationnelle 48-49 %, BPA 1,06-1,08 $.",
+   "ceo_quote": {
+    "original": "As we deliver our first $3 billion quarter in Q2 2026, it is clear that our Arista 2.0 platform strategy is compelling. Customers see networking as the central nervous system for infrastructure from the client to campus to data and AI centers.",
+    "french": "Alors que nous réalisons notre premier trimestre à 3 milliards de dollars au T2 2026, il est clair que notre stratégie de plateforme Arista 2.0 est convaincante. Les clients voient le réseau comme le système nerveux central de l'infrastructure, du poste client au campus jusqu'aux centres de données et d'IA.",
+    "date": "2026-08-04",
+    "source": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000174/ex991q226-earningsrelease.htm"
+   },
+   "thesis_short": "Leader du switching Ethernet IA (back-end et front-end), marge opérationnelle ~48 % ; BPA +38 % 2026 puis +26 % 2027.",
+   "key_risk": "Concentration Meta/Microsoft/Oracle ; concurrence Nvidia Spectrum-X et white boxes ; titre proche du plus haut 52 semaines.",
+   "notes": "Consensus 2026 4,11 $ (4,05-4,22) et 2027 5,19 $ (4,66-5,73) chez StockAnalysis ; un article Barchart plus ancien cite 3,27 $/3,97 $ (base différente, écarté). Objectif 230,74 $ (22 brokers, 30/09/2026), Yahoo 242,21 $.",
+   "sources": [
+    {
+     "url": "https://finance.yahoo.com/quote/ANET/",
+     "date": "2026-09-30",
+     "what": "Clôture 204,09 $, capitalisation 256,823 Md$, 52 semaines 114,52-214,89, beta 1,62"
+    },
+    {
+     "url": "https://www.marketbeat.com/instant-alerts/consensus-arista-networks-inc-nyse-anet-stock-has-consensus-price-target-of-23074-according-to-brokerages-2026-09-30/",
+     "date": "2026-09-30",
+     "what": "Objectif consensus 230,74 $"
+    },
+    {
+     "url": "https://stockanalysis.com/stocks/anet/forecast/",
+     "date": "2026-09",
+     "what": "Consensus 2026/2027"
+    },
+    {
+     "url": "https://finance.yahoo.com/technology/ai/articles/bull-day-arista-networks-inc-080000201.html",
+     "date": "2026-09",
+     "what": "Zacks Rank 1"
+    },
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/1596532/000159653226000010/ex991q425-earningsrelease.htm",
+     "date": "2026-02",
+     "what": "FY2025 : BPA non-GAAP 2,98 $, revenu 9 Md$"
+    }
+   ]
+  },
+  {
+   "ticker": "NBIS",
+   "name": "Nebius Group",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "country": "Netherlands",
+   "sector": "AI cloud / neocloud",
+   "megatrend": "1 Accélérateurs IA (néocloud)",
+   "price": 241.88,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 66.3,
+   "fy_end_month": 12,
+   "eps_basis": "GAAP (pertes) ; ajusté publié par la société",
+   "fy2025": null,
+   "fy2026": -2.17,
+   "fy2027": -0.99,
+   "fy2028": 0.06,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 1.46,
+   "dividend_yield_pct": null,
+   "w52_low": 73.52,
+   "w52_high": 299.86,
+   "price_target": 283.58,
+   "zacks_rank": null,
+   "zacks_rank_date": "",
+   "cyclical": true,
+   "one_offs_note": "Pertes nettes (T2 2026 : -190,4 M$, -0,68 $/action ; ajusté -0,12 $) : PEG non calculable. Capex 2026 20-25 Md$.",
+   "latest_results_summary": "T2 2026 (12/08/2026) : revenu 582,3 M$ (+454 % a/a, +46 % t/t) vs 572,75 M$ (LSEG) ; ARR 3,0 Md$ fin juin (+598 %) ; perte nette GAAP 190,4 M$.",
+   "guidance": "2026 réaffirmé : ARR 7-9 Md$, revenus 3-3,4 Md$, marge EBITDA ajustée ~40 %, capex 20-25 Md$.",
+   "ceo_quote": {
+    "original": "We closed our largest AI Cloud deals on our strongest terms to date, at prices that represent a step-change in the economics of our business,",
+    "french": "Nous avons conclu nos plus gros contrats de cloud IA à nos meilleures conditions à ce jour, à des prix qui représentent un changement d'échelle dans l'économie de notre activité,",
+    "date": "2026-08-12",
+    "source": "https://nebius.com/newsroom/nebius-reports-second-quarter-2026-financial-results"
+   },
+   "thesis_short": "Néocloud européen avec contrats pluriannuels (Microsoft, Meta) ; levier opérationnel attendu 2027-2028.",
+   "key_risk": "Pertes jusqu'en 2027 au consensus, capex massif financé par dette/actions, dépendance Nvidia.",
+   "notes": "Consensus StockAnalysis : 2026 -2,17 $ (-3,63 à 1,20), 2027 -0,99 $ (-4,46 à 3,11), 2028 0,06 $ (-2,52 à 4,54). Exclu de facto du PEG (bénéfices négatifs).",
+   "sources": [
+    {
+     "url": "https://stockanalysis.com/stocks/nbis/",
+     "date": "2026-09-30",
+     "what": "Clôture 241,88 $, capitalisation 66,30 Md$, 52 semaines 73,52-299,86, beta 1,46, objectif 283,58 $"
+    },
+    {
+     "url": "https://finance.yahoo.com/technology/ai/articles/nebius-q2-2026-earnings-beat-130010966.html",
+     "date": "2026-08-12",
+     "what": "Résultats T2 2026"
+    },
+    {
+     "url": "https://stockanalysis.com/stocks/nbis/forecast/",
+     "date": "2026-09",
+     "what": "Consensus BPA 2026-2028"
+    }
+   ]
+  },
+  {
+   "ticker": "CRWV",
+   "name": "CoreWeave",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "country": "US",
+   "sector": "AI cloud / neocloud",
+   "megatrend": "1 Accélérateurs IA (néocloud)",
+   "price": 87.12,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 48.05,
+   "fy_end_month": 12,
+   "eps_basis": "GAAP / ajusté (pertes)",
+   "fy2025": null,
+   "fy2026": -3.57,
+   "fy2027": -1.3,
+   "fy2028": 2.33,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 7.45,
+   "dividend_yield_pct": null,
+   "w52_low": 60.55,
+   "w52_high": 153.2,
+   "price_target": 138.78,
+   "zacks_rank": null,
+   "zacks_rank_date": "",
+   "cyclical": true,
+   "one_offs_note": "Pertes (T2 2026 : -1,14 $/action ajusté) et charges d'intérêts élevées ; capitalisation citée de 39,98 à 48,05 Md$ selon les sources.",
+   "latest_results_summary": "T2 2026 (11/08/2026) : revenus 2,6 Md$ (+112 % a/a, +24 % t/t) vs 2,56 Md$ attendu ; backlog 104 Md$ (+246 %) hors >25 Md$ de nouveaux engagements début T3 ; EBITDA ajusté 1,5 Md$ (59 %) ; perte ajustée 1,14 $/action vs -1,41 $ attendu ; titre +13,5 %.",
+   "guidance": "2026 : revenus 12,4-13,2 Md$, résultat opérationnel ajusté 960 M$-1,15 Md$.",
+   "ceo_quote": {
+    "original": "Q2 was an exceptional quarter for CoreWeave. We outperformed our plan across the board with the operating leverage we have been building beginning to show up clearly in our results,",
+    "french": "Le T2 a été un trimestre exceptionnel pour CoreWeave. Nous avons dépassé notre plan sur toute la ligne, le levier opérationnel que nous construisons commençant à apparaître clairement dans nos résultats,",
+    "date": "2026-08-11",
+    "source": "https://www.cnbc.com/2026/08/11/coreweave-crwv-q2-earnings-report-2026.html"
+   },
+   "thesis_short": "Premier néocloud ; backlog 104 Md$ ; passage au profit attendu en 2028.",
+   "key_risk": "Beta 7,45, endettement, dépendance OpenAI/Microsoft, pression réglementaire évoquée par le CEO.",
+   "notes": "Consensus StockAnalysis : 2026 -3,57 $ (-5,59 à -2,18), 2027 -1,30 $, 2028 2,33 $ (-1,56 à 6,04) ; trimestriels : T3 2026 0,09 $, T4 0,20 $. Exclu de facto du PEG.",
+   "sources": [
+    {
+     "url": "https://www.investing.com/equities/coreweave",
+     "date": "2026-09-30",
+     "what": "Clôture 87,12 $ (+1,38 %), capitalisation 48,05 Md$, 52 semaines 60,55-153,20, beta 7,45"
+    },
+    {
+     "url": "https://www.marketbeat.com/instant-alerts/price-coreweave-nasdaq-crwv-shares-climb-14-heres-why-2026-09-30/",
+     "date": "2026-09-30",
+     "what": "Objectif 138,78 $"
+    },
+    {
+     "url": "https://www.investing.com/news/company-news/coreweave-q2-2026-slides-revenue-doubles-backlog-surges-246-93CH-4852949",
+     "date": "2026-08-11",
+     "what": "Résultats T2 2026"
+    },
+    {
+     "url": "https://stockanalysis.com/stocks/crwv/forecast/",
+     "date": "2026-09",
+     "what": "Consensus BPA"
+    }
+   ]
+  },
+  {
+   "ticker": "ORCL",
+   "name": "Oracle",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Software / cloud infrastructure (OCI)",
+   "megatrend": "1 Accélérateurs IA (cloud)",
+   "price": 137.69,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 415.5,
+   "fy_end_month": 5,
+   "eps_basis": "non-GAAP",
+   "fy2025": null,
+   "fy2026": 7.63,
+   "fy2027": 8.16,
+   "fy2028": 11.02,
+   "fy2029": 16.29,
+   "ltg_pct": null,
+   "beta": 1.73,
+   "dividend_yield_pct": 1.45,
+   "w52_low": 114.5,
+   "w52_high": 322.54,
+   "price_target": 237.97,
+   "zacks_rank": null,
+   "zacks_rank_date": "",
+   "cyclical": false,
+   "one_offs_note": "FY2026 (mai 2026) : BPA non-GAAP 7,63 $ inclut des plus-values exceptionnelles (cession Ampere, warrants Bloom Energy) ; hors éléments non récurrents 6,83 $ (+13 %). Capex FY2027 jusqu'à ~95 Md$ brut (≤70 Md$ net) → FCF négatif ; titre -59 % depuis son plus haut.",
+   "latest_results_summary": "T1 FY2027 (10/09/2026) : revenus 19,3 Md$ (+30 %), BPA GAAP 1,56 $ (+55 %), BPA non-GAAP 1,92 $ (+30 %), cloud 11,6 Md$ (+62 %), OCI 7,4 Md$ (+121 %), RPO 664 Md$ (+209 Md$ a/a).",
+   "guidance": "FY2027 : revenus ≥90 Md$, BPA non-GAAP 8,10 $ ; capex FY2027 jusqu'à ~95 Md$ brut, ≤70 Md$ net après prépaiements.",
+   "ceo_quote": {
+    "original": null,
+    "french": null,
+    "date": null,
+    "source": null
+   },
+   "thesis_short": "RPO de 664 Md$ (OpenAI/Stargate) et OCI +121 % ; PER prospectif tombé sous 17x le BPA FY2027 après la chute du titre.",
+   "key_risk": "Financement de ~95 Md$ de capex (dette), concentration OpenAI, exécution ; dividende 1,45 %.",
+   "notes": "Aucune citation verbatim des co-CEO Clay Magouyrk / Mike Sicilia trouvée (deux recherches) ; le communiqué du 10/09/2026 indique 850 MW de capacité IA livrés (>300 000 GPU) et >30 Md$ de nouveaux contrats IA dans le trimestre. Consensus StockAnalysis : FY2027 8,16 $ (5,97-9,72), FY2028 11,02 $ (8,11-14,94), FY2029 16,29 $ (14,74-17,94). Objectif 237,97 $ (43 analystes S&P Global).",
+   "sources": [
+    {
+     "url": "https://www.investing.com/equities/oracle-corp",
+     "date": "2026-09-30",
+     "what": "Prix 137,69 $ (clôture précédente 137,79), capitalisation 415,5 Md$, 52 semaines 114,50-322,54, beta 1,73, dividende 2,00 $ (1,45 %)"
+    },
+    {
+     "url": "https://investor.oracle.com/investor-news/news-details/2026/Oracle-Announces-Q1-Results-Driven-by-Triple-Digit-Growth-in-Cloud-Infrastructure-Revenues/default.aspx",
+     "date": "2026-09-10",
+     "what": "Résultats T1 FY2027 et guidance FY2027"
+    },
+    {
+     "url": "https://www.oracle.com/news/announcement/q4fy26-earnings-release-2026-06-10/",
+     "date": "2026-06-10",
+     "what": "FY2026 : BPA non-GAAP 7,63 $ (6,83 $ hors éléments exceptionnels)"
+    },
+    {
+     "url": "https://stockanalysis.com/stocks/orcl/forecast/",
+     "date": "2026-09",
+     "what": "Consensus FY2027-FY2029, objectif 237,97 $"
+    }
+   ]
+  },
+  {
+   "ticker": "LLY",
+   "name": "Eli Lilly",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Pharma / GLP-1 & obesity",
+   "megatrend": "8 GLP-1 / biotech",
+   "price": 1157.08,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 1032.0,
+   "fy_end_month": 12,
+   "eps_basis": "non-GAAP",
+   "fy2025": 24.21,
+   "fy2026": 36.71,
+   "fy2027": 47.23,
+   "fy2028": 52.29,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 0.5,
+   "dividend_yield_pct": 0.58,
+   "w52_low": 783.85,
+   "w52_high": 1292.65,
+   "price_target": 1333.65,
+   "zacks_rank": null,
+   "zacks_rank_date": "",
+   "cyclical": false,
+   "one_offs_note": "Charges d'IPR&D acquises exclues du non-GAAP ; accords de prix TrumpRx (245-350 $/mois) et Medicare dès mi-2026.",
+   "latest_results_summary": "T2 2026 (05/08/2026) : revenus 23,0 Md$ (+48 %, Mounjaro/Zepbound) ; guidance annuelle relevée.",
+   "guidance": "2026 : revenus 85-87 Md$, BPA non-GAAP 35,50-37,00 $ (guidance initiale février : 33,50-35,00 $).",
+   "ceo_quote": {
+    "original": "Lilly's momentum continues, as we delivered 48% revenue growth and raised our full-year guidance,",
+    "french": "La dynamique de Lilly se poursuit : nous avons réalisé une croissance de 48 % du chiffre d'affaires et relevé nos prévisions annuelles,",
+    "date": "2026-08-05",
+    "source": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-second-quarter-2026-financial-results-raises-full"
+   },
+   "thesis_short": "Leader GLP-1 (injectable + oral Foundayo lancé en avril 2026) ; BPA +52 % en 2026 puis +29 % en 2027 au consensus, beta 0,50.",
+   "key_risk": "Baisse des prix unitaires (TrumpRx, MFN), concurrence, multiple élevé sur 1 000 Md$ de capitalisation.",
+   "notes": "Consensus 2026 36,71 $ et 2027 47,23 $ (30 analystes S&P Global) ; 2028 : 52,29 $ (43,09-62,22) chez StockAnalysis, 51,34 $ autre source. JPM objectif 1 500 $ (28/09/2026). Zacks Rank non trouvé.",
+   "sources": [
+    {
+     "url": "https://finance.yahoo.com/quote/LLY/",
+     "date": "2026-09-30",
+     "what": "Clôture 1 157,08 $ (-2,33 %), capitalisation 1,032 T$, 52 semaines 783,85-1 292,65, beta 0,50, dividende 6,92 $ (0,58 %)"
+    },
+    {
+     "url": "https://stockanalysis.com/stocks/lly/forecast/",
+     "date": "2026-09",
+     "what": "Consensus 2026-2028, objectif 1 333,65 $"
+    },
+    {
+     "url": "https://investor.lilly.com/news-releases/news-release-details/lilly-reports-fourth-quarter-2025-financial-results-and-provides",
+     "date": "2026-02-04",
+     "what": "BPA non-GAAP 2025 : 24,21 $"
+    },
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/0000059478/000005947826000077/q226lillysalesandearningsp.htm",
+     "date": "2026-08-05",
+     "what": "8-K T2 2026"
+    }
+   ]
+  },
+  {
+   "ticker": "UBER",
+   "name": "Uber Technologies",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Mobility & delivery platform",
+   "megatrend": "5 IA physique (robotaxi)",
+   "price": 68.51,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 139.936,
+   "fy_end_month": 12,
+   "eps_basis": "GAAP diluted EPS (consensus) ; non-GAAP EPS publié par la société",
+   "fy2025": 4.73,
+   "fy2026": 3.19,
+   "fy2027": 4.56,
+   "fy2028": 5.73,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 1.16,
+   "dividend_yield_pct": null,
+   "w52_low": 65.41,
+   "w52_high": 101.29,
+   "price_target": 104.0,
+   "zacks_rank": 3,
+   "zacks_rank_date": "2026-09",
+   "cyclical": false,
+   "one_offs_note": "BPA GAAP 2025 (4,73 $) et T2 2026 (1,17 $ vs 0,81 $ non-GAAP) gonflés par les réévaluations de participations et effets fiscaux : le recul apparent 2025→2026 n'est pas opérationnel.",
+   "latest_results_summary": "T2 2026 (05/08/2026) : réservations brutes +22 % (change constant), trajets +18 %, résultat opérationnel GAAP 1,9 Md$, non-GAAP 2,1 Md$ (+40 %), BPA GAAP 1,17 $, BPA non-GAAP 0,81 $ (+35 %) ; guidance T3 sous le consensus, titre en baisse.",
+   "guidance": "Guidance T3 2026 inférieure aux attentes (Yahoo Finance) ; investissement accru dans la plateforme AV.",
+   "ceo_quote": {
+    "original": "Uber's platform advantage continues to compound: record consumers and engagement, and profitable growth across our business. In fact, we've added more first-time users over the past twelve months than in any period over the past five years.",
+    "french": "L'avantage de plateforme d'Uber continue de se renforcer : consommateurs et engagement records, croissance rentable dans toute l'activité. De fait, nous avons ajouté plus de nouveaux utilisateurs au cours des douze derniers mois qu'à toute autre période des cinq dernières années.",
+    "date": "2026-08-05",
+    "source": "https://www.sec.gov/Archives/edgar/data/0001543151/000154315126000027/uberq226earningspressrelea.htm"
+   },
+   "thesis_short": "Agrégateur de demande pour >30 partenaires AV ; titre proche du plus bas 52 semaines, PER ~15x le BPA 2027.",
+   "key_risk": "Désintermédiation par Waymo (fin du partenariat Phoenix) et Tesla ; guidance décevante.",
+   "notes": "Consensus 2026 3,19 $ / 2027 4,56 $ (Zacks via Yahoo) ; 2028 : 5,73 $ (WallStreetZen, 3,60-7,40), 5,482 $ (MarketScreener), 6,69 $ (Fintel). Objectif moyen ~104 $ (TIKR), UBS 107 $.",
+   "sources": [
+    {
+     "url": "https://finance.yahoo.com/quote/UBER/",
+     "date": "2026-09-30",
+     "what": "Clôture 68,51 $, capitalisation 139,936 Md$, 52 semaines 65,41-101,29, beta 1,16"
+    },
+    {
+     "url": "https://www.tikr.com/blog/uber-stock-price-target-why-wall-street-sees-around-48-upside-from-here-in-2026",
+     "date": "2026",
+     "what": "Objectif moyen ~104 $"
+    },
+    {
+     "url": "https://finance.yahoo.com/markets/stocks/articles/uber-technologies-inc-uber-attracting-130006328.html",
+     "date": "2026-09",
+     "what": "Consensus 2026/2027, Zacks Rank 3"
+    },
+    {
+     "url": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Results-for-Fourth-Quarter-and-Full-Year-2025/default.aspx",
+     "date": "2026-02-04",
+     "what": "BPA GAAP 2025 : 4,73 $"
+    }
+   ]
+  },
+  {
+   "ticker": "RDDT",
+   "name": "Reddit",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Internet / advertising & data licensing",
+   "megatrend": "1 Accélérateurs IA (données) / plateformes",
+   "price": 142.44,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 27.4,
+   "fy_end_month": 12,
+   "eps_basis": "GAAP diluted EPS",
+   "fy2025": 2.62,
+   "fy2026": 5.35,
+   "fy2027": 6.98,
+   "fy2028": null,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 2.05,
+   "dividend_yield_pct": null,
+   "w52_low": 119.27,
+   "w52_high": 263.5,
+   "price_target": 213.71,
+   "zacks_rank": 3,
+   "zacks_rank_date": "2026-09",
+   "cyclical": false,
+   "one_offs_note": "Résultat net 2025 (530 M$) inclut des effets fiscaux ; revenus de licences de données IA ponctuels possibles.",
+   "latest_results_summary": "T2 2026 (30/07/2026) : revenus 805 M$ (+61 %, 8e trimestre consécutif >60 %), résultat net 253 M$ (31 %), BPA dilué 1,25 $ (x2), EBITDA ajusté 343 M$ (43 %, +106 %).",
+   "guidance": "Non chiffrée dans les sources consultées.",
+   "ceo_quote": {
+    "original": "In an increasingly automated web, the value of real human perspective has never been higher. Reddit's commercial momentum reflects that,",
+    "french": "Dans un web de plus en plus automatisé, la valeur d'un point de vue humain réel n'a jamais été aussi élevée. La dynamique commerciale de Reddit le reflète,",
+    "date": "2026-07-30",
+    "source": "https://www.sec.gov/Archives/edgar/data/0001713445/000171344526000098/earningspressreleaseq226.htm"
+   },
+   "thesis_short": "Croissance >60 % avec marge nette 31 % ; titre à -46 % du plus haut, PER ~20x le BPA 2027.",
+   "key_risk": "Dépendance au trafic Google/IA, volatilité de la publicité, beta 2,05.",
+   "notes": "Consensus StockAnalysis : 2026 5,35 $ (27 analystes, 4,76-5,98), 2027 6,98 $ (28, 4,35-8,59) ; 2028 non disponible.",
+   "sources": [
+    {
+     "url": "https://stockanalysis.com/stocks/rddt/",
+     "date": "2026-09-30",
+     "what": "Clôture 142,44 $, capitalisation 27,40 Md$, 52 semaines 119,27-263,50, beta 2,05, objectif 213,71 $"
+    },
+    {
+     "url": "https://stockanalysis.com/stocks/rddt/forecast/",
+     "date": "2026-09",
+     "what": "Consensus 2026/2027"
+    },
+    {
+     "url": "https://s203.q4cdn.com/380862485/files/doc_financials/2025/q4/Q4-25-Earnings-Press-Release.pdf",
+     "date": "2026-02",
+     "what": "FY2025 : revenu 2,2 Md$ (+69 %), BPA dilué 2,62 $"
+    }
+   ]
+  },
+  {
+   "ticker": "HOOD",
+   "name": "Robinhood Markets",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Financials / retail brokerage & crypto",
+   "megatrend": "7 Finance digitale (plateformes)",
+   "price": 116.22,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 104.71,
+   "fy_end_month": 12,
+   "eps_basis": "GAAP diluted EPS",
+   "fy2025": 2.05,
+   "fy2026": 2.08,
+   "fy2027": 2.75,
+   "fy2028": 2.96,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 2.34,
+   "dividend_yield_pct": null,
+   "w52_low": 63.52,
+   "w52_high": 153.86,
+   "price_target": 131.08,
+   "zacks_rank": 1,
+   "zacks_rank_date": "2026-09",
+   "cyclical": true,
+   "one_offs_note": "Résultats très sensibles aux volumes de trading et au crypto ; BPA 2024 incluait 0,47 $ d'éléments exceptionnels (reprise fiscale/réglementaire).",
+   "latest_results_summary": "T2 2026 (29/07/2026) : revenus records 1,3 Md$ (+32 %), BPA dilué 0,62 $ vs 0,44 $ attendu.",
+   "guidance": "Pas de guidance chiffrée ; produits : Robinhood Chain, Robinhood Ventures, Trump Accounts, contrats KPI Cboe en octobre.",
+   "ceo_quote": {
+    "original": "Whether it's the Robinhood Chain, Robinhood Ventures, or Trump Accounts, our product velocity is focused on one goal: making everyone an owner. Broad ownership is essential to a free, stable, and prosperous society.",
+    "french": "Qu'il s'agisse de Robinhood Chain, Robinhood Ventures ou des Trump Accounts, notre vitesse de lancement de produits vise un seul objectif : faire de chacun un propriétaire. Une large détention d'actifs est essentielle à une société libre, stable et prospère.",
+    "date": "2026-07-29",
+    "source": "https://investors.robinhood.com/node/16381/pdf"
+   },
+   "thesis_short": "Plateforme de courtage/crypto à forte croissance ; BPA 2027 +32 % au consensus.",
+   "key_risk": "Cyclicité des volumes, réglementation crypto, beta 2,34 ; clôture du 30/09 contradictoire selon les sources (116,22 $ vs ~112 $).",
+   "notes": "Consensus StockAnalysis : 2026 2,08 $, 2027 2,75 $, 2028 2,96 $. Zacks Rank 1 (récent) contre 3 en juillet 2026.",
+   "sources": [
+    {
+     "url": "https://stockanalysis.com/stocks/hood/",
+     "date": "2026-09-30",
+     "what": "Clôture 116,22 $, capitalisation 104,71 Md$, 52 semaines 63,52-153,86, beta 2,34, objectif 131,08 $"
+    },
+    {
+     "url": "https://www.tradingkey.com/news/market-movers/262194732-market-movers-hood-20260930",
+     "date": "2026-09-30",
+     "what": "Titre -3,06 % le 30/09"
+    },
+    {
+     "url": "https://investors.robinhood.com/news-releases/news-release-details/robinhood-reports-fourth-quarter-and-full-year-2025-results",
+     "date": "2026-02-10",
+     "what": "BPA dilué 2025 : 2,05 $, revenus 4,47 Md$ (+52 %)"
+    }
+   ]
+  },
+  {
+   "ticker": "CVNA",
+   "name": "Carvana",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Consumer / online used-car retail",
+   "megatrend": "7 Plateformes (consommation)",
+   "price": 62.54,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 69.323,
+   "fy_end_month": 12,
+   "eps_basis": "GAAP diluted EPS",
+   "fy2025": null,
+   "fy2026": 1.58,
+   "fy2027": 2.03,
+   "fy2028": 3.25,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 3.5,
+   "dividend_yield_pct": null,
+   "w52_low": 54.46,
+   "w52_high": 97.38,
+   "price_target": 84.05,
+   "zacks_rank": 3,
+   "zacks_rank_date": "2026-09",
+   "cyclical": true,
+   "one_offs_note": "Prix et BPA post-division d'actions (objectif Oppenheimer passé de 450 à 90 $) ; résultats sensibles au crédit auto et aux prix de l'occasion.",
+   "latest_results_summary": "T2 2026 (29/07/2026) : résultat net 513 M$ (+205 M$), 197 325 véhicules vendus (+38 %), BPA 0,42 $ vs 0,41 $, revenus 7,38 Md$ vs 6,91 Md$ attendu ; titre -20 % après une guidance EBITDA sous les attentes.",
+   "guidance": "2026 : EBITDA ajusté 2,7-3,0 Md$ (consensus 3,0-3,2 Md$ Deutsche Bank, 4,45 Md$ Morgan Stanley) ; objectif 3 M de véhicules/an et 13,5 % de marge à horizon 2030-2035.",
+   "ceo_quote": {
+    "original": "Q2 2026 was Carvana's 10th consecutive quarter of industry-leading growth and profitability, and it was made possible by the foundations we laid in the 10 years prior. At Carvana's current run-rate scale of almost 800k retail units and over $2 billion Net income, we are still just 1.5% of the U.S. automotive market.",
+    "french": "Le T2 2026 a été le dixième trimestre consécutif de croissance et de rentabilité leaders du secteur pour Carvana, rendu possible par les fondations posées au cours des dix années précédentes. Au rythme actuel de près de 800 000 véhicules vendus au détail et de plus de 2 milliards de dollars de résultat net, nous ne représentons encore que 1,5 % du marché automobile américain.",
+    "date": "2026-07-29",
+    "source": "https://www.sec.gov/Archives/edgar/data/0001690820/000169082026000054/ex99_2q22026.htm"
+   },
+   "thesis_short": "Croissance unitaire +38 % avec part de marché 1,5 % ; BPA 2028 x2 vs 2026.",
+   "key_risk": "Cycle du crédit auto, beta 3,50, incohérence entre guidance et attentes des analystes.",
+   "notes": "Consensus : 2026 1,58 $ (MarketBeat) ; 2027 1,99-2,03 $ (Zacks Research) ; 2028 3,25 $ (Zacks Research, 01/06/2026). BPA 2025 réel non capturé sur base post-division.",
+   "sources": [
+    {
+     "url": "https://finance.yahoo.com/quote/CVNA/",
+     "date": "2026-09-30",
+     "what": "Clôture 62,54 $ (-1,70 %), capitalisation 69,323 Md$, 52 semaines 54,46-97,38, beta 3,50, objectif 84,05 $"
+    },
+    {
+     "url": "https://www.cnbc.com/2026/07/29/carvana-cvna-earnings-q2-2026.html",
+     "date": "2026-07-29",
+     "what": "Résultats T2 2026"
+    },
+    {
+     "url": "https://www.marketbeat.com/instant-alerts/fy2027-eps-estimates-for-carvana-increased-by-zacks-research-2026-06-01/",
+     "date": "2026-06-01",
+     "what": "Zacks FY2027 1,99 $, FY2028 3,25 $"
+    }
+   ]
+  },
+  {
+   "ticker": "DUOL",
+   "name": "Duolingo",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Consumer internet / edtech",
+   "megatrend": "7 Plateformes (consommation)",
+   "price": 142.4,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 6.66,
+   "fy_end_month": 12,
+   "eps_basis": "non-GAAP (adjusted EPS) selon consensus Yahoo",
+   "fy2025": null,
+   "fy2026": 6.61,
+   "fy2027": 7.64,
+   "fy2028": null,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 0.89,
+   "dividend_yield_pct": null,
+   "w52_low": 87.89,
+   "w52_high": 353.0,
+   "price_target": 134.29,
+   "zacks_rank": null,
+   "zacks_rank_date": "",
+   "cyclical": false,
+   "one_offs_note": "Yahoo signale une surprise de -19,66 % sur le dernier trimestre, en contradiction avec le BPA ajusté 0,66 $ vs 0,58 $ attendu publié le 05/08/2026 : base de BPA différente possible.",
+   "latest_results_summary": "T2 2026 (05/08/2026) : revenus 298,5 M$ (+18 %), BPA ajusté 0,66 $ vs 0,58 $, DAU +23 % (accélération) ; guidance T3 (302 M$) sous le consensus (303,9 M$), titre en baisse.",
+   "guidance": "2026 : croissance des revenus ~16 %, marge EBITDA ajustée relevée à 26,5 %, DAU >20 % de croissance ; objectif 100 M de DAU en 2028.",
+   "ceo_quote": {
+    "original": "Q2 was a strong quarter, with DAU growth of 23% compared to the prior year, an acceleration from Q1. Our ambition is to teach a billion people, and every step we take toward a better product brings us closer to that goal.",
+    "french": "Le T2 a été un trimestre solide, avec une croissance des utilisateurs actifs quotidiens de 23 % sur un an, en accélération par rapport au T1. Notre ambition est d'enseigner à un milliard de personnes, et chaque pas vers un meilleur produit nous en rapproche.",
+    "date": "2026-08-05",
+    "source": "https://investors.duolingo.com/news-releases/news-release-details/duolingo-reports-second-quarter-2026-results"
+   },
+   "thesis_short": "Titre -60 % du plus haut, PER ~19x le BPA 2027 pour +16 % de croissance : PEG > 1, intérêt limité.",
+   "key_risk": "Décélération des revenus, substitution par les assistants IA, guidance décevante.",
+   "notes": "Consensus Yahoo (7 analystes) : 2026 6,61 $ (6,44-6,93), 2027 7,64 $ (7,14-7,92) ; 2028 non disponible. Objectif moyen 134,29 $ (18 analystes, 80-210) ; DA Davidson 175 $.",
+   "sources": [
+    {
+     "url": "https://www.cnn.com/markets/stocks/DUOL",
+     "date": "2026-09-30",
+     "what": "Clôture 142,40 $, capitalisation 6,66 Md$, 52 semaines 87,89-353,00, beta 0,89"
+    },
+    {
+     "url": "https://www.investing.com/equities/duolingo-consensus-estimates",
+     "date": "2026-09",
+     "what": "Objectif moyen 134,29 $"
+    },
+    {
+     "url": "https://finance.yahoo.com/quote/DUOL/analysis/",
+     "date": "2026-09",
+     "what": "Consensus 2026/2027"
+    }
+   ]
+  },
+  {
+   "ticker": "HIMS",
+   "name": "Hims & Hers Health",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Telehealth / consumer health",
+   "megatrend": "8 GLP-1 (distribution)",
+   "price": 30.75,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 7.13,
+   "fy_end_month": 12,
+   "eps_basis": "GAAP (pertes 2026)",
+   "fy2025": null,
+   "fy2026": -0.56,
+   "fy2027": 0.42,
+   "fy2028": null,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 2.42,
+   "dividend_yield_pct": null,
+   "w52_low": 13.74,
+   "w52_high": 65.3,
+   "price_target": 32.43,
+   "zacks_rank": 3,
+   "zacks_rank_date": "2026-09",
+   "cyclical": false,
+   "one_offs_note": "Perte attendue en 2026 ; litiges/compounding GLP-1 ; BPA T2 manqué.",
+   "latest_results_summary": "T2 2026 (10/08/2026) : revenus ~753,2 M$ (+38 %), ~2,9 M d'abonnés (+19 %) ; BPA manqué, société non rentable au trimestre.",
+   "guidance": "2026 : revenus relevés à 3,1-3,3 Md$ ; EBITDA ajusté 275-325 M$.",
+   "ceo_quote": {
+    "original": "Hims & Hers is delivering a world-class health experience at a global scale and a reasonable price for the nearly 3 million people who rely on us for access to care. We're proving, quarter after quarter, that helping people feel great and delivering strong results aren't mutually exclusive.",
+    "french": "Hims & Hers offre une expérience de santé de classe mondiale, à l'échelle mondiale et à un prix raisonnable, aux près de 3 millions de personnes qui comptent sur nous pour accéder aux soins. Nous prouvons, trimestre après trimestre, qu'aider les gens à se sentir bien et délivrer de solides résultats ne sont pas incompatibles.",
+    "date": "2026-08-10",
+    "source": "https://investors.hims.com/news/news-details/2026/Hims--Hers-Health-Inc--Reports-Second-Quarter-2026-Financial-Results/default.aspx"
+   },
+   "thesis_short": "Canal direct-to-consumer pour GLP-1 oraux à 149 $ ; retour au profit attendu en 2027.",
+   "key_risk": "Pertes 2026, dépendance réglementaire (compounding), beta 2,42 : PEG non calculable sur 2026.",
+   "notes": "Consensus : 2026 -0,56 $, 2027 0,42 $ (Yahoo/StockAnalysis) ; 2028 non disponible. Zacks Rank 3 (2 selon une source plus récente).",
+   "sources": [
+    {
+     "url": "https://www.investing.com/equities/oaktree-acquisition-corp",
+     "date": "2026-09-30",
+     "what": "Prix 30,75 $ (clôture précédente 28,70), 52 semaines 13,74-65,30, capitalisation 7,13 Md$, beta 2,42, objectif 32,43 $"
+    },
+    {
+     "url": "https://finance.yahoo.com/quote/HIMS/analysis/",
+     "date": "2026-09",
+     "what": "Consensus 2026/2027"
+    }
+   ]
+  },
+  {
+   "ticker": "NTRA",
+   "name": "Natera",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Diagnostics / MRD oncology & prenatal",
+   "megatrend": "8 Biotech / diagnostic",
+   "price": 413.31,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 59.35,
+   "fy_end_month": 12,
+   "eps_basis": "GAAP (pertes)",
+   "fy2025": null,
+   "fy2026": -1.71,
+   "fy2027": -0.2,
+   "fy2028": 1.5,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 1.54,
+   "dividend_yield_pct": null,
+   "w52_low": 157.43,
+   "w52_high": 417.38,
+   "price_target": 355.93,
+   "zacks_rank": 3,
+   "zacks_rank_date": "2026-09",
+   "cyclical": false,
+   "one_offs_note": "Pertes jusqu'en 2027 au consensus ; PEG non calculable ; titre au plus haut 52 semaines, objectif moyen sous le cours.",
+   "latest_results_summary": "T2 2026 (06/08/2026) : revenus 752,8 M$ (+37,7 %), 1 043 900 tests (+22,4 %), BPA -0,47 $ vs -0,52 $ attendu.",
+   "guidance": "2026 : revenus relevés à 2,85-2,91 Md$ (vs 2,74-2,82 Md$), +100 M$ au point médian.",
+   "ceo_quote": {
+    "original": "We had an exceptional quarter helping patients, with over one million tests processed for the second consecutive quarter and record growth in oncology volumes,",
+    "french": "Nous avons eu un trimestre exceptionnel au service des patients, avec plus d'un million de tests traités pour le deuxième trimestre consécutif et une croissance record des volumes en oncologie,",
+    "date": "2026-08-06",
+    "source": "https://investor.natera.com/news/news-details/2026/Natera-Reports-Second-Quarter-2026-Financial-Results/default.aspx"
+   },
+   "thesis_short": "Leader du MRD (Signatera) avec croissance >35 % ; profit attendu en 2028.",
+   "key_risk": "Valorisation (59 Md$ pour des pertes), remboursement, objectif analystes inférieur au cours.",
+   "notes": "Consensus : 2026 -1,71 $ (StockAnalysis) / -1,4 $ (ValueInvesting.io) ; 2027 -0,20 $ / -0,1 $ ; 2028 1,5 $ (ValueInvesting.io). Objectif 355,93 $ (280-460), StockAnalysis 352,8 $.",
+   "sources": [
+    {
+     "url": "https://stockanalysis.com/stocks/ntra/",
+     "date": "2026-09-30",
+     "what": "Clôture 413,31 $, capitalisation 59,35 Md$, 52 semaines 157,43-417,38, beta 1,54"
+    },
+    {
+     "url": "https://valueinvesting.io/NTRA/estimates",
+     "date": "2026-09",
+     "what": "Consensus 2026-2028"
+    },
+    {
+     "url": "https://finance.yahoo.com/news/know-natera-ntra-rating-upgrade-160010795.html",
+     "date": "2026",
+     "what": "Zacks"
+    }
+   ]
+  },
+  {
+   "ticker": "PODD",
+   "name": "Insulet",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Medtech / insulin pumps (Omnipod)",
+   "megatrend": "8 Biotech / medtech",
+   "price": 130.47,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 9.05,
+   "fy_end_month": 12,
+   "eps_basis": "non-GAAP (adjusted EPS)",
+   "fy2025": 4.97,
+   "fy2026": 6.45,
+   "fy2027": 7.99,
+   "fy2028": null,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 1.08,
+   "dividend_yield_pct": null,
+   "w52_low": 126.4,
+   "w52_high": 354.88,
+   "price_target": 171.91,
+   "zacks_rank": null,
+   "zacks_rank_date": "",
+   "cyclical": false,
+   "one_offs_note": "Titre -63 % du plus haut après l'abaissement de la guidance de ventes (rétention type 2) ; BPA ajusté pourtant relevé.",
+   "latest_results_summary": "T2 2026 (août 2026) : revenus 802 M$ (+23,5 %), BPA ajusté 1,66 $ (+41,5 %) ; guidance de croissance des ventes abaissée à 20-22 % (vs 21-23 %), BPA ajusté relevé à >+30 % (vs >+25 %).",
+   "guidance": "2026 : croissance des ventes 20-22 % ; croissance du BPA ajusté >30 %.",
+   "ceo_quote": {
+    "original": "We delivered another quarter of broad-based growth, robust margin expansion, and positive free cash flow, reflecting the strength of the Omnipod platform. While we are updating our outlook to reflect what we're learning as we scale in type 2, our conviction in the long-term opportunity remains unchanged,",
+    "french": "Nous avons réalisé un nouveau trimestre de croissance généralisée, de forte expansion des marges et de flux de trésorerie disponible positif, reflétant la solidité de la plateforme Omnipod. Si nous actualisons nos perspectives pour tenir compte de ce que nous apprenons en déployant le type 2 à grande échelle, notre conviction sur l'opportunité à long terme reste inchangée,",
+    "date": "2026-08",
+    "source": "https://www.sec.gov/Archives/edgar/data/0001145197/000114519726000167/podd2026-06x30ex991.htm"
+   },
+   "thesis_short": "PER ~16x le BPA 2027 pour +24 % de croissance : PEG < 1 après la chute ; franchise Omnipod intacte.",
+   "key_risk": "Rétention des patients type 2, concurrence Tandem/Medtronic, perte de confiance après la révision.",
+   "notes": "Consensus : 2026 6,45 $ (Barchart, +29,8 %) / 6,56 $ (StockAnalysis, 5,32-6,92) ; 2027 7,99 $ (+23,9 %) ; 2028 non disponible. BPA ajusté 2025 : 4,97 $. Objectif 171,91 $ (25 analystes S&P Global, 144-275).",
+   "sources": [
+    {
+     "url": "https://finance.yahoo.com/quote/PODD/",
+     "date": "2026-09-30",
+     "what": "Clôture 130,47 $, 52 semaines 126,40-354,88, beta 1,08"
+    },
+    {
+     "url": "https://stockanalysis.com/stocks/podd/forecast/",
+     "date": "2026-09",
+     "what": "Objectif 171,91 $, consensus 2026"
+    },
+    {
+     "url": "https://finance.yahoo.com/healthcare/articles/insulets-q2-2026-earnings-expect-124333744.html",
+     "date": "2026-07",
+     "what": "BPA 2025 4,97 $, 2026 6,45 $, 2027 7,99 $"
+    },
+    {
+     "url": "https://www.drugdeliverybusiness.com/insulet-q2-2026-lower-sales-growth-outlook/",
+     "date": "2026-08",
+     "what": "Révision de guidance"
+    }
+   ]
+  },
+  {
+   "ticker": "TMDX",
+   "name": "TransMedics Group",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Medtech / organ transplant (OCS)",
+   "megatrend": "8 Biotech / medtech",
+   "price": 83.45,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 2.9,
+   "fy_end_month": 12,
+   "eps_basis": "non-GAAP (adjusted EPS) selon consensus",
+   "fy2025": null,
+   "fy2026": 1.97,
+   "fy2027": 3.2,
+   "fy2028": 4.63,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 1.92,
+   "dividend_yield_pct": null,
+   "w52_low": 60.11,
+   "w52_high": 156.0,
+   "price_target": 97.3,
+   "zacks_rank": 5,
+   "zacks_rank_date": "2026-08",
+   "cyclical": false,
+   "one_offs_note": "Investissements lourds (aviation PAD exclue de la guidance) ; BPA T2 sous consensus ; Zacks Rank 5 après les résultats.",
+   "latest_results_summary": "T2 2026 (04/08/2026) : revenus 189,9 M$ (+21 %), résultat net ajusté 16,2 M$, BPA ajusté 0,44 $ (vs 0,50 $ Zacks), BPA GAAP 0,41 $.",
+   "guidance": "2026 (hors PAD Aviation) : revenus 737-757 M$ (+22-25 %), bas de fourchette relevé.",
+   "ceo_quote": {
+    "original": "The second quarter was a defining one for TransMedics: record revenue, accelerating service growth, and sequential gross margin expansion, all as we invested aggressively in our strategic priorities.",
+    "french": "Le deuxième trimestre a été décisif pour TransMedics : chiffre d'affaires record, accélération de la croissance des services et expansion séquentielle de la marge brute, tout en investissant massivement dans nos priorités stratégiques.",
+    "date": "2026-08-04",
+    "source": "https://investors.transmedics.com/news-releases/news-release-details/transmedics-reports-second-quarter-2026-financial-results"
+   },
+   "thesis_short": "BPA consensus 2026→2028 x2,35 ; PER ~26x le BPA 2027 : PEG < 1 si l'exécution se rétablit.",
+   "key_risk": "Révisions baissières (Zacks 5), petite capitalisation (2,9 Md$), dépendance aux volumes de transplantation US.",
+   "notes": "Consensus StockAnalysis : 2026 1,97 $, 2027 3,2 $, 2028 4,63 $. Objectif 97,3 $ (12 analystes S&P Global, 65-125). Beta 1,92.",
+   "sources": [
+    {
+     "url": "https://robinhood.com/us/en/stocks/TMDX/",
+     "date": "2026-09-30",
+     "what": "Clôture 83,45 $ (81,55-84,87), capitalisation 2,9 Md$, 52 semaines 60,11-156,00"
+    },
+    {
+     "url": "https://stockanalysis.com/stocks/tmdx/forecast/",
+     "date": "2026-09-22",
+     "what": "Objectif 97,3 $, beta 1,92, consensus"
+    },
+    {
+     "url": "https://finance.yahoo.com/markets/stocks/articles/transmedics-tmdx-q2-earnings-lag-214009353.html",
+     "date": "2026-08",
+     "what": "Zacks Rank 5, BPA 0,44 $ vs 0,50 $"
+    }
+   ]
+  },
+  {
+   "ticker": "ISRG",
+   "name": "Intuitive Surgical",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Medtech / surgical robotics",
+   "megatrend": "5 IA physique (robotique) / 8 medtech",
+   "price": 406.63,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 143.6,
+   "fy_end_month": 12,
+   "eps_basis": "non-GAAP",
+   "fy2025": null,
+   "fy2026": 10.99,
+   "fy2027": 12.33,
+   "fy2028": 13.91,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 1.46,
+   "dividend_yield_pct": null,
+   "w52_low": 328.58,
+   "w52_high": 603.75,
+   "price_target": 476.34,
+   "zacks_rank": 3,
+   "zacks_rank_date": "2026-09",
+   "cyclical": false,
+   "one_offs_note": "Tarifs douaniers (~1 % de marge brute) ; vents contraires Chine ; pas d'éléments exceptionnels majeurs.",
+   "latest_results_summary": "T2 2026 (16/07/2026) : revenus 2,89 Md$ (+19 %), BPA non-GAAP 2,80 $ (+28 %), procédures +16 % (da Vinci +15 %, Ion +36 %).",
+   "guidance": "2026 : croissance des procédures da Vinci 13,5-15,5 % (maintenue), marge brute non-GAAP 68-69 % (relevée), croissance des dépenses opérationnelles non-GAAP 11-13 %.",
+   "ceo_quote": {
+    "original": "We are pleased with company performance this quarter, which reflects the strength of our portfolio – from da Vinci and Ion to our growing digital solutions",
+    "french": "Nous sommes satisfaits de la performance de l'entreprise ce trimestre, qui reflète la force de notre portefeuille – de da Vinci et Ion à nos solutions numériques en croissance",
+    "date": "2026-07-16",
+    "source": "https://www.sec.gov/Archives/edgar/data/0001035267/000103526726000047/q226ex-991earningsrelease.htm"
+   },
+   "thesis_short": "Monopole de fait de la chirurgie robotique ; titre -33 % du plus haut, PER ~33x le BPA 2027 pour +12 % : PEG > 2.",
+   "key_risk": "Décélération de la croissance du BPA (12-13 %/an), concurrence émergente, Chine.",
+   "notes": "Consensus StockAnalysis : 2026 10,99 $ (10,17-11,63), 2027 12,33 $ (11,05-13,36), 2028 13,91 $ (11,96-15,66). Zacks Rank 3 (2 selon une source antérieure). FY2025 réel non capturé.",
+   "sources": [
+    {
+     "url": "https://stockanalysis.com/stocks/isrg/",
+     "date": "2026-09-30",
+     "what": "Clôture 406,63 $, capitalisation 143,60 Md$, 52 semaines 328,58-603,75, beta 1,46, objectif 476,34 $"
+    },
+    {
+     "url": "https://stockanalysis.com/stocks/isrg/forecast/",
+     "date": "2026-09",
+     "what": "Consensus 2026-2028"
+    },
+    {
+     "url": "https://www.massdevice.com/intuitive-q2-2026-beats-procedure-growth/",
+     "date": "2026-07-16",
+     "what": "Résultats T2 2026"
+    }
+   ]
+  },
+  {
+   "ticker": "RKLB",
+   "name": "Rocket Lab",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Aerospace & defence / launch & space systems",
+   "megatrend": "5 IA physique (espace/défense)",
+   "price": 69.68,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 41.7,
+   "fy_end_month": 12,
+   "eps_basis": "GAAP (pertes)",
+   "fy2025": null,
+   "fy2026": -0.27,
+   "fy2027": -0.03,
+   "fy2028": 0.29,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 2.61,
+   "dividend_yield_pct": null,
+   "w52_low": 37.57,
+   "w52_high": 151.0,
+   "price_target": 109.37,
+   "zacks_rank": null,
+   "zacks_rank_date": "",
+   "cyclical": false,
+   "one_offs_note": "Pertes jusqu'en 2027 ; profitabilité conditionnée au premier vol réussi de Neutron (fenêtre 2026 « se rétrécit »).",
+   "latest_results_summary": "T2 2026 (août 2026) : revenus record 234 M$ (+62 %), backlog record 2,36 Md$, plus de 1 Md$ de nouveaux contrats signés au T3 à date ; titre en baisse sur le report de Neutron.",
+   "guidance": "T3 2026 : nouveau record de revenus attendu ; EBITDA positif le trimestre suivant le premier vol test réussi de Neutron, cash-flow à l'équilibre 18-24 mois plus tard.",
+   "ceo_quote": {
+    "original": "Q2 was another fantastic quarter for Rocket Lab, highlighted by record results and massive momentum that has continued well after the close.",
+    "french": "Le T2 a été un nouveau trimestre fantastique pour Rocket Lab, marqué par des résultats records et une dynamique massive qui s'est poursuivie bien après la clôture.",
+    "date": "2026-08",
+    "source": "https://investors.rocketlabcorp.com/news-releases/news-release-details/rocket-lab-announces-second-quarter-2026-financial-results-posts"
+   },
+   "thesis_short": "Seul concurrent crédible de SpaceX en lanceurs moyens ; backlog 2,36 Md$.",
+   "key_risk": "Pertes, beta 2,61, risque d'échec/retard de Neutron ; PEG non calculable.",
+   "notes": "Consensus StockAnalysis : 2026 -0,27 $ (-0,35 à -0,20), 2027 -0,03 $ (-0,22 à 0,11), 2028 0,29 $ (0,09-0,87).",
+   "sources": [
+    {
+     "url": "https://stockanalysis.com/stocks/rklb/",
+     "date": "2026-09-30",
+     "what": "Clôture 69,68 $, capitalisation 41,70 Md$, 52 semaines 37,57-151,00, beta 2,61, objectif 109,37 $"
+    },
+    {
+     "url": "https://trendspider.com/blog/rklb-stock-q2-earnings-neutron-delay/",
+     "date": "2026-08",
+     "what": "Résultats T2 et report Neutron"
+    }
+   ]
+  },
+  {
+   "ticker": "AXON",
+   "name": "Axon Enterprise",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Public safety technology / counter-drone",
+   "megatrend": "5 IA physique (drones) / 6 défense",
+   "price": 430.11,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 36.55,
+   "fy_end_month": 12,
+   "eps_basis": "non-GAAP (adjusted EPS)",
+   "fy2025": null,
+   "fy2026": 7.82,
+   "fy2027": 10.85,
+   "fy2028": 13.91,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 1.4,
+   "dividend_yield_pct": null,
+   "w52_low": 339.01,
+   "w52_high": 792.16,
+   "price_target": 706.21,
+   "zacks_rank": 3,
+   "zacks_rank_date": "2026-09",
+   "cyclical": false,
+   "one_offs_note": "Inquiétudes sur les marges au T2 (investissements IA) ; rémunération en actions élevée exclue du non-GAAP.",
+   "latest_results_summary": "T2 2026 (05/08/2026) : revenus 904,3 M$ (+35 %, 10e trimestre >30 %), BPA ajusté 1,88 $ (au-dessus des attentes), ARR +39 %, contre-drone >100 M$ ; titre en baisse après la publication.",
+   "guidance": "2026 : croissance des revenus relevée à 32-34 % (vs 30-32 %).",
+   "ceo_quote": {
+    "original": "I was just looking at the numbers, 39%. Wow,",
+    "french": "Je regardais justement les chiffres, 39 %. Waouh,",
+    "date": "2026-08-05",
+    "source": "https://www.investing.com/news/transcripts/earnings-call-transcript-axon-tops-q2-2026-estimates-but-shares-fall-after-hours-93CH-4839690"
+   },
+   "thesis_short": "Titre -46 % du plus haut ; BPA +39 % en 2027 au consensus pour un PER ~40x : PEG ~1.",
+   "key_risk": "Marges sous pression, dépendance aux budgets publics, valorisation encore élevée.",
+   "notes": "Citation du CEO Rick Smith (à propos de la croissance de l'ARR, transcript). Consensus StockAnalysis : 2026 7,82 $ (6,19-9,24), 2027 10,85 $ (8,24-12,65), 2028 13,91 $ (11,19-15,75). Objectif 706,21 $, WallStreetZen 691,50 $.",
+   "sources": [
+    {
+     "url": "https://stockanalysis.com/stocks/axon/",
+     "date": "2026-09-30",
+     "what": "Prix 430,11 $, capitalisation 36,55 Md$, 52 semaines 339,01-792,16, beta 1,40, objectif 706,21 $"
+    },
+    {
+     "url": "https://www.prnewswire.com/news-releases/axon-reports-q2-2026-revenue-of-904-million-up-35-year-over-year-302844105.html",
+     "date": "2026-08-05",
+     "what": "Résultats T2 2026"
+    },
+    {
+     "url": "https://stockanalysis.com/stocks/axon/forecast/",
+     "date": "2026-09",
+     "what": "Consensus 2026-2028"
+    }
+   ]
+  },
+  {
+   "ticker": "SPOT",
+   "name": "Spotify Technology",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "country": "Luxembourg / Sweden",
+   "sector": "Media / audio streaming",
+   "megatrend": "7 Plateformes (consommation)",
+   "price": 487.38,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 101.49,
+   "fy_end_month": 12,
+   "eps_basis": "IFRS diluted EPS (consensus en USD pour 2026/2028, EUR pour 2027)",
+   "fy2025": null,
+   "fy2026": 14.16,
+   "fy2027": 15.43,
+   "fy2028": 19.81,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 1.59,
+   "dividend_yield_pct": null,
+   "w52_low": 405.0,
+   "w52_high": 721.67,
+   "price_target": 598.33,
+   "zacks_rank": 3,
+   "zacks_rank_date": "2026-09",
+   "cyclical": false,
+   "one_offs_note": "BPA IFRS 2025 : 8,17 € dilué (10,77 € de base) ; volatilité des charges sociales liées aux actions ; estimation 2027 exprimée en euros (15,43 €) et 2026/2028 en dollars (14,16 $ ; 19,81 $) : incohérence de devise entre sources.",
+   "latest_results_summary": "T2 2026 (04/08/2026) : 300 M d'abonnés premium (+9 %), 777 M de MAU (+12 %), revenus 4,8 Md€ (+14 %, +15 % cc), marge brute record 33,4 %, résultat opérationnel 655 M€ (guidance 630 M€), BPA 3,03 $ sous le consensus ; titre -5,9 %.",
+   "guidance": "T3 2026 : 305 M d'abonnés premium, 788 M de MAU.",
+   "ceo_quote": {
+    "original": "We have a scale that few companies in history have reached, a business that is healthy and compounding, and opportunities only we are positioned to pursue.",
+    "french": "Nous avons une échelle que peu d'entreprises dans l'histoire ont atteinte, une activité saine qui se renforce avec le temps, et des opportunités que nous sommes les seuls à pouvoir saisir.",
+    "date": "2026-08-04",
+    "source": "https://newsroom.spotify.com/2026-08-04/spotify-q2-2026-earnings/"
+   },
+   "thesis_short": "Pricing power et marge brute en hausse ; mais croissance du BPA 2027 modeste (+9 %) : PEG > 3.",
+   "key_risk": "Décélération des abonnés (+9 %), rémunération des ayants droit, concurrence IA/YouTube.",
+   "notes": "Citation d'Alex Norström, co-CEO. Consensus : 2026 14,16 $ (Zacks), 2027 15,43 € (Yahoo), 2028 19,81 $ (StockAnalysis). Objectif 598,33 $ (Yahoo), Evercore 700 $, KeyCorp abaissé le 01/10/2026.",
+   "sources": [
+    {
+     "url": "https://robinhood.com/us/en/stocks/SPOT/",
+     "date": "2026-09-30",
+     "what": "Clôture 487,38 $ ; capitalisation 101,49 Md$ (29/09)"
+    },
+    {
+     "url": "https://finance.yahoo.com/quote/SPOT/",
+     "date": "2026-09-30",
+     "what": "52 semaines 405,00-721,67, beta 1,59, objectif 598,33 $"
+    },
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/0001639920/000114036126017211/ef20071303_ex99-1.htm",
+     "date": "2026-02-10",
+     "what": "FY2025 : BPA dilué 8,17 €, revenus 17,19 Md€"
+    }
+   ]
+  },
+  {
+   "ticker": "SHOP",
+   "name": "Shopify",
+   "exchange": "Nasdaq / TSX",
+   "currency": "USD",
+   "country": "Canada",
+   "sector": "E-commerce platform software",
+   "megatrend": "7 Plateformes (commerce)",
+   "price": 148.3,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 190.81,
+   "fy_end_month": 12,
+   "eps_basis": "GAAP diluted EPS (consensus) ; inclut gains/pertes sur participations",
+   "fy2025": null,
+   "fy2026": 1.93,
+   "fy2027": 2.5,
+   "fy2028": 3.42,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 2.62,
+   "dividend_yield_pct": null,
+   "w52_low": 94.0,
+   "w52_high": 182.19,
+   "price_target": 172.77,
+   "zacks_rank": 3,
+   "zacks_rank_date": "2026-09",
+   "cyclical": false,
+   "one_offs_note": "Le BPA GAAP inclut les variations de valeur des participations (Affirm, Klaviyo…) : forte volatilité non opérationnelle.",
+   "latest_results_summary": "T2 2026 (05/08/2026) : revenus +34 % (+33 % cc), marge FCF 18 %, GMV 115,57 Md$ (+32 %), marge brute 1,71 Md$ (+31 %), BPA 0,42 $ vs 0,41 $ ; titre en forte hausse.",
+   "guidance": "T3 2026 : croissance des revenus « low-thirties » (consensus 26,3 %).",
+   "ceo_quote": {
+    "original": "This was a monster quarter: more than 30% growth in GMV AND revenue AND gross profit AND free cash flow,",
+    "french": "C'était un trimestre monstre : plus de 30 % de croissance du GMV ET du chiffre d'affaires ET de la marge brute ET du flux de trésorerie disponible,",
+    "date": "2026-08-05",
+    "source": "https://www.sec.gov/Archives/edgar/data/0001594805/000159480526000046/exhibit991pressreleaseq220.htm"
+   },
+   "thesis_short": "Croissance >30 % durable avec FCF 18 % ; mais PER ~59x le BPA 2027 pour +30 % : PEG ~2.",
+   "key_risk": "Valorisation, beta 2,62, concurrence (Amazon, agents IA), volatilité du BPA GAAP.",
+   "notes": "Citation de Harley Finkelstein (President). Consensus : 2026 1,93 $ (StockAnalysis, 1,59-2,27) / 1,80 $ (Zacks, +53,9 %) ; 2027 2,50 $ (1,82-3,57) / 2,17 $ (Zacks) ; 2028 3,42 $ (2,40-6,07).",
+   "sources": [
+    {
+     "url": "https://stockanalysis.com/stocks/shop/",
+     "date": "2026-09-30",
+     "what": "Clôture 148,30 $, capitalisation 190,81 Md$, 52 semaines 94,00-182,19, beta 2,62, objectif 172,77 $ (54 analystes)"
+    },
+    {
+     "url": "https://stockanalysis.com/stocks/shop/forecast/",
+     "date": "2026-09",
+     "what": "Consensus 2026-2028"
+    },
+    {
+     "url": "https://finance.yahoo.com/markets/stocks/articles/shopify-plunges-13-month-buy-171800624.html",
+     "date": "2026-09",
+     "what": "Zacks : 1,80 $ / 2,17 $, Rank 3"
+    }
+   ]
+  },
+  {
+   "ticker": "DASH",
+   "name": "DoorDash",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Local commerce / delivery platform",
+   "megatrend": "7 Plateformes (consommation)",
+   "price": 183.55,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 79.532,
+   "fy_end_month": 12,
+   "eps_basis": "GAAP diluted EPS (consensus)",
+   "fy2025": 2.13,
+   "fy2026": 2.58,
+   "fy2027": 4.46,
+   "fy2028": 7.1,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 1.79,
+   "dividend_yield_pct": null,
+   "w52_low": 143.3,
+   "w52_high": 285.5,
+   "price_target": 256.26,
+   "zacks_rank": 3,
+   "zacks_rank_date": "2026-09",
+   "cyclical": false,
+   "one_offs_note": "Acquisition Deliveroo (2025) : amortissements et coûts d'intégration ; pas de guidance de BPA.",
+   "latest_results_summary": "T2 2026 (05/08/2026) : revenus 4,45 Md$ (+36 %) vs 4,34 Md$ attendu, BPA ajusté 0,46 $ en ligne, commandes 970 M (+27 %), GOV 33,1 Md$ (+36 %), EBITDA ajusté 914 M$ (+40 %).",
+   "guidance": "Non chiffrée en BPA ; déploiement d'une plateforme technologique mondiale et de fonctions IA.",
+   "ceo_quote": {
+    "original": "Our aspiration is to be the global leader in local commerce. And we think we are best positioned to do that, given that we bring the deepest and the broadest portfolio of products in order to serve those audiences.",
+    "french": "Notre ambition est d'être le leader mondial du commerce local. Et nous pensons être les mieux placés pour y parvenir, car nous apportons le portefeuille de produits le plus profond et le plus large pour servir ces publics.",
+    "date": "2026-08-05",
+    "source": "https://www.fool.com/earnings/call-transcripts/2026/08/12/doordash-dash-q2-2026-earnings-call-transcript/"
+   },
+   "thesis_short": "BPA consensus x2,75 entre 2026 et 2028 ; titre -36 % du plus haut ; PER ~41x le BPA 2027 pour +73 % : PEG < 1.",
+   "key_risk": "Réglementation du travail, concurrence Uber Eats/Amazon, intégration Deliveroo.",
+   "notes": "Citation de Tony Xu issue du transcript de l'appel T2 2026. Consensus : 2026 2,58 $ (36 analystes), 2027 4,46 $ (36) / 4,56 $, 2028 7,10 $ (StockAnalysis). Zacks Rank 3 (relevé de Strong Sell en août 2026).",
+   "sources": [
+    {
+     "url": "https://finance.yahoo.com/quote/DASH/",
+     "date": "2026-09-30",
+     "what": "Clôture 183,55 $ (-1,90 %), capitalisation 79,532 Md$, 52 semaines 143,30-285,50, beta 1,79, objectif 256,26 $"
+    },
+    {
+     "url": "https://stockanalysis.com/stocks/dash/forecast/",
+     "date": "2026-09",
+     "what": "Consensus 2026-2028"
+    },
+    {
+     "url": "https://ir.doordash.com/news/news-details/2026/DoorDash-Releases-Fourth-Quarter-and-Full-Year-2025-Financial-Results/default.aspx",
+     "date": "2026-02-18",
+     "what": "FY2025 : BPA dilué 2,13 $, résultat net 935 M$"
+    },
+    {
+     "url": "https://www.marketbeat.com/instant-alerts/doordash-nasdaqdash-upgraded-to-hold-at-zacks-research-2026-08-19/",
+     "date": "2026-08-19",
+     "what": "Zacks Rank 3"
+    }
+   ]
+  },
+  {
+   "ticker": "COIN",
+   "name": "Coinbase Global",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Financials / crypto exchange",
+   "megatrend": "7 Finance digitale (crypto)",
+   "price": 186.41,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 49.182,
+   "fy_end_month": 12,
+   "eps_basis": "GAAP diluted EPS (consensus) ; inclut réévaluations crypto",
+   "fy2025": null,
+   "fy2026": -2.05,
+   "fy2027": 2.79,
+   "fy2028": null,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 3.39,
+   "dividend_yield_pct": null,
+   "w52_low": 139.11,
+   "w52_high": 402.16,
+   "price_target": 207.35,
+   "zacks_rank": 3,
+   "zacks_rank_date": "2026-09",
+   "cyclical": true,
+   "one_offs_note": "Perte nette T2 2026 de 359,5 M$ (-1,36 $/action) incluant des pertes de valorisation sur actifs crypto ; estimation 2027 divisée par deux en 90 jours (4,91 → 2,84 $).",
+   "latest_results_summary": "T2 2026 (30/07/2026) : revenus 1,2 Md$ (-14 % t/t, -19 % a/a), revenus de transaction -21 % t/t, perte nette 359,5 M$ ; titre en baisse.",
+   "guidance": "Non chiffrée ; développement des dérivés US (approbation CFTC).",
+   "ceo_quote": {
+    "original": "Coinbase is no longer a bet just on the price of bitcoin,",
+    "french": "Coinbase n'est plus un simple pari sur le prix du bitcoin,",
+    "date": "2026-07-30",
+    "source": "https://www.cnbc.com/2026/07/30/coinbase-coin-earnings-q2-2026.html"
+   },
+   "thesis_short": "Infrastructure crypto réglementée (USDC, dérivés) ; retour au profit attendu en 2027.",
+   "key_risk": "Cyclicité extrême (beta 3,39), perte 2026, révisions baissières massives : PEG non calculable sur 2026.",
+   "notes": "Consensus : 2026 -2,05 $, 2027 2,79 $ ; 2028 non disponible (StockAnalysis). Objectifs analystes récents 237 $ et 205 $ ; Yahoo 207,35 $.",
+   "sources": [
+    {
+     "url": "https://finance.yahoo.com/quote/COIN/",
+     "date": "2026-09-30",
+     "what": "Clôture 186,41 $ (-1,90 %), capitalisation 49,182 Md$, 52 semaines 139,11-402,16, beta 3,39, objectif 207,35 $"
+    },
+    {
+     "url": "https://finance.yahoo.com/markets/crypto/articles/coinbase-q2-2026-earnings-miss-144916215.html",
+     "date": "2026-07-30",
+     "what": "Perte nette 359 M$"
+    },
+    {
+     "url": "https://stockanalysis.com/stocks/coin/forecast/",
+     "date": "2026-09",
+     "what": "Consensus 2026/2027"
+    }
+   ]
+  },
+  {
+   "ticker": "IBKR",
+   "name": "Interactive Brokers Group",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Financials / electronic brokerage",
+   "megatrend": "7 Finance digitale (plateformes)",
+   "price": 86.18,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 148.15,
+   "fy_end_month": 12,
+   "eps_basis": "non-GAAP (adjusted EPS, hors diversification de devises et autres)",
+   "fy2025": 2.19,
+   "fy2026": 2.68,
+   "fy2027": 3.17,
+   "fy2028": 3.55,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 1.36,
+   "dividend_yield_pct": 0.41,
+   "w52_low": 58.95,
+   "w52_high": 98.75,
+   "price_target": 105.82,
+   "zacks_rank": 3,
+   "zacks_rank_date": "2026-09",
+   "cyclical": true,
+   "one_offs_note": "Sensible aux taux (revenu net d'intérêts) et aux volumes ; BPA ajusté exclut les effets de change du panier de devises GLOBAL.",
+   "latest_results_summary": "T2 2026 (21/07/2026) : BPA ajusté 0,69 $ vs 0,64 $ (Zacks), +35,3 % ; records de commissions, de revenu net d'intérêts et de revenus ; marge avant impôt 77 % ; comptes +34 %, actifs clients 930 Md$ (+40 %).",
+   "guidance": "Pas de guidance chiffrée ; croissance des comptes +34 %.",
+   "ceo_quote": {
+    "original": "We are growing everywhere globally, all the regions, all the account types, whether it's financial advisor, introducing brokers, direct accounts. We are pleased with our growth across the board. It's that simple.",
+    "french": "Nous croissons partout dans le monde, dans toutes les régions, tous les types de comptes, qu'il s'agisse de conseillers financiers, de courtiers introducteurs ou de comptes directs. Nous sommes satisfaits de notre croissance sur toute la ligne. C'est aussi simple que cela.",
+    "date": "2026-07-21",
+    "source": "https://investors.interactivebrokers.com/download/ir/2Q26_Earnings_Call_Transcript.pdf"
+   },
+   "thesis_short": "Marge avant impôt 77 %, croissance des comptes >30 % ; PER ~27x le BPA 2027 pour +18 % : PEG ~1,5.",
+   "key_risk": "Baisse des taux (revenu d'intérêts), ralentissement des volumes, concurrence Robinhood/Schwab.",
+   "notes": "Citation de Milan Galik issue du transcript de l'appel T2 2026. Consensus : Zacks (14/09/2026) 2026 2,68 $ et 2027 3,17 $ ; Barchart 2026 2,46 $ (+12,3 % vs 2,19 $ en 2025) et 2027 2,82 $ ; 2028 3,55 $ (3,20-4,09). Argus objectif 105 $ (23/09/2026).",
+   "sources": [
+    {
+     "url": "https://www.investing.com/equities/interactive-broke",
+     "date": "2026-09-30",
+     "what": "Prix 86,18 $, capitalisation 148,15 Md$, 52 semaines 58,95-98,75, beta 1,36, dividende 0,35 $ (0,41 %), objectif 105,82 $"
+    },
+    {
+     "url": "https://finance.yahoo.com/markets/stocks/articles/ibkr-q2-earnings-beat-estimates-151100754.html",
+     "date": "2026-07-21",
+     "what": "BPA ajusté 0,69 $ vs 0,64 $"
+    },
+    {
+     "url": "https://stockanalysis.com/stocks/ibkr/forecast/",
+     "date": "2026-09",
+     "what": "Consensus 2028"
+    }
+   ]
+  },
+  {
+   "ticker": "MRVL",
+   "name": "Marvell Technology",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Semiconductors / custom XPU & connectivity",
+   "megatrend": "1 Accélérateurs IA (ASIC)",
+   "price": 264.21,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 231.686,
+   "fy_end_month": 1,
+   "eps_basis": "non-GAAP",
+   "fy2025": null,
+   "fy2026": null,
+   "fy2027": 3.07,
+   "fy2028": 6.7609,
+   "fy2029": 8.18,
+   "ltg_pct": null,
+   "beta": 2.26,
+   "dividend_yield_pct": 0.09,
+   "w52_low": 70.69,
+   "w52_high": 329.88,
+   "price_target": 289.11,
+   "zacks_rank": null,
+   "zacks_rank_date": "",
+   "cyclical": true,
+   "one_offs_note": "Clôture fiscale fin janvier : FY2027 = exercice se terminant en janvier 2027. Estimations en forte révision (FY2028 : 6,24 → 6,76 $ en un mois, 33 révisions haussières) ; chiffres StockAnalysis incohérents écartés.",
+   "latest_results_summary": "T2 FY2027 (clos 1er août 2026, publié 27/08/2026) : revenus record 2,739 Md$ (+37 %), marge brute GAAP 53,1 % / non-GAAP 58,9 %, BPA GAAP 0,33 $, BPA non-GAAP 0,94 $ ; data center +46 % ; accélération du custom au S2 FY2027.",
+   "guidance": "FY2027 : revenus ~12 Md$ ; FY2028 : cible de revenus relevée à ~18 Md$ (vs 16,5 Md$).",
+   "ceo_quote": {
+    "original": "Marvell delivered record second-quarter fiscal 2027 revenue of $2.739 billion, up 37% year over year, driven by continued strong demand across our Data Center portfolio, where revenue growth accelerated to 46% year over year,",
+    "french": "Marvell a réalisé un chiffre d'affaires record de 2,739 milliards de dollars au deuxième trimestre fiscal 2027, en hausse de 37 % sur un an, porté par une demande toujours forte sur l'ensemble de notre portefeuille Data Center, dont la croissance s'est accélérée à 46 % sur un an,",
+    "date": "2026-08-27",
+    "source": "https://investor.marvell.com/news-events/press-releases/detail/1031/marvell-technology-inc-reports-second-quarter-of-fiscal-year-2027-financial-results"
+   },
+   "thesis_short": "XPU sur mesure (AWS, Microsoft) et optique ; BPA consensus x2,2 FY2027→FY2028 : PEG < 1 sur FY2028.",
+   "key_risk": "Titre +203 % YTD, beta 2,26 ; dépendance à 2 clients custom ; risque de perte de sockets.",
+   "notes": "Consensus FY2027 3,07 $ (MarketBeat) / 3,09 $ (Zacks Research) ; FY2028 6,7609 $ (Seeking Alpha) / 5,45 $ (Zacks Research) ; FY2029 8,18 $ (Zacks Research, 15/09/2026). BPA FY2026 réel non capturé.",
+   "sources": [
+    {
+     "url": "https://stockanalysis.com/stocks/mrvl/",
+     "date": "2026-09-30",
+     "what": "Clôture 264,21 $ (+0,36 %), capitalisation 231,686 Md$, 52 semaines 70,69-329,88, beta 2,26, dividende 0,24 $ (0,09 %), objectif 289,11 $"
+    },
+    {
+     "url": "https://www.marketbeat.com/instant-alerts/estimates-zacks-research-analysts-boost-earnings-estimates-for-mrvl-2026-09-15/",
+     "date": "2026-09-15",
+     "what": "Zacks Research FY2027 3,09 $, FY2028 5,45 $, FY2029 8,18 $"
+    },
+    {
+     "url": "https://seekingalpha.com/article/4950979-marvell-surprisingly-cheaper-than-in-august-but-theres-a-catch",
+     "date": "2026-09",
+     "what": "Consensus FY2028 6,7609 $"
+    },
+    {
+     "url": "https://www.tradingkey.com/news/transcripts/262137259-tradingkey",
+     "date": "2026-08-27",
+     "what": "Cible FY2028 18 Md$"
+    }
+   ]
+  },
+  {
+   "ticker": "COHR",
+   "name": "Coherent",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Photonics / optical transceivers & lasers",
+   "megatrend": "1 Accélérateurs IA (optique)",
+   "price": 287.81,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 56.36,
+   "fy_end_month": 6,
+   "eps_basis": "non-GAAP",
+   "fy2025": null,
+   "fy2026": 5.61,
+   "fy2027": 9.56,
+   "fy2028": 14.29,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 2.1,
+   "dividend_yield_pct": null,
+   "w52_low": 105.02,
+   "w52_high": 440.0,
+   "price_target": 415.36,
+   "zacks_rank": 2,
+   "zacks_rank_date": "2026-09",
+   "cyclical": true,
+   "one_offs_note": "Clôture fiscale fin juin : FY2026 = juin 2026 (réel). Titre -24 % en un mois en septembre ; cessions d'activités (pro forma +42 %).",
+   "latest_results_summary": "T4 FY2026 (12/08/2026) : revenus 2,05 Md$ (+34 %, +42 % pro forma), marge brute GAAP 38,5 % / non-GAAP 40,2 %, BPA GAAP 1,19 $, BPA non-GAAP 1,74 $ ; FY2026 : BPA non-GAAP 5,61 $ (+59 %).",
+   "guidance": "T1 FY2027 : revenus 2,2-2,4 Md$ ; >3 Md$ de revenus trimestriels d'ici la fin de FY2027 ; expansion continue de la marge brute.",
+   "ceo_quote": {
+    "original": "Fiscal 2026 was an outstanding year for Coherent, with record revenue, significant margin expansion, and non-GAAP EPS growth that was more than twice the rate of revenue growth,",
+    "french": "L'exercice 2026 a été une année exceptionnelle pour Coherent, avec un chiffre d'affaires record, une expansion significative des marges et une croissance du BPA non-GAAP plus de deux fois supérieure à celle du chiffre d'affaires,",
+    "date": "2026-08-12",
+    "source": "https://ir.coherent.com/news-releases/news-release-details/coherent-corp-reports-fourth-quarter-and-full-year-fiscal-2026"
+   },
+   "thesis_short": "Transceivers 1,6T et CPO ; BPA +70 % FY2027 puis +49 % FY2028 ; PER ~30x FY2027 : PEG < 0,5.",
+   "key_risk": "Cyclicité optique, concentration hyperscalers, beta 2,10, concurrence chinoise (Innolight/Eoptolink).",
+   "notes": "Consensus FY2027 9,56 $ (StockAnalysis, 8,09-10,77) / 9,38 $ (Zacks) ; FY2028 14,29 $ (11,15-17,44). Objectif 415,36 $ (23 analystes), WallStreetZen 402,08 $.",
+   "sources": [
+    {
+     "url": "https://stockanalysis.com/stocks/cohr/",
+     "date": "2026-09-30",
+     "what": "Clôture 287,81 $, capitalisation 56,36 Md$, 52 semaines 105,02-440,00, beta 2,10, objectif 415,36 $"
+    },
+    {
+     "url": "https://finance.yahoo.com/markets/stocks/articles/coherent-stock-declines-24-month-162600231.html",
+     "date": "2026-09",
+     "what": "FY2026 5,61 $, FY2027 9,38 $ (+67,2 %), Zacks Rank 2"
+    },
+    {
+     "url": "https://stockanalysis.com/stocks/cohr/forecast/",
+     "date": "2026-09",
+     "what": "Consensus FY2027/FY2028"
+    }
+   ]
+  },
+  {
+   "ticker": "LITE",
+   "name": "Lumentum Holdings",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Photonics / lasers & optical components",
+   "megatrend": "1 Accélérateurs IA (optique)",
+   "price": 971.26,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 87.122,
+   "fy_end_month": 6,
+   "eps_basis": "non-GAAP",
+   "fy2025": 2.06,
+   "fy2026": 8.67,
+   "fy2027": 21.67,
+   "fy2028": 34.52,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 1.54,
+   "dividend_yield_pct": null,
+   "w52_low": 147.81,
+   "w52_high": 1085.68,
+   "price_target": 1149.0,
+   "zacks_rank": 1,
+   "zacks_rank_date": "2026-09",
+   "cyclical": true,
+   "one_offs_note": "Clôture fiscale fin juin ; BPA FY2026 x4,2 vs FY2025 ; titre x6,5 sur 52 semaines : révisions haussières violentes.",
+   "latest_results_summary": "T4 FY2026 (11/08/2026) : revenus 1,01 Md$, marge brute non-GAAP 50,4 %, marge opérationnelle non-GAAP 36,6 %, résultat net non-GAAP 326,3 M$ (3,23 $/action) ; FY2026 : revenus 3 014,0 M$ (+83,2 %), BPA non-GAAP 8,67 $.",
+   "guidance": "T1 FY2027 : revenus 1,225-1,275 Md$, marge opérationnelle non-GAAP 39,5-40,5 %, BPA non-GAAP 4,05-4,35 $.",
+   "ceo_quote": {
+    "original": "Increasing demand for ultra-high-power CPO lasers, an initial order for ELS modules, as well as our breadth of NPO engagements are the first signs that optics are starting to penetrate in-rack connectivity, significantly upping our optical TAM",
+    "french": "La demande croissante de lasers CPO à très haute puissance, une première commande de modules ELS, ainsi que l'étendue de nos engagements NPO sont les premiers signes que l'optique commence à pénétrer la connectivité intra-rack, ce qui augmente significativement notre marché adressable optique",
+    "date": "2026-08-11",
+    "source": "https://investor.lumentum.com/financial-news-releases/news-details/2026/Lumentum-Announces-Fourth-Quarter-and-Full-Fiscal-Year-2026-Results/default.aspx"
+   },
+   "thesis_short": "Lasers pour CPO/transceivers 1,6T ; BPA FY2027 x2,5 ; PER ~45x FY2027, ~28x FY2028 : PEG < 0,5 sur FY2028.",
+   "key_risk": "Après x6,5 en un an, tout ralentissement des commandes hyperscalers serait brutal ; cyclicité optique.",
+   "notes": "Consensus FY2027 21,67 $ (25 analystes, 19,05-25,27), FY2028 34,52 $ (19, 29,20-39,70). Objectif consensus 1 149 $ (26 analystes, 820-1 400) ; Citi 1 400 $ ; Bernstein initié Outperform 1 220 $ le 30/09/2026.",
+   "sources": [
+    {
+     "url": "https://finance.yahoo.com/quote/LITE/",
+     "date": "2026-09-30",
+     "what": "Clôture 971,26 $, capitalisation 87,122 Md$, 52 semaines 147,81-1 085,68, beta 1,54"
+    },
+    {
+     "url": "https://stockanalysis.com/stocks/lite/forecast/",
+     "date": "2026-09",
+     "what": "Consensus FY2027/FY2028, objectif 1 149 $"
+    },
+    {
+     "url": "https://finance.yahoo.com/markets/stocks/articles/makes-lumentum-lite-strong-buy-160002135.html",
+     "date": "2026-09",
+     "what": "Zacks Rank 1"
+    },
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/0001633978/000162828026055726/lite_ex991xq4fy26.htm",
+     "date": "2026-08-11",
+     "what": "FY2026 : revenus 3 014,0 M$, BPA non-GAAP 8,67 $ (FY2025 : 2,06 $)"
+    }
+   ]
+  },
+  {
+   "ticker": "CIEN",
+   "name": "Ciena",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Optical networking systems",
+   "megatrend": "1 Accélérateurs IA (réseau optique)",
+   "price": 354.92,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 48.61,
+   "fy_end_month": 10,
+   "eps_basis": "non-GAAP (adjusted EPS)",
+   "fy2025": 1.64,
+   "fy2026": 5.4,
+   "fy2027": 9.62,
+   "fy2028": null,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 1.31,
+   "dividend_yield_pct": null,
+   "w52_low": 143.19,
+   "w52_high": 637.51,
+   "price_target": 516.83,
+   "zacks_rank": 1,
+   "zacks_rank_date": "2026-09-11",
+   "cyclical": true,
+   "one_offs_note": "Clôture fiscale fin octobre : FY2026 = octobre 2026. Titre -22 % sur 30 jours malgré un relèvement de guidance ; contrainte d'approvisionnement citée comme principal frein 2027.",
+   "latest_results_summary": "T3 FY2026 (03/09/2026) : revenus 1,67 Md$ (+37 %), BPA ajusté 2,11 $ (+215 %) ; backlog >10 Md$ ; titre en baisse après publication.",
+   "guidance": "FY2026 : revenus 6,42 Md$ ±50 M$ (+35 %) ; FY2027 préliminaire : croissance ≥30 % (8,3-8,4 Md$), marge brute ajustée 45-46 %, marge opérationnelle ajustée 25-27 %.",
+   "ceo_quote": {
+    "original": "Today's outstanding financial performance demonstrates Ciena's leadership in providing industry-leading, high-speed connectivity solutions as AI continues to drive compounding waves of network investment.",
+    "french": "L'excellente performance financière d'aujourd'hui démontre le leadership de Ciena dans la fourniture de solutions de connectivité haut débit de premier plan, alors que l'IA continue de générer des vagues cumulatives d'investissement dans les réseaux.",
+    "date": "2026-09-03",
+    "source": "https://investor.ciena.com/news/news-details/2026/Ciena-Reports-Fiscal-Third-Quarter-2026-Financial-Results/default.aspx"
+   },
+   "thesis_short": "Seul pure player des systèmes optiques (DCI, 1,6T) ; BPA FY2027 +78 % ; PER ~37x FY2027 : PEG ~0,5.",
+   "key_risk": "Contraintes d'offre, cyclicité des télécoms, retour de la volatilité (-44 % du plus haut).",
+   "notes": "Consensus FY2026 5,40 $ (Barchart, +229,3 % vs 1,64 $ FY2025) ; FY2027 9,62 $ (BPA normalisé, Seeking Alpha) ; FY2028 non disponible. Zacks Rank 2 puis relèvement à Strong Buy (Zacks Research, 11/09/2026). Bernstein initié 440 $ (30/09/2026), Evercore 550 $.",
+   "sources": [
+    {
+     "url": "https://stockanalysis.com/stocks/cien/",
+     "date": "2026-09-30",
+     "what": "Clôture 354,92 $, capitalisation 48,61 Md$, 52 semaines 143,19-637,51, beta 1,31, objectif 516,83 $"
+    },
+    {
+     "url": "https://seekingalpha.com/news/4640053-ciena-projects-at-least-30-percent-revenue-growth-in-fiscal-2027-with-10b-backlog-and-25",
+     "date": "2026-09-03",
+     "what": "Perspectives FY2027"
+    },
+    {
+     "url": "https://www.marketbeat.com/instant-alerts/analyst-ciena-nyse-cien-rating-increased-to-strong-buy-at-zacks-research-2026-09-11/",
+     "date": "2026-09-11",
+     "what": "Zacks Research Strong Buy"
+    }
+   ]
+  },
+  {
+   "ticker": "ETN",
+   "name": "Eaton",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "country": "Ireland / US",
+   "sector": "Electrical equipment / power management",
+   "megatrend": "4 Électricité & réseau DC",
+   "price": 429.71,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 168.22,
+   "fy_end_month": 12,
+   "eps_basis": "non-GAAP (adjusted EPS)",
+   "fy2025": 12.07,
+   "fy2026": 13.35,
+   "fy2027": 15.71,
+   "fy2028": null,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 1.17,
+   "dividend_yield_pct": 1.0,
+   "w52_low": 311.92,
+   "w52_high": 478.0,
+   "price_target": 456.5,
+   "zacks_rank": 2,
+   "zacks_rank_date": "2026-09",
+   "cyclical": true,
+   "one_offs_note": "Scission de l'activité Mobility en cours ; BPA GAAP T2 2,11 $ vs ajusté 3,15 $ (amortissements d'incorporels, acquisitions, restructuration).",
+   "latest_results_summary": "T2 2026 (31/07/2026) : ventes record 8,5 Md$ (+21 %), BPA ajusté 3,15 $ (+6,8 %, vs 3,08 $ Zacks), commandes data center +~85 %, revenus DC +~65 %, contenu 3,4 M$/MW.",
+   "guidance": "2026 : croissance organique 11-13 % ; BPA ajusté 13,40-13,60 $ (consensus 13,34 $ avant publication).",
+   "ceo_quote": {
+    "original": "Eaton accelerated its momentum in the second quarter and delivered record sales and solid earnings from strong organic growth. Our focus on disciplined execution led to sequential margin expansion, especially in Electrical Americas. While data centers remain a key growth driver, we are benefiting from robust demand across our end markets. Reflecting this strong performance and sustained demand, we are raising our full-year organic growth guidance and remain well-positioned to deliver on our commitments.",
+    "french": "Eaton a accéléré sa dynamique au deuxième trimestre et réalisé des ventes records et de solides bénéfices grâce à une forte croissance organique. Notre attention portée à une exécution disciplinée a conduit à une expansion séquentielle des marges, en particulier dans Electrical Americas. Si les data centers restent un moteur de croissance clé, nous bénéficions d'une demande robuste sur l'ensemble de nos marchés finaux. Reflétant cette solide performance et une demande soutenue, nous relevons notre prévision de croissance organique annuelle et restons bien positionnés pour tenir nos engagements.",
+    "date": "2026-07-31",
+    "source": "https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-reports-record-second-quarter-2026-results.html"
+   },
+   "thesis_short": "Exposition diversifiée au DC (3,4 M$/MW) ; BPA +18 % attendu 2027 ; PER ~27x : PEG ~1,5.",
+   "key_risk": "Cyclicité industrielle, croissance du BPA 2026 modeste (+10,6 %), exécution de la scission.",
+   "notes": "Citation de Paulo Ruiz issue du communiqué T2 2026. Consensus : 2026 13,35 $ (Barchart) / 13,3 $ (18 analystes) ; 2027 15,71 $ (+17,7 %) / 15,49 $ (16 analystes) ; 2028 non disponible. Zacks : BPA 2026 +12,3 %, 2027 +17,5 %.",
+   "sources": [
+    {
+     "url": "https://www.investing.com/equities/eaton",
+     "date": "2026-09-30",
+     "what": "Clôture 429,71 $, capitalisation 168,22 Md$, 52 semaines 311,92-478,00, beta 1,17, rendement 1,00 %"
+    },
+    {
+     "url": "https://www.defenseworld.net/2026/09/30/eaton-corporation-plc-nyseetn-stock-has-consensus-price-target-of-456-50.html",
+     "date": "2026-09-30",
+     "what": "Objectif consensus 456,50 $"
+    },
+    {
+     "url": "https://finance.yahoo.com/markets/stocks/articles/heres-expect-eaton-corporations-next-110358501.html",
+     "date": "2026-09",
+     "what": "BPA 2025 12,07 $, 2026 13,35 $, 2027 15,71 $"
+    },
+    {
+     "url": "https://www.eaton.com/us/en-us/company/news-insights/news-releases/2026/eaton-reports-record-second-quarter-2026-results.html",
+     "date": "2026-07-31",
+     "what": "Résultats T2 2026 et guidance"
+    }
+   ]
+  },
+  {
+   "ticker": "CEG",
+   "name": "Constellation Energy",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Utilities / nuclear generation",
+   "megatrend": "4 Électricité & réseau DC (nucléaire)",
+   "price": 254.02,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 90.001,
+   "fy_end_month": 12,
+   "eps_basis": "non-GAAP (adjusted operating EPS)",
+   "fy2025": 9.39,
+   "fy2026": 11.91,
+   "fy2027": 13.34,
+   "fy2028": 17.18,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 1.12,
+   "dividend_yield_pct": 0.64,
+   "w52_low": 228.63,
+   "w52_high": 412.7,
+   "price_target": 355.75,
+   "zacks_rank": 3,
+   "zacks_rank_date": "2026-09",
+   "cyclical": false,
+   "one_offs_note": "BPA GAAP (2025 : 7,40 $ ; T2 2026 : 1,42 $) inclut les variations de valeur des couvertures : utiliser le BPA opérationnel ajusté. Émission d'actions (424B4) en 2026.",
+   "latest_results_summary": "T2 2026 (06/08/2026) : BPA GAAP 1,42 $, BPA opérationnel ajusté 2,55 $ ; ~920 MW de contrats nucléaires long terme signés (18,5 ans en moyenne), ~30 % de la production de base contractée ; flotte 40 TWh, facteur de charge 93 %.",
+   "guidance": "2026 : BPA opérationnel ajusté relevé à 11,50-12,50 $ ; cible de croissance ~20 % (présentation T2).",
+   "ceo_quote": {
+    "original": "This quarter's accomplishments reflect the momentum we're building across our business. From advancing the restart of the Crane Clean Energy Center, to executing long-term agreements with our corporate customers and extending the lives of two critical New York assets, we're strengthening the nation's energy infrastructure and helping meet growing demand for reliable power.",
+    "french": "Les réalisations de ce trimestre reflètent la dynamique que nous construisons dans toute notre activité. De l'avancement du redémarrage du Crane Clean Energy Center à la signature d'accords de long terme avec nos clients entreprises et à la prolongation de la durée de vie de deux actifs essentiels de l'État de New York, nous renforçons l'infrastructure énergétique du pays et contribuons à répondre à la demande croissante d'électricité fiable.",
+    "date": "2026-08-06",
+    "source": "https://www.constellationenergy.com/news/2026/08/constellation-reports-second-quarter-2026-results.html"
+   },
+   "thesis_short": "Plus grand parc nucléaire US, PPA à 18-20 ans avec hyperscalers ; BPA +29 % attendu 2028 ; PER ~19x 2027 : PEG ~1.",
+   "key_risk": "Prix de l'électricité PJM, réglementation (colocation DC), exécution Crane (S2 2027).",
+   "notes": "Consensus : 2026 11,91 $, 2027 13,34 $, 2028 17,18 $ (+25,72 %) (Yahoo/StockAnalysis). Morgan Stanley objectif 369 $.",
+   "sources": [
+    {
+     "url": "https://finance.yahoo.com/quote/CEG/",
+     "date": "2026-09-30",
+     "what": "Clôture 254,02 $ (+2,34 %), capitalisation 90,001 Md$, 52 semaines 228,63-412,70, beta 1,12, dividende 1,71 $ (0,64 %)"
+    },
+    {
+     "url": "https://www.marketbeat.com/stocks/NASDAQ/CEG/",
+     "date": "2026-09",
+     "what": "Objectif consensus 355,75 $"
+    },
+    {
+     "url": "https://www.constellationenergy.com/news/2026/02/constellation-reports-fourth-quarter-and-full-year-2025-results.html",
+     "date": "2026-02",
+     "what": "FY2025 : BPA GAAP 7,40 $, ajusté 9,39 $"
+    },
+    {
+     "url": "https://finance.yahoo.com/quote/CEG/analysis/",
+     "date": "2026-09",
+     "what": "Consensus 2026-2028"
+    }
+   ]
+  },
+  {
+   "ticker": "PLTR",
+   "name": "Palantir Technologies",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Software / AI platforms",
+   "megatrend": "1 Accélérateurs IA (logiciel)",
+   "price": 187.05,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 449.49,
+   "fy_end_month": 12,
+   "eps_basis": "non-GAAP (adjusted EPS)",
+   "fy2025": 0.75,
+   "fy2026": 1.61,
+   "fy2027": 2.33,
+   "fy2028": 3.44,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 2.42,
+   "dividend_yield_pct": null,
+   "w52_low": 106.37,
+   "w52_high": 207.52,
+   "price_target": 196.84,
+   "zacks_rank": 1,
+   "zacks_rank_date": "2026-09",
+   "cyclical": false,
+   "one_offs_note": "Rémunération en actions très élevée exclue du non-GAAP ; capitalisation 449 Md$ pour ~8 Md$ de revenus 2026.",
+   "latest_results_summary": "T2 2026 (03/08/2026) : revenus 1,94 Md$ (+93 %), Rule of 40 à 155 %, BPA ajusté 0,41 $ vs 0,34 $ ; guidance relevée.",
+   "guidance": "2026 : revenus 8,150-8,158 Md$ ; US commercial >3,424 Md$ (+134 %) ; résultat opérationnel ajusté 4,889-4,897 Md$ ; FCF ajusté 4,5-4,7 Md$.",
+   "ceo_quote": {
+    "original": "Our entire business nearly doubled in the span of twelve months,",
+    "french": "L'ensemble de notre activité a presque doublé en l'espace de douze mois,",
+    "date": "2026-08-03",
+    "source": "https://www.palantir.com/q2-2026-letter/"
+   },
+   "thesis_short": "Croissance +93 % avec marge opérationnelle ajustée ~60 % ; BPA +45 % attendu 2027 et +48 % 2028.",
+   "key_risk": "PER ~80x le BPA 2027 : PEG ~1,8 même avec cette croissance ; beta 2,42 ; dépendance au gouvernement US.",
+   "notes": "Consensus : 2026 1,61 $ (Zacks, +114,67 %), 2027 2,33 $ (vs 2,07 $ il y a 90 jours), 2028 3,44 $ (2,65-5,22). Objectif moyen 196,84 $ (26 analystes, 80-255) ; TipRanks 211,70 $.",
+   "sources": [
+    {
+     "url": "https://robinhood.com/us/en/stocks/PLTR/",
+     "date": "2026-09-30",
+     "what": "Clôture 187,05 $"
+    },
+    {
+     "url": "https://www.investing.com/equities/palantir-technologies-inc-consensus-estimates",
+     "date": "2026-09",
+     "what": "Objectif moyen 196,84 $ ; 52 semaines 106,37-207,52 ; beta 2,42 ; capitalisation 449,49 Md$"
+    },
+    {
+     "url": "https://finance.yahoo.com/markets/stocks/articles/bull-day-palantir-technologies-pltr-080000676.html",
+     "date": "2026-09",
+     "what": "Zacks Rank 1, consensus 2026 1,61 $"
+    },
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000004/a2025q4ex991earningsrelease.htm",
+     "date": "2026-02-02",
+     "what": "FY2025 : BPA ajusté 0,75 $, revenus 4,475 Md$"
+    }
+   ]
+  },
+  {
+   "ticker": "APP",
+   "name": "AppLovin",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Software / mobile advertising (AI-driven)",
+   "megatrend": "1 Accélérateurs IA (logiciel publicitaire)",
+   "price": 290.43,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 97.19,
+   "fy_end_month": 12,
+   "eps_basis": "GAAP diluted EPS (consensus)",
+   "fy2025": null,
+   "fy2026": 15.66,
+   "fy2027": 20.0,
+   "fy2028": 27.76,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 2.49,
+   "dividend_yield_pct": null,
+   "w52_low": 290.36,
+   "w52_high": 738.01,
+   "price_target": 497.05,
+   "zacks_rank": 3,
+   "zacks_rank_date": "2026-09",
+   "cyclical": false,
+   "one_offs_note": "Titre au plus bas52 semaines (-61 % du plus haut) ; coûts d'entraînement/inférence IA intégrés à la guidance T3 ; cession des jeux mobiles en 2025.",
+   "latest_results_summary": "T2 2026 (05/08/2026) : revenus 1,92 Md$ (+53 %) vs 1,94 Md$ attendu, BPA 3,76 $ vs 3,72 $, EBITDA ajusté 1,61 Md$ (+58 %) vs 1,63 Md$.",
+   "guidance": "T3 2026 : guidance intégrant des coûts IA plus élevés (non chiffrée dans les sources).",
+   "ceo_quote": {
+    "original": "The creative is the biggest hurdle in our system.",
+    "french": "La création publicitaire est le plus grand obstacle dans notre système.",
+    "date": "2026-08-05",
+    "source": "https://seekingalpha.com/article/4931284-applovin-corporation-app-q2-2026-earnings-call-transcript"
+   },
+   "thesis_short": "PER ~14,5x le BPA 2027 pour +28 % de croissance : PEG ~0,5, le plus bas de l'échantillon logiciel.",
+   "key_risk": "Léger manque au T2, dépendance à l'écosystème mobile/Apple, risques réglementaires (données), beta 2,49.",
+   "notes": "Citation d'Adam Foroughi issue du transcript de l'appel T2 2026 (à propos du e-commerce). Consensus : 2026 15,66 $ (27 analystes) / Zacks 15,72 $ ; 2027 20,00 $ ; 2028 27,76 $ (17 analystes). Objectif 497,05 $ (33 analystes).",
+   "sources": [
+    {
+     "url": "https://stockanalysis.com/stocks/app/",
+     "date": "2026-09-30",
+     "what": "Clôture 290,43 $, capitalisation 97,19 Md$, 52 semaines 290,36-738,01, beta 2,49, objectif 497,05 $"
+    },
+    {
+     "url": "https://stockanalysis.com/stocks/app/forecast/",
+     "date": "2026-09",
+     "what": "Consensus 2026-2028"
+    },
+    {
+     "url": "https://investors.applovin.com/news/news-details/2026/AppLovin-Announces-Second-Quarter-2026-Financial-Results/default.aspx",
+     "date": "2026-08-05",
+     "what": "Résultats T2 2026"
+    }
+   ]
+  },
+  {
+   "ticker": "NFLX",
+   "name": "Netflix",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Media / streaming",
+   "megatrend": "7 Plateformes (consommation)",
+   "price": 69.58,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 289.73,
+   "fy_end_month": 12,
+   "eps_basis": "GAAP diluted EPS (post-division 10:1)",
+   "fy2025": 2.53,
+   "fy2026": 3.59,
+   "fy2027": 3.83,
+   "fy2028": 4.65,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 1.53,
+   "dividend_yield_pct": null,
+   "w52_low": 65.08,
+   "w52_high": 124.86,
+   "price_target": 92.82,
+   "zacks_rank": 3,
+   "zacks_rank_date": "2026-09",
+   "cyclical": false,
+   "one_offs_note": "Effets de change et de réévaluation de dette dans le BPA GAAP ; rachat d'actions record 4,7 Md$ au T2.",
+   "latest_results_summary": "T2 2026 (16/07/2026) : revenus 12,56 Md$, résultat net 3,401 Md$, BPA 0,80 $ vs 0,79 $ ; titre au plus bas 52 semaines après publication.",
+   "guidance": "T3 2026 : revenus 12,860 Md$ (+11,7 %).",
+   "ceo_quote": {
+    "original": "All hours are not created equal,",
+    "french": "Toutes les heures ne se valent pas,",
+    "date": "2026-07-16",
+    "source": "https://www.cnbc.com/2026/07/16/netflix-nflx-earnings-q2-2026.html"
+   },
+   "thesis_short": "Titre -44 % du plus haut ; mais croissance du BPA 2027 limitée à +6,7 % : PEG ~2,7.",
+   "key_risk": "Décélération de la croissance (+11,7 %), saturation, concurrence YouTube/IA.",
+   "notes": "Citation de Greg Peters (co-CEO). Consensus : 2026 3,59 $ (+41,9 % vs 2,53 $ en 2025), 2027 3,83 $ (+6,7 %), 2028 4,65 $ (3,73-5,36). Objectif 92,82 $ (51 analystes S&P Global, 57-135) ; Deutsche Bank relevé à Achat, 95 $ (30/09/2026).",
+   "sources": [
+    {
+     "url": "https://stockanalysis.com/stocks/nflx/",
+     "date": "2026-09-30",
+     "what": "Clôture 69,58 $ (-1,02 %), capitalisation 289,73 Md$, 52 semaines 65,08-124,86, beta 1,53, objectif 92,82 $"
+    },
+    {
+     "url": "https://stockanalysis.com/stocks/nflx/forecast/",
+     "date": "2026-09",
+     "what": "Consensus 2026-2028"
+    },
+    {
+     "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-netflix-posts-slight-q2-2026-beat-shares-sink-after-hours-93CH-4797109",
+     "date": "2026-07-16",
+     "what": "Transcript T2 2026"
+    }
+   ]
+  },
+  {
+   "ticker": "NOW",
+   "name": "ServiceNow",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Enterprise software / workflow & AI agents",
+   "megatrend": "1 Accélérateurs IA (logiciel)",
+   "price": 133.86,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 137.72,
+   "fy_end_month": 12,
+   "eps_basis": "non-GAAP (post-division 5:1)",
+   "fy2025": null,
+   "fy2026": 4.17,
+   "fy2027": 5.08,
+   "fy2028": 6.16,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 0.97,
+   "dividend_yield_pct": null,
+   "w52_low": 81.24,
+   "w52_high": 192.97,
+   "price_target": 155.0,
+   "zacks_rank": 3,
+   "zacks_rank_date": "2026-09",
+   "cyclical": false,
+   "one_offs_note": "Titre -40 % en 2026 malgré des relèvements de guidance (« SaaSpocalypse ») ; valeur 2025 non capturée de façon fiable (0,92 $ cité correspond vraisemblablement au seul T4 2025).",
+   "latest_results_summary": "T2 2026 (22/07/2026) : revenus d'abonnement 3 877 M$ (+24,5 %, +23 % cc), BPA non-GAAP 0,90 $ vs 0,86 $, marge opérationnelle non-GAAP 29,5 % (+3 pts vs guidance), RPO 29 Md$.",
+   "guidance": "2026 : revenus d'abonnement relevés à 15,770 Md$ (+21 %).",
+   "ceo_quote": {
+    "original": "ServiceNow's exceptional Q2 results solidify our position as the fastest-growing major enterprise software and cybersecurity company. With our AI Control Tower as the market standard, agentic deployments of ServiceNow AI increased ninefold in just nine months.",
+    "french": "Les résultats exceptionnels de ServiceNow au T2 consolident notre position de grande entreprise de logiciels d'entreprise et de cybersécurité à la croissance la plus rapide. Avec notre AI Control Tower comme standard du marché, les déploiements agentiques de ServiceNow AI ont été multipliés par neuf en seulement neuf mois.",
+    "date": "2026-07-22",
+    "source": "https://www.sec.gov/Archives/edgar/data/0001373715/000137371526000072/erq2fy26.htm"
+   },
+   "thesis_short": "Croissance >20 % avec marge 29,5 % ; PER ~26x le BPA 2027 pour +22 % : PEG ~1,2 après la dérating.",
+   "key_risk": "Risque de disruption des sièges par les agents IA, dépense fédérale US, sentiment sectoriel.",
+   "notes": "Consensus StockAnalysis : 2026 4,17 $ (3,57-4,55), 2027 5,08 $ (4,13-5,59), 2028 6,16 $ (5,05-7,19). Objectifs : Needham 155 $ (11/09/2026), moyenne 142 $ et plus haut 236 $ (TIKR), WallStreetZen 138,68 $.",
+   "sources": [
+    {
+     "url": "https://www.investing.com/equities/servicenow-inc",
+     "date": "2026-09-30",
+     "what": "Prix 133,86 $ (clôture précédente 129,94), capitalisation 137,72 Md$, 52 semaines 81,24-192,97, beta 0,97"
+    },
+    {
+     "url": "https://stockanalysis.com/stocks/now/forecast/",
+     "date": "2026-09",
+     "what": "Consensus 2026-2028"
+    },
+    {
+     "url": "https://www.tikr.com/blog/servicenow-stock-analysis-142-mean-target-236-street-high-and-a-284-tikr-case",
+     "date": "2026-09",
+     "what": "Objectif moyen 142 $"
+    }
+   ]
+  },
+  {
+   "ticker": "CRWD",
+   "name": "CrowdStrike Holdings",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Cybersecurity / AI security platform",
+   "megatrend": "1 Accélérateurs IA (sécurité)",
+   "price": 264.75,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 271.087,
+   "fy_end_month": 1,
+   "eps_basis": "non-GAAP (post-division d'actions)",
+   "fy2025": null,
+   "fy2026": null,
+   "fy2027": 1.26,
+   "fy2028": 1.61,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 1.25,
+   "dividend_yield_pct": null,
+   "w52_low": 85.68,
+   "w52_high": 268.95,
+   "price_target": 235.67,
+   "zacks_rank": 4,
+   "zacks_rank_date": "2026-09",
+   "cyclical": false,
+   "one_offs_note": "Clôture fiscale fin janvier : FY2027 = janvier 2027. BPA et cours post-division (capitalisation 271 Md$ / cours 264,75 $ ≈ 1,02 Md d'actions vs ~250 M historiquement, cohérent avec une division 4:1) ; objectif consensus (235,67 $) sous le cours.",
+   "latest_results_summary": "T2 FY2027 (clos 31/07/2026, publié 26/08/2026) : revenus 1,47 Md$ (+25,8 %), BPA non-GAAP dilué 0,31 $ vs 0,29 $ attendu, ARR net nouveau record 333 M$ (+51 %), ARR Falcon Flex >2,29 Md$ (+101 %) ; titre +11 %.",
+   "guidance": "FY2027 : revenus 5,99-6,01 Md$, BPA non-GAAP 1,25-1,26 $ ; croissance de l'ARR net nouveau relevée de 630 pb à 34 %.",
+   "ceo_quote": {
+    "original": "Q2 was the best quarter in CrowdStrike's history. Delivering record Falcon Flex results, record net new ARR, and accelerating growth—the Falcon is soaring. Every enterprise will run on AI, and securing it is the largest market opportunity in our history.",
+    "french": "Le T2 a été le meilleur trimestre de l'histoire de CrowdStrike. Des résultats Falcon Flex records, un ARR net nouveau record et une croissance qui accélère : le Falcon s'envole. Chaque entreprise fonctionnera sur l'IA, et la sécuriser est la plus grande opportunité de marché de notre histoire.",
+    "date": "2026-08-26",
+    "source": "https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-reports-second-quarter-fiscal-year-2027-financial"
+   },
+   "thesis_short": "Leader de la sécurité IA avec ARR en réaccélération (+51 % net nouveau).",
+   "key_risk": "PER >200x le BPA FY2027 et ~164x FY2028 : PEG > 5 ; Zacks Rank 4 ; cours au-dessus de l'objectif consensus.",
+   "notes": "BPA FY2026 réel non capturé (null). Consensus FY2027 1,26 $, FY2028 1,61 $ (53 analystes S&P Global). Le BPA non-GAAP post-division est faible relativement au cours : vérifier le facteur de division avant tout calcul de PEG.",
+   "sources": [
+    {
+     "url": "https://stockanalysis.com/stocks/crwd/",
+     "date": "2026-09-30",
+     "what": "Clôture 264,75 $, capitalisation 271,087 Md$, 52 semaines 85,68-268,95, beta 1,25, objectif 235,67 $"
+    },
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/0001535527/000153552726000029/crwd-20260826xex991.htm",
+     "date": "2026-08-26",
+     "what": "Communiqué T2 FY2027 : BPA non-GAAP 0,31 $, guidance FY2027 1,25-1,26 $"
+    },
+    {
+     "url": "https://www.cnbc.com/2026/08/26/crowdstrike-crwd-earnings-q2-2027.html",
+     "date": "2026-08-26",
+     "what": "Réaction du titre +11 %"
+    },
+    {
+     "url": "https://finance.yahoo.com/markets/stocks/articles/crowdstrike-crwd-attracting-investor-attention-130006714.html",
+     "date": "2026-09",
+     "what": "Zacks Rank 4"
+    }
+   ]
+  },
+  {
+   "ticker": "NET",
+   "name": "Cloudflare",
+   "exchange": "NYSE",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Cloud / edge network & AI inference",
+   "megatrend": "1 Accélérateurs IA (edge)",
+   "price": 350.18,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 124.69,
+   "fy_end_month": 12,
+   "eps_basis": "non-GAAP",
+   "fy2025": 0.93,
+   "fy2026": 1.26,
+   "fy2027": 1.67,
+   "fy2028": 2.32,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 1.66,
+   "dividend_yield_pct": null,
+   "w52_low": 158.83,
+   "w52_high": 367.43,
+   "price_target": 200.0,
+   "zacks_rank": 3,
+   "zacks_rank_date": "2026-09",
+   "cyclical": false,
+   "one_offs_note": "Objectifs d'analystes cités (Bernstein 181 $, Susquehanna 200 $) très inférieurs au cours : consensus d'objectif non trouvé. Plus de la moitié du trafic désormais non humain.",
+   "latest_results_summary": "T2 2026 (06/08/2026) : revenus 696,1 M$ (+36 %), BPA non-GAAP 0,29 $ (+38,1 %, +7,4 % vs Zacks) ; titre +17 %.",
+   "guidance": "T3 2026 : revenus 736-737 M$ (+31 %) ; 2026 : revenus 2,864-2,870 Md$ (+32 %), BPA non-GAAP 1,25-1,26 $.",
+   "ceo_quote": {
+    "original": "AI is driving a fundamental re-platforming of the Internet and a paradigm shift in how software is created and consumed; it's shaping up to be the biggest tailwind we've ever seen in Cloudflare's history,",
+    "french": "L'IA entraîne une refonte fondamentale des plateformes d'Internet et un changement de paradigme dans la façon dont le logiciel est créé et consommé ; cela s'annonce comme le plus grand vent porteur que nous ayons jamais connu dans l'histoire de Cloudflare,",
+    "date": "2026-08-06",
+    "source": "https://www.cloudflare.com/press/press-releases/2026/cloudflare-announces-second-quarter-2026-financial-results/"
+   },
+   "thesis_short": "Réseau edge devenu couche d'inférence et de contrôle des agents IA ; croissance réaccélérée à 36 %.",
+   "key_risk": "PER ~210x le BPA 2027 : PEG > 5 ; valorisation 124,69 Md$ pour 2,87 Md$ de revenus.",
+   "notes": "Consensus : 2026 1,26 $ (Zacks), 2027 1,67 $, 2028 2,32 $ (+42,7 %). Objectif retenu : Susquehanna 200 $ (le plus récent cité) — à considérer comme non consensuel.",
+   "sources": [
+    {
+     "url": "https://www.investing.com/equities/cloudflare-inc",
+     "date": "2026-09-30",
+     "what": "Prix 350,18 $ (-0,59 %), capitalisation 124,69 Md$, 52 semaines 158,83-367,43, beta 1,66"
+    },
+    {
+     "url": "https://finance.yahoo.com/markets/stocks/articles/cloudflare-q2-earnings-beat-estimates-153300437.html",
+     "date": "2026-08-06",
+     "what": "BPA 0,29 $, guidance 2026"
+    },
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/1477333/000147733326000008/q425exhibit991.htm",
+     "date": "2026-02",
+     "what": "FY2025 : revenus 2 167,9 M$, BPA non-GAAP 0,93 $"
+    }
+   ]
+  },
+  {
+   "ticker": "DDOG",
+   "name": "Datadog",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Software / observability & security",
+   "megatrend": "1 Accélérateurs IA (logiciel)",
+   "price": 273.85,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 99.47,
+   "fy_end_month": 12,
+   "eps_basis": "non-GAAP",
+   "fy2025": 2.05,
+   "fy2026": 2.52,
+   "fy2027": 3.05,
+   "fy2028": 3.77,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 1.49,
+   "dividend_yield_pct": null,
+   "w52_low": 98.01,
+   "w52_high": 292.72,
+   "price_target": 286.26,
+   "zacks_rank": 3,
+   "zacks_rank_date": "2026-09",
+   "cyclical": false,
+   "one_offs_note": "Concentration sur quelques clients IA natifs (OpenAI) ; P/E GAAP ~549x cité par une source.",
+   "latest_results_summary": "T2 2026 (06/08/2026) : revenus 1,12 Md$ (+36 %), flux opérationnel 316 M$, FCF 279 M$, BPA non-GAAP 0,65 $ vs 0,58 $.",
+   "guidance": "2026 : revenus 4,45-4,47 Md$, BPA non-GAAP 2,50-2,54 $ (~376 M d'actions diluées).",
+   "ceo_quote": {
+    "original": "Datadog delivered a strong quarter, with 36% year-over-year revenue growth, $316 million in operating cash flow, and $279 million in free cash flow.",
+    "french": "Datadog a réalisé un trimestre solide, avec une croissance du chiffre d'affaires de 36 % sur un an, 316 millions de dollars de flux de trésorerie opérationnel et 279 millions de dollars de flux de trésorerie disponible.",
+    "date": "2026-08-06",
+    "source": "https://investors.datadoghq.com/news-releases/news-release-details/datadog-announces-second-quarter-2026-financial-results"
+   },
+   "thesis_short": "Observabilité des charges IA ; croissance réaccélérée à 36 %.",
+   "key_risk": "PER ~90x le BPA 2027 pour +21 % : PEG > 4 ; dépendance aux clients IA natifs.",
+   "notes": "Consensus : 2026 2,52 $ (Zacks), 2027 3,05 $ (2,61-4,70), 2028 3,77 $ (3,14-5,45). Capitalisation 99,47 Md$ (30/09) ; autres sources 88,86-98,33 Md$. Une source signale un relèvement Zacks à Strong Buy.",
+   "sources": [
+    {
+     "url": "https://robinhood.com/us/en/stocks/DDOG/",
+     "date": "2026-09-30",
+     "what": "Clôture 273,85 $"
+    },
+    {
+     "url": "https://simplywall.st/stocks/us/software/nasdaq-ddog/datadog",
+     "date": "2026-09",
+     "what": "52 semaines 98,01-292,72, beta 1,49, objectif 286,26 $ (158-340)"
+    },
+    {
+     "url": "https://www.sec.gov/Archives/edgar/data/1561550/000162828026006645/ex-991x20251231x8k.htm",
+     "date": "2026-02",
+     "what": "FY2025 : BPA non-GAAP 2,05 $, revenus 3,43 Md$"
+    }
+   ]
+  },
+  {
+   "ticker": "VRTX",
+   "name": "Vertex Pharmaceuticals",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Biotech / cystic fibrosis, pain, gene editing",
+   "megatrend": "8 Biotech plateformes",
+   "price": 522.81,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 132.51,
+   "fy_end_month": 12,
+   "eps_basis": "non-GAAP",
+   "fy2025": 18.4,
+   "fy2026": 18.86,
+   "fy2027": 21.62,
+   "fy2028": 24.9,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 0.28,
+   "dividend_yield_pct": null,
+   "w52_low": 385.86,
+   "w52_high": 560.25,
+   "price_target": 571.39,
+   "zacks_rank": 3,
+   "zacks_rank_date": "2026-09",
+   "cyclical": false,
+   "one_offs_note": "Acquisition de Crinetics en cours : charges d'IPR&D acquise à venir ; BPA non-GAAP T2 2026 sous le consensus Zacks.",
+   "latest_results_summary": "T2 2026 (03/08/2026) : revenus 3,33 Md$ (+12 %), BPA non-GAAP 4,73 $ (+5 %).",
+   "guidance": "2026 : revenus relevés à 13,1-13,2 Md$ (vs 12,95-13,1 Md$).",
+   "ceo_quote": {
+    "original": "Vertex delivered excellent second quarter results, expanding our leadership in cystic fibrosis; delivering strong revenue growth in sickle cell disease, beta thalassemia, and acute pain; and with the pending acquisition of Crinetics, adding rare endocrine diseases as our fifth pillar, further diversifying our portfolio.",
+    "french": "Vertex a réalisé d'excellents résultats au deuxième trimestre, renforçant son leadership dans la mucoviscidose, affichant une forte croissance des revenus dans la drépanocytose, la bêta-thalassémie et la douleur aiguë, et, avec l'acquisition en cours de Crinetics, ajoutant les maladies endocriniennes rares comme cinquième pilier, diversifiant encore notre portefeuille.",
+    "date": "2026-08-03",
+    "source": "https://news.vrtx.com/news-releases/news-release-details/vertex-reports-second-quarter-2026-financial-results"
+   },
+   "thesis_short": "Franchise mucoviscidose quasi monopolistique, beta 0,28 ; mais BPA 2026 quasi stable (+2,5 %) : PEG > 2.",
+   "key_risk": "Croissance du BPA faible, dilution par acquisitions, dépendance à la CF.",
+   "notes": "Consensus : 2026 18,86 $ (Zacks), 2027 21,62 $, 2028 24,9 $ (ValueInvesting.io, 17,2-31,0). BPA non-GAAP 2025 : 18,40 $.",
+   "sources": [
+    {
+     "url": "https://stockanalysis.com/stocks/vrtx/",
+     "date": "2026-09-30",
+     "what": "Clôture 522,81 $, capitalisation 132,51 Md$, 52 semaines 385,86-560,25, beta 0,28, objectif 571,39 $"
+    },
+    {
+     "url": "https://investors.vrtx.com/news-releases/news-release-details/vertex-reports-fourth-quarter-and-full-year-2025-financial",
+     "date": "2026-02",
+     "what": "FY2025 : BPA non-GAAP 18,40 $"
+    },
+    {
+     "url": "https://www.easternprogress.com/vrtx-q2-earnings-call-highlights-launch-momentum-higher-outlook/article_8abe6dff-7cc0-5c6d-b308-e68c80beb6ba.html",
+     "date": "2026-08",
+     "what": "Consensus 2026/2027"
+    }
+   ]
+  },
+  {
+   "ticker": "ALNY",
+   "name": "Alnylam Pharmaceuticals",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Biotech / RNAi (Amvuttra)",
+   "megatrend": "8 Biotech plateformes",
+   "price": 246.74,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 31.57,
+   "fy_end_month": 12,
+   "eps_basis": "non-GAAP",
+   "fy2025": null,
+   "fy2026": 8.85,
+   "fy2027": 12.47,
+   "fy2028": 14.44,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 1.0774,
+   "dividend_yield_pct": null,
+   "w52_low": 197.81,
+   "w52_high": 495.55,
+   "price_target": 369.0,
+   "zacks_rank": 3,
+   "zacks_rank_date": "2026-09",
+   "cyclical": false,
+   "one_offs_note": "Titre -28 % après l'abaissement de la guidance 2026 (normalisation de la demande de 2e ligne d'Amvuttra) ; BPA T2 sous consensus.",
+   "latest_results_summary": "T2 2026 (août 2026) : revenus produits nets 1,17 Md$ (+74 %), franchise TTR 1,03 Md$ (+89 %), Amvuttra >1 Md$ au trimestre, BPA ajusté 1,84 $ vs 2,05 $ attendu.",
+   "guidance": "2026 : revenus produits nets abaissés à 4,7-5,1 Md$ (vs 4,9-5,3 Md$).",
+   "ceo_quote": {
+    "original": "It marks the first time AMVUTTRA revenues exceeded $1 billion in a single quarter,",
+    "french": "C'est la première fois que les revenus d'AMVUTTRA dépassent 1 milliard de dollars en un seul trimestre,",
+    "date": "2026-08",
+    "source": "https://www.investing.com/news/transcripts/earnings-call-transcript-alnylam-shares-sink-after-q2-2026-guidance-cut-93CH-4824909"
+   },
+   "thesis_short": "Plateforme ARNi avec Amvuttra en cardiomyopathie ; BPA 2027 +41 % au consensus ; PER ~20x 2027 : PEG ~0,5 après la chute.",
+   "key_risk": "Crédibilité de la guidance, concurrence (Pfizer, BridgeBio), dépendance à un produit.",
+   "notes": "Consensus : 2026 8,85 $ (14 analystes), 2027 12,47 $, 2028 14,44 $ (8,76-25,29). Objectifs : JPMorgan 369 $ (abaissé de 375, 29/09/2026), Stifel 346 $, WallStreetZen 424,14 $.",
+   "sources": [
+    {
+     "url": "https://www.wallstreetzen.com/stocks/us/nasdaq/alny",
+     "date": "2026-09-30",
+     "what": "Clôture 246,74 $, capitalisation 31,57 Md$, 52 semaines 197,81-495,55, beta 1,0774"
+    },
+    {
+     "url": "https://finance.yahoo.com/healthcare/articles/alny-stock-tanks-28-q2-152500660.html",
+     "date": "2026-08",
+     "what": "BPA ajusté 1,84 $ vs 2,05 $, guidance abaissée"
+    },
+    {
+     "url": "https://stockanalysis.com/stocks/alny/forecast/",
+     "date": "2026-09",
+     "what": "Consensus 2026-2028"
+    }
+   ]
+  },
+  {
+   "ticker": "TTWO",
+   "name": "Take-Two Interactive",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Video games (GTA VI)",
+   "megatrend": "7 Plateformes (divertissement)",
+   "price": 207.5,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 38.8,
+   "fy_end_month": 3,
+   "eps_basis": "GAAP diluted EPS (consensus Barchart) ; société guide en net bookings",
+   "fy2025": null,
+   "fy2026": 2.75,
+   "fy2027": 5.21,
+   "fy2028": 8.47,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 0.97,
+   "dividend_yield_pct": null,
+   "w52_low": 187.63,
+   "w52_high": 265.94,
+   "price_target": 286.44,
+   "zacks_rank": 3,
+   "zacks_rank_date": "2026-09",
+   "cyclical": true,
+   "one_offs_note": "Clôture fiscale fin mars : FY2027 = mars 2027 (inclut le lancement de GTA VI le 19 novembre 2026) ; activité « hit-driven » : saut de BPA ponctuel puis normalisation.",
+   "latest_results_summary": "T1 FY2027 (clos 30/06/2026, publié 07/08/2026) : net bookings 1,39 Md$, au-dessus de la fourchette de guidance.",
+   "guidance": "FY2027 : net bookings 8,0-8,2 Md$ (réitéré) ; BPA 5,75-6,00 $ (guidance société vs consensus 2,49 $ à la date de publication, MarketBeat).",
+   "ceo_quote": {
+    "original": "Our excellent first quarter results reflect the power of our portfolio and disciplined execution across all of our labels. With these positive trends and excitement around the November 19th launch of Grand Theft Auto VI, we are reiterating our Fiscal 2027 Net Bookings outlook of $8.0 to $8.2 billion.",
+    "french": "Nos excellents résultats du premier trimestre reflètent la puissance de notre portefeuille et une exécution disciplinée dans tous nos labels. Avec ces tendances positives et l'enthousiasme autour du lancement de Grand Theft Auto VI le 19 novembre, nous réitérons notre perspective de net bookings de 8,0 à 8,2 milliards de dollars pour l'exercice 2027.",
+    "date": "2026-08-07",
+    "source": "https://www.take2games.com/ir/news/take-two-interactive-software-inc-reports-results-fiscal-first-6"
+   },
+   "thesis_short": "Catalyseur GTA VI : BPA FY2027 +89,5 % puis FY2028 +62,6 % au consensus ; PER ~40x FY2027, ~24x FY2028.",
+   "key_risk": "Report de GTA VI, BPA cyclique (pic FY2028), base 2026 déprimée.",
+   "notes": "Consensus Barchart : FY2026 2,75 $ (réel), FY2027 5,21 $, FY2028 8,47 $. Zacks : Strong Buy le 27/07/2026 puis Rank 3. Objectif 286,44 $ (29 analystes Strong Buy).",
+   "sources": [
+    {
+     "url": "https://stockanalysis.com/stocks/ttwo/",
+     "date": "2026-09-30",
+     "what": "Clôture 207,50 $, capitalisation 38,80 Md$, 52 semaines 187,63-265,94, beta 0,97, objectif 286,44 $"
+    },
+    {
+     "url": "https://finance.yahoo.com/markets/stocks/articles/expect-two-interactive-q1-2027-101832311.html",
+     "date": "2026-07",
+     "what": "Consensus FY2027 5,21 $, FY2028 8,47 $, FY2026 2,75 $"
+    },
+    {
+     "url": "https://www.marketbeat.com/instant-alerts/take-two-interactive-software-nasdaqttwo-issues-fy-2027-earnings-guidance-2026-08-07/",
+     "date": "2026-08-07",
+     "what": "Guidance BPA FY2027 5,75-6,00 $"
+    }
+   ]
+  },
+  {
+   "ticker": "ABNB",
+   "name": "Airbnb",
+   "exchange": "Nasdaq",
+   "currency": "USD",
+   "country": "US",
+   "sector": "Travel platform",
+   "megatrend": "7 Plateformes (consommation)",
+   "price": 160.65,
+   "price_date": "2026-09-30",
+   "market_cap_usd_bn": 96.195,
+   "fy_end_month": 12,
+   "eps_basis": "GAAP diluted EPS (consensus)",
+   "fy2025": null,
+   "fy2026": 5.31,
+   "fy2027": 6.21,
+   "fy2028": 7.37,
+   "fy2029": null,
+   "ltg_pct": null,
+   "beta": 1.16,
+   "dividend_yield_pct": null,
+   "w52_low": 110.81,
+   "w52_high": 193.45,
+   "price_target": 184.35,
+   "zacks_rank": 3,
+   "zacks_rank_date": "2026-09",
+   "cyclical": true,
+   "one_offs_note": "Effets fiscaux ponctuels dans le BPA GAAP (2024) ; dépenses IA accrues annoncées pour 2026.",
+   "latest_results_summary": "T2 2026 (06/08/2026) : BPA 1,37 $ (+14,17 % vs Zacks), revenus 3,61 Md$ (+16,5 %) ; titre +9 à +15 %.",
+   "guidance": "2026 : croissance des revenus relevée à au moins « mid-teens » ; T3 : revenus 4,69-4,77 Md$ (+15-17 %).",
+   "ceo_quote": {
+    "original": "[Airbnb will spend] a lot more [on AI]",
+    "french": "[Airbnb dépensera] beaucoup plus [en IA]",
+    "date": "2026-08-07",
+    "source": "https://www.cnbc.com/2026/08/07/chesky-airbnb-ai-earnings.html"
+   },
+   "thesis_short": "Réaccélération de la croissance à mid-teens ; BPA 2027 +17 % ; PER ~26x 2027 : PEG ~1,5.",
+   "key_risk": "Cyclicité du voyage, réglementation locale, concurrence Booking.",
+   "notes": "Citation de Brian Chesky partielle (fragment rapporté par CNBC). Consensus : 2026 5,31 $, 2027 6,21 $ (5,24-7,96), 2028 7,37 $ (5,86-10,13). Objectif moyen 184,35 $ (135-220).",
+   "sources": [
+    {
+     "url": "https://finance.yahoo.com/quote/ABNB/",
+     "date": "2026-09-30",
+     "what": "Clôture 160,65 $, capitalisation 96,195 Md$, 52 semaines 110,81-193,45, beta 1,16"
+    },
+    {
+     "url": "https://stockanalysis.com/stocks/abnb/forecast/",
+     "date": "2026-09",
+     "what": "Consensus 2026-2028, objectif 184,35 $"
+    },
+    {
+     "url": "https://www.cnbc.com/2026/08/06/airbnb-abnb-q2-earningsreport.html",
+     "date": "2026-08-06",
+     "what": "Résultats T2 2026"
+    }
+   ]
+  }
+ ],
+ "excluded": [],
+ "notes": "44 fiches collectées (aucune exclusion pour budget). Prix = clôture du 30/09/2026 sauf mention. Toutes les valeurs proviennent de résultats de recherche web datés ; les champs non trouvés sont null. Exercices fiscaux libellés par l'année civile de clôture : Credo (avril, FY2027 en cours), Oracle (mai), Coherent et Lumentum (juin), Ciena (octobre), Marvell et CrowdStrike (janvier, FY2027 en cours), Take-Two (mars, FY2027 en cours). Pour ces sociétés, fy2026 est un chiffre réel lorsqu'il est renseigné. ltg_pct (croissance long terme consensus) non trouvé pour l'ensemble des valeurs : null. Fiches avec fy2026 ET fy2027 renseignés : 41/44 (VRT, GEV, CLS, ALAB, ANET, NBIS, CRWV, ORCL, LLY, UBER, RDDT, HOOD, CVNA, DUOL, HIMS, NTRA, PODD, TMDX, ISRG, RKLB, AXON, SPOT, SHOP, DASH, COIN, IBKR, COHR, LITE, CIEN, ETN, CEG, PLTR, APP, NFLX, NOW, NET, DDOG, VRTX, ALNY, TTWO, ABNB). Manquent fy2026 (réel non capturé) : CRDO, MRVL, CRWD, qui disposent de fy2027+fy2028. Sociétés en perte (PEG non calculable sur 2026) : NBIS, CRWV, HIMS, NTRA, RKLB, COIN. Points d'attention : CRWD et NOW post-division d'actions ; SPOT estimation 2027 en euros ; ANET et UBER chiffres GAAP vs non-GAAP ; MRVL consensus en forte révision ; NET objectif d'analyste individuel (pas de consensus trouvé)."
+}

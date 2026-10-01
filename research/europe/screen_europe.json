@@ -1,0 +1,2340 @@
+{
+  "as_of": "2026-10-01",
+  "region": "Europe",
+  "candidates": [
+    {
+      "ticker": "ASML",
+      "name": "ASML Holding N.V.",
+      "exchange": "Euronext Amsterdam",
+      "listing_to_buy": "Euronext Amsterdam ASML (EUR)",
+      "pea_eligible": "Yes - Dutch company (EU)",
+      "adr_ticker": "ASML (Nasdaq)",
+      "adr_ratio": "1:1",
+      "currency": "EUR",
+      "country": "Netherlands",
+      "sector": "Semiconductor equipment",
+      "megatrend": "AI / advanced lithography (EUV)",
+      "price": 1596.8,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": 645.9,
+      "fy_end_month": 12,
+      "eps_basis": "Consensus EPS (ASML reports IFRS/US GAAP, no large non-GAAP adjustments)",
+      "fy2025": null,
+      "fy2026": 38.33,
+      "fy2027": 51.72,
+      "fy2028": 70.43,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 1.36,
+      "dividend_yield_pct": 0.42,
+      "w52_low": 935.41,
+      "w52_high": 1999.96,
+      "price_target": null,
+      "zacks_rank": 3,
+      "zacks_rank_date": "2026-09",
+      "cyclical": true,
+      "one_offs_note": "No specific one-offs flagged; semiconductor-equipment cycle risk (AI capex peak). 52-week range is the Nasdaq ADR range in USD (stockanalysis), not the Amsterdam line. fy2028 figure from a single source.",
+      "latest_results_summary": "Q2 2026 (reported 15 Jul 2026): net sales EUR 9.3bn, net income EUR 2.9bn, EPS EUR 7.59, gross margin 54.0% vs consensus 51.9%; EUV system sales EUR 3.8bn.",
+      "guidance": "FY2026 outlook raised for the second time: total net sales EUR 43-45bn, gross margin 54-56% (initial guidance was EUR 36-40bn / 51-53%).",
+      "ceo_quote": {
+        "original": "Ongoing AI-related investments and continued progress in AI technologies are driving demand for advanced Logic and Memory chips, further strengthening the semiconductor industry's growth outlook. Our customers, in turn, continue to accelerate their capacity expansion plans.",
+        "french": "Les investissements continus liés à l'IA et les progrès constants des technologies d'IA tirent la demande de puces logiques et mémoire avancées, renforçant encore les perspectives de croissance de l'industrie des semi-conducteurs. Nos clients, à leur tour, continuent d'accélérer leurs plans d'expansion de capacité.",
+        "date": "2026-07-15",
+        "source": "https://www.investing.com/news/earnings/asml-q2-outlook-tops-on-ai-chip-demand-lifts-fullyear-forecast-4792148"
+      },
+      "thesis_short": "Monopoly on EUV lithography; AI-driven logic/memory capex pushes EPS from ~38 (2026e) to ~52 (2027e), +35%, at ~31x 2027 EPS.",
+      "key_risk": "Semi-equipment cycle: 2026-27 are peak-capex years; China export restrictions; guidance already raised twice (expectations high).",
+      "notes": "Market cap in USD taken directly from stockanalysis ($645.93bn as of 21 Sep 2026). Consensus counts: 31 analysts (2026), 33 (2027).",
+      "sources": [
+        {
+          "url": "https://stocksguide.com/en/forecast/ASML-NL0010273215",
+          "date": "2026-09",
+          "what": "Consensus EPS 2026/2027/2028 (38.33 / 51.72 / 70.43)"
+        },
+        {
+          "url": "https://www.marketscreener.com/quote/stock/ASML-HOLDING-N-V-12002973/quotes/",
+          "date": "2026-09-30",
+          "what": "Close EUR 1,596.80 on Euronext Amsterdam"
+        },
+        {
+          "url": "https://stockanalysis.com/stocks/asml/statistics/",
+          "date": "2026-09-21",
+          "what": "Market cap $645.93bn, beta 1.36, 52w range (ADR), dividend yield 0.42%"
+        },
+        {
+          "url": "https://www.tradingview.com/news/zacks:1a176865d094b:0-is-asml-stock-a-buy-as-rapid-growth-tests-its-premium-valuation/",
+          "date": "2026-09",
+          "what": "Zacks Rank #3 Hold; Zacks 2026 EPS consensus $44.11"
+        },
+        {
+          "url": "https://www.investing.com/news/earnings/asml-q2-outlook-tops-on-ai-chip-demand-lifts-fullyear-forecast-4792148",
+          "date": "2026-07-15",
+          "what": "Q2 2026 results, raised 2026 guidance, CEO quote"
+        }
+      ]
+    },
+    {
+      "ticker": "ASM",
+      "name": "ASM International N.V.",
+      "exchange": "Euronext Amsterdam",
+      "listing_to_buy": "Euronext Amsterdam ASM (EUR)",
+      "pea_eligible": "Yes - Dutch company (EU)",
+      "adr_ticker": "ASMIY (OTC)",
+      "adr_ratio": "1:1",
+      "currency": "EUR",
+      "country": "Netherlands",
+      "sector": "Semiconductor equipment (ALD/epitaxy)",
+      "megatrend": "AI / gate-all-around & advanced nodes",
+      "price": 888.0,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": 46.2,
+      "fy_end_month": 12,
+      "eps_basis": "Consensus EPS (adjusted/normalized per Yahoo-MarketScreener)",
+      "fy2025": null,
+      "fy2026": 22.02,
+      "fy2027": 27.0,
+      "fy2028": 32.6,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 1.55,
+      "dividend_yield_pct": 0.39,
+      "w52_low": 459.7,
+      "w52_high": 1092.5,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": true,
+      "one_offs_note": "Cyclical semi-equipment. Low/high consensus range 2026: 20.23-23.53; 2027: 21.94-30.36; 2028: 26.3-39.5. A 'FY2025 diluted EPS 14.70' figure appeared in one source but looked stale/forecast, so fy2025 left null.",
+      "latest_results_summary": "Q2 2026 (28 Jul 2026): revenue EUR 1,003m (first quarter above EUR 1bn), +24% y/y at constant currency, +15% q/q; gross margin 51.9%, adjusted operating margin 33%.",
+      "guidance": "Q3 2026 revenue guided at about EUR 1.1bn; 2027 revenue now expected to exceed the top end of the EUR 3.7-4.6bn range given a year earlier.",
+      "ceo_quote": {
+        "original": "We delivered another strong quarter, with Q2 2026 revenue of EUR 1,003 million, above the midpoint of our guidance range.",
+        "french": "Nous avons livré un nouveau trimestre solide, avec un chiffre d'affaires de 1 003 millions d'euros au T2 2026, au-dessus du milieu de notre fourchette de prévisions.",
+        "date": "2026-07-28",
+        "source": "https://www.asm.com/media/y0mkxj21/20260728-asm-reports-second-quarter-2026-results.pdf"
+      },
+      "thesis_short": "Leader in ALD for gate-all-around transistors; EPS +23% in 2027e and +21% in 2028e at ~33x 2027 EPS.",
+      "key_risk": "Equipment cycle and customer concentration (TSMC/Samsung/Intel); stock fell on Q2 despite record revenue.",
+      "notes": "USD market cap converted from the sourced local-currency figure with ECB reference rates of 30 Sep 2026 (EUR/USD 1.1355, EUR/CHF 0.9478, EUR/GBP 0.85463, EUR/SEK 11.3310, EUR/NOK 10.9015; euro-rates.info/en/home/EUR/2026-09-30); the source market cap is not necessarily dated 30 Sep 2026.",
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/quote/ASM.AS/analysis/",
+          "date": "2026-09",
+          "what": "Consensus EPS 2026 22.02 (20.23-23.53) and 2027 27.00 (21.94-30.36)"
+        },
+        {
+          "url": "https://www.marketscreener.com/quote/stock/ASM-INTERNATIONAL-N-V-6312/finances/",
+          "date": "2026-09",
+          "what": "Consensus EPS 2028 32.6 (26.3-39.5)"
+        },
+        {
+          "url": "https://www.marketscreener.com/quote/stock/ASM-INTERNATIONAL-N-V-6312/",
+          "date": "2026-09-30",
+          "what": "Close EUR 888.00"
+        },
+        {
+          "url": "https://finance.yahoo.com/quote/ASM.AS/key-statistics/",
+          "date": "2026-09",
+          "what": "Market cap EUR 40.67bn, beta 1.55, 52w EUR 459.70-1,092.50, yield 0.39%"
+        },
+        {
+          "url": "https://www.asm.com/media/y0mkxj21/20260728-asm-reports-second-quarter-2026-results.pdf",
+          "date": "2026-07-28",
+          "what": "Q2 2026 results, Q3 guidance, CEO quote"
+        }
+      ]
+    },
+    {
+      "ticker": "BESI",
+      "name": "BE Semiconductor Industries N.V.",
+      "exchange": "Euronext Amsterdam",
+      "listing_to_buy": "Euronext Amsterdam BESI (EUR)",
+      "pea_eligible": "Yes - Dutch company (EU)",
+      "adr_ticker": "BESIY (OTC)",
+      "adr_ratio": "1:1",
+      "currency": "EUR",
+      "country": "Netherlands",
+      "sector": "Semiconductor equipment (assembly / hybrid bonding)",
+      "megatrend": "AI advanced packaging / hybrid bonding",
+      "price": 191.8,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": 17.3,
+      "fy_end_month": 12,
+      "eps_basis": "Consensus EPS (Yahoo/StocksGuide; USD figures converted by source to EUR 3.86 / 5.73)",
+      "fy2025": null,
+      "fy2026": 3.86,
+      "fy2027": 5.73,
+      "fy2028": null,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 1.33,
+      "dividend_yield_pct": 0.82,
+      "w52_low": 120.15,
+      "w52_high": 328.4,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": true,
+      "one_offs_note": "Highly cyclical; 2025 earnings fell 27.7% (EUR 131.64m) before the 2026 rebound. Consensus revised up over 90 days (from $3.52 to $3.98 for 2026; from $5.24 to $6.21 for 2027). EUR figures are the source's own conversion.",
+      "latest_results_summary": "Q2 2026 (23 Jul 2026): revenue EUR 249.9m (+68.7% y/y, +35.2% q/q), net income EUR 89m, orders EUR 292.9m (+128.8% y/y); hybrid-bonding customers 21 vs 15 at end-2025.",
+      "guidance": "Q3 2026 revenue +10-15% q/q, gross margin 63-65%, opex flat to +5%; continued hybrid-bonding orders expected in Q3.",
+      "ceo_quote": {
+        "original": "Strong second quarter and first half-year 2026 results as favorable order momentum continued for both our traditional and wafer-level assembly systems.",
+        "french": "Des résultats solides au deuxième trimestre et au premier semestre 2026, la dynamique favorable des commandes s'étant poursuivie tant pour nos systèmes d'assemblage traditionnels que pour les systèmes au niveau de la plaquette.",
+        "date": "2026-07-23",
+        "source": "https://www.investing.com/news/transcripts/earnings-call-transcript-besi-q2-2026-results-lift-revenue-but-stock-falls-93CH-4809494"
+      },
+      "thesis_short": "Pure play on hybrid bonding for HBM/logic AI packaging; EPS expected +48% in 2027e at ~33x 2027 EPS.",
+      "key_risk": "Timing/scale of memory hybrid-bonding adoption remains uncertain; very volatile cyclical with 52-week range 120-328.",
+      "notes": "USD market cap converted from the sourced local-currency figure with ECB reference rates of 30 Sep 2026 (EUR/USD 1.1355, EUR/CHF 0.9478, EUR/GBP 0.85463, EUR/SEK 11.3310, EUR/NOK 10.9015; euro-rates.info/en/home/EUR/2026-09-30); the source market cap is not necessarily dated 30 Sep 2026.",
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/quote/BESI.AS/analysis/",
+          "date": "2026-09",
+          "what": "Consensus EPS 2026 $3.98 (~EUR 3.86) and 2027 $6.21 (~EUR 5.73)"
+        },
+        {
+          "url": "https://www.investing.com/equities/be-semicond",
+          "date": "2026-09-30",
+          "what": "Close EUR 191.80"
+        },
+        {
+          "url": "https://finance.yahoo.com/quote/BESI.AS/",
+          "date": "2026-09",
+          "what": "Market cap ~EUR 15.2bn, beta 1.33, 52w EUR 120.15-328.40, yield 0.82%, 2025 earnings EUR 131.64m"
+        },
+        {
+          "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-besi-q2-2026-results-lift-revenue-but-stock-falls-93CH-4809494",
+          "date": "2026-07-23",
+          "what": "Q2 2026 results, guidance, CEO quote"
+        }
+      ]
+    },
+    {
+      "ticker": "IFX",
+      "name": "Infineon Technologies AG",
+      "exchange": "Xetra",
+      "listing_to_buy": "Xetra IFX (EUR)",
+      "pea_eligible": "Yes - German company (EU)",
+      "adr_ticker": "IFNNY (OTC)",
+      "adr_ratio": "1:1",
+      "currency": "EUR",
+      "country": "Germany",
+      "sector": "Semiconductors (power / automotive)",
+      "megatrend": "AI data-center power supply, electrification",
+      "price": 59.06,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": 92.4,
+      "fy_end_month": 9,
+      "eps_basis": "Consensus adjusted EPS (MarketScreener); fiscal year ends September (fy2026 = Oct 2025-Sep 2026)",
+      "fy2025": 0.77,
+      "fy2026": 1.285,
+      "fy2027": 2.404,
+      "fy2028": 3.306,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 1.95,
+      "dividend_yield_pct": 0.61,
+      "w52_low": 22.01,
+      "w52_high": 86.05,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": true,
+      "one_offs_note": "Cyclical semiconductor; FY2025 EPS 0.77 is the trough. Alternative consensus source shows 1.27/2.38/3.24.",
+      "latest_results_summary": "Q3 FY2026 (Aug 2026): record revenue EUR 4.172bn (+9% q/q, +13% y/y), segment result EUR 797m, margin 19.1%; Power & Sensor Systems +34% y/y.",
+      "guidance": "Q4 FY2026 revenue ~EUR 4.7bn with segment result margin ~23%; FY2026 revenue ~EUR 16.3bn.",
+      "ceo_quote": {
+        "original": "Infineon concluded the third quarter of the 2026 fiscal year with record revenue and continues its growth trajectory. An increasing number of our target markets are showing a positive trend. Our power supply solutions for AI data centers remain in very high demand and continue to be our most important growth driver.",
+        "french": "Infineon a clos le troisième trimestre de l'exercice 2026 avec un chiffre d'affaires record et poursuit sa trajectoire de croissance. Un nombre croissant de nos marchés cibles montre une tendance positive. Nos solutions d'alimentation pour les centres de données IA restent très demandées et demeurent notre principal moteur de croissance.",
+        "date": "2026-08",
+        "source": "https://www.eqs-news.com/news/corporate/infineon-technolgies-ag-q3-fy-2026-concluded-with-record-sales-driven-by-strong-ai-business-further-significant-increase-in-revenue-and-margin-expected-in-q4-fy-2026/6dcee75d-16f0-414e-af63-1f6e3442ef7a_en"
+      },
+      "thesis_short": "EPS expected to nearly double FY2026->FY2027 (1.29->2.40) as AI power and auto recover; ~25x FY2027 EPS.",
+      "key_risk": "Cyclical recovery already priced (+57% YTD); auto end-market weakness; beta 1.95.",
+      "notes": "USD market cap converted from the sourced local-currency figure with ECB reference rates of 30 Sep 2026 (EUR/USD 1.1355, EUR/CHF 0.9478, EUR/GBP 0.85463, EUR/SEK 11.3310, EUR/NOK 10.9015; euro-rates.info/en/home/EUR/2026-09-30); the source market cap is not necessarily dated 30 Sep 2026.",
+      "sources": [
+        {
+          "url": "https://www.marketscreener.com/quote/stock/INFINEON-TECHNOLOGIES-AG-35806809/finances/",
+          "date": "2026-09",
+          "what": "Consensus EPS FY2026 1.285, FY2027 2.404, FY2028 3.306"
+        },
+        {
+          "url": "https://www.boerse.de/historische-kurse/Infineon-Aktie/DE0006231004",
+          "date": "2026-09-30",
+          "what": "Xetra close EUR 59.06"
+        },
+        {
+          "url": "https://www.onvista.de/aktien/Infineon-Aktie-DE0006231004",
+          "date": "2026-09",
+          "what": "Market cap EUR 81.38bn, beta 1.95, 52w 22.01-86.05, yield 0.61%, EPS 2025 0.77"
+        },
+        {
+          "url": "https://www.eqs-news.com/news/corporate/infineon-technolgies-ag-q3-fy-2026-concluded-with-record-sales-driven-by-strong-ai-business-further-significant-increase-in-revenue-and-margin-expected-in-q4-fy-2026/6dcee75d-16f0-414e-af63-1f6e3442ef7a_en",
+          "date": "2026-08",
+          "what": "Q3 FY2026 results, outlook, CEO quote"
+        }
+      ]
+    },
+    {
+      "ticker": "VACN",
+      "name": "VAT Group AG",
+      "exchange": "SIX Swiss Exchange",
+      "listing_to_buy": "SIX VACN (CHF)",
+      "pea_eligible": "No - Swiss company (outside EU/EEA)",
+      "adr_ticker": "VACNY (OTC)",
+      "adr_ratio": "n/a (unsponsored)",
+      "currency": "CHF",
+      "country": "Switzerland",
+      "sector": "Semiconductor equipment (vacuum valves)",
+      "megatrend": "AI / semiconductor capex",
+      "price": 680.8,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": 23.1,
+      "fy_end_month": 12,
+      "eps_basis": "Consensus EPS (aktien.guide / finanzen.net / MarketScreener)",
+      "fy2025": 7.15,
+      "fy2026": 10.69,
+      "fy2027": 12.63,
+      "fy2028": 15.04,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 1.56,
+      "dividend_yield_pct": 2.12,
+      "w52_low": 257.5,
+      "w52_high": 727.2,
+      "price_target": 800.0,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": true,
+      "one_offs_note": "Cyclical. Consensus 2027 varies by source (12.63 / 12.11 / 11.18) and 2028 (15.04 / 14.73). Price target 800 CHF is UBS (single broker), not consensus.",
+      "latest_results_summary": "H1 2026 (Jul 2026): net sales CHF 512m (-8% y/y, flat at constant FX) with Q2 CHF 291m (+32% q/q); EBITDA margin 29.0% (29.6%); record orders; acquisition of Atonarp announced.",
+      "guidance": "H2 2026 EBITDA margin expected to improve toward the upper part of the 30-37% target band; UBS sees 2027/28 EPS >10% above consensus.",
+      "ceo_quote": {
+        "original": "I do not expect any further negative pressure on the margin beyond what we have already observed in the first half.",
+        "french": "Je n'attends pas de pression négative supplémentaire sur la marge au-delà de ce que nous avons déjà observé au premier semestre.",
+        "date": "2026-07",
+        "source": "https://www.investing.com/news/transcripts/earnings-call-transcript-vat-group-posts-h1-2026-revenue-beat-as-stock-falls-93CH-4805047"
+      },
+      "thesis_short": "Dominant vacuum-valve supplier to every fab tool maker; EPS +49% 2026e, +18% 2027e, +19% 2028e; ~54x 2026 EPS is rich.",
+      "key_risk": "Highest valuation in the group; H1 2026 sales fell 8%; Swiss listing not PEA eligible.",
+      "notes": "USD market cap converted from the sourced local-currency figure with ECB reference rates of 30 Sep 2026 (EUR/USD 1.1355, EUR/CHF 0.9478, EUR/GBP 0.85463, EUR/SEK 11.3310, EUR/NOK 10.9015; euro-rates.info/en/home/EUR/2026-09-30); the source market cap is not necessarily dated 30 Sep 2026.",
+      "sources": [
+        {
+          "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/vat-group-stock-falls-as-2026-earnings-expectations-stay-firm/70101351",
+          "date": "2026-09",
+          "what": "Consensus EPS 2026 CHF 10.69"
+        },
+        {
+          "url": "https://aktien.guide/kursziel/VAT-Group-CH0311864901",
+          "date": "2026-09",
+          "what": "Consensus EPS 2027 12.63 and 2028 15.04 CHF; UBS PT 800"
+        },
+        {
+          "url": "https://www.finanzen.ch/nachrichten/aktien/vat-aktie-kursbewegung-30-09-2026-1031803671",
+          "date": "2026-09-30",
+          "what": "Close CHF 680.80"
+        },
+        {
+          "url": "https://www.onvista.de/aktien/kennzahlen/VAT-GROUP-AG-Aktie-CH0311864901",
+          "date": "2026-09",
+          "what": "Market cap CHF 19.3bn, beta 1.56, 52w 257.50-727.20, yield 2.12%, EPS 2025 7.15"
+        },
+        {
+          "url": "https://www.vatgroup.com/news/vat-media-release-on-half-year-2026-results",
+          "date": "2026-07",
+          "what": "H1 2026 results, CEO quote"
+        }
+      ]
+    },
+    {
+      "ticker": "ENR",
+      "name": "Siemens Energy AG",
+      "exchange": "Xetra",
+      "listing_to_buy": "Xetra ENR (EUR)",
+      "pea_eligible": "Yes - German company (EU)",
+      "adr_ticker": "SMNEY (OTC)",
+      "adr_ratio": "1:1",
+      "currency": "EUR",
+      "country": "Germany",
+      "sector": "Energy equipment (gas turbines, grid, wind)",
+      "megatrend": "AI power demand / grid build-out",
+      "price": 142.9,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": 137.7,
+      "fy_end_month": 9,
+      "eps_basis": "Consensus EPS (Yahoo ENR.DE / StocksGuide); fiscal year ends September",
+      "fy2025": 1.53,
+      "fy2026": 4.36,
+      "fy2027": 6.05,
+      "fy2028": 7.85,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 1.87,
+      "dividend_yield_pct": 0.5,
+      "w52_low": 96.14,
+      "w52_high": 188.26,
+      "price_target": 208.49,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "FY2025 EPS 1.53 depressed by wind (Gamesa) losses; FY2026 jump reflects wind returning to profit. Alternative consensus 4.42/6.09/7.85 and 3.8/5.3/6.7 exist. Price target 208.49 = average of 29 analysts (high 262.5, low 101).",
+      "latest_results_summary": "Q3 FY2026 (Aug 2026): orders ~EUR 17.9bn, record revenue EUR 11.4bn, margin before special items 14.2%; wind business profitable in a quarter for the first time since 2022.",
+      "guidance": "FY2026 outlook reaffirmed; profit margin before special items trending to the upper end of the 10-12% range.",
+      "ceo_quote": {
+        "original": "The fact that our wind business has returned to profitability in a quarter for the first time since 2022 is a fantastic achievement by this team.",
+        "french": "Le fait que notre activité éolienne soit redevenue rentable sur un trimestre pour la première fois depuis 2022 est une réalisation fantastique de cette équipe.",
+        "date": "2026-08",
+        "source": "https://www.investing.com/news/transcripts/earnings-call-transcript-siemens-energy-posts-record-q3-2026-results-shares-slip-93CH-4836780"
+      },
+      "thesis_short": "Gas turbines and grid equipment sold out for years on AI/data-center power; EPS +39% FY2027e and +30% FY2028e at ~24x FY2027 EPS.",
+      "key_risk": "Beta 1.87, stock already up massively; wind execution; capacity constraints.",
+      "notes": "Exact Xetra close for 30 Sep 2026 reported as EUR 142.90 by finanzen.net (prior close 29 Sep 146.12). USD market cap converted from the sourced local-currency figure with ECB reference rates of 30 Sep 2026 (EUR/USD 1.1355, EUR/CHF 0.9478, EUR/GBP 0.85463, EUR/SEK 11.3310, EUR/NOK 10.9015; euro-rates.info/en/home/EUR/2026-09-30); the source market cap is not necessarily dated 30 Sep 2026.",
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/quote/ENR.DE/analysis/",
+          "date": "2026-09",
+          "what": "Consensus EPS FY2026 4.36 (17 analysts) / FY2027 6.05 (20 analysts)"
+        },
+        {
+          "url": "https://stocksguide.com/en/forecast/Siemens-Energy-DE000ENER6Y0",
+          "date": "2026-09",
+          "what": "Consensus EPS 2028 7.85; avg price target 208.49 (29 analysts)"
+        },
+        {
+          "url": "https://www.finanzen.net/nachricht/aktien/siemens_energy-aktie-kursbewegung-30-09-2026-11202038",
+          "date": "2026-09-30",
+          "what": "Close EUR 142.90"
+        },
+        {
+          "url": "https://www.boerse.de/aktien/Siemens-Energy-Aktie/DE000ENER6Y0",
+          "date": "2026-09",
+          "what": "Market cap ~EUR 121.3bn, beta 1.87, 52w 96.14-188.26, yield 0.5%, EPS FY2025 1.53"
+        },
+        {
+          "url": "https://www.siemens-energy.com/global/en/home/press-releases/earnings-release-q3-fy-2026.html",
+          "date": "2026-08",
+          "what": "Q3 FY2026 earnings release and outlook"
+        }
+      ]
+    },
+    {
+      "ticker": "SU",
+      "name": "Schneider Electric SE",
+      "exchange": "Euronext Paris",
+      "listing_to_buy": "Euronext Paris SU (EUR)",
+      "pea_eligible": "Yes - French company (EU)",
+      "adr_ticker": "SBGSY (OTC)",
+      "adr_ratio": "2 ADR = 1 share (per OTC listing convention; verify)",
+      "currency": "EUR",
+      "country": "France",
+      "sector": "Electrical equipment / energy management",
+      "megatrend": "Data centers & electrification",
+      "price": 292.0,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": 186.2,
+      "fy_end_month": 12,
+      "eps_basis": "Consensus adjusted net EPS (Boursorama consensus, 28 Sep 2026)",
+      "fy2025": 8.59,
+      "fy2026": 10.21,
+      "fy2027": 12.37,
+      "fy2028": null,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": null,
+      "dividend_yield_pct": 1.46,
+      "w52_low": null,
+      "w52_high": null,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "No one-offs flagged. Beta and 52-week range not found in searches (null).",
+      "latest_results_summary": "H1 2026 (30 Jul 2026): revenue EUR 21.2bn (+14% organic), adjusted EBITA EUR 4.1bn (+22% organic), margin 19.3% (+120bp organic).",
+      "guidance": "FY2026 raised: organic revenue growth 10-13% (from 7-10%); adjusted EBITA margin +70-100bp organic (from +50-80bp).",
+      "ceo_quote": {
+        "original": "While demand in Data Centers remained at a very high level, Energy Management delivered broad-based growth in H1 across all end markets.",
+        "french": "Alors que la demande des centres de données est restée à un niveau très élevé, la Gestion de l'énergie a enregistré une croissance généralisée au S1 sur l'ensemble des marchés finaux.",
+        "date": "2026-07-30",
+        "source": "https://www.se.com/ww/en/assets/pdf/release-hy-results-2026"
+      },
+      "thesis_short": "Global leader in data-center power/cooling and electrification; EPS +19% 2026e, +21% 2027e at ~24x 2027 EPS; PEA eligible.",
+      "key_risk": "Data-center capex digestion; US tariffs; valuation premium vs industrials.",
+      "notes": "USD market cap converted from the sourced local-currency figure with ECB reference rates of 30 Sep 2026 (EUR/USD 1.1355, EUR/CHF 0.9478, EUR/GBP 0.85463, EUR/SEK 11.3310, EUR/NOK 10.9015; euro-rates.info/en/home/EUR/2026-09-30); the source market cap is not necessarily dated 30 Sep 2026.",
+      "sources": [
+        {
+          "url": "https://www.boursorama.com/cours/consensus/1rPSU/",
+          "date": "2026-09-28",
+          "what": "Consensus BPA 2025 8.59 / 2026 10.21 / 2027 12.37"
+        },
+        {
+          "url": "https://www.boursorama.com/cours/1rPSU/",
+          "date": "2026-09-30",
+          "what": "Close EUR 292.00 (-1.47%)"
+        },
+        {
+          "url": "https://extraetf.com/fr/stock-profile/FR0000121972",
+          "date": "2026-09",
+          "what": "Market cap EUR 164bn; dividend 4.20 (yield 1.46%)"
+        },
+        {
+          "url": "https://www.se.com/ww/en/assets/pdf/release-hy-results-2026",
+          "date": "2026-07-30",
+          "what": "H1 2026 results, raised guidance, CEO quote"
+        }
+      ]
+    },
+    {
+      "ticker": "PRY",
+      "name": "Prysmian S.p.A.",
+      "exchange": "Borsa Italiana",
+      "listing_to_buy": "Milan PRY (EUR)",
+      "pea_eligible": "Yes - Italian company (EU)",
+      "adr_ticker": "PRYMY (OTC)",
+      "adr_ratio": "1:1",
+      "currency": "EUR",
+      "country": "Italy",
+      "sector": "Cables (energy & data)",
+      "megatrend": "Grid build-out, data-center cabling",
+      "price": 124.0,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": 43.7,
+      "fy_end_month": 12,
+      "eps_basis": "Consensus adjusted EPS (StocksGuide 2026; Yahoo 2027 in USD-equivalent; MarketScreener-style 2028)",
+      "fy2025": null,
+      "fy2026": 4.88,
+      "fy2027": 5.93,
+      "fy2028": 6.0,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 0.94,
+      "dividend_yield_pct": 0.69,
+      "w52_low": 72.74,
+      "w52_high": 157.25,
+      "price_target": 156.06,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "Consensus sources disagree: 2026 4.88 (StocksGuide) vs 4.59/4.6 elsewhere; 2027 $5.93 (Yahoo, likely USD) vs 5.2; 2028 6.0 from a 4.6/5.2/6.0 series. Price targets range 95.58 (StocksGuide avg) to 156-160 (S&P Global / others). Treat growth estimate as low-confidence.",
+      "latest_results_summary": "Q2 2026 (Jul 2026): record adjusted EBITDA EUR 730m (margin 13.4%), organic growth 9.4%, best quarter in company history.",
+      "guidance": "FY2026 raised: adjusted EBITDA EUR 2,800-2,900m (from 2,625-2,775m); free cash flow EUR 1,650-1,750m (from 1,300-1,400m).",
+      "ceo_quote": {
+        "original": "Prysmian has a special advantage - connecting both energy and data. This represents a unique opportunity for us to capture long-term sustainable growth as the vast scale of energy and data infrastructure required to enable the new AI-driven economy is accelerating.",
+        "french": "Prysmian dispose d'un avantage particulier : connecter à la fois l'énergie et les données. C'est une opportunité unique de capter une croissance durable à long terme, alors que l'ampleur des infrastructures d'énergie et de données nécessaires à la nouvelle économie tirée par l'IA s'accélère.",
+        "date": "2026-07",
+        "source": "https://www.prysmian.com/en/media/press-releases/prysmian-raises-guidance-after-its-best-quarter-yet"
+      },
+      "thesis_short": "World #1 in cables for grids and data centers; EPS +22% 2027e at ~21x 2027 EPS, lowest PEG of the electrification group.",
+      "key_risk": "Metal price pass-through, US tariffs, consensus data noisy across sources.",
+      "notes": "Market cap $43.73bn is from companiesmarketcap as of July 2026.",
+      "sources": [
+        {
+          "url": "https://stocksguide.com/en/forecast/Prysmian-IT0004176001",
+          "date": "2026-09",
+          "what": "Consensus EPS 2026 4.88 EUR; avg PT 95.58"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/earnings-watch-prysmian-spa-mil-132931855.html",
+          "date": "2026-09",
+          "what": "2027 EPS estimate raised to $5.93 from $5.31; consensus PT 156.06 (S&P Global, 16 analysts)"
+        },
+        {
+          "url": "https://stockanalysis.com/quote/bit/PRY/forecast/",
+          "date": "2026-09",
+          "what": "EPS forecasts 4.6 / 5.2 / 6.0 (2026/27/28)"
+        },
+        {
+          "url": "https://www.marketscreener.com/quote/stock/PRYSMIAN-S-P-A-252187/",
+          "date": "2026-09-30",
+          "what": "Close EUR 124"
+        },
+        {
+          "url": "https://finance.yahoo.com/quote/PRY.MI/key-statistics/",
+          "date": "2026-09",
+          "what": "Beta 0.94, 52w 72.74-157.25, yield 0.69%"
+        },
+        {
+          "url": "https://www.prysmian.com/en/media/press-releases/prysmian-raises-guidance-after-its-best-quarter-yet",
+          "date": "2026-07",
+          "what": "Q2 2026 record results, raised guidance, CEO quote"
+        }
+      ]
+    },
+    {
+      "ticker": "LR",
+      "name": "Legrand SA",
+      "exchange": "Euronext Paris",
+      "listing_to_buy": "Euronext Paris LR (EUR)",
+      "pea_eligible": "Yes - French company (EU)",
+      "adr_ticker": "LGRDY (OTC)",
+      "adr_ratio": "1:1",
+      "currency": "EUR",
+      "country": "France",
+      "sector": "Electrical infrastructure",
+      "megatrend": "Data-center power distribution",
+      "price": 141.6,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": 40.1,
+      "fy_end_month": 12,
+      "eps_basis": "Consensus adjusted net EPS (EasyBourse / Boursorama)",
+      "fy2025": 5.11,
+      "fy2026": 5.94,
+      "fy2027": 6.65,
+      "fy2028": null,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 1.14,
+      "dividend_yield_pct": 1.69,
+      "w52_low": 121.95,
+      "w52_high": 166.95,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "None flagged. EPS growth 2027e ~12% (below 15% screen) despite +16-19% sales guidance.",
+      "latest_results_summary": "H1 2026 (Jul 2026): sales EUR 5,400.3m (+17.4% ex-FX); data centers now 32% of revenue, growing >30% like-for-like.",
+      "guidance": "FY2026 sales growth raised to +16-19% ex-FX (from 10-15%); data-center organic growth 25-30%; 2030 targets raised.",
+      "ceo_quote": {
+        "original": "The primary operating challenge would definitely be how to cope with the hypergrowth of our data center business.",
+        "french": "Le principal défi opérationnel est clairement de faire face à l'hypercroissance de notre activité centres de données.",
+        "date": "2026-07",
+        "source": "https://www.investing.com/news/transcripts/earnings-call-transcript-legrand-lifts-2026-outlook-on-data-center-strength-in-h1-2026-93CH-4818811"
+      },
+      "thesis_short": "Data-center white space (busways, PDUs) is a third of sales and growing 25-30%; ~21x 2027 EPS.",
+      "key_risk": "EPS growth consensus only ~12% for 2027; building-market exposure in Europe.",
+      "notes": "USD market cap converted from the sourced local-currency figure with ECB reference rates of 30 Sep 2026 (EUR/USD 1.1355, EUR/CHF 0.9478, EUR/GBP 0.85463, EUR/SEK 11.3310, EUR/NOK 10.9015; euro-rates.info/en/home/EUR/2026-09-30); the source market cap is not necessarily dated 30 Sep 2026.",
+      "sources": [
+        {
+          "url": "https://www.easybourse.com/action-consensus/legrand/FR0010307819-25",
+          "date": "2026-09",
+          "what": "Consensus BPA 2026 5.94 / 2027 6.65; revenue 11,060.8m / 12,160m"
+        },
+        {
+          "url": "https://www.boursorama.com/cours/1rPLR/",
+          "date": "2026-09-30",
+          "what": "Close EUR 141.60 (-1.01%)"
+        },
+        {
+          "url": "https://extraetf.com/fr/stock-profile/FR0010307819",
+          "date": "2026-09",
+          "what": "Market cap EUR 35.35bn, beta 1.14, 52w 121.95-166.95, yield 1.69%, BPA 2025 5.11"
+        },
+        {
+          "url": "https://www.investing.com/news/transcripts/earnings-call-transcript-legrand-lifts-2026-outlook-on-data-center-strength-in-h1-2026-93CH-4818811",
+          "date": "2026-07",
+          "what": "H1 2026 results, raised guidance, CEO quote"
+        }
+      ]
+    },
+    {
+      "ticker": "RHM",
+      "name": "Rheinmetall AG",
+      "exchange": "Xetra",
+      "listing_to_buy": "Xetra RHM (EUR)",
+      "pea_eligible": "Yes - German company (EU)",
+      "adr_ticker": "RNMBY (OTC)",
+      "adr_ratio": "1:1",
+      "currency": "EUR",
+      "country": "Germany",
+      "sector": "Defence",
+      "megatrend": "European rearmament",
+      "price": 956.4,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": 52.5,
+      "fy_end_month": 12,
+      "eps_basis": "Consensus EPS (aktien.guide / finanzen.net, Xetra EUR line)",
+      "fy2025": 15.38,
+      "fy2026": 38.04,
+      "fy2027": 53.88,
+      "fy2028": 74.5,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 0.43,
+      "dividend_yield_pct": 1.49,
+      "w52_low": 902.15,
+      "w52_high": 2008.0,
+      "price_target": 1500.0,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "2026 EPS +155% vs 2025 reflects margin ramp (19% operating margin target) rather than one-offs; onvista shows a lower 2026e of 33.43. F126 frigate cancellation cut 2026 sales guidance by EUR 300m. Price target 1,500 = mean of analysts (range 1,050-2,300).",
+      "latest_results_summary": "H1 2026 (6 Aug 2026): sales EUR 5.2bn, operating margin 15.0%, operating result +74%; Q2 margin 17.1%; backlog EUR 80.5bn; H1 operating cash flow -EUR 1.6bn.",
+      "guidance": "FY2026: sales EUR 13.7-14.2bn (organic growth 28-31% unchanged), operating margin ~19%.",
+      "ceo_quote": {
+        "original": "We have achieved record growth and are well on the way to meeting our annual targets. We owe this not only to a very strong order book and the significant expansion of capacity, but also, above all, to the outstanding performance of our workforce.",
+        "french": "Nous avons réalisé une croissance record et sommes en bonne voie pour atteindre nos objectifs annuels. Nous le devons non seulement à un carnet de commandes très solide et à l'expansion significative de nos capacités, mais aussi et surtout à la performance exceptionnelle de nos collaborateurs.",
+        "date": "2026-08-06",
+        "source": "https://www.rheinmetall.com/en/media/news-watch/news/2026/08/2026-08-06-rheinmetall-news-half-yearly-financial-report-h1"
+      },
+      "thesis_short": "Stock -52% from its 52-week high while EPS is expected +42% in 2027e and +38% in 2028e; ~18x 2027 EPS, PEG well below 1.",
+      "key_risk": "Negative operating cash flow (working capital), German budget/political risk, programme cancellations (F126).",
+      "notes": "USD market cap converted from the sourced local-currency figure with ECB reference rates of 30 Sep 2026 (EUR/USD 1.1355, EUR/CHF 0.9478, EUR/GBP 0.85463, EUR/SEK 11.3310, EUR/NOK 10.9015; euro-rates.info/en/home/EUR/2026-09-30); the source market cap is not necessarily dated 30 Sep 2026.",
+      "sources": [
+        {
+          "url": "https://aktien.guide/kursziel/Rheinmetall-DE0007030009",
+          "date": "2026-09",
+          "what": "Consensus EPS 2026 38.04 / 2027 53.88 / 2028 74.50; mean PT 1,500 (range 1,050-2,300)"
+        },
+        {
+          "url": "https://www.finanzen.net/nachricht/aktien/rheinmetall-aktie-kursbewegung-30-09-2026-11207664",
+          "date": "2026-09-30",
+          "what": "Xetra close EUR 956.40"
+        },
+        {
+          "url": "https://www.onvista.de/aktien/kennzahlen/Rheinmetall-Aktie-DE0007030009",
+          "date": "2026-10",
+          "what": "Market cap ~EUR 46.25bn, 52w 902.15-2,008.00, beta 0.43, yield 1.49%, EPS 2025 15.38"
+        },
+        {
+          "url": "https://www.rheinmetall.com/en/media/news-watch/news/2026/08/2026-08-06-rheinmetall-news-half-yearly-financial-report-h1",
+          "date": "2026-08-06",
+          "what": "H1 2026 report, guidance, CEO quote"
+        }
+      ]
+    },
+    {
+      "ticker": "LDO",
+      "name": "Leonardo S.p.A.",
+      "exchange": "Borsa Italiana",
+      "listing_to_buy": "Milan LDO (EUR)",
+      "pea_eligible": "Yes - Italian company (EU)",
+      "adr_ticker": "FINMY (OTC)",
+      "adr_ratio": "1:1",
+      "currency": "EUR",
+      "country": "Italy",
+      "sector": "Defence / aerospace",
+      "megatrend": "European rearmament, electronics",
+      "price": 49.0,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": 32.0,
+      "fy_end_month": 12,
+      "eps_basis": "Consensus EPS (Yahoo LDO.MI, 13 analysts; 2028 from 20 analysts per another source)",
+      "fy2025": null,
+      "fy2026": 2.39,
+      "fy2027": 2.86,
+      "fy2028": 3.3,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 0.36,
+      "dividend_yield_pct": 1.28,
+      "w52_low": 44.25,
+      "w52_high": 66.26,
+      "price_target": 69.4,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "Alternative consensus 2.22 / 2.68 (2026/27). CEO change: Lorenzo Mariani replaced Roberto Cingolani (term ended May 2026).",
+      "latest_results_summary": "H1 2026 (30 Jul 2026): new orders EUR 16bn (+45%), revenues EUR 10bn (+12%), EBITA EUR 780m (+34%), FOCF -EUR 249m (+39%).",
+      "guidance": "FY2026 upgraded: orders EUR 28.2bn (from 26.2bn), EBITA EUR 2.21bn (from 2.03bn), ROS 10%; FOCF also raised.",
+      "ceo_quote": {
+        "original": "All main economic and financial indicators showed meaningful improvement, confirming the effectiveness of the commercial and operational actions implemented by the Group.",
+        "french": "Tous les principaux indicateurs économiques et financiers ont montré une amélioration significative, confirmant l'efficacité des actions commerciales et opérationnelles mises en oeuvre par le Groupe.",
+        "date": "2026-05-06",
+        "source": "https://www.leonardo.com/en/press-release-detail/-/detail/06-05-2026-leonardo-board-of-directors-approved-the-1q2026-results"
+      },
+      "thesis_short": "Stock near 52-week low at ~17x 2027 EPS with EPS +20% 2027e and +15% 2028e; guidance upgraded twice.",
+      "key_risk": "Italian state control, cash conversion (negative H1 FOCF), aerostructures drag.",
+      "notes": "CEO quote is from Q1 2026 release (Cingolani); H1 2026 commentary was by new CEO Mariani (no verbatim quote found). USD market cap converted from the sourced local-currency figure with ECB reference rates of 30 Sep 2026 (EUR/USD 1.1355, EUR/CHF 0.9478, EUR/GBP 0.85463, EUR/SEK 11.3310, EUR/NOK 10.9015; euro-rates.info/en/home/EUR/2026-09-30); the source market cap is not necessarily dated 30 Sep 2026.",
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/quote/LDO.MI/analysis/",
+          "date": "2026-09",
+          "what": "Consensus EPS 2026 2.39 / 2027 2.86 (13 analysts)"
+        },
+        {
+          "url": "https://valueinvesting.io/LDO.MI/estimates",
+          "date": "2026-09",
+          "what": "Consensus EPS 2028 3.3 (20 analysts); PT 70.2"
+        },
+        {
+          "url": "https://www.stockopedia.com/share-prices/leonardo-BIT:LDO/",
+          "date": "2026-09",
+          "what": "Consensus target price 69.40"
+        },
+        {
+          "url": "https://finanza.economia-italia.com/azioni-leonardo-e-fincantieri-30-settembre-2026",
+          "date": "2026-09-30",
+          "what": "Close EUR 49.00 (-0.38%)"
+        },
+        {
+          "url": "https://finance.yahoo.com/quote/LDO.MI/key-statistics/",
+          "date": "2026-09",
+          "what": "Market cap EUR 28.17bn, beta 0.36, 52w 44.25-66.26, yield 1.28%"
+        },
+        {
+          "url": "https://www.leonardo.com/en/press-release-detail/-/detail/30-07-2026-leonardo-h1-q2-2026-financial-results",
+          "date": "2026-07-30",
+          "what": "H1 2026 results and upgraded guidance"
+        }
+      ]
+    },
+    {
+      "ticker": "HAG",
+      "name": "HENSOLDT AG",
+      "exchange": "Xetra",
+      "listing_to_buy": "Xetra HAG (EUR)",
+      "pea_eligible": "Yes - German company (EU)",
+      "adr_ticker": "HAGHY (OTC)",
+      "adr_ratio": "1:1",
+      "currency": "EUR",
+      "country": "Germany",
+      "sector": "Defence electronics (radar, sensors)",
+      "megatrend": "European rearmament",
+      "price": 76.68,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": 9.9,
+      "fy_end_month": 12,
+      "eps_basis": "Consensus EPS (aktien.guide); other sources show 1.85 (2026) and 2.10 (2027)",
+      "fy2025": 0.77,
+      "fy2026": 1.87,
+      "fy2027": 2.48,
+      "fy2028": 3.26,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": null,
+      "dividend_yield_pct": 0.94,
+      "w52_low": 63.18,
+      "w52_high": 117.7,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "2026 EPS +171% vs 2025 is a margin/scale ramp (adj. EBITDA margin 18.5-19%) from a low base. 2027 consensus disagrees (2.48 vs 2.10). Price 76.68 is the Xetra afternoon/closing level reported by finanzen.ch; prior close 29 Sep was 75.60.",
+      "latest_results_summary": "H1 2026 (Aug 2026): revenue EUR 1,167m (+18% core), adjusted EBITDA EUR 137m (+29%), margin 11.8%; order intake EUR 2.8bn (+100%), backlog EUR 10bn (+46%).",
+      "guidance": "FY2026 reaffirmed: revenue ~EUR 2,750m, adjusted EBITDA margin 18.5-19.0%, adjusted FCF conversion ~50%.",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "Sensor/radar pure play with doubled order intake; EPS +33% 2027e and +31% 2028e at ~31x 2027 EPS.",
+      "key_risk": "Execution on hypergrowth, KNDS/German state shareholders, high multiple; no CEO quote found.",
+      "notes": "USD market cap converted from the sourced local-currency figure with ECB reference rates of 30 Sep 2026 (EUR/USD 1.1355, EUR/CHF 0.9478, EUR/GBP 0.85463, EUR/SEK 11.3310, EUR/NOK 10.9015; euro-rates.info/en/home/EUR/2026-09-30); the source market cap is not necessarily dated 30 Sep 2026.",
+      "sources": [
+        {
+          "url": "https://aktien.guide/kursziel/Hensoldt-DE000HAG0005",
+          "date": "2026-09",
+          "what": "Consensus EPS 2026 1.87 / 2027 2.48 / 2028 3.26"
+        },
+        {
+          "url": "https://www.finanzen.ch/nachrichten/aktien/hensoldt-aktie-kursbewegung-30-09-2026-1035061970",
+          "date": "2026-09-30",
+          "what": "Xetra price EUR 76.68 (+1.6%) on 30 Sep 2026"
+        },
+        {
+          "url": "https://www.ad-hoc-news.de/boerse/news/nachboerse/hensoldt-aktie-nachboerslich-bei-76-37-euro-plus-1-02-prozent-zum/70205708",
+          "date": "2026-09-30",
+          "what": "Prior close 29 Sep EUR 75.60"
+        },
+        {
+          "url": "https://www.onvista.de/aktien/HENSOLDT-AG-Aktie-DE000HAG0005",
+          "date": "2026-09",
+          "what": "Market cap EUR 8.75bn, 52w 63.18-117.70, EPS 2025 0.77, yield 0.94%"
+        },
+        {
+          "url": "https://www.hensoldt.net/news/hensoldt-doubles-order-intake-in-the-first-half-of-2026-%E2%80%93-revenue-and-earnings-rise-significantly",
+          "date": "2026-08",
+          "what": "H1 2026 results and guidance"
+        }
+      ]
+    },
+    {
+      "ticker": "SAAB B",
+      "name": "Saab AB",
+      "exchange": "Nasdaq Stockholm",
+      "listing_to_buy": "Stockholm SAAB B (SEK)",
+      "pea_eligible": "Yes - Swedish company (EU)",
+      "adr_ticker": "SAABY (OTC)",
+      "adr_ratio": "1:1",
+      "currency": "SEK",
+      "country": "Sweden",
+      "sector": "Defence",
+      "megatrend": "Nordic/European rearmament",
+      "price": 617.8,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": 31.8,
+      "fy_end_month": 12,
+      "eps_basis": "Consensus EPS (Yahoo SAAB-B.ST, 10/9 analysts, post-split share basis)",
+      "fy2025": null,
+      "fy2026": 14.34,
+      "fy2027": 17.93,
+      "fy2028": null,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 1.29,
+      "dividend_yield_pct": 0.39,
+      "w52_low": 445.1,
+      "w52_high": 748.8,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "Conflicting consensus: Fintel shows 42.54/57.51/68.65 (likely pre-split basis, 2-3 analysts) and StocksGuide 11.7/14.34; Yahoo 14.34/17.93 used. 2025 net earnings SEK 6.31bn (+51%).",
+      "latest_results_summary": "Q2 2026 (17 Jul 2026): order bookings SEK 68.4bn incl. SEK 47bn Polish submarines; EBIT SEK 2,794m (+41%), margin 11.0%; record backlog.",
+      "guidance": "Targets ~22% organic sales CAGR, EBIT growth above sales growth, cash conversion >60%; performance ahead of plan but guidance revision deferred to year-end.",
+      "ceo_quote": {
+        "original": "We delivered a strong second quarter with increased order bookings, high organic sales growth and a strengthened operating margin. Demand for our product offering remains high as customers invest in both immediate and long-term needs.",
+        "french": "Nous avons réalisé un deuxième trimestre solide avec des prises de commandes en hausse, une forte croissance organique des ventes et une marge opérationnelle renforcée. La demande pour notre offre reste élevée, les clients investissant à la fois pour leurs besoins immédiats et de long terme.",
+        "date": "2026-07-17",
+        "source": "https://www.saab.com/newsroom/press-releases/2026/saab-q2-results-2026-strong-order-bookings-reinforce-market-position"
+      },
+      "thesis_short": "EPS +25% 2027e on 22% sales CAGR; but ~34x 2027 EPS leaves PEG above 1.",
+      "key_risk": "High multiple; consensus basis confusion after share split; execution on submarine/Gripen ramp.",
+      "notes": "USD market cap converted from the sourced local-currency figure with ECB reference rates of 30 Sep 2026 (EUR/USD 1.1355, EUR/CHF 0.9478, EUR/GBP 0.85463, EUR/SEK 11.3310, EUR/NOK 10.9015; euro-rates.info/en/home/EUR/2026-09-30); the source market cap is not necessarily dated 30 Sep 2026.",
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/quote/SAAB-B.ST/analysis/",
+          "date": "2026-09",
+          "what": "Consensus EPS 2026 14.34 SEK (10 analysts) / 2027 17.93 (9 analysts)"
+        },
+        {
+          "url": "https://fintel.io/sv/sfo/se/saab%20b",
+          "date": "2026-09",
+          "what": "Alternative consensus 42.54/57.51/68.65 (2-3 analysts, likely different share basis)"
+        },
+        {
+          "url": "https://www.marketscreener.com/quote/stock/SAAB-AB-6491624/",
+          "date": "2026-09-30",
+          "what": "Close SEK 617.80"
+        },
+        {
+          "url": "https://stockanalysis.com/quote/sto/SAAB.B/",
+          "date": "2026-09-04",
+          "what": "Market cap SEK 317.48bn; 52w 445.10-748.80; beta 1.29; yield 0.39%; 2025 earnings SEK 6.31bn"
+        },
+        {
+          "url": "https://www.saab.com/newsroom/press-releases/2026/saab-q2-results-2026-strong-order-bookings-reinforce-market-position",
+          "date": "2026-07-17",
+          "what": "Q2 2026 results, CEO quote"
+        }
+      ]
+    },
+    {
+      "ticker": "RR.",
+      "name": "Rolls-Royce Holdings plc",
+      "exchange": "London Stock Exchange",
+      "listing_to_buy": "LSE RR. (GBp)",
+      "pea_eligible": "No - UK company (outside EU since Brexit)",
+      "adr_ticker": "RYCEY (OTC)",
+      "adr_ratio": "1:1",
+      "currency": "GBp (pence)",
+      "country": "United Kingdom",
+      "sector": "Aero engines / power systems / defence",
+      "megatrend": "Aviation aftermarket, SMR nuclear, data-center gensets",
+      "price": 1461.6,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": 163.2,
+      "fy_end_month": 12,
+      "eps_basis": "Company-compiled analyst consensus underlying EPS (15 submissions, September 2026)",
+      "fy2025": null,
+      "fy2026": 43.7,
+      "fy2027": 49.7,
+      "fy2028": 58.1,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 1.19,
+      "dividend_yield_pct": 0.75,
+      "w52_low": 1019.0,
+      "w52_high": 1585.2,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "Underlying basis excludes non-underlying items; EPS growth 2027e ~14% (just below 15% screen) with 2028e +17%.",
+      "latest_results_summary": "H1 2026 (30 Jul 2026): underlying operating profit GBP 2,534m (+46%), free cash flow GBP 1,964m.",
+      "guidance": "FY2026 raised: underlying operating profit GBP 4.7-4.9bn (from 4.0-4.2bn), free cash flow GBP 3.8-4.0bn.",
+      "ceo_quote": {
+        "original": "A strong first half delivery across all divisions gives us confidence to raise our guidance for 2026. We now expect underlying operating profit of GBP 4.7 billion-GBP 4.9 billion, with a year-over-year improvement across all three divisions.",
+        "french": "Une solide exécution au premier semestre dans toutes les divisions nous donne la confiance nécessaire pour relever nos prévisions 2026. Nous attendons désormais un résultat opérationnel sous-jacent de 4,7 à 4,9 milliards de livres, avec une amélioration d'une année sur l'autre dans les trois divisions.",
+        "date": "2026-07-30",
+        "source": "https://www.rolls-royce.com/media/press-releases/2026/30-07-2026-rr-holdings-plc-2026-half-year-results.aspx"
+      },
+      "thesis_short": "Turnaround complete; aftermarket, defence and SMRs; ~29x 2027 EPS for ~14-17% growth, PEG ~2.",
+      "key_risk": "Valuation now rich (~49x trailing per Financial News); not PEA eligible; GBP exposure.",
+      "notes": "USD market cap converted from the sourced local-currency figure with ECB reference rates of 30 Sep 2026 (EUR/USD 1.1355, EUR/CHF 0.9478, EUR/GBP 0.85463, EUR/SEK 11.3310, EUR/NOK 10.9015; euro-rates.info/en/home/EUR/2026-09-30); the source market cap is not necessarily dated 30 Sep 2026.",
+      "sources": [
+        {
+          "url": "https://www.rolls-royce.com/investors/analyst-consensus.aspx",
+          "date": "2026-09",
+          "what": "Company-compiled consensus EPS FY2026 43.7p / FY2027 49.7p / FY2028 58.1p (15 analysts)"
+        },
+        {
+          "url": "https://stockanalysis.com/quote/lon/RR/history/",
+          "date": "2026-09-30",
+          "what": "Close 1,461.60p"
+        },
+        {
+          "url": "https://www.investing.com/equities/rolls-royce",
+          "date": "2026-10-01",
+          "what": "Market cap GBP 122.84bn, beta 1.19, 52w 1,019-1,585.20p, yield 0.75%"
+        },
+        {
+          "url": "https://www.rolls-royce.com/media/press-releases/2026/30-07-2026-rr-holdings-plc-2026-half-year-results.aspx",
+          "date": "2026-07-30",
+          "what": "H1 2026 results, raised guidance, CEO quote"
+        }
+      ]
+    },
+    {
+      "ticker": "SAF",
+      "name": "Safran SA",
+      "exchange": "Euronext Paris",
+      "listing_to_buy": "Euronext Paris SAF (EUR)",
+      "pea_eligible": "Yes - French company (EU)",
+      "adr_ticker": "SAFRY (OTC)",
+      "adr_ratio": "2 ADR = 1 share (per OTC convention; verify)",
+      "currency": "EUR",
+      "country": "France",
+      "sector": "Aero engines (CFM LEAP) / defence",
+      "megatrend": "Narrow-body aftermarket & defence",
+      "price": 334.4,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": 155.4,
+      "fy_end_month": 12,
+      "eps_basis": "Consensus adjusted net EPS (Boursorama consensus, 28 Sep 2026)",
+      "fy2025": 7.6,
+      "fy2026": 10.34,
+      "fy2027": 13.15,
+      "fy2028": null,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 0.96,
+      "dividend_yield_pct": 0.93,
+      "w52_low": 262.6,
+      "w52_high": 366.5,
+      "price_target": 389.5,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "fy2025 7.60 (Boursorama) may be reported rather than adjusted basis (adjusted 2025 EPS was higher per company); an earlier search result showing 3.18/3.49/3.84 was discarded as a wrong (ADR-scale) series. Price target: median 389.50 (one source) vs 350.88 (another).",
+      "latest_results_summary": "H1 2026 (28 Jul 2026): recurring operating income EUR 3,237m (+29.0%, +27.5% organic), margin 18.4% vs 17.0%.",
+      "guidance": "FY2026 raised: revenue growth 'up mid-teens' (from low-to-mid teens); recurring operating income EUR 6.4-6.5bn (from 6.1-6.2bn).",
+      "ceo_quote": {
+        "original": "Stellar demand in the civil engine aftermarket, a strong ramp-up in LEAP and M88 engine deliveries, and record financial performance.",
+        "french": "Une demande exceptionnelle sur l'après-vente des moteurs civils, une forte montée en cadence des livraisons de moteurs LEAP et M88, et une performance financière record.",
+        "date": "2026-07-28",
+        "source": "https://www.safran-group.com/pressroom/safran-reports-its-first-half-2026-results-2026-07-28"
+      },
+      "thesis_short": "LEAP aftermarket inflecting; EPS +36% 2026e and +27% 2027e at ~25x 2027 EPS, PEG ~0.9; PEA eligible.",
+      "key_risk": "Airbus delivery ramp dependence; FX (USD); supply chain.",
+      "notes": "USD market cap converted from the sourced local-currency figure with ECB reference rates of 30 Sep 2026 (EUR/USD 1.1355, EUR/CHF 0.9478, EUR/GBP 0.85463, EUR/SEK 11.3310, EUR/NOK 10.9015; euro-rates.info/en/home/EUR/2026-09-30); the source market cap is not necessarily dated 30 Sep 2026.",
+      "sources": [
+        {
+          "url": "https://www.boursorama.com/cours/consensus/1rPSAF/",
+          "date": "2026-09-28",
+          "what": "Consensus BPA 2025 7.60 / 2026 10.34 / 2027 13.15; DPS 4.10/5.26; PER 34.86/27.41"
+        },
+        {
+          "url": "https://www.boursorama.com/cours/historique/1rPSAF",
+          "date": "2026-09-30",
+          "what": "Close EUR 334.40 (-0.21%)"
+        },
+        {
+          "url": "https://www.investisseurs-heureux.fr/bourse_saf.pa",
+          "date": "2026-09",
+          "what": "Market cap EUR 136.83bn, beta 0.96, 52w 262.60-366.50, yield 0.93%"
+        },
+        {
+          "url": "https://www.easybourse.com/action-consensus/safran/FR0000073272-25",
+          "date": "2026-09",
+          "what": "27 analysts: 20 buy / 7 hold; median PT 389.50"
+        },
+        {
+          "url": "https://www.safran-group.com/pressroom/safran-reports-its-first-half-2026-results-2026-07-28",
+          "date": "2026-07-28",
+          "what": "H1 2026 results, raised guidance, CEO quote"
+        }
+      ]
+    },
+    {
+      "ticker": "AIR",
+      "name": "Airbus SE",
+      "exchange": "Euronext Paris",
+      "listing_to_buy": "Euronext Paris AIR (EUR)",
+      "pea_eligible": "Yes - Dutch-registered, France-based (EU)",
+      "adr_ticker": "EADSY (OTC)",
+      "adr_ratio": "4 ADR = 1 share (per OTC convention; verify)",
+      "currency": "EUR",
+      "country": "France/Netherlands",
+      "sector": "Aerospace & defence",
+      "megatrend": "Narrow-body backlog, defence",
+      "price": 190.62,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": 172.9,
+      "fy_end_month": 12,
+      "eps_basis": "Consensus adjusted net EPS (Boursorama consensus)",
+      "fy2025": 6.61,
+      "fy2026": 7.29,
+      "fy2027": 8.62,
+      "fy2028": null,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 0.88,
+      "dividend_yield_pct": 1.66,
+      "w52_low": 157.42,
+      "w52_high": 221.3,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "2026 EPS growth only +6% (A350/space charges, deliveries), 2027 +18%. Alternative consensus 7.27/8.69.",
+      "latest_results_summary": "H1 2026 (30 Jul 2026): 351 commercial deliveries (+15%), revenue EUR 33.2bn (+12%), adjusted EBIT EUR 2.7bn (+23%), 8.2% ROS; FCF before customer financing -EUR 1.2bn.",
+      "guidance": "FY2026 unchanged: ~870 commercial aircraft deliveries, adjusted EBIT ~EUR 7.5bn.",
+      "ceo_quote": {
+        "original": "Our good H1 results mainly reflect the higher level of commercial aircraft deliveries and strong performance in Defence and Space, against the backdrop of a complex and fast-changing environment.",
+        "french": "Nos bons résultats du S1 reflètent principalement le niveau plus élevé de livraisons d'avions commerciaux et la solide performance de Defence and Space, dans un environnement complexe et en évolution rapide.",
+        "date": "2026-07-30",
+        "source": "https://mediaassets.airbus.com/pm_38_922_922539-iajb3g20ra.pdf?fileName=airbus-half-year-hy-2026-press-release.pdf"
+      },
+      "thesis_short": "Duopoly with 10-year backlog; EPS +18% 2027e at ~22x 2027 EPS.",
+      "key_risk": "Engine/supply-chain delays to the A320 ramp; weak cash conversion in H1.",
+      "notes": "USD market cap converted from the sourced local-currency figure with ECB reference rates of 30 Sep 2026 (EUR/USD 1.1355, EUR/CHF 0.9478, EUR/GBP 0.85463, EUR/SEK 11.3310, EUR/NOK 10.9015; euro-rates.info/en/home/EUR/2026-09-30); the source market cap is not necessarily dated 30 Sep 2026.",
+      "sources": [
+        {
+          "url": "https://www.boursorama.com/cours/consensus/1rPAIR/",
+          "date": "2026-09",
+          "what": "Consensus BPA 2026 7.29 (+6%) / 2027 8.62 (+18%); 2025 6.61"
+        },
+        {
+          "url": "https://www.boursorama.com/cours/1rPAIR/",
+          "date": "2026-09-30",
+          "what": "Close EUR 190.62 (+0.07%)"
+        },
+        {
+          "url": "https://www.investisseurs-heureux.fr/bourse_air.pa",
+          "date": "2026-09",
+          "what": "Market cap EUR 152.28bn, beta 0.88, 52w 157.42-221.30, yield 1.66%"
+        },
+        {
+          "url": "https://mediaassets.airbus.com/pm_38_922_922539-iajb3g20ra.pdf?fileName=airbus-half-year-hy-2026-press-release.pdf",
+          "date": "2026-07-30",
+          "what": "H1 2026 results, guidance, CEO quote"
+        }
+      ]
+    },
+    {
+      "ticker": "KOG",
+      "name": "Kongsberg Gruppen ASA",
+      "exchange": "Oslo Bors",
+      "listing_to_buy": "Oslo KOG (NOK)",
+      "pea_eligible": "Yes - Norway is EEA (eligible for PEA)",
+      "adr_ticker": "NSKFF / KBGGY (OTC)",
+      "adr_ratio": "1:1 (unsponsored)",
+      "currency": "NOK",
+      "country": "Norway",
+      "sector": "Defence (missiles, air defence) & maritime",
+      "megatrend": "European rearmament",
+      "price": 305.3,
+      "price_date": "2026-09-29",
+      "market_cap_usd_bn": 29.3,
+      "fy_end_month": 12,
+      "eps_basis": "Consensus EPS (Yahoo KOG.OL, 5-7 analysts; thin coverage)",
+      "fy2025": 4.75,
+      "fy2026": 7.22,
+      "fy2027": 11.28,
+      "fy2028": 10.9,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 0.22,
+      "dividend_yield_pct": 1.78,
+      "w52_low": 188.81,
+      "w52_high": 352.83,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "Consensus is thin and was cut sharply over 90 days (2026 from 9.23 to 7.22; 2027 from 13.49 to 11.28); 2028 (3 analysts) below 2027 - likely stale/different share basis. EPS TTM 8.34 vs 2026e 7.22 is inconsistent, so treat with caution. No 30 Sep close found; 29 Sep close used.",
+      "latest_results_summary": "Q2 2026 (Jul 2026): revenue NOK 10.4bn (+31%), EBIT NOK 1.7bn (+49%), margin 16.1%; order intake NOK 17.1bn; backlog NOK 158bn record.",
+      "guidance": "No numeric FY guidance in results found; management points to high activity across new orders and production.",
+      "ceo_quote": {
+        "original": "The quarter was characterized by high activity levels across the company, both in new orders and in our production facilities.",
+        "french": "Le trimestre a été marqué par un niveau d'activité élevé dans toute l'entreprise, tant pour les nouvelles commandes que dans nos sites de production.",
+        "date": "2026-07",
+        "source": "https://www.kongsberg.com/news/news-archive/2026/q2-2026-kongsberg-delivers-a-strong-second-quarter-with-increased-revenue-and-solid-profitability/"
+      },
+      "thesis_short": "NASAMS/NSM demand and record backlog; EPS +56% 2027e on consensus, ~27x 2027 EPS.",
+      "key_risk": "Consensus data unreliable (thin, inconsistent); NOK; valuation.",
+      "notes": "CEO is Eirik Lie (not Geir Haoy). USD market cap converted from the sourced local-currency figure with ECB reference rates of 30 Sep 2026 (EUR/USD 1.1355, EUR/CHF 0.9478, EUR/GBP 0.85463, EUR/SEK 11.3310, EUR/NOK 10.9015; euro-rates.info/en/home/EUR/2026-09-30); the source market cap is not necessarily dated 30 Sep 2026.",
+      "sources": [
+        {
+          "url": "https://au.finance.yahoo.com/quote/KOG.OL/analysis/",
+          "date": "2026-09",
+          "what": "Consensus EPS 2026 7.22 NOK (5 analysts) / 2027 11.28 (7) / 2028 10.9 (3); revisions"
+        },
+        {
+          "url": "https://www.investing.com/equities/kongsberg-gruppen-asa",
+          "date": "2026-09-29",
+          "what": "Price NOK 305.30 (29 Sep 2026)"
+        },
+        {
+          "url": "https://stockanalysis.com/quote/osl/KOG/statistics/",
+          "date": "2026-09-30",
+          "what": "Market cap NOK 281.37bn, beta 0.22, 52w 188.81-352.83, yield 1.78%, EPS 2025 4.75"
+        },
+        {
+          "url": "https://www.kongsberg.com/news/news-archive/2026/q2-2026-kongsberg-delivers-a-strong-second-quarter-with-increased-revenue-and-solid-profitability/",
+          "date": "2026-07",
+          "what": "Q2 2026 results, CEO quote"
+        }
+      ]
+    },
+    {
+      "ticker": "ADYEN",
+      "name": "Adyen N.V.",
+      "exchange": "Euronext Amsterdam",
+      "listing_to_buy": "Euronext Amsterdam ADYEN (EUR)",
+      "pea_eligible": "Yes - Dutch company (EU)",
+      "adr_ticker": "ADYEY (OTC)",
+      "adr_ratio": "20 ADR = 1 share (per OTC convention; verify)",
+      "currency": "EUR",
+      "country": "Netherlands",
+      "sector": "Payments / fintech",
+      "megatrend": "Digital payments, unified commerce",
+      "price": 876.6,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": 31.3,
+      "fy_end_month": 12,
+      "eps_basis": "Consensus EPS (StockAnalysis/MarketScreener; IFRS net income per share, Adyen has few adjustments)",
+      "fy2025": 33.61,
+      "fy2026": 39.1,
+      "fy2027": 47.9,
+      "fy2028": 58.8,
+      "fy2029": null,
+      "ltg_pct": 16.7,
+      "beta": 1.88,
+      "dividend_yield_pct": 0.0,
+      "w52_low": 772.4,
+      "w52_high": 1600.8,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "H1 2026 EBITDA margin 49% includes one-time transaction costs (50% excluding). Alternative consensus 38.59/46.93/57.46. No dividend.",
+      "latest_results_summary": "H1 2026 (13 Aug 2026): net revenue EUR 1,302.9m (+19%, +21% cc); EBITDA EUR 641.5m, margin 49%.",
+      "guidance": "FY2026 net revenue growth 21-23% cc incl. Talon.One and Orb acquisitions (closed 1 Jul 2026); EBITDA margin ~1pt below 2025 incl. acquisitions; EBITDA margin >55% by 2028.",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "Stock -45% from 52-week high; EPS +22% 2027e and +23% 2028e at ~18x 2027 EPS, PEG < 1.",
+      "key_risk": "Take-rate pressure, US competition, acquisition integration; beta 1.88.",
+      "notes": "Market cap $31.34bn from companiesmarketcap (Oct 2026). ltg_pct 16.7% is the 'EPS growth per annum' figure quoted by Simply Wall St, not a Zacks LTG.",
+      "sources": [
+        {
+          "url": "https://stockanalysis.com/quote/ams/ADYEN/forecast/",
+          "date": "2026-09",
+          "what": "Consensus EPS 2026 39.1 (36 an.) / 2027 47.9 (36) / 2028 58.8 (32)"
+        },
+        {
+          "url": "https://simplywall.st/stocks/nl/diversified-financials/ams-adyen/adyen-shares/future",
+          "date": "2026-09",
+          "what": "EPS growth 16.7% p.a."
+        },
+        {
+          "url": "https://www.marketscreener.com/quote/stock/ADYEN-N-V-44211922/quotes/",
+          "date": "2026-09-30",
+          "what": "Close EUR 876.60 (+0.76%)"
+        },
+        {
+          "url": "https://finance.yahoo.com/quote/ADYEN.AS/key-statistics/",
+          "date": "2026-09",
+          "what": "Beta 1.88, 52w 772.40-1,600.80, FY2025 diluted EPS 33.61"
+        },
+        {
+          "url": "https://companiesmarketcap.com/adyen/marketcap/",
+          "date": "2026-10",
+          "what": "Market cap $31.34bn"
+        },
+        {
+          "url": "https://www.adyen.com/press-and-media/adyen-publishes-h1-2026-financial-results-3wjne",
+          "date": "2026-08-13",
+          "what": "H1 2026 results and guidance"
+        }
+      ]
+    },
+    {
+      "ticker": "SPOT",
+      "name": "Spotify Technology S.A.",
+      "exchange": "NYSE",
+      "listing_to_buy": "NYSE SPOT (USD)",
+      "pea_eligible": "Yes - Luxembourg company (EU) despite NYSE listing (check broker)",
+      "adr_ticker": "SPOT (ordinary shares, no ADR)",
+      "adr_ratio": "n/a",
+      "currency": "USD (reports in EUR)",
+      "country": "Luxembourg/Sweden",
+      "sector": "Audio streaming",
+      "megatrend": "Subscription media, pricing power",
+      "price": 487.38,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": 108.68,
+      "fy_end_month": 12,
+      "eps_basis": "Consensus GAAP EPS in EUR (27 analysts; Spotify reports IFRS in EUR); USD equivalents also given by sources",
+      "fy2025": null,
+      "fy2026": 12.28,
+      "fy2027": 15.42,
+      "fy2028": null,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 1.59,
+      "dividend_yield_pct": 0.0,
+      "w52_low": 405.0,
+      "w52_high": 785.0,
+      "price_target": null,
+      "zacks_rank": 3,
+      "zacks_rank_date": "2026-09",
+      "cyclical": false,
+      "one_offs_note": "Q2 2026 miss (MAU 1m below guidance); Erste cut FY2026/27 estimates in September. USD consensus: 2026 $14.29, 2027 $15.95, 2028 $19.81. Social charges tied to share price distort quarters.",
+      "latest_results_summary": "Q2 2026 (Aug 2026): operating income EUR 655m (above guidance), MAU 777m (+12%) 1m below guidance; shares -5.9%.",
+      "guidance": "Q3 2026: MAU 788m, revenue ~EUR 5bn (+14%), operating income EUR 670m.",
+      "ceo_quote": {
+        "original": "We've been working on turning our outperformance in MAU into revenue growth. To capitalize on this opportunity, we are adjusting elements like product optimization and ad load, among other things, in select emerging markets.",
+        "french": "Nous travaillons à transformer notre surperformance en utilisateurs actifs mensuels en croissance du chiffre d'affaires. Pour saisir cette opportunité, nous ajustons des éléments comme l'optimisation produit et la charge publicitaire, entre autres, dans certains marchés émergents.",
+        "date": "2026-08-11",
+        "source": "https://www.fool.com/earnings/call-transcripts/2026/08/11/spotify-spot-q2-2026-earnings-call-transcript/"
+      },
+      "thesis_short": "Pricing power and margin expansion; EPS +26% 2027e (EUR basis) at ~28x 2027 EPS (USD/EUR mix).",
+      "key_risk": "Growth deceleration (Q2 miss), estimate cuts, USD listing vs EUR earnings.",
+      "notes": "Management quote (not attributed to a named CEO in source).",
+      "sources": [
+        {
+          "url": "https://nz.finance.yahoo.com/quote/SPOT/analysis/",
+          "date": "2026-09",
+          "what": "Consensus EPS 2026 12.28 EUR / 2027 15.42 EUR (27 analysts)"
+        },
+        {
+          "url": "https://stockanalysis.com/stocks/spot/forecast/",
+          "date": "2026-09",
+          "what": "USD consensus 2027 $15.95, 2028 $19.81"
+        },
+        {
+          "url": "https://finance.yahoo.com/quote/SPOT/",
+          "date": "2026-09-30",
+          "what": "Close $487.38 (-1.27%)"
+        },
+        {
+          "url": "https://stockanalysis.com/stocks/spot/statistics/",
+          "date": "2026-09",
+          "what": "Market cap $108.68bn, beta 1.59, 52w $405-785"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/spotify-technology-spot-trending-stock-130003532.html",
+          "date": "2026-09",
+          "what": "Zacks Rank #3 Hold"
+        },
+        {
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/08/11/spotify-spot-q2-2026-earnings-call-transcript/",
+          "date": "2026-08-11",
+          "what": "Q2 2026 results, Q3 guidance, management quote"
+        }
+      ]
+    },
+    {
+      "ticker": "FLUT",
+      "name": "Flutter Entertainment plc",
+      "exchange": "NYSE (primary) / LSE",
+      "listing_to_buy": "NYSE FLUT (USD)",
+      "pea_eligible": "Yes - Irish-incorporated company (EU) (check broker)",
+      "adr_ticker": "FLUT (ordinary shares)",
+      "adr_ratio": "n/a",
+      "currency": "USD",
+      "country": "Ireland/UK",
+      "sector": "Online betting & gaming",
+      "megatrend": "US online sports betting",
+      "price": 74.54,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": 17.6,
+      "fy_end_month": 12,
+      "eps_basis": "Consensus adjusted EPS (StockAnalysis/Yahoo)",
+      "fy2025": null,
+      "fy2026": 5.9,
+      "fy2027": 9.01,
+      "fy2028": 12.09,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 1.08,
+      "dividend_yield_pct": 0.0,
+      "w52_low": 89.71,
+      "w52_high": 309.41,
+      "price_target": null,
+      "zacks_rank": 5,
+      "zacks_rank_date": "2026-09",
+      "cyclical": false,
+      "one_offs_note": "2026 EPS falls vs 2025 (US taxes, World Cup marketing, margin compression); Q2 2026 net loss $296m; guidance cut $210m; CEO change (Dan Taylor from 1 Oct 2026). Stock hit new 52-week low on 30 Sep 2026 (price 74.54 is below the quoted 52w low of 89.71 - stats page lagging). Wide estimate range.",
+      "latest_results_summary": "Q2 2026 (6 Aug 2026): revenue $4.33bn (+3%), adjusted EBITDA $508m (-45%), net loss $296m.",
+      "guidance": "FY2026 adjusted EBITDA cut by $210m to $2.655bn midpoint; revenue cut by $395m to $17.91bn midpoint.",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "Deep value if 2027 recovery ($9.01) materialises: ~8x 2027 EPS; but momentum and Zacks #5 say wait.",
+      "key_risk": "US tax/regulatory pressure, competition (prediction markets), guidance credibility, CEO transition.",
+      "notes": "Included for completeness; fails momentum/quality screens.",
+      "sources": [
+        {
+          "url": "https://stockanalysis.com/stocks/flut/forecast/",
+          "date": "2026-09",
+          "what": "Consensus EPS 2026 $5.90 (4.18-8.14) / 2027 $9.01 / 2028 $12.09"
+        },
+        {
+          "url": "https://stockanalysis.com/stocks/flut/",
+          "date": "2026-09-30",
+          "what": "Close $74.54"
+        },
+        {
+          "url": "https://finance.yahoo.com/quote/FLUT/key-statistics/",
+          "date": "2026-09",
+          "what": "Market cap $17.60bn, beta 1.08, 52w $89.71-309.41"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/draftkings-vs-flutter-stock-better-141800795.html",
+          "date": "2026-09",
+          "what": "Zacks Rank #5 Strong Sell"
+        },
+        {
+          "url": "https://flutter.com/media/g23an0ae/flutter-q2-2026-earnings-release.pdf",
+          "date": "2026-08-06",
+          "what": "Q2 2026 results and guidance cut"
+        }
+      ]
+    },
+    {
+      "ticker": "LSEG",
+      "name": "London Stock Exchange Group plc",
+      "exchange": "London Stock Exchange",
+      "listing_to_buy": "LSE LSEG (GBp)",
+      "pea_eligible": "No - UK company",
+      "adr_ticker": "LNSTY (OTC)",
+      "adr_ratio": "1:1",
+      "currency": "GBp (pence)",
+      "country": "United Kingdom",
+      "sector": "Financial data & exchanges",
+      "megatrend": "Data/AI analytics, market infrastructure",
+      "price": 8182.0,
+      "price_date": "2026-09-29",
+      "market_cap_usd_bn": 58.1,
+      "fy_end_month": 12,
+      "eps_basis": "Consensus adjusted EPS (StocksGuide GBP; alternative 490p/550p/620p series)",
+      "fy2025": null,
+      "fy2026": 463.0,
+      "fy2027": 550.0,
+      "fy2028": 620.0,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 0.39,
+      "dividend_yield_pct": 1.67,
+      "w52_low": 6684.0,
+      "w52_high": 10965.0,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "Consensus sources mix GBP and USD: 2026 GBP 4.63 (18 analysts, +93.7% vs 2025 reported, i.e. 2025 reported was depressed by amortisation/one-offs); 2027 5.5 and 2028 6.2 from a 4.9/5.5/6.2 series. One broker: 493p/538p. 30 Sep close not found; 29 Sep close 8,182p used.",
+      "latest_results_summary": "H1 2026 (30 Jul 2026): organic revenue +8.4%, adjusted EBITDA +14%, adjusted EPS +17%, FCF per share +37%.",
+      "guidance": "FY2026 organic constant-currency total income growth 7.0-7.5% (from 6.5-7.5%); EBITDA margin expansion ~100bp (top of 80-100bp range).",
+      "ceo_quote": {
+        "original": "It has been a great first half. We achieved organic revenue growth of 8.4%, with strength across the board. Subscription growth accelerated to 6.3%.",
+        "french": "Ce fut un excellent premier semestre. Nous avons réalisé une croissance organique du chiffre d'affaires de 8,4 %, avec une solidité générale. La croissance des abonnements s'est accélérée à 6,3 %.",
+        "date": "2026-07-30",
+        "source": "https://www.lseg.com/en/media-centre/press-releases/2026/london-stock-exchange-group-plc-h1-2026-interim-results"
+      },
+      "thesis_short": "De-rated on AI fears while EPS grows ~17-19% and buybacks continue; ~15x 2027 EPS, PEG < 1.",
+      "key_risk": "AI disruption perception of data business; not PEA eligible; GBP.",
+      "notes": "fy values in pence (consensus GBP 4.63 = 463p). USD market cap converted from the sourced local-currency figure with ECB reference rates of 30 Sep 2026 (EUR/USD 1.1355, EUR/CHF 0.9478, EUR/GBP 0.85463, EUR/SEK 11.3310, EUR/NOK 10.9015; euro-rates.info/en/home/EUR/2026-09-30); the source market cap is not necessarily dated 30 Sep 2026.",
+      "sources": [
+        {
+          "url": "https://stocksguide.com/en/forecast/London-Stock-Exchange-GB00B0SWJX34",
+          "date": "2026-09",
+          "what": "Consensus 2026 EPS GBP 4.63 (18 analysts)"
+        },
+        {
+          "url": "https://valueinvesting.io/LSEG.L/estimates",
+          "date": "2026-09",
+          "what": "EPS forecasts 4.9 / 5.5 / 6.2 (2026/27/28)"
+        },
+        {
+          "url": "https://www.marketscreener.com/news/london-stock-exchange-group-target-upgrade-by-16-2-ce7f5adada8cf225",
+          "date": "2026",
+          "what": "Broker upgrade: 2026 EPS 493p, 2027 538p"
+        },
+        {
+          "url": "https://www.londonstockexchange.com/stock/LSEG/london-stock-exchange-group-plc/company-page",
+          "date": "2026-09-30",
+          "what": "Previous close 8,182p (29 Sep), open 8,124p (30 Sep)"
+        },
+        {
+          "url": "https://stockanalysis.com/quote/lon/LSEG/statistics/",
+          "date": "2026-09",
+          "what": "Market cap GBP 43.70bn, beta 0.39, 52w 6,684-10,965p, yield 1.67%"
+        },
+        {
+          "url": "https://www.lseg.com/en/media-centre/press-releases/2026/london-stock-exchange-group-plc-h1-2026-interim-results",
+          "date": "2026-07-30",
+          "what": "H1 2026 results, guidance, CEO quote"
+        }
+      ]
+    },
+    {
+      "ticker": "PGHN",
+      "name": "Partners Group Holding AG",
+      "exchange": "SIX Swiss Exchange",
+      "listing_to_buy": "SIX PGHN (CHF)",
+      "pea_eligible": "No - Swiss company",
+      "adr_ticker": "PGPHF (OTC)",
+      "adr_ratio": "1:1",
+      "currency": "CHF",
+      "country": "Switzerland",
+      "sector": "Private markets asset management",
+      "megatrend": "Private-markets allocation growth",
+      "price": 602.6,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": 22.5,
+      "fy_end_month": 12,
+      "eps_basis": "Consensus EPS (13 analysts, Yahoo/StocksGuide)",
+      "fy2025": null,
+      "fy2026": 46.46,
+      "fy2027": 52.82,
+      "fy2028": null,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 0.96,
+      "dividend_yield_pct": 4.68,
+      "w52_low": 671.0,
+      "w52_high": 1158.0,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "Performance fees volatile: H1 2026 performance fees -39%, FY2026 performance-fee share cut to 20-25% of results. 2025 net profit CHF 1.26bn. Price 602.60 is an intraday SIX quote at 15:44 on 30 Sep (no official close found). Stock is below its 52-week low of 671, confirming heavy de-rating.",
+      "latest_results_summary": "H1 2026 (Sep 2026): record fundraising $16bn (+31%); net profit CHF 502m (-13%); revenue CHF 1.12bn (-7%); management income CHF 905m (+6%).",
+      "guidance": "FY2026 fundraising $26-32bn confirmed; performance income 20-25% of total (from 25-40%); expected realisations ~$20bn 2026, $25bn 2027, $30bn 2028.",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "~13x 2026 EPS with 4.7% yield; EPS +14% 2027e - value, not PEG growth.",
+      "key_risk": "Exit market timing, performance-fee cuts, leadership changes; not PEA eligible.",
+      "notes": "Market cap EUR 19.80bn per onvista converted to USD. USD market cap converted from the sourced local-currency figure with ECB reference rates of 30 Sep 2026 (EUR/USD 1.1355, EUR/CHF 0.9478, EUR/GBP 0.85463, EUR/SEK 11.3310, EUR/NOK 10.9015; euro-rates.info/en/home/EUR/2026-09-30); the source market cap is not necessarily dated 30 Sep 2026.",
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/quote/PGHN.SW/analysis/?p=PGHN.SW",
+          "date": "2026-09",
+          "what": "Consensus EPS 2026 46.46 / 2027 52.82 CHF (13 analysts)"
+        },
+        {
+          "url": "https://www.finanzen.ch/nachrichten/aktien/partners_group-aktie-kursbewegung-30-09-2026-1031805304",
+          "date": "2026-09-30",
+          "what": "SIX price CHF 602.60 at 15:44"
+        },
+        {
+          "url": "https://www.onvista.de/aktien/kennzahlen/PARTNERS-GROUP-HOLDING-AG-Aktie-CH0024608827",
+          "date": "2026-09",
+          "what": "Market cap EUR 19.80bn, beta 0.96, 52w CHF 671-1,158, DPS 46 CHF, yield 4.68%"
+        },
+        {
+          "url": "https://www.investing.com/news/company-news/partners-group-h1-2026-slides-record-fundraising-amid-exit-timing-concerns-93CH-4883686",
+          "date": "2026-09",
+          "what": "H1 2026 results and guidance"
+        }
+      ]
+    },
+    {
+      "ticker": "ARGX",
+      "name": "argenx SE",
+      "exchange": "Euronext Brussels",
+      "listing_to_buy": "Euronext Brussels ARGX (EUR)",
+      "pea_eligible": "Yes - Dutch SE headquartered in Belgium (EU)",
+      "adr_ticker": "ARGX (Nasdaq)",
+      "adr_ratio": "1:1",
+      "currency": "EUR",
+      "country": "Belgium/Netherlands",
+      "sector": "Biotech (autoimmune, FcRn)",
+      "megatrend": "Immunology blockbuster (VYVGART)",
+      "price": 848.8,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": 60.7,
+      "fy_end_month": 12,
+      "eps_basis": "Consensus EPS in EUR (MarketScreener); USD ADR consensus 2026 $29.03 / 2027 $39.31 (Yahoo)",
+      "fy2025": null,
+      "fy2026": 24.4,
+      "fy2027": 31.0,
+      "fy2028": 40.0,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": -0.02,
+      "dividend_yield_pct": 0.0,
+      "w52_low": 661.85,
+      "w52_high": 1072.75,
+      "price_target": 846.68,
+      "zacks_rank": 2,
+      "zacks_rank_date": "2026-09",
+      "cyclical": false,
+      "one_offs_note": "Tax-rate normalisation and milestone timing can distort years; alternative EUR consensus 23.57/31.1/40.2. 52-week range is the Nasdaq ADR in USD. Price target EUR 846.68 (14 analysts, MarketScreener).",
+      "latest_results_summary": "Q2 2026 (23 Jul 2026): product net sales $1.5bn (+60% y/y, +17% q/q), US $1.3bn; Q2 EPS EUR 7.32 vs 6.44 consensus; VYVGART approved across all gMG serotypes.",
+      "guidance": "Management: on track for increasing operating margins, sustained earnings growth and strong cash generation (no numeric FY EPS guidance).",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "VYVGART franchise compounding 60%; EPS +27% 2027e and +29% 2028e at ~27x 2027 EPS, PEG ~1; PEA eligible.",
+      "key_risk": "Pipeline readouts, competition in FcRn, pricing; data-driven volatility (fell 2% on VYVGART data 30 Sep).",
+      "notes": "Market cap $60.70bn is from Yahoo for the Nasdaq ADR.",
+      "sources": [
+        {
+          "url": "https://www.marketscreener.com/quote/stock/ARGENX-SE-16911676/finances/",
+          "date": "2026-09",
+          "what": "Consensus EPS 2026 EUR 24.4 / 2027 31.0 / 2028 40.0; PT EUR 846.68 (14 analysts)"
+        },
+        {
+          "url": "https://finance.yahoo.com/quote/ARGX/analysis/",
+          "date": "2026-09",
+          "what": "USD consensus 2026 $29.03 / 2027 $39.31"
+        },
+        {
+          "url": "https://www.beursduivel.be/Aandeel-Koers/60013875/arGEN-X.aspx",
+          "date": "2026-09-30",
+          "what": "Close EUR 848.80 (+0.05%)"
+        },
+        {
+          "url": "https://finance.yahoo.com/quote/ARGX/key-statistics/",
+          "date": "2026-09",
+          "what": "Market cap $60.70bn, beta -0.02, 52w $661.85-1,072.75"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/makes-argenx-argx-buy-stock-160002130.html",
+          "date": "2026-09",
+          "what": "Zacks Rank upgraded to #2 Buy"
+        },
+        {
+          "url": "https://argenx.com/news/2026/press-release-3331862",
+          "date": "2026-07-23",
+          "what": "Q2 / H1 2026 results"
+        }
+      ]
+    },
+    {
+      "ticker": "LONN",
+      "name": "Lonza Group AG",
+      "exchange": "SIX Swiss Exchange",
+      "listing_to_buy": "SIX LONN (CHF)",
+      "pea_eligible": "No - Swiss company",
+      "adr_ticker": "LZAGY (OTC)",
+      "adr_ratio": "1:1",
+      "currency": "CHF",
+      "country": "Switzerland",
+      "sector": "CDMO (biologics manufacturing)",
+      "megatrend": "Outsourced biologics / GLP-1 & ADC capacity",
+      "price": 581.0,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": 46.0,
+      "fy_end_month": 12,
+      "eps_basis": "Consensus CORE EPS (StocksGuide / ad-hoc-news); 2025 reported EPS was negative (impairments) - not comparable",
+      "fy2025": null,
+      "fy2026": 18.22,
+      "fy2027": 21.66,
+      "fy2028": 25.87,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 0.83,
+      "dividend_yield_pct": 0.9,
+      "w52_low": 454.6,
+      "w52_high": 597.8,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "2025 reported EPS -4.25 EUR (onvista) reflects non-core charges (capsules business impairment); consensus is on CORE basis, so fy2025 left null. Core EPS 2026 stable at ~18.1-18.2 across September.",
+      "latest_results_summary": "H1 2026 (22 Jul 2026): sales CHF 3.4bn (+16.0% CER); CORE EBITDA margin 34.8% (+4.4pt).",
+      "guidance": "FY2026 CORE EBITDA margin raised to 33-34% (from >32%); CER sales growth 11-12% confirmed.",
+      "ceo_quote": {
+        "original": "As macroeconomic and geopolitical volatility continues, Lonza's strong H1 2026 performance once again demonstrates the resilience and attractiveness of our unique business model, underpinned by the Lonza Engine and its distinctive set of strengths.",
+        "french": "Alors que la volatilité macroéconomique et géopolitique persiste, la solide performance de Lonza au S1 2026 démontre une nouvelle fois la résilience et l'attractivité de notre modèle unique, soutenu par le Lonza Engine et son ensemble d'atouts distinctifs.",
+        "date": "2026-07-22",
+        "source": "https://www.lonza.com/news/2026-07-22-06-30"
+      },
+      "thesis_short": "Core EPS +19% 2027e and +19% 2028e at ~27x 2027 EPS, PEG ~1.4; structural CDMO winner.",
+      "key_risk": "Biotech funding, Swiss franc, large capex; not PEA eligible.",
+      "notes": "USD market cap converted from the sourced local-currency figure with ECB reference rates of 30 Sep 2026 (EUR/USD 1.1355, EUR/CHF 0.9478, EUR/GBP 0.85463, EUR/SEK 11.3310, EUR/NOK 10.9015; euro-rates.info/en/home/EUR/2026-09-30); the source market cap is not necessarily dated 30 Sep 2026.",
+      "sources": [
+        {
+          "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/lonza-group-stock-slips-as-investors-weigh-2026-earnings-outlook/70075487",
+          "date": "2026-09-09",
+          "what": "Forward 2026 EPS estimate CHF 18.22"
+        },
+        {
+          "url": "https://stocksguide.com/en/forecast/Lonza-CH0013841017",
+          "date": "2026-09",
+          "what": "Consensus EPS 2027 21.66 / 2028 25.87 CHF"
+        },
+        {
+          "url": "https://www.finanzen.ch/nachrichten/aktien/lonza-aktie-kursbewegung-30-09-2026-1031803606",
+          "date": "2026-09-30",
+          "what": "Close CHF 581.00 (-0.51%)"
+        },
+        {
+          "url": "https://www.onvista.de/aktien/kennzahlen/LONZA-GROUP-AG-Aktie-CH0013841017",
+          "date": "2026-09",
+          "what": "Market cap ~EUR 40.49bn, beta 0.83, 52w CHF 454.60-597.80, yield 0.9%, 2025 reported EPS -4.25"
+        },
+        {
+          "url": "https://www.lonza.com/news/2026-07-22-06-30",
+          "date": "2026-07-22",
+          "what": "H1 2026 results, raised margin guidance, CEO quote"
+        }
+      ]
+    },
+    {
+      "ticker": "GALD",
+      "name": "Galderma Group AG",
+      "exchange": "SIX Swiss Exchange",
+      "listing_to_buy": "SIX GALD (CHF)",
+      "pea_eligible": "No - Swiss company",
+      "adr_ticker": "GALDY (OTC)",
+      "adr_ratio": "5 ADR = 1 share (per onvista 'SP.ADR/0,2')",
+      "currency": "CHF (reports in USD)",
+      "country": "Switzerland",
+      "sector": "Dermatology (aesthetics, Nemluvio)",
+      "megatrend": "Aesthetics & biologic dermatology",
+      "price": 165.85,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": 47.6,
+      "fy_end_month": 12,
+      "eps_basis": "Consensus core EPS converted to CHF (StocksGuide 2026 CHF 3.63; MarketScreener core EPS 3.53/4.98 2026/27); company reports core EPS in USD",
+      "fy2025": null,
+      "fy2026": 3.63,
+      "fy2027": 4.98,
+      "fy2028": null,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 0.35,
+      "dividend_yield_pct": 0.22,
+      "w52_low": 133.93,
+      "w52_high": 202.02,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "Currency mix: company reports USD; consensus quoted in CHF (StocksGuide) and EUR (onvista: 2.29/3.36/4.85 for 2025/26/27). 52-week range in EUR from onvista. H1 2026 net income +129% partly from lower financing costs.",
+      "latest_results_summary": "H1 2026 (Jul 2026): net sales $3.134bn (+24.6% cc); core EBITDA margin 25.6% (+295bp); core EPS +68.5%; net income $444m.",
+      "guidance": "FY2026 cc net sales growth raised to 19-21% (from 17-20%); core EBITDA margin ~26%.",
+      "ceo_quote": {
+        "original": "Galderma delivered a strong first half of 2026, with broad-based growth across geographies and product categories.",
+        "french": "Galderma a réalisé un solide premier semestre 2026, avec une croissance généralisée dans toutes les zones géographiques et catégories de produits.",
+        "date": "2026-07",
+        "source": "https://www.galderma.com/news/galderma-H12026-performance"
+      },
+      "thesis_short": "Fastest EPS growth in health group (+37% 2027e) at ~33x 2027 EPS, PEG ~0.9; Nemluvio and fillers.",
+      "key_risk": "Aesthetics consumer cyclicality, USD/CHF, L'Oreal stake overhang; not PEA eligible.",
+      "notes": "USD market cap converted from the sourced local-currency figure with ECB reference rates of 30 Sep 2026 (EUR/USD 1.1355, EUR/CHF 0.9478, EUR/GBP 0.85463, EUR/SEK 11.3310, EUR/NOK 10.9015; euro-rates.info/en/home/EUR/2026-09-30); the source market cap is not necessarily dated 30 Sep 2026.",
+      "sources": [
+        {
+          "url": "https://stocksguide.com/en/forecast/Galderma-CH1335392721",
+          "date": "2026-09",
+          "what": "Consensus EPS 2026 CHF 3.63"
+        },
+        {
+          "url": "https://www.marketscreener.com/quote/stock/GALDERMA-GROUP-AG-167234206/finances/",
+          "date": "2026-09",
+          "what": "Core EPS 3.53 (2026) / 4.98 (2027); EBITDA 1.3/1.6/1.9bn"
+        },
+        {
+          "url": "https://www.finanzen.ch/nachrichten/aktien/galderma-aktie-kursbewegung-30-09-2026-1036560747",
+          "date": "2026-09-30",
+          "what": "Price CHF 165.85 on 30 Sep 2026"
+        },
+        {
+          "url": "https://www.onvista.de/aktien/Galderma-Group-Aktie-CH1335392721",
+          "date": "2026-09",
+          "what": "Market cap EUR 41.89bn, beta 0.35, 52w EUR 133.93-202.02, yield 0.22%"
+        },
+        {
+          "url": "https://www.galderma.com/news/galderma-H12026-performance",
+          "date": "2026-07",
+          "what": "H1 2026 results, raised guidance, CEO quote"
+        }
+      ]
+    },
+    {
+      "ticker": "UCB",
+      "name": "UCB SA",
+      "exchange": "Euronext Brussels",
+      "listing_to_buy": "Euronext Brussels UCB (EUR)",
+      "pea_eligible": "Yes - Belgian company (EU)",
+      "adr_ticker": "UCBJY (OTC)",
+      "adr_ratio": "2 ADR = 1 share (per OTC convention; verify)",
+      "currency": "EUR",
+      "country": "Belgium",
+      "sector": "Biopharma (immunology, neurology)",
+      "megatrend": "BIMZELX blockbuster ramp",
+      "price": 205.1,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": 48.68,
+      "fy_end_month": 12,
+      "eps_basis": "Consensus core EPS (EUR; capitalinsights / company core EPS definition); Yahoo USD: 10.66 / 13.58",
+      "fy2025": null,
+      "fy2026": 11.87,
+      "fy2027": 13.7,
+      "fy2028": 16.38,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 0.18,
+      "dividend_yield_pct": 0.68,
+      "w52_low": null,
+      "w52_high": null,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "Core EPS excludes amortisation/impairments; H1 2026 core EPS EUR 6.84 nearly doubled. 52-week range found only for the ADR in USD ($225.65-345.39), left null for the Brussels line.",
+      "latest_results_summary": "H1 2026 (30 Jul 2026): net sales EUR 4.1bn (+23%), adjusted EBITDA EUR 1.7bn (+68%), BIMZELX EUR 1.5bn (x2), core EPS EUR 6.84.",
+      "guidance": "FY2026 revenue growth low-to-mid teens at CER (raised); BIMZELX peak sales >= EUR 7bn.",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "BIMZELX doubling; core EPS +15% 2027e, +20% 2028e at ~15x 2027 EPS, PEG < 1; PEA eligible.",
+      "key_risk": "2027 growth slows to 15% on consensus; US drug-pricing policy; Cimzia erosion.",
+      "notes": "Market cap $48.684bn from Yahoo (ADR basis).",
+      "sources": [
+        {
+          "url": "https://capitalinsights.eu/equity-research/2026/ucb-stock-analysis-2026/",
+          "date": "2026-09",
+          "what": "Core EPS consensus 2026 EUR 11.87 / 2027 13.70 / 2028 16.38"
+        },
+        {
+          "url": "https://finance.yahoo.com/quote/UCB.BR/analysis/",
+          "date": "2026-09",
+          "what": "USD consensus 2026 10.66 (9.48-11.51) / 2027 13.58 (11.28-16.16)"
+        },
+        {
+          "url": "https://www.beurs.nl/Aandeel-Koers/60114926/UCB.aspx",
+          "date": "2026-09-30",
+          "what": "Close EUR 205.10"
+        },
+        {
+          "url": "https://finance.yahoo.com/quote/UCBJY/key-statistics/",
+          "date": "2026-09",
+          "what": "Market cap $48.684bn, beta 0.18, yield 0.68%"
+        },
+        {
+          "url": "https://www.ucb.com/newsroom/press-releases/article/ucb-delivers-strong-results-raises-2026-guidance-and-positions-for-next-growth-phase",
+          "date": "2026-07-30",
+          "what": "H1 2026 results and raised guidance"
+        }
+      ]
+    },
+    {
+      "ticker": "RMS",
+      "name": "Hermès International",
+      "exchange": "Euronext Paris",
+      "listing_to_buy": "Euronext Paris RMS (EUR)",
+      "pea_eligible": "Yes - French company (EU)",
+      "adr_ticker": "HESAY (OTC)",
+      "adr_ratio": "10 ADR = 1 share (per OTC convention; verify)",
+      "currency": "EUR",
+      "country": "France",
+      "sector": "Luxury",
+      "megatrend": "Ultra-luxury scarcity model",
+      "price": 1336.5,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": 166.5,
+      "fy_end_month": 12,
+      "eps_basis": "Consensus net EPS (EasyBourse / Zonebourse)",
+      "fy2025": 43.07,
+      "fy2026": 44.64,
+      "fy2027": 51.77,
+      "fy2028": null,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 1.0,
+      "dividend_yield_pct": 1.35,
+      "w52_low": 1298.5,
+      "w52_high": 2300.0,
+      "price_target": 1470.0,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "2026 EPS +4% only (FX headwind); 2027 +16%. Analysts cut forecasts in September 2026 (Bernstein, Oddo PT 1,627->1,470; HSBC PT 1,700). Stock at 4-year low on 21 Sep 2026. Price target 1,470 is Oddo's single-broker target, not consensus.",
+      "latest_results_summary": "H1 2026 (29 Jul 2026): revenue EUR 8.2bn (+6% cc, +2% reported); recurring operating income EUR 3.4bn, margin 41.0% (41.4%); stock -8% on the day.",
+      "guidance": "No numeric guidance; management 'approaches the rest of the year with confidence'.",
+      "ceo_quote": {
+        "original": "Au premier semestre 2026, Hermès réalise une performance solide, ce qui témoigne de la forte désirabilité de ses 16 métiers et de la fidélité de ses clients. Certains de la force de notre modèle artisanal unique et en maîtrise de nos grands équilibres, nous abordons le reste de l'année avec confiance.",
+        "french": "Au premier semestre 2026, Hermès réalise une performance solide, ce qui témoigne de la forte désirabilité de ses 16 métiers et de la fidélité de ses clients. Certains de la force de notre modèle artisanal unique et en maîtrise de nos grands équilibres, nous abordons le reste de l'année avec confiance.",
+        "date": "2026-07-29",
+        "source": "https://assets-finance.hermes.com/s3fs-public/node/pdf_file/2026-07/1785260522/hermes_20260729_cp_resultatspremiersemestre_vf.pdf"
+      },
+      "thesis_short": "Best luxury compounder at a 4-year low: ~26x 2027 EPS vs +16% growth; PEG ~1.6 - quality, not cheap.",
+      "key_risk": "Luxury demand slowdown (China, US), FX, estimate cuts continuing.",
+      "notes": "Quote is original French (Axel Dumas, gérant). USD market cap converted from the sourced local-currency figure with ECB reference rates of 30 Sep 2026 (EUR/USD 1.1355, EUR/CHF 0.9478, EUR/GBP 0.85463, EUR/SEK 11.3310, EUR/NOK 10.9015; euro-rates.info/en/home/EUR/2026-09-30); the source market cap is not necessarily dated 30 Sep 2026.",
+      "sources": [
+        {
+          "url": "https://www.easybourse.com/action-consensus/hermes-intl/FR0000052292-25",
+          "date": "2026-09",
+          "what": "Consensus BPA 2025 43.07 / 2026 44.64 / 2027 51.77"
+        },
+        {
+          "url": "https://www.optionfinance.fr/info-financiere-en-continu/d/2026-09-21-hermes-au-plus-bas-depuis-quatre-ans-les-analystes-sabrent-encore-leurs-previsions.html",
+          "date": "2026-09-21",
+          "what": "Analyst cuts; Oddo PT 1,470; HSBC PT 1,700"
+        },
+        {
+          "url": "https://www.boursorama.com/cours/1rPRMS/",
+          "date": "2026-09-30",
+          "what": "Close EUR 1,336.50 (-1.18%)"
+        },
+        {
+          "url": "https://www.investisseurs-heureux.fr/bourse_rms.pa",
+          "date": "2026-09",
+          "what": "Market cap EUR 146.59bn, beta 1, 52w 1,298.50-2,300, yield 1.35%"
+        },
+        {
+          "url": "https://assets-finance.hermes.com/s3fs-public/node/pdf_file/2026-07/1785260522/hermes_20260729_cp_resultatspremiersemestre_vf.pdf",
+          "date": "2026-07-29",
+          "what": "H1 2026 results and Axel Dumas quote"
+        }
+      ]
+    },
+    {
+      "ticker": "RACE",
+      "name": "Ferrari N.V.",
+      "exchange": "Borsa Italiana / NYSE",
+      "listing_to_buy": "Milan RACE (EUR)",
+      "pea_eligible": "Yes - Dutch-registered company (EU)",
+      "adr_ticker": "RACE (NYSE, ordinary shares)",
+      "adr_ratio": "1:1",
+      "currency": "EUR",
+      "country": "Italy/Netherlands",
+      "sector": "Luxury automotive",
+      "megatrend": "Luxury scarcity, personalisation",
+      "price": 349.2,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": 91.58,
+      "fy_end_month": 12,
+      "eps_basis": "Company adjusted diluted EPS basis; consensus 2027 EUR 10.74 (12 analysts, Yahoo); 2026 taken as company guidance floor >= EUR 9.68 because the only consensus figure found (8.96) is stale/below guidance",
+      "fy2025": 10.11,
+      "fy2026": 9.68,
+      "fy2027": 10.74,
+      "fy2028": null,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 0.96,
+      "dividend_yield_pct": 1.07,
+      "w52_low": 312.51,
+      "w52_high": 504.49,
+      "price_target": null,
+      "zacks_rank": 3,
+      "zacks_rank_date": "2026-09-30",
+      "cyclical": false,
+      "one_offs_note": "fy2026 = company guidance (adjusted EPS at least EUR 9.68, raised from 9.45) rather than consensus; note 2026 guidance is BELOW 2025 diluted EPS of 10.11 (FX/hedging, lower deliveries), so growth 2025->2026 is negative. 52-week range and market cap from NYSE line (USD). Morgan Stanley cut PT to $456 on 30 Sep 2026.",
+      "latest_results_summary": "Q2 2026 (30 Jul 2026): net revenues EUR 1.94bn (+8%), EBIT EUR 605m (+10%, margin 31.2%), diluted EPS EUR 2.62 vs 2.38; personalisation >20% of car revenue.",
+      "guidance": "FY2026 raised: revenue ~EUR 7.6bn (from 7.5bn), adjusted EPS >= EUR 9.68 (from 9.45), adjusted net profit >= EUR 2.97bn; order book through 2027.",
+      "ceo_quote": {
+        "original": "A sustained trend in personalizations allows us to raise the guidance for the year.",
+        "french": "Une tendance soutenue des personnalisations nous permet de relever nos prévisions pour l'année.",
+        "date": "2026-07-30",
+        "source": "https://www.cnbc.com/2026/07/30/ferrari-race-earnings-q2-2026.html"
+      },
+      "thesis_short": "Stock -14% over 12 months; but EPS growth only ~11% 2027e at ~33x, PEG ~3 - fails PEG screen.",
+      "key_risk": "Flat EPS 2025-26, EV transition (Elettrica), valuation.",
+      "notes": "Price 349.20 is the Google Finance quote on 30 Sep 2026 (+0.99%); last explicit close found: 25 Sep 355.15, 29 Sep 351.55.",
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/quote/RACE/analysis/",
+          "date": "2026-09",
+          "what": "Consensus 2027 EPS EUR 10.74 (12 analysts); 2026 figure 8.96"
+        },
+        {
+          "url": "https://www.cnbc.com/2026/07/30/ferrari-race-earnings-q2-2026.html",
+          "date": "2026-07-30",
+          "what": "Q2 2026 results; adjusted EPS guidance >= 9.68; CEO quote"
+        },
+        {
+          "url": "https://www.google.com/finance/quote/RACE:BIT?hl=it",
+          "date": "2026-09-30",
+          "what": "Price EUR 349.20 (+0.99%)"
+        },
+        {
+          "url": "https://finance.yahoo.com/quote/RACE/key-statistics/",
+          "date": "2026-09",
+          "what": "Market cap $91.58bn, beta 0.96, 52w $312.51-504.49, yield 1.07%, FY2025 diluted EPS EUR 10.11"
+        },
+        {
+          "url": "https://finance.yahoo.com/markets/stocks/articles/mga-race-better-value-stock-144004018.html",
+          "date": "2026-09-30",
+          "what": "Zacks Rank #3 Hold"
+        }
+      ]
+    },
+    {
+      "ticker": "BC",
+      "name": "Brunello Cucinelli S.p.A.",
+      "exchange": "Borsa Italiana",
+      "listing_to_buy": "Milan BC (EUR)",
+      "pea_eligible": "Yes - Italian company (EU)",
+      "adr_ticker": "BCUCY (OTC)",
+      "adr_ratio": "10 ADR = 1 share (ADR 52w $7.86-13.45 vs EUR 69-102 implies ~1:10; verify)",
+      "currency": "EUR",
+      "country": "Italy",
+      "sector": "Luxury apparel",
+      "megatrend": "Quiet luxury / absolute luxury",
+      "price": 81.22,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": 6.59,
+      "fy_end_month": 12,
+      "eps_basis": "Consensus EPS (StocksGuide / Yahoo BC.MI)",
+      "fy2025": 1.99,
+      "fy2026": 2.28,
+      "fy2027": 2.62,
+      "fy2028": null,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 0.93,
+      "dividend_yield_pct": 1.27,
+      "w52_low": 69.02,
+      "w52_high": 102.4,
+      "price_target": null,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "H1 2026 net profit figures conflict across sources (EUR 78.2m +2.0% vs EUR 66.7m +31.9%). 2028 only given as net income EUR 197m (no per-share).",
+      "latest_results_summary": "H1 2026 (Jul 2026): revenues EUR 749.4m (+9.5%, +13.3% cc), EBIT EUR 128.2m (+12.6%), margin 17.1%.",
+      "guidance": "FY2026 revenue growth 10-11% cc (from 10%), EBIT margin ~17%; 2027 growth ~10%.",
+      "ceo_quote": {
+        "original": "Truly, truly outstanding.",
+        "french": "Vraiment, vraiment exceptionnels.",
+        "date": "2026-07",
+        "source": "https://www.investing.com/news/company-news/brunello-cucinelli-h1-2026-slides-revenue-up-13-guidance-raised-93CH-4825788"
+      },
+      "thesis_short": "Steady 10%+ growth, EPS +15% 2027e at ~31x 2027 EPS, PEG ~2.",
+      "key_risk": "Small cap, valuation, luxury cycle.",
+      "notes": "Market cap $6.59bn per Yahoo. Quote is Brunello Cucinelli (Executive Chairman), short.",
+      "sources": [
+        {
+          "url": "https://stocksguide.com/en/forecast/Brunello-Cucinelli-Spa-IT0004764699",
+          "date": "2026-09",
+          "what": "Consensus EPS 2026 EUR 2.28; 16 buy / 7 hold"
+        },
+        {
+          "url": "https://beta.finance.yahoo.com/quote/BC.MI/analysis/",
+          "date": "2026-09",
+          "what": "Consensus EPS 2027 2.62 (2.48-2.89)"
+        },
+        {
+          "url": "https://www.teleborsa.it/azioni/brunello-cucinelli-bc-it0004764699-SVQwMDA0NzY0Njk5/analisi?tab=2",
+          "date": "2026-09-30",
+          "what": "Close EUR 81.22 (-2.00%)"
+        },
+        {
+          "url": "https://finance.yahoo.com/quote/BC.MI/",
+          "date": "2026-09",
+          "what": "Market cap EUR 5.68bn ($6.59bn), beta 0.93, 52w 69.02-102.40, yield 1.27%, EPS 2025 1.99"
+        },
+        {
+          "url": "https://www.investing.com/news/company-news/brunello-cucinelli-h1-2026-slides-revenue-up-13-guidance-raised-93CH-4825788",
+          "date": "2026-07",
+          "what": "H1 2026 results and guidance"
+        }
+      ]
+    },
+    {
+      "ticker": "ALC",
+      "name": "Alcon Inc.",
+      "exchange": "SIX Swiss Exchange / NYSE",
+      "listing_to_buy": "SIX ALC (CHF) or NYSE ALC (USD)",
+      "pea_eligible": "No - Swiss company",
+      "adr_ticker": "ALC (NYSE, ordinary shares)",
+      "adr_ratio": "1:1",
+      "currency": "CHF (reports in USD)",
+      "country": "Switzerland",
+      "sector": "Eye care (surgical, vision care)",
+      "megatrend": "Ageing population / ophthalmology",
+      "price": 53.98,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": 35.19,
+      "fy_end_month": 12,
+      "eps_basis": "Consensus core diluted EPS in USD (company reporting currency); SIX price in CHF",
+      "fy2025": 3.07,
+      "fy2026": 3.47,
+      "fy2027": 3.97,
+      "fy2028": null,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": 0.41,
+      "dividend_yield_pct": 0.49,
+      "w52_low": 61.84,
+      "w52_high": 90.41,
+      "price_target": null,
+      "zacks_rank": 3,
+      "zacks_rank_date": "2026-09",
+      "cyclical": false,
+      "one_offs_note": "Q2 2026 included a $402m charge (excluded from core EPS). EPS in USD while price in CHF: PE must use CHF/USD conversion. 52-week range from NYSE in USD. Growth ~13-14% (below 15% screen).",
+      "latest_results_summary": "Q2 2026 (Aug 2026): core diluted EPS $0.84 (+11%), sales +8%; guidance raised despite $402m charge.",
+      "guidance": "FY2026 core diluted EPS growth 12-15% cc (from 10-13%).",
+      "ceo_quote": {
+        "original": "UNITY, PanOptix Pro, TRYPTYR and other recent launches are driving growth and reinforcing the strength of our innovation engine.",
+        "french": "UNITY, PanOptix Pro, TRYPTYR et d'autres lancements récents stimulent la croissance et renforcent la puissance de notre moteur d'innovation.",
+        "date": "2026-08",
+        "source": "https://www.sec.gov/Archives/edgar/data/0001167379/000116737926000030/q22026pressrelease.htm"
+      },
+      "thesis_short": "Defensive 13-14% EPS grower at ~16x 2027 EPS (CHF->USD); PEG ~1.2.",
+      "key_risk": "Growth below 15% threshold; contact-lens competition; not PEA eligible.",
+      "notes": "Market cap $35.19bn (Yahoo).",
+      "sources": [
+        {
+          "url": "https://finance.yahoo.com/quote/ALC/analysis/",
+          "date": "2026-09",
+          "what": "Consensus core EPS 2026 $3.47 / 2027 $3.97 (25 analysts)"
+        },
+        {
+          "url": "https://www.finanzen.ch/nachrichten/aktien/alcon-aktie-kursbewegung-30-09-2026-1031802436",
+          "date": "2026-09-30",
+          "what": "Close CHF 53.98 (-0.77%)"
+        },
+        {
+          "url": "https://finance.yahoo.com/quote/ALC/key-statistics/",
+          "date": "2026-09",
+          "what": "Market cap $35.19bn, beta 0.41, 52w $61.84-90.41, yield 0.49%"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1167379/000116737926000013/q42025pressrelease.htm",
+          "date": "2026-02",
+          "what": "FY2025 core diluted EPS $3.07"
+        },
+        {
+          "url": "https://www.tradingview.com/news/zacks:7077a4df8094b:0-alcon-s-q2-earnings-and-revenues-surpass-estimates-stock-climbs/",
+          "date": "2026-08",
+          "what": "Zacks Rank #3 Hold; Q2 2026 beat"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/0001167379/000116737926000030/q22026pressrelease.htm",
+          "date": "2026-08",
+          "what": "Q2 2026 results, raised guidance, CEO quote"
+        }
+      ]
+    },
+    {
+      "ticker": "SRT3",
+      "name": "Sartorius AG (preference shares)",
+      "exchange": "Xetra",
+      "listing_to_buy": "Xetra SRT3 (EUR, Vorzugsaktie)",
+      "pea_eligible": "Yes - German company (EU)",
+      "adr_ticker": "SUVPF (OTC)",
+      "adr_ratio": "1:1",
+      "currency": "EUR",
+      "country": "Germany",
+      "sector": "Bioprocess / lab equipment",
+      "megatrend": "Biologics manufacturing consumables",
+      "price": 259.4,
+      "price_date": "2026-09-30",
+      "market_cap_usd_bn": 18.3,
+      "fy_end_month": 12,
+      "eps_basis": "Consensus underlying EPS (aktien.guide / StocksGuide, 15 analysts); 2025 reported EPS 2.24",
+      "fy2025": 2.24,
+      "fy2026": 5.6,
+      "fy2027": 7.06,
+      "fy2028": 8.09,
+      "fy2029": null,
+      "ltg_pct": null,
+      "beta": null,
+      "dividend_yield_pct": 0.3,
+      "w52_low": 191.75,
+      "w52_high": 264.6,
+      "price_target": 310.0,
+      "zacks_rank": null,
+      "zacks_rank_date": "",
+      "cyclical": false,
+      "one_offs_note": "Big gap between reported 2025 EPS (2.24) and 2026e (5.60) reflects underlying-vs-reported basis and amortisation; MarketScreener shows a lower series 3.81/4.87/5.77 (reported basis). Market cap EUR 16.08bn is for the preference shares only. PT 310 is Barclays (single broker).",
+      "latest_results_summary": "H1 2026 (Jul 2026): sales +7.7% cc; underlying EBITDA EUR 548m (+3.9%), margin 30.3% (+0.5pt).",
+      "guidance": "FY2026 unchanged: cc sales growth 5-9%, underlying EBITDA margin slightly above 30%.",
+      "ceo_quote": {
+        "original": null,
+        "french": null,
+        "date": null,
+        "source": null
+      },
+      "thesis_short": "Underlying EPS +26% 2027e / +15% 2028e at ~37x 2027 EPS; PEG ~1.5.",
+      "key_risk": "Basis confusion (underlying vs reported), slow top-line (5-9%), high multiple.",
+      "notes": "USD market cap converted from the sourced local-currency figure with ECB reference rates of 30 Sep 2026 (EUR/USD 1.1355, EUR/CHF 0.9478, EUR/GBP 0.85463, EUR/SEK 11.3310, EUR/NOK 10.9015; euro-rates.info/en/home/EUR/2026-09-30); the source market cap is not necessarily dated 30 Sep 2026.",
+      "sources": [
+        {
+          "url": "https://aktien.guide/kursziel/Sartorius-Vz-DE0007165631",
+          "date": "2026-09",
+          "what": "Consensus EPS 2026 5.60 (15 analysts) / 2027 7.06 / 2028 8.09"
+        },
+        {
+          "url": "https://www.marketscreener.com/quote/stock/SARTORIUS-AG-436559/",
+          "date": "2026-09-30",
+          "what": "Xetra close EUR 259.40 (-0.23%)"
+        },
+        {
+          "url": "https://www.onvista.de/aktien/kennzahlen/Sartorius-AG-Aktie-DE0007165631",
+          "date": "2026-09",
+          "what": "Market cap EUR 16.08bn (34.81m pref shares), 52w 191.75-264.60, yield 0.30%, EPS 2025 2.24"
+        },
+        {
+          "url": "https://www.ad-hoc-news.de/boerse/news/corporate-news/barclays-hebt-kursziel-fuer-die-sartorius-aktie-auf-310-euro-an/70209417",
+          "date": "2026-09",
+          "what": "Barclays PT 310"
+        },
+        {
+          "url": "https://www.sartorius.com/en/company/newsroom/corporate-news/2026-half-year-results-sartorius-group-1845854",
+          "date": "2026-07",
+          "what": "H1 2026 results and guidance"
+        }
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "ticker": "NOVO B",
+      "reason": "Consensus EPS flat: 2026 22.75 DKK vs 2027 22.04 DKK (Yahoo NOVO-B.CO, Sep 2026) - no growth for PEG."
+    },
+    {
+      "ticker": "ZEAL",
+      "reason": "Consensus EPS 2026 22.2 DKK (milestone-driven one-off), 2027 6.88, 2028 -44.7 DKK (StocksGuide) - no sustainable earnings."
+    },
+    {
+      "ticker": "NBIS",
+      "reason": "Loss-making: consensus EPS 2026 -2.08, 2027 -0.50, 2028 $1.20 (Yahoo/StockAnalysis) - PEG not computable; BofA sees revenue $12.7bn 2027."
+    },
+    {
+      "ticker": "SAP",
+      "reason": "Non-IFRS EPS growth too low: 2026 EUR 6.84 -> 2027 EUR 7.41 (~8%, estimates trimmed after Q2 2026)."
+    },
+    {
+      "ticker": "SIE",
+      "reason": "EPS growth ~12%: FY2026 11.38 -> FY2027 12.70 (Yahoo SIE.DE); Erste cut estimates in Sep 2026."
+    },
+    {
+      "ticker": "DB1",
+      "reason": "EPS growth <10%: 2026 12.55 / 2027 13.51 / 2028 14.83 (aktien.guide)."
+    },
+    {
+      "ticker": "WISE",
+      "reason": "EPS growth ~12%: FY2027 (Mar) 0.39 GBP -> FY2028 0.437 (MarketScreener/Yahoo)."
+    },
+    {
+      "ticker": "EVO",
+      "reason": "EPS growth ~12%: 2026 EUR 5.32 / 2027 5.95 / 2028 6.60 (Yahoo EVO.ST, 16 analysts); Galaxy deal in doubt."
+    },
+    {
+      "ticker": "ITX",
+      "reason": "EPS growth ~9%: FY2027 (Jan) 2.176 -> FY2028 2.374 (MarketScreener)."
+    },
+    {
+      "ticker": "RYA",
+      "reason": "EPS growth ~4% and cyclical: FY2027 $4.32 -> FY2028 $4.48 (Erste/MarketBeat, Aug 2026)."
+    },
+    {
+      "ticker": "GAW",
+      "reason": "EPS growth low: FY2027 (May) GBP 6.37 (+2.25%) -> FY2028 6.87 (+7.85%)."
+    },
+    {
+      "ticker": "PNDORA",
+      "reason": "EPS declining/inconsistent across sources (2026 DKK 60-68, 2027 40-62)."
+    },
+    {
+      "ticker": "EQT",
+      "reason": "No usable consensus found (search results polluted by EQT Corp, US gas producer)."
+    },
+    {
+      "ticker": "SOI (Soitec)",
+      "reason": "Not researched within the search budget; Boursorama noted price-target raises on 30 Sep 2026 but no EPS consensus collected."
+    },
+    {
+      "ticker": "STM",
+      "reason": "Not researched within the search budget (cyclical, recent earnings weakness per prior knowledge; no data collected)."
+    },
+    {
+      "ticker": "COTN (Comet)",
+      "reason": "Not researched within the search budget."
+    },
+    {
+      "ticker": "IFCN (Inficon)",
+      "reason": "Not researched within the search budget."
+    },
+    {
+      "ticker": "NEX (Nexans)",
+      "reason": "Not researched within the search budget."
+    },
+    {
+      "ticker": "SPIE",
+      "reason": "Not researched within the search budget."
+    },
+    {
+      "ticker": "ABBN",
+      "reason": "Not researched within the search budget (expected EPS growth likely <15%)."
+    },
+    {
+      "ticker": "ATCO A",
+      "reason": "Not researched within the search budget."
+    },
+    {
+      "ticker": "ALFA",
+      "reason": "Not researched within the search budget."
+    },
+    {
+      "ticker": "SCATC",
+      "reason": "Not researched within the search budget."
+    },
+    {
+      "ticker": "MTX",
+      "reason": "Not researched within the search budget."
+    },
+    {
+      "ticker": "BA.",
+      "reason": "Not researched within the search budget; UK (not PEA eligible)."
+    },
+    {
+      "ticker": "HO (Thales)",
+      "reason": "Not researched within the search budget."
+    },
+    {
+      "ticker": "DSY",
+      "reason": "Not researched within the search budget (expected growth <15%)."
+    },
+    {
+      "ticker": "NEM",
+      "reason": "Not researched within the search budget."
+    },
+    {
+      "ticker": "REL",
+      "reason": "Not researched within the search budget; UK."
+    },
+    {
+      "ticker": "WKL",
+      "reason": "Not researched within the search budget (expected growth <15%)."
+    },
+    {
+      "ticker": "EXPN",
+      "reason": "Not researched within the search budget; UK."
+    },
+    {
+      "ticker": "UMG",
+      "reason": "Not researched within the search budget."
+    },
+    {
+      "ticker": "STMN (Straumann)",
+      "reason": "Not researched within the search budget; Swiss."
+    },
+    {
+      "ticker": "AZN",
+      "reason": "Not researched within the search budget; UK."
+    },
+    {
+      "ticker": "MONC",
+      "reason": "Not researched within the search budget."
+    }
+  ],
+  "notes": "Data collected with 157 of 200 WebSearch calls (extended mode) on 1 Oct 2026. Every figure comes from a search-result snippet; URLs and dates are those given by the results. Consensus figures are aggregator values (Yahoo, MarketScreener/Zonebourse, StocksGuide, aktien.guide, Boursorama/EasyBourse) and often differ between sources - the alternative values are recorded in one_offs_note. Prices are closes of 30 Sep 2026 on the home exchange unless price_date says otherwise (KOG and LSEG: 29 Sep close; PGHN: intraday 30 Sep quote; RACE: Google Finance quote 30 Sep). ltg_pct (long-term growth) was not available for any name except Adyen's 16.7% p.a. (Simply Wall St). beta/52w/dividend data come from retail data pages dated September 2026 and are not all on the home-exchange line (noted per record). Zacks Rank only available for ADR/US-listed names (ASML #3, SPOT #3, ARGX #2, RACE #3, ALC #3, FLUT #5). USD market caps converted with ECB reference rates of 30 Sep 2026 where the source gave a local currency. fiscal years labelled by calendar year of year-end (ENR, IFX: September). Candidates with both fy2026 and fy2027 consensus: 31 of 31."
+}
