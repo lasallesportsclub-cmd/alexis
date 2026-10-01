@@ -9,10 +9,11 @@ Portefeuille concentré de cinq valeurs construit avec la méthode PEG de Peter 
 | Fichier | Contenu |
 |---|---|
 | `RAPPORT.md` | Rapport complet (contexte, méthode, univers et classement, portefeuille et variantes, cinq analyses détaillées, stress tests, critique, plan d'action, limites, sources, annexes) |
-| `ARTICLE.html`, `ARTICLE.pdf` | Article autonome (thème clair/sombre, mobile, infographies SVG, titre de journal fictif), et sa version A4 |
+| `ARTICLE_LONG.html`, `ARTICLE_LONG.pdf` | **L'enquête complète** (31 pages A4) : sommaire, histoire, chronologie, huit ans de chiffres, trajectoire boursière, métier, « pourquoi », cas de l'ours, règles de vente et calendrier pour chacune des cinq valeurs, puis comparaison à l'indice, stress tests, écartées, critique, mode d'emploi |
+| `ARTICLE.html`, `ARTICLE.pdf` | Article court (7 pages), même structure sans les chapitres par valeur |
 | `outputs/` | Sorties du modèle : `resultats_par_valeur.csv`, `classement.csv`, `exclus.csv`, `quintets.csv`, `variantes.csv`, `indice.csv`, `resume.json` |
 | `data/` | Univers (`data.csv`), hypothèses éditoriales (`hypotheses.csv`), poids du QQQ (`index_weights.csv`), portefeuille et variantes |
-| `../research/` | Données brutes des recherches du 01/10/2026 : screens Europe, Asie, États-Unis, Amérique latine (`phase1/`), méga-tendances, et les huit deep dives (`deepdives/`) |
+| `../research/` | Données brutes des recherches du 01/10/2026 : screens Europe, Asie, États-Unis, Amérique latine (`phase1/`), méga-tendances, neuf deep dives (`deepdives/`) et les cinq dossiers historiques (`histoire/`, avec `histoire.json` lu par le générateur) |
 
 ## Reproduction (bibliothèque standard Python uniquement)
 
@@ -25,6 +26,9 @@ python3 portefeuille.py --data data/data.csv --hyp data/hypotheses.csv --index d
 python3 rapport.py --template redaction/RAPPORT_template.md --out RAPPORT.md
 python3 rapport.py --template redaction/ARTICLE_template.md --out article/contenu.md
 python3 article.py --resume outputs/resume.json --content article/contenu.md --out ARTICLE.html
+python3 rapport.py --template redaction/ARTICLE_LONG_template.md --out article/contenu_long.md
+python3 article.py --resume outputs/resume.json --content article/contenu_long.md --out ARTICLE_LONG.html --long
+# PDF : chromium --headless=new --print-to-pdf=ARTICLE_LONG.pdf --no-pdf-header-footer ARTICLE_LONG.html
 ```
 
 Les textes du rapport et de l'article sont dans `redaction/` ; tous les chiffres des tableaux, des graphiques et des phrases chiffrées sont des balises `{{...}}` remplies par `rapport.py` depuis `outputs/resume.json`. Aucun chiffre du modèle n'est recopié à la main. Les faits datés (résultats, carnets, citations) viennent des deep dives et des sources citées.

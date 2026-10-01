@@ -8,6 +8,8 @@
 
 <!--infographic:hist:NU-->
 
+{{include:TRAJ_NU.md}}
+
 ### Le métier aujourd'hui, et comment il gagne de l'argent
 
 Nubank est une banque de détail sans agences, née à São Paulo en 2013 et domiciliée aux Îles Caïmans, qui sert 139 millions de clients au Brésil, au Mexique et en Colombie (communiqué du T2 2026, 13/08/2026). Elle gagne de l'argent de trois façons, et il faut les distinguer parce qu'elles n'ont pas le même risque. Le crédit à la consommation d'abord : cartes et prêts personnels, 41 % de la marge brute au deuxième trimestre 2026 ; c'est la partie qui rapporte le plus et qui expose au cycle brésilien. Le placement des dépôts ensuite, 34 % de la marge brute : 45,3 Md$ de dépôts de clients (+18 % sur un an) placés à des taux brésiliens encore très élevés (Selic à 13,75 %) ; c'est la partie la plus tranquille, et elle est la raison pour laquelle Nu n'a pas besoin des marchés pour se financer. Les commissions enfin, 25 % : interchange sur les cartes, assurance, courtage, marché de services.

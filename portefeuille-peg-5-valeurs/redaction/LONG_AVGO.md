@@ -8,6 +8,8 @@
 
 <!--infographic:hist:AVGO-->
 
+{{include:TRAJ_AVGO.md}}
+
 ### Le métier aujourd'hui
 
 Broadcom a deux métiers qui n'ont rien à voir, et c'est voulu. Les semi-conducteurs d'abord, 70 % du chiffre d'affaires au troisième trimestre de l'exercice 2026 : accélérateurs d'intelligence artificielle sur mesure, dits XPU, conçus pour un client et un seul ; puces réseau Ethernet pour relier des dizaines de milliers de ces accélérateurs ; stockage, sans-fil (la radio des iPhone). Le logiciel d'infrastructure ensuite, 30 % : VMware, racheté en 2023, converti à marche forcée vers l'abonnement, avec une marge brute de 94 % et des revenus récurrents en hausse de 15 %.

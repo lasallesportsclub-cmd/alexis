@@ -39,13 +39,36 @@ Pour chaque ligne, nous avons retenu une croissance de 2027 à 2030 inférieure 
 
 ### D'où vient Nubank
 
-*(Histoire en cours de rédaction.)*
+**Un étranger contre cinq banques.** À l'été 2012, Sequoia envoie David Vélez, Colombien de 30 ans, ouvrir un bureau au Brésil. Le 1er octobre, le fonds le rappelle : les dossiers sont ternes et l'université de São Paulo n'a formé que 42 informaticiens l'année précédente. Vélez voit l'inverse. Cinq banques (Itaú, Bradesco, Santander, Banco do Brasil, Caixa) tiennent 80 % du marché, facturent cher, servent mal, et personne n'innove. Il lève 2 M$ auprès de Sequoia en juillet 2013, recrute Cristina Junqueira, qui vient de quitter la plus grosse division cartes d'Itaú, et l'Américain Edward Wible. Nubank est fondée le 6 mai 2013 à São Paulo. Le produit, lancé le 1er avril 2014, tient en trois mots : une carte violette, zéro frais, une application.
+
+**Le bouche-à-oreille comme stratégie.** Un million de clients en 2016, plus de 20 millions en 2019, 53,9 millions fin 2021, 75 millions fin 2022, 100 millions en mai 2024, 131 millions fin 2025, 139 millions en juin 2026. Le capital a été patient : 14,3 M$ en 2014 (Série A de Sequoia, son premier investissement au Brésil), 180 M$ en 2018 quand Tencent entre sur 4 Md$ de valorisation, 400 M$ en 2019 (TCV, plus de 10 Md$), 750 M$ en juin 2021 menés par Berkshire Hathaway sur 30 Md$. Huit années de pertes financées avant le premier bénéfice, en 2023. Le Mexique ouvre en 2019, la Colombie en 2020 ; les acquisitions restent petites et techniques (Cognitect, Easynvest, Olivia, Hyperplane).
+
+**L'introduction en Bourse et la chute.** Le 9 décembre 2021, Nu place 289 millions d'actions à 9 $ au NYSE, pour 2,6 Md$ et 41 Md$ de valorisation, avec Berkshire, Sequoia, Tiger et SoftBank en ancrage ; le titre ouvre à 11,25 $. Six mois plus tard, les taux montent, la société perd encore de l'argent (−365 M$ en 2022) et l'action tombe à 3,74 $, soit −72,1 % depuis le 10 décembre 2021. La direction ne dévie pas : Youssef Lahrech devient président en août 2022 pour accélérer au Mexique et en Colombie, les certificats brésiliens sont retirés de B3, et les pertes se résorbent. 2023 est le premier exercice bénéficiaire (1,03 Md$) et le titre fait +104,7 %. Berkshire vend tout entre fin 2024 et mars 2025 avec un gain d'environ 250 M$, et manque les +61,6 % de 2025.
+
+**Comment Nubank a gagné.** Trois décisions : la technologie maison (« Nous ne sommes pas une banque : nous sommes une entreprise technologique où le client est au centre de la stratégie », Vélez, 2019) ; le produit unique qui attaque là où l'incumbent gagne trop d'argent pour réagir ; et le refus des agences. Entre juillet 2021 et juillet 2022, la part des Brésiliens titulaires d'une carte qui étaient clients de Nubank est passée de 32,8 % à 38,6 %. Au troisième trimestre 2024, Nubank comptait 109,7 millions de clients contre 99,3 millions pour Itaú ; avec 113 millions au Brésil contre environ 110 millions pour Bradesco, elle est devenue la première institution financière privée du pays par le nombre de clients. Le ratio d'efficacité est passé sous 20 % en 2025. La limite est connue : le portefeuille de crédit de Nubank, 20,9 Md$ en 2024, restait une fraction des 255,6 Md$ d'Itaú. Nubank gagne les clients, pas encore le crédit garanti.
+
+**Les concurrents, hier et aujourd'hui.** Santander Brasil a été dépassé en clients en 2022, Itaú et Bradesco en 2024. Les challengers numériques Banco Inter et C6 Bank plafonnent vers 35 millions de clients, moins d'un tiers de Nubank, faute du même effet de réseau. Le concurrent qui monte est Mercado Pago : 78 millions d'utilisateurs mensuels, un crédit de 12,5 Md$ en hausse de 90 %, 57 Md R$ d'investissements annoncés au Brésil pour 2026.
+
+**Le capital et le fondateur.** David Vélez détient 75,2 % des droits de vote (actions B à vingt voix) et environ 19 % du capital via son véhicule ; Capital Research, BlackRock, Baillie Gifford, Sequoia (4,9 %) et Tencent (3,1 %) suivent. Aucun dividende ; premier rachat d'actions le 4 juin 2026 (jusqu'à 1 Md$). Vélez a vendu pour environ 432 M$ d'actions en août 2025. Sa phrase de février 2025 dit la stratégie : « À un moment donné, nous allons manquer de Brésiliens, à moins que les Brésiliens ne fassent beaucoup plus de bébés. » D'où le Mexique (licence bancaire approuvée le 24 avril 2025, autorisation d'opérer le 9 juillet 2026), les États-Unis (approbation conditionnelle de l'OCC le 29 janvier 2026, lancement avec Lead Bank le 10 septembre 2026) et le démenti rapide, par 6-K le 30 septembre 2026, de la rumeur Monzo. La leçon de treize ans d'histoire : la direction préfère les licences organiques aux grandes acquisitions, tient la stratégie quand l'action chute, et répond vite quand sa discipline d'allocation est mise en doute.
 
 ### Huit ans de chiffres
 
-<!-- historique manquant : NU -->
+| Exercice | Chiffre d'affaires | Croissance | Marge opérationnelle | BPA en $ (IFRS) | Flux de trésorerie libre | Actions (M) |
+|---|---|---|---|---|---|---|
+| 2018 | 0,3 Md$ | n.d. | -9,0 % | n.d. | n.d. | n.d. |
+| 2019 | 0,5 Md$ | +47 % | -19,7 % | n.d. | n.d. | n.d. |
+| 2020 | 0,6 Md$ | +22 % | -29,8 % | n.d. | n.d. | n.d. |
+| 2021 | 1,5 Md$ | +163 % | -10,9 % | -0,10 | n.d. | 1 602 |
+| 2022 | 4,5 Md$ | +199 % | -8,1 % | -0,08 | n.d. | 4 677 |
+| 2023 | 7,7 Md$ | +70 % | 13,4 % | 0,21 | n.d. | 4 858 |
+| 2024 | 11,1 Md$ | +45 % | 17,8 % | 0,40 | n.d. | 4 889 |
+| 2025 | 16,3 Md$ | +45 % | 17,6 % | 0,58 | n.d. | 4 905 |
 
 <!--infographic:hist:NU-->
+
+**Ce que disent les chiffres.** Le chiffre d'affaires a été multiplié par cinquante en sept ans, de 0,3 Md$ en 2018 à 16,3 Md$ en 2025, et la marge opérationnelle est passée de −30 % en 2020 à près de 18 % en 2024 et 2025 : la croissance n'a pas été achetée par les pertes, elle les a résorbées. Le nombre d'actions, lui, est stable depuis l'introduction en Bourse (4,86 à 4,91 milliards), et il commence à baisser avec le rachat de 2026.
+
+**La Bourse.** Introduite à 9 $ le 9 décembre 2021, l'action a connu trois chutes de plus de 40 % : −72,1 % entre décembre 2021 et juin 2022 (taux, société déficitaire), −43,3 % entre novembre 2024 et avril 2025 (Selic, réal, sortie de Berkshire), −41,0 % entre le record de 18,98 $ du 29 janvier 2026 et le 3 juin 2026 (défauts record des ménages, hausse de l'impôt, changement de directeur financier). Chaque fois, les bénéfices ont continué de monter. Années civiles : −56,6 % en 2022, +104,7 % en 2023, +24,4 % en 2024, +61,6 % en 2025, −16,9 % en 2026 au 30 septembre. Sur trois ans, +74,8 % ; sur un an, −20,9 %. Le P/E de fin d'année est passé de 36,5 (2023) à 25,7 (2024) et 28,7 (2025) ; il est aujourd'hui de 11,6 sur les douze prochains mois.
 
 ### Le métier aujourd'hui, et comment il gagne de l'argent
 
@@ -98,13 +121,36 @@ Cotation NYSE en dollars, non éligible au PEA (siège aux Îles Caïmans), pas 
 
 ### D'où vient Rheinmetall
 
-*(Histoire en cours de rédaction.)*
+**Cent trente-sept ans de munitions.** Rheinmetall est fondée le 13 avril 1889 à Düsseldorf par l'ingénieur Heinrich Ehrhardt, sous le nom de Rheinische Metallwaaren- und Maschinenfabrik, pour fournir des munitions à l'armée impériale : dès 1890, 800 000 projectiles par jour pour le ministère de la Guerre. Le groupe traverse deux guerres, le rapprochement avec Borsig dans les années 1930, la reprise par Röchling en 1956, puis la diversification dans l'automobile avec Pierburg (1986) et Kolbenschmidt (1997-1998). En 2019 encore, l'automobile faisait 2 736 M€ de ventes sur 6 255 M€, à 6,7 % de marge, contre 9,8 % pour la défense.
+
+**Garder les munitions quand personne n'en voulait.** Entre 1990 et 2021, Rheinmetall a conservé poudres, explosifs et obus (Unterlüß en Basse-Saxe, l'Afrique du Sud) alors que l'Europe désarmait ; sa production d'obus de 155 mm n'était que de 70 000 par an en 2022. Quand la guerre d'Ukraine a vidé les stocks, elle était la seule en Europe à pouvoir promettre une montée en cadence : 1,1 million d'obus visés en 2027, 1,5 million en 2030, via l'Espagne (Expal, racheté 1,2 Md€ en 2023), la Hongrie, la Lituanie et Unterlüß, dont l'usine inaugurée en août 2025 est la plus grande usine de munitions d'artillerie d'Europe (350 000 obus par an dès 2027).
+
+**La Zeitenwende, 27 février 2022.** Olaf Scholz annonce au Bundestag un fonds spécial de 100 Md€. Le même jour, la ministre de la Défense demande à Armin Papperger, patron depuis le 1er janvier 2013 et entré dans le groupe en 1990, ce que Rheinmetall peut livrer vite ; réponse : 42 Md€ de chars, blindés, camions et munitions, avec des munitions sous un an, des blindés à roues en dix-huit mois, des chars en deux ans. Le cours passe de 84,88 € le 3 janvier 2022 à 186,10 € fin 2022, puis 287 € fin 2023 et 622 € fin 2024. Le groupe entre au DAX le 20 mars 2023 et dans l'Euro Stoxx 50 le 20 juin 2025. Le contrat-cadre de munitions de 155 mm signé avec la Bundeswehr le 20 juin 2024, jusqu'à 8,5 Md€ avec une première tranche de 880 M€ « pour sécuriser les capacités pendant la montée en cadence », a payé après coup des usines engagées avant les commandes. Le carnet suit : 24,5 Md€ fin 2021, 38,3 fin 2023, 63,8 fin 2025, 80,4 Md€ de « nomination » fin juin 2026.
+
+**Sortir de l'automobile.** La réorientation décidée en 2021 vend les gros pistons (janvier 2023), les petits pistons (six usines, 3 650 salariés, cédés en avril 2024) puis Power Systems, environ 2 Md€ de ventes, classé en activité abandonnée fin 2025 et vendu 350 M€ provisoires, moins de 0,2 fois les ventes. La direction vend bas et retraite ses comptes plutôt que de garder un lest : la marge opérationnelle est passée de 7,3 % en 2020 à 18,5 % en 2025, et la défense pèse environ 80 % des ventes contre moins de 60 % en 2019. Dans l'autre sens, Loc Performance (Michigan, 950 M$, novembre 2024) ouvre le marché américain, et Naval Vessels Lürssen (environ 1 Md€ de ventes, clôture le 1er mars 2026, « 4,5 fois l'EBITDA ») le naval.
+
+**Les concurrents.** KNDS, l'alliance de Krauss-Maffei Wegmann et de Nexter, partenaire sur le Leopard 2 et le Boxer, fait 4,4 Md€ de ventes en 2025 contre 9,9 Md€ pour Rheinmetall ; en juillet 2024, Leonardo a rompu sa lettre d'intention avec KNDS pour choisir Rheinmetall pour le futur char italien, soit 280 chars dérivés du Panther et plus de 1 000 Lynx, environ 20 Md€ sur dix ans. Là où Rheinmetall a perdu : TKMS a remporté le remplacement de la frégate F126 (jusqu'à huit frégates MEKO A-200), et la Bundeswehr a pointé des retards sur Skyranger 30 et sur le Boxer en 2026.
+
+**Le capital et l'homme.** Capital flottant, BlackRock à 7,3 %, 58 % d'institutionnels, 28 % de particuliers. Dividende en hausse régulière, de 0,30 € (payé en 2010) à 11,50 € (2026) ; aucun rachat d'actions ni augmentation de capital, une obligation convertible en 2023 pour financer Expal. Papperger a touché environ 10,2 M€ en 2025, sixième du DAX, et achète des actions : environ 9 M€ en juin 2026, 0,5 M€ le 29 septembre. Il assume la concentration du pouvoir (« Il faut que quelqu'un soit la tête, et pour l'instant, c'est moi », Handelsblatt, 22 septembre 2026) et son mandat court jusqu'à fin 2029. En juillet 2024, CNN a révélé qu'un plan russe pour l'assassiner avait été déjoué ; un mois plus tard, il annonçait Loc Performance. La leçon : une direction qui prend le risque industriel à la place de l'État, se fait payer ensuite, et ne dévie pas sous pression ; le revers, c'est le cash-flow, −152 M€ en 2022, −1 616 M€ au premier semestre 2026.
 
 ### Huit ans de chiffres
 
-<!-- historique manquant : RHM -->
+| Exercice | Chiffre d'affaires | Croissance | Marge opérationnelle | BPA en € (IFRS) | Flux de trésorerie libre | Actions (M) |
+|---|---|---|---|---|---|---|
+| 2018 | 6,1 Md€ | +4 % | 8,0 % | 7,10 | n.d. | n.d. |
+| 2019 | 6,3 Md€ | +2 % | 8,1 % | 7,77 | 0,3 Md€ | n.d. |
+| 2020 | 5,9 Md€ | -6 % | 7,3 % | 5,93 | n.d. | n.d. |
+| 2021 | 5,7 Md€ | +5 % | 10,5 % | 9,04 | 0,4 Md€ | n.d. |
+| 2022 | 6,4 Md€ | +13 % | 12,0 % | 10,64 | -0,2 Md€ | n.d. |
+| 2023 | 7,2 Md€ | +12 % | 12,8 % | 13,34 | 0,3 Md€ | n.d. |
+| 2024 | 9,8 Md€ | +36 % | 15,2 % | 17,83 | 0,9 Md€ | n.d. |
+| 2025 | 9,9 Md€ | +29 % | 18,5 % | 22,73 | 1,2 Md€ | n.d. |
 
 <!--infographic:hist:RHM-->
+
+**Ce que disent les chiffres.** Le chiffre d'affaires a stagné autour de 6 Md€ de 2018 à 2022, le temps de sortir de l'automobile, puis a accéléré : +12 % en 2023, +36 % en 2024, +29 % en 2025 (9,9 Md€, activités poursuivies). La marge opérationnelle a plus que doublé, de 8 % à 18,5 %, et le bénéfice par action a triplé, de 7,10 € à 22,73 €. Le flux de trésorerie libre, longtemps modeste, atteint 1,2 Md€ en 2025 mais redevient négatif au premier semestre 2026 sous l'effet des stocks et des acomptes : c'est le chiffre à surveiller.
+
+**La Bourse.** De 63,90 € fin 2016 à 2 007 € le 30 septembre 2025, puis 956,40 € un an plus tard : sur dix ans, environ +1 400 % malgré la chute. Trois grandes baisses : −57,8 % de fin 2019 à mars 2020 (Covid, automobile), −27,1 % sur 2018 (crise du diesel), et −54,9 % du record de septembre 2025 au creux de 904,30 € en 2026 (trimestre raté, F126, cash-flow, rumeurs de paix, dégradation JPMorgan). Sur un an au 30 septembre 2026 : −51,7 % ; sur trois ans : environ +233 % ; sur cinq ans : environ +1 050 %. Le P/E glissant avait dépassé 100 au pic de 2024 ; il est aujourd'hui de 19,3 sur les douze prochains mois.
 
 ### Le métier aujourd'hui
 
@@ -151,13 +197,38 @@ Cotation Xetra en euros, éligible au PEA (siège en Allemagne) ; dividende de 1
 
 ### D'où vient Broadcom
 
-*(Histoire en cours de rédaction.)*
+**Un fonds de capital-investissement coté.** Broadcom n'a pas inventé un marché ; elle a acheté des positions dominantes et les gère comme un portefeuille. Tout commence le 1er décembre 2005, quand KKR et Silver Lake rachètent pour 2,66 Md$ la division semi-conducteurs d'Agilent, elle-même issue de Hewlett-Packard, et la rebaptisent Avago, constituée à Singapour. Hock Tan en devient le patron en mars 2006, et l'est toujours. Avago entre en Bourse le 6 août 2009 à 15 $, soit 1,50 $ ajusté du split de 2024 : un dollar investi ce jour-là en vaut plus de 230 aujourd'hui. Puis la machine à acquisitions se met en route : LSI (6,5 Md$, 2014), Broadcom Corporation (37 Md$ annoncés, 2015-2016, dont elle prend le nom), Brocade (6,0 Md$, 2017), CA Technologies (18,9 Md$, 2018), la division Entreprise de Symantec (10,7 Md$, 2019), VMware (61 Md$ annoncés, environ 69 Md$ dette comprise, 2023). En douze ans, Tan a dépensé six fois plus en acquisitions qu'en recherche.
+
+**La méthode Tan.** Chaque rachat suit le même schéma : garder les produits que le client ne peut pas remplacer (Tan les appelle des « franchises »), couper ventes et marketing, vendre le reste, rembourser la dette, recommencer ; objectif donné aux divisions, 1 M$ de chiffre d'affaires par salarié. Un ancien cadre, cité par Reuters en mai 2022 : « Il dirige Broadcom comme un portefeuille d'investissement… ce sont toutes des fiefs indépendants. » Le marché a souvent sanctionné d'abord (−15,2 % le jour de l'annonce de CA Technologies en 2018) et récompensé ensuite : le P/E est passé de 14 fois les bénéfices prospectifs en 2022 à plus de 50 fois.
+
+**Qualcomm, 2017-2018 : la limite de la méthode.** Le 2 novembre 2017, Hock Tan est à la Maison-Blanche pour annoncer le retour de Broadcom aux États-Unis ; quatre jours plus tard, il lance une offre non sollicitée sur Qualcomm à 70 $ par action, 130 Md$ dette comprise, relevée à 121 Md$ de fonds propres en février 2018. Le 12 mars 2018, un décret présidentiel interdit l'opération : le CFIUS craint que Broadcom ne taille dans la recherche de Qualcomm et que les États-Unis perdent la 5G face à Huawei. Broadcom se conforme, achève sa redomiciliation dans le Delaware le 4 avril, et rachète CA Technologies quatre mois plus tard. Enseignement : Tan ne s'entête pas contre un mur politique ; il pivote en quelques mois vers une cible atteignable, même incomprise, puis prouve le modèle par les chiffres. L'étiquette « destructeur de R&D » le suit depuis.
+
+**VMware, 2022-2026 : le rachat qui a payé, au prix des clients.** Clos le 22 novembre 2023 après le feu vert chinois, financé par 32 Md$ de dette nouvelle, suivi de 2 838 licenciements dans le mois. VMware, 12 Md$ de chiffre d'affaires dont 60 % en licences perpétuelles, bascule en abonnement unique ; AT&T attaque en justice en 2024 en citant une hausse de 1 050 %, d'autres clients parlent de 500 à 1 200 % ; Nutanix récupère plus de 700 nouveaux clients par trimestre ; le réseau de revendeurs passe de 25 000 à 18 000. Le résultat financier donne raison à Tan : 87 % des 10 000 premiers clients convertis dès le deuxième trimestre 2025, un logiciel passé de 6,6 à 8,8 Md$ par trimestre à 94 % de marge brute, un flux de trésorerie libre passé de 17,6 Md$ avant VMware à 26,9 Md$ en 2025. La direction sacrifie les petits clients et sa réputation dans le canal pour la valeur des grands comptes, et tient le calendrier annoncé.
+
+**Le virage de l'IA, 2014-2026.** Le co-design des TPU de Google, commencé vers 2014-2016, est resté dix ans une ligne discrète. Meta et ByteDance ont suivi. Le chiffre d'affaires IA passe de 3,8 Md$ (exercice 2023) à 12,2 Md$ (2024). En septembre 2025, Tan annonce une commande de 10 Md$ d'un quatrième client, identifié ensuite comme Anthropic, puis 11 Md$ de plus le trimestre suivant ; le 13 octobre 2025, OpenAI et Broadcom annoncent 10 GW d'accélérateurs livrés de fin 2026 à 2029 et le titre bondit de 12 %. En 2026, Anthropic monte à 3,5 GW de TPU dès 2027, Meta prolonge MTIA jusqu'en 2029. L'IA pesait 11 % du chiffre d'affaires en 2023 ; 56 % au troisième trimestre 2026. Même méthode que pour les acquisitions : dix ans d'investissement dans une franchise avant qu'elle ne rapporte, puis exploitation à plein sur quelques clients géants.
+
+**Les concurrents.** Marvell, le second des ASIC, a attaqué par le commutateur (Innovium, 1,1 Md$ en 2021) et les accélérateurs d'Amazon et de Microsoft, mais n'a facturé que 1,5 Md$ de silicium sur mesure sur son exercice 2026 contre environ 20 Md$ d'IA chez Broadcom ; l'avance de dix ans sur le TPU vaut 70 % de part contre 20 à 25 %. Dans le réseau, les familles Tomahawk et Jericho équipent environ 60 % des commutateurs des datacenters hyperscale, et JPMorgan donne à Broadcom 80 % des puces de commutation pour l'IA. NVIDIA reste le poids lourd des processeurs d'IA, à environ 85 % des revenus, les ASIC dépassant 10 %.
+
+**Le capital et l'homme.** Vanguard 9,9 %, BlackRock 7,3 % ; KKR et Silver Lake sont sortis après l'introduction en Bourse ; Hock Tan détient directement environ 0,02 % du capital mais a touché 205,3 M$ au titre de l'exercice 2025, presque tout en actions liées à la performance jusqu'à l'exercice 2030. Dividende relevé chaque année (2,36 $ en 2025, 0,65 $ par trimestre depuis décembre 2025), 10 Md$ de rachats autorisés, mais un nombre d'actions passé de 4 272 à 4 853 millions entre 2023 et 2025 à cause des titres émis pour VMware et de la rémunération en actions. Action divisée par dix le 15 juillet 2024.
 
 ### Huit ans de chiffres
 
-<!-- historique manquant : AVGO -->
+| Exercice | Chiffre d'affaires | Croissance | Marge opérationnelle | BPA en $ (non-GAAP) | Flux de trésorerie libre | Actions (M) |
+|---|---|---|---|---|---|---|
+| 2018 | 20,8 Md$ | +18 % | 24,6 % | 2,08 | 8,2 Md$ | 4 310 |
+| 2019 | 22,6 Md$ | +8 % | 15,2 % | 2,13 | 9,4 Md$ | 4 190 |
+| 2020 | 23,9 Md$ | +6 % | 16,8 % | 2,22 | 11,6 Md$ | 4 210 |
+| 2021 | 27,4 Md$ | +15 % | 31,0 % | 2,80 | 13,3 Md$ | 4 290 |
+| 2022 | 33,2 Md$ | +21 % | 42,8 % | 3,76 | 16,3 Md$ | 4 232 |
+| 2023 | 35,8 Md$ | +8 % | 45,2 % | 4,22 | 17,6 Md$ | 4 272 |
+| 2024 | 51,6 Md$ | +44 % | 26,1 % | 4,87 | 19,4 Md$ | 4 778 |
+| 2025 | 63,9 Md$ | +24 % | 39,9 % | 6,82 | 26,9 Md$ | 4 853 |
 
 <!--infographic:hist:AVGO-->
+
+**Ce que disent les chiffres.** Le chiffre d'affaires a triplé en sept ans, de 20,8 Md$ (exercice 2018) à 63,9 Md$ (2025), par paliers d'acquisitions (CA en 2018, Symantec en 2019, VMware en 2024) puis par l'IA (+44 % en 2024, +24 % en 2025). Le bénéfice par action non-GAAP a été multiplié par 3,3, de 2,08 $ à 6,82 $ ; le flux de trésorerie libre par 3,3 aussi, de 8,2 à 26,9 Md$. La marge opérationnelle publiée oscille au rythme des amortissements d'acquisitions (26 % en 2024, l'année de VMware, 40 % en 2025) ; la marge non-GAAP est au-dessus de 60 %.
+
+**La Bourse.** Depuis l'introduction d'Avago à 15 $ en 2009 (1,50 $ ajusté), le titre a rendu environ +2 900 % sur dix ans au 30 juin 2026, soit 40,5 % par an dividendes réinvestis : +104 % en 2023, +110 % en 2024, +51 % en 2025. Les chutes : −48,3 % en cinq semaines en février-mars 2020 (Covid), −38,8 % de décembre 2021 à octobre 2022 (taux, cycle), −44,8 % de décembre 2024 à avril 2025 (droits de douane, la Chine pesant plus de 20 % des ventes), −27,4 % de juin à septembre 2026 (guidance, Anthropic, financement des clients). Le P/E moyen sur cinq ans est de 53 fois les bénéfices publiés, gonflé par VMware ; sur les bénéfices non-GAAP des douze prochains mois, il est aujourd'hui de 19,1.
 
 ### Le métier aujourd'hui
 
@@ -204,13 +275,36 @@ Cotation Nasdaq en dollars, non éligible au PEA ; dividende de 2,60 $ par an (0
 
 ### D'où vient Uber
 
-*(Histoire en cours de rédaction.)*
+**Une application et quinze milliards de subventions.** UberCab naît en mars 2009 à San Francisco, imaginée par Garrett Camp, cofondateur de StumbleUpon, et Travis Kalanick ; premiers trajets en 2010, nouveau nom en 2011, Kalanick aux commandes en décembre 2010. De 2011 à 2016, la société lève plus de 15 Md$ (Benchmark, Menlo, GV, Fidelity, 1,6 Md$ de dette Goldman Sachs en 2015, 3,5 Md$ du fonds saoudien PIF en juin 2016 à 62,5 Md$ de valorisation) et subventionne trajets et chauffeurs ville par ville. Aux États-Unis, Uber détient 98,8 % des dépenses de VTC en 2014 contre 1,2 % pour Lyft. L'avantage est un effet de réseau local à deux faces, acheté très cher : plus de passagers, des chauffeurs plus occupés, des attentes plus courtes, encore plus de passagers.
+
+**Reculer là où le réseau ne gagne pas.** Après environ 2 Md$ perdus en Chine, Kalanick échange Uber China contre 17,7 % de Didi le 1er août 2016. Son successeur répète la manœuvre en Russie (36,6 % de Yandex.Taxi, juillet 2017) et en Asie du Sud-Est (27,5 % de Grab, mars 2018), puis vend la conduite autonome maison (ATG) à Aurora en décembre 2020 contre 26 % de la nouvelle société : un centre de coûts transformé en participation. C'est une constante de l'histoire d'Uber, et elle éclaire 2026 : face à Waymo, la direction prend des participations et des accords plutôt que d'affronter.
+
+**2017, l'année où la direction a changé.** Le 19 février 2017, l'ingénieure Susan Fowler décrit un harcèlement sexuel couvert par les ressources humaines ; le mois précédent, plus de 200 000 clients ont supprimé l'application (#DeleteUber) après le maintien du service pendant une grève des taxis à l'aéroport JFK ; suivent la vidéo de Kalanick insultant un chauffeur, la révélation de Greyball, un logiciel servant à échapper aux inspecteurs, et le procès intenté par Waymo, réglé en février 2018 par 245 M$ en actions. Le 21 juin 2017, cinq grands investisseurs exigent le départ de Kalanick, qui démissionne. Le conseil choisit Dara Khosrowshahi, patron d'Expedia, le 27 août. En décembre, SoftBank rachète environ 15 % du capital à 48 Md$ de valorisation, 30 % sous le tour précédent, et Kalanick vend pour 1,4 Md$. Les valeurs de l'ère Kalanick (« Always Be Hustlin' », « Meritocracy and Toe-Stepping ») sont remplacées en novembre 2017 par des normes choisies parmi 1 200 propositions de salariés : « We do the right thing. Period. » Enseignement : chez Uber, ce sont les actionnaires qui ont imposé la discipline refusée par le fondateur, et le style coopératif de Khosrowshahi avec les régulateurs est l'exact opposé de celui de son prédécesseur.
+
+**L'introduction en Bourse ratée, puis la discipline.** Le 10 mai 2019, Uber lève 8,1 Md$ à 45 $, en bas de fourchette, six semaines après Lyft dont l'action est déjà sous son prix d'introduction de 72 $ ; le titre clôture à 41,57 $, tombe à 25,58 $ à la fin du lock-up en novembre et à 14,82 $ le 18 mars 2020, un tiers du prix d'introduction. L'exercice 2019 affiche −8,6 Md$ de résultat opérationnel et −4,9 Md$ de flux de trésorerie libre. La direction réagit en trois temps : vente d'ATG, pari sur Uber Eats (réservations de livraison +130 % en 2020 quand la mobilité chute de 47 %, Postmates racheté 2,65 Md$ en actions), et sécurisation du modèle social avec la Proposition 22 en Californie (58 % des voix, 200 M$ de campagne), tout en acceptant la décision de la Cour suprême britannique de 2021 qui fait des chauffeurs des « workers ». Le flux de trésorerie libre devient positif en 2022 (390 M$), puis 3,4 Md$ en 2023, 6,9 Md$ en 2024, 9,8 Md$ en 2025. Le premier résultat opérationnel annuel positif (1,1 Md$ en 2023) coïncide avec l'entrée au S&P 500 le 18 décembre 2023 et le premier programme de rachat, 7 Md$, en février 2024, porté à 27 Md$ cumulés en juillet 2025.
+
+**Les concurrents.** Lyft est montée de 1,2 % du marché américain en 2014 à 19,1 % début 2018 grâce à #DeleteUber, puis a plafonné faute d'international et de livraison : 5,8 Md$ de revenus en 2024 contre 44 Md$ pour Uber, et un cours qui n'a jamais retrouvé son prix d'introduction. Didi a gagné la Chine, et Uber a déprécié ses participations en 2022 (perte nette de 9,1 Md$). Dans la livraison de repas américaine, Uber est le perdant : DoorDash détient 59 % des ventes en 2022 contre 24 % pour Uber Eats, d'où Postmates, Drizly (1,1 Md$ en 2021, fermé en 2024), l'abonnement Uber One et, en 2026, l'offre sur Delivery Hero. Le concurrent du présent est Waymo, environ 4 000 véhicules, 14 métropoles, plus de 500 000 trajets payants par semaine.
+
+**Le capital et l'homme.** Vanguard 9,4 %, BlackRock 7,5 %, Capital Research 6,5 %, le PIF saoudien 3,5 %, héritier de 2016 ; environ 82 % d'institutionnels. Le nombre d'actions diluées a presque doublé entre 2019 (1 248 millions) et 2024 (2 150 millions), puis a commencé à baisser avec les rachats (2 120 millions en 2025). Jamais de dividende. Khosrowshahi a touché 39,4 M$ en 2024, détient environ 0,06 % du capital, et a acheté 141 000 actions à 70,96 $ le 10 septembre 2026, portant sa détention à 1 367 100 actions.
 
 ### Huit ans de chiffres
 
-<!-- historique manquant : UBER -->
+| Exercice | Chiffre d'affaires | Croissance | Marge opérationnelle | BPA en $ (GAAP) | Flux de trésorerie libre | Actions (M) |
+|---|---|---|---|---|---|---|
+| 2018 | 10,4 Md$ | +42 % | -29,1 % | 0,50 | n.d. | n.d. |
+| 2019 | 13,0 Md$ | +25 % | -66,1 % | -6,81 | -4,9 Md$ | 1 248 |
+| 2020 | 11,1 Md$ | -14 % | -43,7 % | -3,86 | -3,4 Md$ | 1 753 |
+| 2021 | 17,5 Md$ | +57 % | -22,0 % | -0,26 | -0,7 Md$ | 1 908 |
+| 2022 | 31,9 Md$ | +83 % | -5,7 % | -4,63 | 0,4 Md$ | 1 970 |
+| 2023 | 37,3 Md$ | +17 % | 3,0 % | 0,87 | 3,4 Md$ | 2 169 |
+| 2024 | 44,0 Md$ | +18 % | 6,4 % | 4,56 | 6,9 Md$ | 2 150 |
+| 2025 | 52,0 Md$ | +18 % | n.d. | 4,74 | 9,8 Md$ | 2 120 |
 
 <!--infographic:hist:UBER-->
+
+**Ce que disent les chiffres.** Le chiffre d'affaires a été multiplié par cinq en sept ans, de 10,4 Md$ (2018) à 52,0 Md$ (2025), avec un seul recul, en 2020 (−14 %, pandémie). La marge opérationnelle est passée de −66 % en 2019 à +6,4 % en 2024 ; le flux de trésorerie libre de −4,9 Md$ à +9,8 Md$. Le bénéfice par action du tableau est le bénéfice publié (GAAP), très bruité : 4,56 $ en 2024 incluent 6,4 Md$ de gain fiscal non récurrent, et 2022 porte 9,1 Md$ de dépréciation de participations. Le bénéfice non-GAAP, celui que le modèle utilise, était de 2,45 $ en 2025.
+
+**La Bourse.** Introduite à 45 $ en mai 2019, l'action a touché 14,82 $ en mars 2020 (−67 %), est remontée vers 64 $ en février 2021, retombée vers 20,5 $ en juin 2022 (−68 % : taux, dépréciations, pénurie de chauffeurs), puis a atteint 101,99 $ en séance le 22 septembre 2025 avant de reperdre 35,9 % jusqu'à 65,41 $ le 27 juillet 2026 (Waymo, Tesla, Delivery Hero). Au 30 septembre 2026 : −30,1 % sur un an, +49 % sur trois ans, +52 % depuis l'introduction. Le P/E moyen sur cinq ans est de 42,5 sur les bénéfices publiés ; il est aujourd'hui de 16,0 sur les bénéfices non-GAAP des douze prochains mois.
 
 ### Le métier aujourd'hui
 
@@ -261,13 +355,34 @@ Cotation NYSE en dollars, non éligible au PEA ; pas de dividende ; 49 % des rev
 
 ### D'où vient TSMC
 
-*(Histoire en cours de rédaction.)*
+**Le pari de 1987.** En 1986-1987, Morris Chang, 55 ans, ancien de Texas Instruments, propose une idée que personne ne veut financer : une usine de semi-conducteurs qui ne concevrait aucune puce et fabriquerait celles des autres. Texas Instruments et Intel refusent d'investir ; pour les fabricants intégrés, la fabrication est l'arme concurrentielle, pas un service. Seule Philips accepte, pour 58 M$, un transfert de technologie et 27,6 % du capital ; l'État taïwanais prend 48 %. TSMC naît à Hsinchu, sur le campus de l'institut de recherche ITRI. Les fabricants intégrés n'ont pas vu venir le modèle « fabless » parce qu'il n'existait pas encore : c'est la fonderie neutre qui a rendu possibles NVIDIA, Qualcomm, puis Apple et AMD, et ces clients ont ensuite financé la montée en gamme de TSMC. Introduction à la Bourse de Taïwan le 5 septembre 1994 ; premières ADR au NYSE le 8 octobre 1997, à 24,78 $, première société taïwanaise cotée à New York.
+
+**2014-2018, la bascule du leadership.** En 2014, Apple confie la puce A8 à TSMC aux dépens de Samsung, et en fait son fournisseur exclusif à partir de l'A10 en 2016. En avril 2018, TSMC entre en volume en 7 nm pour l'A12, pendant qu'Intel repousse encore son 10 nm promis depuis 2015 (son patron admet avoir « voulu mordre un peu trop gros ») et que GlobalFoundries abandonne le 7 nm le 27 août 2018 en supprimant 5 % de ses effectifs : AMD n'a plus qu'un fournisseur. Samsung reste en course mais perd des clients sur les rendements (35 % contre 70 % rapportés sur le 4 nm en 2022, 10 à 20 % en 3 nm en 2023) ; Qualcomm déplace ses volumes, NVIDIA confie ses GPU à TSMC. La part de marché de la fonderie passe de 48,1 % au premier trimestre 2019 à 52,1 % fin 2021, 61,2 % fin 2023, 67,1 % fin 2024 et 72,5 % au deuxième trimestre 2026 ; Samsung tombe de 18,3 % à 5,9 %. La suite des nœuds : 5 nm en 2020, 3 nm en 2023, 2 nm en série fin 2025. Chaque nœud est un rendez-vous à ne pas manquer, quitte à diluer la marge à chaque montée.
+
+**Le capital comme barrière.** Le capex passe de 10,5 Md$ en 2018 à 30,6 Md$ en 2021, 41,5 Md$ en 2025 et 60 à 64 Md$ visés pour 2026. Peu de concurrents peuvent suivre : Intel Foundry a perdu 7 Md$ en 2023 et 2,3 Md$ sur le seul quatrième trimestre 2024, avec une rentabilité repoussée à 2027. Le nombre d'actions de TSMC est inchangé depuis 2012 (environ 25,9 milliards), sans augmentation de capital ni rachat ; les actionnaires sont payés en dividendes, trimestriels depuis 2019, 471,6 Md NT$ versés en 2025 (+29,9 %), 7,0 NT$ par action et par trimestre depuis août 2026.
+
+**La géopolitique et l'Arizona.** Mai 2020 : 12 Md$ pour une première usine en Arizona. 6 décembre 2022 : cérémonie avec Joe Biden, deuxième usine, 40 Md$, et le discours de Morris Chang : « La mondialisation est presque morte. Le libre-échange est presque mort. » Avril 2024 : troisième usine, plus de 65 Md$. 3 mars 2025 : avec Donald Trump, 100 Md$ de plus, 165 Md$ au total, trois usines, deux sites de packaging, un centre de recherche. Première usine en 4 nm depuis fin 2024, seconde en 3 nm attendue au second semestre 2027. Janvier 2026 : accord commercial États-Unis-Taïwan, droits ramenés à 15 % et exemptions indexées sur la capacité américaine. La direction cède sur la géographie, jamais sur le nœud, et chiffre publiquement le coût : 2 à 3 points de marge brute pour les usines étrangères, 3 à 4 à terme.
+
+**Les hommes.** Morris Chang a dirigé le groupe de 1987 à juin 2018 ; Mark Liu lui a succédé à la présidence, C.C. Wei à la direction générale, puis aux deux fonctions depuis le 4 juin 2024. Wei a touché environ 946 M NT$ et détient 0,029 % du capital ; une entreprise d'ingénieurs, 83 825 salariés fin 2025, marquée par la franchise de son fondateur et l'obsession de la demande client. Actionnaires : le dépositaire des ADR (Citibank) pour 20,5 %, le Fonds de développement national taïwanais 6,4 %, environ 73 % d'institutions étrangères. En janvier 2026, interrogé sur la demande d'IA, Wei disait : « Moi aussi, cela me rend très nerveux. Vous pouvez en être sûr. » Six mois plus tard : « Notre conviction dans la mégatendance pluriannuelle de l'IA reste très élevée. » Les deux phrases sont vraies en même temps, et c'est ce qui fait un bon fondeur.
 
 ### Huit ans de chiffres
 
-<!-- historique manquant : TSM -->
+| Exercice | Chiffre d'affaires | Croissance | Marge opérationnelle | BPA en NT$ (IFRS) | Flux de trésorerie libre | Actions (M) |
+|---|---|---|---|---|---|---|
+| 2018 | 1 031,5 Md NT$ | +6 % | 37,2 % | 13,54 | n.d. | 25 930 |
+| 2019 | 1 070,0 Md NT$ | +4 % | 34,8 % | 13,32 | 155,0 Md NT$ | 25 930 |
+| 2020 | 1 339,2 Md NT$ | +25 % | 42,3 % | 19,97 | 315,4 Md NT$ | 25 930 |
+| 2021 | 1 587,4 Md NT$ | +18 % | 40,9 % | 23,01 | 273,0 Md NT$ | 25 930 |
+| 2022 | 2 263,9 Md NT$ | +43 % | 49,5 % | 39,20 | 527,9 Md NT$ | 25 930 |
+| 2023 | 2 161,7 Md NT$ | -4 % | 42,6 % | 32,34 | 292,1 Md NT$ | 25 930 |
+| 2024 | 2 894,3 Md NT$ | +34 % | 45,7 % | 45,25 | 870,2 Md NT$ | 25 930 |
+| 2025 | 3 809,1 Md NT$ | +32 % | 50,8 % | 66,25 | 1 100,0 Md NT$ | 25 932 |
 
 <!--infographic:hist:TSM-->
+
+**Ce que disent les chiffres.** En dollars taïwanais, le chiffre d'affaires a été multiplié par 3,7 en sept ans, de 1 031 Md NT$ (2018) à 3 809 Md NT$ (2025), avec un seul recul, en 2023 (−4,5 %, digestion des stocks après le Covid). La marge opérationnelle est passée de 37 % à 51 %, un niveau sans équivalent dans l'industrie lourde, et le bénéfice par action de 13,54 à 66,25 NT$ (10,65 $ par ADR), soit presque cinq fois. Le flux de trésorerie libre a atteint 1 100 Md NT$ en 2025 malgré 41,5 Md$ de capex. Le nombre d'actions n'a pas bougé.
+
+**La Bourse.** L'ADR, émise à 24,78 $ en 1997, a rendu environ +1 540 % sur dix ans au 2 juillet 2026 (32 % par an dividendes réinvestis) et +267 % sur cinq ans. Les chutes : −44 % pendant la crise financière de 2008, −56,5 % de janvier à octobre 2022 (taux, cycle des stocks, restrictions à l'export vers la Chine, de 140,25 $ à 61,02 $), et un écart de 44 % entre le plus bas et le plus haut des douze derniers mois (266,82 $ et 479,00 $, record du 30 juin 2026). Le P/E moyen sur cinq ans est de 23,3 ; il est aujourd'hui de 22,7 sur les douze prochains mois, et de 21,5 sur 2027.
 
 ### Le métier aujourd'hui
 

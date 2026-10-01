@@ -8,6 +8,8 @@
 
 <!--infographic:hist:RHM-->
 
+{{include:TRAJ_RHM.md}}
+
 ### Le métier aujourd'hui
 
 Rheinmetall est le premier groupe de défense terrestre d'Europe. Quatre métiers : les véhicules blindés (Boxer, Lynx, Puma ; 4 992 M€ de ventes en 2025), les armes et munitions (canons de 120 mm, obus de 155 mm, poudres ; 3 532 M€), l'électronique de défense (défense aérienne Skyranger, soldat numérique ; 2 504 M€, +45 %) et, depuis le rachat de NVL en mars 2026, la construction navale. La défense fait environ 80 % des ventes ; l'Allemagne 38 %, l'international 62 % ; l'Ukraine est « le pays client le plus important » (rapport annuel 2025).

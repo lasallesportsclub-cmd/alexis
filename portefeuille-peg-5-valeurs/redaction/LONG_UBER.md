@@ -8,6 +8,8 @@
 
 <!--infographic:hist:UBER-->
 
+{{include:TRAJ_UBER.md}}
+
 ### Le métier aujourd'hui
 
 Uber est la première place de marché mondiale de mobilité à la demande : 208 millions d'utilisateurs mensuels, 3,9 milliards de trajets par trimestre, des chauffeurs et des coursiers par millions, et depuis peu des flottes de robotaxis. Elle encaisse une commission sur chaque trajet et chaque livraison, et vend un abonnement, Uber One, qui fidélise la demande : 50 millions de membres, plus de 70 % des réservations de livraison. Chiffre d'affaires 2025 : 52,0 Md$ pour 193,5 Md$ de réservations ; États-Unis et Canada 51 %, Europe-Moyen-Orient-Afrique 31 %, Asie-Pacifique 11 %, Amérique latine 6 %.

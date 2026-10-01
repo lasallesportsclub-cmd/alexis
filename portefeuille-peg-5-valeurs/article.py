@@ -219,7 +219,8 @@ def svg_hist(h, cur):
     if not fin:
         return ""
     unit = {"USD": "Md$", "EUR": "Md€", "TWD": "Md NT$"}.get(fin[0].get("revenue_currency") or cur, cur)
-    panels = [("Chiffre d'affaires, " + unit, [f.get("revenue") for f in fin]), ("BPA, " + ({"USD": "$", "EUR": "€", "TWD": "NT$"}.get(cur, cur)), [f.get("eps") for f in fin])]
+    rc0 = fin[0].get("revenue_currency") or cur
+    panels = [("Chiffre d'affaires, " + unit, [f.get("revenue") for f in fin]), ("BPA, " + ({"USD": "$", "EUR": "€", "TWD": "NT$"}.get(rc0, rc0)), [f.get("eps") for f in fin])]
     W, H, left, bottom, top = 720, 230, 60, 30, 28
     pw = (W - 30) / 2
     g = [f'<svg class="chart" viewBox="0 0 {W} {H}" role="img" aria-label="Historique du chiffre d\'affaires et du BPA">']

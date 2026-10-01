@@ -337,7 +337,9 @@ class Rapport:
                          (fr(f["fcf"], 1) + " " + unit) if f.get("fcf") is not None else "n.d.",
                          fr(f["shares_m"], 0) if f.get("shares_m") is not None else "n.d."])
         basis = next((f.get("eps_basis") for f in h["financials"] if f.get("eps_basis")), "")
-        return table(["Exercice", "Chiffre d'affaires", "Croissance", "Marge opérationnelle", f"BPA ({basis})" if basis else "BPA", "Flux de trésorerie libre", "Actions (M)"], rows)
+        rc0 = h["financials"][0].get("revenue_currency") or cur
+        sym = {"USD": "$", "EUR": "€", "TWD": "NT$"}.get(rc0, rc0)
+        return table(["Exercice", "Chiffre d'affaires", "Croissance", "Marge opérationnelle", f"BPA en {sym} ({basis})" if basis else f"BPA en {sym}", "Flux de trésorerie libre", "Actions (M)"], rows)
 
     def timeline(self, t):
         h = self.hist.get(t)

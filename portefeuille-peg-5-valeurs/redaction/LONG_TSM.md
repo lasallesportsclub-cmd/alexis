@@ -8,6 +8,8 @@
 
 <!--infographic:hist:TSM-->
 
+{{include:TRAJ_TSM.md}}
+
 ### Le métier aujourd'hui
 
 TSMC fabrique, sans les concevoir, les puces de NVIDIA, d'Apple, d'AMD, de Broadcom, de Qualcomm et de centaines d'autres. C'est le modèle de la fonderie pure, inventé par Morris Chang en 1987 : ne jamais concurrencer ses clients, investir plus qu'eux tous dans les usines, et rester une génération devant. Au deuxième trimestre 2026 : chiffre d'affaires de 40,2 Md$ (+33,7 %), marge brute de 67,7 %, marge opérationnelle de 60,3 %, bénéfice par ADR de 4,31 $ (+77,4 %), trésorerie nette de 3 100 Md NT$. Le calcul haute performance, c'est-à-dire l'IA et les serveurs, pèse 66 % des ventes, le smartphone 22 % ; le 3 nm fait 30 % des plaquettes, le 2 nm démarre (3 %) ; l'Amérique du Nord représente 78 % des clients. Part de marché mondiale de la fonderie : 72,5 % au deuxième trimestre 2026, un record (TrendForce) ; Samsung est à 5,9 %.
