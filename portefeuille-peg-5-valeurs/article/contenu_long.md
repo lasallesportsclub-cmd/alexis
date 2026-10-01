@@ -111,15 +111,15 @@ Trois raisons, dans l'ordre. D'abord, les bénéfices d'une banque numérique à
 
 **Ce que ça coûterait.** À 10 Md£, soit 13,3 Md$, Nu paierait Monzo 58 fois son résultat avant impôt ajusté (115 fois le statutaire), 5,9 fois ses revenus et 7,8 fois ses fonds propres, quand elle-même cote 11,6 fois ses bénéfices des douze prochains mois, 2,9 fois ses revenus 2026 et 4,6 fois ses fonds propres. Seul le prix par client (658 £ contre 443 $ pour Nu) est dans le même ordre de grandeur. Les banques établies paient les banques britanniques entre 0,7 et 1,5 fois leurs fonds propres tangibles (Nationwide sur Virgin Money en 2024, Santander sur TSB en 2025) ; aucune néobanque n'a jamais été rachetée à plus de 10 Md$ à l'étranger. Le tableau ci-dessous, calculé par le modèle, donne l'effet sur le bénéfice par action, sur la ligne et sur le portefeuille selon la façon de payer :
 
-| Scénario | Prix | Payé en actions | Actions nouvelles | Dilution | Prix / résultat avant impôt de la cible | BPA 2027 pro forma | BPA 2030 pro forma (central) | Espéré de la ligne | Espéré du portefeuille | Central du portefeuille |
-|---|---|---|---|---|---|---|---|---|---|---|
-| A · Monzo à 10 Md£ payé 100 % en actions (résultat ajusté) | 10,0 Md£ (13,3 Md$) | 100 % | 1 048 M | 18,1 % | 58x | -14,8 % | -14,4 % | +20,7 % | +19,7 % | +20,4 % |
-| B · Monzo à 10 Md£ payé moitié actions moitié numéraire | 10,0 Md£ (13,3 Md$) | 50 % | 524 M | 10,0 % | 58x | -11,2 % | -8,3 % | +22,8 % | +20,2 % | +21,0 % |
-| C · Monzo à 10 Md£ tout en numéraire (théorique) | 10,0 Md£ (13,3 Md$) | 0 % | 0 M | 0,0 % | 58x | -6,8 % | -1,0 % | +25,2 % | +20,9 % | +21,7 % |
-| D · Monzo à 8 Md£ payé 100 % en actions | 8,0 Md£ (10,6 Md$) | 100 % | 838 M | 15,0 % | 46x | -11,6 % | -11,1 % | +21,8 % | +20,0 % | +20,7 % |
-| E · 10 Md£ en actions sur le résultat statutaire (87,3 M£) | 10,0 Md£ (13,3 Md$) | 100 % | 1 048 M | 18,1 % | 115x | -16,4 % | -16,2 % | +20,0 % | +19,5 % | +20,3 % |
-| F · 10 Md£ en actions et 3 points de croissance en plus (Europe réussie) | 10,0 Md£ (13,3 Md$) | 100 % | 1 048 M | 18,1 % | 58x | -14,8 % | -14,7 % | +22,3 % | +20,1 % | +21,2 % |
-| **Sans acquisition (référence)** | — | — | — | — | — | — | — | **+25,5 %** | **+21,0 %** | +21,8 % |
+| Scénario | Prix | Payé en actions | Dilution (actions nouvelles) | Prix / résultat avant impôt | BPA 2027 pro forma | BPA 2030 pro forma | Espéré de la ligne | Espéré du portefeuille |
+|---|---|---|---|---|---|---|---|---|
+| A · Monzo à 10 Md£ payé 100 % en actions (résultat ajusté) | 10 Md£ (13,3 Md$) | 100 % | 18,1 % (1 048 M) | 58x | -14,8 % | -14,4 % | +20,7 % | +19,7 % |
+| B · Monzo à 10 Md£ payé moitié actions moitié numéraire | 10 Md£ (13,3 Md$) | 50 % | 10,0 % (524 M) | 58x | -11,2 % | -8,3 % | +22,8 % | +20,2 % |
+| C · Monzo à 10 Md£ tout en numéraire (théorique) | 10 Md£ (13,3 Md$) | 0 % | 0,0 % (0 M) | 58x | -6,8 % | -1,0 % | +25,2 % | +20,9 % |
+| D · Monzo à 8 Md£ payé 100 % en actions | 8 Md£ (10,6 Md$) | 100 % | 15,0 % (838 M) | 46x | -11,6 % | -11,1 % | +21,8 % | +20,0 % |
+| E · 10 Md£ en actions sur le résultat statutaire (87,3 M£) | 10 Md£ (13,3 Md$) | 100 % | 18,1 % (1 048 M) | 115x | -16,4 % | -16,2 % | +20,0 % | +19,5 % |
+| F · 10 Md£ en actions et 3 points de croissance en plus (Europe réussie) | 10 Md£ (13,3 Md$) | 100 % | 18,1 % (1 048 M) | 58x | -14,8 % | -14,7 % | +22,3 % | +20,1 % |
+| **Sans acquisition (référence)** | — | — | — | — | — | — | **+25,5 %** | **+21,0 %** |
 
 *Hypothèses : cours d'émission 12,66 $, 4,74 Md d'actions (capitalisation divisée par le cours), résultat avant impôt de Monzo croissant de 30 % par an (hyp.), impôt de 25 %, numéraire financé à 6 % ; multiple de sortie de Nu inchangé ; ni synergies ni coûts d'intégration. Le scénario tout en numéraire est théorique : la trésorerie non restreinte de la holding était d'environ 3 Md$ fin 2025, le reste étant logé dans les banques du groupe.*
 

@@ -93,11 +93,11 @@ def main():
     json.dump({"ticker": t, "base_line_expected": base_line, "base_pf_expected": base_pf, "shares_bn": shares_bn, "scenarios": out},
               open(os.path.join(args.out, "acquisition.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     # tableau Markdown généré
-    lines = ["| Scénario | Prix | Payé en actions | Actions nouvelles | Dilution | Prix / résultat avant impôt de la cible | BPA 2027 pro forma | BPA 2030 pro forma (central) | Espéré de la ligne | Espéré du portefeuille | Central du portefeuille |",
-             "|---|---|---|---|---|---|---|---|---|---|---|"]
+    lines = ["| Scénario | Prix | Payé en actions | Dilution (actions nouvelles) | Prix / résultat avant impôt | BPA 2027 pro forma | BPA 2030 pro forma | Espéré de la ligne | Espéré du portefeuille |",
+             "|---|---|---|---|---|---|---|---|---|"]
     for r in rows:
-        lines.append(f"| {r['scenario']} | {fr(r['prix_md_gbp'], 1)} Md£ ({fr(r['prix_md_usd'], 1)} Md$) | {pct(r['part_actions'], 0, False)} | {fr(r['actions_nouvelles_md'] * 1000, 0)} M | {pct(r['dilution_pct'], 1, False)} | {fr(r['prix_sur_resultat_cible'], 0)}x | {pct(r['accretion_bpa_2027'])} | {pct(r['facteur_bpa_2030_central'] - 1)} | {pct(r['ligne_expected'])} | {pct(r['pf_expected'])} | {pct(r['pf_central'])} |")
-    lines.append(f"| **Sans acquisition (référence)** | — | — | — | — | — | — | — | **{pct(base_line)}** | **{pct(base_pf)}** | {pct(R['portefeuille']['rendement_annuel']['central'])} |")
+        lines.append(f"| {r['scenario']} | {fr(r['prix_md_gbp'], 0)} Md£ ({fr(r['prix_md_usd'], 1)} Md$) | {pct(r['part_actions'], 0, False)} | {pct(r['dilution_pct'], 1, False)} ({fr(r['actions_nouvelles_md'] * 1000, 0)} M) | {fr(r['prix_sur_resultat_cible'], 0)}x | {pct(r['accretion_bpa_2027'])} | {pct(r['facteur_bpa_2030_central'] - 1)} | {pct(r['ligne_expected'])} | {pct(r['pf_expected'])} |")
+    lines.append(f"| **Sans acquisition (référence)** | — | — | — | — | — | — | **{pct(base_line)}** | **{pct(base_pf)}** |")
     open(os.path.join(ROOT, "redaction", "ACQUISITION_TABLE.md"), "w", encoding="utf-8").write("\n".join(lines) + "\n")
     for r in rows:
         print(f"{r['scenario'][:50]:50s} dilution {r['dilution_pct']*100:5.1f} %  BPA27 {r['accretion_bpa_2027']*100:+6.1f} %  BPA30 {100*(r['facteur_bpa_2030_central']-1):+6.1f} %  ligne {r['ligne_expected']*100:5.1f} %  pf {r['pf_expected']*100:5.1f} %")

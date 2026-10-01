@@ -290,7 +290,7 @@ button.theme{font:13px system-ui,sans-serif;background:var(--card);color:var(--f
 .toc{font:14px/1.6 system-ui,sans-serif;background:var(--card);border:1px solid var(--grid);border-radius:6px;padding:10px 16px;margin:12px 0 18px;columns:2;column-gap:24px}.toc-title{font-weight:700;margin-bottom:4px;column-span:all}.toc ol{margin:0;padding-left:18px}.toc a{text-decoration:none}
 footer{font:12px/1.5 system-ui,sans-serif;color:var(--muted);border-top:1px solid var(--rule);margin-top:30px;padding-top:10px}
 a{color:var(--c1)}
-@media print{button.theme{display:none}.chart{break-inside:avoid}h2{break-after:avoid}table{font-size:11px}body{font-size:13px;line-height:1.5}figure,blockquote,.box{break-inside:avoid}h3{break-after:avoid}}
+@media print{button.theme{display:none}.chart{break-inside:avoid}h2{break-after:avoid}table{font-size:10px}th,td{white-space:normal;padding:4px 5px}.tablewrap{overflow:visible}body{font-size:13px;line-height:1.5}figure,blockquote,.box{break-inside:avoid}h3{break-after:avoid}}
 @media print{.long h2.chapter{break-before:page}}
 @page{size:A4;margin:14mm 12mm}
 """
