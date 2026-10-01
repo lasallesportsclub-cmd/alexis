@@ -1,0 +1,1412 @@
+[
+  {
+    "ticker": "NU",
+    "founded": "2013-05-06",
+    "ipo_date": "2021-12-09",
+    "ipo_price": 9,
+    "ipo_price_currency": "USD",
+    "ceo": "David Vélez",
+    "ceo_since": "2013",
+    "employees": 10027,
+    "employees_date": "2025-12-31",
+    "market_cap_2026_09_30": 65.5,
+    "market_cap_currency": "USD",
+    "financials": [
+      {
+        "year": 2018,
+        "revenue": 0.3189,
+        "revenue_currency": "USD",
+        "revenue_growth_pct": null,
+        "op_margin_pct": -9.0,
+        "eps": null,
+        "eps_basis": "IFRS",
+        "fcf": null,
+        "shares_m": null,
+        "source": "https://www.macrotrends.net/stocks/charts/NU/nu-holdings/revenue ; https://vivid.money/feed/nubank-is-ipoing-heres-what-you-need-to-know"
+      },
+      {
+        "year": 2019,
+        "revenue": 0.4692,
+        "revenue_currency": "USD",
+        "revenue_growth_pct": 47.1,
+        "op_margin_pct": -19.7,
+        "eps": null,
+        "eps_basis": "IFRS",
+        "fcf": null,
+        "shares_m": null,
+        "source": "https://www.macrotrends.net/stocks/charts/NU/nu-holdings/revenue ; https://pro.macrotrends.net/stocks/charts/NU/nu-holdings/net-income"
+      },
+      {
+        "year": 2020,
+        "revenue": 0.575,
+        "revenue_currency": "USD",
+        "revenue_growth_pct": 22.5,
+        "op_margin_pct": -29.8,
+        "eps": null,
+        "eps_basis": "IFRS",
+        "fcf": null,
+        "shares_m": null,
+        "source": "https://www.macrotrends.net/stocks/charts/NU/nu-holdings/revenue ; https://vivid.money/feed/nubank-is-ipoing-heres-what-you-need-to-know"
+      },
+      {
+        "year": 2021,
+        "revenue": 1.51,
+        "revenue_currency": "USD",
+        "revenue_growth_pct": 162.6,
+        "op_margin_pct": -10.9,
+        "eps": -0.103,
+        "eps_basis": "IFRS",
+        "fcf": null,
+        "shares_m": 1602,
+        "source": "https://www.macrotrends.net/stocks/charts/NU/nu-holdings/revenue ; https://macrotrends.net/stocks/charts/NU/nu-holdings/eps-earnings-per-share-diluted ; https://www.macrotrends.net/stocks/charts/NU/nu-holdings/shares-outstanding"
+      },
+      {
+        "year": 2022,
+        "revenue": 4.52,
+        "revenue_currency": "USD",
+        "revenue_growth_pct": 199.3,
+        "op_margin_pct": -8.1,
+        "eps": -0.078,
+        "eps_basis": "IFRS",
+        "fcf": null,
+        "shares_m": 4677,
+        "source": "https://www.macrotrends.net/stocks/charts/NU/nu-holdings/revenue ; https://macrotrends.net/stocks/charts/NU/nu-holdings/eps-earnings-per-share-diluted ; https://www.macrotrends.net/stocks/charts/NU/nu-holdings/shares-outstanding"
+      },
+      {
+        "year": 2023,
+        "revenue": 7.67,
+        "revenue_currency": "USD",
+        "revenue_growth_pct": 69.7,
+        "op_margin_pct": 13.4,
+        "eps": 0.2121,
+        "eps_basis": "IFRS",
+        "fcf": null,
+        "shares_m": 4858,
+        "source": "https://www.macrotrends.net/stocks/charts/NU/nu-holdings/revenue ; https://macrotrends.net/stocks/charts/NU/nu-holdings/eps-earnings-per-share-diluted ; https://www.macrotrends.net/stocks/charts/NU/nu-holdings/shares-outstanding"
+      },
+      {
+        "year": 2024,
+        "revenue": 11.1,
+        "revenue_currency": "USD",
+        "revenue_growth_pct": 44.7,
+        "op_margin_pct": 17.8,
+        "eps": 0.4034,
+        "eps_basis": "IFRS",
+        "fcf": null,
+        "shares_m": 4889,
+        "source": "https://www.macrotrends.net/stocks/charts/NU/nu-holdings/revenue ; https://macrotrends.net/stocks/charts/NU/nu-holdings/eps-earnings-per-share-diluted ; https://www.macrotrends.net/stocks/charts/NU/nu-holdings/shares-outstanding"
+      },
+      {
+        "year": 2025,
+        "revenue": 16.3,
+        "revenue_currency": "USD",
+        "revenue_growth_pct": 45,
+        "op_margin_pct": 17.6,
+        "eps": 0.5846,
+        "eps_basis": "IFRS",
+        "fcf": null,
+        "shares_m": 4905,
+        "source": "https://www.businesswire.com/news/home/20260225967630/en/ ; https://www.sec.gov/Archives/edgar/data/1691493/000129281426002166/nuform20f_2025.htm ; https://www.macrotrends.net/stocks/charts/NU/nu-holdings/shares-outstanding"
+      }
+    ],
+    "stock": {
+      "price_10y_ago": null,
+      "date_10y_ago": null,
+      "ath": 18.98,
+      "ath_date": "2026-01-29",
+      "drawdowns": [
+        {
+          "from": "2021-12-10",
+          "to": "2022-06-16",
+          "pct": -72.1,
+          "cause": "Hausse mondiale des taux, fuite des valeurs de croissance non rentables, Nu encore déficitaire (-365 M$ en 2022)"
+        },
+        {
+          "from": "2024-11-11",
+          "to": "2025-04-04",
+          "pct": -43.3,
+          "cause": "Hausse de la Selic, réal faible, provisions en hausse, crainte de saturation du Brésil, sortie complète de Berkshire Hathaway"
+        },
+        {
+          "from": "2026-01-29",
+          "to": "2026-06-03",
+          "pct": -41.0,
+          "cause": "Défauts record des ménages brésiliens, hausse de la CSLL, changement de directeur financier et dégradation BofA à Underperform (02/06/2026)"
+        }
+      ],
+      "perf_1y_pct": -20.9,
+      "perf_3y_pct": 74.8,
+      "perf_5y_pct": null,
+      "perf_10y_pct": null,
+      "pe_5y_avg": 79.6
+    },
+    "milestones": [
+      {
+        "date": "2013-05-06",
+        "event": "Fondation de Nubank à São Paulo par David Vélez, Cristina Junqueira et Edward Wible ; amorçage Sequoia en juillet 2013",
+        "amount": "2 M$ (seed)",
+        "source": "https://en.wikipedia.org/wiki/Nubank ; https://forbes.kz/articles/the_friendly_assassin"
+      },
+      {
+        "date": "2014-04-01",
+        "event": "Première transaction avec la carte de crédit violette sans frais annuels, gérée par application",
+        "amount": null,
+        "source": "https://en.wikipedia.org/wiki/Nubank"
+      },
+      {
+        "date": "2014-09-25",
+        "event": "Série A menée par Sequoia, premier investissement de la firme au Brésil",
+        "amount": "14,3 M$",
+        "source": "https://techcrunch.com/2014/09/25/finance-startup-nubank-nabs-14-3m-in-sequoias-first-brazil-investment"
+      },
+      {
+        "date": "2018",
+        "event": "Nubank devient une licorne ; Tencent investit sur une valorisation de 4 Md$",
+        "amount": "180 M$",
+        "source": "https://globalventuring.com/blog/2021/10/28/nubank-looks-to-cash-in-ipo/"
+      },
+      {
+        "date": "2019",
+        "event": "Série F menée par TCV (valorisation supérieure à 10 Md$) ; lancement au Mexique",
+        "amount": "400 M$",
+        "source": "https://globalventuring.com/blog/2021/10/28/nubank-looks-to-cash-in-ipo/ ; https://www.entrepreneur.com/article/425472"
+      },
+      {
+        "date": "2020-09",
+        "event": "Rachat du courtier Easynvest (après Cognitect en juin 2020) ; arrivée en Colombie",
+        "amount": null,
+        "source": "https://building.nubank.com/nubank-acquires-digital-broker-easynvest"
+      },
+      {
+        "date": "2021-01",
+        "event": "Série G (GIC, Whale Rock, Invesco, Tencent) sur 25 Md$ de valorisation",
+        "amount": "400 M$",
+        "source": "https://globalventuring.com/blog/2021/10/28/nubank-looks-to-cash-in-ipo/"
+      },
+      {
+        "date": "2021-06",
+        "event": "Extension de Série G menée par Berkshire Hathaway sur 30 Md$",
+        "amount": "750 M$",
+        "source": "https://fintech.global/2021/06/09/nubank-nabs-750m-in-a-berkshire-led-round-at-a-valuation-of-30bn/"
+      },
+      {
+        "date": "2021-12-09",
+        "event": "IPO au NYSE : 289 M d'actions à 9 $, valorisation 41 Md$ ; ouverture à 11,25 $",
+        "amount": "2,6 Md$ levés",
+        "source": "https://arabnews.com/node/1983826 ; https://www.businesswire.com/news/home/20211208006103/en/Nu-Holdings-Ltd.-Announces-Pricing-of-Initial-Public-Offering"
+      },
+      {
+        "date": "2022-06-16",
+        "event": "Creux boursier (3,74 $ en juin 2022), -72,1 % depuis le 10 décembre 2021",
+        "amount": null,
+        "source": "https://chartrow.com/quote/nu/drawdown ; https://www.digrin.com/stocks/detail/NU/price"
+      },
+      {
+        "date": "2022-08-15",
+        "event": "Youssef Lahrech nommé président ; Cristina Junqueira devient Chief Growth Officer",
+        "amount": null,
+        "source": "https://bloomberglinea.com/english/nubank-changes-leadership-youssef-lahrech-named-new-president"
+      },
+      {
+        "date": "2022-12",
+        "event": "Retrait des BDR de niveau III de la Bourse B3 et de l'enregistrement CVM",
+        "amount": null,
+        "source": "https://www.bloomberglinea.com/english/nubank-to-delist-from-brazils-stock-exchange/"
+      },
+      {
+        "date": "2023",
+        "event": "Premier exercice bénéficiaire ; titre +104,7 % sur l'année",
+        "amount": "1,03 Md$ de résultat net",
+        "source": "https://pro.macrotrends.net/stocks/charts/NU/nu-holdings/net-income ; https://chartrow.com/quote/nu/returns"
+      },
+      {
+        "date": "2024-01",
+        "event": "Nu Colombia autorisée comme compañía de financiamiento",
+        "amount": null,
+        "source": "https://ibsintelligence.com/ibsi-news/nu-colombia-secures-regulatory-approval-to-operate-as-a-financing-company"
+      },
+      {
+        "date": "2024-05",
+        "event": "Cap des 100 millions de clients",
+        "amount": null,
+        "source": "https://blog.nubank.com.br/nubank-100-million-customers/"
+      },
+      {
+        "date": "2024-06",
+        "event": "Rachat de Hyperplane (données et IA, San Francisco)",
+        "amount": null,
+        "source": "https://ai-startups.dealroom.co/news/note/nubank-acquires-hyperplane"
+      },
+      {
+        "date": "2025-03-31",
+        "event": "Berkshire Hathaway achève la vente de sa participation (dernière tranche de 40,2 M d'actions à 11,83 $)",
+        "amount": "gain total ~250 M$",
+        "source": "https://cointelegraph.com/news/warren-buffett-exits-crypto-nubank-250m-profit"
+      },
+      {
+        "date": "2025-04-04",
+        "event": "Plus bas post-IPO à 9,01 $",
+        "amount": null,
+        "source": "https://www.nasdaq.com/articles/where-will-nu-holdings-stock-be-1-year"
+      },
+      {
+        "date": "2025-04-24",
+        "event": "La CNBV approuve la licence bancaire de Nu México",
+        "amount": null,
+        "source": "https://nu.com/en/newsroom/company/nu-mexico-receives-banking-license-approval-paving-the-way-for-product-portfolio-expansion-and-increased-financial-inclusion"
+      },
+      {
+        "date": "2026-01-29",
+        "event": "Approbation conditionnelle de l'OCC pour Nubank N.A. ; plus haut historique à 18,98 $",
+        "amount": null,
+        "source": "https://www.pymnts.com/legal/bank-regulation/2026/nu-wins-conditional-approval-for-us-national-bank-charter ; https://stockscan.io/stocks/NU/price-history"
+      },
+      {
+        "date": "2026-02-25",
+        "event": "Résultats 2025 : 16,3 Md$ de revenus, 2,9 Md$ de résultat net, 131 M de clients",
+        "amount": null,
+        "source": "https://www.businesswire.com/news/home/20260225967630/en/"
+      },
+      {
+        "date": "2026-06-04",
+        "event": "Premier programme de rachat d'actions",
+        "amount": "jusqu'à 1 Md$",
+        "source": "https://www.sec.gov/Archives/edgar/data/0001691493/000129281426003326/nu20260604_6k.htm"
+      },
+      {
+        "date": "2026-07-09",
+        "event": "Autorisation d'opérer comme banque multiple au Mexique",
+        "amount": null,
+        "source": "https://www.riotimesonline.com/nubank-mexico-full-banking-license-cnbv-operations-authorization-2026/"
+      },
+      {
+        "date": "2026-09-10",
+        "event": "Lancement aux États-Unis avec Lead Bank et de Nu Global",
+        "amount": null,
+        "source": "https://www.bankingdive.com/news/nubank-us-launch-multicurrency-account-bank-partner-occ-charter-application/830583/"
+      },
+      {
+        "date": "2026-09-30",
+        "event": "Démenti par 6-K des discussions de rachat de Monzo (8 à 10 Md£ évoqués par Sky News ; titre -10,01 % le 28/09)",
+        "amount": "8-10 Md£ (évoqué)",
+        "source": "https://www.sec.gov/Archives/edgar/data/0001691493/000129281426004752/nu20260930_6k.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "RHM",
+    "founded": "1889-04-13",
+    "ipo_date": null,
+    "ipo_price": null,
+    "ipo_price_currency": "EUR",
+    "ceo": "Armin Papperger",
+    "ceo_since": "2013-01",
+    "employees": 32000,
+    "employees_date": "2025-12-31",
+    "market_cap_2026_09_30": 44.16,
+    "market_cap_currency": "EUR",
+    "financials": [
+      {
+        "year": 2018,
+        "revenue": 6.148,
+        "revenue_currency": "EUR",
+        "revenue_growth_pct": 4.3,
+        "op_margin_pct": 8.0,
+        "eps": 7.1,
+        "eps_basis": "IFRS",
+        "fcf": null,
+        "shares_m": null,
+        "source": "https://www.rheinmetall.com/de/media/news-watch/news/2019/2019-03-13_rheinmetall-profitiert-von-anhaltender-wachstumsdynamik-bei-defence"
+      },
+      {
+        "year": 2019,
+        "revenue": 6.255,
+        "revenue_currency": "EUR",
+        "revenue_growth_pct": 1.7,
+        "op_margin_pct": 8.1,
+        "eps": 7.77,
+        "eps_basis": "IFRS",
+        "fcf": 0.314,
+        "shares_m": null,
+        "source": "https://www.rheinmetall.com/de/media/news-watch/news/2020/2020-03-18_starke-defence-sparte-gleicht-marktschwaeche-bei-automotive-aus"
+      },
+      {
+        "year": 2020,
+        "revenue": 5.875,
+        "revenue_currency": "EUR",
+        "revenue_growth_pct": -6.0,
+        "op_margin_pct": 7.3,
+        "eps": 5.93,
+        "eps_basis": "IFRS",
+        "fcf": null,
+        "shares_m": null,
+        "source": "https://www.rheinmetall.com/de/media/news-watch/news/2021/2021-03-18_rheinmetall-erfolgreich-im-krisenjahr-2020"
+      },
+      {
+        "year": 2021,
+        "revenue": 5.658,
+        "revenue_currency": "EUR",
+        "revenue_growth_pct": 4.7,
+        "op_margin_pct": 10.5,
+        "eps": 9.04,
+        "eps_basis": "IFRS",
+        "fcf": 0.419,
+        "shares_m": null,
+        "source": "https://www.rheinmetall.com/de/media/news-watch/news/2022/2022-03-17_rheinmetall-mit-rekordzahlen-im-geschaeftsjahr-2021"
+      },
+      {
+        "year": 2022,
+        "revenue": 6.41,
+        "revenue_currency": "EUR",
+        "revenue_growth_pct": 13.3,
+        "op_margin_pct": 12.0,
+        "eps": 10.64,
+        "eps_basis": "IFRS",
+        "fcf": -0.152,
+        "shares_m": null,
+        "source": "https://www.rheinmetall.com/de/media/news-watch/news/2023/jan-mar/2023-03-16_rheinmetall-geschaeftszahlen-2022-auf-erfolgskurs"
+      },
+      {
+        "year": 2023,
+        "revenue": 7.176,
+        "revenue_currency": "EUR",
+        "revenue_growth_pct": 12.0,
+        "op_margin_pct": 12.8,
+        "eps": 13.34,
+        "eps_basis": "IFRS",
+        "fcf": 0.345,
+        "shares_m": null,
+        "source": "https://www.rheinmetall.com/de/media/news-watch/news/2024/03/2024-03-14-rheinmetall-geschaeftszahlen-2023-bilanzvorlage"
+      },
+      {
+        "year": 2024,
+        "revenue": 9.751,
+        "revenue_currency": "EUR",
+        "revenue_growth_pct": 36.0,
+        "op_margin_pct": 15.2,
+        "eps": 17.83,
+        "eps_basis": "IFRS",
+        "fcf": 0.911,
+        "shares_m": null,
+        "source": "https://www.rheinmetall.com/de/media/news-watch/news/2025/03/2025-03-12-rheinmetall-bilanzvorlage-geschaeftsjahr-2024"
+      },
+      {
+        "year": 2025,
+        "revenue": 9.935,
+        "revenue_currency": "EUR",
+        "revenue_growth_pct": 29.0,
+        "op_margin_pct": 18.5,
+        "eps": 22.73,
+        "eps_basis": "IFRS",
+        "fcf": 1.218,
+        "shares_m": null,
+        "source": "https://www.rheinmetall.com/de/media/news-watch/news/2026/03/2026-03-11-rheinmetall-bilanzvorlage-geschaeftsjahr-2025"
+      }
+    ],
+    "stock": {
+      "price_10y_ago": 63.9,
+      "date_10y_ago": "2016-12-31",
+      "ath": 2007.0,
+      "ath_date": "2025-09-30",
+      "drawdowns": [
+        {
+          "from": "2025-09-30",
+          "to": "2026-09-30",
+          "pct": -54.9,
+          "cause": "T1 2026 décevant, annulation de la frégate F126 (24/06/2026, -18 % en séance), cash-flow négatif au S1 2026, rumeurs de cessez-le-feu en Ukraine, dégradation JPMorgan (10/09/2026) ; creux 52 semaines 904,30 €, date exacte n.d."
+        },
+        {
+          "from": "2019-12-31",
+          "to": "2020-03-31",
+          "pct": -57.8,
+          "cause": "Krach Covid et effondrement du marché automobile (44 % des ventes 2019) ; de 102,40 € (clôture 2019) à 43,23 € (creux de mars 2020)"
+        },
+        {
+          "from": "2017-12-31",
+          "to": "2018-12-31",
+          "pct": -27.1,
+          "cause": "Crise du diesel dans l'automobile et marché baissier de fin 2018 ; calcul sur clôtures annuelles (105,85 € puis 77,16 €)"
+        }
+      ],
+      "perf_1y_pct": -51.7,
+      "perf_3y_pct": 233.2,
+      "perf_5y_pct": 1050.9,
+      "perf_10y_pct": 1396.7,
+      "pe_5y_avg": null
+    },
+    "milestones": [
+      {
+        "date": "1889-04-13",
+        "event": "Création à Düsseldorf par Heinrich Ehrhardt (Rheinische Metallwaaren- und Maschinenfabrik AG)",
+        "amount": null,
+        "source": "https://www.rheinmetall.com/en/company/history/125-years-rheinmetall/years-1889-1918"
+      },
+      {
+        "date": "1956",
+        "event": "Röchling rachète 56 % de Rheinmetall-Borsig à la République fédérale, revend Borsig à Salzgitter ; reprise de la production militaire",
+        "amount": null,
+        "source": "https://www.rheinmetall.com/en/company/history/125-years-rheinmetall/years-1946-1956"
+      },
+      {
+        "date": "1986",
+        "event": "Rachat de Pierburg : entrée dans l'équipement automobile",
+        "amount": null,
+        "source": "https://en.wikipedia.org/wiki/Rheinmetall_Automotive"
+      },
+      {
+        "date": "1998",
+        "event": "Majorité dans Kolbenschmidt et fusion avec Pierburg (KSPG)",
+        "amount": null,
+        "source": "https://www.rheinmetall.com/de/unternehmen/historie/1991-1999"
+      },
+      {
+        "date": "2013-01-01",
+        "event": "Armin Papperger devient président du directoire",
+        "amount": null,
+        "source": "https://www.rheinmetall.com/de/unternehmen/gremien/vorstand"
+      },
+      {
+        "date": "2020-03",
+        "event": "Creux Covid à 43,23 €",
+        "amount": null,
+        "source": "https://www.boerse.de/historische-kurse/Rheinmetall-Aktie/DE0007030009"
+      },
+      {
+        "date": "2022-02-27",
+        "event": "Zeitenwende : fonds spécial de 100 Md€ ; Papperger propose 42 Md€ de matériel livrable",
+        "amount": "42 Md€ d'offre",
+        "source": "https://www.t-online.de/finanzen/boerse/news/id_91851586/aufruestung-der-bundeswehr-rheinmetall-erwartet-auftragsboom.html"
+      },
+      {
+        "date": "2023-02",
+        "event": "Obligation convertible (jusqu'à 3,14 M d'actions, environ 7 % du capital) pour financer Expal",
+        "amount": null,
+        "source": "https://www.boersen-zeitung.de/unternehmen-branchen/rheinmetall-wagt-sich-mit-wandelanleihe-vor"
+      },
+      {
+        "date": "2023-03-20",
+        "event": "Entrée au DAX à la place de Fresenius Medical Care",
+        "amount": null,
+        "source": "https://deutsche-boerse.com/dbg-en/media/news-stories/press-releases/Rheinmetall-to-be-included-in-DAX-3449366"
+      },
+      {
+        "date": "2023-08-01",
+        "event": "Clôture du rachat d'Expal Systems (Espagne, munitions)",
+        "amount": "environ 1,2 Md€",
+        "source": "https://www.rheinmetall.com/en/media/news-watch/news/2023/8/2023-08-01-rheinmetall-completes-acquisition-of-spanish-defence-contractor-expal-systems"
+      },
+      {
+        "date": "2024-04-01",
+        "event": "Cession des petits pistons à Comitans Capital (3 650 salariés) ; gros pistons vendus en janvier 2023",
+        "amount": null,
+        "source": "https://www.rheinmetall.com/en/media/news-watch/news/2024/04/2024-04-16-sale-of-small-bore-piston-production-to-comitans-capital-ag-finalised"
+      },
+      {
+        "date": "2024-06-20",
+        "event": "Contrat-cadre Bundeswehr pour obus de 155 mm, première tranche de 880 M€",
+        "amount": "jusqu'à 8,5 Md€",
+        "source": "https://militaeraktuell.at/rheinmetall-groesster-auftrag-der-geschichte/"
+      },
+      {
+        "date": "2024-07-11",
+        "event": "CNN révèle un complot russe d'assassinat contre Papperger, déjoué par les services américains et allemands",
+        "amount": null,
+        "source": "https://www.thedefensepost.com/2024/07/11/rheinmetall-ceo-assassination-plot"
+      },
+      {
+        "date": "2024-11-29",
+        "event": "Clôture du rachat de Loc Performance (Michigan), devenue American Rheinmetall Vehicles",
+        "amount": "950 M$ (valeur d'entreprise)",
+        "source": "https://www.rheinmetall.com/en/media/news-watch/news/2024/08/2024-08-14-acquisition-of-the-vehicle-specialist-loc-performance"
+      },
+      {
+        "date": "2025-06-20",
+        "event": "Entrée fast entry dans l'Euro Stoxx 50 à la place de Kering",
+        "amount": null,
+        "source": "https://stoxx.com/rheinmetall-joins-euro-stoxx-50-amid-surge-in-europes-defense-stocks/"
+      },
+      {
+        "date": "2025-08",
+        "event": "Inauguration de l'usine de munitions d'Unterlüß (350 000 obus par an dès 2027)",
+        "amount": null,
+        "source": "https://fw-mag.com/shownews/682/rheinmetall-inaugurates-europe-s-largest-ammunition-production-facility"
+      },
+      {
+        "date": "2025-09-15",
+        "event": "Accord de rachat de Naval Vessels Lürssen (NVL, environ 1 Md€ de ventes) ; clôture le 1er mars 2026",
+        "amount": "n.d. (4,5x EBITDA selon Papperger)",
+        "source": "https://www.rheinmetall.com/en/media/news-watch/news/2025/09/2025-09-15-rheinmetall-reaches-agreement-with-luerssen-on-acquisition-of-naval-vessels-luerssen-nvl"
+      },
+      {
+        "date": "2025-09-30",
+        "event": "Record historique à 2 007 €",
+        "amount": null,
+        "source": "https://www.investing.com/equities/rheinmetall"
+      },
+      {
+        "date": "2025-12",
+        "event": "Power Systems (environ 2 Md€ de ventes) reclassé en activité abandonnée ; cession à AEQUITA",
+        "amount": "350 M€ (prix provisoire)",
+        "source": "https://defence-industry.eu/?p=97867"
+      },
+      {
+        "date": "2026-03-11",
+        "event": "Résultats 2025 : ventes 9 935 M€ (+29 %), marge 18,5 %, carnet 63,8 Md€, dividende 11,50 €",
+        "amount": null,
+        "source": "https://www.rheinmetall.com/de/media/news-watch/news/2026/03/2026-03-11-rheinmetall-bilanzvorlage-geschaeftsjahr-2025"
+      },
+      {
+        "date": "2026-06-24",
+        "event": "Annulation de la frégate F126 par Berlin ; l'action perd 18 % en séance",
+        "amount": null,
+        "source": "https://www.cnbc.com/2026/06/24/rheinmetall-stock-defense-germany-warship-scrap-plans.html"
+      },
+      {
+        "date": "2026-08-06",
+        "event": "Guidance 2026 abaissée à 13,7-14,2 Md€ de ventes ; carnet potentiel visé 100-120 Md€",
+        "amount": null,
+        "source": "https://www.defensenews.com/global/europe/2026/08/06/rheinmetall-scales-down-2026-sales-outlook-on-scrapped-frigate-program/"
+      }
+    ]
+  },
+  {
+    "ticker": "AVGO",
+    "founded": "2005-12-01",
+    "ipo_date": "2009-08-06",
+    "ipo_price": 15,
+    "ipo_price_currency": "USD",
+    "ceo": "Hock E. Tan",
+    "ceo_since": "2006-03",
+    "employees": 33000,
+    "employees_date": "2025-11-02",
+    "market_cap_2026_09_30": 1680,
+    "market_cap_currency": "USD",
+    "financials": [
+      {
+        "year": 2018,
+        "revenue": 20.848,
+        "revenue_currency": "USD",
+        "revenue_growth_pct": 18.0,
+        "op_margin_pct": 24.6,
+        "eps": 2.082,
+        "eps_basis": "non-GAAP",
+        "fcf": 8.245,
+        "shares_m": 4310,
+        "source": "https://www.sec.gov/Archives/edgar/data/0001730168/000119312518343743/d665420dex991.htm"
+      },
+      {
+        "year": 2019,
+        "revenue": 22.597,
+        "revenue_currency": "USD",
+        "revenue_growth_pct": 8.4,
+        "op_margin_pct": 15.2,
+        "eps": 2.129,
+        "eps_basis": "non-GAAP",
+        "fcf": 9.353,
+        "shares_m": 4190,
+        "source": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-fourth-quarter-and-fiscal-year-2019"
+      },
+      {
+        "year": 2020,
+        "revenue": 23.888,
+        "revenue_currency": "USD",
+        "revenue_growth_pct": 5.7,
+        "op_margin_pct": 16.8,
+        "eps": 2.216,
+        "eps_basis": "non-GAAP",
+        "fcf": 11.598,
+        "shares_m": 4210,
+        "source": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-fourth-quarter-and-fiscal-year-2020"
+      },
+      {
+        "year": 2021,
+        "revenue": 27.45,
+        "revenue_currency": "USD",
+        "revenue_growth_pct": 14.9,
+        "op_margin_pct": 31.0,
+        "eps": 2.801,
+        "eps_basis": "non-GAAP",
+        "fcf": 13.3,
+        "shares_m": 4290,
+        "source": "https://www.tipranks.com/news/broadcom-jumps-6-on-upbeat-q4-results-dividend-hike"
+      },
+      {
+        "year": 2022,
+        "revenue": 33.203,
+        "revenue_currency": "USD",
+        "revenue_growth_pct": 21.0,
+        "op_margin_pct": 42.8,
+        "eps": 3.764,
+        "eps_basis": "non-GAAP",
+        "fcf": 16.3,
+        "shares_m": 4232,
+        "source": "https://www.sec.gov/Archives/edgar/data/1730168/000173016822000110/avgo-10302022x8kxex99.htm"
+      },
+      {
+        "year": 2023,
+        "revenue": 35.819,
+        "revenue_currency": "USD",
+        "revenue_growth_pct": 7.9,
+        "op_margin_pct": 45.2,
+        "eps": 4.225,
+        "eps_basis": "non-GAAP",
+        "fcf": 17.633,
+        "shares_m": 4272,
+        "source": "https://www.telecomtv.com/content/digital-platforms-services/broadcom-inc-announces-fourth-quarter-and-fiscal-year-2023-financial-results-49181/"
+      },
+      {
+        "year": 2024,
+        "revenue": 51.574,
+        "revenue_currency": "USD",
+        "revenue_growth_pct": 44.0,
+        "op_margin_pct": 26.1,
+        "eps": 4.87,
+        "eps_basis": "non-GAAP",
+        "fcf": 19.414,
+        "shares_m": 4778,
+        "source": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-fourth-quarter-and-fiscal-year-2024"
+      },
+      {
+        "year": 2025,
+        "revenue": 63.887,
+        "revenue_currency": "USD",
+        "revenue_growth_pct": 23.9,
+        "op_margin_pct": 39.9,
+        "eps": 6.82,
+        "eps_basis": "non-GAAP",
+        "fcf": 26.9,
+        "shares_m": 4853,
+        "source": "https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-fourth-quarter-and-fiscal-year-2025"
+      }
+    ],
+    "stock": {
+      "price_10y_ago": null,
+      "date_10y_ago": null,
+      "ath": 481.57,
+      "ath_date": "2026-06",
+      "drawdowns": [
+        {
+          "from": "2020-02-12",
+          "to": "2020-03-18",
+          "pct": -48.3,
+          "cause": "Choc Covid-19 : chute de 32,47 $ à 16,79 $ (ajusté), record absolu de drawdown, sommet retrouvé le 04/08/2020"
+        },
+        {
+          "from": "2024-12",
+          "to": "2025-04",
+          "pct": -44.8,
+          "cause": "Droits de douane réciproques (3 avril 2025), exposition Chine supérieure à 20 % du CA, rotation hors IA ; sommet d'environ 250 $ vers un plus bas de 138,10 $ (calcul à partir de ces deux cours)"
+        },
+        {
+          "from": "2021-12",
+          "to": "2022-10",
+          "pct": -38.8,
+          "cause": "Cycle baissier 2022 : hausse des taux et fin du cycle semi-conducteurs"
+        },
+        {
+          "from": "2026-06",
+          "to": "2026-09-28",
+          "pct": -27.4,
+          "cause": "Guidance T4 FY2026 sous le consensus, report d'un programme Anthropic, inquiétudes sur le financement des clients (SPV, prêt Anthropic) ; de 481,57 $ à 349,57 $"
+        }
+      ],
+      "perf_1y_pct": null,
+      "perf_3y_pct": null,
+      "perf_5y_pct": null,
+      "perf_10y_pct": 2897.9,
+      "pe_5y_avg": 53.0
+    },
+    "milestones": [
+      {
+        "date": "2005-12-01",
+        "event": "Création d'Avago Technologies : KKR et Silver Lake rachètent la division semi-conducteurs d'Agilent (ex-HP)",
+        "amount": "2,66 Md$",
+        "source": "https://www.semiconductor-today.com/news_items/2009/AUG/AVAGO_210809.htm"
+      },
+      {
+        "date": "2006-03",
+        "event": "Hock Tan devient PDG d'Avago",
+        "amount": null,
+        "source": "https://en.wikipedia.org/wiki/Hock_Tan"
+      },
+      {
+        "date": "2009-08-06",
+        "event": "Introduction en Bourse d'Avago sur le Nasdaq à 15 $ par action",
+        "amount": "296 M$ nets levés",
+        "source": "https://www.sec.gov/Archives/edgar/data/0001441634/000119312509253349/d10k.htm"
+      },
+      {
+        "date": "2014-05-06",
+        "event": "Rachat de LSI Corporation",
+        "amount": "6,5 Md$",
+        "source": "https://www.sec.gov/Archives/edgar/data/0001441634/000144163414000045/avgo-05042014x10q.htm"
+      },
+      {
+        "date": "2014-05-07",
+        "event": "Entrée d'Avago dans le S&P 500 à la place de LSI",
+        "amount": null,
+        "source": "https://press.spglobal.com/2014-05-05-Avago-Technologies-Set-to-Join-the-S-P-500"
+      },
+      {
+        "date": "2015-05-28",
+        "event": "Accord de fusion avec Broadcom Corporation ; Avago prend le nom Broadcom à la clôture début 2016",
+        "amount": "37 Md$ (montant annoncé)",
+        "source": "https://www.sec.gov/Archives/edgar/data/0001441634/000119312515329906/d11668ddefm14a.htm"
+      },
+      {
+        "date": "2017-11-06",
+        "event": "Offre hostile sur Qualcomm à 70 $ par action",
+        "amount": "130 Md$ dette incluse",
+        "source": "https://www.industryweek.com/leadership/companies-executives/article/22024498/broadcom-bids-130-billion-for-qualcomm"
+      },
+      {
+        "date": "2017-11-17",
+        "event": "Rachat de Brocade",
+        "amount": "6,0 Md$",
+        "source": "https://www.sec.gov/Archives/edgar/data/1730168/000173016819000144/avgo-11032019x10k.htm"
+      },
+      {
+        "date": "2018-03-12",
+        "event": "Décret présidentiel bloquant le rachat de Qualcomm (CFIUS, sécurité nationale) ; Broadcom retire son offre",
+        "amount": "121 Md$ (offre relevée)",
+        "source": "https://www.cbsnews.com/news/broadcoms-blocked-qualcomm-takeover-underlines-new-obstacles/"
+      },
+      {
+        "date": "2018-04-04",
+        "event": "Redomiciliation de Singapour vers le Delaware",
+        "amount": null,
+        "source": "https://www.sec.gov/Archives/edgar/data/0001730168/000119312518107559/d562806d8k12b.htm"
+      },
+      {
+        "date": "2018-11-05",
+        "event": "Clôture du rachat de CA Technologies (annoncé le 11/07/2018, titre -15,2 % le jour de l'annonce)",
+        "amount": "18,9 Md$",
+        "source": "https://www.fool.com/investing/2018/07/12/why-ca-inc-shares-jumped-and-broadcom-stock-fell-t.aspx"
+      },
+      {
+        "date": "2019-11-04",
+        "event": "Rachat de la division Entreprise de Symantec",
+        "amount": "10,7 Md$",
+        "source": "https://www.sec.gov/Archives/edgar/data/1730168/000173016819000144/avgo-11032019x10k.htm"
+      },
+      {
+        "date": "2022-05-26",
+        "event": "Annonce du rachat de VMware",
+        "amount": "61 Md$",
+        "source": "https://www.fortune.com/2022/05/26/broadcom-buys-vmware-for-61-billion-record-tech-deal"
+      },
+      {
+        "date": "2023-11-22",
+        "event": "Clôture du rachat de VMware après le feu vert chinois",
+        "amount": "environ 69 Md$ dette incluse",
+        "source": "https://www.bostonglobe.com/2023/11/22/business/broadcom-planning-complete-deal-69-billion-acquisition-vmware-after-regulators-give-ok"
+      },
+      {
+        "date": "2024-01-26",
+        "event": "2 838 licenciements chez VMware, dont 1 267 en Californie",
+        "amount": null,
+        "source": "https://www.manufacturingdive.com/news/semiconductor-maker-broadcom-vmware-layoffs-almost-3k-new-york-virginia-california/702038/"
+      },
+      {
+        "date": "2024-07-15",
+        "event": "Division de l'action par 10",
+        "amount": null,
+        "source": "https://www.barchart.com/story/news/27327635/broadcom-will-execute-its-10-for-1-stock-split-on-july-12-history-says-the-ai-semiconductor-stock-will-do-this-next"
+      },
+      {
+        "date": "2025-04",
+        "event": "Autorisation de rachat d'actions, prolongée jusqu'au 31/12/2026",
+        "amount": "10 Md$",
+        "source": "https://www.sec.gov/Archives/edgar/data/1730168/000173016825000121/avgo-20251102.htm"
+      },
+      {
+        "date": "2025-09",
+        "event": "Commande de racks TPU Ironwood d'un quatrième client XPU, identifié ensuite comme Anthropic ; 11 Md$ supplémentaires au trimestre suivant",
+        "amount": "10 Md$ puis 11 Md$",
+        "source": "https://www.trendforce.com/news/2025/12/12/news-anthropic-emerges-as-broadcoms-mega-client-margin-challenges-ahead/"
+      },
+      {
+        "date": "2025-10-13",
+        "event": "Accord OpenAI : 10 GW d'accélérateurs conçus par OpenAI, déploiement 2H 2026 à fin 2029",
+        "amount": null,
+        "source": "https://openai.com/index/openai-and-broadcom-announce-strategic-collaboration/"
+      },
+      {
+        "date": "2026-09-02",
+        "event": "Résultats T3 FY2026 : CA IA 16,7 Md$ ; guidance IA 58 Md$ (FY2026), 115 Md$ (FY2027), 230 Md$ (FY2028)",
+        "amount": null,
+        "source": "https://seekingalpha.com/news/4639799-broadcom-forecasts-58b-fiscal-2026-ai-revenue-and-outlines-115b-in-2027-230b-in-2028"
+      }
+    ]
+  },
+  {
+    "ticker": "UBER",
+    "founded": "2009-03",
+    "ipo_date": "2019-05-10",
+    "ipo_price": 45,
+    "ipo_price_currency": "USD",
+    "ceo": "Dara Khosrowshahi",
+    "ceo_since": "2017-08",
+    "employees": 34000,
+    "employees_date": "2025-12-31",
+    "market_cap_2026_09_30": 142.06,
+    "market_cap_currency": "USD",
+    "financials": [
+      {
+        "year": 2018,
+        "revenue": 10.433,
+        "revenue_currency": "USD",
+        "revenue_growth_pct": 42.1,
+        "op_margin_pct": -29.1,
+        "eps": 0.5,
+        "eps_basis": "GAAP",
+        "fcf": null,
+        "shares_m": null,
+        "source": "https://roic.ai/quote/UBER/financials ; https://www.sec.gov/Archives/edgar/data/1543151/000119312519103850/d647752ds1.htm ; https://www.macrotrends.net/stocks/charts/UBER/uber-technologies/operating-income"
+      },
+      {
+        "year": 2019,
+        "revenue": 13.0,
+        "revenue_currency": "USD",
+        "revenue_growth_pct": 24.6,
+        "op_margin_pct": -66.1,
+        "eps": -6.81,
+        "eps_basis": "GAAP",
+        "fcf": -4.909,
+        "shares_m": 1248,
+        "source": "https://roic.ai/quote/UBER/financials ; https://www.macrotrends.net/stocks/charts/UBER/uber-technologies/free-cash-flow ; https://www.sec.gov/Archives/edgar/data/0001543151/000154315120000010/fy2019q410kfinancialst.htm"
+      },
+      {
+        "year": 2020,
+        "revenue": 11.139,
+        "revenue_currency": "USD",
+        "revenue_growth_pct": -14.3,
+        "op_margin_pct": -43.7,
+        "eps": -3.86,
+        "eps_basis": "GAAP",
+        "fcf": -3.361,
+        "shares_m": 1753,
+        "source": "https://roic.ai/quote/UBER/financials ; https://www.macrotrends.net/stocks/charts/UBER/uber-technologies/free-cash-flow ; https://www.sec.gov/Archives/edgar/data/1543151/000154315121000008/uberq420earningspressrelea.htm"
+      },
+      {
+        "year": 2021,
+        "revenue": 17.455,
+        "revenue_currency": "USD",
+        "revenue_growth_pct": 56.7,
+        "op_margin_pct": -22.0,
+        "eps": -0.26,
+        "eps_basis": "GAAP",
+        "fcf": -0.743,
+        "shares_m": 1908,
+        "source": "https://roic.ai/quote/UBER/financials ; https://www.macrotrends.net/stocks/charts/UBER/uber-technologies/free-cash-flow ; https://www.macrotrends.net/stocks/charts/UBER/uber-technologies/operating-income"
+      },
+      {
+        "year": 2022,
+        "revenue": 31.877,
+        "revenue_currency": "USD",
+        "revenue_growth_pct": 82.6,
+        "op_margin_pct": -5.7,
+        "eps": -4.63,
+        "eps_basis": "GAAP",
+        "fcf": 0.39,
+        "shares_m": 1970,
+        "source": "https://roic.ai/quote/UBER/financials ; https://www.macrotrends.net/stocks/charts/UBER/uber-technologies/free-cash-flow ; https://www.macrotrends.net/stocks/charts/UBER/uber-technologies/net-income"
+      },
+      {
+        "year": 2023,
+        "revenue": 37.281,
+        "revenue_currency": "USD",
+        "revenue_growth_pct": 17.0,
+        "op_margin_pct": 3.0,
+        "eps": 0.87,
+        "eps_basis": "GAAP",
+        "fcf": 3.362,
+        "shares_m": 2169,
+        "source": "https://www.cityam.com/uber-reports-first-ever-full-year-operating-profit-as-chief-hails-an-inflection-point/ ; https://roic.ai/quote/UBER/financials ; https://www.macrotrends.net/stocks/charts/UBER/uber-technologies/free-cash-flow"
+      },
+      {
+        "year": 2024,
+        "revenue": 43.978,
+        "revenue_currency": "USD",
+        "revenue_growth_pct": 18.0,
+        "op_margin_pct": 6.4,
+        "eps": 4.56,
+        "eps_basis": "GAAP",
+        "fcf": 6.895,
+        "shares_m": 2150,
+        "source": "https://www.sec.gov/Archives/edgar/data/1543151/000154315125000004/uberq424earningspressrelea.htm ; https://www.macrotrends.net/stocks/charts/UBER/uber-technologies/operating-income ; https://roic.ai/quote/UBER/financials"
+      },
+      {
+        "year": 2025,
+        "revenue": 52.017,
+        "revenue_currency": "USD",
+        "revenue_growth_pct": 18.3,
+        "op_margin_pct": null,
+        "eps": 4.74,
+        "eps_basis": "GAAP",
+        "fcf": 9.76,
+        "shares_m": 2120,
+        "source": "https://www.businesswire.com/news/home/20260204947622/en/Uber-Announces-Results-for-Fourth-Quarter-and-Full-Year-2025 ; https://roic.ai/quote/UBER/financials ; https://www.macrotrends.net/stocks/charts/UBER/uber-technologies/free-cash-flow"
+      }
+    ],
+    "stock": {
+      "price_10y_ago": null,
+      "date_10y_ago": null,
+      "ath": 101.99,
+      "ath_date": "2025-09-22",
+      "drawdowns": [
+        {
+          "from": "2019-05-10",
+          "to": "2020-03-18",
+          "pct": -67.1,
+          "cause": "Doutes sur la rentabilite apres l'IPO a 45 $, fin du lock-up (25,58 $ le 06/11/2019), puis confinement COVID-19 ; plus bas historique 14,82 $"
+        },
+        {
+          "from": "2021-02",
+          "to": "2022-06",
+          "pct": -68.0,
+          "cause": "Hausse des taux, perte nette 2022 de 9,1 Md$ sur les participations Didi/Grab/Aurora, inquietudes sur l'offre de chauffeurs ; sommet d'environ 64 $ vers 20,5 $ (TIKR)"
+        },
+        {
+          "from": "2025-09-22",
+          "to": "2026-07-27",
+          "pct": -35.9,
+          "cause": "Crainte de desintermediation par Waymo et Tesla, fin du pilote Waymo a Phoenix et de l'exclusivite Austin/Atlanta, offre de 14,8 Md$ sur Delivery Hero ; 101,99 $ vers 65,41 $"
+        }
+      ],
+      "perf_1y_pct": -30.1,
+      "perf_3y_pct": 49.0,
+      "perf_5y_pct": null,
+      "perf_10y_pct": null,
+      "pe_5y_avg": 42.5
+    },
+    "milestones": [
+      {
+        "date": "2009-03",
+        "event": "Creation d'UberCab a San Francisco par Garrett Camp et Travis Kalanick",
+        "amount": null,
+        "source": "https://en.wikipedia.org/wiki/Uber"
+      },
+      {
+        "date": "2010-12",
+        "event": "Kalanick devient directeur general ; service lance a San Francisco en 2010, renomme Uber en 2011",
+        "amount": null,
+        "source": "https://en.wikipedia.org/wiki/Uber"
+      },
+      {
+        "date": "2011-02",
+        "event": "Serie A menee par Benchmark",
+        "amount": "11 M$",
+        "source": "https://files.pitchbook.com/website/files/pdf/Uber-Timeline-v2.2.pdf"
+      },
+      {
+        "date": "2013-08",
+        "event": "Serie C menee par GV",
+        "amount": "363 M$",
+        "source": "https://files.pitchbook.com/website/files/pdf/Uber-Timeline-v2.2.pdf"
+      },
+      {
+        "date": "2014-06",
+        "event": "Serie D menee par Fidelity",
+        "amount": "1,4 Md$",
+        "source": "https://files.pitchbook.com/website/files/pdf/Uber-Timeline-v2.2.pdf"
+      },
+      {
+        "date": "2016-06",
+        "event": "Investissement du fonds souverain saoudien PIF, valorisation 62,5 Md$",
+        "amount": "3,5 Md$",
+        "source": "https://yourstory.com/2016/06/uber-funding-saudi-arabia"
+      },
+      {
+        "date": "2016-08-01",
+        "event": "Fusion d'Uber China avec Didi Chuxing : Uber recoit 17,7 % de Didi apres environ 2 Md$ de pertes en Chine",
+        "amount": "2 Md$ perdus ; 1 Md$ investi par Didi dans Uber",
+        "source": "https://www.fortune.com/2016/08/01/uber-china-didi-chuxing-merger"
+      },
+      {
+        "date": "2017-02-19",
+        "event": "Blog de Susan Fowler ; #DeleteUber (200 000 comptes), Greyball, video Kalanick",
+        "amount": null,
+        "source": "https://yourstory.com/2017/06/2017-a-year-of-hell-for-uber"
+      },
+      {
+        "date": "2017-06-21",
+        "event": "Demission de Travis Kalanick sous la pression de cinq grands investisseurs",
+        "amount": null,
+        "source": "https://www.bostonglobe.com/business/2017/06/21/uber-ceo-travis-kalanick-resigns-amid-turmoil/EMYakREpiNUpF7U3W2uvXO/story.html"
+      },
+      {
+        "date": "2017-07-13",
+        "event": "Fusion des activites russes avec Yandex.Taxi, Uber a 36,6 %",
+        "amount": "225 M$ apportes",
+        "source": "https://www.sec.gov/Archives/edgar/data/0001513845/000151384517000009/yndx-20170713ex9913053df.htm"
+      },
+      {
+        "date": "2017-08-29",
+        "event": "Dara Khosrowshahi confirme directeur general",
+        "amount": null,
+        "source": "https://techcrunch.com/2017/08/29/uber-finally-confirms-that-khosrowshahi-will-be-its-new-ceo/"
+      },
+      {
+        "date": "2017-11-07",
+        "event": "Nouvelles normes culturelles : We do the right thing. Period.",
+        "amount": null,
+        "source": "https://techcrunch.com/2017/11/07/these-are-ubers-new-cultural-norms"
+      },
+      {
+        "date": "2017-12",
+        "event": "SoftBank rachete environ 15 a 17,5 % du capital a 48 Md$ de valorisation (69 Md$ au tour precedent)",
+        "amount": "48 Md$ de valorisation ; Kalanick vend 1,4 Md$",
+        "source": "https://profit.pakistantoday.com.pk/2017/12/29/softbank-purchases-15-percent-stake-in-uber"
+      },
+      {
+        "date": "2018-02-09",
+        "event": "Reglement du proces Waymo, paye en actions",
+        "amount": "245 M$",
+        "source": "https://www.boston.com/cars/car-news/2018/02/09/uber-waymo-settle-lawsuit-over-allegations-that-uber-stole-self-driving-car-technology/"
+      },
+      {
+        "date": "2018-03-26",
+        "event": "Cession de l'Asie du Sud-Est a Grab contre 27,5 % de Grab",
+        "amount": null,
+        "source": "https://www.engadget.com/2018/03/25/uber-sells-southeast-asia-business-to-grab/"
+      },
+      {
+        "date": "2019-03-26",
+        "event": "Rachat de Careem",
+        "amount": "3,1 Md$",
+        "source": "https://www.wamda.com/2019/03/uber-acquires-careem-3-1-billion"
+      },
+      {
+        "date": "2019-05-10",
+        "event": "IPO au NYSE a 45 $, valorisation 82,4 Md$, cloture a 41,57 $",
+        "amount": "8,1 Md$ leves",
+        "source": "https://www.boursorama.com/bourse/actualites/uber-valorise-82-mds-pour-ses-debuts-en-bourse-e52d86de800e8fe480bff56797c3b573"
+      },
+      {
+        "date": "2020-03-18",
+        "event": "Plus bas historique 14,82 $",
+        "amount": null,
+        "source": "https://www.aol.com/finance/billionaires-buying-millionaire-maker-stock-150500236.html"
+      },
+      {
+        "date": "2020-07-06",
+        "event": "Rachat de Postmates en actions",
+        "amount": "2,65 Md$",
+        "source": "https://www.cnbc.com/amp/2020/07/06/uber-buys-postmates-food-delivery-service.html"
+      },
+      {
+        "date": "2020-11-03",
+        "event": "Victoire de la Proposition 22 en Californie (58 %)",
+        "amount": "200 M$ de campagne",
+        "source": "https://sites.law.berkeley.edu/thenetwork/2020/11/16/uber-lyft-win-on-prop-22-the-most-expensive-ballot-measure-in-californias-history"
+      },
+      {
+        "date": "2020-12-07",
+        "event": "Cession d'Uber ATG a Aurora (valorisee 4 Md$), Uber investit 400 M$ et detient environ 26 % d'Aurora",
+        "amount": "400 M$",
+        "source": "https://fortune.com/2020/12/07/uber-sells-self-driving-vehicle-unit-to-aurora"
+      },
+      {
+        "date": "2021-02-19",
+        "event": "Cour supreme britannique : les chauffeurs sont des workers",
+        "amount": null,
+        "source": "https://www.fortune.com/2021/02/19/uber-drivers-are-workers-minimum-wage-paid-leave-britain-court-ruling"
+      },
+      {
+        "date": "2023-12-18",
+        "event": "Entree au S&P 500",
+        "amount": null,
+        "source": "https://press.spglobal.com/2023-12-01-Uber-Technologies,-Jabil-and-Builders-FirstSource-Set-to-Join-S-P-500-Others-to-Join-S-P-MidCap-400-and-S-P-SmallCap-600"
+      },
+      {
+        "date": "2024-02-07",
+        "event": "Premier resultat operationnel annuel positif (2023)",
+        "amount": "1,1 Md$",
+        "source": "https://www.cityam.com/uber-reports-first-ever-full-year-operating-profit-as-chief-hails-an-inflection-point/"
+      },
+      {
+        "date": "2024-02-14",
+        "event": "Premier programme de rachat d'actions",
+        "amount": "7 Md$",
+        "source": "https://fortune.com/2024/02/14/uber-7-billion-share-buyback-first-profitable-year"
+      },
+      {
+        "date": "2025-07",
+        "event": "Autorisation de rachat supplementaire, 27 Md$ au total",
+        "amount": "20 Md$",
+        "source": "https://www.sec.gov/Archives/edgar/data/1543151/000154315126000015/uber-20251231.htm"
+      },
+      {
+        "date": "2025-09-22",
+        "event": "Plus haut historique 101,99 $ en seance",
+        "amount": null,
+        "source": "https://stockscan.io/stocks/UBER/price-history"
+      },
+      {
+        "date": "2025-10-28",
+        "event": "Accord NVIDIA-Uber, objectif 100 000 vehicules autonomes a partir de 2027",
+        "amount": null,
+        "source": "https://www.therobotreport.com/nvidia-partners-with-uber-to-deploy-avs-starting-in-2027/"
+      },
+      {
+        "date": "2026-06-29",
+        "event": "Waymo met fin au pilote de Phoenix ; fin de l'exclusivite Austin/Atlanta le 24/07/2026",
+        "amount": null,
+        "source": "https://www.cnbc.com/2026/07/24/uber-and-waymo-to-end-exclusivity-arrangement-in-atlanta-and-austin.html"
+      },
+      {
+        "date": "2026-07-16",
+        "event": "Offre publique d'achat sur Delivery Hero a 41,50 EUR par action",
+        "amount": "14,8 Md$",
+        "source": "https://www.sec.gov/Archives/edgar/data/0001543151/000155278126000382/e26302_ex99-1.htm"
+      }
+    ]
+  },
+  {
+    "ticker": "TSM",
+    "founded": "1987",
+    "ipo_date": "1994-09-05",
+    "ipo_price": null,
+    "ipo_price_currency": "TWD",
+    "ceo": "C.C. Wei",
+    "ceo_since": "2018-06",
+    "employees": 83825,
+    "employees_date": "2025-12-31",
+    "market_cap_2026_09_30": 2366,
+    "market_cap_currency": "USD",
+    "financials": [
+      {
+        "year": 2018,
+        "revenue": 1031.47,
+        "revenue_currency": "TWD",
+        "revenue_growth_pct": 5.5,
+        "op_margin_pct": 37.2,
+        "eps": 13.54,
+        "eps_basis": "IFRS",
+        "fcf": null,
+        "shares_m": 25930,
+        "source": "https://pr.tsmc.com/english/news/1982"
+      },
+      {
+        "year": 2019,
+        "revenue": 1069.99,
+        "revenue_currency": "TWD",
+        "revenue_growth_pct": 3.7,
+        "op_margin_pct": 34.8,
+        "eps": 13.32,
+        "eps_basis": "IFRS",
+        "fcf": 155,
+        "shares_m": 25930,
+        "source": "https://design-reuse.com/news/47383/tsmc-q4-2019-financial-results.html"
+      },
+      {
+        "year": 2020,
+        "revenue": 1339.25,
+        "revenue_currency": "TWD",
+        "revenue_growth_pct": 25.2,
+        "op_margin_pct": 42.3,
+        "eps": 19.97,
+        "eps_basis": "IFRS",
+        "fcf": 315.43,
+        "shares_m": 25930,
+        "source": "https://design-reuse.com/news/49302/tsmc-q4-2020-financial-results.html"
+      },
+      {
+        "year": 2021,
+        "revenue": 1587.42,
+        "revenue_currency": "TWD",
+        "revenue_growth_pct": 18.5,
+        "op_margin_pct": 40.9,
+        "eps": 23.01,
+        "eps_basis": "IFRS",
+        "fcf": 272.97,
+        "shares_m": 25930,
+        "source": "https://pr.tsmc.com/english/news/2901"
+      },
+      {
+        "year": 2022,
+        "revenue": 2263.89,
+        "revenue_currency": "TWD",
+        "revenue_growth_pct": 42.6,
+        "op_margin_pct": 49.5,
+        "eps": 39.2,
+        "eps_basis": "IFRS",
+        "fcf": 527.93,
+        "shares_m": 25930,
+        "source": "https://www.fool.com/earnings/call-transcripts/2023/01/12/taiwan-semiconductor-manufacturing-tsm-q4-2022-ear"
+      },
+      {
+        "year": 2023,
+        "revenue": 2161.74,
+        "revenue_currency": "TWD",
+        "revenue_growth_pct": -4.5,
+        "op_margin_pct": 42.6,
+        "eps": 32.34,
+        "eps_basis": "IFRS",
+        "fcf": 292.15,
+        "shares_m": 25930,
+        "source": "https://www.sec.gov/Archives/edgar/data/1046179/000104617924000005/a4q24e_withguidancexfinal.htm"
+      },
+      {
+        "year": 2024,
+        "revenue": 2894.31,
+        "revenue_currency": "TWD",
+        "revenue_growth_pct": 33.9,
+        "op_margin_pct": 45.7,
+        "eps": 45.25,
+        "eps_basis": "IFRS",
+        "fcf": 870.17,
+        "shares_m": 25930,
+        "source": "https://www.sec.gov/Archives/edgar/data/1046179/000104617925000002/tsm-revenue20250110.htm"
+      },
+      {
+        "year": 2025,
+        "revenue": 3809.05,
+        "revenue_currency": "TWD",
+        "revenue_growth_pct": 31.6,
+        "op_margin_pct": 50.8,
+        "eps": 66.25,
+        "eps_basis": "IFRS",
+        "fcf": 1100,
+        "shares_m": 25932.5,
+        "source": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000008/a4q25e_withguidancexfinal.htm"
+      }
+    ],
+    "stock": {
+      "price_10y_ago": null,
+      "date_10y_ago": null,
+      "ath": 479.0,
+      "ath_date": "2026-06-30",
+      "drawdowns": [
+        {
+          "from": "2022-01",
+          "to": "2022-10",
+          "pct": -56.5,
+          "cause": "Hausse des taux, retournement du cycle des semi-conducteurs, restrictions américaines à l'export vers la Chine (ADR : 140,25 $ à 61,02 $)"
+        },
+        {
+          "from": "2007-11",
+          "to": "2008-11",
+          "pct": -44.3,
+          "cause": "Crise financière mondiale (ADR : 10,50 $ à 5,85 $)"
+        }
+      ],
+      "perf_1y_pct": 93.2,
+      "perf_3y_pct": null,
+      "perf_5y_pct": 266.6,
+      "perf_10y_pct": 1536.5,
+      "pe_5y_avg": 23.3
+    },
+    "milestones": [
+      {
+        "date": "1987",
+        "event": "Création à Hsinchu par Morris Chang, première fonderie pure-play ; Intel et TI refusent d'investir, Philips et l'État taïwanais entrent au capital",
+        "amount": "Philips 58 M$ pour 27,6 % ; État 48 %",
+        "source": "https://quartr.com/insights/company-research/the-silicon-empire-tsmcs-revolution-and-morris-changs-legacy"
+      },
+      {
+        "date": "1994-09-05",
+        "event": "Introduction à la Bourse de Taïwan (2330)",
+        "amount": null,
+        "source": "https://investor.tsmc.com/static/annualReports/2013/english/c_8_7_7_1.html"
+      },
+      {
+        "date": "1997-10-08",
+        "event": "Cotation des ADR au NYSE (TSM), première société taïwanaise sur le NYSE",
+        "amount": "24,78 $ par ADR, 520 M$ levés",
+        "source": "https://pr.tsmc.com/chinese/news/2085"
+      },
+      {
+        "date": "2004-06-14",
+        "event": "Premier dividende en numéraire",
+        "amount": "0,6037 NT$ par action",
+        "source": "https://investor.tsmc.com/japanese/dividends/2003"
+      },
+      {
+        "date": "2014",
+        "event": "Apple confie la puce A8 à TSMC ; fournisseur exclusif à partir de l'A10 (2016)",
+        "amount": null,
+        "source": "https://www.fool.com/investing/2018/01/11/taiwan-semiconductor-mfg-co-ltd-is-expected-to-bui.aspx"
+      },
+      {
+        "date": "2018-04",
+        "event": "Production en volume du 7 nm (Apple A12)",
+        "amount": null,
+        "source": "https://hothardware.com/news/tsmc-7nm-iphone-chip-production"
+      },
+      {
+        "date": "2018-06",
+        "event": "Retraite de Morris Chang ; Mark Liu président, C.C. Wei PDG",
+        "amount": null,
+        "source": "https://simplywall.st/stocks/tw/semiconductors/twse-2330/taiwan-semiconductor-manufacturing-shares/management"
+      },
+      {
+        "date": "2018-08-27",
+        "event": "GlobalFoundries abandonne le 7 nm ; AMD bascule chez TSMC",
+        "amount": null,
+        "source": "https://www.theregister.com/2018/08/27/globalfoundries_scuttles_7nm/"
+      },
+      {
+        "date": "2019",
+        "event": "Passage au dividende trimestriel",
+        "amount": null,
+        "source": "https://tickerleague.com/companies/TSM/dividends"
+      },
+      {
+        "date": "2020-05",
+        "event": "Annonce d'une première usine en Arizona",
+        "amount": "12 Md$",
+        "source": "https://in.marketscreener.com/news/taiwan-contract-chipmaker-tsmc-s-us-investments-ce7e58deda81f72c"
+      },
+      {
+        "date": "2022-12-06",
+        "event": "Cérémonie tool-in en Arizona avec Joe Biden, deuxième usine ; Morris Chang : « la mondialisation est presque morte »",
+        "amount": "40 Md$",
+        "source": "https://www.theregister.com/2022/12/08/tsmc_founder_globalization/"
+      },
+      {
+        "date": "2024-04",
+        "event": "Troisième usine en Arizona",
+        "amount": "plus de 65 Md$",
+        "source": "https://in.marketscreener.com/news/taiwan-contract-chipmaker-tsmc-s-us-investments-ce7e58deda81f72c"
+      },
+      {
+        "date": "2024-06-04",
+        "event": "C.C. Wei devient président-PDG",
+        "amount": null,
+        "source": "https://simplywall.st/stocks/tw/semiconductors/twse-2330/taiwan-semiconductor-manufacturing-shares/management"
+      },
+      {
+        "date": "2025-03-03",
+        "event": "Annonce avec Donald Trump de 100 Md$ supplémentaires aux États-Unis",
+        "amount": "165 Md$ au total",
+        "source": "https://www.phoenix.gov/newsroom/ced-news/tsmc-announces-additional--100-billion-investment-in-arizona.html"
+      },
+      {
+        "date": "2025-10",
+        "event": "Démarrage de la production de série du 2 nm (N2)",
+        "amount": null,
+        "source": "https://www.igorslab.de/en/tsmc-takes-up-2-nanometer-production-on-a-regular-basis/"
+      },
+      {
+        "date": "2026-01-15",
+        "event": "Accord commercial États-Unis-Taïwan (droits réciproques à 15 %, exemptions Section 232)",
+        "amount": "250 Md$ d'investissements taïwanais promis",
+        "source": "https://www.cnbc.com/2026/01/15/us-taiwan-chips-deal-china.html"
+      },
+      {
+        "date": "2026-06-30",
+        "event": "Plus haut historique de l'ADR",
+        "amount": "479,00 $",
+        "source": "https://chartrow.com/quote/tsm/drawdown"
+      },
+      {
+        "date": "2026-07-16",
+        "event": "Capex 2026 relevé à 60-64 Md$, croissance 2026 attendue au-dessus de 40 % en dollars",
+        "amount": "60-64 Md$",
+        "source": "https://www.trendforce.com/news/2026/07/16/news-tsmc-lifts-2026-capex-15-to-60-64b-hikes-sales-outlook-to-over-40-despite-q3-margin-dip/"
+      }
+    ]
+  }
+]
