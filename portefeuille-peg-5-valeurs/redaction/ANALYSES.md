@@ -24,6 +24,10 @@ Chaque fiche ci-dessous résume un dossier de vingt pages (`research/deepdives/T
 
 **Catalyseurs.** 4 et 25 octobre : élection. 12 novembre : résultats du T3. Novembre-décembre : appel aux créanciers de Desenrola. 8 décembre : premier Investor Day, à New York.
 
+**Le scénario Monzo : acheter une banque pour l'Europe et les États-Unis ?**
+
+{{include:MONZO.md}}
+
 **Le cas de l'ours et notre réponse.** Si la croissance du BPA retombe à 12 % par an et le multiple à 9, l'action vaut environ 14 $ en 2030, soit presque rien de plus qu'aujourd'hui. Notre réponse : à {{v:NU:pe_ntm}} fois les bénéfices, le scénario pessimiste du modèle reste positif ({{v:NU:pess}}), et c'est le seul cas du portefeuille. Ce qui nous ferait changer d'avis : deux trimestres de créances 90+ sous 6,5 % (dans le bon sens) ou au-dessus de 7,5 % (dans le mauvais). Confiance que l'ours est réfuté : 55 %.
 
 **Pour un investisseur français.** NYSE, ticker NU, en dollars ; non éligible au PEA (Îles Caïmans) ; pas de dividende, donc pas de retenue ; double exposition de change (dollar et réal).

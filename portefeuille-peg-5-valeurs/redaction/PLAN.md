@@ -12,7 +12,7 @@
 | 12 novembre | Résultats du T3 | Nu | Créances 90+ sous 7 %, ratio d'efficacité sous 22 %, Mexique |
 | Novembre | Résultats des hyperscalers, budget fédéral allemand 2027 | Broadcom, Rheinmetall | Capex 2027 relevés ; 105,8 Md€ de défense votés |
 | 25-27 novembre | Capital Markets Day à Hambourg | Rheinmetall | Carnet potentiel au-dessus de 100 Md€, objectifs 2030 |
-| 8 décembre | Premier Investor Day à New York ; Copom | Nu | Objectifs à moyen terme ; Selic |
+| 8 décembre | Premier Investor Day à New York ; Copom | Nu | Objectifs à moyen terme ; doctrine d'acquisition après la rumeur Monzo ; Selic |
 | 10 décembre | Résultats du T4 et guidance | Broadcom | Chiffre d'affaires IA au-dessus de 21,7 Md$, marge brute 73 % |
 | Décembre | Prix des plaquettes 2027 ; sommet États-Unis-Chine | TSMC | Hausse de prix supérieure à 5 % ; statut de Taïwan |
 

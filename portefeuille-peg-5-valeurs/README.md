@@ -13,7 +13,8 @@ Portefeuille concentré de cinq valeurs construit avec la méthode PEG de Peter 
 | `ARTICLE.html`, `ARTICLE.pdf` | Article court (7 pages), même structure sans les chapitres par valeur |
 | `outputs/` | Sorties du modèle : `resultats_par_valeur.csv`, `classement.csv`, `exclus.csv`, `quintets.csv`, `variantes.csv`, `indice.csv`, `resume.json` |
 | `data/` | Univers (`data.csv`), hypothèses éditoriales (`hypotheses.csv`), poids du QQQ (`index_weights.csv`), portefeuille et variantes |
-| `../research/` | Données brutes des recherches du 01/10/2026 : screens Europe, Asie, États-Unis, Amérique latine (`phase1/`), méga-tendances, neuf deep dives (`deepdives/`) et les cinq dossiers historiques (`histoire/`, avec `histoire.json` lu par le générateur) |
+| `data/acquisition.csv`, `outputs/acquisition.csv` | Scénarios d'acquisition d'une banque par Nu (Monzo) : dilution, BPA pro forma 2027 et 2030, rendement de la ligne et du portefeuille par structure de paiement |
+| `../research/` | Données brutes des recherches du 01/10/2026 : screens Europe, Asie, États-Unis, Amérique latine (`phase1/`), méga-tendances, neuf deep dives (`deepdives/`) les cinq dossiers historiques (`histoire/`) et le dossier Monzo / expansion internationale de Nu (`monzo/`) |
 
 ## Reproduction (bibliothèque standard Python uniquement)
 
@@ -23,6 +24,7 @@ python3 build_data.py            # assemble data/data.csv et data/index_weights.
 python3 build_hypotheses.py      # écrit data/hypotheses.csv (hypothèses « hyp. » avec justification)
 python3 portefeuille.py --data data/data.csv --hyp data/hypotheses.csv --index data/index_weights.csv \
   --portfolio data/portfolio.csv --variants data/variantes.txt --dilution NU:0.868 --out outputs
+python3 acquisition.py --ticker NU   # scénarios d'acquisition (Monzo) : data/acquisition.csv → outputs/acquisition.json
 python3 rapport.py --template redaction/RAPPORT_template.md --out RAPPORT.md
 python3 rapport.py --template redaction/ARTICLE_template.md --out article/contenu.md
 python3 article.py --resume outputs/resume.json --content article/contenu.md --out ARTICLE.html

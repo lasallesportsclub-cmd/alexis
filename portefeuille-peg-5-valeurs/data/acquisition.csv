@@ -1,6 +1,7 @@
 ticker,nom,prix_md_gbp,gbpusd,part_actions,cours_emission_usd,resultat_cible_m_gbp,croissance_cible_pct,taux_impot_pct,cout_dette_pct,delta_g_central,source
-NU,A · Monzo à 10 Md£ payé 100 % en actions,10,1.3264,1.0,12.66,172.6,30,25,6,0,"Sky News 26/09/2026 (8-10 Md£) ; résultat avant impôt Monzo FY mars 2026 : 172,6 M£ (Payment Expert 19/05/2026) ; hyp. : croissance du résultat de Monzo 30 %/an, impôt 25 %"
-NU,B · Monzo à 10 Md£ payé moitié actions moitié numéraire,10,1.3264,0.5,12.66,172.6,30,25,6,0,"idem ; numéraire financé à 6 % (hyp.)"
-NU,C · Monzo à 10 Md£ tout en numéraire,10,1.3264,0.0,12.66,172.6,30,25,6,0,"idem ; dette ou trésorerie à 6 % (hyp.)"
-NU,D · Monzo à 8 Md£ en actions,8,1.3264,1.0,12.66,172.6,30,25,6,0,"bas de fourchette Sky News"
-NU,E · 10 Md£ en actions + 3 pts de croissance (Europe et États-Unis réussis),10,1.3264,1.0,12.66,172.6,30,25,6,3,"hyp. : la cible accélère la croissance du groupe de 3 points par an"
+NU,A · Monzo à 10 Md£ payé 100 % en actions (résultat ajusté),10,1.3266,1.0,12.66,172.6,30,25,6,0,"Sky News 26/09/2026 (8-10 Md£, numéraire et actions) ; résultat avant impôt ajusté FY mars 2026 : 172,6 M£ (Payment Expert 19/05/2026) ; GBP/USD 1,3266 (30/09/2026) ; hyp. : résultat de Monzo +30 %/an, impôt 25 %"
+NU,B · Monzo à 10 Md£ payé moitié actions moitié numéraire,10,1.3266,0.5,12.66,172.6,30,25,6,0,"idem ; numéraire financé par dette de holding à 6 % (hyp. ; trésorerie non restreinte de la holding : ~3 Md$ fin 2025)"
+NU,C · Monzo à 10 Md£ tout en numéraire (théorique),10,1.3266,0.0,12.66,172.6,30,25,6,0,"idem ; 13 Md$ de dette de holding à 6 % (hyp.) ; scénario théorique faute de trésorerie"
+NU,D · Monzo à 8 Md£ payé 100 % en actions,8,1.3266,1.0,12.66,172.6,30,25,6,0,"bas de fourchette Sky News"
+NU,"E · 10 Md£ en actions sur le résultat statutaire (87,3 M£)",10,1.3266,1.0,12.66,87.3,30,25,6,0,"résultat avant impôt statutaire FY2026 : 87,3 M£ (amende FCA de 21,1 M£ et restructurations incluses)"
+NU,F · 10 Md£ en actions et 3 points de croissance en plus (Europe réussie),10,1.3266,1.0,12.66,172.6,30,25,6,3,"hyp. : la plateforme européenne de Monzo (licence BCE du 17/12/2025, 15,2 M de clients) ajoute 3 points de croissance annuelle au BPA du groupe"

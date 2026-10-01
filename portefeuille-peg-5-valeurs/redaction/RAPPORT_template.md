@@ -131,6 +131,7 @@
 ```bash
 python3 portefeuille.py --data data/data.csv --hyp data/hypotheses.csv --index data/index_weights.csv \
   --portfolio data/portfolio.csv --variants data/variantes.txt --dilution NU:0.868 --out outputs
+python3 acquisition.py --ticker NU   # scénarios Monzo (data/acquisition.csv → outputs/acquisition.json)
 python3 rapport.py --template redaction/RAPPORT_template.md --out RAPPORT.md
 python3 article.py --resume outputs/resume.json --content article/contenu.md --out ARTICLE.html
 ```
@@ -146,6 +147,7 @@ python3 article.py --resume outputs/resume.json --content article/contenu.md --o
 | `outputs/classement.csv`, `outputs/exclus.csv` | Classement Lynch et exclues |
 | `outputs/quintets.csv`, `outputs/variantes.csv` | Quintets et variantes |
 | `outputs/indice.csv` | Nasdaq 100 reconstitué |
+| `data/acquisition.csv`, `outputs/acquisition.csv` | Scénarios d'acquisition (Monzo) : dilution, BPA pro forma, rendements |
 | `outputs/resume.json` | Toutes les sorties (stress tests, sensibilités, probabilités, poche d'ETF, dilution, cycliques) |
 | `research/` | Données brutes des recherches du 01/10/2026 (Europe, Asie, États-Unis, méga-tendances, deep dives) avec leurs sources |
 

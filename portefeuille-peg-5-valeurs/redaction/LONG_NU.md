@@ -38,6 +38,10 @@ Nous retenons une croissance de {{v:NU:g_central}} % par an de 2027 à 2030 en s
 
 Trois raisons, dans l'ordre. D'abord, les bénéfices d'une banque numérique à 19,5 % de ratio d'efficacité résistent mieux à un cycle de crédit que ceux d'une banque à 35 % : à revenus égaux, il y a deux fois plus de marge pour absorber les provisions. Ensuite, le marché traite Nu comme une banque brésilienne alors que le Mexique et la Colombie pèsent déjà 21 millions de clients et que le groupe est devenu, en dollars, l'une des cinq banques les plus rentables du monde. Enfin, la direction fait ce qu'elle dit : point mort au Mexique annoncé puis atteint, premier rachat d'actions lancé à 12 $, et démenti formel par 6-K, le 30 septembre, d'une acquisition de Monzo que la presse chiffrait à 8-10 Md£ et qui aurait été dilutive.
 
+### Le scénario Monzo : acheter une banque pour l'Europe et les États-Unis ?
+
+{{include:MONZO.md}}
+
 ### Le cas de l'ours
 
 L'ours a de vrais arguments et il faut les écouter. Le défaut des ménages brésiliens a atteint 5,8 % en juillet 2026, un record depuis 2011 ; 84 millions de Brésiliens sont en défaut (Serasa, août). Chez Nu, les expositions de stade 3 sont passées de 6,2 % à 8,3 % en un trimestre. L'État intervient : le programme Desenrola 3.0, lancé le 25 septembre 2026, rachètera jusqu'à 150 Md R$ de dettes en défaut avec 90 % de décote, et la loi plafonne depuis janvier 2024 les intérêts et frais à 100 % de la dette d'origine. L'élection des 4 et 25 octobre est à égalité statistique (Lula 40 %, Flávio Bolsonaro 36 % au premier tour, 47-45 au second selon Datafolha du 24/09) et les deux camps parlent du crédit à la consommation. Itaú BBA a abaissé le titre à « Market Perform » le 16 septembre. Si la croissance retombe à 12 % par an et le multiple à 9, l'action vaut environ 14 $ en 2030 : presque rien de plus qu'aujourd'hui.
