@@ -516,6 +516,37 @@ class Rapport:
                 return pct(v[field]) if v and field in v else m.group(0)
             return m.group(0)
         out = re.sub(r"\{\{(var|etf|conc|dil):([^}]+?):([a-z_]+)\}\}", multi, out)
+
+        # scénarios d'acquisition (outputs/acquisition.json) : {{acq:A:dilution_pct}} (lettre = début du nom du scénario)
+        acq_path = os.path.join(os.path.dirname(self.R_path) if hasattr(self, "R_path") else os.path.join(ROOT, "outputs"), "acquisition.json")
+        acq = json.load(open(acq_path, encoding="utf-8")) if os.path.exists(acq_path) else None
+        def acqf(m):
+            key, field = m.group(1).strip(), m.group(2)
+            if not acq:
+                return m.group(0)
+            if key == "base":
+                v = {"line_expected": acq["base_line_expected"], "pf_expected": acq["base_pf_expected"]}.get(field)
+                return pct(v) if v is not None else m.group(0)
+            sc = next((v for k, v in acq["scenarios"].items() if k.startswith(key)), None)
+            if not sc or field not in sc:
+                return m.group(0)
+            v = sc[field]
+            if field in ("dilution_pct", "part_actions"):
+                return pct(v, 1, False)
+            if field in ("accretion_bpa_2027", "ligne_expected", "pf_expected", "pf_central", "pf_pess"):
+                return pct(v)
+            if field == "facteur_bpa_2030_central":
+                return pct(v - 1)
+            if field == "prix_sur_resultat_cible":
+                return fr(v, 0) + "x"
+            if field == "prix_sur_capi_nu":
+                return pct(v, 0, False)
+            if field == "actions_nouvelles_md":
+                return fr(v * 1000, 0) + " M"
+            if field in ("prix_md_gbp", "prix_md_usd"):
+                return fr(v, 1)
+            return str(v)
+        out = re.sub(r"\{\{acq:([^}]+?):([a-z_0-9]+)\}\}", acqf, out)
         return out
 
 
