@@ -1,0 +1,51 @@
+{
+  "rumour": {
+    "date": "2026-09-26",
+    "source": "Sky News (Mark Kleinman), repris par Reuters, Bloomberg et Dealroom le 26/09/2026 ; https://app.dealroom.co/news/note/reports-monzo-in-early-talks-on-potential-8-10bn-sale-to-nubank",
+    "price_low_gbp_bn": 8.0,
+    "price_high_gbp_bn": 10.0,
+    "structure": "Numéraire et actions Nu (cash-and-stock), discussions à un stade précoce ; Monzo conseillée par Morgan Stanley et Qatalyst ; alternative : tour de table à plus de 8 Md£ ou participation minoritaire (Advent International)",
+    "nu_price_reaction": [
+      {"date": "2026-09-28", "close_usd": 12.23, "change_pct": -10.01},
+      {"date": "2026-09-29", "close_usd": 12.35, "change_pct": 0.98},
+      {"date": "2026-09-30", "close_usd": 12.66, "change_pct": 2.5},
+      {"date": "2026-10-01", "close_usd": null, "change_pct": null}
+    ],
+    "denial_date": "2026-09-30",
+    "denial_quote": "While we have a great deal of respect for Monzo, the Company is not pursuing a transaction with Monzo. As a matter of general practice, the Company does not comment on specific opportunities; however, given the extent of recent media speculation, the Company is providing this clarification."
+  },
+  "monzo": {
+    "founded": "2015-02-18",
+    "customers_m": 15.2,
+    "customers_date": "2026-03-31",
+    "deposits_gbp_bn": 25.7,
+    "loans_gbp_bn": 2.6,
+    "fy": [
+      {"fy_end": "2024-03-31", "revenue_gbp_m": 880.0, "pretax_profit_gbp_m": 15.4, "growth_pct": 150.0, "source": "https://www.finextra.com/newsarticle/44237/monzo-achieves-first-full-year-of-profitability"},
+      {"fy_end": "2025-03-31", "revenue_gbp_m": 1200.0, "pretax_profit_gbp_m": 60.5, "growth_pct": 48.0, "source": "https://www.crowdfundinsider.com/2025/06/241424-uks-digital-bank-monzo-reports-steady-revenue-growth-profitability/"},
+      {"fy_end": "2026-03-31", "revenue_gbp_m": 1700.0, "pretax_profit_gbp_m": 87.3, "growth_pct": 39.0, "source": "https://paymentexpert.com/2026/05/19/monzo-fy2026-results-revenue-profit/ (résultat avant impôt ajusté : 172,6 M£)"}
+    ],
+    "employees": 5275,
+    "last_valuation_gbp_bn": 4.5,
+    "last_valuation_date": "2024-10-11",
+    "licences": {
+      "uk": "Banque de plein exercice depuis avril 2017 (licence restreinte 2016, restrictions levées), supervisée par la PRA et la FCA",
+      "eu": "Licence bancaire complète de la Banque centrale d'Irlande et de la BCE le 17/12/2025 ; lancement en Irlande en avril 2026, Espagne en préparation",
+      "us": "Aucune : demande de charte retirée en octobre 2021 ; activité via Sutton Bank, puis sortie du marché annoncée le 31/03/2026"
+    },
+    "ceo": "Diana Layfield (depuis février 2026, succède à TS Anil)",
+    "ipo_plans": "Cotation à Londres conseillée par Morgan Stanley, longtemps attendue pour 2026 à 6-7 Md£ de valorisation ; aucun prospectus ni date au 01/10/2026 ; TS Anil préférait New York et un calendrier plus rapide"
+  },
+  "nu": {
+    "price_usd": 12.66,
+    "shares_bn": 4.86,
+    "holding_cash_usd_bn": 3.0,
+    "pretax_2026e_usd_bn": null,
+    "source": "Cours : hypothèse du dossier au 30/09/2026 (TradingKey : 12,67 $) ; actions : https://stockanalysis.com/stocks/nu/ ; trésorerie de la holding (~3 Md$ fin 2025) : 6-K T4 2025 via research/deepdives/NU.md, https://www.sec.gov/Archives/edgar/data/1691493/000129281426000499/nufs4q25_6k.htm ; résultat avant impôt 2026E : n.d. (consensus BPA 2026 de 0,86 $ soit ~4,18 Md$ de résultat net, https://kr.benzinga.com/quote/NU/earnings-forecasts ; résultat avant impôt 2025 : 2,79 Md$, 20-F 2025)"
+  },
+  "gbpusd": {
+    "rate": 1.3266,
+    "date": "2026-09-30",
+    "source": "https://www.babypips.com/news/financial-forex-market-recap-2026-09-30"
+  }
+}
