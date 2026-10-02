@@ -1,0 +1,101 @@
+ticker,nom,raison,PEG LT,rdt espéré %
+DASH,DoorDash,"PEG LT 1.64 > 1,5",1.64,24.12
+SPCX,SpaceX,"PEG LT 4.24 > 1,5",4.24,21.16
+PLTR,Palantir,"PEG LT 2.97 > 1,5",2.97,20.33
+000660.KS,SK hynix,cyclique,,20.09
+MELI,MercadoLibre,"PEG LT 1.52 > 1,5",1.52,18.06
+TRENT.NS,Trent (Tata group),"PEG LT 1.80 > 1,5",1.8,17.61
+TTWO,Take-Two Interactive,"PEG LT 1.51 > 1,5",1.51,17.42
+LITE,Lumentum,"PEG LT 1.81 > 1,5",1.81,17.36
+ALAB,Astera Labs,"PEG LT 2.51 > 1,5",2.51,17.23
+SPOT,Spotify Technology,"PEG LT 1.57 > 1,5",1.57,16.71
+BESI,BE Semiconductor Industries N.V.,"PEG LT 1.82 > 1,5",1.82,16.52
+005930.KS,Samsung Electronics,cyclique,,16.18
+SAAB B,Saab AB,"PEG LT 1.81 > 1,5",1.81,16.09
+5274.TWO,ASPEED Technology,"PEG LT 3.13 > 1,5",3.13,15.28
+TSLA,Tesla,"PEG LT 5.48 > 1,5",5.48,15.09
+2454.TW,MediaTek Inc.,"PEG LT 2.25 > 1,5",2.25,14.67
+AXON,Axon Enterprise,"PEG LT 2.13 > 1,5",2.13,14.51
+ATEYY,Advantest (ADR),"PEG LT 1.56 > 1,5",1.56,14.33
+VRT,Vertiv,"PEG LT 1.60 > 1,5",1.6,14.24
+COFORGE.NS,Coforge,"PEG LT 1.55 > 1,5",1.55,14.13
+NOW,ServiceNow,"PEG LT 1.53 > 1,5",1.53,13.9
+2308.TW,Delta Electronics Inc.,"PEG LT 1.79 > 1,5",1.79,13.41
+GALD,Galderma Group AG,"PEG LT 1.98 > 1,5",1.98,13.27
+INTC,Intel,"PEG LT 3.26 > 1,5",3.26,13.02
+SHOP,Shopify,"PEG LT 2.86 > 1,5",2.86,12.94
+BHARTIARTL.NS,Bharti Airtel,"PEG LT 1.61 > 1,5",1.61,12.54
+KOG,Kongsberg Gruppen ASA,"PEG LT 1.98 > 1,5",1.98,12.14
+AMD,Advanced Micro Devices,"PEG LT 2.64 > 1,5",2.64,12.12
+8035.T,Tokyo Electron Ltd,cyclique,,12.11
+HOOD,Robinhood,"PEG LT 2.40 > 1,5",2.4,12.0
+MRVL,Marvell Technology,"PEG LT 2.51 > 1,5",2.51,11.64
+NET,Cloudflare,"PEG LT 7.98 > 1,5",7.98,11.57
+GOOGL,Alphabet,"PEG LT 1.55 > 1,5",1.55,11.53
+IFX,Infineon Technologies AG,"PEG LT 1.67 > 1,5",1.67,11.52
+AIR,Airbus SE,"PEG LT 1.64 > 1,5",1.64,11.45
+ENR,Siemens Energy AG,"PEG LT 1.90 > 1,5",1.9,11.33
+MSFT,Microsoft,"PEG LT 1.65 > 1,5",1.65,11.16
+LONN,Lonza Group AG,"PEG LT 1.86 > 1,5",1.86,11.02
+HIMS,Hims & Hers Health,"PEG LT 7.03 > 1,5",7.03,10.85
+ANET,Arista Networks,"PEG LT 2.35 > 1,5",2.35,10.65
+7011.T,Mitsubishi Heavy Industries,"PEG LT 1.92 > 1,5",1.92,10.39
+GEV,GE Vernova,"PEG LT 2.63 > 1,5",2.63,10.16
+207940.KS,Samsung Biologics,"PEG LT 1.97 > 1,5",1.97,9.9
+4062.T,IBIDEN Co,"PEG LT 2.30 > 1,5",2.3,9.88
+SAF,Safran SA,"PEG LT 1.92 > 1,5",1.92,9.69
+POLYCAB.NS,Polycab India,"PEG LT 2.10 > 1,5",2.1,9.54
+ASM,ASM International N.V.,"PEG LT 2.30 > 1,5",2.3,9.3
+LLY,Eli Lilly,"PEG LT 2.00 > 1,5",2.0,9.21
+SRT3,Sartorius AG (preference shares),"PEG LT 2.42 > 1,5",2.42,9.17
+META,Meta Platforms,"PEG LT 1.80 > 1,5",1.8,8.04
+PRY,Prysmian S.p.A.,"PEG LT 1.82 > 1,5",1.82,7.96
+6501.T,Hitachi,"PEG LT 1.93 > 1,5",1.93,7.8
+ASML,ASML,"PEG LT 2.36 > 1,5",2.36,7.74
+SU,Schneider Electric SE,"PEG LT 2.06 > 1,5",2.06,7.41
+DDOG,Datadog,"PEG LT 4.69 > 1,5",4.69,6.78
+IBKR,Interactive Brokers Group,"PEG LT 2.36 > 1,5",2.36,6.58
+CRWD,CrowdStrike Holdings,"PEG LT 8.05 > 1,5",8.05,6.26
+ALC,Alcon Inc.,"PEG LT 1.68 > 1,5",1.68,6.19
+6758.T,Sony Group Corp,"PEG LT 1.64 > 1,5",1.64,6.14
+6504.T,Fuji Electric Co,"PEG LT 1.70 > 1,5",1.7,5.77
+TXN,Texas Instruments,"PEG LT 2.46 > 1,5",2.46,5.6
+ABNB,Airbnb,"PEG LT 2.24 > 1,5",2.24,5.48
+ETN,Eaton,"PEG LT 2.37 > 1,5",2.37,5.4
+6503.T,Mitsubishi Electric Corp,"PEG LT 1.88 > 1,5",1.88,5.11
+RR.,Rolls-Royce Holdings plc,"PEG LT 2.53 > 1,5",2.53,5.1
+RMS,Hermès International,"PEG LT 2.43 > 1,5",2.43,4.92
+S63.SI,Singapore Technologies Engineering,"PEG LT 2.40 > 1,5",2.4,4.8
+BC,Brunello Cucinelli S.p.A.,"PEG LT 2.67 > 1,5",2.67,4.74
+VACN,VAT Group AG,"PEG LT 4.00 > 1,5",4.0,4.66
+5803.T,Fujikura,"PEG LT 3.01 > 1,5",3.01,4.43
+MU,Micron Technology,cyclique,,4.33
+CEG,Constellation Energy,"PEG LT 2.17 > 1,5",2.17,4.08
+LR,Legrand SA,"PEG LT 2.43 > 1,5",2.43,3.56
+COIN,Coinbase Global,"PEG LT 7.87 > 1,5",7.87,3.3
+ISRG,Intuitive Surgical,"PEG LT 2.82 > 1,5",2.82,2.96
+6098.T,Recruit Holdings,"PEG LT 3.00 > 1,5",3.0,2.73
+VRTX,Vertex Pharmaceuticals,"PEG LT 2.50 > 1,5",2.5,2.29
+AMAT,Applied Materials,"PEG LT 2.93 > 1,5",2.93,2.27
+PANW,Palo Alto Networks,"PEG LT 6.13 > 1,5",6.13,1.42
+RACE,Ferrari N.V.,"PEG LT 3.33 > 1,5",3.33,1.21
+LRCX,Lam Research,"PEG LT 3.41 > 1,5",3.41,0.99
+KLAC,KLA,"PEG LT 3.46 > 1,5",3.46,0.94
+CSCO,Cisco,"PEG LT 2.99 > 1,5",2.99,0.2
+WMT,Walmart,"PEG LT 3.71 > 1,5",3.71,-0.51
+COST,Costco,"PEG LT 4.01 > 1,5",4.01,-0.75
+6861.T,Keyence,"PEG LT 4.08 > 1,5",4.08,-0.99
+AAPL,Apple,"PEG LT 3.87 > 1,5",3.87,-1.52
+AMGN,Amgen,"PEG LT 3.51 > 1,5",3.51,-2.24
+SNDK,Sandisk,cyclique,,-2.67
+VIST,"Vista Energy, S.A.B. de C.V. (ADS)",cyclique,,-3.03
+BMA,Banco Macro S.A.,cyclique,,-4.55
+PAM,Pampa Energía S.A. (ADR),cyclique,,-6.94
+6146.T,DISCO Corp,cyclique,,-12.33
+7735.T,SCREEN Holdings,cyclique,,-14.73
+6920.T,Lasertec,cyclique,,-23.96
+042700.KS,Hanmi Semiconductor,cyclique,,-24.83
+3711.TW,ASE Technology Holding,cyclique,,-28.45
+3037.TW,Unimicron Technology,cyclique,,-29.36
+6525.T,KOKUSAI ELECTRIC,cyclique,,-29.74
+034020.KS,Doosan Enerbility,cyclique,,-35.08

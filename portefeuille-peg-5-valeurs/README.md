@@ -2,7 +2,7 @@
 
 Portefeuille concentré de cinq valeurs construit avec la méthode PEG de Peter Lynch pour battre le Nasdaq 100 sur quatre ans (du 30/09/2026 au 30/09/2030). Univers de 159 valeurs sur quatre continents (États-Unis, Europe, Asie, Amérique latine), neuf deep dives, six méga-tendances documentées.
 
-**Retenu : Nu Holdings 25 %, Rheinmetall 20 %, Broadcom 20 %, Uber 20 %, TSMC 15 %.**
+**Retenu le 01/10/2026 : Nu Holdings 25 %, Rheinmetall 20 %, Broadcom 20 %, Uber 20 %, TSMC 15 %.** Mise à jour du 02/10/2026 : Nvidia remplace Broadcom, Adyen et Reddit sont ajoutées (sept lignes, voir `PORTEFEUILLE_7_LIGNES.md` et `outputs_7_lignes/`).
 
 ## Livrables
 
