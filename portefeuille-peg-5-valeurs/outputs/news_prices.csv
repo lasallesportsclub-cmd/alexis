@@ -1,0 +1,7 @@
+ticker,close_2026_09_30,close_latest,date_latest,change_pct,pe_ntm_new,peg_lt_new,source
+NU,12.66,13.43,2026-10-02,6.08,12.315451627693719,0.6157725813846859,"https://www.ad-hoc-news.de/boerse/news/corporate-news/nu-holdings-stock-gained-1-05-percent-as-goldman-reiterated-buy/70228207 (à confirmer : incohérent avec 13,17 $ le 01/10 selon https://stockstotrade.com/news/nu-holdings-ltd-nu-news-2026_10_01/)"
+RHM,956.4,959.8,2026-10-02,0.36,19.409504550050553,0.9704752275025277,"https://aktien.guide/kursziel/Rheinmetall-DE0007030009 ; 01/10 : 945,80 € selon https://www.finanzen.net/nachricht/aktien/rheinmetall-aktie-kursbewegung-01-10-2026-11201172 ; autres sources 961,00 € / 962,30 €"
+AVGO,351.19,355.14,2026-10-02,1.12,19.319899358523923,0.9659949679261961,https://invezz.com/news/2026/10/02/why-broadcom-stock-is-gaining-today/ ; https://stockanalysis.com/stocks/avgo/
+UBER,68.51,68.11,2026-10-02,-0.58,15.90611863615133,0.9941324147594581,"https://www.macrotrends.net/stocks/charts/UBER/uber-technologies/stock-price-history ; 68,09 $ selon https://ad-hoc-news.de/boerse/news/corporate-news/uber-technologies-stock-gains-analyst-support-from-av-plans/70221732"
+TSM,456.19,472.78,2026-10-02,3.64,23.57417102966841,1.386715942921671,"https://www.heygotrade.com/en/us-stock/tsm/ (source secondaire) ; 01/10 : 459,20 $ selon https://www.investing.com/equities/taiwan-semicond.manufacturing-co"
+QQQ,739.77,749.58,2026-10-02,1.33,,,https://alphaseeker84.substack.com/p/weekly-market-update-week-ending ; 30/09 : portefeuille-peg-5-valeurs/gf.csv

@@ -1,0 +1,67 @@
+{
+ "as_of": "2026-10-05",
+ "pf_move_pct": 2.2460000000000004,
+ "qqq_move_pct": 1.33,
+ "prices": [
+  {
+   "ticker": "NU",
+   "close_2026_09_30": 12.66,
+   "close_latest": 13.43,
+   "date_latest": "2026-10-02",
+   "change_pct": 6.08,
+   "pe_ntm_new": 12.315451627693719,
+   "peg_lt_new": 0.6157725813846859,
+   "source": "https://www.ad-hoc-news.de/boerse/news/corporate-news/nu-holdings-stock-gained-1-05-percent-as-goldman-reiterated-buy/70228207 (à confirmer : incohérent avec 13,17 $ le 01/10 selon https://stockstotrade.com/news/nu-holdings-ltd-nu-news-2026_10_01/)"
+  },
+  {
+   "ticker": "RHM",
+   "close_2026_09_30": 956.4,
+   "close_latest": 959.8,
+   "date_latest": "2026-10-02",
+   "change_pct": 0.36,
+   "pe_ntm_new": 19.409504550050553,
+   "peg_lt_new": 0.9704752275025277,
+   "source": "https://aktien.guide/kursziel/Rheinmetall-DE0007030009 ; 01/10 : 945,80 € selon https://www.finanzen.net/nachricht/aktien/rheinmetall-aktie-kursbewegung-01-10-2026-11201172 ; autres sources 961,00 € / 962,30 €"
+  },
+  {
+   "ticker": "AVGO",
+   "close_2026_09_30": 351.19,
+   "close_latest": 355.14,
+   "date_latest": "2026-10-02",
+   "change_pct": 1.12,
+   "pe_ntm_new": 19.319899358523923,
+   "peg_lt_new": 0.9659949679261961,
+   "source": "https://invezz.com/news/2026/10/02/why-broadcom-stock-is-gaining-today/ ; https://stockanalysis.com/stocks/avgo/"
+  },
+  {
+   "ticker": "UBER",
+   "close_2026_09_30": 68.51,
+   "close_latest": 68.11,
+   "date_latest": "2026-10-02",
+   "change_pct": -0.58,
+   "pe_ntm_new": 15.90611863615133,
+   "peg_lt_new": 0.9941324147594581,
+   "source": "https://www.macrotrends.net/stocks/charts/UBER/uber-technologies/stock-price-history ; 68,09 $ selon https://ad-hoc-news.de/boerse/news/corporate-news/uber-technologies-stock-gains-analyst-support-from-av-plans/70221732"
+  },
+  {
+   "ticker": "TSM",
+   "close_2026_09_30": 456.19,
+   "close_latest": 472.78,
+   "date_latest": "2026-10-02",
+   "change_pct": 3.64,
+   "pe_ntm_new": 23.57417102966841,
+   "peg_lt_new": 1.386715942921671,
+   "source": "https://www.heygotrade.com/en/us-stock/tsm/ (source secondaire) ; 01/10 : 459,20 $ selon https://www.investing.com/equities/taiwan-semicond.manufacturing-co"
+  },
+  {
+   "ticker": "QQQ",
+   "close_2026_09_30": 739.77,
+   "close_latest": 749.58,
+   "date_latest": "2026-10-02",
+   "change_pct": 1.33,
+   "pe_ntm_new": null,
+   "peg_lt_new": null,
+   "source": "https://alphaseeker84.substack.com/p/weekly-market-update-week-ending ; 30/09 : portefeuille-peg-5-valeurs/gf.csv"
+  }
+ ]
+}

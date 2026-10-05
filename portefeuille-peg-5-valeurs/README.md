@@ -11,6 +11,7 @@ Portefeuille concentré de cinq valeurs construit avec la méthode PEG de Peter 
 | `RAPPORT.md` | Rapport complet (contexte, méthode, univers et classement, portefeuille et variantes, cinq analyses détaillées, stress tests, critique, plan d'action, limites, sources, annexes) |
 | `ARTICLE_LONG.html`, `ARTICLE_LONG.pdf` | **L'enquête complète** (31 pages A4) : sommaire, histoire, chronologie, huit ans de chiffres, trajectoire boursière, métier, « pourquoi », cas de l'ours, règles de vente et calendrier pour chacune des cinq valeurs, puis comparaison à l'indice, stress tests, écartées, critique, mode d'emploi |
 | `ARTICLE.html`, `ARTICLE.pdf` | Article court (7 pages), même structure sans les chapitres par valeur |
+| `ARTICLE_NEWS_<date>.html`, `.pdf` | Revue de presse datée : nouvelles de la semaine, effet mécanique sur P/E et PEG, règles de vente touchées ou non, calendrier (`news.py` + `redaction/ARTICLE_NEWS_template.md`, données dans `../research/news/`) |
 | `outputs/` | Sorties du modèle : `resultats_par_valeur.csv`, `classement.csv`, `exclus.csv`, `quintets.csv`, `variantes.csv`, `indice.csv`, `resume.json` |
 | `data/` | Univers (`data.csv`), hypothèses éditoriales (`hypotheses.csv`), poids du QQQ (`index_weights.csv`), portefeuille et variantes |
 | `data/acquisition.csv`, `outputs/acquisition.csv` | Scénarios d'acquisition d'une banque par Nu (Monzo) : dilution, BPA pro forma 2027 et 2030, rendement de la ligne et du portefeuille par structure de paiement |
@@ -25,6 +26,7 @@ python3 build_hypotheses.py      # écrit data/hypotheses.csv (hypothèses « hy
 python3 portefeuille.py --data data/data.csv --hyp data/hypotheses.csv --index data/index_weights.csv \
   --portfolio data/portfolio.csv --variants data/variantes.txt --dilution NU:0.868 --out outputs
 python3 acquisition.py --ticker NU   # scénarios d'acquisition (Monzo) : data/acquisition.csv → outputs/acquisition.json
+python3 news.py                       # revue de presse : ../research/news/news.json → tableaux des cours et calendrier
 python3 rapport.py --template redaction/RAPPORT_template.md --out RAPPORT.md
 python3 rapport.py --template redaction/ARTICLE_template.md --out article/contenu.md
 python3 article.py --resume outputs/resume.json --content article/contenu.md --out ARTICLE.html

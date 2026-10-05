@@ -1,0 +1,7 @@
+- **Alchip** : rien d'important ; résultats du troisième trimestre le 30 octobre. Déclencheur (second client au-dessus de 20 % des ventes, consensus 2028 au-dessus de 15 %) : non atteint.
+- **Alnylam** : un cabinet d'avocats poursuit une enquête pour fraude boursière après l'abaissement de guidance du 30 juillet ; Cantor reste « Neutre ». Déclencheur : non atteint.
+- **NVIDIA** : record à 237,88 $, capitalisation au-dessus de 5 700 Md$, rachat porté à 235 Md$, GTC Washington du 30 novembre au 3 décembre. Zone d'entrée du dossier : {{v:NVDA:buy_peg1}} ; non atteinte, et de loin.
+- **CATL** : action H à 476,80 HKD, plan d'actionnariat salarié sur 0,6 % du capital, troisième trimestre le 20 octobre.
+- **Sea** : DBS passe à « Conserver », objectif ramené de 148 à 105 $, les dépenses de Shopee menaçant les marges 2027 ; clôture à 95,19 $. Sea n'entre que si la règle de vente d'Uber se déclenche, et sa propre thèse vient de se fragiliser.
+- **Eli Lilly** : données du congrès EASD (Foundayo −16 % de risque cardiovasculaire, retatrutide −20,8 % de poids à 80 semaines, eloraTZP), approbation de Jaypirca ; cours à 1 139,35 $. Déclencheur (consensus 2028 au-dessus de 20 %) : sans nouvelle.
+- **Siemens Energy** : le pre-close call du 30 septembre confirme les objectifs 2026 en haut de fourchette (marge 10 à 12 %, bénéfice net 4 Md€, flux de trésorerie 8 Md€) ; clôture à 145,42 €. Zone d'entrée du dossier : 100 € ; non atteinte.

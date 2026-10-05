@@ -36,6 +36,8 @@ def main():
     pf_move = 0.0
     for p in N.get("prices", []):
         t = p["ticker"]
+        if t not in data and t != "QQQ":
+            continue
         c0, c1 = p.get("close_2026_09_30"), p.get("close_latest")
         chg = p.get("change_pct")
         if chg is None and c0 and c1:
