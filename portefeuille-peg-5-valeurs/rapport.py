@@ -547,6 +547,33 @@ class Rapport:
                 return fr(v, 1)
             return str(v)
         out = re.sub(r"\{\{acq:([^}]+?):([a-z_0-9]+)\}\}", acqf, out)
+
+        # revue de presse (outputs/news.json) : {{news:pf_move}}, {{news:qqq_move}}, {{news:NU:change_pct}}
+        news_path = os.path.join(ROOT, "outputs", "news.json")
+        news = json.load(open(news_path, encoding="utf-8")) if os.path.exists(news_path) else None
+        def newsf(m):
+            a, b = m.group(1), m.group(2)
+            if not news:
+                return m.group(0)
+            if b is None:
+                v = {"pf_move": news.get("pf_move_pct"), "qqq_move": news.get("qqq_move_pct"), "as_of": news.get("as_of")}.get(a)
+                if a == "as_of":
+                    return str(v)
+                return (pctraw(v, 1) if v is not None else "n.d.")
+            p = next((x for x in news["prices"] if x["ticker"] == a), None)
+            if not p or p.get(b) is None:
+                return "n.d."
+            v = p[b]
+            if b == "change_pct":
+                return pctraw(v, 1)
+            if b in ("pe_ntm_new",):
+                return fr(v, 1)
+            if b in ("peg_lt_new",):
+                return fr(v, 2)
+            if b in ("close_latest", "close_2026_09_30"):
+                return money(v, self.cur(a)) if a in self.data else fr(v, 2) + " $"
+            return str(v)
+        out = re.sub(r"\{\{news:([A-Za-z0-9.\-_]+)(?::([a-z_0-9]+))?\}\}", newsf, out)
         return out
 
 
