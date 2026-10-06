@@ -1,1085 +1,1488 @@
 {
- "as_of": "2026-10-05",
- "prices": [
-  {
-   "ticker": "NU",
-   "close_2026_09_30": 12.66,
-   "close_latest": 13.43,
-   "date_latest": "2026-10-02",
-   "change_pct": 6.08,
-   "source": "https://www.ad-hoc-news.de/boerse/news/corporate-news/nu-holdings-stock-gained-1-05-percent-as-goldman-reiterated-buy/70228207 (à confirmer : incohérent avec 13,17 $ le 01/10 selon https://stockstotrade.com/news/nu-holdings-ltd-nu-news-2026_10_01/)"
-  },
-  {
-   "ticker": "RHM",
-   "close_2026_09_30": 956.4,
-   "close_latest": 959.8,
-   "date_latest": "2026-10-02",
-   "change_pct": 0.36,
-   "source": "https://aktien.guide/kursziel/Rheinmetall-DE0007030009 ; 01/10 : 945,80 € selon https://www.finanzen.net/nachricht/aktien/rheinmetall-aktie-kursbewegung-01-10-2026-11201172 ; autres sources 961,00 € / 962,30 €"
-  },
-  {
-   "ticker": "AVGO",
-   "close_2026_09_30": 351.19,
-   "close_latest": 355.14,
-   "date_latest": "2026-10-02",
-   "change_pct": 1.12,
-   "source": "https://invezz.com/news/2026/10/02/why-broadcom-stock-is-gaining-today/ ; https://stockanalysis.com/stocks/avgo/"
-  },
-  {
-   "ticker": "UBER",
-   "close_2026_09_30": 68.51,
-   "close_latest": 68.11,
-   "date_latest": "2026-10-02",
-   "change_pct": -0.58,
-   "source": "https://www.macrotrends.net/stocks/charts/UBER/uber-technologies/stock-price-history ; 68,09 $ selon https://ad-hoc-news.de/boerse/news/corporate-news/uber-technologies-stock-gains-analyst-support-from-av-plans/70221732"
-  },
-  {
-   "ticker": "TSM",
-   "close_2026_09_30": 456.19,
-   "close_latest": 472.78,
-   "date_latest": "2026-10-02",
-   "change_pct": 3.64,
-   "source": "https://www.heygotrade.com/en/us-stock/tsm/ (source secondaire) ; 01/10 : 459,20 $ selon https://www.investing.com/equities/taiwan-semicond.manufacturing-co"
-  },
-  {
-   "ticker": "2330.TW",
-   "close_2026_09_30": null,
-   "close_2026_09_29": 2475.0,
-   "close_latest": 2500.0,
-   "date_latest": "2026-10-02",
-   "change_pct": 1.01,
-   "note": "Bourse de Taipei fermée le 28/09 ; clôture du 30/09 non trouvée ; variation calculée du 29/09 au 02/10",
-   "source": "https://focustaiwan.tw/business/202610020014 ; https://focustaiwan.tw/business/202609290014"
-  },
-  {
-   "ticker": "QQQ",
-   "close_2026_09_30": 739.77,
-   "close_latest": 749.58,
-   "date_latest": "2026-10-02",
-   "change_pct": 1.33,
-   "source": "https://alphaseeker84.substack.com/p/weekly-market-update-week-ending ; 30/09 : portefeuille-peg-5-valeurs/gf.csv"
-  }
- ],
- "items": [
-  {
-   "date": "2026-10-05",
-   "ticker_or_topic": "MACRO-BR",
-   "headline": "Flávio Bolsonaro 47,03 % / Lula 45,16 % : second tour le 25 octobre",
-   "facts": "Dépouillement TSE à 99,99 % des sections. Aucun candidat à 50 %. Flávio devance Lula alors que les sondages le donnaient second ; analystes (Reuters) évoquent des votes de protestation.",
-   "numbers": "47,03 % ; 45,16 % ; second tour 25/10/2026",
-   "why_it_matters": "Le marché associe Flávio à un ajustement budgétaire et une Selic plus basse, scénario favorable à Nu ; second tour serré = volatilité du réal.",
-   "impact": "à surveiller",
-   "source": "https://www.riotimesonline.com/brazil-election-first-round-results-lula-flavio-2026/"
-  },
-  {
-   "date": "2026-10-05",
-   "ticker_or_topic": "MACRO-BR",
-   "headline": "Pré-marché US : Nu +10,5 %, Itaú et Bradesco +9 %, EWZ +8 à 10 %",
-   "facts": "ADR brésiliens en forte hausse en pré-marché lundi. EWZ +8,72 % à 41,52 $ dimanche soir (Estado de Minas) ; 42,12 $ selon SBT. Ouverture au comptant du lundi : rien trouvé de chiffré.",
-   "numbers": "Nu +10,5 % ; Itaú/Bradesco > +9 % ; EWZ ~+10 %",
-   "why_it_matters": "Nu réagit plus fort que les banques traditionnelles : bêta politique élevé dans les deux sens.",
-   "impact": "positif",
-   "source": "https://uk.investing.com/news/stock-market-news/us-shares-of-brazilian-companies-rally-after-first-round-election-result-4894588"
-  },
-  {
-   "date": "2026-10-02",
-   "ticker_or_topic": "MACRO-BR",
-   "headline": "Ibovespa +2,63 % à 192 114,55 points vendredi, réal à 5,21",
-   "facts": "Dernière séance avant le vote. Rio Times rappelle un écart d'environ 10 points entre Selic et taux US.",
-   "numbers": "192 114,55 pts ; USD/BRL 5,2133",
-   "why_it_matters": "Niveau de référence pour mesurer la réaction post-premier tour.",
-   "impact": "neutre",
-   "source": "https://www.riotimesonline.com/brazil-election-markets-real-ibovespa-adrs-2026/"
-  },
-  {
-   "date": "2026-10-03",
-   "ticker_or_topic": "MACRO-BR",
-   "headline": "JPMorgan : avec Flávio et des réformes, taux neutres à 6 % réel / 10 % nominal",
-   "facts": "MSCI Brazil +0,25 % en moyenne chaque jour où Flávio progressait dans les sondages. Itaú BBA, XP, BTG post-premier tour : rien trouvé.",
-   "numbers": "6 % réel ; 10 % nominal ; +0,25 %/jour",
-   "why_it_matters": "Une Selic à 10 % réduirait le coût du risque et soutiendrait le crédit chez Nu ; scénario, pas prévision.",
-   "impact": "à surveiller",
-   "source": "https://www.cnbc.com/2026/10/03/lula-or-bolsonaro-wall-street-braces-for-two-wildly-different-results-in-brazil-election.html"
-  },
-  {
-   "date": "2026-10-04",
-   "ticker_or_topic": "MACRO-BR",
-   "headline": "Abstention record depuis 1998 (21,08 %) ; PL en tête au Sénat ; Tarcísio réélu à SP",
-   "facts": "Participation 78,92 %. PL mène pour 19 des 54 sièges du Sénat, MDB 7, PT 5. Tarcísio réélu dès le premier tour avec 62,7 %.",
-   "numbers": "21,08 % ; 19/54 ; 62,7 %",
-   "why_it_matters": "Un Sénat à droite conditionne la faisabilité d'un ajustement budgétaire après janvier 2027.",
-   "impact": "à surveiller",
-   "source": "https://www.riotimesonline.com/brazil-election-turnout-surprises-2026/"
-  },
-  {
-   "date": "2026-10-01",
-   "ticker_or_topic": "MACRO-BR",
-   "headline": "Dollar à 5,2264 R$, plus haut de clôture en six mois",
-   "facts": "Clôture du jeudi 01/10 : dollar +0,83 % ; Ibovespa de retour vers 187 000 points.",
-   "numbers": "5,2264 ; +0,83 %",
-   "why_it_matters": "Le réal n'avait pas pré-intégré le résultat, d'où le rattrapage des ADR.",
-   "impact": "négatif",
-   "source": "https://exame.com/invest/mercados/ibovespa-ibov-fechamento-01-10-2026/"
-  },
-  {
-   "date": "2026-10-02",
-   "ticker_or_topic": "MACRO-US",
-   "headline": "Emploi septembre : +29 000 (vs 84 000), chômage 4,2 %",
-   "facts": "Rapport BLS publié normalement. 10 ans d'abord à 5,18 % (-6 pb), puis selon version mise à jour CNBC +5 pb à 5,281 % en fin de séance ; clôture exacte à confirmer.",
-   "numbers": "+29 000 ; 4,2 % ; 10Y 5,18 %-5,281 %",
-   "why_it_matters": "Consommation (Uber) fragilisée mais hausse de la Fed moins probable : soutien aux multiples du Nasdaq 100.",
-   "impact": "à surveiller",
-   "source": "https://www.cnbc.com/2026/10/02/jobs-report-september-2026.html"
-  },
-  {
-   "date": "2026-10-02",
-   "ticker_or_topic": "MACRO-US",
-   "headline": "Probabilité de statu quo Fed le 28/10 : 83,9 % (CME FedWatch)",
-   "facts": "Contre 35,8 % le 25/09. Kalshi : hausse à 18 % contre ~70 % une semaine plus tôt. Minutes du FOMC : rien trouvé.",
-   "numbers": "83,9 % ; 35,8 % ; 18 %",
-   "why_it_matters": "Report d'une hausse = soulagement pour Broadcom, TSMC, Nasdaq 100.",
-   "impact": "positif",
-   "source": "https://www.cnbc.com/2026/10/02/fed-rate-hike-odds-decline-after-september-jobs-report.html"
-  },
-  {
-   "date": "2026-10-01",
-   "ticker_or_topic": "MACRO-US",
-   "headline": "10 ans US à 5,33 % en séance, plus haut depuis 2002 ; clôture 5,243 %",
-   "facts": "Dépasse le pic de 2007 avec la hausse du pétrole. 30 ans à 5,49 % fin septembre (plus haut en 5 ans).",
-   "numbers": "5,33 % ; 5,243 % ; 30Y 5,49 %",
-   "why_it_matters": "Renchérit la dette des data centers IA et concurrence les actions de croissance.",
-   "impact": "négatif",
-   "source": "https://www.cnbc.com/2026/10/01/us-treasury-bond-yield.html"
-  },
-  {
-   "date": "2026-09-17",
-   "ticker_or_topic": "MACRO-US",
-   "headline": "Rappel : Fed +25 pb à 3,75-4,00 %, première hausse depuis 2023",
-   "facts": "Vote unanime ; 16 membres sur 18 voient au moins une hausse de plus en 2026 ; PCE 2026 à 3,7 %. ISM manufacturier septembre cité à 56,7 (extrait sans date). ISM services : rien trouvé.",
-   "numbers": "3,75-4,00 % ; 16/18 ; PCE 3,7 % ; ISM 56,7",
-   "why_it_matters": "Cycle de hausse en cours = contexte défavorable aux valorisations IA.",
-   "impact": "négatif",
-   "source": "https://tradingeconomics.com/united-states/interest-rate/news/584300"
-  },
-  {
-   "date": "2026-10-02",
-   "ticker_or_topic": "MACRO-OIL-FX",
-   "headline": "Brent 103,37 $ le matin, ICE Brent vers 101 $, Dated Brent > 120 $ ; WTI clôture 88,06 $",
-   "facts": "Troisième porte-avions US vers le Moyen-Orient ; arrêt des exportations chinoises de carburants. 05/10 : Brent +0,79 % après attaques Houthis sur Aramco.",
-   "numbers": "103,37 $ ; ~101 $ ; >120 $ ; WTI 88,06 $ (-1,90 %)",
-   "why_it_matters": "Inflation et coût des chauffeurs (Uber) ; soutien au réal via Petrobras.",
-   "impact": "à surveiller",
-   "source": "https://fortune.com/article/price-of-oil-10-02-2026/"
-  },
-  {
-   "date": "2026-10-04",
-   "ticker_or_topic": "MACRO-OIL-FX",
-   "headline": "OPEP+ : quotas d'octobre inchangés",
-   "facts": "Arabie saoudite, Russie, Irak, Koweït, Kazakhstan, Algérie, Oman maintiennent les quotas de septembre ; production réelle du Golfe bien en dessous. G7 : libération de réserves d'urgence (date non précisée).",
-   "numbers": "7 pays ; quotas = septembre",
-   "why_it_matters": "Pas de détente de l'offre : risque inflationniste intact pour la Fed.",
-   "impact": "négatif",
-   "source": "https://discoveryalert.com/news/opec-quotas-gulf-shipping-supply-october-2026/"
-  },
-  {
-   "date": "2026-10-02",
-   "ticker_or_topic": "MACRO-OIL-FX",
-   "headline": "DXY 101,93, EUR/USD 1,1256, USD/TWD 31,81, USD/BRL 5,21",
-   "facts": "DXY -0,17 % sur la séance mais troisième semaine de hausse. TWD proche de ses plus bas depuis mai.",
-   "numbers": "101,9281 ; 1,12556 ; 31,811 ; 5,2133",
-   "why_it_matters": "Dollar fort = bénéfices de Nu convertis à moindre valeur ; TWD faible = marges TSMC légèrement meilleures.",
-   "impact": "neutre",
-   "source": "https://tradingeconomics.com/united-states/currency"
-  },
-  {
-   "date": "2026-10-01",
-   "ticker_or_topic": "GEO-UKR",
-   "headline": "Poutine exclut tout cessez-le-feu, y compris énergétique, au forum Valdaï",
-   "facts": "Rejet de la proposition de Zelensky (22-23/09) d'arrêt mutuel des frappes énergétiques.",
-   "numbers": "—",
-   "why_it_matters": "Pas de trêve = demande européenne d'armement maintenue (Rheinmetall) ; une trêve resterait le risque binaire.",
-   "impact": "à surveiller",
-   "source": "https://www.aljazeera.com/news/2026/10/1/russias-putin-rules-out-ceasefire-with-ukraine-during-speech-in-moscow"
-  },
-  {
-   "date": "2026-10-01",
-   "ticker_or_topic": "GEO-UKR",
-   "headline": "Frappes massives russes sur le réseau électrique ; ponts de Kiev visés du 1er au 3 octobre",
-   "facts": "Coupures de courant avant l'hiver. Zelensky dénonce une « nouvelle doctrine » russe sur les cibles civiles et valide un plan de frappes en profondeur pour octobre.",
-   "numbers": "4 jours consécutifs de frappes sur les ponts de Kiev",
-   "why_it_matters": "Escalade = soutien du thème défense.",
-   "impact": "positif",
-   "source": "https://www.cnbc.com/2026/10/01/russia-ukraine-war-energy-power-winter.html"
-  },
-  {
-   "date": "2026-09-24",
-   "ticker_or_topic": "GEO-UKR",
-   "headline": "Washington pousse trêve énergétique, corridor céréalier et trilatéral à Abou Dhabi en octobre",
-   "facts": "Dmitriev devait rencontrer Witkoff et Kushner à New York. Nouvelles sanctions sur la période : rien trouvé.",
-   "numbers": "—",
-   "why_it_matters": "Un trilatéral effectif en octobre serait le catalyseur baissier à surveiller pour Rheinmetall.",
-   "impact": "à surveiller",
-   "source": "https://www.axios.com/2026/09/24/zelensky-ukraine-russia-war-energy-ceasefire-grain"
-  },
-  {
-   "date": "2026-09-28",
-   "ticker_or_topic": "GEO-CN-TW",
-   "headline": "Paquet d'armes de 14 Md$ pour Taïwan toujours gelé après le sommet Trump-Xi de Washington",
-   "facts": "Sommet de 3 jours achevé le 25/09 sans percée. Un responsable de l'US Navy lie le gel aux besoins en munitions du conflit avec l'Iran. APEC / prochaine rencontre : rien trouvé.",
-   "numbers": "14 Md$",
-   "why_it_matters": "Signal lu comme une concession à Pékin : prime de risque géopolitique de TSMC.",
-   "impact": "à surveiller",
-   "source": "https://moderndiplomacy.eu/2026/09/28/taiwan-arms-sales-freeze-xi-trump-summits-1982-communique/"
-  },
-  {
-   "date": "2026-09-29",
-   "ticker_or_topic": "GEO-CN-TW",
-   "headline": "Commerce : « affiliates rule » (Entity List étendue aux filiales à 50 %) ; Lutnick propose un partage 50-50 des puces (30/09)",
-   "facts": "Source secondaire unique. Terres rares : rien trouvé. Section 232 semi-conducteurs : rien de nouveau, cadre du 15/01/2026 (25 % sur certaines puces avancées ; exemption Taïwan 2,5x capacité US en construction).",
-   "numbers": "50 % ; 25 % ; 2,5x",
-   "why_it_matters": "Les exemptions Section 232 restent le filet de sécurité de TSMC et Broadcom ; aucune dégradation cette semaine.",
-   "impact": "neutre",
-   "source": "https://informedclearly.com/en/ai/54192/us-china-ai-chip-war-export-controls-2026"
-  },
-  {
-   "date": "2026-09-29",
-   "ticker_or_topic": "AI-FUNDING",
-   "headline": "Prospectus Anthropic : 518 Md$ d'engagements de calcul, dont 161,2 Md$ envers Broadcom ; perte opérationnelle 8 Md$",
-   "facts": "~80 % fermes et non annulables. Google ≥111,1 Md$, Amazon 110 Md$, Microsoft 31,4 Md$. CA 2025 ~4,59 Md$ ; ventes T2 2026 11,5 Md$. IPO Nasdaq visée après les midterms de novembre (MS, GS, JPM), jusqu'à 100 Md$ ; valorisation ~2 000 Md$ non confirmée.",
-   "numbers": "518 Md$ ; 161,2 Md$ ; 8 Md$ ; 11,5 Md$",
-   "why_it_matters": "Visibilité inédite sur le carnet IA de Broadcom, mais concentration sur un client déficitaire.",
-   "impact": "positif",
-   "source": "https://siliconangle.com/2026/09/29/leaked-anthropic-ipo-filing-reveals-8b-operating-loss-rapid-revenue-growth/"
-  },
-  {
-   "date": "2026-09-30",
-   "ticker_or_topic": "AI-FUNDING",
-   "headline": "OpenAI négocie ≥30 Md$ à ~1 400 Md$ ; IPO repoussée à 2027 au plus tôt",
-   "facts": "Après 122 Md$ à 852 Md$ post-money (31/03/2026). Engagement AWS 100 Md$ sur 8 ans (2 GW Trainium). Revenus ~2 Md$/mois, perte 2026 estimée 14 Md$. Date exacte de l'article : fin septembre.",
-   "numbers": "30 Md$ ; 1 400 Md$ ; 100 Md$ ; 14 Md$",
-   "why_it_matters": "La capacité de levée des labos finance indirectement les commandes Broadcom/TSMC.",
-   "impact": "à surveiller",
-   "source": "https://finance.yahoo.com/technology/ai/articles/openai-targets-30-billion-funding-185008998.html"
-  },
-  {
-   "date": "2026-09-29",
-   "ticker_or_topic": "AI-FUNDING",
-   "headline": "CoreWeave et Nebius en bear market ; CoreWeave -53 % depuis son plus haut",
-   "facts": "CoreWeave : intérêts 640 M$ sur le trimestre, dette/fonds propres 8,94x, dette nette/EBITDA 10,75x (source sans date). Nebius : facilité 775 M$ MUFG SOFR+2,50 % (juillet). Lambda : facilité 1 Md$ (mai). Crusoe : rien trouvé.",
-   "numbers": "-53 % ; 640 M$ ; 10,75x ; 775 M$",
-   "why_it_matters": "Fragilité du maillon néocloud = risque pour la demande de GPU/ASIC en aval (Broadcom, TSMC).",
-   "impact": "négatif",
-   "source": "https://invezz.com/news/2026/09/29/coreweave-and-nebius-stocks-in-a-bear-market-as-ai-bubble-risk-persists/"
-  },
-  {
-   "date": "2026-10-01",
-   "ticker_or_topic": "AI-FUNDING",
-   "headline": "BoE et FMI alertent sur la dette IA : ~450 Md$ émis début septembre, SPV opaques",
-   "facts": "FPC de septembre : émissions doublées vs 2025 ; BoE va examiner les prêts aux data centers. FMI : 159 Md$ d'obligations en 5 mois ; 60 % des capacités prévues pour 2027 pas en construction. Capex 2026 des 5 hyperscalers : 660-690 Md$ (~90 % du cash-flow opérationnel) ; nouvelle annonce cette semaine : rien trouvé.",
-   "numbers": "450 Md$ ; 159 Md$ ; 60 % ; 660-690 Md$",
-   "why_it_matters": "Avec un 10 ans à 5,2 %, c'est le risque macro le plus direct pour Broadcom, TSMC et le Nasdaq 100.",
-   "impact": "négatif",
-   "source": "https://www.datacenterdynamics.com/en/news/uks-bank-of-england-to-probe-data-center-lending-amid-ai-bubble-fears/"
-  },
-  {
-   "date": "2026-10-04",
-   "ticker_or_topic": "NU",
-   "headline": "Présidentielle brésilienne : second tour Flávio Bolsonaro – Lula le 25/10",
-   "facts": "Avec 99,96 % des bureaux dépouillés, Flávio Bolsonaro obtient 47,04 % et Lula 45,15 % des voix valides. Flávio en tête dans 15 unités fédératives sur 27, Lula dans 12. Selon Exame cité par The Rio Times, l'ETF EWZ a bondi d'environ 10 % en échanges de nuit. Vendredi 02/10 l'Ibovespa avait gagné 2,63 % à 192 114,55 points, réal à 5,2133.",
-   "numbers": "47,04 % / 45,15 % ; EWZ env. +10 % overnight ; Ibovespa 192 114,55 (+2,63 % le 02/10) ; BRL 5,2133",
-   "why_it_matters": "Résultat lu comme pro-marché, favorable aux ADR brésiliens et à NU le 05/10 ; second tour serré, le coût du risque reste la variable clé.",
-   "impact": "positif",
-   "source": "https://www.riotimesonline.com/brazil-election-first-round-results-lula-flavio-2026/"
-  },
-  {
-   "date": "2026-10-01",
-   "ticker_or_topic": "NU",
-   "headline": "Rebond après le démenti Monzo : 13,17 $ le 01/10 puis 13,43 $ le 02/10 (à confirmer)",
-   "facts": "Après le 6-K du 30/09, NU monte d'environ 3 % en séance le 01/10 (12,98 $), touche 12,75 $ puis clôture à 13,17 $ selon StocksToTrade. Le 02/10, clôture à 13,43 $ (+1,05 %) selon Ad-hoc-news, Goldman Sachs réitérant Buy. Les deux chiffres ne sont pas parfaitement cohérents entre eux.",
-   "numbers": "13,17 $ (01/10) ; 13,43 $ (02/10), volume 77 962 873, capitalisation env. 65 Md$ ; semaine 28/09–02/10 : env. +9,8 %",
-   "why_it_matters": "Règle de vente « acquisition dilutive > 10 % » non déclenchée ; titre encore sous le niveau d'avant la rumeur (env. 13,59 $).",
-   "impact": "positif",
-   "source": "https://www.ad-hoc-news.de/boerse/news/corporate-news/nu-holdings-stock-gained-1-05-percent-as-goldman-reiterated-buy/70228207"
-  },
-  {
-   "date": "2026-09-28",
-   "ticker_or_topic": "NU",
-   "headline": "Analystes : Rothschild Redburn et Needham Buy 19 $, JPMorgan prudent, Itaú BBA à Market Perform 18 $",
-   "facts": "Rothschild Redburn réitère Buy et 19 $ le 28/09. Needham Buy 19 $ réitéré le 28/09. JPMorgan (via Forbes Brasil) : réaction initiale négative probable si l'opération Monzo était confirmée. BTG Pactual surpris. Itaú BBA (Pedro Leduc) abaisse à Market Perform, objectif 20 → 18 $ (fin 2027), date exacte non confirmée.",
-   "numbers": "Objectifs : 19 $ (Rothschild Redburn, Needham), 18 $ (Itaú BBA) ; consensus 22 analystes 18,64 $",
-   "why_it_matters": "Les arguments d'Itaú BBA (bas revenus, inflation, macroprudentiel) touchent directement la NIM ajustée du risque et les créances 90+.",
-   "impact": "à surveiller",
-   "source": "https://www.investing.com/news/analyst-ratings/rothschild-redburn-reiterates-buy-on-nu-holdings-stock-on-monzo-deal-93CH-4919494"
-  },
-  {
-   "date": "2026-09-29",
-   "ticker_or_topic": "Crédit Brésil (BCB)",
-   "headline": "BCB : défaut record à 5 % en août, 6 % pour les ménages, rotativo 66,2 %",
-   "facts": "Statistiques monétaires et de crédit publiées le 29/09 : défaut du système 5 % (record depuis 2011), personnes physiques 6 % (record), rotativo carte 66,2 % (65,5 % en juillet), consignado privé 10,6 %, taux moyen crédit libre ménages 61,7 % par an, entreprises 3,3 %.",
-   "numbers": "5 % ; 6 % ; 66,2 % ; 10,6 % ; 61,7 %",
-   "why_it_matters": "Le crédit non garanti aux ménages est le cœur du bilan de Nu ; à confronter au ratio 90+ du T3 (règle : > 7,5 % deux trimestres).",
-   "impact": "négatif",
-   "source": "https://tribunadoplanalto.com.br/juros-para-familias-sobem-em-agosto-e-inadimplencia-chega-a-6/"
-  },
-  {
-   "date": "2026-09-30",
-   "ticker_or_topic": "Monzo",
-   "headline": "Monzo : Advent en piste pour une minorité, tour de table > 8 Md£ ou IPO",
-   "facts": "Advent International et d'autres fonds ont tenu des discussions initiales pour une participation minoritaire, conditionnelle à l'échec de la piste Nu ; alternative : tour de table valorisant Monzo au-dessus de 8 Md£ pour l'Europe. Monzo avait mandaté Morgan Stanley et Slaughter & May. Forbes : prix évoqué = 2x la dernière valorisation, 115x le profit avant impôt. Réaction officielle de Monzo/Advent après le démenti : rien trouvé.",
-   "numbers": "8–10 Md£ ; > 8 Md£ ; 115x profit avant impôt",
-   "why_it_matters": "Rappelle la sensibilité du marché à une acquisition dilutive ; le rachat de 1 Md$ reste la référence.",
-   "impact": "neutre",
-   "source": "https://www.scottishfinancialnews.com/articles/takeover-talks-for-monzo-heat-up-as-advent-international-in-talks-for-minority-stake"
-  },
-  {
-   "date": "2026-09-29",
-   "ticker_or_topic": "NU",
-   "headline": "Vélez en direct avec Westcol à São Paulo : priorité Colombie et IA",
-   "facts": "Live du 29/09 au bureau de Nubank à São Paulo : produits premium à venir en Colombie, IA comme terrain de jeu des entrepreneurs latino-américains. Pas de commentaire sur Monzo rapporté.",
-   "numbers": "Colombie : 5 millions de clients (mai 2026)",
-   "why_it_matters": "Confirme la priorité LatAm ; rien trouvé de nouveau sur Nubank N.A., le Mexique ou le rachat d'actions sur la semaine.",
-   "impact": "neutre",
-   "source": "https://ecosistemastartup.com/velez-y-westcol-nubank-ia-y-un-shark-tank-colombiano/"
-  },
-  {
-   "date": "2026-09-29",
-   "ticker_or_topic": "Desenrola",
-   "headline": "Desenrola Adimplentes prolongé jusqu'au 26/10",
-   "facts": "Renégociation jusqu'à 15 000 R$ pour travailleurs informels, taux max 1,99 % par mois ; faible participation des banques privées, portabilité ajoutée.",
-   "numbers": "15 000 R$ ; 1,99 %/mois ; 26/10/2026",
-   "why_it_matters": "Effet marginal sur Nu ; signal d'activisme gouvernemental sur le crédit à la consommation avant le second tour.",
-   "impact": "neutre",
-   "source": "https://portaldeprefeitura.com.br/brasil/desenrola-renegociacao-de-dividas-de-adimplentes-prorrogada/633062/"
-  },
-  {
-   "date": "2026-09-17",
-   "ticker_or_topic": "Selic",
-   "headline": "Selic à 13,75 % ; prochain Copom les 3-4 novembre",
-   "facts": "Copom des 15-16/09 : Selic à 13,75 % à partir du 17/09. Prochaine décision les 3-4/11/2026. Focus : Selic 13,75 % fin 2026, inflation 2026 à 4,90 %.",
-   "numbers": "13,75 % ; 4,90 %",
-   "why_it_matters": "Selic élevée : soutien à la NIM mais pression sur les défauts.",
-   "impact": "à surveiller",
-   "source": "https://renovainvest.com.br/?p=106745"
-  },
-  {
-   "date": "2026-09-29",
-   "ticker_or_topic": "RHM",
-   "headline": "Armin Papperger achète 525 actions Rheinmetall",
-   "facts": "Déclaration EQS-DD : achat par le PDG de 525 actions au prix moyen de 950,3768 € (950,35–950,40 €). La fondation Sara Georgi a aussi acheté le 02/10/2026 pour 238 706,60 €.",
-   "numbers": "525 actions ; 498 947,80 € ; prix moyen 950,38 € ; 238 706,60 € (fondation, 02/10)",
-   "why_it_matters": "Signal de confiance du dirigeant au niveau actuel avant le T3 (05/11) et le CMD (25-27/11) ; sans valeur prédictive sur marge ou carnet.",
-   "impact": "positif",
-   "source": "https://www.boerse-online.de/dpa-afx/eqs-dd-rheinmetall-aktiengesellschaft-deutsch-554918.html"
-  },
-  {
-   "date": "2026-10-02",
-   "ticker_or_topic": "RHM",
-   "headline": "Premier satellite militaire de Rheinmetall Italia et Argotec lancé par SpaceX",
-   "facts": "Satellite de surveillance de l'espace aérien pour la défense aérienne militaire lancé le 01/10/2026 depuis les États-Unis ; communiqué du 02/10/2026.",
-   "numbers": "1 satellite ; montant non communiqué",
-   "why_it_matters": "Diversification vers l'espace et la défense aérienne, segments favorisés par le marché en 2026 ; pas d'impact chiffré sur le carnet potentiel.",
-   "impact": "positif",
-   "source": "https://www.rheinmetall.com/en/media/news"
-  },
-  {
-   "date": "2026-10-01",
-   "ticker_or_topic": "RHM",
-   "headline": "Ouverture d'un nouveau site à Skoppum (Norvège)",
-   "facts": "Extension des capacités de développement et de production en Norvège. Montant non précisé.",
-   "numbers": "n.d.",
-   "why_it_matters": "Capacités supplémentaires en Europe du Nord ; capex pesant à court terme sur le FCF opérationnel 2026 (règle de vente à suivre).",
-   "impact": "neutre",
-   "source": "https://www.rheinmetall.com/en/media/news"
-  },
-  {
-   "date": "2026-09-30",
-   "ticker_or_topic": "RHM",
-   "headline": "American Rheinmetall : commande MK93 de 20,7 M$ de l'US Army",
-   "facts": "3 104 nouveaux affûts MK93 et modernisation de 245 systèmes ; livraisons de 2026 à octobre 2027.",
-   "numbers": "20,7 M$ ; 3 104 neufs ; 245 modernisés",
-   "why_it_matters": "Contrat marginal face à la cible de carnet potentiel 100-120 Md€.",
-   "impact": "neutre",
-   "source": "https://www.rheinmetall.com/en/media/news-watch/news/2026/09/2026-09-30-american-rheinmetall-supplies-mk93-mounts-to-the-us-army"
-  },
-  {
-   "date": "2026-10-08",
-   "ticker_or_topic": "Budget fédéral 2027",
-   "headline": "Einzelplan 14 (défense) examiné en commission du budget le 08/10 ; 109,7 Md€ au projet",
-   "facts": "Projet 2027 : 109,7 Md€ au budget régulier de la défense (82,7 Md€ en 2026) + 29,9 Md€ du Sondervermögen = env. 139,6 Md€. Première lecture le 09/09/2026. 47e séance de la commission du budget le 08/10/2026, rapporteur Andreas Mattfeldt (CDU/CSU).",
-   "numbers": "109,7 Md€ ; 29,9 Md€ ; 139,6 Md€ ; +27 Md€ vs 2026",
-   "why_it_matters": "Le chiffre officiel dépasse les 105,8 Md€ du dossier et le seuil de vente de 100 Md€ ; adoption finale attendue en novembre, à vérifier.",
-   "impact": "positif",
-   "source": "https://www.bmvg.de/de/aktuelles/rekordetat-verteidigung-haushaltsdebatte-6149920"
-  },
-  {
-   "date": "2026-09-23",
-   "ticker_or_topic": "Bundeswehr 25-Mio-Vorlagen",
-   "headline": "Douze dossiers d'acquisition approuvés en commission du budget, sans Rheinmetall en tête",
-   "facts": "Roquettes 70 mm, AMRAAM, Fennek, F125, SALIS 2027-2031 etc. Rheinmetall non cité comme contractant principal. Boxer Arminius (≈ 12,4 Md€) attendu en décembre.",
-   "numbers": "12 dossiers ; Arminius ≈ 12,4 Md€",
-   "why_it_matters": "Le processus d'approbation avance mais sans contrat RHM identifié cette semaine ; le gros contrat Boxer reste à venir pour la cible de carnet fin 2026.",
-   "impact": "à surveiller",
-   "source": "https://esut.de/2026/09/meldungen/streitkraefte/75038/zwoelf-25-mio-bundeswehr/"
-  },
-  {
-   "date": "2026-10-02",
-   "ticker_or_topic": "Secteur défense / BofA",
-   "headline": "BofA abaisse Renk, relève Saab et Hensoldt ; Rheinmetall cité parmi les titres délaissés (date exacte non confirmée)",
-   "facts": "Renk ramené à Neutre, objectif 62,50 → 42,50 € ; Saab relevé à Achat, objectif 720 SEK ; Hensoldt relevé. Rheinmetall −36,5 % depuis le 01/01 contre +4,4 % Hensoldt, −22,2 % Renk, +25,9 % TKMS.",
-   "numbers": "Renk 42,50 € ; Saab 720 SEK ; RHM −36,5 % YTD",
-   "why_it_matters": "La rotation du terrestre vers capteurs et défense aérienne continue de peser sur RHM.",
-   "impact": "négatif",
-   "source": "https://www.boerse-express.com/news/articles/renk-gestutzt-hensoldt-befoerdert-die-bofa-teilt-europas-ruestung-in-zwei-lager-949897"
-  },
-  {
-   "date": "2026-10-02",
-   "ticker_or_topic": "KNDS",
-   "headline": "IPO KNDS toujours suspendue, cotation 2026 encore jugée possible",
-   "facts": "IPO retirée le 01/07/2026 ; le PDG Jean-Paul Alary garde l'option d'une cotation en 2026 si les conditions le permettent. Valorisation évoquée 15,5–22,4 Md€.",
-   "numbers": "15,5–22,4 Md€ ; 15 à 20 Md€ de flux potentiellement absorbés",
-   "why_it_matters": "Le report évite une ponction de flux sur le secteur ; neutre à légèrement favorable pour RHM.",
-   "impact": "neutre",
-   "source": "https://ionanalytics.com/insights/mergermarket/knds-ipo-in-the-balance-with-all-eyes-on-rheinmetall-recovery/"
-  },
-  {
-   "date": "2026-10-02",
-   "ticker_or_topic": "RHM analystes",
-   "headline": "Objectifs de cours RHM : JPMorgan 1 350 € (Neutre), Jefferies 2 060 € (Achat), consensus 1 635 € (dates non confirmées)",
-   "facts": "Aucune nouvelle note datée de la semaine trouvée. 6 achats, 1 conserver, 0 vente sur 8 maisons ; moyenne 1 860,26 € selon aktien.guide.",
-   "numbers": "1 350 € ; 2 060 € ; 1 635 € ; 1 860,26 €",
-   "why_it_matters": "L'écart cours/objectifs traduit le doute sur la conversion du carnet en marge et en FCF.",
-   "impact": "à surveiller",
-   "source": "https://www.finanzen.net/analyse/rheinmetall_neutral-jp_morgan_chase__co__1098070"
-  },
-  {
-   "date": "2026-10-05",
-   "ticker_or_topic": "Ukraine / SAFE / Papperger",
-   "headline": "Rien trouvé pour la semaine : cessez-le-feu, livraisons Ukraine, allocations SAFE, interviews Papperger",
-   "facts": "Aucun article daté du 28/09 au 05/10/2026 trouvé sur ces sujets. Prêt UE 90 Md€ (déc. 2025) et prêt SAFE France 15,1 Md€ (juin 2026) restent les derniers éléments indexés.",
-   "numbers": "n.d.",
-   "why_it_matters": "Aucune règle de vente liée à un accord de paix ou au budget n'est déclenchée.",
-   "impact": "neutre",
-   "source": "https://www.yahoo.com/news/articles/eu-leaders-agree-90-billion-021041283.html"
-  },
-  {
-   "date": "2026-10-01",
-   "ticker_or_topic": "ANTHROPIC",
-   "headline": "Prospectus Anthropic : Broadcom prête jusqu'à 42 Md$ en billets convertibles",
-   "facts": "Reuters a obtenu le prospectus d'IPO d'Anthropic. Broadcom s'engage à prêter jusqu'à 42 Md$ (convertibles en actions) pour financer environ un tiers d'un engagement TPU de 125,2 Md$ sur cinq ans ; option de faire entrer un partenaire financier. Engagements d'infrastructure jusqu'à 518 Md$.",
-   "numbers": "42 Md$ ; 125,2 Md$ sur 5 ans ; 518 Md$",
-   "why_it_matters": "Financement circulaire : le CA IA 115 Md$ fy2027 dépend d'un client financé par Broadcom ; à rapprocher des règles trésorerie < 15 Md$ et dette > 65 Md$.",
-   "impact": "à surveiller",
-   "source": "https://aiweekly.co/alerts/broadcoms-ipo-filing-reveals-42b-convertible-note-facility-to-finance"
-  },
-  {
-   "date": "2026-10-02",
-   "ticker_or_topic": "AVGO",
-   "headline": "Broadcom monte un paquet de dette de 60 Md$ pour l'infrastructure IA",
-   "facts": "Tranche senior sécurisée de 42 Md$ arrangée par des banques et tranche junior de 18 Md$ menée par Blackstone, pour l'infrastructure IA de clients dont Anthropic.",
-   "numbers": "60 Md$ = 42 Md$ senior + 18 Md$ junior",
-   "why_it_matters": "La répartition du risque (dette portée, garanties) détermine l'exposition aux règles garanties de valeur résiduelle > 20 Md$ et dette > 65 Md$.",
-   "impact": "à surveiller",
-   "source": "https://gurufocus.com/news/9107393/broadcom-avgo-arranges-60-billion-debt-package-to-boost-ai-infrastructure"
-  },
-  {
-   "date": "2026-10-04",
-   "ticker_or_topic": "AVGO",
-   "headline": "Craintes de financement circulaire ; six clients XPU seulement",
-   "facts": "24/7 Wall St. note que le prêt de 42 Md$ sert largement à acheter du matériel Broadcom. Broadcom compte six clients XPU ; la concentration client et un endettement significatif figurent parmi les risques listés.",
-   "numbers": "42 Md$ ; 6 clients XPU",
-   "why_it_matters": "Concentration client au coeur de la thèse ; le retrait d'un client XPU nommé est une règle de vente.",
-   "impact": "négatif",
-   "source": "https://247wallst.com/investing/2026/10/04/broadcoms-massive-42-billion-chip-buying-deal-with-anthropic-raises-circular-financing-worries/"
-  },
-  {
-   "date": "2026-10-01",
-   "ticker_or_topic": "AVGO",
-   "headline": "AVGO -2,1 % à 343,64 $",
-   "facts": "Repli jeudi 1er octobre.",
-   "numbers": "343,64 $ ; -2,1 %",
-   "why_it_matters": "Réaction limitée à la publication du prospectus Anthropic.",
-   "impact": "neutre",
-   "source": "https://www.marketbeat.com/instant-alerts/price-broadcom-nasdaq-avgo-shares-down-21-heres-what-happened-2026-10-01/"
-  },
-  {
-   "date": "2026-10-02",
-   "ticker_or_topic": "AVGO",
-   "headline": "AVGO +3,35 % à 355,14 $",
-   "facts": "Rebond vendredi (+11,50 $), jour de l'annonce du paquet de dette de 60 Md$. Du 30/09 au 02/10 : +1,1 %.",
-   "numbers": "355,14 $ ; +3,35 % ; +11,50 $",
-   "why_it_matters": "Le marché accueille favorablement le financement de la demande IA ; variation hebdomadaire complète non disponible.",
-   "impact": "positif",
-   "source": "https://invezz.com/news/2026/10/02/why-broadcom-stock-is-gaining-today/"
-  },
-  {
-   "date": "2026-09-30",
-   "ticker_or_topic": "ANTHROPIC",
-   "headline": "IPO Anthropic : marketing mi-octobre, cotation autour des mid-terms, > 2 000 Md$ visés",
-   "facts": "S-1 confidentiel déposé le 01/06/2026. Marketing attendu mi-octobre au plus tôt, cotation visée vers les élections de novembre ; taille comparée à SpaceX (Bloomberg). Prospectus : CA 2025 ≈ 4,6 Md$, perte opérationnelle > 8 Md$, perte nette 42 Md$ (≈ 34 Md$ non-cash), CA T2 2026 11,5 Md$ ; run-rate > 65 Md$ fin juillet. Date exacte des articles non confirmée.",
-   "numbers": "> 2 000 Md$ ; CA 2025 4,6 Md$ ; perte nette 42 Md$ ; T2 2026 11,5 Md$ ; run-rate 65 Md$",
-   "why_it_matters": "La solvabilité du premier client XPU conditionne la visibilité sur les 115 Md$ fy2027.",
-   "impact": "à surveiller",
-   "source": "https://www.gulf-times.com/article/732616/business/anthropic-ipo-launch-said-to-shift-towards-mid-october/amp"
-  },
-  {
-   "date": "2026-06-05",
-   "ticker_or_topic": "ANTHROPIC",
-   "headline": "Rappel : SPV Apollo/Blackstone 35 Md$ garanti par Broadcom ; 71 Md$ de dette SPV cumulée",
-   "facts": "SPV clôturé le 05/06/2026 (A1 ≈ 6 Md$, A2 ≈ 24-25 Md$, B ≈ 4,5 Md$) achetant des TPU loués à Anthropic ; Broadcom garantit A1 et A2 via un accord de valeur résiduelle. Forkast rapporte 71 Md$ de dette de location de puces via SPV en 60 jours (date exacte n.d.). Hors fenêtre, contexte.",
-   "numbers": "35 Md$ ; ≈ 30 Md$ de tranches seniors garanties ; 71 Md$",
-   "why_it_matters": "Possible dépassement du seuil garanties de valeur résiduelle > 20 Md$ ; à vérifier dans les 10-Q/10-K de Broadcom.",
-   "impact": "à surveiller",
-   "source": "https://fourweekmba.com/ai-apollo-blackstone-broadcom-anthropic-compute-securitization/"
-  },
-  {
-   "date": "2026-09-29",
-   "ticker_or_topic": "OPENAI",
-   "headline": "OpenAI cherche 30 Md$ à 1 400 Md$ ; IPO repoussée à 2027",
-   "facts": "Tour relais d'au moins 30 Md$ à ≈ 1 400 Md$ pré-money ; Sam Altman juge le moment mal avisé pour une IPO ; run-rate proche de 70 Md$.",
-   "numbers": "30 Md$ ; 1 400 Md$ ; run-rate ≈ 70 Md$",
-   "why_it_matters": "OpenAI est le client des 10 GW d'accélérateurs Broadcom (H2 2026-2029) ; son accès au capital soutient ces volumes.",
-   "impact": "neutre",
-   "source": "https://invezz.com/in/news/2026/09/29/openai-seeks-dollar30b-funding-at-dollar14t-valuation-as-ipo-plans-slip-report/"
-  },
-  {
-   "date": "2026-09-28",
-   "ticker_or_topic": "NVDA",
-   "headline": "NVIDIA : rachat porté à 235 Md$ ; GTC Washington du 30/11 au 03/12",
-   "facts": "Autorisation supplémentaire de 150 Md$ de rachats (total restant 235 Md$). Lancement de l'Open Agent Safety Platform. Keynote Jensen Huang le 01/12/2026.",
-   "numbers": "150 Md$ ; 235 Md$",
-   "why_it_matters": "Repère pour la règle rachats nets < dilution d'AVGO et pour le calendrier concurrentiel.",
-   "impact": "neutre",
-   "source": "https://www.cnbc.com/2026/09/28/nvidia-releases.html"
-  },
-  {
-   "date": "2026-10-06",
-   "ticker_or_topic": "MRVL",
-   "headline": "Journée investisseurs Marvell le 06/10/2026",
-   "facts": "Marvell (accord Google jusqu'à 12,2 Md$ du 19/08/2026 ; custom silicon ≈ 1,5 Md$/an, +20 % fy2027 puis doublement fy2028) présente sa stratégie.",
-   "numbers": "12,2 Md$ ; 1,5 Md$",
-   "why_it_matters": "Concurrent direct sur les ASIC custom ; surveiller les annonces de nouveaux clients.",
-   "impact": "à surveiller",
-   "source": "https://www.marketbeat.com/originals/marvells-new-ai-chip-deals-capture-wall-streets-attention"
-  },
-  {
-   "date": "2026-09-30",
-   "ticker_or_topic": "AMD",
-   "headline": "OpenAI déploiera les racks AMD Helios au H2 2026 (date exacte n.d.)",
-   "facts": "Première phase d'un accord allant jusqu'à 6 GW ; Helios = 72 GPU MI455X/MI450 par rack.",
-   "numbers": "6 GW ; 72 GPU",
-   "why_it_matters": "Concurrence pour le budget calcul d'OpenAI aux côtés des XPU Broadcom.",
-   "impact": "à surveiller",
-   "source": "https://www.datacenterdynamics.com/en/news/openai-to-deploy-amd-helios-rackscale-system-as-first-part-of-up-to-6gw-partnership/"
-  },
-  {
-   "date": "2026-09-30",
-   "ticker_or_topic": "AVGO",
-   "headline": "Analystes : Citi 515 $, DA Davidson 350 $ Neutre, consensus 505 $ (septembre, dates n.d.)",
-   "facts": "Citi (Atif Malik) relève à 515 $ ; DA Davidson (Gil Luria) abaisse à 350 $ Neutre ; 30 analystes, objectif moyen 505 $.",
-   "numbers": "515 $ ; 350 $ ; 505 $",
-   "why_it_matters": "Écart d'objectifs reflétant le débat valorisation vs exécution.",
-   "impact": "neutre",
-   "source": "https://www.benzinga.com/quote/avgo/price-targets"
-  },
-  {
-   "date": "2026-09-30",
-   "ticker_or_topic": "AVGO",
-   "headline": "VMware / UE : plainte CISPE, pas de mesures provisoires",
-   "facts": "Plainte CISPE déposée en mars 2026 ; en septembre 2026, aucune mesure provisoire imposée.",
-   "numbers": "n.d.",
-   "why_it_matters": "Le logiciel VMware soutient la marge brute guidée à 73 %.",
-   "impact": "neutre",
-   "source": "https://simplywall.st/stocks/us/semiconductors/nasdaq-avgo/broadcom/news/eu-complaint-over-vmware-licensing-puts-broadcoms-software-s"
-  },
-  {
-   "date": "2026-09-20",
-   "ticker_or_topic": "ANTHROPIC",
-   "headline": "Anthropic envisagerait un nouveau modèle face à GPT-6 Astra",
-   "facts": "Rapport du 20/09 ; Fable 5.1 publié fin août/début septembre.",
-   "numbers": "n.d.",
-   "why_it_matters": "La course aux modèles soutient la demande TPU/XPU.",
-   "impact": "neutre",
-   "source": "https://digg.com/ai/o61pjxs3"
-  },
-  {
-   "date": "2026-09-30",
-   "ticker_or_topic": "META",
-   "headline": "Meta MTIA (Broadcom) : production en septembre, 7 GW vers 14 GW ; discussions TPU Ironwood",
-   "facts": "Production MTIA prévue en septembre 2026 (TechCrunch 09/07) ; capacité Meta 7 GW en 2026, 14 GW en 2027 ; Meta en discussions avancées pour des TPU Ironwood.",
-   "numbers": "7 GW ; 14 GW",
-   "why_it_matters": "Meta est un client XPU nommé ; sa montée en volume soutient les 115 Md$ fy2027.",
-   "impact": "positif",
-   "source": "https://techcrunch.com/2026/07/09/metas-new-ai-chips-will-begin-production-in-september/"
-  },
-  {
-   "date": "2026-10-02",
-   "ticker_or_topic": "UBER",
-   "headline": "UBER clôture la semaine à 68,11 $, près du bas de 52 semaines",
-   "facts": "Clôture 02/10 à 68,11 $ (+0,34 %) après 67,88 $ le 01/10 ; -0,6 % vs 68,51 $ du 30/09. Une source donne 68,09 $. Pré-marché 05/10 : 68,39 $ vers 9h00 ET selon un extrait (horodatage non vérifiable).",
-   "numbers": "68,11 $ ; 67,88 $ ; -0,6 % sur 30/09-02/10 ; pré-marché 68,39 $",
-   "why_it_matters": "Niveau de cours qui traduit un scepticisme fort sur la thèse (réservations > 18 %, robotaxi en partenaire) ; aucune règle de vente n'est liée au cours.",
-   "impact": "à surveiller",
-   "source": "https://www.macrotrends.net/stocks/charts/UBER/uber-technologies/stock-price-history"
-  },
-  {
-   "date": "2026-09-30",
-   "ticker_or_topic": "UBER",
-   "headline": "Bernstein maintient Surperformance, objectif 95 $",
-   "facts": "Note reliant la valorisation au déploiement des véhicules autonomes via l'app Uber. Consensus MarketBeat au 03/10 : achat modéré, 43 analystes, objectif moyen 103,03 $.",
-   "numbers": "Objectif 95 $ ; consensus 103,03 $ ; 43 analystes",
-   "why_it_matters": "Le marché valorise toujours Uber comme agrégateur de robotaxis ; l'écart d'environ 40 % avec le cours mesure le doute à lever au T3.",
-   "impact": "positif",
-   "source": "https://ad-hoc-news.de/boerse/news/corporate-news/uber-technologies-stock-gains-analyst-support-from-av-plans/70221732"
-  },
-  {
-   "date": "2026-10-02",
-   "ticker_or_topic": "DHER",
-   "headline": "Delivery Hero clôture à 36,27 €, 12,6 % sous l'offre de 41,50 €",
-   "facts": "Clôture 02/10 à 36,27 € (+0,22 %). Offre Uber 41,50 € en numéraire, acceptation jusqu'au 05/11/2026, seuil 50 % + 1 ; Uber détient ~25 % + ~12 % en instruments, Prosus (~17 %) engagé. Aucun taux d'acceptation, aucune décision CE/Bundeskartellamt/KFTC/Turquie, aucune émission obligataire trouvés pour la semaine.",
-   "numbers": "36,27 € ; décote 12,6 % ; 41,50 € ; 05/11/2026",
-   "why_it_matters": "La décote reflète un doute sur l'exécution (antitrust, clôture S2 2027) ; la règle levier brut > 2,5x EBITDA post-Delivery Hero reste à surveiller faute de détail sur le financement.",
-   "impact": "à surveiller",
-   "source": "https://www.finanzen.net/aktien/delivery_hero-aktie"
-  },
-  {
-   "date": "2026-09-29",
-   "ticker_or_topic": "WAYMO",
-   "headline": "Waymo dépasse 150 000 miles autonomes à Philadelphie",
-   "facts": "Tests avec spécialiste à bord depuis fin 2025, pas de date commerciale. Contexte septembre 2026 : ~14 métropoles, ~4 000 véhicules, ~500 000 trajets payants/semaine ; lancements Denver, San Diego, Tampa (01/09) et Las Vegas (14/09).",
-   "numbers": "150 000 miles ; ~4 000 véhicules ; ~500 000 trajets/semaine",
-   "why_it_matters": "Chaque ville Waymo hors app Uber teste la règle « perte de part dans les villes Waymo » ; exclusivité Austin/Atlanta finit début 2028.",
-   "impact": "à surveiller",
-   "source": "https://www.axios.com/local/philadelphia/2026/09/29/waymo-robotaxi-philadelphia-autonomous"
-  },
-  {
-   "date": "2026-10-02",
-   "ticker_or_topic": "TSLA",
-   "headline": "Cybercab : flotte autorisée à Austin passée de 45 à 169 véhicules début octobre",
-   "facts": "Environ 200 véhicules Tesla aux États-Unis portent la mention « sans superviseur » en zones géorepérées. La NHTSA exigeait des réponses sous serment avant le 30/09 (ordonnance du 10/09) sur l'auto-certification du Cybercab ; aucune suite publiée trouvée.",
-   "numbers": "45 -> 169 véhicules ; ~200 sans superviseur",
-   "why_it_matters": "Tesla est le seul grand acteur robotaxi hors de l'app Uber ; la cadence à Austin est à comparer aux volumes Uber dans la ville.",
-   "impact": "négatif",
-   "source": "https://finance.biggo.com/news/97430a57-bc70-4faa-adbe-8dc0e82ec64f"
-  },
-  {
-   "date": "2026-10-01",
-   "ticker_or_topic": "LYFT",
-   "headline": "Lyft paie 272,5 M$ en Californie pour requalification ; Uber continue de contester",
-   "facts": "Règlement record avec l'État et trois villes (chauffeurs 2016-2020), au moins 237 M$ aux chauffeurs. Lyft a aussi lancé le 30/09 son app pour voyageurs nord-américains en Europe (Barcelone, Hambourg, puis Rome, Londres, Paris, Berlin, Athènes, Varsovie en octobre).",
-   "numbers": "272,5 M$ ; 237 M$",
-   "why_it_matters": "Ordre de grandeur pour le dossier californien d'Uber (plus gros que Lyft) ; charge ponctuelle possible.",
-   "impact": "négatif",
-   "source": "https://techcrunch.com/2026/10/01/lyft-is-paying-272-5m-to-settle-lawsuit-over-how-it-classified-drivers"
-  },
-  {
-   "date": "2026-10-01",
-   "ticker_or_topic": "DASH",
-   "headline": "DoorDash Dash Forward : agent IA dans Apple Messages, drones, DashOS",
-   "facts": "Commande par SMS via agent IA (liste d'attente US ouverte le 30/09), DashBuddy pour livreurs, DoorDash Air (drones), service de retours.",
-   "numbers": "n.d.",
-   "why_it_matters": "Pression concurrentielle sur Uber Eats aux États-Unis pendant qu'Uber concentre son capital sur Delivery Hero.",
-   "impact": "négatif",
-   "source": "https://simplywall.st/stocks/us/consumer-services/nasdaq-dash/doordash/news/doordash-dash-unveils-ai-drone-delivery-and-dashos-at-dash-f"
-  },
-  {
-   "date": "2026-10-02",
-   "ticker_or_topic": "REG",
-   "headline": "Massachusetts : minimum de 32,50 $/heure et avantages pour les chauffeurs VTC",
-   "facts": "Tribune critique du dispositif (salaire minimum, congés maladie, avantages). Chiffre à confirmer auprès d'une source officielle.",
-   "numbers": "32,50 $/heure",
-   "why_it_matters": "Coût unitaire des trajets et marge d'EBITDA sur réservations (règle < 4 %).",
-   "impact": "à surveiller",
-   "source": "https://townhall.com/news/amy-curtis/2026/10/02/ma-uber-and-lift-payment-healthcare-n2683918"
-  },
-  {
-   "date": "2026-10-05",
-   "ticker_or_topic": "REG",
-   "headline": "Réglementation : rien trouvé daté de la semaine (FTC Uber One, directive UE, Brésil, UK TVA, Inde)",
-   "facts": "FTC/Uber One : procédure en cours, requête de rejet partiellement rejetée (date non précisée). Directive UE plateformes : transposition au 02/12/2026. Brésil : audience STF « le 1er octobre » mentionnée sans année vérifiable. UK TVA, Inde : rien trouvé.",
-   "numbers": "02/12/2026",
-   "why_it_matters": "Risque réglementaire latent sur le modèle de chauffeurs indépendants ; pas d'événement nouveau cette semaine.",
-   "impact": "neutre",
-   "source": "https://www.personneltoday.com/hr/platform-workers-legislation-uber/"
-  },
-  {
-   "date": "2026-10-02",
-   "ticker_or_topic": "2330",
-   "headline": "2330 stable à 2 500 NT$, TAIEX record à 48 475,74",
-   "facts": "Le TAIEX finit à un nouveau plus haut (+0,25 %) ; TSMC clôture inchangé à 2 500 NT$, en consolidation, rotation vers les petits semi-conducteurs OTC (+2,41 %).",
-   "numbers": "TAIEX 48 475,74 (+122,25 pts) ; volume 898,17 Mrd NT$ ; 2330 = 2 500,00 NT$",
-   "why_it_matters": "Titre à plat avant les ventes de septembre (08/10) et les résultats (15/10) ; aucune règle de vente touchée.",
-   "impact": "neutre",
-   "source": "https://focustaiwan.tw/business/202610020014"
-  },
-  {
-   "date": "2026-10-05",
-   "ticker_or_topic": "TSM",
-   "headline": "TrendForce : cinq thèmes avant les résultats du 15/10",
-   "facts": "Discussions avec Terafab (Tesla/SpaceX/xAI), hausses de prix 2027 et course A14 contre Intel en tête des sujets attendus.",
-   "numbers": "Hausses estimées : nœuds avancés +5–10 %, packaging avancé +10–15 %, matures +3–10 % (Economic Daily News)",
-   "why_it_matters": "Variables clés de la thèse (prix 2027, péage IA) et risque Intel 14A à surveiller.",
-   "impact": "à surveiller",
-   "source": "https://www.trendforce.com/news/2026/10/05/news-tsmc-earnings-preview-terafab-talks-price-hikes-and-a14-intel-race-lead-five-key-themes/"
-  },
-  {
-   "date": "2026-10-15",
-   "ticker_or_topic": "TSM",
-   "headline": "Consensus T3 2026 : CA 45,8 Mrd $, marge brute 66,5 %",
-   "facts": "Guidance CA 44,6–45,8 Mrd $, marge brute 65–67 %, marge op. 56–58 %. Consensus en haut de fourchette. Conférence le 15/10 à 14 h Taïwan.",
-   "numbers": "CA 45,8 Mrd $ ; MB 66,5 % ; MO 57,1 % ; BPA ADR ≈ 4,39 $ ; HPC 66 % du CA plaquettes T2 2026",
-   "why_it_matters": "Seuil marge brute > 65 % au cœur de la thèse ; peu de place pour une bonne surprise.",
-   "impact": "à surveiller",
-   "source": "https://www.hudson-labs.com/research/tsmc-q3-2026-earnings-preview-tsm-revenue-and-margins"
-  },
-  {
-   "date": "2026-10-08",
-   "ticker_or_topic": "TSM",
-   "headline": "Ventes de septembre attendues le 08/10 ; août à +53,3 % a/a",
-   "facts": "Septembre non publié. Août 2026 : 514,806 Mrd NT$ (+53,3 % a/a, +10,1 % m/m). Cumul janvier–août 3 386,87 Mrd NT$ (+39,3 %).",
-   "numbers": "514,806 Mrd NT$ ; ≈ 16,3 Mrd $ ; cumul +39,3 %",
-   "why_it_matters": "Cumul cohérent avec l'objectif ≈ +40 % en dollars ; règle de vente (< 15 %) très loin.",
-   "impact": "positif",
-   "source": "https://focustaiwan.tw/business/202609100014"
-  },
-  {
-   "date": "2026-07-22",
-   "ticker_or_topic": "TSM",
-   "headline": "Prix 2027 : hausses jusqu'à 10 % à partir de janvier (Nikkei)",
-   "facts": "Hausses de 5 à 10 % sur nœuds avancés et matures ; ≤ 7 nm (77 % du CA T2 2026) au plein 10 % ; prime 10–15 % sur volumes IA additionnels.",
-   "numbers": "+5–10 % ; prime +10–15 %",
-   "why_it_matters": "Levier principal pour tenir la marge brute > 65 % malgré la dilution des fabs étrangères.",
-   "impact": "positif",
-   "source": "https://gigazine.net/gsc_news/en/20260722-tsmc-price-hike/"
-  },
-  {
-   "date": "2026-09-14",
-   "ticker_or_topic": "TSM",
-   "headline": "CoWoS : 130 000 plaquettes/mois fin 2026, doublement visé fin 2028 ; 2 nm à 110 000/mois mi-2027",
-   "facts": "TrendForce rapporte les objectifs de capacité 2 nm et CoWoS ; estimations fin 2027 divergentes (170 000 à 200 000+).",
-   "numbers": "CoWoS ≈ 130 000 wpm fin 2026 → 260 000 fin 2028 ; N2 110 000 wpm mi-2027",
-   "why_it_matters": "Le goulot CoWoS est le péage de la chaîne IA et soutient la part de marché fonderie > 65 %.",
-   "impact": "positif",
-   "source": "https://www.trendforce.com/news/2026/09/14/news-tsmc-reportedly-targets-22-2nm-16-3nm-capacity-boost-by-mid-2027-cowos-to-double-by-2028/"
-  },
-  {
-   "date": "2026-10-01",
-   "ticker_or_topic": "TSM",
-   "headline": "Arizona : engagement porté à 265 Mrd $ ; site texan à l'étude (Bloomberg, source secondaire)",
-   "facts": "Bloomberg aurait rapporté le 01/10 l'examen d'un campus au Texas. Section 232 : imports hors droits jusqu'à 2,5x la capacité en construction, puis 1,5x la production US. P2 : équipements octobre 2026, mini-ligne T2 2027, volume T4 2027.",
-   "numbers": "265 Mrd $ ; ratios 2,5x / 1,5x",
-   "why_it_matters": "Capex hors Taïwan pèse sur la marge ; à comparer au capex 2026 de 60–64 Mrd $ et à la règle capex > 50 % du CA.",
-   "impact": "à surveiller",
-   "source": "https://shattered.io/tsmc-texas-fab-265-billion-arizona-2026/"
-  },
-  {
-   "date": "2026-09-28",
-   "ticker_or_topic": "GEO-TW",
-   "headline": "Sommet Trump–Xi : Taïwan absent de la fiche US ; paquet d'armes de 14 Mrd $ en suspens",
-   "facts": "Pékin dit avoir demandé à Washington de s'opposer à l'indépendance de Taïwan. L'ambassadeur US affirme que Trump a proposé des armes à Xi ; Trump dément le 28/09. Budget défense taïwanais supplémentaire de 145,7 Mrd NT$ approuvé, total > 1 000 Mrd NT$.",
-   "numbers": "14 Mrd $ ; 145,7 Mrd NT$ (4,6 Mrd $)",
-   "why_it_matters": "Risque Taïwan non couvert par les règles de vente ; le marché n'a pas réagi (TAIEX record le 02/10).",
-   "impact": "à surveiller",
-   "source": "https://fortune.com/2026/09/28/trump-xi-summit-taiwan-weapons-sale/"
-  },
-  {
-   "date": "2026-09-03",
-   "ticker_or_topic": "GEO-TW",
-   "headline": "Lutnick : « 40 % » de la production taïwanaise vers les États-Unis ; rien de nouveau sur le « 50/50 »",
-   "facts": "Dernière déclaration datée trouvée : 03/09/2026. Le 50/50 (septembre 2025) avait été rejeté par Taipei. Rien trouvé du 28/09 au 05/10.",
-   "numbers": "40 %",
-   "why_it_matters": "Pression politique sur la localisation de la production, facteur de dilution de la marge.",
-   "impact": "neutre",
-   "source": "https://www.taiwanplus.com/news/newscasts/taiwanplus-news/260903022/lutnick-says-taiwan-moving-40percentage-of-chip-production-to-us-sept-3-2026"
-  },
-  {
-   "date": "2026-10-05",
-   "ticker_or_topic": "SAMSUNG",
-   "headline": "Samsung Taylor : capacité 2 nm déjà réservée (Tesla, Broadcom, Arm) (date de l'article non vérifiée ; relevé le 05/10)",
-   "facts": "Essais fin septembre/début octobre, production de masse 2027, 50 000 plaquettes/mois ; Fab 2 lancée fin 2026 pour 2030. Date de l'article non vérifiée.",
-   "numbers": "50 000 wpm",
-   "why_it_matters": "Premier test concret de la règle part de marché fonderie < 65 %, sans volume avant 2027.",
-   "impact": "à surveiller",
-   "source": "https://www.trendforce.com/news/?p=63790"
-  },
-  {
-   "date": "2026-10-05",
-   "ticker_or_topic": "INTC",
-   "headline": "Intel 14A : jalon PDK promis cet automne à Apple et Terafab (date de l'article non vérifiée ; relevé le 05/10)",
-   "facts": "Un analyste évoque Apple en 18A pour des M bas de gamme ; engagements fermes attendus fin 2026–mi 2027. Date non vérifiée.",
-   "numbers": "n.d.",
-   "why_it_matters": "Risque pour la part de marché fonderie et le pouvoir de prix 2027, mais rien de signé.",
-   "impact": "à surveiller",
-   "source": "https://aiweekly.co/alerts/intel-promises-apple-and-terafab-a-14a-pdk-milestone-this-fall"
-  },
-  {
-   "date": "2026-10-02",
-   "ticker_or_topic": "QQQ",
-   "headline": "Record du Nasdaq après un rapport emploi faible",
-   "facts": "Nasdaq Composite +1,19 % à 27 190,86 points (record). QQQ clôture à 749,58 $ (+1,14 %), au-dessus de l'ancien plus haut de 748,63 $. Le rapport emploi de septembre, plus faible qu'attendu, a réduit les anticipations de hausse des taux.",
-   "numbers": "Nasdaq 27 190,86 (+1,19 %) ; QQQ 749,58 $ (+1,14 %) ; VIX 15,40 (−6,03 %)",
-   "why_it_matters": "L'indice de référence est à son record ; la poche IA du portefeuille (35 % contre 38 % pour l'indice, Broadcom/TSMC) profite du rebond des semi-conducteurs.",
-   "impact": "positif",
-   "source": "https://alphaseeker84.substack.com/p/weekly-market-update-week-ending"
-  },
-  {
-   "date": "2026-09-30",
-   "ticker_or_topic": "MARKET",
-   "headline": "Micron : trimestre record et prévisions au-dessus",
-   "facts": "Chiffre d'affaires du T4 fiscal 54,23 Md$ (41,46 Md$ au trimestre précédent), BPA non-GAAP 33,42 $, marge brute GAAP 86,8 %. Prévision T1 FY27 : 61,5 Md$ ± 1,5 Md$.",
-   "numbers": "CA 54,23 Md$ ; BPA 33,42 $ ; guidance 61,5 Md$",
-   "why_it_matters": "La demande mémoire liée à l'IA reste explosive, bon signal pour TSMC et Broadcom.",
-   "impact": "positif",
-   "source": "https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000018/a2026q4ex991-pressrelease.htm"
-  },
-  {
-   "date": "2026-10-02",
-   "ticker_or_topic": "MARKET",
-   "headline": "Tesla +5,2 % sur ses livraisons ; Nvidia record intrajournalier",
-   "facts": "Tesla a livré 486 532 véhicules au T3 contre 463 000 attendus ; titre +5,20 %. Nvidia a touché 237,55 $ en séance (capitalisation 5 700 Md$). Apple +1,02 %.",
-   "numbers": "TSLA +5,20 % ; NVDA 237,55 $ ; AAPL +1,02 %",
-   "why_it_matters": "La hausse de l'indice est concentrée sur quelques méga-capitalisations absentes du portefeuille.",
-   "impact": "à surveiller",
-   "source": "https://vistapglobal.com/weekly-market-summary-october-2-2026-stocks-finish-higher-as-soft-jobs-data-reframes-fed-outlook-amd-avgo-f-googl-hpp-lpl-nvda-ser-soc-tsla/"
-  },
-  {
-   "date": "2026-09-30",
-   "ticker_or_topic": "MARKET",
-   "headline": "T3 2026 : Nasdaq +2,5 %, S&P 500 +2 %, Dow −2,7 %",
-   "facts": "En septembre : S&P −0,5 %, Dow −4,3 %, Nasdaq +1,9 %. Trois quarts des composantes du S&P 500 ont baissé en septembre sous l'effet de la hausse des rendements. Le 30/09, S&P 7 651,54 (−0,3 %), Dow 50 906,05 (−0,9 %), Nasdaq 26 861,06 (+0,2 %), PCE sous les attentes.",
-   "numbers": "T3 : Nasdaq +2,5 %, S&P +2 %, Dow −2,7 % ; 10 ans US 5,29 %",
-   "why_it_matters": "Un 10 ans à 5,3 % pèse sur les multiples de croissance (Nu, Uber) et accentue la concentration sur l'IA.",
-   "impact": "neutre",
-   "source": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-september-30-dow-sp-500-nasdaq-080339262.html"
-  },
-  {
-   "date": "2026-09-28",
-   "ticker_or_topic": "MARKET",
-   "headline": "Lundi de repli : Nasdaq −0,92 %",
-   "facts": "S&P −0,77 % à 7 683,93, Dow −0,67 % à 51 481,72, Nasdaq −248,34 pts à 26 820,38. Réévaluation des valorisations, rendements et pétrole en hausse.",
-   "numbers": "Nasdaq 26 820,38 (−0,92 %) ; S&P 7 683,93 ; Dow 51 481,72",
-   "why_it_matters": "Le pétrole cher soutient la thématique défense/énergie (Rheinmetall) mais pèse sur Uber.",
-   "impact": "négatif",
-   "source": "https://armenpress.am/en/article/1261626"
-  },
-  {
-   "date": "2026-09-29",
-   "ticker_or_topic": "MARKET",
-   "headline": "Séance d'attente : Nasdaq −0,09 %",
-   "facts": "Dow −0,26 % à 51 349,92, S&P −0,17 % à 7 670,84, Nasdaq −0,09 % à 26 797,54.",
-   "numbers": "Nasdaq 26 797,54 ; S&P 7 670,84 ; Dow 51 349,92",
-   "why_it_matters": "Marché sans tendance avant le PCE et l'emploi ; pas d'écart notable avec le portefeuille.",
-   "impact": "neutre",
-   "source": "https://armenpress.am/en/article/1261626"
-  },
-  {
-   "date": "2026-10-01",
-   "ticker_or_topic": "MARKET",
-   "headline": "Début de T4 timide",
-   "facts": "S&P +0,2 % à 7 666,45 (fin de trois séances de baisse), Dow +20,51 pts à 50 926,56, Nasdaq +10,53 pts à 26 871,60.",
-   "numbers": "Nasdaq 26 871,60 (+0,04 %) ; S&P 7 666,45 ; Dow 50 926,56",
-   "why_it_matters": "Divergence : les puces montent alors que le marché obligataire se tend.",
-   "impact": "neutre",
-   "source": "https://www.lanacion.com.ar/usa/how-major-us-stock-indexes-fared-thursday-1012026-nid01102026/"
-  },
-  {
-   "date": "2026-10-02",
-   "ticker_or_topic": "MARKET",
-   "headline": "Fed : hausse de 25 pb en septembre, encore une attendue en 2026",
-   "facts": "Au FOMC de septembre, la Fed a relevé ses taux de 25 pb à l'unanimité. La projection médiane implique une hausse supplémentaire de 25 pb en 2026 puis une pause en 2027. Fin septembre, les marchés de prédiction donnaient 34 % à 69 % de probabilité à une hausse les 27-28/10 ; ces paris ont reculé après l'emploi du 02/10.",
-   "numbers": "Taux médian attendu 4,1 % fin 2026 ; probabilité de hausse en octobre 34-69 %",
-   "why_it_matters": "Une Fed en resserrement pénalise les valeurs à duration longue (poche IA, Nu).",
-   "impact": "à surveiller",
-   "source": "https://newsquawk.com/headlines/week-in-focus-4-9th-october-2026-fomc-minutes-us-ism-services-pmi-opec-canadian-jobs-and-ecb-minutes"
-  },
-  {
-   "date": "2026-10-02",
-   "ticker_or_topic": "MARKET",
-   "headline": "Emploi septembre : consensus +90 000, publié plus faible qu'attendu",
-   "facts": "Consensus FactSet avant publication : +90 000 emplois, chômage 4,1 % (août : +162 000, 4,1 %). Le chiffre publié le 02/10 a été plus faible qu'attendu ; valeur exacte non retrouvée.",
-   "numbers": "Attendu +90 000 ; chômage 4,1 %",
-   "why_it_matters": "Un emploi qui ralentit limite le risque de hausse des taux, favorable à l'indice.",
-   "impact": "à surveiller",
-   "source": "https://insight.factset.com/total-nonfarm-payrolls-for-september-2026-are-projected-to-rise-by-90000"
-  },
-  {
-   "date": "2026-10-05",
-   "ticker_or_topic": "3661.TW",
-   "headline": "Alchip : rien d'important cette semaine, T3 le 30/10",
-   "facts": "Aucune nouvelle marquante trouvée du 28/09 au 05/10/2026. Pas de CA mensuel de septembre ni d'information sur un second client dans les extraits. Résultats du T3 attendus le 30/10/2026.",
-   "numbers": "CA T2 2026 : 241,7 M$ (+82,6 % t/t, −18,7 % a/a)",
-   "why_it_matters": "Le déclencheur (second client > 20 % du CA ou consensus 2028 > 15 %) reste sans nouvelle.",
-   "impact": "neutre",
-   "source": "https://finance.yahoo.com/markets/stocks/articles/alchip-technologies-ltd-tpe-3661-010414151.html"
-  },
-  {
-   "date": "2026-10-02",
-   "ticker_or_topic": "ALNY",
-   "headline": "Alnylam : enquête pour fraude boursière poursuivie, Cantor reste Neutre",
-   "facts": "Un cabinet d'avocats annonce le 02/10/2026 poursuivre son enquête après la baisse de la guidance TTR 2026 du 30/07/2026. Cantor Fitzgerald réitère Neutre le 30/09/2026. Phase 1 d'ALN-HTT02 présentée le 23/10/2026.",
-   "numbers": "Guidance TTR 2026 réduite d'environ 200 M$",
-   "why_it_matters": "Le déclencheur suppose une guidance relevée tenue au T3 ; la guidance a au contraire été abaissée et le T3 n'est pas publié.",
-   "impact": "à surveiller",
-   "source": "https://globenewswire.com/news-release/2026/10/02/3374059/0/en/securities-fraud-investigation-into-alnylam-pharmaceuticals-inc-alny-continues-shareholders-who-lost-money-urged-to-contact-the-law-offices-of-frank-r-cruz.html"
-  },
-  {
-   "date": "2026-10-02",
-   "ticker_or_topic": "NVDA",
-   "headline": "NVIDIA : record historique à 237,88 $, Morgan Stanley top pick, rachat de 150 Md$",
-   "facts": "Nouveau plus haut intraday le 02/10/2026, capitalisation supérieure à 5 700 Md$. Morgan Stanley remet le titre en top pick semi-conducteurs avec un objectif de 300 $. Le conseil autorise 150 Md$ de rachats supplémentaires.",
-   "numbers": "237,88 $ intraday ; objectif 300 $ ; rachats autorisés 235 Md$ au total ; clôture exacte non trouvée",
-   "why_it_matters": "Seuil d'entrée à 200,05 $ : le titre en est très éloigné.",
-   "impact": "positif",
-   "source": "https://www.investing.com/news/stock-market-news/nvidia-breaks-to-alltime-high-of-23787-driven-by-buyback-analyst-upgrade-and-ai-demand-93CH-4930287"
-  },
-  {
-   "date": "2026-10-02",
-   "ticker_or_topic": "CATL",
-   "headline": "CATL : action H à 476,80 HKD, plan d'actionnariat salarié, T3 le 20/10",
-   "facts": "L'action H clôture à 476,80 HKD le 02/10/2026 (−1,53 %), sous pression d'un plan d'actionnariat salarié utilisant des actions A déjà rachetées. Conseil du 20/10/2026 pour approuver les résultats du T3.",
-   "numbers": "476,80 HKD (−1,53 %) ; 28 319 044 actions A, 0,612 % du capital, 5 960 salariés",
-   "why_it_matters": "La cotation de Hong Kong est active ; la croissance 2027 attend une confirmation au T3 le 20/10.",
-   "impact": "à surveiller",
-   "source": "https://www.tipranks.com/news/company-announcements/catl-proposes-2026-employee-stock-ownership-plan-using-repurchased-a-shares"
-  },
-  {
-   "date": "2026-10-02",
-   "ticker_or_topic": "SE",
-   "headline": "Sea : DBS dégrade à Conserver, objectif 105 $, clôture 95,19 $",
-   "facts": "DBS passe de Achat à Conserver et ramène son objectif de 148 $ à 105 $, citant les investissements de Shopee (subventions, livraison en une heure, logistique) qui pourraient freiner les marges 2027. Clôture du 02/10/2026 à 95,19 $.",
-   "numbers": "Objectif 148 $ → 105 $ ; clôture 95,19 $ ; titre à environ −23 % depuis le pic d'août 2026",
-   "why_it_matters": "Sea ne remplace Uber que si la règle de vente d'Uber se déclenche ; sans nouvelle sur ce point, mais le profil de marge se dégrade.",
-   "impact": "négatif",
-   "source": "https://www.investing.com/news/stock-market-news/dbs-cuts-sea-target-as-shopee-spending-weighs-on-profit-growth-4929596"
-  },
-  {
-   "date": "2026-10-02",
-   "ticker_or_topic": "LLY",
-   "headline": "Eli Lilly : données EASD (Foundayo, retatrutide, eloraTZP) et approbation FDA de Jaypirca",
-   "facts": "Au congrès EASD de Milan (28/09–02/10/2026), Lilly présente ACHIEVE-4 (Foundayo), retatrutide à 80 semaines et la phase 2 d'eloraTZP. La FDA approuve le 02/10/2026 une indication supplémentaire pour Jaypirca (LLC/LLP non traitée). Cours à 1 139,35 $ le 02/10/2026. T3 le 29/10/2026.",
-   "numbers": "MACE-4 −16 % (Foundayo) ; retatrutide −20,8 % de poids à 80 semaines ; eloraTZP −17 % vs −10 % en 16 semaines ; cours 1 139,35 $",
-   "why_it_matters": "Pipeline obésité renforcé, mais aucune donnée trouvée sur le consensus 2028 (> 20 %) qui conditionne l'entrée.",
-   "impact": "positif",
-   "source": "https://www.marketscreener.com/news/eli-lilly-and-company-presents-new-data-on-foundayo-retatrutide-and-eloratzp-at-easd-2026-ce785bdddd89f427"
-  },
-  {
-   "date": "2026-10-02",
-   "ticker_or_topic": "ENR",
-   "headline": "Siemens Energy : pre-close call confirme les objectifs, clôture 145,42 €",
-   "facts": "Le pre-close call du 30/09/2026 confirme les objectifs 2025/26 : croissance comparable de 14 à 16 %, marge avant éléments spéciaux de 10 à 12 % (haut de fourchette), bénéfice net d'environ 4 Md€, flux de trésorerie avant impôts d'environ 8 Md€. Clôture du 02/10/2026 à 145,42 € (+2,03 %). Résultats annuels le 11/11/2026.",
-   "numbers": "145,42 € ; croissance 14–16 % ; marge 10–12 % ; bénéfice net ~4 Md€ ; FCF ~8 Md€",
-   "why_it_matters": "Seuil d'entrée à 100 € : le titre reste très au-dessus.",
-   "impact": "positif",
-   "source": "https://www.finanzen.net/nachricht/aktien/siemens_energy-aktie-kursbewegung-02-10-2026-11202038"
-  }
- ],
- "calendar": [
-  {
-   "date": "2026-10-05",
-   "event": "Réaction des marchés brésiliens au premier tour du 04/10 (ADR en pré-marché : Nu +10,5 %)",
-   "ticker": "NU",
-   "source": "https://uk.investing.com/news/stock-market-news/us-shares-of-brazilian-companies-rally-after-first-round-election-result-4894588"
-  },
-  {
-   "date": "2026-10-05",
-   "event": "ISM services de septembre (attendu 55,1 contre 55,4)",
-   "ticker": "MACRO",
-   "source": "https://newsquawk.com/headlines/week-in-focus-4-9th-october-2026-fomc-minutes-us-ism-services-pmi-opec-canadian-jobs-and-ecb-minutes"
-  },
-  {
-   "date": "2026-10-05",
-   "event": "Début de la période de silence TSMC (05 au 14/10, information du dossier, non confirmée)",
-   "ticker": "TSM",
-   "source": "research/deepdives/TSM.md"
-  },
-  {
-   "date": "2026-10-06",
-   "event": "Journée investisseurs Marvell (concurrent ASIC)",
-   "ticker": "AVGO",
-   "source": "https://www.marketbeat.com/originals/marvells-new-ai-chip-deals-capture-wall-streets-attention"
-  },
-  {
-   "date": "2026-10-07",
-   "event": "Minutes du FOMC de septembre",
-   "ticker": "MACRO",
-   "source": "https://www.schaeffersresearch.com/content/news/2026/10/01/the-week-ahead-fomc-meeting-minutes-take-center-stage"
-  },
-  {
-   "date": "2026-10-08",
-   "event": "Ventes mensuelles de septembre de TSMC (cumul janvier-août : +39,3 %)",
-   "ticker": "TSM",
-   "source": "https://www.akrostec.com/indices/KGAIS/events/2026-10-08t00-00-00z-taiwan-semiconductor-manufacturing-co-ltd-tsm-financial-results-ad302831"
-  },
-  {
-   "date": "2026-10-08",
-   "event": "Commission du budget du Bundestag : Einzelplan 14 (défense 2027, 109,7 Md€ + 29,9 Md€ Sondervermögen)",
-   "ticker": "RHM",
-   "source": "https://www.bundestag.de/resource/blob/1221976/to_047-048.pdf"
-  },
-  {
-   "date": "2026-10-08",
-   "event": "Résultats T3 PepsiCo",
-   "ticker": "MARKET",
-   "source": "https://www.stockhub.kr/en/earnings-calendar"
-  },
-  {
-   "date": "2026-10-09",
-   "event": "Confiance des consommateurs (Michigan)",
-   "ticker": "MACRO",
-   "source": "https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar"
-  },
-  {
-   "date": "2026-10-09",
-   "event": "Bourse de Taipei fermée (fête nationale)",
-   "ticker": "TSM",
-   "source": "https://www.tradinghours.com/markets/twse/holidays"
-  },
-  {
-   "date": "2026-10-13",
-   "event": "Résultats JPMorgan, Goldman Sachs, Wells Fargo, Citigroup",
-   "ticker": "MARKET",
-   "source": "https://www.digrin.com/stocks/earnings_calendar/2026-10-13"
-  },
-  {
-   "date": "2026-10-14",
-   "event": "CPI de septembre (8 h 30, heure de New York)",
-   "ticker": "MACRO",
-   "source": "https://newsquawk.com/headlines/week-in-focus-4-9th-october-2026-fomc-minutes-us-ism-services-pmi-opec-canadian-jobs-and-ecb-minutes"
-  },
-  {
-   "date": "2026-10-14",
-   "event": "Résultats Bank of America, Morgan Stanley, BlackRock",
-   "ticker": "MARKET",
-   "source": "https://www.digrin.com/stocks/earnings_calendar/2026-10-13"
-  },
-  {
-   "date": "2026-10-15",
-   "event": "Résultats T3 de TSMC et guidance T4 (conférence 14 h Taïwan) : marge brute > 65 %, capex 2026, prix 2027, guidance 2027",
-   "ticker": "TSM",
-   "source": "https://investor.tsmc.com/schinese/quarterly-results"
-  },
-  {
-   "date": "2026-10-15",
-   "event": "Lancement du marketing de l'IPO d'Anthropic (mi-octobre au plus tôt, date non confirmée)",
-   "ticker": "AVGO",
-   "source": "https://www.gulf-times.com/article/732616/business/anthropic-ipo-launch-said-to-shift-towards-mid-october/amp"
-  },
-  {
-   "date": "2026-10-20",
-   "event": "Conseil de CATL pour approuver les résultats du T3 (hors fenêtre)",
-   "ticker": "CATL",
-   "source": "https://www.tipranks.com/news/company-announcements/catl-sets-october-board-meeting-to-approve-third-quarter-results"
-  },
-  {
-   "date": "2026-10-25",
-   "event": "Second tour de la présidentielle brésilienne : Flávio Bolsonaro contre Lula (hors fenêtre)",
-   "ticker": "NU",
-   "source": "https://www.cnn.com/2026/10/04/americas/brazil-president-elections-2026-latam-intl"
-  },
-  {
-   "date": "2026-10-27",
-   "event": "Réunion du FOMC (27-28/10 ; probabilité de statu quo 83,9 % au 02/10, hors fenêtre)",
-   "ticker": "MACRO",
-   "source": "https://www.cnbc.com/2026/10/02/fed-rate-hike-odds-decline-after-september-jobs-report.html"
-  }
- ]
+  "as_of": "2026-10-06",
+  "prices": [
+    {
+      "ticker": "NU",
+      "close_2026_09_30": 12.66,
+      "close_2026_10_02": 13.43,
+      "close_latest": 15.18,
+      "date_latest": "2026-10-05",
+      "change_pct": 19.91,
+      "source": "https://www.cnn.com/markets/stocks/NU ; https://finance.yahoo.com/quote/NU/ (extraits de pages de cotation ; +13,03 % le 05/10 confirme 13,43 $ le 02/10)"
+    },
+    {
+      "ticker": "RHM",
+      "close_2026_09_30": 956.4,
+      "close_2026_10_02": 959.8,
+      "close_latest": 980.2,
+      "date_latest": "2026-10-05",
+      "change_pct": 2.49,
+      "source": "https://www.boerse.de/aktien/Rheinmetall-Aktie/DE0007030009 (extrait, source secondaire, +2,43 %) ; 971,80 € à 16 h 28 selon https://www.finanzen.ch/nachrichten/aktien/rheinmetall-aktie-kursbewegung-05-10-2026-1035061928 ; la clôture du 02/10 était probablement 956,5-956,9 € et non 959,80 €"
+    },
+    {
+      "ticker": "AVGO",
+      "close_2026_09_30": 351.19,
+      "close_2026_10_02": 355.14,
+      "close_latest": 362.51,
+      "date_latest": "2026-10-05",
+      "change_pct": 3.22,
+      "source": "https://www.marketbeat.com/instant-alerts/price-broadcom-nasdaq-avgo-stock-jumps-21-time-to-buy-2026-10-05/ ; https://www.fxleaders.com/news/2026/10/05/broadcom-stock-forecast-avgo-anthropic-ai-deal-400/"
+    },
+    {
+      "ticker": "UBER",
+      "close_2026_09_30": 68.51,
+      "close_2026_10_02": 68.11,
+      "close_latest": 69.48,
+      "date_latest": "2026-10-05",
+      "change_pct": 1.42,
+      "source": "https://stockanalysis.com/stocks/uber/ (extrait : +1,37 $, +2,01 %) ; 69,53 $ en séance selon https://www.benzinga.com/trading-ideas/movers/26/10/62171621/uber-stock-rises-whats-going-on"
+    },
+    {
+      "ticker": "TSM",
+      "close_2026_09_30": 456.19,
+      "close_2026_10_02": 472.78,
+      "close_latest": 485.8,
+      "date_latest": "2026-10-05",
+      "change_pct": 6.49,
+      "source": "https://www.investing.com/equities/taiwan-semicond.manufacturing-co-historical-data (extrait) ; https://www.fxleaders.com/news/2026/10/05/new-record-in-tsm-stock-eyeing-500-as-tsmc-explores-role-in-musk-terafab/"
+    },
+    {
+      "ticker": "2330.TW",
+      "close_2026_09_30": null,
+      "close_2026_09_29": 2475.0,
+      "close_2026_10_02": 2500.0,
+      "close_latest": 2575.0,
+      "date_latest": "2026-10-05",
+      "change_pct": 4.04,
+      "note": "Clôture du 30/09 non trouvée (environ 2 470 NT$ par déduction) ; variation calculée du 29/09 au 05/10 ; 06/10 : 2 585 NT$",
+      "source": "https://www.taipeitimes.com/News/biz/archives/2026/10/06/2003865447 ; https://money.udn.com/money/story/5607/9795621 ; https://finance.ettoday.net/news/3249946"
+    },
+    {
+      "ticker": "QQQ",
+      "close_2026_09_30": 739.77,
+      "close_2026_10_02": 749.58,
+      "close_latest": 756.2,
+      "date_latest": "2026-10-05",
+      "change_pct": 2.22,
+      "source": "https://www.investing.com/etfs/powershares-qqqq-historical-data (extrait : +6,62 $, +0,88 %) ; autre extrait : 755,89 $ (+0,87 %), à confirmer"
+    }
+  ],
+  "items": [
+    {
+      "date": "2026-10-05",
+      "ticker_or_topic": "MACRO-BR",
+      "headline": "Flávio Bolsonaro 47,03 % / Lula 45,16 % : second tour le 25 octobre",
+      "facts": "Dépouillement TSE à 99,99 % des sections. Aucun candidat à 50 %. Flávio devance Lula alors que les sondages le donnaient second ; analystes (Reuters) évoquent des votes de protestation.",
+      "numbers": "47,03 % ; 45,16 % ; second tour 25/10/2026",
+      "why_it_matters": "Le marché associe Flávio à un ajustement budgétaire et une Selic plus basse, scénario favorable à Nu ; second tour serré = volatilité du réal.",
+      "impact": "à surveiller",
+      "source": "https://www.riotimesonline.com/brazil-election-first-round-results-lula-flavio-2026/"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker_or_topic": "MACRO-BR",
+      "headline": "Pré-marché US : Nu +10,5 %, Itaú et Bradesco +9 %, EWZ +8 à 10 %",
+      "facts": "ADR brésiliens en forte hausse en pré-marché lundi. EWZ +8,72 % à 41,52 $ dimanche soir (Estado de Minas) ; 42,12 $ selon SBT. Ouverture au comptant du lundi : rien trouvé de chiffré. Clôture du 05/10 : voir l'élément « NU clôture à 15,18 $ ».",
+      "numbers": "Nu +10,5 % ; Itaú/Bradesco > +9 % ; EWZ ~+10 %",
+      "why_it_matters": "Nu réagit plus fort que les banques traditionnelles : bêta politique élevé dans les deux sens.",
+      "impact": "positif",
+      "source": "https://uk.investing.com/news/stock-market-news/us-shares-of-brazilian-companies-rally-after-first-round-election-result-4894588"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker_or_topic": "MACRO-BR",
+      "headline": "Ibovespa +2,63 % à 192 114,55 points vendredi, réal à 5,21",
+      "facts": "Dernière séance avant le vote. Rio Times rappelle un écart d'environ 10 points entre Selic et taux US.",
+      "numbers": "192 114,55 pts ; USD/BRL 5,2133",
+      "why_it_matters": "Niveau de référence pour mesurer la réaction post-premier tour.",
+      "impact": "neutre",
+      "source": "https://www.riotimesonline.com/brazil-election-markets-real-ibovespa-adrs-2026/"
+    },
+    {
+      "date": "2026-10-03",
+      "ticker_or_topic": "MACRO-BR",
+      "headline": "JPMorgan : avec Flávio et des réformes, taux neutres à 6 % réel / 10 % nominal",
+      "facts": "MSCI Brazil +0,25 % en moyenne chaque jour où Flávio progressait dans les sondages. Itaú BBA, XP, BTG post-premier tour : rien trouvé.",
+      "numbers": "6 % réel ; 10 % nominal ; +0,25 %/jour",
+      "why_it_matters": "Une Selic à 10 % réduirait le coût du risque et soutiendrait le crédit chez Nu ; scénario, pas prévision.",
+      "impact": "à surveiller",
+      "source": "https://www.cnbc.com/2026/10/03/lula-or-bolsonaro-wall-street-braces-for-two-wildly-different-results-in-brazil-election.html"
+    },
+    {
+      "date": "2026-10-04",
+      "ticker_or_topic": "MACRO-BR",
+      "headline": "Abstention record depuis 1998 (21,08 %) ; PL en tête au Sénat ; Tarcísio réélu à SP",
+      "facts": "Participation 78,92 %. PL mène pour 19 des 54 sièges du Sénat, MDB 7, PT 5. Tarcísio réélu dès le premier tour avec 62,7 %.",
+      "numbers": "21,08 % ; 19/54 ; 62,7 %",
+      "why_it_matters": "Un Sénat à droite conditionne la faisabilité d'un ajustement budgétaire après janvier 2027.",
+      "impact": "à surveiller",
+      "source": "https://www.riotimesonline.com/brazil-election-turnout-surprises-2026/"
+    },
+    {
+      "date": "2026-10-01",
+      "ticker_or_topic": "MACRO-BR",
+      "headline": "Dollar à 5,2264 R$, plus haut de clôture en six mois",
+      "facts": "Clôture du jeudi 01/10 : dollar +0,83 % ; Ibovespa de retour vers 187 000 points.",
+      "numbers": "5,2264 ; +0,83 %",
+      "why_it_matters": "Le réal n'avait pas pré-intégré le résultat, d'où le rattrapage des ADR.",
+      "impact": "négatif",
+      "source": "https://exame.com/invest/mercados/ibovespa-ibov-fechamento-01-10-2026/"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker_or_topic": "MACRO-US",
+      "headline": "Emploi septembre : +29 000 (vs 84 000), chômage 4,2 %",
+      "facts": "Rapport BLS publié normalement. 10 ans d'abord à 5,18 % (-6 pb), puis selon version mise à jour CNBC +5 pb à 5,281 % en fin de séance ; clôture exacte à confirmer. CORRECTION : CNBC (05/10) donne 5,307 % « +3 pb » lundi, ce qui valide une clôture du 02/10 vers 5,28 % (version 5,281 %), pas 5,18 %.",
+      "numbers": "+29 000 ; 4,2 % ; 10Y 5,18 %-5,281 %",
+      "why_it_matters": "Consommation (Uber) fragilisée mais hausse de la Fed moins probable : soutien aux multiples du Nasdaq 100.",
+      "impact": "à surveiller",
+      "source": "https://www.cnbc.com/2026/10/02/jobs-report-september-2026.html"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker_or_topic": "MACRO-US",
+      "headline": "Probabilité de statu quo Fed le 28/10 : 83,9 % (CME FedWatch)",
+      "facts": "Contre 35,8 % le 25/09. Kalshi : hausse à 18 % contre ~70 % une semaine plus tôt. Minutes du FOMC : rien trouvé.",
+      "numbers": "83,9 % ; 35,8 % ; 18 %",
+      "why_it_matters": "Report d'une hausse = soulagement pour Broadcom, TSMC, Nasdaq 100.",
+      "impact": "positif",
+      "source": "https://www.cnbc.com/2026/10/02/fed-rate-hike-odds-decline-after-september-jobs-report.html"
+    },
+    {
+      "date": "2026-10-01",
+      "ticker_or_topic": "MACRO-US",
+      "headline": "10 ans US à 5,33 % en séance, plus haut depuis 2002 ; clôture 5,243 %",
+      "facts": "Dépasse le pic de 2007 avec la hausse du pétrole. 30 ans à 5,49 % fin septembre (plus haut en 5 ans).",
+      "numbers": "5,33 % ; 5,243 % ; 30Y 5,49 %",
+      "why_it_matters": "Renchérit la dette des data centers IA et concurrence les actions de croissance.",
+      "impact": "négatif",
+      "source": "https://www.cnbc.com/2026/10/01/us-treasury-bond-yield.html"
+    },
+    {
+      "date": "2026-09-17",
+      "ticker_or_topic": "MACRO-US",
+      "headline": "Rappel : Fed +25 pb à 3,75-4,00 %, première hausse depuis 2023",
+      "facts": "Vote unanime ; 16 membres sur 18 voient au moins une hausse de plus en 2026 ; PCE 2026 à 3,7 %. ISM manufacturier septembre cité à 56,7 (extrait sans date). ISM services : rien trouvé.",
+      "numbers": "3,75-4,00 % ; 16/18 ; PCE 3,7 % ; ISM 56,7",
+      "why_it_matters": "Cycle de hausse en cours = contexte défavorable aux valorisations IA.",
+      "impact": "négatif",
+      "source": "https://tradingeconomics.com/united-states/interest-rate/news/584300"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker_or_topic": "MACRO-OIL-FX",
+      "headline": "Brent 103,37 $ le matin, ICE Brent vers 101 $, Dated Brent > 120 $ ; WTI clôture 88,06 $",
+      "facts": "Troisième porte-avions US vers le Moyen-Orient ; arrêt des exportations chinoises de carburants. 05/10 : Brent +0,79 % après attaques Houthis sur Aramco.",
+      "numbers": "103,37 $ ; ~101 $ ; >120 $ ; WTI 88,06 $ (-1,90 %)",
+      "why_it_matters": "Inflation et coût des chauffeurs (Uber) ; soutien au réal via Petrobras.",
+      "impact": "à surveiller",
+      "source": "https://fortune.com/article/price-of-oil-10-02-2026/"
+    },
+    {
+      "date": "2026-10-04",
+      "ticker_or_topic": "MACRO-OIL-FX",
+      "headline": "OPEP+ : quotas d'octobre inchangés",
+      "facts": "Arabie saoudite, Russie, Irak, Koweït, Kazakhstan, Algérie, Oman maintiennent les quotas de septembre ; production réelle du Golfe bien en dessous. G7 : libération de réserves d'urgence (date non précisée).",
+      "numbers": "7 pays ; quotas = septembre",
+      "why_it_matters": "Pas de détente de l'offre : risque inflationniste intact pour la Fed.",
+      "impact": "négatif",
+      "source": "https://discoveryalert.com/news/opec-quotas-gulf-shipping-supply-october-2026/"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker_or_topic": "MACRO-OIL-FX",
+      "headline": "DXY 101,93, EUR/USD 1,1256, USD/TWD 31,81, USD/BRL 5,21",
+      "facts": "DXY -0,17 % sur la séance mais troisième semaine de hausse. TWD proche de ses plus bas depuis mai.",
+      "numbers": "101,9281 ; 1,12556 ; 31,811 ; 5,2133",
+      "why_it_matters": "Dollar fort = bénéfices de Nu convertis à moindre valeur ; TWD faible = marges TSMC légèrement meilleures.",
+      "impact": "neutre",
+      "source": "https://tradingeconomics.com/united-states/currency"
+    },
+    {
+      "date": "2026-10-01",
+      "ticker_or_topic": "GEO-UKR",
+      "headline": "Poutine exclut tout cessez-le-feu, y compris énergétique, au forum Valdaï",
+      "facts": "Rejet de la proposition de Zelensky (22-23/09) d'arrêt mutuel des frappes énergétiques.",
+      "numbers": "—",
+      "why_it_matters": "Pas de trêve = demande européenne d'armement maintenue (Rheinmetall) ; une trêve resterait le risque binaire.",
+      "impact": "à surveiller",
+      "source": "https://www.aljazeera.com/news/2026/10/1/russias-putin-rules-out-ceasefire-with-ukraine-during-speech-in-moscow"
+    },
+    {
+      "date": "2026-10-01",
+      "ticker_or_topic": "GEO-UKR",
+      "headline": "Frappes massives russes sur le réseau électrique ; ponts de Kiev visés du 1er au 3 octobre",
+      "facts": "Coupures de courant avant l'hiver. Zelensky dénonce une « nouvelle doctrine » russe sur les cibles civiles et valide un plan de frappes en profondeur pour octobre.",
+      "numbers": "4 jours consécutifs de frappes sur les ponts de Kiev",
+      "why_it_matters": "Escalade = soutien du thème défense.",
+      "impact": "positif",
+      "source": "https://www.cnbc.com/2026/10/01/russia-ukraine-war-energy-power-winter.html"
+    },
+    {
+      "date": "2026-09-24",
+      "ticker_or_topic": "GEO-UKR",
+      "headline": "Washington pousse trêve énergétique, corridor céréalier et trilatéral à Abou Dhabi en octobre",
+      "facts": "Dmitriev devait rencontrer Witkoff et Kushner à New York. Nouvelles sanctions sur la période : rien trouvé.",
+      "numbers": "—",
+      "why_it_matters": "Un trilatéral effectif en octobre serait le catalyseur baissier à surveiller pour Rheinmetall.",
+      "impact": "à surveiller",
+      "source": "https://www.axios.com/2026/09/24/zelensky-ukraine-russia-war-energy-ceasefire-grain"
+    },
+    {
+      "date": "2026-09-28",
+      "ticker_or_topic": "GEO-CN-TW",
+      "headline": "Paquet d'armes de 14 Md$ pour Taïwan toujours gelé après le sommet Trump-Xi de Washington",
+      "facts": "Sommet de 3 jours achevé le 25/09 sans percée. Un responsable de l'US Navy lie le gel aux besoins en munitions du conflit avec l'Iran. APEC / prochaine rencontre : rien trouvé.",
+      "numbers": "14 Md$",
+      "why_it_matters": "Signal lu comme une concession à Pékin : prime de risque géopolitique de TSMC.",
+      "impact": "à surveiller",
+      "source": "https://moderndiplomacy.eu/2026/09/28/taiwan-arms-sales-freeze-xi-trump-summits-1982-communique/"
+    },
+    {
+      "date": "2026-09-29",
+      "ticker_or_topic": "GEO-CN-TW",
+      "headline": "Commerce : « affiliates rule » (Entity List étendue aux filiales à 50 %) ; Lutnick propose un partage 50-50 des puces (30/09)",
+      "facts": "Source secondaire unique. Terres rares : rien trouvé. Section 232 semi-conducteurs : rien de nouveau, cadre du 15/01/2026 (25 % sur certaines puces avancées ; exemption Taïwan 2,5x capacité US en construction).",
+      "numbers": "50 % ; 25 % ; 2,5x",
+      "why_it_matters": "Les exemptions Section 232 restent le filet de sécurité de TSMC et Broadcom ; aucune dégradation cette semaine.",
+      "impact": "neutre",
+      "source": "https://informedclearly.com/en/ai/54192/us-china-ai-chip-war-export-controls-2026"
+    },
+    {
+      "date": "2026-09-29",
+      "ticker_or_topic": "AI-FUNDING",
+      "headline": "Prospectus Anthropic : 518 Md$ d'engagements de calcul, dont 161,2 Md$ envers Broadcom ; perte opérationnelle 8 Md$",
+      "facts": "~80 % fermes et non annulables. Google ≥111,1 Md$, Amazon 110 Md$, Microsoft 31,4 Md$. CA 2025 ~4,59 Md$ ; ventes T2 2026 11,5 Md$. IPO Nasdaq visée après les midterms de novembre (MS, GS, JPM), jusqu'à 100 Md$ ; valorisation ~2 000 Md$ non confirmée.",
+      "numbers": "518 Md$ ; 161,2 Md$ ; 8 Md$ ; 11,5 Md$",
+      "why_it_matters": "Visibilité inédite sur le carnet IA de Broadcom, mais concentration sur un client déficitaire.",
+      "impact": "positif",
+      "source": "https://siliconangle.com/2026/09/29/leaked-anthropic-ipo-filing-reveals-8b-operating-loss-rapid-revenue-growth/"
+    },
+    {
+      "date": "2026-09-30",
+      "ticker_or_topic": "AI-FUNDING",
+      "headline": "OpenAI négocie ≥30 Md$ à ~1 400 Md$ ; IPO repoussée à 2027 au plus tôt",
+      "facts": "Après 122 Md$ à 852 Md$ post-money (31/03/2026). Engagement AWS 100 Md$ sur 8 ans (2 GW Trainium). Revenus ~2 Md$/mois, perte 2026 estimée 14 Md$. Date exacte de l'article : fin septembre.",
+      "numbers": "30 Md$ ; 1 400 Md$ ; 100 Md$ ; 14 Md$",
+      "why_it_matters": "La capacité de levée des labos finance indirectement les commandes Broadcom/TSMC.",
+      "impact": "à surveiller",
+      "source": "https://finance.yahoo.com/technology/ai/articles/openai-targets-30-billion-funding-185008998.html"
+    },
+    {
+      "date": "2026-09-29",
+      "ticker_or_topic": "AI-FUNDING",
+      "headline": "CoreWeave et Nebius en bear market ; CoreWeave -53 % depuis son plus haut",
+      "facts": "CoreWeave : intérêts 640 M$ sur le trimestre, dette/fonds propres 8,94x, dette nette/EBITDA 10,75x (source sans date). Nebius : facilité 775 M$ MUFG SOFR+2,50 % (juillet). Lambda : facilité 1 Md$ (mai). Crusoe : rien trouvé.",
+      "numbers": "-53 % ; 640 M$ ; 10,75x ; 775 M$",
+      "why_it_matters": "Fragilité du maillon néocloud = risque pour la demande de GPU/ASIC en aval (Broadcom, TSMC).",
+      "impact": "négatif",
+      "source": "https://invezz.com/news/2026/09/29/coreweave-and-nebius-stocks-in-a-bear-market-as-ai-bubble-risk-persists/"
+    },
+    {
+      "date": "2026-10-01",
+      "ticker_or_topic": "AI-FUNDING",
+      "headline": "BoE et FMI alertent sur la dette IA : ~450 Md$ émis début septembre, SPV opaques",
+      "facts": "FPC de septembre : émissions doublées vs 2025 ; BoE va examiner les prêts aux data centers. FMI : 159 Md$ d'obligations en 5 mois ; 60 % des capacités prévues pour 2027 pas en construction. Capex 2026 des 5 hyperscalers : 660-690 Md$ (~90 % du cash-flow opérationnel) ; nouvelle annonce cette semaine : rien trouvé.",
+      "numbers": "450 Md$ ; 159 Md$ ; 60 % ; 660-690 Md$",
+      "why_it_matters": "Avec un 10 ans à 5,2 %, c'est le risque macro le plus direct pour Broadcom, TSMC et le Nasdaq 100.",
+      "impact": "négatif",
+      "source": "https://www.datacenterdynamics.com/en/news/uks-bank-of-england-to-probe-data-center-lending-amid-ai-bubble-fears/"
+    },
+    {
+      "date": "2026-10-04",
+      "ticker_or_topic": "NU",
+      "headline": "Présidentielle brésilienne : second tour Flávio Bolsonaro – Lula le 25/10",
+      "facts": "Avec 99,96 % des bureaux dépouillés, Flávio Bolsonaro obtient 47,04 % et Lula 45,15 % des voix valides. Flávio en tête dans 15 unités fédératives sur 27, Lula dans 12. Selon Exame cité par The Rio Times, l'ETF EWZ a bondi d'environ 10 % en échanges de nuit. Vendredi 02/10 l'Ibovespa avait gagné 2,63 % à 192 114,55 points, réal à 5,2133.",
+      "numbers": "47,04 % / 45,15 % ; EWZ env. +10 % overnight ; Ibovespa 192 114,55 (+2,63 % le 02/10) ; BRL 5,2133",
+      "why_it_matters": "Résultat lu comme pro-marché, favorable aux ADR brésiliens et à NU le 05/10 ; second tour serré, le coût du risque reste la variable clé.",
+      "impact": "positif",
+      "source": "https://www.riotimesonline.com/brazil-election-first-round-results-lula-flavio-2026/"
+    },
+    {
+      "date": "2026-10-01",
+      "ticker_or_topic": "NU",
+      "headline": "Rebond après le démenti Monzo : 13,17 $ le 01/10 puis 13,43 $ le 02/10 (confirmé)",
+      "facts": "Après le 6-K du 30/09, NU clôture à 13,17 $ le 01/10 (StocksToTrade, source secondaire) puis à 13,43 $ le 02/10. CORRECTION : les deux chiffres ne sont pas incohérents, ce sont deux jours différents ; la clôture du 05/10 (15,18 $, +1,75 $) confirme 13,43 $ le 02/10, soit +1,97 % le 02/10 et non +1,05 %.",
+      "numbers": "13,17 $ (01/10) ; 13,43 $ (02/10) ; +1,97 %",
+      "why_it_matters": "Règle de vente « acquisition dilutive > 10 % » non déclenchée ; titre encore sous le niveau d'avant la rumeur (env. 13,59 $).",
+      "impact": "positif",
+      "source": "https://stockstotrade.com/news/nu-holdings-ltd-nu-news-2026_10_01/ ; https://www.cnn.com/markets/stocks/NU"
+    },
+    {
+      "date": "2026-09-28",
+      "ticker_or_topic": "NU",
+      "headline": "Analystes : Rothschild Redburn et Needham Buy 19 $, JPMorgan prudent, Itaú BBA à Market Perform 18 $",
+      "facts": "Rothschild Redburn réitère Buy et 19 $ le 28/09. Needham Buy 19 $ réitéré le 28/09. JPMorgan (via Forbes Brasil) : réaction initiale négative probable si l'opération Monzo était confirmée. BTG Pactual surpris. Itaú BBA (Pedro Leduc) abaisse à Market Perform, objectif 20 → 18 $ (fin 2027), date exacte non confirmée. CORRECTION : la note Itaú BBA (Pedro Leduc, Outperform vers Market Perform, objectif de 20 à 18 $) date du 15/09/2026 au soir, relayée le 16/09 ; elle est antérieure à la semaine. Bénéfice 2027 réduit de 8 % (15 % sous le consensus), croissance +14 % en 2027 après +32 % en 2026.",
+      "numbers": "Objectifs : 19 $ (Rothschild Redburn, Needham), 18 $ (Itaú BBA) ; consensus 22 analystes 18,64 $",
+      "why_it_matters": "Les arguments d'Itaú BBA (bas revenus, inflation, macroprudentiel) touchent directement la NIM ajustée du risque et les créances 90+.",
+      "impact": "à surveiller",
+      "source": "https://www.investing.com/news/analyst-ratings/rothschild-redburn-reiterates-buy-on-nu-holdings-stock-on-monzo-deal-93CH-4919494 ; https://www.investing.com/news/analyst-ratings/itau-bba-downgrades-nu-holdings-stock-rating-on-brazil-outlook-93CH-4903210"
+    },
+    {
+      "date": "2026-09-29",
+      "ticker_or_topic": "Crédit Brésil (BCB)",
+      "headline": "BCB : défaut record à 5 % en août, 6 % pour les ménages, rotativo 66,2 %",
+      "facts": "Statistiques monétaires et de crédit publiées le 29/09 : défaut du système 5 % (record depuis 2011), personnes physiques 6 % (record), rotativo carte 66,2 % (65,5 % en juillet), consignado privé 10,6 %, taux moyen crédit libre ménages 61,7 % par an, entreprises 3,3 %.",
+      "numbers": "5 % ; 6 % ; 66,2 % ; 10,6 % ; 61,7 %",
+      "why_it_matters": "Le crédit non garanti aux ménages est le cœur du bilan de Nu ; à confronter au ratio 90+ du T3 (règle : > 7,5 % deux trimestres).",
+      "impact": "négatif",
+      "source": "https://tribunadoplanalto.com.br/juros-para-familias-sobem-em-agosto-e-inadimplencia-chega-a-6/"
+    },
+    {
+      "date": "2026-09-30",
+      "ticker_or_topic": "Monzo",
+      "headline": "Monzo : Advent en piste pour une minorité, tour de table > 8 Md£ ou IPO",
+      "facts": "Advent International et d'autres fonds ont tenu des discussions initiales pour une participation minoritaire, conditionnelle à l'échec de la piste Nu ; alternative : tour de table valorisant Monzo au-dessus de 8 Md£ pour l'Europe. Monzo avait mandaté Morgan Stanley et Slaughter & May. Forbes : prix évoqué = 2x la dernière valorisation, 115x le profit avant impôt. Réaction officielle de Monzo/Advent après le démenti : rien trouvé.",
+      "numbers": "8–10 Md£ ; > 8 Md£ ; 115x profit avant impôt",
+      "why_it_matters": "Rappelle la sensibilité du marché à une acquisition dilutive ; le rachat de 1 Md$ reste la référence.",
+      "impact": "neutre",
+      "source": "https://www.scottishfinancialnews.com/articles/takeover-talks-for-monzo-heat-up-as-advent-international-in-talks-for-minority-stake"
+    },
+    {
+      "date": "2026-09-29",
+      "ticker_or_topic": "NU",
+      "headline": "Vélez en direct avec Westcol à São Paulo : priorité Colombie et IA",
+      "facts": "Live du 29/09 au bureau de Nubank à São Paulo : produits premium à venir en Colombie, IA comme terrain de jeu des entrepreneurs latino-américains. Pas de commentaire sur Monzo rapporté.",
+      "numbers": "Colombie : 5 millions de clients (mai 2026)",
+      "why_it_matters": "Confirme la priorité LatAm ; rien trouvé de nouveau sur Nubank N.A., le Mexique ou le rachat d'actions sur la semaine.",
+      "impact": "neutre",
+      "source": "https://ecosistemastartup.com/velez-y-westcol-nubank-ia-y-un-shark-tank-colombiano/"
+    },
+    {
+      "date": "2026-09-29",
+      "ticker_or_topic": "Desenrola",
+      "headline": "Desenrola Adimplentes prolongé jusqu'au 26/10",
+      "facts": "Renégociation jusqu'à 15 000 R$ pour travailleurs informels, taux max 1,99 % par mois ; faible participation des banques privées, portabilité ajoutée.",
+      "numbers": "15 000 R$ ; 1,99 %/mois ; 26/10/2026",
+      "why_it_matters": "Effet marginal sur Nu ; signal d'activisme gouvernemental sur le crédit à la consommation avant le second tour.",
+      "impact": "neutre",
+      "source": "https://portaldeprefeitura.com.br/brasil/desenrola-renegociacao-de-dividas-de-adimplentes-prorrogada/633062/"
+    },
+    {
+      "date": "2026-09-17",
+      "ticker_or_topic": "Selic",
+      "headline": "Selic à 13,75 % ; prochain Copom les 3-4 novembre",
+      "facts": "Copom des 15-16/09 : Selic à 13,75 % à partir du 17/09. Prochaine décision les 3-4/11/2026. Focus : Selic 13,75 % fin 2026, inflation 2026 à 4,90 %.",
+      "numbers": "13,75 % ; 4,90 %",
+      "why_it_matters": "Selic élevée : soutien à la NIM mais pression sur les défauts.",
+      "impact": "à surveiller",
+      "source": "https://renovainvest.com.br/?p=106745"
+    },
+    {
+      "date": "2026-09-29",
+      "ticker_or_topic": "RHM",
+      "headline": "Armin Papperger achète 525 actions Rheinmetall",
+      "facts": "Déclaration EQS-DD : achat par le PDG de 525 actions au prix moyen de 950,3768 € (950,35–950,40 €). La fondation Sara Georgi a aussi acheté le 02/10/2026 pour 238 706,60 €.",
+      "numbers": "525 actions ; 498 947,80 € ; prix moyen 950,38 € ; 238 706,60 € (fondation, 02/10)",
+      "why_it_matters": "Signal de confiance du dirigeant au niveau actuel avant le T3 (05/11) et le CMD (25-27/11) ; sans valeur prédictive sur marge ou carnet.",
+      "impact": "positif",
+      "source": "https://www.boerse-online.de/dpa-afx/eqs-dd-rheinmetall-aktiengesellschaft-deutsch-554918.html"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker_or_topic": "RHM",
+      "headline": "Premier satellite militaire de Rheinmetall Italia et Argotec lancé par SpaceX",
+      "facts": "Satellite de surveillance de l'espace aérien pour la défense aérienne militaire lancé le 01/10/2026 depuis les États-Unis ; communiqué du 02/10/2026.",
+      "numbers": "1 satellite ; montant non communiqué",
+      "why_it_matters": "Diversification vers l'espace et la défense aérienne, segments favorisés par le marché en 2026 ; pas d'impact chiffré sur le carnet potentiel.",
+      "impact": "positif",
+      "source": "https://www.rheinmetall.com/en/media/news"
+    },
+    {
+      "date": "2026-10-01",
+      "ticker_or_topic": "RHM",
+      "headline": "Ouverture d'un nouveau site à Skoppum (Norvège)",
+      "facts": "Extension des capacités de développement et de production en Norvège. Montant non précisé.",
+      "numbers": "n.d.",
+      "why_it_matters": "Capacités supplémentaires en Europe du Nord ; capex pesant à court terme sur le FCF opérationnel 2026 (règle de vente à suivre).",
+      "impact": "neutre",
+      "source": "https://www.rheinmetall.com/en/media/news"
+    },
+    {
+      "date": "2026-09-30",
+      "ticker_or_topic": "RHM",
+      "headline": "American Rheinmetall : commande MK93 de 20,7 M$ de l'US Army",
+      "facts": "3 104 nouveaux affûts MK93 et modernisation de 245 systèmes ; livraisons de 2026 à octobre 2027.",
+      "numbers": "20,7 M$ ; 3 104 neufs ; 245 modernisés",
+      "why_it_matters": "Contrat marginal face à la cible de carnet potentiel 100-120 Md€.",
+      "impact": "neutre",
+      "source": "https://www.rheinmetall.com/en/media/news-watch/news/2026/09/2026-09-30-american-rheinmetall-supplies-mk93-mounts-to-the-us-army"
+    },
+    {
+      "date": "2026-10-08",
+      "ticker_or_topic": "Budget fédéral 2027",
+      "headline": "Einzelplan 14 (défense) examiné en commission du budget le 08/10 ; 109,7 Md€ au projet",
+      "facts": "Projet 2027 : 109,7 Md€ au budget régulier de la défense (82,7 Md€ en 2026) + 29,9 Md€ du Sondervermögen = env. 139,6 Md€. Première lecture le 09/09/2026. 47e séance de la commission du budget le 08/10/2026, rapporteur Andreas Mattfeldt (CDU/CSU). COMPLÉMENT : 105,8 Md€ (chiffre du dossier) = Eckwerte d'avril 2026 ; 109,7 Md€ = Regierungsentwurf adopté par le cabinet le 06/07/2026 (+32,7 % sur 82,7 Md€). Bereinigungssitzung le 12/11, 2e et 3e lectures du 24 au 27/11.",
+      "numbers": "109,7 Md€ ; 29,9 Md€ ; 139,6 Md€ ; +27 Md€ vs 2026",
+      "why_it_matters": "Le chiffre officiel dépasse les 105,8 Md€ du dossier et le seuil de vente de 100 Md€ ; adoption finale attendue en novembre, à vérifier.",
+      "impact": "positif",
+      "source": "https://www.bmvg.de/de/aktuelles/rekordetat-verteidigung-haushaltsdebatte-6149920 ; https://www.bundesfinanzministerium.de/Content/DE/Pressemitteilungen/Finanzpolitik/2026/07/2026-07-06-regierungsentwurf-bundeshaushalt-2027.html ; https://www.bundestag.de/dokumente/textarchiv/2026/kw34-haushalt-2027-ablauf-1187766"
+    },
+    {
+      "date": "2026-09-23",
+      "ticker_or_topic": "Bundeswehr 25-Mio-Vorlagen",
+      "headline": "Douze dossiers d'acquisition approuvés en commission du budget, sans Rheinmetall en tête",
+      "facts": "Roquettes 70 mm, AMRAAM, Fennek, F125, SALIS 2027-2031 etc. Rheinmetall non cité comme contractant principal. Boxer Arminius (≈ 12,4 Md€) attendu en décembre.",
+      "numbers": "12 dossiers ; Arminius ≈ 12,4 Md€",
+      "why_it_matters": "Le processus d'approbation avance mais sans contrat RHM identifié cette semaine ; le gros contrat Boxer reste à venir pour la cible de carnet fin 2026.",
+      "impact": "à surveiller",
+      "source": "https://esut.de/2026/09/meldungen/streitkraefte/75038/zwoelf-25-mio-bundeswehr/"
+    },
+    {
+      "date": "2026-10-01",
+      "ticker_or_topic": "Secteur défense / BofA",
+      "headline": "BofA (01/10) : Renk abaissé à Neutre, Saab relevé à Achat, objectif Hensoldt à 94 € ; Rheinmetall jugé « plus cyclique »",
+      "facts": "CORRECTION : note de David Holmes datée du jeudi 01/10/2026 (dpa-AFX). Renk d'Achat à Neutre (62,50 → 42,50 €, −2,4 % à 36,87 €) ; Hensoldt reste à Achat, objectif porté à 94 €, entrée en liste « SMID Cap Europe Best Ideas » (+1,3 % à 77,26 €) ; Saab de Neutre à Achat (655 → 720 SEK) ; Dassault relevé. Rheinmetall placé « entre » les valeurs préférées et les autres, plus cyclique avec Renk et CSG ; aucune note ni objectif BofA sur RHM trouvé.",
+      "numbers": "Renk 42,50 € ; Saab 720 SEK ; RHM −36,5 % YTD",
+      "why_it_matters": "La rotation du terrestre vers capteurs et défense aérienne continue de peser sur RHM.",
+      "impact": "négatif",
+      "source": "https://www.ariva.de/aktien/renk-group-ag-aktie/news/aktien-im-fokus-2-bofa-analyse-zu-ruestung-belastet-renk-und-12155184 ; https://www.boerse-express.com/news/articles/renk-gestutzt-hensoldt-befoerdert-die-bofa-teilt-europas-ruestung-in-zwei-lager-949897"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker_or_topic": "KNDS",
+      "headline": "IPO KNDS toujours suspendue, cotation 2026 encore jugée possible",
+      "facts": "IPO retirée le 01/07/2026 ; le PDG Jean-Paul Alary garde l'option d'une cotation en 2026 si les conditions le permettent. Valorisation évoquée 15,5–22,4 Md€.",
+      "numbers": "15,5–22,4 Md€ ; 15 à 20 Md€ de flux potentiellement absorbés",
+      "why_it_matters": "Le report évite une ponction de flux sur le secteur ; neutre à légèrement favorable pour RHM.",
+      "impact": "neutre",
+      "source": "https://ionanalytics.com/insights/mergermarket/knds-ipo-in-the-balance-with-all-eyes-on-rheinmetall-recovery/"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker_or_topic": "RHM analystes",
+      "headline": "Objectifs de cours RHM : JPMorgan 1 350 € (Neutre), Jefferies 2 060 € (Achat), consensus 1 635 € (dates non confirmées)",
+      "facts": "Aucune nouvelle note datée de la semaine trouvée. 6 achats, 1 conserver, 0 vente sur 8 maisons ; moyenne 1 860,26 € selon aktien.guide.",
+      "numbers": "1 350 € ; 2 060 € ; 1 635 € ; 1 860,26 €",
+      "why_it_matters": "L'écart cours/objectifs traduit le doute sur la conversion du carnet en marge et en FCF.",
+      "impact": "à surveiller",
+      "source": "https://www.finanzen.net/analyse/rheinmetall_neutral-jp_morgan_chase__co__1098070"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker_or_topic": "Ukraine / SAFE / Papperger",
+      "headline": "Rien trouvé pour la semaine : cessez-le-feu, livraisons Ukraine, allocations SAFE, interviews Papperger",
+      "facts": "Aucun article daté du 28/09 au 05/10/2026 trouvé sur ces sujets. Prêt UE 90 Md€ (déc. 2025) et prêt SAFE France 15,1 Md€ (juin 2026) restent les derniers éléments indexés.",
+      "numbers": "n.d.",
+      "why_it_matters": "Aucune règle de vente liée à un accord de paix ou au budget n'est déclenchée.",
+      "impact": "neutre",
+      "source": "https://www.yahoo.com/news/articles/eu-leaders-agree-90-billion-021041283.html"
+    },
+    {
+      "date": "2026-10-01",
+      "ticker_or_topic": "ANTHROPIC",
+      "headline": "Prospectus Anthropic : Broadcom prête jusqu'à 42 Md$ en billets convertibles",
+      "facts": "Reuters a obtenu le prospectus d'IPO d'Anthropic. Broadcom s'engage à prêter jusqu'à 42 Md$ (convertibles en actions) pour financer environ un tiers d'un engagement TPU de 125,2 Md$ sur cinq ans ; option de faire entrer un partenaire financier. Engagements d'infrastructure jusqu'à 518 Md$. COMPLÉMENT : 125,2 Md$ = engagement de location TPU sur cinq ans (lecture Reuters/CNBC du 01/10) ; 161,2 Md$ = total des obligations de location Broadcom dans les 518 Md$ sur dix ans (MarketBeat, Yahoo). L'écart de 36 Md$ n'est expliqué par aucune source ; hypothèse non vérifiée : contrat de cinq ans contre total sur dix ans. Le S-1 n'est pas public (dépôt attendu dès le 23/10).",
+      "numbers": "42 Md$ ; 125,2 Md$ sur 5 ans ; 518 Md$",
+      "why_it_matters": "Financement circulaire : le CA IA 115 Md$ fy2027 dépend d'un client financé par Broadcom ; à rapprocher des règles trésorerie < 15 Md$ et dette > 65 Md$.",
+      "impact": "à surveiller",
+      "source": "https://aiweekly.co/alerts/broadcoms-ipo-filing-reveals-42b-convertible-note-facility-to-finance ; https://www.cnbc.com/2026/10/01/broadcom-lending-anthropic-42-billion-chips-reuters.html"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker_or_topic": "AVGO",
+      "headline": "Broadcom monte un paquet de dette de 60 Md$ pour l'infrastructure IA",
+      "facts": "Tranche senior sécurisée de 42 Md$ arrangée par des banques et tranche junior de 18 Md$ menée par Blackstone, pour l'infrastructure IA de clients dont Anthropic.",
+      "numbers": "60 Md$ = 42 Md$ senior + 18 Md$ junior",
+      "why_it_matters": "La répartition du risque (dette portée, garanties) détermine l'exposition aux règles garanties de valeur résiduelle > 20 Md$ et dette > 65 Md$.",
+      "impact": "à surveiller",
+      "source": "https://gurufocus.com/news/9107393/broadcom-avgo-arranges-60-billion-debt-package-to-boost-ai-infrastructure"
+    },
+    {
+      "date": "2026-10-04",
+      "ticker_or_topic": "AVGO",
+      "headline": "Craintes de financement circulaire ; six clients XPU seulement",
+      "facts": "24/7 Wall St. note que le prêt de 42 Md$ sert largement à acheter du matériel Broadcom. Broadcom compte six clients XPU ; la concentration client et un endettement significatif figurent parmi les risques listés.",
+      "numbers": "42 Md$ ; 6 clients XPU",
+      "why_it_matters": "Concentration client au coeur de la thèse ; le retrait d'un client XPU nommé est une règle de vente.",
+      "impact": "négatif",
+      "source": "https://247wallst.com/investing/2026/10/04/broadcoms-massive-42-billion-chip-buying-deal-with-anthropic-raises-circular-financing-worries/"
+    },
+    {
+      "date": "2026-10-01",
+      "ticker_or_topic": "AVGO",
+      "headline": "AVGO -2,1 % à 343,64 $",
+      "facts": "Repli jeudi 1er octobre.",
+      "numbers": "343,64 $ ; -2,1 %",
+      "why_it_matters": "Réaction limitée à la publication du prospectus Anthropic.",
+      "impact": "neutre",
+      "source": "https://www.marketbeat.com/instant-alerts/price-broadcom-nasdaq-avgo-shares-down-21-heres-what-happened-2026-10-01/"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker_or_topic": "AVGO",
+      "headline": "AVGO +3,35 % à 355,14 $",
+      "facts": "Rebond vendredi (+11,50 $), jour de l'annonce du paquet de dette de 60 Md$. Du 30/09 au 02/10 : +1,1 %.",
+      "numbers": "355,14 $ ; +3,35 % ; +11,50 $",
+      "why_it_matters": "Le marché accueille favorablement le financement de la demande IA ; variation hebdomadaire complète non disponible.",
+      "impact": "positif",
+      "source": "https://invezz.com/news/2026/10/02/why-broadcom-stock-is-gaining-today/"
+    },
+    {
+      "date": "2026-09-30",
+      "ticker_or_topic": "ANTHROPIC",
+      "headline": "IPO Anthropic : marketing mi-octobre, cotation autour des mid-terms, > 2 000 Md$ visés",
+      "facts": "S-1 confidentiel déposé le 01/06/2026. Marketing attendu mi-octobre au plus tôt, cotation visée vers les élections de novembre ; taille comparée à SpaceX (Bloomberg). Prospectus : CA 2025 ≈ 4,6 Md$, perte opérationnelle > 8 Md$, perte nette 42 Md$ (≈ 34 Md$ non-cash), CA T2 2026 11,5 Md$ ; run-rate > 65 Md$ fin juillet. Date exacte des articles non confirmée.",
+      "numbers": "> 2 000 Md$ ; CA 2025 4,6 Md$ ; perte nette 42 Md$ ; T2 2026 11,5 Md$ ; run-rate 65 Md$",
+      "why_it_matters": "La solvabilité du premier client XPU conditionne la visibilité sur les 115 Md$ fy2027.",
+      "impact": "à surveiller",
+      "source": "https://www.gulf-times.com/article/732616/business/anthropic-ipo-launch-said-to-shift-towards-mid-october/amp"
+    },
+    {
+      "date": "2026-06-05",
+      "ticker_or_topic": "ANTHROPIC",
+      "headline": "Rappel : SPV Apollo/Blackstone 35 Md$ garanti par Broadcom ; 71 Md$ de dette SPV cumulée",
+      "facts": "SPV clôturé le 05/06/2026 (A1 ≈ 6 Md$, A2 ≈ 24-25 Md$, B ≈ 4,5 Md$) achetant des TPU loués à Anthropic ; Broadcom garantit A1 et A2 via un accord de valeur résiduelle. Forkast rapporte 71 Md$ de dette de location de puces via SPV en 60 jours (date exacte n.d.). Hors fenêtre, contexte. COMPLÉMENT (06/10) : le 10-Q du T3 FY2026 (trimestre clos le 02/08) dit que Broadcom « peut fournir des garanties de valeur résiduelle » (passifs éventuels à faible probabilité) sans montant maximal ; la direction a refusé de donner un plafond. Un analyste estime l'exposition de la première tranche à environ 29 Md$ (source faible).",
+      "numbers": "35 Md$ ; ≈ 30 Md$ de tranches seniors garanties ; 71 Md$",
+      "why_it_matters": "Possible dépassement du seuil garanties de valeur résiduelle > 20 Md$ ; à vérifier dans les 10-Q/10-K de Broadcom.",
+      "impact": "à surveiller",
+      "source": "https://fourweekmba.com/ai-apollo-blackstone-broadcom-anthropic-compute-securitization/ ; https://www.sec.gov/Archives/edgar/data/0001730168/000173016826000080/avgo-20260802.htm"
+    },
+    {
+      "date": "2026-09-29",
+      "ticker_or_topic": "OPENAI",
+      "headline": "OpenAI cherche 30 Md$ à 1 400 Md$ ; IPO repoussée à 2027",
+      "facts": "Tour relais d'au moins 30 Md$ à ≈ 1 400 Md$ pré-money ; Sam Altman juge le moment mal avisé pour une IPO ; run-rate proche de 70 Md$.",
+      "numbers": "30 Md$ ; 1 400 Md$ ; run-rate ≈ 70 Md$",
+      "why_it_matters": "OpenAI est le client des 10 GW d'accélérateurs Broadcom (H2 2026-2029) ; son accès au capital soutient ces volumes.",
+      "impact": "neutre",
+      "source": "https://invezz.com/in/news/2026/09/29/openai-seeks-dollar30b-funding-at-dollar14t-valuation-as-ipo-plans-slip-report/"
+    },
+    {
+      "date": "2026-09-28",
+      "ticker_or_topic": "NVDA",
+      "headline": "NVIDIA : rachat porté à 235 Md$ ; GTC Washington du 30/11 au 03/12",
+      "facts": "Autorisation supplémentaire de 150 Md$ de rachats (total restant 235 Md$). Lancement de l'Open Agent Safety Platform. Keynote Jensen Huang le 01/12/2026.",
+      "numbers": "150 Md$ ; 235 Md$",
+      "why_it_matters": "Repère pour la règle rachats nets < dilution d'AVGO et pour le calendrier concurrentiel.",
+      "impact": "neutre",
+      "source": "https://www.cnbc.com/2026/09/28/nvidia-releases.html"
+    },
+    {
+      "date": "2026-10-06",
+      "ticker_or_topic": "MRVL",
+      "headline": "Journée investisseurs Marvell le 06/10/2026",
+      "facts": "Marvell (accord Google jusqu'à 12,2 Md$ du 19/08/2026 ; custom silicon ≈ 1,5 Md$/an, +20 % fy2027 puis doublement fy2028) présente sa stratégie.",
+      "numbers": "12,2 Md$ ; 1,5 Md$",
+      "why_it_matters": "Concurrent direct sur les ASIC custom ; surveiller les annonces de nouveaux clients.",
+      "impact": "à surveiller",
+      "source": "https://www.marketbeat.com/originals/marvells-new-ai-chip-deals-capture-wall-streets-attention"
+    },
+    {
+      "date": "2026-09-30",
+      "ticker_or_topic": "AMD",
+      "headline": "OpenAI déploiera les racks AMD Helios au H2 2026 (date exacte n.d.)",
+      "facts": "Première phase d'un accord allant jusqu'à 6 GW ; Helios = 72 GPU MI455X/MI450 par rack.",
+      "numbers": "6 GW ; 72 GPU",
+      "why_it_matters": "Concurrence pour le budget calcul d'OpenAI aux côtés des XPU Broadcom.",
+      "impact": "à surveiller",
+      "source": "https://www.datacenterdynamics.com/en/news/openai-to-deploy-amd-helios-rackscale-system-as-first-part-of-up-to-6gw-partnership/"
+    },
+    {
+      "date": "2026-09-30",
+      "ticker_or_topic": "AVGO",
+      "headline": "Analystes : Citi 515 $, DA Davidson 350 $ Neutre, consensus 505 $ (septembre, dates n.d.)",
+      "facts": "Citi (Atif Malik) relève à 515 $ ; DA Davidson (Gil Luria) abaisse à 350 $ Neutre ; 30 analystes, objectif moyen 505 $.",
+      "numbers": "515 $ ; 350 $ ; 505 $",
+      "why_it_matters": "Écart d'objectifs reflétant le débat valorisation vs exécution.",
+      "impact": "neutre",
+      "source": "https://www.benzinga.com/quote/avgo/price-targets"
+    },
+    {
+      "date": "2026-09-30",
+      "ticker_or_topic": "AVGO",
+      "headline": "VMware / UE : plainte CISPE, pas de mesures provisoires",
+      "facts": "Plainte CISPE déposée en mars 2026 ; en septembre 2026, aucune mesure provisoire imposée.",
+      "numbers": "n.d.",
+      "why_it_matters": "Le logiciel VMware soutient la marge brute guidée à 73 %.",
+      "impact": "neutre",
+      "source": "https://simplywall.st/stocks/us/semiconductors/nasdaq-avgo/broadcom/news/eu-complaint-over-vmware-licensing-puts-broadcoms-software-s"
+    },
+    {
+      "date": "2026-09-20",
+      "ticker_or_topic": "ANTHROPIC",
+      "headline": "Anthropic envisagerait un nouveau modèle face à GPT-6 Astra",
+      "facts": "Rapport du 20/09 ; Fable 5.1 publié fin août/début septembre.",
+      "numbers": "n.d.",
+      "why_it_matters": "La course aux modèles soutient la demande TPU/XPU.",
+      "impact": "neutre",
+      "source": "https://digg.com/ai/o61pjxs3"
+    },
+    {
+      "date": "2026-09-30",
+      "ticker_or_topic": "META",
+      "headline": "Meta MTIA (Broadcom) : production en septembre, 7 GW vers 14 GW ; discussions TPU Ironwood",
+      "facts": "Production MTIA prévue en septembre 2026 (TechCrunch 09/07) ; capacité Meta 7 GW en 2026, 14 GW en 2027 ; Meta en discussions avancées pour des TPU Ironwood.",
+      "numbers": "7 GW ; 14 GW",
+      "why_it_matters": "Meta est un client XPU nommé ; sa montée en volume soutient les 115 Md$ fy2027.",
+      "impact": "positif",
+      "source": "https://techcrunch.com/2026/07/09/metas-new-ai-chips-will-begin-production-in-september/"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker_or_topic": "UBER",
+      "headline": "UBER clôture la semaine à 68,11 $, près du bas de 52 semaines",
+      "facts": "Clôture 02/10 à 68,11 $ (+0,34 %) après 67,88 $ le 01/10 ; -0,6 % vs 68,51 $ du 30/09. Une source donne 68,09 $. Pré-marché 05/10 : 68,39 $ vers 9h00 ET selon un extrait (horodatage non vérifiable).",
+      "numbers": "68,11 $ ; 67,88 $ ; -0,6 % sur 30/09-02/10 ; pré-marché 68,39 $",
+      "why_it_matters": "Niveau de cours qui traduit un scepticisme fort sur la thèse (réservations > 18 %, robotaxi en partenaire) ; aucune règle de vente n'est liée au cours.",
+      "impact": "à surveiller",
+      "source": "https://www.macrotrends.net/stocks/charts/UBER/uber-technologies/stock-price-history"
+    },
+    {
+      "date": "2026-10-01",
+      "ticker_or_topic": "UBER",
+      "headline": "Bernstein maintient Surperformance, objectif 95 $",
+      "facts": "Note reliant la valorisation au déploiement des véhicules autonomes via l'app Uber. Consensus MarketBeat au 03/10 : achat modéré, 43 analystes, objectif moyen 103,03 $. CORRECTION : Ad-hoc-news date la réaffirmation du 01/10, non du 30/09.",
+      "numbers": "Objectif 95 $ ; consensus 103,03 $ ; 43 analystes",
+      "why_it_matters": "Le marché valorise toujours Uber comme agrégateur de robotaxis ; l'écart d'environ 40 % avec le cours mesure le doute à lever au T3.",
+      "impact": "positif",
+      "source": "https://ad-hoc-news.de/boerse/news/corporate-news/uber-technologies-stock-gains-analyst-support-from-av-plans/70221732"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker_or_topic": "DHER",
+      "headline": "Delivery Hero clôture à 36,27 €, 12,6 % sous l'offre de 41,50 €",
+      "facts": "Clôture 02/10 à 36,27 € (+0,22 %). Offre Uber 41,50 € en numéraire, acceptation jusqu'au 05/11/2026, seuil 50 % + 1 ; Uber détient ~25 % + ~12 % en instruments, Prosus (~17 %) engagé. Aucun taux d'acceptation, aucune décision CE/Bundeskartellamt/KFTC/Turquie, aucune émission obligataire trouvés pour la semaine. CORRECTION : la période d'acceptation a commencé le 27/08/2026 (et non le 27/09) et finit le 05/11 à minuit (Francfort).",
+      "numbers": "36,27 € ; décote 12,6 % ; 41,50 € ; 05/11/2026",
+      "why_it_matters": "La décote reflète un doute sur l'exécution (antitrust, clôture S2 2027) ; la règle levier brut > 2,5x EBITDA post-Delivery Hero reste à surveiller faute de détail sur le financement.",
+      "impact": "à surveiller",
+      "source": "https://www.finanzen.net/aktien/delivery_hero-aktie"
+    },
+    {
+      "date": "2026-09-29",
+      "ticker_or_topic": "WAYMO",
+      "headline": "Waymo dépasse 150 000 miles autonomes à Philadelphie",
+      "facts": "Tests avec spécialiste à bord depuis fin 2025, pas de date commerciale. Contexte septembre 2026 : ~14 métropoles, ~4 000 véhicules, ~500 000 trajets payants/semaine ; lancements Denver, San Diego, Tampa (01/09) et Las Vegas (14/09).",
+      "numbers": "150 000 miles ; ~4 000 véhicules ; ~500 000 trajets/semaine",
+      "why_it_matters": "Chaque ville Waymo hors app Uber teste la règle « perte de part dans les villes Waymo » ; exclusivité Austin/Atlanta finit début 2028.",
+      "impact": "à surveiller",
+      "source": "https://www.axios.com/local/philadelphia/2026/09/29/waymo-robotaxi-philadelphia-autonomous"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker_or_topic": "TSLA",
+      "headline": "Cybercab : flotte autorisée à Austin passée de 45 à 169 véhicules début octobre",
+      "facts": "Environ 200 véhicules Tesla aux États-Unis portent la mention « sans superviseur » en zones géorepérées. La NHTSA exigeait des réponses sous serment avant le 30/09 (ordonnance du 10/09) sur l'auto-certification du Cybercab ; aucune suite publiée trouvée.",
+      "numbers": "45 -> 169 véhicules ; ~200 sans superviseur",
+      "why_it_matters": "Tesla est le seul grand acteur robotaxi hors de l'app Uber ; la cadence à Austin est à comparer aux volumes Uber dans la ville.",
+      "impact": "négatif",
+      "source": "https://finance.biggo.com/news/97430a57-bc70-4faa-adbe-8dc0e82ec64f"
+    },
+    {
+      "date": "2026-10-01",
+      "ticker_or_topic": "LYFT",
+      "headline": "Lyft paie 272,5 M$ en Californie pour requalification ; Uber continue de contester",
+      "facts": "Règlement record avec l'État et trois villes (chauffeurs 2016-2020), au moins 237 M$ aux chauffeurs. Lyft a aussi lancé le 30/09 son app pour voyageurs nord-américains en Europe (Barcelone, Hambourg, puis Rome, Londres, Paris, Berlin, Athènes, Varsovie en octobre).",
+      "numbers": "272,5 M$ ; 237 M$",
+      "why_it_matters": "Ordre de grandeur pour le dossier californien d'Uber (plus gros que Lyft) ; charge ponctuelle possible.",
+      "impact": "négatif",
+      "source": "https://techcrunch.com/2026/10/01/lyft-is-paying-272-5m-to-settle-lawsuit-over-how-it-classified-drivers"
+    },
+    {
+      "date": "2026-10-01",
+      "ticker_or_topic": "DASH",
+      "headline": "DoorDash Dash Forward : agent IA dans Apple Messages, drones, DashOS",
+      "facts": "Commande par SMS via agent IA (liste d'attente US ouverte le 30/09), DashBuddy pour livreurs, DoorDash Air (drones), service de retours.",
+      "numbers": "n.d.",
+      "why_it_matters": "Pression concurrentielle sur Uber Eats aux États-Unis pendant qu'Uber concentre son capital sur Delivery Hero.",
+      "impact": "négatif",
+      "source": "https://simplywall.st/stocks/us/consumer-services/nasdaq-dash/doordash/news/doordash-dash-unveils-ai-drone-delivery-and-dashos-at-dash-f"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker_or_topic": "REG",
+      "headline": "Massachusetts : minimum de 32,50 $/heure et avantages pour les chauffeurs VTC",
+      "facts": "Tribune critique du dispositif (salaire minimum, congés maladie, avantages). Chiffre à confirmer auprès d'une source officielle.",
+      "numbers": "32,50 $/heure",
+      "why_it_matters": "Coût unitaire des trajets et marge d'EBITDA sur réservations (règle < 4 %).",
+      "impact": "à surveiller",
+      "source": "https://townhall.com/news/amy-curtis/2026/10/02/ma-uber-and-lift-payment-healthcare-n2683918"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker_or_topic": "REG",
+      "headline": "Réglementation : rien trouvé daté de la semaine (FTC Uber One, directive UE, Brésil, UK TVA, Inde)",
+      "facts": "FTC/Uber One : procédure en cours, requête de rejet partiellement rejetée (date non précisée). Directive UE plateformes : transposition au 02/12/2026. Brésil : audience STF « le 1er octobre » mentionnée sans année vérifiable. UK TVA, Inde : rien trouvé.",
+      "numbers": "02/12/2026",
+      "why_it_matters": "Risque réglementaire latent sur le modèle de chauffeurs indépendants ; pas d'événement nouveau cette semaine.",
+      "impact": "neutre",
+      "source": "https://www.personneltoday.com/hr/platform-workers-legislation-uber/"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker_or_topic": "2330",
+      "headline": "2330 stable à 2 500 NT$, TAIEX record à 48 475,74",
+      "facts": "Le TAIEX finit à un nouveau plus haut (+0,25 %) ; TSMC clôture inchangé à 2 500 NT$, en consolidation, rotation vers les petits semi-conducteurs OTC (+2,41 %).",
+      "numbers": "TAIEX 48 475,74 (+122,25 pts) ; volume 898,17 Mrd NT$ ; 2330 = 2 500,00 NT$",
+      "why_it_matters": "Titre à plat avant les ventes de septembre (08/10) et les résultats (15/10) ; aucune règle de vente touchée.",
+      "impact": "neutre",
+      "source": "https://focustaiwan.tw/business/202610020014"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker_or_topic": "TSM",
+      "headline": "TrendForce : cinq thèmes avant les résultats du 15/10",
+      "facts": "Discussions avec Terafab (Tesla/SpaceX/xAI), hausses de prix 2027 et course A14 contre Intel en tête des sujets attendus.",
+      "numbers": "Hausses estimées : nœuds avancés +5–10 %, packaging avancé +10–15 %, matures +3–10 % (Economic Daily News)",
+      "why_it_matters": "Variables clés de la thèse (prix 2027, péage IA) et risque Intel 14A à surveiller.",
+      "impact": "à surveiller",
+      "source": "https://www.trendforce.com/news/2026/10/05/news-tsmc-earnings-preview-terafab-talks-price-hikes-and-a14-intel-race-lead-five-key-themes/"
+    },
+    {
+      "date": "2026-10-15",
+      "ticker_or_topic": "TSM",
+      "headline": "Consensus T3 2026 : CA 45,8 Mrd $, marge brute 66,5 %",
+      "facts": "Guidance CA 44,6–45,8 Mrd $, marge brute 65–67 %, marge op. 56–58 %. Consensus en haut de fourchette. Conférence le 15/10 à 14 h Taïwan.",
+      "numbers": "CA 45,8 Mrd $ ; MB 66,5 % ; MO 57,1 % ; BPA ADR ≈ 4,39 $ ; HPC 66 % du CA plaquettes T2 2026",
+      "why_it_matters": "Seuil marge brute > 65 % au cœur de la thèse ; peu de place pour une bonne surprise.",
+      "impact": "à surveiller",
+      "source": "https://www.hudson-labs.com/research/tsmc-q3-2026-earnings-preview-tsm-revenue-and-margins"
+    },
+    {
+      "date": "2026-10-08",
+      "ticker_or_topic": "TSM",
+      "headline": "Ventes de septembre attendues le 08/10 ; août à +53,3 % a/a",
+      "facts": "Septembre non publié. Août 2026 : 514,806 Mrd NT$ (+53,3 % a/a, +10,1 % m/m). Cumul janvier–août 3 386,87 Mrd NT$ (+39,3 %).",
+      "numbers": "514,806 Mrd NT$ ; ≈ 16,3 Mrd $ ; cumul +39,3 %",
+      "why_it_matters": "Cumul cohérent avec l'objectif ≈ +40 % en dollars ; règle de vente (< 15 %) très loin.",
+      "impact": "positif",
+      "source": "https://focustaiwan.tw/business/202609100014"
+    },
+    {
+      "date": "2026-07-22",
+      "ticker_or_topic": "TSM",
+      "headline": "Prix 2027 : hausses jusqu'à 10 % à partir de janvier (Nikkei)",
+      "facts": "Hausses de 5 à 10 % sur nœuds avancés et matures ; ≤ 7 nm (77 % du CA T2 2026) au plein 10 % ; prime 10–15 % sur volumes IA additionnels.",
+      "numbers": "+5–10 % ; prime +10–15 %",
+      "why_it_matters": "Levier principal pour tenir la marge brute > 65 % malgré la dilution des fabs étrangères.",
+      "impact": "positif",
+      "source": "https://gigazine.net/gsc_news/en/20260722-tsmc-price-hike/"
+    },
+    {
+      "date": "2026-09-14",
+      "ticker_or_topic": "TSM",
+      "headline": "CoWoS : 130 000 plaquettes/mois fin 2026, doublement visé fin 2028 ; 2 nm à 110 000/mois mi-2027",
+      "facts": "TrendForce rapporte les objectifs de capacité 2 nm et CoWoS ; estimations fin 2027 divergentes (170 000 à 200 000+).",
+      "numbers": "CoWoS ≈ 130 000 wpm fin 2026 → 260 000 fin 2028 ; N2 110 000 wpm mi-2027",
+      "why_it_matters": "Le goulot CoWoS est le péage de la chaîne IA et soutient la part de marché fonderie > 65 %.",
+      "impact": "positif",
+      "source": "https://www.trendforce.com/news/2026/09/14/news-tsmc-reportedly-targets-22-2nm-16-3nm-capacity-boost-by-mid-2027-cowos-to-double-by-2028/"
+    },
+    {
+      "date": "2026-10-01",
+      "ticker_or_topic": "TSM",
+      "headline": "Arizona : engagement porté à 265 Mrd $ ; site texan à l'étude (Bloomberg, source secondaire)",
+      "facts": "Bloomberg aurait rapporté le 01/10 l'examen d'un campus au Texas. Section 232 : imports hors droits jusqu'à 2,5x la capacité en construction, puis 1,5x la production US. P2 : équipements octobre 2026, mini-ligne T2 2027, volume T4 2027.",
+      "numbers": "265 Mrd $ ; ratios 2,5x / 1,5x",
+      "why_it_matters": "Capex hors Taïwan pèse sur la marge ; à comparer au capex 2026 de 60–64 Mrd $ et à la règle capex > 50 % du CA.",
+      "impact": "à surveiller",
+      "source": "https://shattered.io/tsmc-texas-fab-265-billion-arizona-2026/"
+    },
+    {
+      "date": "2026-09-28",
+      "ticker_or_topic": "GEO-TW",
+      "headline": "Sommet Trump–Xi : Taïwan absent de la fiche US ; paquet d'armes de 14 Mrd $ en suspens",
+      "facts": "Pékin dit avoir demandé à Washington de s'opposer à l'indépendance de Taïwan. L'ambassadeur US affirme que Trump a proposé des armes à Xi ; Trump dément le 28/09. Budget défense taïwanais supplémentaire de 145,7 Mrd NT$ approuvé, total > 1 000 Mrd NT$.",
+      "numbers": "14 Mrd $ ; 145,7 Mrd NT$ (4,6 Mrd $)",
+      "why_it_matters": "Risque Taïwan non couvert par les règles de vente ; le marché n'a pas réagi (TAIEX record le 02/10).",
+      "impact": "à surveiller",
+      "source": "https://fortune.com/2026/09/28/trump-xi-summit-taiwan-weapons-sale/"
+    },
+    {
+      "date": "2026-09-03",
+      "ticker_or_topic": "GEO-TW",
+      "headline": "Lutnick : « 40 % » de la production taïwanaise vers les États-Unis ; rien de nouveau sur le « 50/50 »",
+      "facts": "Dernière déclaration datée trouvée : 03/09/2026. Le 50/50 (septembre 2025) avait été rejeté par Taipei. Rien trouvé du 28/09 au 05/10.",
+      "numbers": "40 %",
+      "why_it_matters": "Pression politique sur la localisation de la production, facteur de dilution de la marge.",
+      "impact": "neutre",
+      "source": "https://www.taiwanplus.com/news/newscasts/taiwanplus-news/260903022/lutnick-says-taiwan-moving-40percentage-of-chip-production-to-us-sept-3-2026"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker_or_topic": "SAMSUNG",
+      "headline": "Samsung Taylor : capacité 2 nm déjà réservée (Tesla, Broadcom, Arm) (date de l'article non vérifiée ; relevé le 05/10)",
+      "facts": "Essais fin septembre/début octobre, production de masse 2027, 50 000 plaquettes/mois ; Fab 2 lancée fin 2026 pour 2030. Date de l'article non vérifiée.",
+      "numbers": "50 000 wpm",
+      "why_it_matters": "Premier test concret de la règle part de marché fonderie < 65 %, sans volume avant 2027.",
+      "impact": "à surveiller",
+      "source": "https://www.trendforce.com/news/?p=63790"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker_or_topic": "INTC",
+      "headline": "Intel 14A : jalon PDK promis cet automne à Apple et Terafab (date de l'article non vérifiée ; relevé le 05/10)",
+      "facts": "Un analyste évoque Apple en 18A pour des M bas de gamme ; engagements fermes attendus fin 2026–mi 2027. Date non vérifiée.",
+      "numbers": "n.d.",
+      "why_it_matters": "Risque pour la part de marché fonderie et le pouvoir de prix 2027, mais rien de signé.",
+      "impact": "à surveiller",
+      "source": "https://aiweekly.co/alerts/intel-promises-apple-and-terafab-a-14a-pdk-milestone-this-fall"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker_or_topic": "QQQ",
+      "headline": "Record du Nasdaq après un rapport emploi faible",
+      "facts": "Nasdaq Composite +1,19 % à 27 190,86 points (record). QQQ clôture à 749,58 $ (+1,14 %), au-dessus de l'ancien plus haut de 748,63 $. Le rapport emploi de septembre, plus faible qu'attendu, a réduit les anticipations de hausse des taux.",
+      "numbers": "Nasdaq 27 190,86 (+1,19 %) ; QQQ 749,58 $ (+1,14 %) ; VIX 15,40 (−6,03 %)",
+      "why_it_matters": "L'indice de référence est à son record ; la poche IA du portefeuille (35 % contre 38 % pour l'indice, Broadcom/TSMC) profite du rebond des semi-conducteurs.",
+      "impact": "positif",
+      "source": "https://alphaseeker84.substack.com/p/weekly-market-update-week-ending"
+    },
+    {
+      "date": "2026-09-30",
+      "ticker_or_topic": "MARKET",
+      "headline": "Micron : trimestre record et prévisions au-dessus",
+      "facts": "Chiffre d'affaires du T4 fiscal 54,23 Md$ (41,46 Md$ au trimestre précédent), BPA non-GAAP 33,42 $, marge brute GAAP 86,8 %. Prévision T1 FY27 : 61,5 Md$ ± 1,5 Md$.",
+      "numbers": "CA 54,23 Md$ ; BPA 33,42 $ ; guidance 61,5 Md$",
+      "why_it_matters": "La demande mémoire liée à l'IA reste explosive, bon signal pour TSMC et Broadcom.",
+      "impact": "positif",
+      "source": "https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000018/a2026q4ex991-pressrelease.htm"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker_or_topic": "MARKET",
+      "headline": "Tesla +5,2 % sur ses livraisons ; Nvidia record intrajournalier",
+      "facts": "Tesla a livré 486 532 véhicules au T3 contre 463 000 attendus ; titre +5,20 %. Nvidia a touché 237,55 $ en séance (capitalisation 5 700 Md$). Apple +1,02 %.",
+      "numbers": "TSLA +5,20 % ; NVDA 237,55 $ ; AAPL +1,02 %",
+      "why_it_matters": "La hausse de l'indice est concentrée sur quelques méga-capitalisations absentes du portefeuille.",
+      "impact": "à surveiller",
+      "source": "https://vistapglobal.com/weekly-market-summary-october-2-2026-stocks-finish-higher-as-soft-jobs-data-reframes-fed-outlook-amd-avgo-f-googl-hpp-lpl-nvda-ser-soc-tsla/"
+    },
+    {
+      "date": "2026-09-30",
+      "ticker_or_topic": "MARKET",
+      "headline": "T3 2026 : Nasdaq +2,5 %, S&P 500 +2 %, Dow −2,7 %",
+      "facts": "En septembre : S&P −0,5 %, Dow −4,3 %, Nasdaq +1,9 %. Trois quarts des composantes du S&P 500 ont baissé en septembre sous l'effet de la hausse des rendements. Le 30/09, S&P 7 651,54 (−0,3 %), Dow 50 906,05 (−0,9 %), Nasdaq 26 861,06 (+0,2 %), PCE sous les attentes.",
+      "numbers": "T3 : Nasdaq +2,5 %, S&P +2 %, Dow −2,7 % ; 10 ans US 5,29 %",
+      "why_it_matters": "Un 10 ans à 5,3 % pèse sur les multiples de croissance (Nu, Uber) et accentue la concentration sur l'IA.",
+      "impact": "neutre",
+      "source": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-september-30-dow-sp-500-nasdaq-080339262.html"
+    },
+    {
+      "date": "2026-09-28",
+      "ticker_or_topic": "MARKET",
+      "headline": "Lundi de repli : Nasdaq −0,92 %",
+      "facts": "S&P −0,77 % à 7 683,93, Dow −0,67 % à 51 481,72, Nasdaq −248,34 pts à 26 820,38. Réévaluation des valorisations, rendements et pétrole en hausse.",
+      "numbers": "Nasdaq 26 820,38 (−0,92 %) ; S&P 7 683,93 ; Dow 51 481,72",
+      "why_it_matters": "Le pétrole cher soutient la thématique défense/énergie (Rheinmetall) mais pèse sur Uber.",
+      "impact": "négatif",
+      "source": "https://armenpress.am/en/article/1261626"
+    },
+    {
+      "date": "2026-09-29",
+      "ticker_or_topic": "MARKET",
+      "headline": "Séance d'attente : Nasdaq −0,09 %",
+      "facts": "Dow −0,26 % à 51 349,92, S&P −0,17 % à 7 670,84, Nasdaq −0,09 % à 26 797,54.",
+      "numbers": "Nasdaq 26 797,54 ; S&P 7 670,84 ; Dow 51 349,92",
+      "why_it_matters": "Marché sans tendance avant le PCE et l'emploi ; pas d'écart notable avec le portefeuille.",
+      "impact": "neutre",
+      "source": "https://armenpress.am/en/article/1261626"
+    },
+    {
+      "date": "2026-10-01",
+      "ticker_or_topic": "MARKET",
+      "headline": "Début de T4 timide",
+      "facts": "S&P +0,2 % à 7 666,45 (fin de trois séances de baisse), Dow +20,51 pts à 50 926,56, Nasdaq +10,53 pts à 26 871,60.",
+      "numbers": "Nasdaq 26 871,60 (+0,04 %) ; S&P 7 666,45 ; Dow 50 926,56",
+      "why_it_matters": "Divergence : les puces montent alors que le marché obligataire se tend.",
+      "impact": "neutre",
+      "source": "https://www.lanacion.com.ar/usa/how-major-us-stock-indexes-fared-thursday-1012026-nid01102026/"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker_or_topic": "MARKET",
+      "headline": "Fed : hausse de 25 pb en septembre, encore une attendue en 2026",
+      "facts": "Au FOMC de septembre, la Fed a relevé ses taux de 25 pb à l'unanimité. La projection médiane implique une hausse supplémentaire de 25 pb en 2026 puis une pause en 2027. Fin septembre, les marchés de prédiction donnaient 34 % à 69 % de probabilité à une hausse les 27-28/10 ; ces paris ont reculé après l'emploi du 02/10.",
+      "numbers": "Taux médian attendu 4,1 % fin 2026 ; probabilité de hausse en octobre 34-69 %",
+      "why_it_matters": "Une Fed en resserrement pénalise les valeurs à duration longue (poche IA, Nu).",
+      "impact": "à surveiller",
+      "source": "https://newsquawk.com/headlines/week-in-focus-4-9th-october-2026-fomc-minutes-us-ism-services-pmi-opec-canadian-jobs-and-ecb-minutes"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker_or_topic": "MARKET",
+      "headline": "Emploi septembre : consensus +90 000, publié plus faible qu'attendu",
+      "facts": "Consensus FactSet avant publication : +90 000 emplois, chômage 4,1 % (août : +162 000, 4,1 %). Le chiffre publié le 02/10 a été plus faible qu'attendu ; valeur exacte non retrouvée.",
+      "numbers": "Attendu +90 000 ; chômage 4,1 %",
+      "why_it_matters": "Un emploi qui ralentit limite le risque de hausse des taux, favorable à l'indice.",
+      "impact": "à surveiller",
+      "source": "https://insight.factset.com/total-nonfarm-payrolls-for-september-2026-are-projected-to-rise-by-90000"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker_or_topic": "3661.TW",
+      "headline": "Alchip : rien d'important cette semaine, T3 le 30/10",
+      "facts": "Aucune nouvelle marquante trouvée du 28/09 au 05/10/2026. Pas de CA mensuel de septembre ni d'information sur un second client dans les extraits. Résultats du T3 attendus le 30/10/2026.",
+      "numbers": "CA T2 2026 : 241,7 M$ (+82,6 % t/t, −18,7 % a/a)",
+      "why_it_matters": "Le déclencheur (second client > 20 % du CA ou consensus 2028 > 15 %) reste sans nouvelle.",
+      "impact": "neutre",
+      "source": "https://finance.yahoo.com/markets/stocks/articles/alchip-technologies-ltd-tpe-3661-010414151.html"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker_or_topic": "ALNY",
+      "headline": "Alnylam : enquête pour fraude boursière poursuivie, Cantor reste Neutre",
+      "facts": "Un cabinet d'avocats annonce le 02/10/2026 poursuivre son enquête après la baisse de la guidance TTR 2026 du 30/07/2026. Cantor Fitzgerald réitère Neutre le 30/09/2026. Phase 1 d'ALN-HTT02 présentée le 23/10/2026.",
+      "numbers": "Guidance TTR 2026 réduite d'environ 200 M$",
+      "why_it_matters": "Le déclencheur suppose une guidance relevée tenue au T3 ; la guidance a au contraire été abaissée et le T3 n'est pas publié.",
+      "impact": "à surveiller",
+      "source": "https://globenewswire.com/news-release/2026/10/02/3374059/0/en/securities-fraud-investigation-into-alnylam-pharmaceuticals-inc-alny-continues-shareholders-who-lost-money-urged-to-contact-the-law-offices-of-frank-r-cruz.html"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker_or_topic": "NVDA",
+      "headline": "NVIDIA : record historique à 237,88 $, Morgan Stanley top pick, rachat de 150 Md$",
+      "facts": "Nouveau plus haut intraday le 02/10/2026, capitalisation supérieure à 5 700 Md$. Morgan Stanley remet le titre en top pick semi-conducteurs avec un objectif de 300 $. Le conseil autorise 150 Md$ de rachats supplémentaires.",
+      "numbers": "237,88 $ intraday ; objectif 300 $ ; rachats autorisés 235 Md$ au total ; clôture exacte non trouvée",
+      "why_it_matters": "Seuil d'entrée à 200,05 $ : le titre en est très éloigné.",
+      "impact": "positif",
+      "source": "https://www.investing.com/news/stock-market-news/nvidia-breaks-to-alltime-high-of-23787-driven-by-buyback-analyst-upgrade-and-ai-demand-93CH-4930287"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker_or_topic": "CATL",
+      "headline": "CATL : action H à 476,80 HKD, plan d'actionnariat salarié, T3 le 20/10",
+      "facts": "L'action H clôture à 476,80 HKD le 02/10/2026 (−1,53 %), sous pression d'un plan d'actionnariat salarié utilisant des actions A déjà rachetées. Conseil du 20/10/2026 pour approuver les résultats du T3. Divergence : un agrégateur indique des résultats du T3 le 19/10, le conseil restant fixé au 20/10.",
+      "numbers": "476,80 HKD (−1,53 %) ; 28 319 044 actions A, 0,612 % du capital, 5 960 salariés",
+      "why_it_matters": "La cotation de Hong Kong est active ; la croissance 2027 attend une confirmation au T3 le 20/10.",
+      "impact": "à surveiller",
+      "source": "https://www.tipranks.com/news/company-announcements/catl-proposes-2026-employee-stock-ownership-plan-using-repurchased-a-shares"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker_or_topic": "SE",
+      "headline": "Sea : DBS dégrade à Conserver, objectif 105 $, clôture 95,19 $",
+      "facts": "DBS passe de Achat à Conserver et ramène son objectif de 148 $ à 105 $, citant les investissements de Shopee (subventions, livraison en une heure, logistique) qui pourraient freiner les marges 2027. Clôture du 02/10/2026 à 95,19 $. CORRECTION : note datée du 02/10/2026 selon Investing.com et The Fly (date non vérifiée sur la page) ; dépenses IA « Migoo » et riposte à Pinduoduo/Temu citées ; EBITDA ajusté 2027 du groupe attendu 6 % sous le consensus.",
+      "numbers": "Objectif 148 $ → 105 $ ; clôture 95,19 $ ; titre à environ −23 % depuis le pic d'août 2026",
+      "why_it_matters": "Sea ne remplace Uber que si la règle de vente d'Uber se déclenche ; sans nouvelle sur ce point, mais le profil de marge se dégrade.",
+      "impact": "négatif",
+      "source": "https://www.investing.com/news/stock-market-news/dbs-cuts-sea-target-as-shopee-spending-weighs-on-profit-growth-4929596 ; https://www.tipranks.com/news/the-fly/sea-limited-downgraded-to-hold-from-buy-at-dbs-bank-2"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker_or_topic": "LLY",
+      "headline": "Eli Lilly : données EASD (Foundayo, retatrutide, eloraTZP) et approbation FDA de Jaypirca",
+      "facts": "Au congrès EASD de Milan (28/09–02/10/2026), Lilly présente ACHIEVE-4 (Foundayo), retatrutide à 80 semaines et la phase 2 d'eloraTZP. La FDA approuve le 02/10/2026 une indication supplémentaire pour Jaypirca (LLC/LLP non traitée). Cours à 1 139,35 $ le 02/10/2026. T3 le 29/10/2026.",
+      "numbers": "MACE-4 −16 % (Foundayo) ; retatrutide −20,8 % de poids à 80 semaines ; eloraTZP −17 % vs −10 % en 16 semaines ; cours 1 139,35 $",
+      "why_it_matters": "Pipeline obésité renforcé, mais aucune donnée trouvée sur le consensus 2028 (> 20 %) qui conditionne l'entrée.",
+      "impact": "positif",
+      "source": "https://www.marketscreener.com/news/eli-lilly-and-company-presents-new-data-on-foundayo-retatrutide-and-eloratzp-at-easd-2026-ce785bdddd89f427"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker_or_topic": "ENR",
+      "headline": "Siemens Energy : pre-close call confirme les objectifs, clôture 145,42 €",
+      "facts": "Le pre-close call du 30/09/2026 confirme les objectifs 2025/26 : croissance comparable de 14 à 16 %, marge avant éléments spéciaux de 10 à 12 % (haut de fourchette), bénéfice net d'environ 4 Md€, flux de trésorerie avant impôts d'environ 8 Md€. Clôture du 02/10/2026 à 145,42 € (+2,03 %). Résultats annuels le 11/11/2026.",
+      "numbers": "145,42 € ; croissance 14–16 % ; marge 10–12 % ; bénéfice net ~4 Md€ ; FCF ~8 Md€",
+      "why_it_matters": "Seuil d'entrée à 100 € : le titre reste très au-dessus.",
+      "impact": "positif",
+      "source": "https://www.finanzen.net/nachricht/aktien/siemens_energy-aktie-kursbewegung-02-10-2026-11202038"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker_or_topic": "NU",
+      "headline": "NU clôture à 15,18 $ (+13,03 %), volume 180,4 M de titres",
+      "facts": "Réaction au premier tour : plus forte hausse de la séance parmi les ADR brésiliens. Fourchette 14,86-15,46 $ ; plus haut 52 semaines 18,98 $. Divergences de titres : +12 % (Yahoo, 24/7 Wall St), +12,66 % (TradingKey), jusqu'à +15,1 % en séance (Motley Fool). Chiffres d'extraits de pages de cotation, non lus directement.",
+      "numbers": "15,18 $ ; +1,75 $ ; +13,03 % ; +19,9 % depuis le 30/09",
+      "why_it_matters": "Le titre reste sous la zone d'achat PEG 1 du dossier (21,81 $) mais la prime électorale est en partie dans le cours ; le choix « acheter avant ou après le 25/10 » est moins asymétrique.",
+      "impact": "positif",
+      "source": "https://www.cnn.com/markets/stocks/NU ; https://www.fool.com/investing/2026/10/05/why-nu-holdings-stock-rallied-today/"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker_or_topic": "MACRO-BR",
+      "headline": "Ibovespa +7,70 % à 206 911,89 (record), dollar à 5,00 R$ (−4,12 %)",
+      "facts": "Plus forte hausse en plus de six ans ; plus haut intrajournalier 209 605,70 ; volume 102,7 Md R$. BTG +22,5 %, Bradesco PN +13,6 %, Banco do Brasil +11 %, Itaú PN +10,4 %. Dollar de 5,22 à 5,00 R$ ; taux DI en baisse (ampleur non trouvée). Divergence : NC News donne +7,98 %.",
+      "numbers": "206 911,89 ; +7,70 % ; USD/BRL 5,00",
+      "why_it_matters": "Un réal à 5,00 contre 5,20 R$ augmente d'environ 4 % la valeur en dollars des bénéfices de Nu ; l'hypothèse de change du dossier (5,20) bouge, pas le coût du risque.",
+      "impact": "positif",
+      "source": "https://www.infomoney.com.br/mercados/ibovespa-hoje-bolsa-de-valores-ao-vivo-05102026/ ; https://www.cnnbrasil.com.br/economia/money/mercado/mercado-hoje-5-outubro-2026/"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker_or_topic": "MACRO-BR",
+      "headline": "Sondages de second tour : aucun publié les 05-06/10 ; premier AtlasIntel le 09/10",
+      "facts": "Aucun Datafolha ni Quaest de second tour trouvé. AtlasIntel annonce son premier sondage de second tour pour le vendredi 09/10 (5 000 entretiens). Derniers sondages avant le vote : Datafolha (03/10) Lula 45 / Flávio 42 ; Quaest 46 / 45 ; AtlasIntel 47 / 44,1. InfoMoney : Morgan Stanley préfère XP et Nubank pour jouer la baisse des taux longs (date non vérifiée).",
+      "numbers": "Sondage AtlasIntel le 09/10",
+      "why_it_matters": "Le marché a pris position avant les sondages ; un sondage défavorable à Flávio le 09/10 peut rendre une partie du mouvement de Nu.",
+      "impact": "à surveiller",
+      "source": "https://www.cartacapital.com.br/cartaexpressa/a-1a-pesquisa-atlasintel-sobre-o-2o-turno-entre-lula-e-flavio-bolsonaro/ ; https://www.gazetadopovo.com.br/eleicoes/2026/pesquisa-eleitoral-2026/um-de-seis-institutos-de-pesquisa-apontava-flavio-numericamente-a-frente-de-lula/"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker_or_topic": "MACRO-US",
+      "headline": "Nasdaq Composite record à 27 477,31 (+1,05 %) ; S&P 500 7 773,99 ; Dow 51 267,90 ; QQQ 756,20 $ (+0,88 %)",
+      "facts": "Grandes valeurs technologiques et NVIDIA à des records ; Schneider Electric rachète PTC (~22 Md$, PTC +33 %). Nasdaq 100 ~31 076 (+0,9 %, record, source non identifiée). QQQ 756,20 $ selon un extrait (Investing/TradingView), 755,89 $ selon un autre : à confirmer. VIX 15,31.",
+      "numbers": "27 477,31 ; +1,05 % ; QQQ 756,20 $ (+2,2 % depuis le 30/09)",
+      "why_it_matters": "L'indice de référence progresse de 2,2 % depuis le 30/09 ; le portefeuille, tiré par Nu, fait environ +7,4 % (calcul de l'auteur).",
+      "impact": "positif",
+      "source": "https://finance.yahoo.com/markets/world-indices/articles/major-us-stock-indexes-fared-201520824.html ; https://www.investing.com/etfs/powershares-qqqq-historical-data"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker_or_topic": "MACRO-US",
+      "headline": "ISM services de septembre : 54,9 (attendu 55,1, 55,4 en août) ; prix payés 74,0",
+      "facts": "Emploi 50,1 (47,8), nouvelles commandes 59,8, activité 56,5. Prix payés en hausse (72,6 en août).",
+      "numbers": "54,9 ; prix payés 74,0",
+      "why_it_matters": "Activité un peu plus faible mais prix en hausse : la Fed reste hésitante ; CME FedWatch ~82 % de statu quo le 28/10.",
+      "impact": "à surveiller",
+      "source": "https://www.prnewswire.com/news-releases/services-pmi-at-54-9-september-2026-ism-services-pmi-report-302898421.html"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker_or_topic": "MACRO-US",
+      "headline": "10 ans US à 5,307 % en clôture, pic à 5,349 %, plus haut depuis avril 2002",
+      "facts": "CNBC : +3 pb lundi. Divergence : Trading Economics donnerait 5,26 % (à vérifier). Aucun discours de la Fed les 05-06/10 ; Barr (29/09) et Williams (30/09) penchent pour de nouveaux ajustements. Pas de shutdown : loi de financement provisoire jusqu'au 11/12/2026.",
+      "numbers": "5,307 % ; pic 5,349 %",
+      "why_it_matters": "Un 10 ans au-dessus de 5,3 % pèse sur les multiples de Nu et d'Uber et renchérit la dette des data centers.",
+      "impact": "négatif",
+      "source": "https://www.cnbc.com/2026/10/05/treasury-yields-bonds-fed-rates.html ; https://breakingdefense.com/2026/09/house-passes-funding-stopgap-averting-government-shutdown-in-october/"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker_or_topic": "MACRO-OIL-FX",
+      "headline": "Brent entre 101,82 et 105,81 $ selon les sources ; EUR/USD plus bas à 1,1161 ; USD/TWD 31,788",
+      "facts": "Reuters via Business Recorder : −0,43 $ à 101,82 $ (exportations du Moyen-Orient au-dessus de l'avant-guerre, Arab Light −5 $) ; Gulf News : Brent > 102 $ ; Fortune : 105,81 $ à 7 h New York. Prix de règlement non confirmé ; WTI : rien de fiable. Iran : sept conditions pour rouvrir Ormuz ; trois pétroliers touchés ; Houthis contre Riyad et Aramco. Euro à 1,1161 sur les craintes budgétaires françaises ; TWD 31,788.",
+      "numbers": "Brent 101,82-105,81 $ ; EUR/USD 1,1161 ; USD/TWD 31,788",
+      "why_it_matters": "Pétrole > 100 $ : risque inflationniste pour la Fed, coût pour les chauffeurs Uber, soutien au réal.",
+      "impact": "à surveiller",
+      "source": "https://brecorder.com/news/40442678/oil-slips-on-rise-in-middle-east-crude-exports-and-g7-stocks-release ; https://www.home.saxo/en-mena/content/articles/macro/market-quick-take--weak-euro-in-focus---05-october-2026-05102026 ; https://focustaiwan.tw/business/202610050016"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker_or_topic": "MARKET-EU",
+      "headline": "DAX +0,09 % à 25 254,21 ; CAC 40 −0,8 % à 7 834,10 (plus bas de six mois) ; STOXX 600 +0,4 %",
+      "facts": "Schneider Electric −9 à −10 % après le rachat de PTC explique ~0,85 point de la baisse du CAC ; craintes budgétaires françaises.",
+      "numbers": "DAX 25 254,21 ; CAC 7 834,10",
+      "why_it_matters": "Contexte européen pour Rheinmetall : séance stable à Francfort.",
+      "impact": "neutre",
+      "source": "https://www.ariva.de/dax-index/news/aktien-frankfurt-schluss-stagnation-anleger-sind-auf-der-12159174 ; https://www.tradingsat.com/cac-40-FR0003500008/actualites/cac-40-schneider-electric-fait-plonger-presque-a-lui-seul-le-cac-40-qui-lache-pres-de-08-1171259.html"
+    },
+    {
+      "date": "2026-10-06",
+      "ticker_or_topic": "MARKET-ASIA",
+      "headline": "06/10 matin : TAIEX cinquième record (~49 823), 2330 à 2 585 NT$, Nikkei +0,3 %, Hang Seng +0,8 %",
+      "facts": "TAIEX +111 points, plus haut à 49 968 sans franchir 50 000 au comptant (contrat de nuit à 50 118). TSMC 2 585 NT$ (+10). Discours d'Ueda (BoJ) surveillé. Contrats à terme US à peine positifs (source non identifiée).",
+      "numbers": "TAIEX ~49 823 ; 2330 2 585 NT$",
+      "why_it_matters": "TSMC continue de monter à Taipei avant les ventes de septembre (08/10).",
+      "impact": "positif",
+      "source": "https://finance.ettoday.net/news/3249946 ; https://investinglive.com/news/investinglive-asia-pacific-market-news/"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker_or_topic": "GEO-UKR",
+      "headline": "Merz à Kiev (04-05/10) : 1,35 Md€ d'aide, accords Diehl, Hensoldt, Quantum Systems ; Rheinmetall absent",
+      "facts": "1 Md€ militaire + 350 M€ énergie ; coproduction de drones intercepteurs, missiles à plus longue portée, satellites. La presse boursière cite 14 accords pour 6,5 à 8,5 Md€ (chiffre secondaire, divergent). CNBC : la Russie promet d'intensifier les frappes sur Kiev après l'endommagement du pont Nord ; Washington propose un trilatéral d'ici fin octobre, possiblement aux Émirats.",
+      "numbers": "1,35 Md€",
+      "why_it_matters": "Rotation « capteurs et défense aérienne contre terrestre » jusque dans les accords politiques ; aucun signal de paix ni de levée des sanctions (règle 5 de RHM).",
+      "impact": "à surveiller",
+      "source": "https://www.berliner-zeitung.de/article/merz-in-kiew-milliardenhilfe-und-drohnenabkommen-mit-der-ukraine-10457438 ; https://www.cnbc.com/2026/10/05/ukraine-war-russia-kyiv-putin-zelenskyy-trump.html"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker_or_topic": "RHM",
+      "headline": "RHM clôture Xetra à 980,20 € (+2,43 %, source secondaire) ; 06/10 : −1,0 % à 970,80 € à 9 h 28",
+      "facts": "05/10 : ouverture 966,30 €, plus haut 978,60 €, 971,80 € à 16 h 28 (finanzen.ch) ; clôture 980,20 € (boerse.de, extrait). Les variations publiées impliquent une clôture du 02/10 vers 956,5-956,9 € et non 959,80 €. 06/10 : ouverture 982,00 €, plus bas 968,90 €. Plus bas 52 semaines 940,30 €.",
+      "numbers": "980,20 € ; +2,5 % depuis le 30/09",
+      "why_it_matters": "À 980 €, le titre est juste sous la zone d'achat PEG 1 du dossier (989 €).",
+      "impact": "neutre",
+      "source": "https://www.boerse.de/aktien/Rheinmetall-Aktie/DE0007030009 ; https://www.finanzen.ch/nachrichten/aktien/rheinmetall-aktie-kursbewegung-06-10-2026-1035064641"
+    },
+    {
+      "date": "2026-10-06",
+      "ticker_or_topic": "RHM",
+      "headline": "Rheinmetall lance la production en série de satellites (titre Onvista, contenu non lu)",
+      "facts": "Titre du 06/10 : « Rheinmetall startet Serienproduktion von Weltraumsatelliten » ; contexte : site de Neuss, coentreprise Rheinmetall ICEYE Space Solutions (60/40). Aucun communiqué Rheinmetall daté des 05-06/10 trouvé. Partenariat Rheinmetall Defence Australia / Breaker (human-machine teaming) cité le 06/10 (source secondaire).",
+      "numbers": "n.d.",
+      "why_it_matters": "L'espace est le segment que le marché privilégie ; aucun montant à ce stade.",
+      "impact": "positif",
+      "source": "https://www.onvista.de/news/2026/10-06-rheinmetall-startet-serienproduktion-von-weltraumsatelliten-0-10-26560958"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker_or_topic": "RHM analystes",
+      "headline": "Aucune note RHM datée du 28/09 au 06/10 ; consensus 1 738,89 € (11 analystes) ou 1 610,38 € (24) ; Jefferies relève Hensoldt à Achat le 05/10",
+      "facts": "Dernières notes : Berenberg Achat 1 600 € (25/09), Bernstein Outperform 1 900 € (21/09), Deutsche Bank 1 800 € (01/09). Notes Kepler/Barclays « d'octobre » probablement de 2025. Rappel S1 2026 (secondaire) : CA 5,2 Md€ (+39 %), résultat opérationnel 786 M€ (~15,1 %), flux de trésorerie libre −1,6 Md€. T3 le 05/11.",
+      "numbers": "FCF S1 −1,6 Md€",
+      "why_it_matters": "Le flux négatif du S1 est le chiffre à suivre pour la règle 2 (FCF 2026 négatif) ; la guidance prévoit un retournement au S2.",
+      "impact": "à surveiller",
+      "source": "https://www.finanzen.net/kursziele/rheinmetall ; https://finanzen.net/analyse/hensoldt_buy-jefferies_&_company_inc._1108842"
+    },
+    {
+      "date": "2026-10-01",
+      "ticker_or_topic": "Défense Europe",
+      "headline": "KNDS : IPO « suspendue, pas annulée », peut-être au-delà de 2026 ; PLF 2027 France : armées à 63,4 Md€ (+6,4 Md€)",
+      "facts": "KNDS (PDG Alary) : montée en cadence du Leopard 2A8 à Kassel (finanzen.at, vers le 01/10). France : programmes à effet majeur +24 % à 17,2 Md€ (FOB, date non vérifiée). SAFE : rien de daté ; la Roumanie (16,68 Md€) peut demander un premier décaissement en octobre. Leonardo, BAE, Thales, Pologne, Italie, Royaume-Uni : rien trouvé.",
+      "numbers": "63,4 Md€",
+      "why_it_matters": "Le report de l'IPO KNDS évite un concurrent pour les flux sectoriels ; l'absence de nouvelles SAFE retarde les commandes export attendues au carnet du 31/12 (seuil 90 Md€).",
+      "impact": "neutre",
+      "source": "https://finanzen.at/nachrichten/aktien/knds-boersengang-nur-aufgeschoben-konzern-plant-produktionsoffensive-1036588270 ; https://forcesoperations.com/plf-2027-des-investissements-capacitaires-en-forte-hausse-pour-les-armees/"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker_or_topic": "AVGO",
+      "headline": "AVGO +2,08 % à 362,51 $ (plus haut 363,87 $)",
+      "facts": "Motif avancé (sources secondaires) : optimisme sur le montage Anthropic ; aucun catalyseur nouveau. Pré-marché du 06/10 : rien de fiable. Aucun 8-K, Form 4 ni rachat daté après le 28/09 trouvé ; aucune vente de Hock Tan en octobre.",
+      "numbers": "362,51 $ ; +7,37 $ ; +3,2 % depuis le 30/09",
+      "why_it_matters": "Le titre revient à 1,4 % de la zone d'achat PEG 1 du dossier (367,64 $).",
+      "impact": "positif",
+      "source": "https://www.marketbeat.com/instant-alerts/price-broadcom-nasdaq-avgo-stock-jumps-21-time-to-buy-2026-10-05/"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker_or_topic": "AVGO",
+      "headline": "Bloomberg : le « residual value support » de Broadcom couvre 100 % des tranches A1/A2 (42 Md$) du paquet de 60 Md$",
+      "facts": "Tranche senior de 42 Md$ syndiquée par BofA, Citi et Morgan Stanley ; si Anthropic cesse de payer, le SPV vend les puces et Broadcom comble l'écart ; 18 Md$ de dette junior menée par Blackstone. Prospectus : Broadcom à la fois fournisseur, bailleur et prêteur (« potential conflicts of interest ») ; certains défauts rendent exigible une part substantielle des loyers. BofA estimerait l'exposition en garanties à ~370 Md$ fin de décennie (source agrégée, date inconnue).",
+      "numbers": "42 Md$ couverts à 100 % ; seuil de la règle : 20 Md$",
+      "why_it_matters": "Les montants de presse dépassent le seuil de 20 Md$ de la règle 4, mais la règle vise des garanties « divulguées » par Broadcom ; seuls le 10-Q et le 10-K de décembre feront foi. Aucun appel de garantie signalé.",
+      "impact": "négatif",
+      "source": "https://www.bloomberg.com/news/articles/2026-10-02/broadcom-starts-amassing-60-billion-to-fund-chips-for-anthropic ; https://aiweekly.co/alerts/broadcom-to-lend-anthropic-up-to-42b-for-tpu-chip-leases"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker_or_topic": "AVGO analystes",
+      "headline": "Bernstein maintient Outperform et 575 $ ; consensus 503 $ (26 Achat, 4 Conserver)",
+      "facts": "Bernstein dans le contexte du financement de 60 Md$ (début octobre, date exacte non vue). Seaport (Jay Goldberg) : le bilan de NVIDIA a « forcé la main » de Broadcom. Les relèvements Morgan Stanley 505 $, Rosenblatt 600 $, BMO 575 $, Cantor 600 $ datent du 03/09.",
+      "numbers": "575 $ ; consensus 503 $",
+      "why_it_matters": "Pas de signal nouveau ; la règle 5 (rachats contre dilution) attend le 10-K.",
+      "impact": "neutre",
+      "source": "https://ad-hoc-news.de/boerse/news/corporate-news/broadcom-lines-up-usd-60-billion-financing-and-bernstein-keeps-usd-575-target-for-broadcom-stock/70232022 ; https://stockanalysis.com/stocks/avgo/forecast/"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker_or_topic": "ANTHROPIC",
+      "headline": "IPO Anthropic : dépôt public du S-1 attendu « dès le 23/10 », cotation possible en novembre, jusqu'à 100 Md$ pour ~2 000 Md$",
+      "facts": "CNN et Renaissance Capital (05/10). Le S-1 reste confidentiel (dépôt le 01/06/2026, fuite le 28/09). OpenAI (Bloomberg, 05/10) : tour de 30 Md$ à ~1 400 Md$ avant l'apport avec des fonds émiratis (MGX, jusqu'à 10 Md$) et BlackRock.",
+      "numbers": "100 Md$ ; 2 000 Md$ ; OpenAI 30 Md$ à 1 400 Md$",
+      "why_it_matters": "Les deux premiers clients XPU continuent de lever du capital, ce qui soutient les 115 Md$ d'IA visés pour l'exercice 2027.",
+      "impact": "à surveiller",
+      "source": "https://www.cnn.com/2026/10/05/business/anthropic-ipo-stock-market ; https://bloomberg.com/news/articles/2026-10-05/openai-in-talks-with-uae-funds-blackrock-for-30-billion-round"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker_or_topic": "NVDA",
+      "headline": "NVIDIA record de clôture à 238,90 $ (agrégateur) ; BNP Paribas premier choix, objectif 285 → 345 $",
+      "facts": "Clôture 238,90 $ selon heygotrade (le +2,12 % affiché est incohérent avec 237,88 $ le 02/10 : +0,43 % réel) ; capitalisation ~5 730 Md$ en séance. Pré-marché du 06/10 : −3 % selon un titre Yahoo non daté avec certitude.",
+      "numbers": "238,90 $ ; objectif BNP 345 $",
+      "why_it_matters": "Baromètre de l'appétit pour l'IA ; un repli le 06/10 toucherait AVGO et TSM. Déclencheur liste d'attente (200,05 $) : pas atteint.",
+      "impact": "positif",
+      "source": "https://www.heygotrade.com/en/us-stock/nvda/ ; https://www.gurufocus.com/news/9109757/bnp-paribas-boosts-nvidia-nvda-price-target-amid-ai-hardware-demand-surge"
+    },
+    {
+      "date": "2026-10-06",
+      "ticker_or_topic": "MRVL",
+      "headline": "Journée investisseurs Marvell à 9 h (New York) : cadrage avant l'événement",
+      "facts": "Custom silicon ~1,5 Md$ (à vérifier), croissance > 20 % en FY27, doublement en FY28, objectif > 10 Md$ en FY29 ; marché du calcul custom estimé à 55,4 Md$ en 2028, Marvell vise ~20 % ; RBC attend un relèvement d'au moins 2 Md$. Annonces non encore disponibles au moment de la rédaction.",
+      "numbers": "55,4 Md$ (2028)",
+      "why_it_matters": "Un objectif Marvell très relevé serait un signe de partage du marché ASIC, le même gâteau que les XPU de Broadcom.",
+      "impact": "à surveiller",
+      "source": "https://www.investing.com/analysis/marvells-investor-day-is-custom-silicon-the-next-multibilliondollar-business-200685832"
+    },
+    {
+      "date": "2026-09-29",
+      "ticker_or_topic": "AI-POWER",
+      "headline": "FERC suspend jusqu'au 28/02/2027 la procédure de backstop de PJM (6 831 MW) ; enchère du 30/09 reportée",
+      "facts": "Décision du 29/09 sur l'allocation des coûts et le collatéral ; PJM reporte l'enchère (offres attendues jusqu'au 21/10). Capex hyperscalers 2026 : 725-780 Md$ (ordres de grandeur non datés), > 1 000 Md$ en 2027.",
+      "numbers": "6 831 MW ; capex 2026 725-780 Md$",
+      "why_it_matters": "Goulot électrique sur des data centers de 2028 : risque de calendrier pour les livraisons de XPU et de plaquettes, pas pour les commandes.",
+      "impact": "à surveiller",
+      "source": "https://www.utilitydive.com/news/pjm-delays-backstop-procurement-ferc-data-center/831751/ ; https://datacenterdynamics.com/en/news/moodys-hyperscaler-capex-forecasts-marked-up-by-85bn-to-close-in-on-1trn-by-2027/"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker_or_topic": "UBER",
+      "headline": "UBER +2,01 % à 69,48 $ après Wells Fargo (Surpondérer, objectif 89 → 92 $)",
+      "facts": "Clôture issue d'une page de cotation (extrait) ; Benzinga relevait +2,07 % à 69,53 $ en séance, plus haut 70,01 $. Wells Fargo (Ken Gawrelski) : objectif à 20 fois un BPA 2027 relevé à 4,61 $ ; EBITDA 2027 14,1 Md$ ; Waymo passerait de 1,4 % à 3,6 % du volume VTC américain en 2027 (130 M de trajets en propre contre 44 M). Consensus 103,74 $ (Benzinga) ou 103,03 $ (MarketBeat).",
+      "numbers": "69,48 $ ; objectif 92 $ ; Waymo 130 M de trajets 2027",
+      "why_it_matters": "Le titre repasse 1,4 % au-dessus de la zone d'achat PEG 1 (68,51 $) ; la règle 3 (part autonome dans les villes Waymo) se jouera sur ces volumes Waymo en propre.",
+      "impact": "positif",
+      "source": "https://www.investing.com/news/analyst-ratings/wells-fargo-raises-uber-stock-price-target-to-92-on-growth-outlook-93CH-4931543 ; https://stockanalysis.com/stocks/uber/"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker_or_topic": "UBER",
+      "headline": "Uber fixe ses résultats du T3 au mercredi 04/11/2026, 8 h (New York)",
+      "facts": "Communiqué du 05/10 ; ni le 29/10 ni le 03/11 du dossier. Guidance du 05/08 : réservations brutes 58,25-60,25 Md$ (+18 à +22 % à change constant), EBITDA ajusté 2,86-2,96 Md$ (4,7 à 5,1 % des réservations, calcul de l'auteur), BPA non-GAAP 0,84-0,88 $. Consensus T3 : rien trouvé.",
+      "numbers": "04/11/2026 ; +18 à +22 % ; 4,7-5,1 %",
+      "why_it_matters": "Les règles 1 et 2 ont de la marge si la guidance est tenue.",
+      "impact": "neutre",
+      "source": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Date-of-Third-Quarter-2026-Results-Conference-Call/default.aspx ; https://www.sec.gov/Archives/edgar/data/0001543151/000154315126000027/uberq226earningspressrelea.htm"
+    },
+    {
+      "date": "2026-10-02",
+      "ticker_or_topic": "UBER",
+      "headline": "Uber transige le troisième procès-test sur les agressions sexuelles (MDL 3084) avant les plaidoiries du 05/10",
+      "facts": "Affaire Jane Doe QLF 001 (Texas), montant confidentiel ; le juge Breyer pousse vers un règlement global ; ~4 000 plaintes. Deux premiers verdicts : 8,5 M$ (Arizona), 5 000 $ (Caroline du Nord). Californie : le procureur général Bonta qualifie Uber de « contrevenant majeur » après l'accord Lyft ; loi SB 1246 signée le 30/09 (amendes jusqu'à 10 000 $ pour un robotaxi bloquant les secours > 30 min). CORRECTION : le directeur financier d'Uber est Balaji Krishnamurthy (8-K du 30/01/2026), non Prashanth Mahendra-Rajah.",
+      "numbers": "~4 000 plaintes",
+      "why_it_matters": "Un règlement global serait une charge hors EBITDA ajusté ; à suivre pour le levier (règle 4).",
+      "impact": "à surveiller",
+      "source": "https://news.bloomberglaw.com/litigation/uber-settles-bellwether-sexual-assault-case-before-third-trial ; https://oag.ca.gov/news/press-releases/attorney-general-bonta-city-attorneys-san-francisco-san-diego-and-los-angeles"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker_or_topic": "DHER",
+      "headline": "Delivery Hero à 36,69 € le 05/10 (source secondaire) ; Prosus doit avoir réduit sa participation d'ici le 11/10",
+      "facts": "4,81 € sous l'offre de 41,50 € (l'extrait dit « 5,00 € », incohérent). Aucun taux d'acceptation publié. Prosus engagé pour 51 116 174 actions (16,68 %) : intérêt économique d'Uber ~53 %. Bruxelles : pré-notification, pas de date limite de phase 1 ; clôture attendue au S2 2027. Rappel : obligations 4,5 Md€ (15/09), relais 14,2 Md€, prêt 4,0 Md€, levier brut visé < 2×.",
+      "numbers": "36,69 € ; décote 4,81 € ; 11/10",
+      "why_it_matters": "La décote persiste ; les règles 4 et 5 ne sont pas touchées sur les chiffres connus.",
+      "impact": "à surveiller",
+      "source": "https://www.ad-hoc-news.de/boerse/news/corporate-news/delivery-hero-stock-trades-below-uber-s-eur-41-50-offer/70234894 ; https://www.bloomberg.com/news/articles/2026-06-02/prosus-gets-until-oct-11-for-delivery-hero-sale-after-uber-bid"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker_or_topic": "WAYMO",
+      "headline": "Waymo au feu rouge à Orlando (vidéo virale) ; Lyft ouvre un dépôt Waymo à Nashville, véhicules dès le 12/10",
+      "facts": "Enquête Waymo sur l'incident d'Orlando. Dépôt Flexdrive (Lyft) de 80 000 pieds carrés près de l'aéroport de Nashville pour la flotte Waymo exploitée via Lyft. Bloomberg Intelligence (02/10) : Pony.ai et WeRide en pertes jusqu'en 2028, utilisation inférieure à Waymo. DoorDash 191,77 $ (+1,39 %, secondaire), Wells Fargo à 230 $. Apollo Go > 250 000 trajets/semaine « en octobre » (extrait non daté). Tesla Austin : service prolongé jusqu'à 23 h (date non confirmée).",
+      "numbers": "Véhicules Waymo à Nashville dès le 12/10",
+      "why_it_matters": "Nashville est une ville Waymo-Lyft, pas Waymo seul : la règle 3 ne s'y applique pas, mais c'est un concurrent direct de plus.",
+      "impact": "négatif",
+      "source": "https://clickorlando.com/news/local/2026/10/05/viral-video-wayward-waymo-runs-red-light-at-major-intersection-near-universal-orlando ; https://mix929.com/2026/10/05/963611 ; https://bloomberg.com/news/articles/2026-10-02/china-robotaxis-face-losses-as-utilization-trails-waymo-bi-says"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker_or_topic": "2330",
+      "headline": "2330 record à 2 575 NT$ (+3 %), TAIEX 49 712,04 (+2,55 %, record) ; étrangers acheteurs nets de 71,9 Md NT$",
+      "facts": "Volume 1 151 Md NT$ ; TSMC apporte ~595 points à l'indice. Motif (Taipei Times) : rebond de la tech américaine après l'emploi faible. Divergence : Trading Economics 49 727 (+2,58 %). Clôture du 30/09 toujours non trouvée (~2 470 NT$ par déduction).",
+      "numbers": "2 575 NT$ ; +3,0 % depuis le 02/10",
+      "why_it_matters": "Aucune règle de vente fondée sur le cours ; le marché ignore le risque géopolitique.",
+      "impact": "positif",
+      "source": "https://www.taipeitimes.com/News/biz/archives/2026/10/06/2003865447 ; https://focustaiwan.tw/business/202610050017"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker_or_topic": "TSM",
+      "headline": "ADR TSM record à 485,80 $ (+2,75 %) ; Musk confirme des discussions Terafab-TSMC (03/10)",
+      "facts": "Plus haut 52 semaines 487,47 $ ; +59,9 % depuis le 01/01 (extrait Investing). Terafab (SpaceX/Tesla, Texas, 16,8 Md$ initiaux) discute avec TSMC sans accord ni calendrier ; deux schémas (TSMC exploite l'usine, ou Terafab majoritaire avec la technologie TSMC) ; Intel reste partenaire (14A) et a perdu 2,2 % le 02/10. Le 02/10, le MOEA taïwanais promet d'aider TSMC à investir à Taïwan sur fond de rumeurs d'un projet à Singapour.",
+      "numbers": "485,80 $ ; +6,5 % depuis le 30/09",
+      "why_it_matters": "L'ADR est 42 % au-dessus de la zone d'achat PEG 1 (340,94 $) ; un client captif renforcerait la part de marché (règle 3) mais une usine de plus hors Taïwan pèserait sur la marge (règle 1) et le capex (règle 4).",
+      "impact": "à surveiller",
+      "source": "https://www.fxleaders.com/news/2026/10/05/new-record-in-tsm-stock-eyeing-500-as-tsmc-explores-role-in-musk-terafab/ ; https://www.digitimes.com/news/a20261003VL200.html"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker_or_topic": "TSM analystes",
+      "headline": "Goldman relève TSMC à 3 300 NT$ (Achat) : marge brute 67,5 % et CA +36,9 % attendus en 2027 ; JPMorgan 3 300 NT$ (~01/10)",
+      "facts": "Goldman (Evelyn Yu) : CA en dollars +42,0 % en 2026 ; capex 2027 et 2028 relevés à 85 et 98 Md$ ; demande de CPU liée à l'IA agentique (sources secondaires Phemex, GuruFocus). Consensus ADR : médiane 530 $. Citi 3 800 NT$ date du 06/07.",
+      "numbers": "3 300 NT$ ; marge brute 67,5 % ; +36,9 %",
+      "why_it_matters": "Loin des seuils de vente (15 % de croissance, 60 % de marge), mais prévisions de broker, pas guidance TSMC ; un capex 2028 à 98 Md$ resterait sous 50 % du CA 2027 implicite.",
+      "impact": "positif",
+      "source": "https://phemex.com/news/article/goldman-sachs-raises-tsmc-target-price-to-nt3300-on-ai-demand-surge-98885 ; https://www.ad-hoc-news.de/boerse/news/corporate-news/jpmorgan-raises-target-for-taiwan-semiconductor-manufacturing-company-stock/70216056"
+    },
+    {
+      "date": "2026-10-08",
+      "ticker_or_topic": "TSM",
+      "headline": "CORRECTION dividende TSMC : 7,0 NT$ par action (T1 2026), détaché le 16/09, payé le 08/10",
+      "facts": "Le dossier citait 5,00 NT$. Dividende approuvé le 12/05, ajusté à 7,00000137 NT$ (181,53 Md NT$ au total) ; enregistrement le 22/09. Dates côté ADR non vérifiées. Aucun 6-K postérieur au 28/09 trouvé (dernier : 24/09, capex dont 4,79 Md$ pour le packaging).",
+      "numbers": "7,0 NT$ ; 181,53 Md NT$",
+      "why_it_matters": "Sans effet sur les règles de vente ; corrige une donnée du dossier.",
+      "impact": "neutre",
+      "source": "https://www.sec.gov/Archives/edgar/data/1046179/000104617926000552/tsm-dividendadjustmentx202.htm"
+    },
+    {
+      "date": "2026-10-06",
+      "ticker_or_topic": "3661.TW",
+      "headline": "Alchip à 4 180 NT$ le 06/10 (+5,82 %, source secondaire) ; CA de septembre pas encore publié",
+      "facts": "Clôture du 05/10 ~3 950 NT$ par déduction (non publiée). Août : 8,776 Md NT$ (+273,6 % sur un an, record), accélérateur IA 3 nm pour un grand client cloud nord-américain. CA de septembre attendu d'ici le 10/10 (usage, non vérifié).",
+      "numbers": "4 180 NT$ ; août 8,776 Md NT$",
+      "why_it_matters": "Sans nouvelle sur un second client (déclencheur) ; le chiffre d'août relève le point de départ du consensus.",
+      "impact": "à surveiller",
+      "source": "https://pchome.megatime.com.tw/stock/sid3661.html ; https://tw.stock.yahoo.com/news/%E4%B8%96%E8%8A%AF-ky%E7%87%9F%E6%94%B6%E9%80%A3%E4%BA%8C%E6%9C%88%E5%89%B5%E6%AD%B7%E5%8F%B2%E6%96%B0%E9%AB%98-%E5%89%8D8%E6%9C%88%E5%B9%B4%E5%A2%9E%E8%BF%9114-002100543.html"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker_or_topic": "ALNY",
+      "headline": "Alnylam : cinq séances de baisse (−14,2 %), 219,72 $ le 02/10, ~219,89 $ le 05/10 (non confirmé) ; JPMorgan 375 → 369 $ (30/09)",
+      "facts": "JPMorgan reste à Surpondérer (source secondaire). Le cabinet Howard G. Smith relance son enquête le 05/10. Résultats du T3 vers le 29/10 (agrégateur, non confirmé).",
+      "numbers": "219,72 $ (02/10) ; −14,2 % sur cinq séances",
+      "why_it_matters": "Déclencheur liste d'attente pas atteint ; la baisse du cours ne change pas le critère (guidance 2026 tenue, consensus 2028 > 20 %).",
+      "impact": "négatif",
+      "source": "https://www.trefis.com/stock/alny/articles/617521/alnylam-pharmaceuticals-stock-5-straight-red-days-down-14-2/2026-10-05"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker_or_topic": "CATL",
+      "headline": "CATL H à 483,40 HKD (+1,38 %) ; Morgan Stanley passe de 6,23 % à 6,75 % des actions H (28/09) ; part de marché 39,4 % (janv.-août)",
+      "facts": "Plus haut 489,0 HKD. BYD 15,1 % de part de marché. Production lancée en Hongrie. Divergence sur le T3 : 19/10 (agrégateur) ou conseil du 20/10. Shenzhen fermée pour la Golden Week (non vérifié).",
+      "numbers": "483,40 HKD ; 39,4 %",
+      "why_it_matters": "Cotation de Hong Kong active ; la croissance 2027 attend le T3.",
+      "impact": "neutre",
+      "source": "https://www.futunn.com/en/stock/03750-HK"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker_or_topic": "LLY",
+      "headline": "Eli Lilly 1 143,12 $ ; retatrutide : dépôt FDA au T1 2027 ; tarifs pharma Section 232 appliqués aux laboratoires non exemptés depuis le 29/09",
+      "facts": "Variation du 05/10 : +0,33 % par calcul (l'agrégateur affiche +0,02 %). Orforglipron (Foundayo) déjà approuvé dans l'obésité. 17 grands laboratoires exemptés jusqu'en 2029 par leurs accords de prix MFN (divergence : « septembre 2026 » selon une autre source). Novo Nordisk : étude OCTANE (−4,1 % de poids en trois mois après passage à la pilule Wegovy, n = 194, date non vérifiée). Sea : clôture du 05/10 non trouvée ; Barclays 122 → 156 $ (date inconnue).",
+      "numbers": "1 143,12 $",
+      "why_it_matters": "Sans nouvelle sur le consensus 2028 (seuil 20 %) ; résultats le 29/10.",
+      "impact": "neutre",
+      "source": "https://finance.yahoo.com/healthcare/articles/eli-lillys-timing-fda-filing-225000821.html ; https://www.fiercepharma.com/pharma/us-details-rules-0-specialty-pharmaceutical-tariff-exemptions"
+    },
+    {
+      "date": "2026-10-05",
+      "ticker_or_topic": "ENR",
+      "headline": "Siemens Energy : 145,05 € hors séance (−0,52 % vs 145,81 € le 02/10, divergence avec 145,42 € hier) ; 894 429 actions rachetées du 28/09 au 04/10",
+      "facts": "Clôture Xetra du 05/10 non trouvée de façon fiable. Lettre d'intention sur un corridor énergétique transcaspien (source secondaire). Résultats annuels le 11/11 (source secondaire).",
+      "numbers": "145,05 €",
+      "why_it_matters": "Déclencheur liste d'attente (100 €) pas atteint.",
+      "impact": "neutre",
+      "source": "https://www.ad-hoc-news.de/boerse/news/nachboerse/siemens-energy-stock-after-hours-at-eur-145-05-minus-0-52-percent-versus-prior-close/70234949"
+    },
+    {
+      "date": "2026-10-06",
+      "ticker_or_topic": "MÉTHODE",
+      "headline": "Limites de la revue du 06/10 : aucune page financière lue directement, clôtures issues d'extraits",
+      "facts": "Proxy bloquant Yahoo, Nasdaq, Investing, MarketWatch, finanzen.net, boerse.de, sec.gov, CNBC, Bloomberg. Clôtures recoupées par calcul : NU, AVGO, TSM, 2330 ; sur un seul extrait : UBER 69,48 $, QQQ 756,20 $ (ou 755,89 $), RHM 980,20 €. Clôture Xetra RHM du 02/10 probablement 956,5-956,9 € et non 959,80 €. Hypothèse 125,2/161,2 Md$ non confirmée. Sections peu couvertes : concurrents TSMC, géopolitique Taïwan, dette IA, macro brésilienne, ouverture européenne du 06/10.",
+      "numbers": "~180 recherches",
+      "why_it_matters": "À lire avant d'utiliser un chiffre de cette revue pour une décision.",
+      "impact": "neutre",
+      "source": "research/news/2026-10-06.md"
+    }
+  ],
+  "calendar": [
+    {
+      "date": "2026-10-06",
+      "event": "Journée investisseurs Marvell, 9 h (New York)",
+      "ticker": "AVGO (concurrent)",
+      "source": "https://www.investing.com/analysis/marvells-investor-day-is-custom-silicon-the-next-multibilliondollar-business-200685832"
+    },
+    {
+      "date": "2026-10-06",
+      "event": "Panorama Itaúsa 2026 : intervention du PDG d'Itaú Unibanco, 10 h (Brasília)",
+      "ticker": "NU (concurrent)",
+      "source": "https://www.sec.gov/Archives/edgar/data/0001132597/000113259726000236/announcementtothemarket_.htm"
+    },
+    {
+      "date": "2026-10-07",
+      "event": "Minutes du FOMC de septembre",
+      "ticker": "MACRO",
+      "source": "https://www.schaeffersresearch.com/content/news/2026/10/01/the-week-ahead-fomc-meeting-minutes-take-center-stage"
+    },
+    {
+      "date": "2026-10-08",
+      "event": "Ventes mensuelles de septembre de TSMC ; paiement du dividende de 7,0 NT$",
+      "ticker": "TSM",
+      "source": "https://www.akrostec.com/indices/KGAIS/events/2026-10-08t00-00-00z-taiwan-semiconductor-manufacturing-co-ltd-tsm-financial-results-ad302831 ; https://www.sec.gov/Archives/edgar/data/1046179/000104617926000552/tsm-dividendadjustmentx202.htm"
+    },
+    {
+      "date": "2026-10-08",
+      "event": "Commission du budget du Bundestag : Einzelplan 14 (109,7 Md€), rapport du Bundesrechnungshof, « 25-Mio-Vorlage »",
+      "ticker": "RHM",
+      "source": "https://www.bundestag.de/resource/blob/1221976/to_047-048.pdf"
+    },
+    {
+      "date": "2026-10-08",
+      "event": "Résultats T3 PepsiCo",
+      "ticker": "MARKET",
+      "source": "https://www.stockhub.kr/en/earnings-calendar"
+    },
+    {
+      "date": "2026-10-09",
+      "event": "Premier sondage AtlasIntel de second tour (5 000 entretiens)",
+      "ticker": "NU",
+      "source": "https://www.cartacapital.com.br/cartaexpressa/a-1a-pesquisa-atlasintel-sobre-o-2o-turno-entre-lula-e-flavio-bolsonaro/"
+    },
+    {
+      "date": "2026-10-09",
+      "event": "Bourse de Taipei fermée (fête nationale) ; confiance Michigan (date à confirmer)",
+      "ticker": "TSM, MACRO",
+      "source": "https://www.tradinghours.com/markets/twse/holidays"
+    },
+    {
+      "date": "2026-10-10",
+      "event": "Chiffre d'affaires de septembre d'Alchip (vers le 10/10, usage taïwanais non vérifié)",
+      "ticker": "3661.TW",
+      "source": "https://tw.stock.yahoo.com/news/%E4%B8%96%E8%8A%AF-ky%E7%87%9F%E6%94%B6%E9%80%A3%E4%BA%8C%E6%9C%88%E5%89%B5%E6%AD%B7%E5%8F%B2%E6%96%B0%E9%AB%98-%E5%89%8D8%E6%9C%88%E5%B9%B4%E5%A2%9E%E8%BF%9114-002100543.html"
+    },
+    {
+      "date": "2026-10-11",
+      "event": "Échéance donnée par la Commission européenne à Prosus pour réduire sa participation dans Delivery Hero",
+      "ticker": "UBER",
+      "source": "https://www.bloomberg.com/news/articles/2026-06-02/prosus-gets-until-oct-11-for-delivery-hero-sale-after-uber-bid"
+    },
+    {
+      "date": "2026-10-12",
+      "event": "Columbus Day (banques et obligations fermées, Bourse ouverte) ; arrivée des véhicules Waymo au dépôt Lyft de Nashville",
+      "ticker": "MACRO, UBER",
+      "source": "https://mix929.com/2026/10/05/963611"
+    },
+    {
+      "date": "2026-10-13",
+      "event": "Résultats JPMorgan, Goldman Sachs, Wells Fargo, Citigroup",
+      "ticker": "MARKET",
+      "source": "https://www.digrin.com/stocks/earnings_calendar/2026-10-13"
+    },
+    {
+      "date": "2026-10-14",
+      "event": "CPI de septembre (8 h 30, New York) ; résultats ASML, Bank of America, Morgan Stanley",
+      "ticker": "MACRO, TSM",
+      "source": "https://newsquawk.com/headlines/week-in-focus-4-9th-october-2026-fomc-minutes-us-ism-services-pmi-opec-canadian-jobs-and-ecb-minutes ; https://ca.marketscreener.com/quote/stock/ASML-HOLDING-N-V-190815522/calendar/"
+    },
+    {
+      "date": "2026-10-15",
+      "event": "Résultats T3 de TSMC, conférence à 14 h (Taïwan) ; ventes au détail et PPI de septembre (8 h 30, New York)",
+      "ticker": "TSM, MACRO",
+      "source": "https://investor.tsmc.com/schinese/quarterly-results ; https://irwinmitchell.econoday.com/bymonth"
+    },
+    {
+      "date": "2026-10-16",
+      "event": "Prix à l'import/export, production industrielle ; échéance mensuelle des options",
+      "ticker": "MACRO",
+      "source": "https://irwinmitchell.econoday.com/bymonth"
+    },
+    {
+      "date": "2026-10-19",
+      "event": "Résultats T3 de CATL (19/10 selon un agrégateur ; conseil le 20/10)",
+      "ticker": "CATL",
+      "source": "https://www.tipranks.com/news/company-announcements/catl-sets-october-board-meeting-to-approve-third-quarter-results"
+    },
+    {
+      "date": "2026-10-20",
+      "event": "Résultats T3 de Netflix (estimation)",
+      "ticker": "MARKET",
+      "source": "https://www.stockhub.kr/en/earnings-calendar"
+    },
+    {
+      "date": "2026-10-23",
+      "event": "Dépôt public du S-1 d'Anthropic (« dès le 23/10 » selon Renaissance Capital)",
+      "ticker": "AVGO",
+      "source": "https://www.renaissancecapital.com/IPO-Center/News/122058/9-numbers-to-look-for-in-anthropic%E2%80%99s-ipo-filing"
+    },
+    {
+      "date": "2026-10-25",
+      "event": "Second tour de la présidentielle brésilienne (hors fenêtre)",
+      "ticker": "NU",
+      "source": "https://www.cnn.com/2026/10/04/americas/brazil-president-elections-2026-latam-intl"
+    },
+    {
+      "date": "2026-10-27",
+      "event": "Réunion du FOMC (27-28/10, hors fenêtre)",
+      "ticker": "MACRO",
+      "source": "https://www.cnbc.com/2026/10/05/treasury-yields-bonds-fed-rates.html"
+    },
+    {
+      "date": "2026-10-31",
+      "event": "Trilatéral États-Unis-Russie-Ukraine proposé d'ici fin octobre, possiblement aux Émirats (date n.d.)",
+      "ticker": "RHM",
+      "source": "https://www.cnbc.com/2026/10/05/ukraine-war-russia-kyiv-putin-zelenskyy-trump.html"
+    },
+    {
+      "date": "2026-11-04",
+      "event": "Résultats T3 d'Uber, 8 h (New York) (hors fenêtre)",
+      "ticker": "UBER",
+      "source": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Announces-Date-of-Third-Quarter-2026-Results-Conference-Call/default.aspx"
+    },
+    {
+      "date": "2026-11-05",
+      "event": "Résultats T3 de Rheinmetall ; fin de l'offre sur Delivery Hero (hors fenêtre)",
+      "ticker": "RHM, UBER",
+      "source": "https://investor.uber.com/news-events/news/press-release-details/2026/Uber-Publishes-Offer-Document-for-its-Takeover-Offer-for-Delivery-Hero/default.aspx"
+    },
+    {
+      "date": "2026-11-12",
+      "event": "Bereinigungssitzung du budget 2027 ; 2e et 3e lectures du 24 au 27/11 (hors fenêtre)",
+      "ticker": "RHM",
+      "source": "https://www.bundestag.de/dokumente/textarchiv/2026/kw34-haushalt-2027-ablauf-1187766"
+    }
+  ]
 }
