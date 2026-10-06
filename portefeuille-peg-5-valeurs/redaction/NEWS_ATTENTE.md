@@ -1,7 +1,7 @@
-- **Alchip** : rien d'important ; résultats du troisième trimestre le 30 octobre. Déclencheur (second client au-dessus de 20 % des ventes, consensus 2028 au-dessus de 15 %) : non atteint.
-- **Alnylam** : un cabinet d'avocats poursuit une enquête pour fraude boursière après l'abaissement de guidance du 30 juillet ; Cantor reste « Neutre ». Déclencheur : non atteint.
-- **NVIDIA** : record à 237,88 $, capitalisation au-dessus de 5 700 Md$, rachat porté à 235 Md$, GTC Washington du 30 novembre au 3 décembre. Zone d'entrée du dossier : {{v:NVDA:buy_peg1}} ; non atteinte, et de loin.
-- **CATL** : action H à 476,80 HKD, plan d'actionnariat salarié sur 0,6 % du capital, troisième trimestre le 20 octobre.
-- **Sea** : DBS passe à « Conserver », objectif ramené de 148 à 105 $, les dépenses de Shopee menaçant les marges 2027 ; clôture à 95,19 $. Sea n'entre que si la règle de vente d'Uber se déclenche, et sa propre thèse vient de se fragiliser.
-- **Eli Lilly** : données du congrès EASD (Foundayo −16 % de risque cardiovasculaire, retatrutide −20,8 % de poids à 80 semaines, eloraTZP), approbation de Jaypirca ; cours à 1 139,35 $. Déclencheur (consensus 2028 au-dessus de 20 %) : sans nouvelle.
-- **Siemens Energy** : le pre-close call du 30 septembre confirme les objectifs 2026 en haut de fourchette (marge 10 à 12 %, bénéfice net 4 Md€, flux de trésorerie 8 Md€) ; clôture à 145,42 €. Zone d'entrée du dossier : 100 € ; non atteinte.
+- **Alchip** : 4 180 NT$ le 6 octobre (+5,8 %, source secondaire) ; chiffre d'affaires d'août record à 8,78 Md NT$ (+274 % sur un an) grâce à un accélérateur 3 nm pour un grand client cloud nord-américain ; septembre attendu vers le 10. Déclencheur (second client, consensus 2028) : non atteint.
+- **Alnylam** : cinq séances de baisse (−14,2 %), 219,72 $ le 2 octobre ; JPMorgan abaisse à 369 $ (Surpondérer) ; une enquête d'avocats se poursuit. Déclencheur : non atteint ; la baisse du cours ne change pas le critère.
+- **NVIDIA** : record à 238,90 $, BNP Paribas à 345 $, consensus 328 $. Zone d'entrée du dossier : {{v:NVDA:buy_peg1}} ; le titre s'en éloigne.
+- **CATL** : action H à 483,40 HKD ; Morgan Stanley monte à 6,75 % des actions H ; part de marché mondiale des batteries de 39,4 % sur janvier-août ; troisième trimestre le 20 octobre.
+- **Sea** : DBS passe à « Conserver » le 2 octobre (objectif 105 $), Barclays relève à 156 $ ; Sea n'entre que si la règle de vente d'Uber se déclenche.
+- **Eli Lilly** : 1 143,12 $ ; dépôt du retatrutide à la FDA au premier trimestre 2027 ; tarifs Section 232 appliqués depuis le 29 septembre aux laboratoires sans accord de prix, Lilly exemptée. Déclencheur (consensus 2028) : sans nouvelle ; résultats le 29 octobre.
+- **Siemens Energy** : environ 145 € ; 894 429 actions rachetées du 28 septembre au 4 octobre ; lettre d'intention sur un corridor énergétique transcaspien ; résultats le 11 novembre. Zone d'entrée : 100 €, non atteinte.
