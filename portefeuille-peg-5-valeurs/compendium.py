@@ -63,9 +63,9 @@ def megatrends_md():
 def data_md():
     rows = list(csv.DictReader(open(os.path.join(ROOT, "data", "data.csv"), encoding="utf-8")))
     out = ["Univers tel que lu par le modèle (`data/data.csv`, 159 lignes) : cours du 30/09/2026, BPA par exercice (base indiquée), bêta, dividende, source.", "",
-           "| Ticker | Nom | Région | Thème | Devise | Cours | FY2025 | FY2026 | FY2027 | FY2028 | FY2029 | Bêta | Div. % | Base du BPA |", "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
+           "| Ticker | Nom | Thème | Devise | Cours | FY2025 | FY2026 | FY2027 | FY2028 | FY2029 | Bêta | Div. % |", "|---|---|---|---|---|---|---|---|---|---|---|---|"]
     for r in rows:
-        out.append("| " + " | ".join([r["ticker"], r["name"], r["region"], r["theme"], r["currency"], r["price"], r["fy2025"], r["fy2026"], r["fy2027"], r["fy2028"], r["fy2029"], r["beta"], r["div_yield_pct"], r["eps_basis"][:60]]) + " |")
+        out.append("| " + " | ".join([r["ticker"], r["name"][:28], r["theme"], r["currency"], r["price"], r["fy2025"], r["fy2026"], r["fy2027"], r["fy2028"], r["fy2029"], r["beta"], r["div_yield_pct"]]) + " |")
     hyp = list(csv.DictReader(open(os.path.join(ROOT, "data", "hypotheses.csv"), encoding="utf-8")))
     out += ["", "### Hypothèses éditoriales (`data/hypotheses.csv`)", "", "| Ticker | Pess. / central / opt. (%) | Plafond P/E | Cycliques (multiples, P/E) | Justification |", "|---|---|---|---|---|"]
     for h in hyp:
@@ -177,7 +177,7 @@ def main():
 .cover .sub{font-size:18px}.cover .small{font:13px/1.5 system-ui,sans-serif;color:var(--muted)}
 h1.part{font-size:30px;margin-top:40px;border-bottom:2px solid var(--rule);padding-bottom:6px}
 .toc{columns:1}.toc ol ol{padding-left:16px;margin:2px 0 8px}.toc li.part{font-weight:700;margin-top:6px}.toc li.part li{font-weight:400}
-@media print{.cover{break-after:page;min-height:auto;padding-top:120px}nav.toc{break-after:page}h1.part{break-before:page}h2.chapter{break-before:page}}
+@media print{table{font-size:8.5px}th,td{padding:3px 4px}.cover{break-after:page;min-height:auto;padding-top:120px}nav.toc{break-after:page}h1.part{break-before:page}h2.chapter{break-before:page}}
 """
     page = f"""<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dossier complet — Portefeuille PEG cinq valeurs</title><style>{css}</style></head><body><div class="wrap">
