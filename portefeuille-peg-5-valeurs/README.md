@@ -8,6 +8,7 @@ Portefeuille concentré de cinq valeurs construit avec la méthode PEG de Peter 
 
 | Fichier | Contenu |
 |---|---|
+| `DOSSIER_COMPLET.pdf`, `.html` | **Dossier de transfert** (168 pages) : demande et méthode de travail, rapport complet, articles (long, court, deux revues de presse), neuf deep dives, cinq histoires, scénario Monzo, méga-tendances, revues de presse sourcées, données (univers, hypothèses, change, scénarios), cahier PEG d'origine, prompts des sessions de recherche, index des fichiers (`compendium.py`) |
 | `RAPPORT.md` | Rapport complet (contexte, méthode, univers et classement, portefeuille et variantes, cinq analyses détaillées, stress tests, critique, plan d'action, limites, sources, annexes) |
 | `ARTICLE_LONG.html`, `ARTICLE_LONG.pdf` | **L'enquête complète** (31 pages A4) : sommaire, histoire, chronologie, huit ans de chiffres, trajectoire boursière, métier, « pourquoi », cas de l'ours, règles de vente et calendrier pour chacune des cinq valeurs, puis comparaison à l'indice, stress tests, écartées, critique, mode d'emploi |
 | `ARTICLE.html`, `ARTICLE.pdf` | Article court (7 pages), même structure sans les chapitres par valeur |
@@ -27,6 +28,7 @@ python3 portefeuille.py --data data/data.csv --hyp data/hypotheses.csv --index d
   --portfolio data/portfolio.csv --variants data/variantes.txt --dilution NU:0.868 --out outputs
 python3 acquisition.py --ticker NU   # scénarios d'acquisition (Monzo) : data/acquisition.csv → outputs/acquisition.json
 python3 news.py                       # revue de presse : ../research/news/news.json → tableaux des cours et calendrier
+python3 compendium.py --out DOSSIER_COMPLET.html   # dossier de transfert (puis Chromium pour le PDF)
 python3 rapport.py --template redaction/RAPPORT_template.md --out RAPPORT.md
 python3 rapport.py --template redaction/ARTICLE_template.md --out article/contenu.md
 python3 article.py --resume outputs/resume.json --content article/contenu.md --out ARTICLE.html
