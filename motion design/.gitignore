@@ -1,0 +1,6 @@
+# Rendus de travail et caches HyperFrames : seuls les livrables vont dans « Pub Meta LA SALLE/Premium oct26/ »
+renders/
+snapshots/
+.hyperframes/
+node_modules/
+*.tmp.*
