@@ -5,7 +5,7 @@ Style : recopier **tel quel** le Style du §7 bis du prompt maître, le même qu
 
 Où les générer : Google AI Studio, une réplique par fichier.
 Export : WAV (ou le format habituel de la banque), sans silence de plus de 0,1 s en tête.
-Où les déposer : dépôt GitHub `alexis`, dossier `motion design/_sources-premium/voix/nouvelles/` (site web : Add file › Upload files), avec les noms ci-dessous.
+Où les déposer : Google Drive du club, dossier **LA SALLE / Premium / voix**, avec les noms ci-dessous. ⚠ Pas sur GitHub : le dépôt `alexis` est public.
 
 Les nombres sont écrits en toutes lettres, pour que la voix les prononce bien.
 
@@ -20,7 +20,7 @@ Les nombres sont écrits en toutes lettres, pour que la voix les prononce bien.
 | `P9_activez_accueil.wav` | Activez-la à l'accueil, en quelques secondes. | A, B, C |
 
 Plus la **réplique 25** de la banque existante : « Les 4 premières semaines de l'option Premium sont offertes. »
-Déposez soit le fichier de la 25, soit le zip `Voix_LA_SALLE_banque_4_voix.zip`, dans `motion design/_sources-premium/voix/`.
+Déposez le fichier de la 25 (ou le zip `Voix_LA_SALLE_banque_4_voix.zip`) dans le même dossier du Drive.
 
 ## Prononciation à écouter avant de déposer
 
