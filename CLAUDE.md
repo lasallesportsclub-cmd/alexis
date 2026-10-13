@@ -16,3 +16,5 @@ Pour les mettre à jour : `npx skills update -p -y`.
 
   Remplacer ensuite l'URL du CDN par `vendor/gsap.min.js` dans `index.html`, et par `../vendor/gsap.min.js` dans `compositions/*.html`.
 - Avec `npx hyperframes init`, ajouter `HYPERFRAMES_SKIP_SKILLS=1` pour qu'il ne réinstalle pas les skills.
+- Outils audio locaux (whisper.cpp, Kokoro, MusicGen) : `bash "motion design/_outils/installer_audio_local.sh"` en début de session (≈ 10 min). Il faut `NODE_USE_ENV_PROXY=1` pour que `hyperframes transcribe` télécharge ses modèles à travers le proxy.
+- MusicGen (`facebook/musicgen-small`) est sous licence CC-BY-NC 4.0 : jamais dans une vidéo publiée, maquettes internes seulement. Kokoro (Apache-2.0) et whisper.cpp (MIT) sont utilisables commercialement.
