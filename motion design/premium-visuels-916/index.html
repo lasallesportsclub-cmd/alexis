@@ -1,55 +1,26 @@
 <!doctype html>
-<html lang="en" data-resolution="portrait">
+<html lang="fr" data-resolution="portrait">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=1080, height=1920" />
     <script src="assets/vendor/gsap.min.js"></script>
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      html,
-      body {
-        margin: 0;
-        width: 1080px;
-        height: 1920px;
-        overflow: hidden;
-        background: #0a0a0a;
-      }
-      #root {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: Inter, ui-sans-serif, system-ui, sans-serif;
-      }
-      #title {
-        color: #f4f4f5;
-        font-size: 72px;
-        font-weight: 600;
-        letter-spacing: -0.03em;
-      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #0D0D0D; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; background: #0D0D0D; }
+      [data-composition-id="main"] > div[data-composition-src] { position: absolute; inset: 0; }
     </style>
   </head>
   <body>
-    <div
-      id="root"
-      data-composition-id="main"
-      data-start="0"
-      data-duration="10"
-      data-width="1080"
-      data-height="1920"
-    >
-      <h1 id="title" class="clip" data-start="0" data-duration="10" data-track-index="0">Title</h1>
+    <!-- Images fixes : une scène figée d'une seconde par image, exportée par snapshot au milieu de la scène -->
+    <div id="root" data-composition-id="main" data-start="0" data-duration="4" data-width="1080" data-height="1920" data-fps="30">
+      <div id="h-01" data-composition-id="img-01" data-composition-src="compositions/frames/01.html" data-start="0" data-duration="1" data-track-index="1" data-width="1080" data-height="1920"></div>
+      <div id="h-02" data-composition-id="img-02" data-composition-src="compositions/frames/02.html" data-start="1" data-duration="1" data-track-index="1" data-width="1080" data-height="1920"></div>
+      <div id="h-03" data-composition-id="img-03" data-composition-src="compositions/frames/03.html" data-start="2" data-duration="1" data-track-index="1" data-width="1080" data-height="1920"></div>
+      <div id="h-04" data-composition-id="img-04" data-composition-src="compositions/frames/04.html" data-start="3" data-duration="1" data-track-index="1" data-width="1080" data-height="1920"></div>
     </div>
     <script>
-      const tl = gsap.timeline({ paused: true });
-      // Example: tl.fromTo("#title", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.6 }, 0);
-      window.__timelines["main"] = tl;
-      tl.seek(0);
+      window.__timelines["main"] = gsap.timeline({ paused: true });
     </script>
   </body>
 </html>

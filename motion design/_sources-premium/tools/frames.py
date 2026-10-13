@@ -76,7 +76,7 @@ def clock(cx, cy, r, cls=""):
 def relief(x, y, size, txt="3D", angle=-22, layers=12, depth_color=SURFACE, cls=""):
     """Relief typographique (règle 3d-text-depth-layers) : couches opaques d'une seule couleur déclarée, face blanc cassé."""
     lay = "".join(
-        f'<div style="position:absolute;left:0;top:0;transform:translateZ({-i*3.5:.1f}px);color:{depth_color}">{txt}</div>'
+        f'<div aria-hidden="true" data-layout-ignore style="position:absolute;left:0;top:0;transform:translateZ({-i*3.5:.1f}px);color:{depth_color}">{txt}</div>'
         for i in range(layers, 0, -1))
     return (f'<div class="a {cls}" style="left:{x}px;top:{y}px;perspective:1600px">'
             f'<div style="position:relative;transform-style:preserve-3d;transform:rotateY({angle}deg) rotateX(6deg);'
@@ -87,21 +87,20 @@ def relief(x, y, size, txt="3D", angle=-22, layers=12, depth_color=SURFACE, cls=
 def reflet(x, y, txt, cls="h1", line_w=640):
     """Reflet de miroir à plat, sans dégradé : filet, puis le texte retourné en or fantôme."""
     return (f'<div class="a" style="left:{x}px;top:{y}px;width:{line_w}px;height:3px;background:rgba(244,241,236,0.18)"></div>'
-            f'<div class="a {cls}" style="left:{x}px;top:{y + 9}px;color:rgba(184,160,126,0.16);transform:scaleY(-1)">{txt}</div>')
+            f'<div class="a {cls}" aria-hidden="true" data-layout-ignore style="left:{x}px;top:{y + 9}px;color:rgba(184,160,126,0.16);transform:scaleY(-1)">{txt}</div>')
 
 
 def logo(x, y, w, cls=""):
     """⚠ Logo provisoire : signature 170 px du Drive, à remplacer par mono.png + word.png du kit du PC."""
-    return (f'<img class="a {cls}" src="assets/img/logo-provisoire.png" style="left:{x}px;top:{y}px;width:{w}px;'
-            f'filter:invert(1);mix-blend-mode:screen" alt="LA SALLE">')
+    return (f'<img class="a {cls}" src="assets/img/logo-negatif-provisoire.png" style="left:{x}px;top:{y}px;width:{w}px" alt="LA SALLE">')
 
 
 def grain():
-    return '<div class="grain"></div>'
+    return ''  # grain porté par .fr::after (premium.css) : décor hors audit, jamais un calque sur le texte
 
 
 def ghost(x, y, txt, size, cls=""):
-    return (f'<div class="a {cls}" style="left:{x}px;top:{y}px;font-weight:900;font-size:{size}px;line-height:.8;'
+    return (f'<div class="a {cls}" aria-hidden="true" data-layout-ignore style="left:{x}px;top:{y}px;font-weight:900;font-size:{size}px;line-height:.8;'
             f'letter-spacing:-.03em;color:rgba(184,160,126,0.16)">{txt}</div>')
 
 

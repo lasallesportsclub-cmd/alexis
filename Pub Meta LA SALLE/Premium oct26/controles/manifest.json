@@ -1,0 +1,229 @@
+{
+  "kit": "Option Premium LA SALLE",
+  "version": "v1 images",
+  "date": "2026-10-13",
+  "statut": "brouillon à valider, non publié",
+  "logo": "provisoire (signature 170 px du Drive) — voir A_valider.md",
+  "fichiers": [
+    {
+      "fichier": "images/story/01_LA_SALLE_Premium_offre_story_9x16.jpg",
+      "largeur": 1080,
+      "hauteur": 1920,
+      "octets": 208551,
+      "sha256": "e6fdb56d4756eeca25e41da0e1bfa35eba9164818557f1ba090866138aa3ce15",
+      "source": "motion design/premium-visuels-916",
+      "profil": "sRGB"
+    },
+    {
+      "fichier": "images/story/01_LA_SALLE_Premium_offre_story_9x16.png",
+      "largeur": 1080,
+      "hauteur": 1920,
+      "octets": 633766,
+      "sha256": "4cbbc5ee5a7228ee3733883aef2d8b361ceb7b4a7aea3946742347d24cd85237",
+      "source": "motion design/premium-visuels-916",
+      "profil": "sRGB"
+    },
+    {
+      "fichier": "images/story/02_LA_SALLE_Premium_A_story_9x16.jpg",
+      "largeur": 1080,
+      "hauteur": 1920,
+      "octets": 217893,
+      "sha256": "13e92d3958ff3563e3bd6c83be7ecc120aa6eddd8c76e7c9216415e6ee2ad17a",
+      "source": "motion design/premium-visuels-916",
+      "profil": "sRGB"
+    },
+    {
+      "fichier": "images/story/02_LA_SALLE_Premium_A_story_9x16.png",
+      "largeur": 1080,
+      "hauteur": 1920,
+      "octets": 649298,
+      "sha256": "9e211ad78a5913bd1be1da9ec03604555d406cbd5ca78fae719b24118699d13b",
+      "source": "motion design/premium-visuels-916",
+      "profil": "sRGB"
+    },
+    {
+      "fichier": "images/story/03_LA_SALLE_Premium_B_story_9x16.jpg",
+      "largeur": 1080,
+      "hauteur": 1920,
+      "octets": 239810,
+      "sha256": "a4270624ce279eb897a57bafcfdcde8976a7ebc4e509c68aaa61639e7aa30db5",
+      "source": "motion design/premium-visuels-916",
+      "profil": "sRGB"
+    },
+    {
+      "fichier": "images/story/03_LA_SALLE_Premium_B_story_9x16.png",
+      "largeur": 1080,
+      "hauteur": 1920,
+      "octets": 660882,
+      "sha256": "3c685f5fd6765a1fac6976011c36dc7e153005badd3488c7f4108e51c5f23181",
+      "source": "motion design/premium-visuels-916",
+      "profil": "sRGB"
+    },
+    {
+      "fichier": "images/story/04_LA_SALLE_Premium_C_story_9x16.jpg",
+      "largeur": 1080,
+      "hauteur": 1920,
+      "octets": 197632,
+      "sha256": "0c9e865434c8a0db3d26b177dda12e887cd21ec1599b61e1f514279d0370eef9",
+      "source": "motion design/premium-visuels-916",
+      "profil": "sRGB"
+    },
+    {
+      "fichier": "images/story/04_LA_SALLE_Premium_C_story_9x16.png",
+      "largeur": 1080,
+      "hauteur": 1920,
+      "octets": 604773,
+      "sha256": "47db654f371a1ed3b00152d9d7915786a0f8675e467b5066e7551abd76473724",
+      "source": "motion design/premium-visuels-916",
+      "profil": "sRGB"
+    },
+    {
+      "fichier": "images/post/01_LA_SALLE_Premium_A_post_4x5.jpg",
+      "largeur": 1080,
+      "hauteur": 1350,
+      "octets": 200706,
+      "sha256": "cae5f8b75d8c54429e87c2e560d51ce245afe1b00564d181fdb7315071cae879",
+      "source": "motion design/premium-visuels-45",
+      "profil": "sRGB"
+    },
+    {
+      "fichier": "images/post/01_LA_SALLE_Premium_A_post_4x5.png",
+      "largeur": 1080,
+      "hauteur": 1350,
+      "octets": 567730,
+      "sha256": "c55f7b56581fc806c81637f672bf9e4ab5a4e14ec8f8627330eb05e9d0d6a888",
+      "source": "motion design/premium-visuels-45",
+      "profil": "sRGB"
+    },
+    {
+      "fichier": "images/post/02_LA_SALLE_Premium_B_post_4x5.jpg",
+      "largeur": 1080,
+      "hauteur": 1350,
+      "octets": 218537,
+      "sha256": "b456c14e198678221d3a425f5891c19020370c3b784207b68d42a616f7034df8",
+      "source": "motion design/premium-visuels-45",
+      "profil": "sRGB"
+    },
+    {
+      "fichier": "images/post/02_LA_SALLE_Premium_B_post_4x5.png",
+      "largeur": 1080,
+      "hauteur": 1350,
+      "octets": 582042,
+      "sha256": "643c0d73b6eec2fdd5303c1c6fbd1ceabbbbe38fc78e3b27b6a756f7d7f5a63e",
+      "source": "motion design/premium-visuels-45",
+      "profil": "sRGB"
+    },
+    {
+      "fichier": "images/post/03_LA_SALLE_Premium_C_post_4x5.jpg",
+      "largeur": 1080,
+      "hauteur": 1350,
+      "octets": 179582,
+      "sha256": "70a5de511ffdcabf34f1361da2ebb95f45bce1e3a24d00b5ddb10252d7e3d623",
+      "source": "motion design/premium-visuels-45",
+      "profil": "sRGB"
+    },
+    {
+      "fichier": "images/post/03_LA_SALLE_Premium_C_post_4x5.png",
+      "largeur": 1080,
+      "hauteur": 1350,
+      "octets": 529780,
+      "sha256": "e07363c1876c82bfe43f61a20ed44798f715f7a26399d1e09819d4622267052b",
+      "source": "motion design/premium-visuels-45",
+      "profil": "sRGB"
+    },
+    {
+      "fichier": "images/carrousel/LA_SALLE_Premium_carrousel_1.jpg",
+      "largeur": 1080,
+      "hauteur": 1350,
+      "octets": 183164,
+      "sha256": "650bbff72433696c23a4278cf367cf47aa8f6a62c521020f6e0fd0a27bf68c9a",
+      "source": "motion design/premium-visuels-45",
+      "profil": "sRGB"
+    },
+    {
+      "fichier": "images/carrousel/LA_SALLE_Premium_carrousel_1.png",
+      "largeur": 1080,
+      "hauteur": 1350,
+      "octets": 549915,
+      "sha256": "0215755d38cdbb4262939ba0e226da2f0f7fc562f08915d4f696947da25b4143",
+      "source": "motion design/premium-visuels-45",
+      "profil": "sRGB"
+    },
+    {
+      "fichier": "images/carrousel/LA_SALLE_Premium_carrousel_2.jpg",
+      "largeur": 1080,
+      "hauteur": 1350,
+      "octets": 139600,
+      "sha256": "085818181ced1934d075e62188fc8a012a44283791c13800b1d40e20ce218528",
+      "source": "motion design/premium-visuels-45",
+      "profil": "sRGB"
+    },
+    {
+      "fichier": "images/carrousel/LA_SALLE_Premium_carrousel_2.png",
+      "largeur": 1080,
+      "hauteur": 1350,
+      "octets": 413110,
+      "sha256": "bacd604ae92ee5edf1b9f6cb83aa09292a17428b3dfe17c7b984525a532fdddf",
+      "source": "motion design/premium-visuels-45",
+      "profil": "sRGB"
+    },
+    {
+      "fichier": "images/carrousel/LA_SALLE_Premium_carrousel_3.jpg",
+      "largeur": 1080,
+      "hauteur": 1350,
+      "octets": 103367,
+      "sha256": "e759c0ef174f7beb398bacf742e68ffd65a24612a56960fe57d26b23f495bb9c",
+      "source": "motion design/premium-visuels-45",
+      "profil": "sRGB"
+    },
+    {
+      "fichier": "images/carrousel/LA_SALLE_Premium_carrousel_3.png",
+      "largeur": 1080,
+      "hauteur": 1350,
+      "octets": 371732,
+      "sha256": "6336d2c60a4307a3dcfd3dc592ba5770b62a0aca566e94529c8164b1d925385a",
+      "source": "motion design/premium-visuels-45",
+      "profil": "sRGB"
+    },
+    {
+      "fichier": "images/carrousel/LA_SALLE_Premium_carrousel_4.jpg",
+      "largeur": 1080,
+      "hauteur": 1350,
+      "octets": 114505,
+      "sha256": "62f4d58e0316acc9cbc2603de4464ceca9324b24796c451ddeb1e2f57f85fa86",
+      "source": "motion design/premium-visuels-45",
+      "profil": "sRGB"
+    },
+    {
+      "fichier": "images/carrousel/LA_SALLE_Premium_carrousel_4.png",
+      "largeur": 1080,
+      "hauteur": 1350,
+      "octets": 437290,
+      "sha256": "55abd8b0c4a43114be2262ad276cb1f1a423824103601afd43bbefae64a1659c",
+      "source": "motion design/premium-visuels-45",
+      "profil": "sRGB"
+    },
+    {
+      "fichier": "images/carrousel/LA_SALLE_Premium_carrousel_5.jpg",
+      "largeur": 1080,
+      "hauteur": 1350,
+      "octets": 180327,
+      "sha256": "844fafb2a5c95c5eb23e3f2297041e1d42e3a3897389bcfa2d4097ad8829b34b",
+      "source": "motion design/premium-visuels-45",
+      "profil": "sRGB"
+    },
+    {
+      "fichier": "images/carrousel/LA_SALLE_Premium_carrousel_5.png",
+      "largeur": 1080,
+      "hauteur": 1350,
+      "octets": 528745,
+      "sha256": "b8282a5a5568a2e27e9f7f5b57a3c35726cee912225f3a31356660d3976771cf",
+      "source": "motion design/premium-visuels-45",
+      "profil": "sRGB"
+    }
+  ],
+  "en_attente": [
+    "vidéos A, B, C (voix Nika, musique Sound Collection)",
+    "logo mono.png/word.png"
+  ]
+}

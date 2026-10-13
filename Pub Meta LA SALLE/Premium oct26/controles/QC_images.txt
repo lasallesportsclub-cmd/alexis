@@ -1,0 +1,63 @@
+GO — images option Premium LA SALLE (contrôle automatique du 13/10/2026)
+
+Vérifié pour chaque image : dimensions exactes, profil sRGB (PNG et JPG), JPG < 1 Mo, lexique interdit, vouvoiement,
+qualificatif de chaque prix, condition de « OFFERTES », mentions, zones utiles, zone sticker vide (story).
+
+[OK] story/01_LA_SALLE_Premium_offre_story_9x16
+      · prix qualifié (TTC, cadence, en plus de l'abonnement, mentions)
+      · « OFFERTES » avec sa condition et « en ce moment »
+      · zone sticker y 1320–1540 vide à 100.0 %
+      · rien sous y 1240 (100.0 % de fond)
+[OK] story/02_LA_SALLE_Premium_A_story_9x16
+      · prix qualifié (TTC, cadence, en plus de l'abonnement, mentions)
+      · « OFFERTES » avec sa condition et « en ce moment »
+      · zone sticker y 1320–1540 vide à 100.0 %
+      · rien sous y 1240 (100.0 % de fond)
+[OK] story/03_LA_SALLE_Premium_B_story_9x16
+      · prix qualifié (TTC, cadence, en plus de l'abonnement, mentions)
+      · « OFFERTES » avec sa condition et « en ce moment »
+      · zone sticker y 1320–1540 vide à 100.0 %
+      · rien sous y 1240 (100.0 % de fond)
+[OK] story/04_LA_SALLE_Premium_C_story_9x16
+      · prix qualifié (TTC, cadence, en plus de l'abonnement, mentions)
+      · « OFFERTES » avec sa condition et « en ce moment »
+      · zone sticker y 1320–1540 vide à 100.0 %
+      · rien sous y 1240 (100.0 % de fond)
+[OK] post/01_LA_SALLE_Premium_A_post_4x5
+      · prix qualifié (TTC, cadence, en plus de l'abonnement, mentions)
+      · « OFFERTES » avec sa condition et « en ce moment »
+      · rien sous y 1215 (100.0 % de fond)
+[OK] post/02_LA_SALLE_Premium_B_post_4x5
+      · prix qualifié (TTC, cadence, en plus de l'abonnement, mentions)
+      · « OFFERTES » avec sa condition et « en ce moment »
+      · rien sous y 1215 (100.0 % de fond)
+[OK] post/03_LA_SALLE_Premium_C_post_4x5
+      · prix qualifié (TTC, cadence, en plus de l'abonnement, mentions)
+      · « OFFERTES » avec sa condition et « en ce moment »
+      · rien sous y 1215 (100.0 % de fond)
+[OK] carrousel/LA_SALLE_Premium_carrousel_1
+      · prix qualifié (TTC, cadence, en plus de l'abonnement, mentions)
+      · « OFFERTES » avec sa condition et « en ce moment »
+      · rien sous y 1215 (100.0 % de fond)
+[OK] carrousel/LA_SALLE_Premium_carrousel_2
+      · rien sous y 1215 (100.0 % de fond)
+[OK] carrousel/LA_SALLE_Premium_carrousel_3
+      · rien sous y 1215 (100.0 % de fond)
+[OK] carrousel/LA_SALLE_Premium_carrousel_4
+      · rien sous y 1215 (100.0 % de fond)
+[OK] carrousel/LA_SALLE_Premium_carrousel_5
+      · prix qualifié (TTC, cadence, en plus de l'abonnement, mentions)
+      · « OFFERTES » avec sa condition et « en ce moment »
+      · rien sous y 1215 (100.0 % de fond)
+
+Carrousel (trait or continu, raccord au pixel) :
+[OK] raccord slide 1 → 2 : y [337]–[342] | y [337]–[342]
+[OK] raccord slide 2 → 3 : y [137]–[142] | y [137]–[142]
+[OK] raccord slide 3 → 4 : y [137]–[142] | y [137]–[142]
+[OK] raccord slide 4 → 5 : y [969]–[974] | y [969]–[974]
+
+Contrôles HyperFrames : `npx hyperframes check` passé sur premium-visuels-916 (bande y0=.646) et premium-visuels-45
+(bande y0=.9) : 0 erreur de lint, d'exécution, de mise en page ; contraste WCAG AA 60/60 et 54/54.
+Lisibilité à 30 % et recadrage 3:4 de la grille : contrôlés à l'œil (controles/planche_grille_3x4_30pc.jpg).
+
+⚠ Points à valider avant diffusion : voir A_valider.md (logo provisoire notamment).
