@@ -7,29 +7,34 @@ audience: "adhérents LA SALLE et abonnés Instagram, 18+"
 mode: collaborative
 ---
 
-# Option Premium · concept A · plan v1
+# Option Premium · concept A · plan v2
 
-**Ce film dit aux adhérents de LA SALLE que l'option Premium (fontaine, analyse 3D, salle de posing bientôt) s'ajoute pour 2 € TTC par semaine, avec 4 semaines offertes en ce moment, et qu'on l'active à l'accueil.**
+**Ce film dit aux adhérents de LA SALLE que l'option Premium (fontaine, analyse 3D, salle de posing bientôt) s'ajoute pour 2 € TTC par semaine, en plus de leur abonnement, avec 4 semaines offertes en ce moment, et qu'on l'active à l'accueil.**
 
-- **Spine** : une promesse (le « + »), trois preuves (les 3 bandes), une condition claire (offre + prix + mentions), une action (l'accueil).
-- **Rythme** : 128 BPM (temps 0,469 s, mesure 1,875 s). Schéma `fast-fast-fast-HOLD-cut-SLAM-build-hold`. Une idée par temps.
+- **Spine** : une promesse (le « + »), trois preuves (les 3 bandes), une condition claire (offre, prix, mentions), une action (l'accueil).
+- **Rythme** : 128 BPM (temps 0,469 s, mesure 1,875 s). Schéma `fast-fast-fast-HOLD-cut-SLAM-build-hold`. Une idée par temps ; plans de 0,94 à 1,88 s dans les preuves (une frontière peut glisser d'un temps).
 - **Tokens** : canvas #0D0D0D, text #F4F1EC, gold #B8A07E, surface #222222 (source : `frame.md`, charte « Le Trait Oblique » v2). Barlow Condensed 800–900, DM Sans 500.
-- **Atomes récurrents** : le « + » or (image 0, pastille, prix, carte finale), les 3 bandes obliques (une par avantage), le filet or.
-- **Bans** : écran noir ou logo en ouverture, fondu enchaîné ou d'opacité, halo, dégradé, glitch, fausse interface, icône de personne, fruit dessiné, slideshow (plans immobiles qui se suivent) et screensaver (mouvement sans intention).
+- **Atomes récurrents** : le « + » or (image 0 entier, pastille en négatif, prix, CTA), les 3 bandes obliques (numérotées dans l'ordre de la voix), le filet or.
+- **Bans** : écran noir ou logo en ouverture, fondu enchaîné ou d'opacité, halo, dégradé, glitch, fausse interface (jauge, écran de balance), icône de personne, fruit dessiné, slideshow (plans immobiles qui se suivent) et screensaver (mouvement sans intention).
 - **Held frame** : la carte finale, statique sur ses derniers 40 %.
-- **Voix** : Nika, une seule voix, 5 répliques (P1, P5, P6, 25, P9). Durées **estimées** en attendant les fichiers ; la vraie durée d'une réplique décale la frontière suivante d'un temps au plus.
+- **Voix** : Nika, une seule voix, 5 répliques (P1, P5, P6, 25, P9). Durées **estimées** ; toutes les bornes sont recalées sur les WAV.
 - **Son** : musique Sound Collection (en attente) creusée de 8 à 10 dB sous la voix (`carve.mjs --strength 0.4`) ; bruitages de la bibliothèque intégrée (whoosh-short sur chaque volet, impact-bass-1 sur le « + » et le drop, click sur les étiquettes). Version sans musique livrée.
-- **Mentions** : panneau opaque de 9,38 s à la fin, texte de `mentionPremium`.
+- **Pastille** : de 0,3 à 7,5 s, avec sa ligne « EN CE MOMENT · EN PLUS DE VOTRE ABONNEMENT » dans le même bloc.
+- **Mentions** : un seul panneau sur son propre calque, au-dessus de toutes les transitions, en place à 9,375 s (glissement terminé à 9,375) et immobile jusqu'à 14,933 s.
 
 ## Still open
 
 - ⚠ Engagement : « sans engagement sur l'option » (Q2) contredit le calendrier S40 du Drive (« engagement d'un an sur l'option »).
+- ⚠ Écart au §6 : la réplique 25 finit par « offertes » (≈ 3 s). Le drop (8,44 s) frappe donc « LES 4 PREMIÈRES SEMAINES » et « OFFERTES » n'arrive en or, avec sa condition, que quand la voix le dit (≈ 10,0–10,4 s). Le prix suit sans voix, puis la carte finale ; bornes exactes sur le WAV.
+- ⚠ Pastille : ligne « EN CE MOMENT · EN PLUS DE VOTRE ABONNEMENT » ajoutée sous la version courte du §4 (le prix doit porter « en plus de votre abonnement » avant 9,38 s).
+- ⚠ Rappel « FONTAINE · ANALYSE 3D · POSING (BIENTÔT) » : « (BIENTÔT) » ajouté au rappel du §6 (Q3).
+- ⚠ Voix IA (Nika) : activer l'étiquette IA de Meta à la publication des vidéos, avec et sans musique (décision de Mehdi).
+- ⚠ P4 « booster » et « multivitamines » : à confirmer sur la fiche GYMWA (allégations nutritionnelles) ; proposition de repli : « caféine ».
 - ⚠ Logo : `mono.png` et `word.png` attendus ; la carte finale assemble le monogramme par ses 3 bandes horizontales.
-- ⚠ Réplique 25 (~3 s) : si elle ne tient pas entre 7,97 et 9,38 s, ses derniers mots passent sur le début du prix (le bloc offre reste à l'écran en pastille).
 
 ## Frame 1 — Accroche
 
-- scene: « PASSEZ EN VERSION PREMIUM. » posé à l'image 0 (lancé à −0,12 s), le « + » or se trace, la pastille glisse à 0,3 s, le filet or souligne « PREMIUM. ».
+- scene: « PASSEZ EN VERSION PREMIUM. » et le « + » or entiers à l'image 0 (frappe d'échelle lancée à −0,35 s, jamais d'opacité). La pastille et son qualificatif glissent à 0,3 s ; le filet or souligne « PREMIUM. » quand la voix le dit.
 - duration: 1.875s
 - start: 0.000s
 - poster: 1.2
@@ -38,70 +43,70 @@ mode: collaborative
 - voiceover: P1 « Passez en version Premium. » (≈ 0,05–1,5 s)
 - src: compositions/frames/01-accroche.html
 - blueprint: kinetic-type-beats
-- rules: kinetic-beat-slam, svg-path-draw, css-marker-patterns
+- rules: kinetic-beat-slam, css-marker-patterns
 - focal: le titre ; le « + » en second focal
-- onscreen: « PASSEZ EN » « VERSION » « PREMIUM. » · pastille « 4 SEMAINES OFFERTES, PUIS 2 € TTC/SEM. »
+- onscreen: « PASSEZ EN » « VERSION » « PREMIUM. » · pastille « 4 SEMAINES OFFERTES, PUIS +2 € TTC/SEM. » + « EN CE MOMENT · EN PLUS DE VOTRE ABONNEMENT »
 - sfx: impact-bass-1 à 0,00 (son dès l'image 0) · click à 0,3 (pastille) · whoosh-short à 1,64 (volet)
 - constraint: no black frame · no logo first · no fade
 - sketch: ../storyboard.html#frame-01
 
 La promesse et la signature sont lisibles même pour qui part à 1 s.
 
-## Frame 2 — Les 3 bandes
+## Frame 2 — Les 3 bandes (1er temps du plan 01)
 
-- scene: Le trait ouvre l'écran en 3 bandes obliques décalées de 0,06 s : 01 FONTAINE À BOISSON SPORTIVE, 02 ANALYSE 3D, 03 SALLE DE POSING · BIENTÔT.
+- scene: Le trait ouvre l'écran en 3 bandes obliques décalées de 0,06 s : 01 FONTAINE À BOISSON SPORTIVE, 02 ANALYSE 3D, 03 SALLE DE POSING · BIENTÔT. Reconnaissance, pas lecture.
 - duration: 0.469s
 - start: 1.875s
 - poster: 2.1
 - transition_in: wipe
 - status: built
-- voiceover: onscreen
-- src: compositions/frames/02-bandes.html
+- voiceover: P5 commence (≈ 2,0 s)
+- src: compositions/frames/02-fontaine.html
 - blueprint: compose
 - rules: gsap-effects (masked translate), css-marker-patterns
 - focal: les trois bandes, égales
-- onscreen: « 01 FONTAINE À BOISSON SPORTIVE » « 02 ANALYSE 3D » « 03 SALLE DE POSING · BIENTÔT »
+- onscreen: « 01 FONTAINE À BOISSON SPORTIVE » « 02 ANALYSE 3D » « 03 SALLE DE POSING · BIENTÔT » (étiquettes)
 - sfx: whoosh-short à 1,875
 - constraint: no static hold over 1 beat
 - sketch: ../storyboard.html#frame-02
 
 Les trois avantages vus en même temps, dans l'ordre de la voix.
 
-## Frame 3 — 01 · Fontaine
+## Frame 3 — 01 · Fontaine (suite du plan 01)
 
-- scene: La bande 01 s'ouvre plein cadre. « UNE BOISSON » puis « TOUTES LES 30 MINUTES. » ; l'aiguille or trace le demi-tour de 30 min.
-- duration: 1.875s
+- scene: La bande 01 s'ouvre. « UNE BOISSON » puis « TOUTES LES 30 MINUTES. » ; l'aiguille or trace le demi-tour de 30 min.
+- duration: 1.406s
 - start: 2.344s
-- poster: 3.6
+- poster: 3.4
 - transition_in: wipe
 - status: built
-- voiceover: P5 « Une boisson toutes les trente minutes. » (≈ 2,4–4,2 s)
-- src: compositions/frames/03-fontaine.html
+- voiceover: P5 « Une boisson toutes les trente minutes. » (≈ 2,0–3,8 s)
+- src: compositions/frames/02-fontaine.html
 - blueprint: compose
 - rules: svg-path-draw, waterfall-entry
 - focal: « 30 MINUTES. » en or
 - onscreen: « UNE BOISSON » → « TOUTES LES » « 30 MINUTES. » · étiquette « 01 FONTAINE À BOISSON SPORTIVE »
-- sfx: click à 2,344 (étiquette) · whoosh-short à 4,0
-- constraint: no « à volonté » · no fruit · no water-fountain wording
+- sfx: click à 2,344 (étiquette) · whoosh-short à 3,6
+- constraint: no « à volonté » · no fruit · never « fontaine à eau »
 - sketch: ../storyboard.html#frame-03
 
 La limite d'une boisson toutes les 30 min est dite clairement.
 
 ## Frame 4 — 02 · Analyse 3D
 
-- scene: Le « 3D » en relief (couches empilées) tourne lentement. « UNE ANALYSE EN 3D, » puis « CHAQUE SEMAINE. » ; l'étiquette « 1 ANALYSE 3D PAR SEMAINE » se pose sous la bande.
+- scene: Le « 3D » en relief (couches opaques) pivote lentement. « UNE ANALYSE EN 3D, » puis « CHAQUE SEMAINE. » ; l'étiquette « 1 ANALYSE 3D PAR SEMAINE » se pose sous la bande. Frontière décalable à 6,09 s si P6 déborde.
 - duration: 1.875s
-- start: 4.219s
-- poster: 5.6
+- start: 3.750s
+- poster: 5.3
 - transition_in: wipe
 - status: built
-- voiceover: P6 « Une analyse en trois D, chaque semaine. » (≈ 4,3–6,3 s)
-- src: compositions/frames/04-analyse.html
+- voiceover: P6 « Une analyse en trois D, chaque semaine. » (≈ 3,85–5,85 s)
+- src: compositions/frames/03-analyse.html
 - blueprint: compose
 - rules: 3d-text-depth-layers, waterfall-entry
 - focal: le relief « 3D »
 - onscreen: « UNE ANALYSE EN 3D, » → « CHAQUE » « SEMAINE. » · « Analyse de composition corporelle » · « 1 ANALYSE 3D PAR SEMAINE »
-- sfx: click à 5,4 (étiquette) · whoosh-short à 5,9
+- sfx: click à 5,2 (étiquette) · whoosh-short à 5,5
 - constraint: no fake scale screen · no body figure · no medical wording
 - sketch: ../storyboard.html#frame-04
 
@@ -110,18 +115,18 @@ La fréquence (une par semaine) est posée à côté de la promesse.
 ## Frame 5 — 03 · Salle de posing (bientôt)
 
 - scene: Respiration sans voix. « ARRIVE » / « TRÈS BIENTÔT. » en or et son reflet de miroir sous un filet ; « MIROIRS · ÉCLAIRAGE LED · MURS SOMBRES ».
-- duration: 1.406s
-- start: 6.094s
+- duration: 1.875s
+- start: 5.625s
 - poster: 6.9
 - transition_in: wipe
 - status: built
 - voiceover: aucune (musique seule)
-- src: compositions/frames/05-posing.html
+- src: compositions/frames/04-posing.html
 - blueprint: compose
 - rules: css-marker-patterns, gsap-effects
 - focal: « TRÈS BIENTÔT. »
 - onscreen: « 03 SALLE DE POSING » « ARRIVE » « TRÈS BIENTÔT. » « MIROIRS · ÉCLAIRAGE LED · MURS SOMBRES »
-- sfx: sparkle très bas à 6,3 (reflet)
+- sfx: sparkle très bas à 6,1 (reflet)
 - constraint: no shot of the room · never « en retard »
 - sketch: ../storyboard.html#frame-05
 
@@ -149,61 +154,61 @@ La cassure prépare l'offre.
 
 ## Frame 7 — Offre
 
-- scene: Les groupes de mots de la 25 défilent en haut (4 mots au plus). Au drop (8,44 s), « 4 SEMAINES » puis « OFFERTES » en or frappent, le filet souligne, le qualificatif se pose.
-- duration: 1.406s
+- scene: « ET EN CE MOMENT… » se réduit en étiquette « EN CE MOMENT ». Groupes de la 25, 4 mots au plus : au drop (8,44 s) « LES 4 PREMIÈRES SEMAINES » frappe, puis « DE L'OPTION PREMIUM », puis « SONT OFFERTES. » : « OFFERTES. » en or et « PUIS 2 € TTC/SEM. (8 € TOUTES LES 4 SEM.) » + « EN PLUS DE VOTRE ABONNEMENT » entrent dans la même image ; le filet souligne. Le panneau des mentions est en place à 9,375 s.
+- duration: 3.001s
 - start: 7.969s
-- poster: 9.0
+- poster: 10.4
 - transition_in: cut
 - status: built
-- voiceover: 25 « Les 4 premières semaines de l'option Premium sont offertes. » (≈ 7,97–11,0 s)
+- voiceover: 25 « Les 4 premières semaines de l'option Premium sont offertes. » (≈ 7,97–10,97 s)
 - src: compositions/fin-commune.html
 - blueprint: compose
 - rules: kinetic-beat-slam, css-marker-patterns
-- focal: « OFFERTES » en or
-- onscreen: « LES 4 PREMIÈRES SEMAINES » → « DE L'OPTION PREMIUM » → « SONT OFFERTES. » · bloc « 4 SEMAINES OFFERTES » + « PUIS 2 € TTC/SEM. (8 € TOUTES LES 4 SEM.) »
-- sfx: impact-bass-1 au drop (8,44)
-- constraint: no « gratuit » · no « offre limitée » · qualifier ≥ 32 px in the same block
-- sketch: ../storyboard.html#frame-07
+- focal: « OFFERTES. » en or
+- onscreen: « EN CE MOMENT » (étiquette) · « LES 4 PREMIÈRES SEMAINES » → « DE L'OPTION PREMIUM » → « SONT OFFERTES. » · qualificatif 40 px · mentions
+- sfx: impact-bass-1 au drop (8,44) · click sur « OFFERTES »
+- constraint: OFFERTES never without its condition in the same frame · no « gratuit » · no « offre limitée »
+- sketch: ../storyboard.html#frame-07+08
 
 Personne ne voit « OFFERTES » sans sa condition.
 
 ## Frame 8 — Prix
 
-- scene: La pastille revient en haut. Le « + » or se trace, « 2 € » frappe, « TTC PAR SEMAINE », puis « SOIT 8 € TOUTES LES 4 SEM. · EN PLUS DE VOTRE ABONNEMENT » et le rappel « FONTAINE · ANALYSE 3D · POSING ». Le panneau des mentions monte à 9,38 s.
-- duration: 1.875s
-- start: 9.375s
-- poster: 10.6
+- scene: Sans voix. « PUIS », le « + » or se trace et « 2 € » frappe ; « TTC PAR SEMAINE » et « SOIT 8 € TOUTES LES 4 SEM. » / « EN PLUS DE VOTRE ABONNEMENT » sont déjà en place à la même image. Rappel « FONTAINE · ANALYSE 3D · POSING (BIENTÔT) ». Pas de pastille, pas de « OFFERTES ».
+- duration: 1.220s
+- start: 10.970s
+- poster: 11.8
 - transition_in: wipe
 - status: built
-- voiceover: suite de la 25
+- voiceover: aucune
 - src: compositions/fin-commune.html
 - blueprint: compose
 - rules: svg-path-draw, kinetic-beat-slam
 - focal: le « + » et « 2 € »
-- onscreen: « SONT OFFERTES. » · « +2 € » « TTC PAR SEMAINE » « SOIT 8 € TOUTES LES 4 SEM. » « EN PLUS DE VOTRE ABONNEMENT » · mentions
-- sfx: impact-bass-1 sur le « + » (9,6) · whoosh-short à 11,0
+- onscreen: « PUIS » « +2 € » « TTC PAR SEMAINE » « SOIT 8 € TOUTES LES 4 SEM. » « EN PLUS DE VOTRE ABONNEMENT » « FONTAINE · ANALYSE 3D · POSING (BIENTÔT) » · mentions
+- sfx: impact-bass-1 sur le « + » (11,1) · whoosh-short à 12,1
 - constraint: price never without its qualifier
-- sketch: ../storyboard.html#frame-08
+- sketch: ../storyboard.html#frame-09
 
 Le prix TTC, la cadence et « en plus de votre abonnement » arrivent ensemble.
 
 ## Frame 9 — Carte finale
 
-- scene: Le monogramme s'assemble par ses 3 bandes horizontales, le mot-symbole se pose, « OPTION PREMIUM ». « ACTIVEZ-LA À L'ACCUEIL, » puis « EN QUELQUES SECONDES. » ; CTA « + ACTIVEZ-LA À L'ACCUEIL ». Statique sur les 40 % finaux.
-- duration: 3.683s
-- start: 11.250s
-- poster: 13.5
+- scene: Le monogramme s'assemble par ses 3 bandes horizontales, le mot-symbole se pose, « OPTION PREMIUM » hors zone de protection. CTA « + ACTIVEZ-LA À L'ACCUEIL » (68 px) sur le 1er groupe de P9, puis « EN QUELQUES SECONDES. ». Statique sur les 40 % finaux.
+- duration: 2.743s
+- start: 12.190s
+- poster: 13.9
 - transition_in: wipe
 - status: built
-- voiceover: P9 « Activez-la à l'accueil, en quelques secondes. » (≈ 11,4–13,7 s)
+- voiceover: P9 « Activez-la à l'accueil, en quelques secondes. » (≈ 12,3–14,5 s)
 - src: compositions/fin-commune.html
 - blueprint: logo-assemble-lockup
 - rules: gsap-effects, spring-pop-entrance
-- focal: le logo puis le CTA
-- onscreen: logo · « OPTION PREMIUM » · « ACTIVEZ-LA À L'ACCUEIL, » → « EN QUELQUES » « SECONDES. » · CTA · mentions
-- sfx: whoosh-short sur chaque bande du logo (11,3 / 11,36 / 11,42) · impact-bass-1 à 11,6
+- focal: le CTA, puis le logo
+- onscreen: logo · « OPTION PREMIUM » · « + ACTIVEZ-LA À L'ACCUEIL » · « EN QUELQUES SECONDES. » · mentions
+- sfx: whoosh-short sur chaque bande du logo (12,2 / 12,26 / 12,32) · impact-bass-1 à 12,5
 - constraint: no chevron to a Meta button (organique) · no online sign-up
-- sketch: ../storyboard.html#frame-09
+- sketch: ../storyboard.html#frame-10
 
 On sait quoi faire et où : à l'accueil.
 

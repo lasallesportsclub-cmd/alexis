@@ -7,7 +7,7 @@ audience: "adhérents LA SALLE et abonnés Instagram, 18+"
 mode: collaborative
 ---
 
-# Option Premium · images story · plan v1
+# Option Premium · images story · plan v2
 
 Chaque image est une scène figée d'une seconde dans `index.html`, exportée par `npx hyperframes snapshot --at <milieu> --no-end`, puis convertie en JPG (qualité 90, sRGB, moins de 1 Mo). Tokens, bans et règles des prix : voir `frame.md`.
 
@@ -33,7 +33,7 @@ Chaque image est une scène figée d'une seconde dans `index.html`, exportée pa
 - status: built
 - voiceover: onscreen
 - src: compositions/frames/02.html
-- onscreen: « VOTRE BOISSON VOUS ATTEND. » · « 01 FONTAINE À BOISSON SPORTIVE » · boissons · saveurs · « 1 BOISSON TOUTES LES 30 MIN » · CTA · mentions
+- onscreen: « VOTRE BOISSON VOUS ATTEND. » · « 01 FONTAINE À BOISSON SPORTIVE » · boissons · saveurs · « 1 BOISSON TOUTES LES 30 MIN » · « AUSSI : ANALYSE 3D · SALLE DE POSING (BIENTÔT) » · CTA · mentions
 - export: LA_SALLE_Premium_B_story_9x16
 - sketch: storyboard.html#frame-02
 
@@ -46,7 +46,7 @@ Chaque image est une scène figée d'une seconde dans `index.html`, exportée pa
 - status: built
 - voiceover: onscreen
 - src: compositions/frames/03.html
-- onscreen: « VOS PROGRÈS, EN 3D. » · « 02 ANALYSE 3D · 1 PAR SEMAINE » · « Analyse de composition corporelle. » · CTA · mentions
+- onscreen: « VOS PROGRÈS, EN 3D. » · « 01 ANALYSE 3D · 1 PAR SEMAINE » · « Analyse de composition corporelle. » · « AUSSI : FONTAINE · SALLE DE POSING (BIENTÔT) » · CTA · mentions
 - export: LA_SALLE_Premium_C_story_9x16
 - sketch: storyboard.html#frame-03
 
@@ -59,7 +59,7 @@ Chaque image est une scène figée d'une seconde dans `index.html`, exportée pa
 - status: built
 - voiceover: onscreen
 - src: compositions/frames/04.html
-- onscreen: « ET EN CE MOMENT… » « 4 SEMAINES OFFERTES » « PUIS 2 € TTC/SEM. (8 € TOUTES LES 4 SEM.) » « EN PLUS DE VOTRE ABONNEMENT » · CTA · mentions
+- onscreen: logo · « OPTION PREMIUM » · « ET EN CE MOMENT… » « 4 SEMAINES OFFERTES » « PUIS 2 € TTC/SEM. (8 € TOUTES LES 4 SEM.) » « EN PLUS DE VOTRE ABONNEMENT » · CTA · mentions
 - export: LA_SALLE_Premium_offre_story_9x16
 - sketch: storyboard.html#frame-04
 

@@ -7,7 +7,7 @@ audience: "adhérents LA SALLE et abonnés Instagram, 18+"
 mode: collaborative
 ---
 
-# Option Premium · images post · plan v1
+# Option Premium · images post · plan v2
 
 Chaque image est une scène figée d'une seconde dans `index.html`, exportée par `npx hyperframes snapshot --at <milieu> --no-end`, puis convertie en JPG (qualité 90, sRGB, moins de 1 Mo). Tokens, bans et règles des prix : voir `frame.md`.
 
@@ -59,7 +59,7 @@ Chaque image est une scène figée d'une seconde dans `index.html`, exportée pa
 - status: built
 - voiceover: onscreen
 - src: compositions/frames/04.html
-- onscreen: « PASSEZ EN VERSION PREMIUM. » · pastille · « FONTAINE · ANALYSE 3D · POSING » · mentions
+- onscreen: « PASSEZ EN VERSION PREMIUM. » · pastille + qualificatif · « FONTAINE · ANALYSE 3D · POSING (BIENTÔT) » · mentions
 - export: LA_SALLE_Premium_carrousel_1
 - sketch: storyboard.html#frame-04
 
@@ -104,14 +104,14 @@ Chaque image est une scène figée d'une seconde dans `index.html`, exportée pa
 
 ## Frame 8 — Carrousel 5 · offre
 
-- scene: Offre, prix, CTA, logo, mentions ; le trait finit sous le CTA.
+- scene: Un seul bloc offre + prix (à valider : il remplace la ligne « PUIS 2 € TTC/SEM. (8 € TOUTES LES 4 SEM.) ») ; le trait finit sous le CTA.
 - duration: 1s
 - start: 7s
 - poster: 7.5
 - status: built
 - voiceover: onscreen
 - src: compositions/frames/08.html
-- onscreen: « ET EN CE MOMENT… » « 4 SEMAINES OFFERTES » + qualificatif · « +2 € TTC PAR SEMAINE » + qualificatif · CTA · logo · mentions
+- onscreen: « ET EN CE MOMENT… » « 4 SEMAINES OFFERTES » « DE L'OPTION PREMIUM » « PUIS » « +2 € TTC PAR SEMAINE » « SOIT 8 € TOUTES LES 4 SEM. » « EN PLUS DE VOTRE ABONNEMENT » · CTA · logo · mentions
 - export: LA_SALLE_Premium_carrousel_5
 - sketch: storyboard.html#frame-08
 

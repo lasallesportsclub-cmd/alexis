@@ -12,56 +12,61 @@ audience: "adhérents LA SALLE et abonnés Instagram, 18+"
 mode: collaborative
 ---
 
-# Option Premium · concept {concept} · plan v1
+# Option Premium · concept {concept} · plan v2
 
-**Ce film dit aux adhérents de LA SALLE que l'option Premium (fontaine, analyse 3D, salle de posing bientôt) s'ajoute pour 2 € TTC par semaine, avec 4 semaines offertes en ce moment, et qu'on l'active à l'accueil.**
+**Ce film dit aux adhérents de LA SALLE que l'option Premium (fontaine, analyse 3D, salle de posing bientôt) s'ajoute pour 2 € TTC par semaine, en plus de leur abonnement, avec 4 semaines offertes en ce moment, et qu'on l'active à l'accueil.**
 
-- **Spine** : une promesse (le « + »), trois preuves (les 3 bandes), une condition claire (offre + prix + mentions), une action (l'accueil).
-- **Rythme** : 128 BPM (temps 0,469 s, mesure 1,875 s). Schéma `fast-fast-fast-HOLD-cut-SLAM-build-hold`. Une idée par temps.
+- **Spine** : une promesse (le « + »), trois preuves (les 3 bandes), une condition claire (offre, prix, mentions), une action (l'accueil).
+- **Rythme** : 128 BPM (temps 0,469 s, mesure 1,875 s). Schéma `fast-fast-fast-HOLD-cut-SLAM-build-hold`. Une idée par temps ; plans de 0,94 à 1,88 s dans les preuves (une frontière peut glisser d'un temps).
 - **Tokens** : canvas #0D0D0D, text #F4F1EC, gold #B8A07E, surface #222222 (source : `frame.md`, charte « Le Trait Oblique » v2). Barlow Condensed 800–900, DM Sans 500.
-- **Atomes récurrents** : le « + » or (image 0, pastille, prix, carte finale), les 3 bandes obliques (une par avantage), le filet or.
-- **Bans** : écran noir ou logo en ouverture, fondu enchaîné ou d'opacité, halo, dégradé, glitch, fausse interface, icône de personne, fruit dessiné, slideshow (plans immobiles qui se suivent) et screensaver (mouvement sans intention).
+- **Atomes récurrents** : le « + » or (image 0 entier, pastille en négatif, prix, CTA), les 3 bandes obliques (numérotées dans l'ordre de la voix), le filet or.
+- **Bans** : écran noir ou logo en ouverture, fondu enchaîné ou d'opacité, halo, dégradé, glitch, fausse interface (jauge, écran de balance), icône de personne, fruit dessiné, slideshow (plans immobiles qui se suivent) et screensaver (mouvement sans intention).
 - **Held frame** : la carte finale, statique sur ses derniers 40 %.
-- **Voix** : Nika, une seule voix, {n_vo} répliques ({vo_list}). Durées **estimées** en attendant les fichiers ; la vraie durée d'une réplique décale la frontière suivante d'un temps au plus.
+- **Voix** : Nika, une seule voix, {n_vo} répliques ({vo_list}). Durées **estimées** ; toutes les bornes sont recalées sur les WAV.
 - **Son** : musique Sound Collection (en attente) creusée de 8 à 10 dB sous la voix (`carve.mjs --strength 0.4`) ; bruitages de la bibliothèque intégrée (whoosh-short sur chaque volet, impact-bass-1 sur le « + » et le drop, click sur les étiquettes). Version sans musique livrée.
-- **Mentions** : panneau opaque de 9,38 s à la fin, texte de `mentionPremium`.
+- **Pastille** : de 0,3 à 7,5 s, avec sa ligne « EN CE MOMENT · EN PLUS DE VOTRE ABONNEMENT » dans le même bloc.
+- **Mentions** : un seul panneau sur son propre calque, au-dessus de toutes les transitions, en place à 9,375 s (glissement terminé à 9,375) et immobile jusqu'à 14,933 s.
 
 ## Still open
 
 - ⚠ Engagement : « sans engagement sur l'option » (Q2) contredit le calendrier S40 du Drive (« engagement d'un an sur l'option »).
+- ⚠ Écart au §6 : la réplique 25 finit par « offertes » (≈ 3 s). Le drop (8,44 s) frappe donc « LES 4 PREMIÈRES SEMAINES » et « OFFERTES » n'arrive en or, avec sa condition, que quand la voix le dit (≈ 10,0–10,4 s). Le prix suit sans voix, puis la carte finale ; bornes exactes sur le WAV.
+- ⚠ Pastille : ligne « EN CE MOMENT · EN PLUS DE VOTRE ABONNEMENT » ajoutée sous la version courte du §4 (le prix doit porter « en plus de votre abonnement » avant 9,38 s).
+- ⚠ Rappel « FONTAINE · ANALYSE 3D · POSING (BIENTÔT) » : « (BIENTÔT) » ajouté au rappel du §6 (Q3).
+- ⚠ Voix IA (Nika) : activer l'étiquette IA de Meta à la publication des vidéos, avec et sans musique (décision de Mehdi).
+- ⚠ P4 « booster » et « multivitamines » : à confirmer sur la fiche GYMWA (allégations nutritionnelles) ; proposition de repli : « caféine ».
 - ⚠ Logo : `mono.png` et `word.png` attendus ; la carte finale assemble le monogramme par ses 3 bandes horizontales.
-- ⚠ Réplique 25 (~3 s) : si elle ne tient pas entre 7,97 et 9,38 s, ses derniers mots passent sur le début du prix (le bloc offre reste à l'écran en pastille).
 
 """
 
 FRAMES_A = [
     (1, "Accroche", "compositions/frames/01-accroche.html", 0.0, 1.875, 1.2, "cut",
-     "« PASSEZ EN VERSION PREMIUM. » posé à l'image 0 (lancé à −0,12 s), le « + » or se trace, la pastille glisse à 0,3 s, le filet or souligne « PREMIUM. ».",
+     "« PASSEZ EN VERSION PREMIUM. » et le « + » or entiers à l'image 0 (frappe d'échelle lancée à −0,35 s, jamais d'opacité). La pastille et son qualificatif glissent à 0,3 s ; le filet or souligne « PREMIUM. » quand la voix le dit.",
      "P1 « Passez en version Premium. » (≈ 0,05–1,5 s)",
-     "« PASSEZ EN » « VERSION » « PREMIUM. » · pastille « 4 SEMAINES OFFERTES, PUIS 2 € TTC/SEM. »",
-     "kinetic-type-beats", "kinetic-beat-slam, svg-path-draw, css-marker-patterns", "le titre ; le « + » en second focal",
+     "« PASSEZ EN » « VERSION » « PREMIUM. » · pastille « 4 SEMAINES OFFERTES, PUIS +2 € TTC/SEM. » + « EN CE MOMENT · EN PLUS DE VOTRE ABONNEMENT »",
+     "kinetic-type-beats", "kinetic-beat-slam, css-marker-patterns", "le titre ; le « + » en second focal",
      "impact-bass-1 à 0,00 (son dès l'image 0) · click à 0,3 (pastille) · whoosh-short à 1,64 (volet)",
      "no black frame · no logo first · no fade", "La promesse et la signature sont lisibles même pour qui part à 1 s."),
-    (2, "Les 3 bandes", "compositions/frames/02-bandes.html", 1.875, 2.344, 2.1, "wipe",
-     "Le trait ouvre l'écran en 3 bandes obliques décalées de 0,06 s : 01 FONTAINE À BOISSON SPORTIVE, 02 ANALYSE 3D, 03 SALLE DE POSING · BIENTÔT.",
-     "onscreen", "« 01 FONTAINE À BOISSON SPORTIVE » « 02 ANALYSE 3D » « 03 SALLE DE POSING · BIENTÔT »",
+    (2, "Les 3 bandes (1er temps du plan 01)", "compositions/frames/02-fontaine.html", 1.875, 2.344, 2.1, "wipe",
+     "Le trait ouvre l'écran en 3 bandes obliques décalées de 0,06 s : 01 FONTAINE À BOISSON SPORTIVE, 02 ANALYSE 3D, 03 SALLE DE POSING · BIENTÔT. Reconnaissance, pas lecture.",
+     "P5 commence (≈ 2,0 s)", "« 01 FONTAINE À BOISSON SPORTIVE » « 02 ANALYSE 3D » « 03 SALLE DE POSING · BIENTÔT » (étiquettes)",
      "compose", "gsap-effects (masked translate), css-marker-patterns", "les trois bandes, égales",
      "whoosh-short à 1,875", "no static hold over 1 beat", "Les trois avantages vus en même temps, dans l'ordre de la voix."),
-    (3, "01 · Fontaine", "compositions/frames/03-fontaine.html", 2.344, 4.219, 3.6, "wipe",
-     "La bande 01 s'ouvre plein cadre. « UNE BOISSON » puis « TOUTES LES 30 MINUTES. » ; l'aiguille or trace le demi-tour de 30 min.",
-     "P5 « Une boisson toutes les trente minutes. » (≈ 2,4–4,2 s)", "« UNE BOISSON » → « TOUTES LES » « 30 MINUTES. » · étiquette « 01 FONTAINE À BOISSON SPORTIVE »",
+    (3, "01 · Fontaine (suite du plan 01)", "compositions/frames/02-fontaine.html", 2.344, 3.75, 3.4, "wipe",
+     "La bande 01 s'ouvre. « UNE BOISSON » puis « TOUTES LES 30 MINUTES. » ; l'aiguille or trace le demi-tour de 30 min.",
+     "P5 « Une boisson toutes les trente minutes. » (≈ 2,0–3,8 s)", "« UNE BOISSON » → « TOUTES LES » « 30 MINUTES. » · étiquette « 01 FONTAINE À BOISSON SPORTIVE »",
      "compose", "svg-path-draw, waterfall-entry", "« 30 MINUTES. » en or",
-     "click à 2,344 (étiquette) · whoosh-short à 4,0", "no « à volonté » · no fruit · no water-fountain wording", "La limite d'une boisson toutes les 30 min est dite clairement."),
-    (4, "02 · Analyse 3D", "compositions/frames/04-analyse.html", 4.219, 6.094, 5.6, "wipe",
-     "Le « 3D » en relief (couches empilées) tourne lentement. « UNE ANALYSE EN 3D, » puis « CHAQUE SEMAINE. » ; l'étiquette « 1 ANALYSE 3D PAR SEMAINE » se pose sous la bande.",
-     "P6 « Une analyse en trois D, chaque semaine. » (≈ 4,3–6,3 s)", "« UNE ANALYSE EN 3D, » → « CHAQUE » « SEMAINE. » · « Analyse de composition corporelle » · « 1 ANALYSE 3D PAR SEMAINE »",
+     "click à 2,344 (étiquette) · whoosh-short à 3,6", "no « à volonté » · no fruit · never « fontaine à eau »", "La limite d'une boisson toutes les 30 min est dite clairement."),
+    (4, "02 · Analyse 3D", "compositions/frames/03-analyse.html", 3.75, 5.625, 5.3, "wipe",
+     "Le « 3D » en relief (couches opaques) pivote lentement. « UNE ANALYSE EN 3D, » puis « CHAQUE SEMAINE. » ; l'étiquette « 1 ANALYSE 3D PAR SEMAINE » se pose sous la bande. Frontière décalable à 6,09 s si P6 déborde.",
+     "P6 « Une analyse en trois D, chaque semaine. » (≈ 3,85–5,85 s)", "« UNE ANALYSE EN 3D, » → « CHAQUE » « SEMAINE. » · « Analyse de composition corporelle » · « 1 ANALYSE 3D PAR SEMAINE »",
      "compose", "3d-text-depth-layers, waterfall-entry", "le relief « 3D »",
-     "click à 5,4 (étiquette) · whoosh-short à 5,9", "no fake scale screen · no body figure · no medical wording", "La fréquence (une par semaine) est posée à côté de la promesse."),
-    (5, "03 · Salle de posing (bientôt)", "compositions/frames/05-posing.html", 6.094, 7.5, 6.9, "wipe",
+     "click à 5,2 (étiquette) · whoosh-short à 5,5", "no fake scale screen · no body figure · no medical wording", "La fréquence (une par semaine) est posée à côté de la promesse."),
+    (5, "03 · Salle de posing (bientôt)", "compositions/frames/04-posing.html", 5.625, 7.5, 6.9, "wipe",
      "Respiration sans voix. « ARRIVE » / « TRÈS BIENTÔT. » en or et son reflet de miroir sous un filet ; « MIROIRS · ÉCLAIRAGE LED · MURS SOMBRES ».",
      "aucune (musique seule)", "« 03 SALLE DE POSING » « ARRIVE » « TRÈS BIENTÔT. » « MIROIRS · ÉCLAIRAGE LED · MURS SOMBRES »",
      "compose", "css-marker-patterns, gsap-effects", "« TRÈS BIENTÔT. »",
-     "sparkle très bas à 6,3 (reflet)", "no shot of the room · never « en retard »", "On cite la salle sans la présenter comme une preuve."),
+     "sparkle très bas à 6,1 (reflet)", "no shot of the room · never « en retard »", "On cite la salle sans la présenter comme une preuve."),
 ]
 
 FRAMES_SHARED = [
@@ -69,70 +74,63 @@ FRAMES_SHARED = [
      "Coupe sèche : « ET EN CE / MOMENT… » seul, musique coupée 0,47 s. La pastille disparaît.",
      "aucune (silence musical)", "« ET EN CE MOMENT… »", "compose", "kinetic-beat-slam", "le texte seul",
      "musique coupée · riser court avant le drop", "no black frame (le texte est là dès la première image)", "La cassure prépare l'offre."),
-    (7, "Offre", "compositions/fin-commune.html", 7.969, 9.375, 9.0, "cut",
-     "Les groupes de mots de la 25 défilent en haut (4 mots au plus). Au drop (8,44 s), « 4 SEMAINES » puis « OFFERTES » en or frappent, le filet souligne, le qualificatif se pose.",
-     "25 « Les 4 premières semaines de l'option Premium sont offertes. » (≈ 7,97–11,0 s)",
-     "« LES 4 PREMIÈRES SEMAINES » → « DE L'OPTION PREMIUM » → « SONT OFFERTES. » · bloc « 4 SEMAINES OFFERTES » + « PUIS 2 € TTC/SEM. (8 € TOUTES LES 4 SEM.) »",
-     "compose", "kinetic-beat-slam, css-marker-patterns", "« OFFERTES » en or",
-     "impact-bass-1 au drop (8,44)", "no « gratuit » · no « offre limitée » · qualifier ≥ 32 px in the same block", "Personne ne voit « OFFERTES » sans sa condition."),
-    (8, "Prix", "compositions/fin-commune.html", 9.375, 11.25, 10.6, "wipe",
-     "La pastille revient en haut. Le « + » or se trace, « 2 € » frappe, « TTC PAR SEMAINE », puis « SOIT 8 € TOUTES LES 4 SEM. · EN PLUS DE VOTRE ABONNEMENT » et le rappel « FONTAINE · ANALYSE 3D · POSING ». Le panneau des mentions monte à 9,38 s.",
-     "suite de la 25", "« SONT OFFERTES. » · « +2 € » « TTC PAR SEMAINE » « SOIT 8 € TOUTES LES 4 SEM. » « EN PLUS DE VOTRE ABONNEMENT » · mentions",
+    (7, "Offre", "compositions/fin-commune.html", 7.969, 10.97, 10.4, "cut",
+     "« ET EN CE MOMENT… » se réduit en étiquette « EN CE MOMENT ». Groupes de la 25, 4 mots au plus : au drop (8,44 s) « LES 4 PREMIÈRES SEMAINES » frappe, puis « DE L'OPTION PREMIUM », puis « SONT OFFERTES. » : « OFFERTES. » en or et « PUIS 2 € TTC/SEM. (8 € TOUTES LES 4 SEM.) » + « EN PLUS DE VOTRE ABONNEMENT » entrent dans la même image ; le filet souligne. Le panneau des mentions est en place à 9,375 s.",
+     "25 « Les 4 premières semaines de l'option Premium sont offertes. » (≈ 7,97–10,97 s)",
+     "« EN CE MOMENT » (étiquette) · « LES 4 PREMIÈRES SEMAINES » → « DE L'OPTION PREMIUM » → « SONT OFFERTES. » · qualificatif 40 px · mentions",
+     "compose", "kinetic-beat-slam, css-marker-patterns", "« OFFERTES. » en or",
+     "impact-bass-1 au drop (8,44) · click sur « OFFERTES »", "OFFERTES never without its condition in the same frame · no « gratuit » · no « offre limitée »", "Personne ne voit « OFFERTES » sans sa condition."),
+    (8, "Prix", "compositions/fin-commune.html", 10.97, 12.19, 11.8, "wipe",
+     "Sans voix. « PUIS », le « + » or se trace et « 2 € » frappe ; « TTC PAR SEMAINE » et « SOIT 8 € TOUTES LES 4 SEM. » / « EN PLUS DE VOTRE ABONNEMENT » sont déjà en place à la même image. Rappel « FONTAINE · ANALYSE 3D · POSING (BIENTÔT) ». Pas de pastille, pas de « OFFERTES ».",
+     "aucune", "« PUIS » « +2 € » « TTC PAR SEMAINE » « SOIT 8 € TOUTES LES 4 SEM. » « EN PLUS DE VOTRE ABONNEMENT » « FONTAINE · ANALYSE 3D · POSING (BIENTÔT) » · mentions",
      "compose", "svg-path-draw, kinetic-beat-slam", "le « + » et « 2 € »",
-     "impact-bass-1 sur le « + » (9,6) · whoosh-short à 11,0", "price never without its qualifier", "Le prix TTC, la cadence et « en plus de votre abonnement » arrivent ensemble."),
-    (9, "Carte finale", "compositions/fin-commune.html", 11.25, 14.933, 13.5, "wipe",
-     "Le monogramme s'assemble par ses 3 bandes horizontales, le mot-symbole se pose, « OPTION PREMIUM ». « ACTIVEZ-LA À L'ACCUEIL, » puis « EN QUELQUES SECONDES. » ; CTA « + ACTIVEZ-LA À L'ACCUEIL ». Statique sur les 40 % finaux.",
-     "P9 « Activez-la à l'accueil, en quelques secondes. » (≈ 11,4–13,7 s)",
-     "logo · « OPTION PREMIUM » · « ACTIVEZ-LA À L'ACCUEIL, » → « EN QUELQUES » « SECONDES. » · CTA · mentions",
-     "logo-assemble-lockup", "gsap-effects, spring-pop-entrance", "le logo puis le CTA",
-     "whoosh-short sur chaque bande du logo (11,3 / 11,36 / 11,42) · impact-bass-1 à 11,6", "no chevron to a Meta button (organique) · no online sign-up", "On sait quoi faire et où : à l'accueil."),
+     "impact-bass-1 sur le « + » (11,1) · whoosh-short à 12,1", "price never without its qualifier", "Le prix TTC, la cadence et « en plus de votre abonnement » arrivent ensemble."),
+    (9, "Carte finale", "compositions/fin-commune.html", 12.19, 14.933, 13.9, "wipe",
+     "Le monogramme s'assemble par ses 3 bandes horizontales, le mot-symbole se pose, « OPTION PREMIUM » hors zone de protection. CTA « + ACTIVEZ-LA À L'ACCUEIL » (68 px) sur le 1er groupe de P9, puis « EN QUELQUES SECONDES. ». Statique sur les 40 % finaux.",
+     "P9 « Activez-la à l'accueil, en quelques secondes. » (≈ 12,3–14,5 s)",
+     "logo · « OPTION PREMIUM » · « + ACTIVEZ-LA À L'ACCUEIL » · « EN QUELQUES SECONDES. » · mentions",
+     "logo-assemble-lockup", "gsap-effects, spring-pop-entrance", "le CTA, puis le logo",
+     "whoosh-short sur chaque bande du logo (12,2 / 12,26 / 12,32) · impact-bass-1 à 12,5", "no chevron to a Meta button (organique) · no online sign-up", "On sait quoi faire et où : à l'accueil."),
 ]
 
 FRAMES_B = [
-    (1, "Accroche", "compositions/frames/01-accroche.html", 0.0, 1.875, 1.2, "cut",
-     "« VOTRE BOISSON VOUS ATTEND. » posé à l'image 0, le « + » or ; la jauge or monte dans son cadre à droite, comme une gourde qui se remplit, sans illustration.",
+    (1, "Accroche", "compositions/frames/01-accroche.html", 0.0, 1.406, 1.1, "cut",
+     "« VOTRE BOISSON VOUS ATTEND. » et le « + » or entiers à l'image 0 ; « BOISSON » se remplit d'or de bas en haut, bord net. Pastille à 0,3 s. Coupe à 1,41 s.",
      "P2 « Votre boisson vous attend. » (≈ 0,05–1,4 s)", "« VOTRE BOISSON » « VOUS ATTEND. » · pastille",
-     "kinetic-type-beats", "stat-bars-and-fills, kinetic-beat-slam", "le titre",
-     "remplissage synthétisé (bruit filtré) à 0,1 · impact-bass-1 à 0,00", "no fruit · no bottle drawing", "La fontaine devient une promesse personnelle."),
-    (2, "01 · Les boissons", "compositions/frames/02-boissons.html", 1.875, 5.156, 4.6, "wipe",
-     "Les boissons s'empilent une par une (4 mots au plus), puis « OU SIMPLEMENT / DE L'EAU. » les remplace. Les saveurs défilent à la verticale à droite.",
-     "P4 « Collagène, multivitamines, L-carnitine, booster… ou simplement de l'eau. » (≈ 1,9–6,0 s)",
-     "« COLLAGÈNE, » « MULTIVITAMINES, » « L-CARNITINE, » « BOOSTER… » → « OU SIMPLEMENT » « DE L'EAU. » · ticker « PASSION · PASTÈQUE · ICE TEA · ANANAS · MULTIFRUIT »",
-     "compose", "waterfall-entry, vertical-spring-ticker", "la liste",
-     "click sur chaque mot", "no effect claimed for any drink", "La variété, en toutes lettres."),
-    (3, "30 minutes", "compositions/frames/03-trente.html", 5.156, 6.563, 6.3, "wipe",
-     "L'aiguille tracée par le trait fait son demi-tour pendant « TOUTES LES 30 MINUTES. ».",
-     "P5 « Une boisson toutes les trente minutes. » (≈ 5,2–7,0 s)", "« UNE BOISSON » → « TOUTES LES » « 30 MINUTES. »",
-     "compose", "svg-path-draw, waterfall-entry", "« 30 MINUTES. » en or",
-     "click", "no « à volonté »", "La règle d'usage est claire."),
-    (4, "02 puis 03", "compositions/frames/04-bandes.html", 6.563, 7.5, 7.2, "wipe",
-     "Un temps chacun : la bande « 02 ANALYSE 3D · 1 PAR SEMAINE », puis « 03 SALLE DE POSING · BIENTÔT ».",
-     "aucune", "« 02 ANALYSE 3D · 1 PAR SEMAINE » « 03 SALLE DE POSING · BIENTÔT »",
-     "compose", "gsap-effects", "les deux bandes",
-     "whoosh-short ×2", "no static hold", "Le prix couvre les trois avantages : on les nomme tous."),
+     "kinetic-type-beats", "stat-bars-and-fills (remplissage du mot), kinetic-beat-slam", "le titre",
+     "remplissage synthétisé (bruit filtré) à 0,1 · impact-bass-1 à 0,00 · click à 0,3", "no gauge · no fruit · no bottle drawing", "La fontaine devient une promesse personnelle."),
+    (2, "01 · Les boissons", "compositions/frames/02-boissons.html", 1.406, 3.281, 3.0, "wipe",
+     "La bande 01 s'ouvre ; les boissons s'empilent une par une, 4 mots au plus.",
+     "P4, début (≈ 1,45 s →)", "« COLLAGÈNE, » « MULTIVITAMINES, » « L-CARNITINE, » « BOOSTER… » · étiquette « 01 FONTAINE À BOISSON SPORTIVE »",
+     "compose", "waterfall-entry", "la liste", "click sur chaque mot", "no effect claimed for any drink", "La variété, en toutes lettres."),
+    (3, "01 · De l'eau et les saveurs", "compositions/frames/03-eau.html", 3.281, 5.625, 5.0, "cut",
+     "« OU SIMPLEMENT » / « DE L'EAU. » ; les saveurs défilent à la verticale dans une fenêtre d'une ligne, une à la fois, lettres droites (étiquette).",
+     "P4, fin (→ ≈ 5,55 s)", "« OU SIMPLEMENT » « DE L'EAU. » · « SAVEUR · PASSION » → PASTÈQUE → ICE TEA → ANANAS → MULTIFRUIT",
+     "compose", "waterfall-entry, vertical-spring-ticker", "« DE L'EAU. »", "click à chaque saveur", "one flavor visible at a time", "Les saveurs sont dites en toutes lettres."),
+    (4, "30 minutes, puis 02 et 03", "compositions/frames/04-trente.html", 5.625, 7.5, 7.2, "wipe",
+     "L'aiguille fait son demi-tour pendant « TOUTES LES 30 MINUTES. » ; sous la voix, la bande 02 entre à 6,56 s puis la 03 à 7,03 s (un temps chacune).",
+     "P5 « Une boisson toutes les trente minutes. » (≈ 5,65–7,45 s)", "« UNE BOISSON » → « TOUTES LES » « 30 MINUTES. » · bandes « 02 ANALYSE 3D · 1 PAR SEMAINE » « 03 SALLE DE POSING · BIENTÔT »",
+     "compose", "svg-path-draw, gsap-effects", "« 30 MINUTES. » en or", "whoosh-short à 6,56 et 7,03", "no « à volonté »", "La règle d'usage est claire ; les deux autres avantages sont nommés."),
 ]
 
 FRAMES_C = [
     (1, "Accroche", "compositions/frames/01-accroche.html", 0.0, 1.875, 1.2, "cut",
-     "Le « 3D » en relief tourne déjà à l'image 0 ; « VOS PROGRÈS, EN 3D. » posé ; le « + » or se trace.",
+     "Le « 3D » en relief tourne déjà à l'image 0 ; « VOS PROGRÈS, EN 3D. » et le « + » or entiers. Pastille à 0,3 s.",
      "P3 « Vos progrès, en trois D. » (≈ 0,05–1,4 s)", "« VOS PROGRÈS, » « EN 3D. » · pastille",
      "kinetic-type-beats", "3d-text-depth-layers, kinetic-beat-slam", "le relief « 3D »",
-     "impact-bass-1 à 0,00", "no body figure · no before/after", "Le suivi de progression, sans promesse de résultat."),
-    (2, "02 · Analyse 3D", "compositions/frames/02-analyse.html", 1.875, 4.688, 4.2, "wipe",
-     "P6 sur le relief qui pivote ; « 1 ANALYSE 3D PAR SEMAINE » se pose en étiquette.",
-     "P6 « Une analyse en trois D, chaque semaine. » (≈ 2,0–4,0 s)", "« UNE ANALYSE EN 3D, » → « CHAQUE » « SEMAINE. » · « Analyse de composition corporelle » · « 1 ANALYSE 3D PAR SEMAINE »",
-     "compose", "3d-text-depth-layers, waterfall-entry", "le relief",
-     "click", "no fake scale screen · no medical wording", "La fréquence est claire."),
-    (3, "03 · Salle de posing (bientôt)", "compositions/frames/03-posing.html", 4.688, 6.563, 6.0, "wipe",
-     "Même scène que A·05 : « ARRIVE TRÈS BIENTÔT. » et son reflet de miroir.",
-     "aucune", "« 03 SALLE DE POSING » « ARRIVE » « TRÈS BIENTÔT. » « MIROIRS · ÉCLAIRAGE LED · MURS SOMBRES »",
-     "compose", "css-marker-patterns", "« TRÈS BIENTÔT. »",
-     "sparkle très bas", "no shot of the room", "On cite la salle sans la montrer."),
-    (4, "01 · Fontaine", "compositions/frames/04-fontaine.html", 6.563, 7.5, 7.2, "wipe",
-     "Deux temps : la bande « 01 FONTAINE À BOISSON SPORTIVE » et « 1 BOISSON TOUTES LES 30 MIN », mini-horloge.",
-     "aucune", "« 01 FONTAINE À BOISSON SPORTIVE » « 1 BOISSON TOUTES LES 30 MIN »",
-     "compose", "gsap-effects, svg-path-draw", "la bande",
-     "whoosh-short", "no « à volonté »", "Le troisième avantage, avec sa limite."),
+     "impact-bass-1 à 0,00 · click à 0,3", "no body figure · no before/after", "Le suivi de progression, sans promesse de résultat."),
+    (2, "01 · Analyse 3D (deux plans)", "compositions/frames/02-analyse.html", 1.875, 4.688, 4.2, "wipe",
+     "Plan 1 (1,88–3,28) : « UNE ANALYSE EN 3D, » sur le relief qui pivote. Plan 2 (3,28–4,69) : « CHAQUE SEMAINE. » et l'étiquette « 1 ANALYSE 3D PAR SEMAINE ».",
+     "P6 « Une analyse en trois D, chaque semaine. » (≈ 2,0–4,0 s)", "« UNE ANALYSE EN 3D, » → « CHAQUE » « SEMAINE. » · « 01 ANALYSE 3D » · « Analyse de composition corporelle » · « 1 ANALYSE 3D PAR SEMAINE »",
+     "compose", "3d-text-depth-layers, waterfall-entry", "le relief", "click", "no fake scale screen · no medical wording", "La fréquence est claire."),
+    (3, "02 · Salle de posing (bientôt)", "compositions/frames/03-posing.html", 4.688, 6.563, 6.0, "wipe",
+     "Même scène que A·05, numérotée 02 : « ARRIVE TRÈS BIENTÔT. » et son reflet de miroir.",
+     "aucune", "« 02 SALLE DE POSING » « ARRIVE » « TRÈS BIENTÔT. » « MIROIRS · ÉCLAIRAGE LED · MURS SOMBRES »",
+     "compose", "css-marker-patterns", "« TRÈS BIENTÔT. »", "sparkle très bas", "no shot of the room", "On cite la salle sans la montrer."),
+    (4, "03 · Fontaine", "compositions/frames/04-fontaine.html", 6.563, 7.5, 7.2, "wipe",
+     "Deux temps : la bande « 03 FONTAINE À BOISSON SPORTIVE » et « 1 BOISSON TOUTES LES 30 MIN », mini-horloge.",
+     "aucune", "« 03 FONTAINE À BOISSON SPORTIVE » « 1 BOISSON TOUTES LES 30 MIN »",
+     "compose", "gsap-effects, svg-path-draw", "la bande", "whoosh-short", "no « à volonté »", "Le troisième avantage, avec sa limite."),
 ]
 
 
@@ -168,9 +166,9 @@ def write_video(concept, frames, vo_list, n_vo, sheet_ids):
     open(os.path.join(MD, "premium-916", concept, "STORYBOARD.md"), "w", encoding="utf-8").write(out)
 
 
-write_video("A", FRAMES_A, "P1, P5, P6, 25, P9", 5, ["01", "02", "03", "04", "05", "06", "07", "08", "09"])
-write_video("B", FRAMES_B, "P2, P4, P5, 25, P9", 5, ["10", "11", "12", "13", "06", "07", "08", "09"])
-write_video("C", FRAMES_C, "P3, P6, 25, P9", 4, ["14", "15", "16", "17", "06", "07", "08", "09"])
+write_video("A", FRAMES_A, "P1, P5, P6, 25, P9", 5, ["01", "02", "03", "04", "05", "06", "07+08", "09", "10"])
+write_video("B", FRAMES_B, "P2, P4, P5, 25, P9", 5, ["11", "12", "13", "14", "06", "07+08", "09", "10"])
+write_video("C", FRAMES_C, "P3, P6, 25, P9", 4, ["15", "16", "17", "18", "06", "07+08", "09", "10"])
 
 IMG_HEAD = """---
 format: {fmt}
@@ -181,7 +179,7 @@ audience: "adhérents LA SALLE et abonnés Instagram, 18+"
 mode: collaborative
 ---
 
-# Option Premium · {name} · plan v1
+# Option Premium · {name} · plan v2
 
 Chaque image est une scène figée d'une seconde dans `index.html`, exportée par `npx hyperframes snapshot --at <milieu> --no-end`, puis convertie en JPG (qualité 90, sRGB, moins de 1 Mo). Tokens, bans et règles des prix : voir `frame.md`.
 
@@ -212,25 +210,25 @@ write_images("premium-visuels-916", "1080x1920", "images story", [
     ("Visuel clé A", "3 EN 1 : titre, « + », 3 bandes, CTA, mentions ; zone sticker vide.",
      "« PASSEZ EN VERSION PREMIUM. » · pastille · bandes 01/02/03 · « ACTIVEZ-LA À L'ACCUEIL » · mentions", "LA_SALLE_Premium_A_story_9x16"),
     ("Visuel clé B", "LA FONTAINE : boissons et saveurs en toutes lettres, horloge des 30 min.",
-     "« VOTRE BOISSON VOUS ATTEND. » · « 01 FONTAINE À BOISSON SPORTIVE » · boissons · saveurs · « 1 BOISSON TOUTES LES 30 MIN » · CTA · mentions", "LA_SALLE_Premium_B_story_9x16"),
+     "« VOTRE BOISSON VOUS ATTEND. » · « 01 FONTAINE À BOISSON SPORTIVE » · boissons · saveurs · « 1 BOISSON TOUTES LES 30 MIN » · « AUSSI : ANALYSE 3D · SALLE DE POSING (BIENTÔT) » · CTA · mentions", "LA_SALLE_Premium_B_story_9x16"),
     ("Visuel clé C", "VOS PROGRÈS EN 3D : relief typographique, une analyse par semaine.",
-     "« VOS PROGRÈS, EN 3D. » · « 02 ANALYSE 3D · 1 PAR SEMAINE » · « Analyse de composition corporelle. » · CTA · mentions", "LA_SALLE_Premium_C_story_9x16"),
+     "« VOS PROGRÈS, EN 3D. » · « 01 ANALYSE 3D · 1 PAR SEMAINE » · « Analyse de composition corporelle. » · « AUSSI : FONTAINE · SALLE DE POSING (BIENTÔT) » · CTA · mentions", "LA_SALLE_Premium_C_story_9x16"),
     ("Carte offre", "Lancement du 13/10 : l'offre avec son qualificatif complet, le CTA et les mentions.",
-     "« ET EN CE MOMENT… » « 4 SEMAINES OFFERTES » « PUIS 2 € TTC/SEM. (8 € TOUTES LES 4 SEM.) » « EN PLUS DE VOTRE ABONNEMENT » · CTA · mentions", "LA_SALLE_Premium_offre_story_9x16"),
+     "logo · « OPTION PREMIUM » · « ET EN CE MOMENT… » « 4 SEMAINES OFFERTES » « PUIS 2 € TTC/SEM. (8 € TOUTES LES 4 SEM.) » « EN PLUS DE VOTRE ABONNEMENT » · CTA · mentions", "LA_SALLE_Premium_offre_story_9x16"),
 ])
 write_images("premium-visuels-45", "1080x1350", "images post", [
     ("Visuel clé A", "Recomposé en 4:5.", "comme le visuel clé A story", "LA_SALLE_Premium_A_post_4x5"),
     ("Visuel clé B", "Recomposé en 4:5.", "comme le visuel clé B story", "LA_SALLE_Premium_B_post_4x5"),
     ("Visuel clé C", "Recomposé en 4:5.", "comme le visuel clé C story", "LA_SALLE_Premium_C_post_4x5"),
     ("Carrousel 1 · couverture", "« PASSEZ EN VERSION PREMIUM. », pastille ; le trait or part sous le titre.",
-     "« PASSEZ EN VERSION PREMIUM. » · pastille · « FONTAINE · ANALYSE 3D · POSING » · mentions", "LA_SALLE_Premium_carrousel_1"),
+     "« PASSEZ EN VERSION PREMIUM. » · pastille + qualificatif · « FONTAINE · ANALYSE 3D · POSING (BIENTÔT) » · mentions", "LA_SALLE_Premium_carrousel_1"),
     ("Carrousel 2 · fontaine", "01 : boissons, saveurs, une boisson toutes les 30 min.",
      "« 01 FONTAINE À BOISSON SPORTIVE » « VOTRE BOISSON VOUS ATTEND. » · boissons · saveurs · « 1 BOISSON TOUTES LES 30 MIN »", "LA_SALLE_Premium_carrousel_2"),
     ("Carrousel 3 · analyse 3D", "02 : une analyse par semaine, pour suivre votre progression.",
      "« 02 ANALYSE 3D » « VOS PROGRÈS, EN 3D. » « 1 ANALYSE 3D PAR SEMAINE » · « Analyse de composition corporelle, pour suivre votre progression. »", "LA_SALLE_Premium_carrousel_3"),
     ("Carrousel 4 · salle de posing", "03 : citée, jamais montrée.",
      "« 03 SALLE DE POSING » « ARRIVE TRÈS BIENTÔT. » « MIROIRS · ÉCLAIRAGE LED · MURS SOMBRES »", "LA_SALLE_Premium_carrousel_4"),
-    ("Carrousel 5 · offre", "Offre, prix, CTA, logo, mentions ; le trait finit sous le CTA.",
-     "« ET EN CE MOMENT… » « 4 SEMAINES OFFERTES » + qualificatif · « +2 € TTC PAR SEMAINE » + qualificatif · CTA · logo · mentions", "LA_SALLE_Premium_carrousel_5"),
+    ("Carrousel 5 · offre", "Un seul bloc offre + prix (à valider : il remplace la ligne « PUIS 2 € TTC/SEM. (8 € TOUTES LES 4 SEM.) ») ; le trait finit sous le CTA.",
+     "« ET EN CE MOMENT… » « 4 SEMAINES OFFERTES » « DE L'OPTION PREMIUM » « PUIS » « +2 € TTC PAR SEMAINE » « SOIT 8 € TOUTES LES 4 SEM. » « EN PLUS DE VOTRE ABONNEMENT » · CTA · logo · mentions", "LA_SALLE_Premium_carrousel_5"),
 ])
 print("STORYBOARD.md écrits")

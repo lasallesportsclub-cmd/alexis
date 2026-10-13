@@ -43,22 +43,22 @@ components:
     description: "Pente du monogramme : le bord coupé avance de 0,42 px vers la droite par pixel de montée (penché à droite comme une italique, 22,78° par rapport à la verticale). Sert à couper les bandes, souligner, barrer, et assembler le logo."
   plus-premium:
     color: "gold"
-    description: "Signature de l'option : un « + » or en italique. Barre horizontale à plat, barre verticale penchée de 0,42. Épaisseur des barres = 22 % de la taille. Apparaît à l'image 0, dans la pastille, devant le prix (« +2 € ») et dans la carte finale."
+    description: "Signature de l'option : un « + » or en italique. Barre horizontale à plat, barre verticale penchée de 0,42. Épaisseur des barres = 22 % de la taille. Apparaît à l'image 0 (déjà entier, jamais en cours de tracé), dans la pastille (en négatif #0D0D0D, devant « 2 € »), devant le prix (« +2 € ») et dans la carte finale (devant le CTA). Il veut dire « ajoutez l'option »."
   bande:
     fill: "surface"
     filet: "gold, 6px, sur le bord d'attaque"
-    description: "Bande horizontale aux extrémités coupées à 0,42. Trois bandes = les trois avantages (01 fontaine, 02 analyse 3D, 03 salle de posing), dans l'ordre de la voix."
+    description: "Bande horizontale aux extrémités coupées à 0,42. Trois bandes = les trois avantages, numérotées 01, 02, 03 dans l'ordre où la voix les cite (A et B : fontaine, analyse 3D, posing ; C : analyse 3D, posing, fontaine). Variante compacte de 62–64 px sans filet pour les visuels fixes et les rappels."
   pastille:
     fill: "gold"
     text: "canvas"
-    description: "Cartouche or aux extrémités coupées à 0,42, texte en style pastille. Offre : « 4 SEMAINES OFFERTES, PUIS 2 € TTC/SEM. »."
+    description: "Cartouche or aux extrémités coupées à 0,42, texte en style pastille : « 4 SEMAINES OFFERTES, PUIS +2 € TTC/SEM. » (le « + » en négatif). Toujours suivie, dans le même bloc, de la ligne qualifier 32 px « EN CE MOMENT · EN PLUS DE VOTRE ABONNEMENT »."
   mention-panel:
     fill: "surface"
     text: "text"
     description: "Mentions légales en style mention sur fond opaque, 3 ou 4 lignes, jamais sur une image ni sur un décor."
   grain:
-    opacity: "0.05"
-    description: "Grain fin et gris (feTurbulence, fréquence 0,85), en surcouche normale. ⚠ Équivalence approximative avec l'amplitude 0,014 du kit du PC."
+    opacity: "0.7 (overlay)"
+    description: "Grain fin et gris (feTurbulence, fréquence 0,85) en incrustation (overlay) à 0,7 : la valeur moyenne du fond reste #0D0D0D, amplitude ≈ ±0,014."
 ---
 
 # LA SALLE — Option Premium : la couche de cadre
@@ -124,15 +124,16 @@ Plat. Aucune ombre, aucun halo, aucune lueur, aucun dégradé. La profondeur vie
 - **Pastille** : parallélogramme `gold`, hauteur 64 px, texte en style `pastille` couleur `canvas`.
 - **Bloc prix** : « + » or tracé, « 2 € » en display, puis « TTC PAR SEMAINE » en style h2, puis le qualificatif « SOIT 8 € TOUTES LES 4 SEM. · EN PLUS DE VOTRE ABONNEMENT » en style qualifier. Les trois dans le même bloc, toujours.
 - **Bloc offre** : « 4 SEMAINES » (text) et « OFFERTES » (gold) en display, puis « PUIS 2 € TTC/SEM. (8 € TOUTES LES 4 SEM.) » en style qualifier. Toujours ensemble.
-- **Panneau mentions** : `surface` opaque, x 108→972, DM Sans 500 40 px, texte de la variable `mentionPremium`.
+- **Panneau mentions** : `surface` opaque, x 108→972, DM Sans 500 40 px, interligne 1,18, texte de la variable `mentionPremium`. En vidéo : un seul élément sur son propre calque, au-dessus de toutes les transitions, en place à 9,375 s et immobile jusqu'à la fin. En images story : y 1080–1238.
 - **Logo** : `mono.png` et `word.png` du kit du PC, jamais redessinés ni recolorés hors de la version négative (blanc cassé sur noir). Zone de protection = hauteur du monogramme. Assemblé en vidéo par ses 3 bandes horizontales.
 
 ## Frame Treatments
 
-- **Accroche** (image 0) : fond `canvas`, registre affiche, titre display sur 2 ou 3 lignes ancré à gauche, « + » or en haut à droite, pastille à partir de 0,3 s. Focal : le titre. Densité faible.
+- **Accroche** (image 0) : fond `canvas`, registre affiche, titre display sur 2 ou 3 lignes ancré à gauche, « + » or entier à droite du titre, pastille et son qualificatif à partir de 0,3 s. Focal : le titre. Densité faible.
 - **Preuve** (01, 02, 03) : une bande ouverte plein cadre, l'étiquette en haut, la phrase de la voix en h1, un décor typographique propre à l'avantage. Densité moyenne.
-- **Cassure** : 0,5 s, `canvas` nu, « ET EN CE MOMENT… » seul en h2, musique coupée.
-- **Offre et prix** : bloc offre en haut, bloc prix dessous, rappel « FONTAINE · ANALYSE 3D · POSING » en `text-muted`. Focal : « OFFERTES » en or, puis le « + ».
+- **Cassure** : 0,47 s, `canvas` nu, « ET EN CE MOMENT… » seul en display, musique coupée. Le texte se réduit ensuite en étiquette « EN CE MOMENT » pendant l'offre.
+- **Offre** : les groupes de la réplique 25 (4 mots au plus) ; « OFFERTES » en or n'arrive que quand la voix le dit, avec sa condition dans la même image.
+- **Prix** : « PUIS », le « + » or se trace, « 2 € » frappe ; « TTC PAR SEMAINE » et le qualificatif sont déjà en place. Rappel « FONTAINE · ANALYSE 3D · POSING (BIENTÔT) » en `text-muted`. Jamais « OFFERTES » dans le même cadre que le prix.
 - **Carte finale** : monogramme assemblé par ses 3 bandes, CTA « ACTIVEZ-LA À L'ACCUEIL » en style label, mentions. Statique sur les derniers 40 %.
 
 ## Composition Rules
@@ -166,7 +167,7 @@ Plat. Aucune ombre, aucun halo, aucune lueur, aucun dégradé. La profondeur vie
 | Ratio | Canevas | Zone texte | Mentions | Particularités |
 |---|---|---|---|---|
 | 9:16 | 1080×1920 | x 108–972, y 290–1240 | y 1040–1240 | zone sticker 1320–1540 vide dans les images story |
-| 4:5 | 1080×1350 | x 108–972, y 135–1215 | y 1015–1215 | recomposé ; tailles display ×0,85 ; lisible en 3:4 et à 30 % |
+| 4:5 | 1080×1350 | x 108–972, y 135–1215 | y 1015–1215 | recomposé : pastille à y 150, blocs au-dessus de 1040 remontés de 150 à 170 px, display ×0,85 (168 → 143) ; lisible en 3:4 et à 30 % |
 
 ## Approved Entities
 

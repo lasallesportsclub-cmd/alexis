@@ -20,49 +20,50 @@ CSS = open(os.path.join(SHARED, "premium.css"), encoding="utf-8").read()
 # (id, fonction, titre, début, fin, note, raccord, format)
 VIDEO = [
     ("A · 3 EN 1", [
-        ("01", F.A1, "ACCROCHE", 0.0, 1.875, "<b>Image 0 :</b> le titre est déjà posé (lancé à −0,12 s) et le « + » or se trace. La pastille glisse à 0,3 s ; « PREMIUM. » prend le filet or quand la voix le dit.", "volet 3 bandes"),
-        ("02", F.A2, "LES 3 BANDES", 1.875, 2.344, "<b>Un temps :</b> le trait ouvre l'écran en 3 bandes qui montrent les 3 avantages en même temps, de gauche à droite, décalées de 0,06 s.", "la bande 01 s'ouvre"),
-        ("03", F.A3, "01 · FONTAINE", 2.344, 4.219, "<b>La bande 01 s'ouvre</b> plein cadre. « UNE BOISSON », puis « TOUTES LES 30 MINUTES. » sur la voix P5 ; l'aiguille trace le demi-tour de 30 min.", "volet vers 02"),
-        ("04", F.A4, "02 · ANALYSE 3D", 4.219, 6.094, "<b>Le « 3D » en relief tourne</b> (rotation Y lente). « UNE ANALYSE EN 3D, » puis « CHAQUE SEMAINE. » sur P6 ; l'étiquette « 1 ANALYSE 3D PAR SEMAINE » se pose.", "volet vers 03"),
-        ("05", F.A5, "03 · POSING (BIENTÔT)", 6.094, 7.5, "<b>Sans voix :</b> respiration sur la musique. « POSING » fantôme et son reflet de miroir ; « TRÈS BIENTÔT. » en or. La salle n'est jamais montrée.", "coupe sèche"),
+        ("01", F.A1, "ACCROCHE", 0.0, 1.875, "<b>Image 0 :</b> titre et « + » or déjà posés (lancés à −0,35 s, frappe d'échelle, jamais d'opacité). La pastille et son qualificatif glissent à 0,3 s ; le filet souligne « PREMIUM. » quand la voix le dit.", "volet 3 bandes"),
+        ("02", F.A2, "LES 3 BANDES", 1.875, 2.344, "<b>1er temps du plan 01 :</b> le trait ouvre l'écran en 3 bandes (01, 02, 03, dans l'ordre de la voix), décalées de 0,06 s. Reconnaissance, pas lecture : chaque bande s'ouvre ensuite à son tour.", "la bande 01 s'ouvre"),
+        ("03", F.A3, "01 · FONTAINE", 2.344, 3.75, "<b>Suite du plan 01 :</b> la bande 01 s'ouvre. « UNE BOISSON », puis « TOUTES LES 30 MINUTES. » sur P5 ; l'aiguille trace le demi-tour de 30 min.", "volet vers 02"),
+        ("04", F.A4, "02 · ANALYSE 3D", 3.75, 5.625, "<b>P6 :</b> « UNE ANALYSE EN 3D, » puis « CHAQUE SEMAINE. » ; le relief « 3D » (couches opaques) pivote lentement ; l'étiquette « 1 ANALYSE 3D PAR SEMAINE » se pose. Frontière décalable à 6,09 s si P6 déborde.", "volet vers 03"),
+        ("05", F.A5, "03 · POSING (BIENTÔT)", 5.625, 7.5, "<b>Sans voix :</b> respiration sur la musique. « ARRIVE TRÈS BIENTÔT. » et son reflet de miroir sous un filet. La salle n'est jamais montrée.", "coupe sèche"),
     ]),
-    ("FIN COMMUNE (A, B, C)", [
-        ("06", F.F6a, "CASSURE", 7.5, 7.969, "<b>0,47 s de silence musical :</b> « ET EN CE MOMENT… » seul, en coupe sèche. Pas d'écran noir : le texte est là dès la première image.", "coupe sur le drop"),
-        ("07", F.F6, "OFFRE", 7.969, 9.375, "<b>Réplique 25 :</b> ses groupes de mots défilent en haut (4 mots au plus) ; au drop (8,44 s), « OFFERTES » tombe en or avec son qualificatif, et le trait souligne.", "le bloc remonte"),
-        ("08", F.F7, "PRIX", 9.375, 11.25, "<b>Le « + » or se trace</b>, « 2 € » frappe, puis « TTC PAR SEMAINE » et le qualificatif. La pastille revient en haut. Les mentions montent à 9,38 s et restent jusqu'à la fin.", "volet 3 bandes"),
-        ("09", F.F8, "CARTE FINALE", 11.25, 14.933, "<b>Le monogramme s'assemble par ses 3 bandes</b> horizontales, puis « ACTIVEZ-LA À L'ACCUEIL, » et « EN QUELQUES SECONDES. » sur P9. Statique sur les 40 % finaux.", "fin"),
+    ("FIN COMMUNE (A, B, C) · bornes calées sur la vraie durée de la 25 (≈ 3 s estimées)", [
+        ("06", F.F6a, "CASSURE", 7.5, 7.969, "<b>0,47 s, musique coupée :</b> « ET EN CE MOMENT… » seul, en coupe sèche, lisible dès la première image.", "le texte se réduit en étiquette"),
+        ("07", F.F6b, "OFFRE · DROP", 7.969, 9.2, "<b>Réplique 25, 1er groupe :</b> le drop (8,44 s) frappe « LES 4 PREMIÈRES SEMAINES » ; « EN CE MOMENT » reste en étiquette. Puis « DE L'OPTION PREMIUM ».", "coupe"),
+        ("08", F.F6, "OFFRE · OFFERTES", 10.0, 10.97, "<b>Quand la voix dit « offertes » :</b> « SONT OFFERTES. » en or et sa condition complète entrent dans la même image ; le filet souligne. Mentions en place depuis 9,375 s.", "volet 3 bandes"),
+        ("09", F.F7, "PRIX", 10.97, 12.19, "<b>Sans voix :</b> « PUIS », le « + » se trace et « 2 € » frappe ; « TTC PAR SEMAINE » et le qualificatif sont déjà là. Rappel des 3 avantages, posing « (BIENTÔT) ».", "volet 3 bandes"),
+        ("10", F.F8, "CARTE FINALE", 12.19, 14.933, "<b>Le monogramme s'assemble par ses 3 bandes.</b> CTA « + ACTIVEZ-LA À L'ACCUEIL » (le groupe 1 de P9), puis « EN QUELQUES SECONDES. ». Statique sur les 40 % finaux.", "fin"),
     ]),
     ("B · LA FONTAINE", [
-        ("10", F.B1, "ACCROCHE", 0.0, 1.875, "<b>Image 0 :</b> « VOTRE BOISSON VOUS ATTEND. » posé, le « + » or ; la jauge or monte dans son cadre à droite, comme une gourde qui se remplit, sans illustration.", "volet vers 01"),
-        ("11", F.B2, "01 · LES BOISSONS", 1.875, 5.156, "<b>P4 :</b> les boissons s'empilent une par une (4 mots au plus), puis « OU SIMPLEMENT / DE L'EAU. » les remplace. Les saveurs défilent à la verticale à droite.", "coupe"),
-        ("12", F.B3, "30 MINUTES", 5.156, 6.563, "<b>P5 :</b> l'aiguille tracée par le trait fait son demi-tour pendant « TOUTES LES 30 MINUTES. »", "volet"),
-        ("13", F.B4, "02 PUIS 03", 6.563, 7.5, "<b>Un temps chacun :</b> la bande 02 arrive, puis la 03. ⚠ B est le concept le plus chargé en voix : à recaler sur les vraies durées.", "fin commune"),
+        ("11", F.B1, "ACCROCHE", 0.0, 1.406, "<b>Image 0 :</b> « VOTRE BOISSON VOUS ATTEND. » et le « + » posés ; « BOISSON » se remplit d'or de bas en haut, bord net (pas de jauge, pas de dessin). Pastille à 0,3 s. Coupe à 1,41 s.", "volet"),
+        ("12", F.B2, "01 · LES BOISSONS", 1.406, 3.281, "<b>P4 (début) :</b> les boissons s'empilent une par une, 4 mots au plus.", "coupe"),
+        ("13", F.B2b, "01 · DE L'EAU", 3.281, 5.625, "<b>P4 (fin) :</b> « OU SIMPLEMENT DE L'EAU. » ; les saveurs défilent à la verticale dans une fenêtre d'une ligne, une à la fois, lettres droites.", "volet"),
+        ("14", F.B3, "30 MIN · 02 · 03", 5.625, 7.5, "<b>P5 :</b> l'aiguille fait son demi-tour ; sous la voix, la bande 02 entre à 6,56 s puis la 03 à 7,03 s (un temps chacune).", "fin commune"),
     ]),
-    ("C · VOS PROGRÈS EN 3D", [
-        ("14", F.C1, "ACCROCHE", 0.0, 1.875, "<b>Image 0 :</b> le « 3D » en relief tourne déjà ; « VOS PROGRÈS, EN 3D. » posé, le « + » or se trace.", "volet vers 02"),
-        ("15", F.C2, "02 · ANALYSE 3D", 1.875, 4.688, "<b>P6</b> sur le relief qui pivote ; « 1 ANALYSE 3D PAR SEMAINE » se pose en étiquette.", "volet vers 03"),
-        ("16", F.A5, "03 · POSING (BIENTÔT)", 4.688, 6.563, "<b>Même scène que A·05</b> : respiration sans voix, « TRÈS BIENTÔT. »", "volet vers 01"),
-        ("17", F.C4, "01 · FONTAINE", 6.563, 7.5, "<b>Deux temps :</b> la bande 01 et « 1 BOISSON TOUTES LES 30 MIN », mini-horloge.", "fin commune"),
+    ("C · VOS PROGRÈS EN 3D (numéros dans l'ordre de la voix)", [
+        ("15", F.C1, "ACCROCHE", 0.0, 1.875, "<b>Image 0 :</b> le relief « 3D » tourne déjà ; « VOS PROGRÈS, EN 3D. » et le « + » posés. Pastille à 0,3 s.", "volet vers 01"),
+        ("16", F.C2, "01 · ANALYSE 3D", 1.875, 4.688, "<b>Deux plans sur P6 :</b> « UNE ANALYSE EN 3D, » (1,88–3,28), puis « CHAQUE SEMAINE. » et l'étiquette (3,28–4,69).", "volet vers 02"),
+        ("17", F.C3, "02 · POSING (BIENTÔT)", 4.688, 6.563, "<b>Sans voix :</b> même scène que A·05, numérotée 02.", "volet vers 03"),
+        ("18", F.C4, "03 · FONTAINE", 6.563, 7.5, "<b>Deux temps :</b> la bande 03 et « 1 BOISSON TOUTES LES 30 MIN », mini-horloge.", "fin commune"),
     ]),
 ]
 
-VIS916 = [("IMAGES STORY 1080×1920", [
-    ("01", F.S1, "VISUEL CLÉ A", None, None, "<b>3 EN 1 :</b> le titre, le « + », les 3 bandes, le CTA et les mentions. Zone sticker vide sous les mentions.", "—"),
-    ("02", F.S2, "VISUEL CLÉ B", None, None, "<b>LA FONTAINE :</b> boissons et saveurs en toutes lettres, horloge des 30 min.", "—"),
-    ("03", F.S3, "VISUEL CLÉ C", None, None, "<b>VOS PROGRÈS EN 3D :</b> relief typographique, une analyse par semaine.", "—"),
-    ("04", F.S4, "CARTE OFFRE", None, None, "<b>Lancement du 13/10 :</b> « 4 SEMAINES OFFERTES » avec son qualificatif complet, le CTA et les mentions.", "—"),
+VIS916 = [("IMAGES STORY 1080×1920 · mentions y 1080–1238 · zone sticker 1320–1540 vide", [
+    ("01", F.S1, "VISUEL CLÉ A", None, None, "<b>3 EN 1 :</b> titre, « + », les 3 bandes, CTA, mentions.", "—"),
+    ("02", F.S2, "VISUEL CLÉ B", None, None, "<b>LA FONTAINE :</b> boissons et saveurs en toutes lettres, une boisson toutes les 30 min, rappel des 2 autres avantages.", "—"),
+    ("03", F.S3, "VISUEL CLÉ C", None, None, "<b>VOS PROGRÈS EN 3D :</b> relief en aplat, une analyse par semaine, rappel des 2 autres avantages.", "—"),
+    ("04", F.S4, "CARTE OFFRE", None, None, "<b>Lancement du 13/10 :</b> « OPTION PREMIUM », l'offre avec sa condition complète, le CTA et les mentions.", "—"),
 ])]
 
 VIS45 = [("IMAGES POST 1080×1350", [
     ("01", F.P1, "VISUEL CLÉ A", None, None, "<b>Recomposé en 4:5</b>, pas recadré. Lisible en 3:4 et à 30 %.", "—"),
     ("02", F.P2, "VISUEL CLÉ B", None, None, "<b>La fontaine</b> en 4:5.", "—"),
     ("03", F.P3, "VISUEL CLÉ C", None, None, "<b>L'analyse 3D</b> en 4:5.", "—"),
-]), ("CARROUSEL 5 SLIDES (trait or continu)", [
-    ("04", F.K1, "SLIDE 1 · COUVERTURE", None, None, "<b>« PASSEZ EN VERSION PREMIUM. »</b> avec la pastille. Le trait or part sous le titre.", "trait → 2"),
+]), ("CARROUSEL 5 SLIDES · un seul trait or, du « P » de la couverture au CTA de la slide 5", [
+    ("04", F.K1, "SLIDE 1 · COUVERTURE", None, None, "<b>« PASSEZ EN VERSION PREMIUM. »</b>, pastille et qualificatif, rappel des 3 avantages, mentions.", "trait → 2"),
     ("05", F.K2, "SLIDE 2 · FONTAINE", None, None, "<b>01 :</b> boissons, saveurs, une boisson toutes les 30 min.", "trait → 3"),
     ("06", F.K3, "SLIDE 3 · ANALYSE 3D", None, None, "<b>02 :</b> une analyse par semaine, pour suivre votre progression.", "trait → 4"),
     ("07", F.K4, "SLIDE 4 · POSING", None, None, "<b>03 :</b> citée, jamais montrée : « ARRIVE TRÈS BIENTÔT. »", "trait → 5"),
-    ("08", F.K5, "SLIDE 5 · OFFRE", None, None, "<b>Offre, prix, CTA, mentions.</b> Le trait finit sous le CTA.", "fin"),
+    ("08", F.K5, "SLIDE 5 · OFFRE", None, None, "<b>Un seul bloc :</b> « 4 SEMAINES OFFERTES DE L'OPTION PREMIUM », « PUIS +2 € TTC PAR SEMAINE », le qualificatif, le CTA, le logo, les mentions.", "fin"),
 ])]
 
 
@@ -95,7 +96,8 @@ def sheet(title, dek, tag, acts, p45=False):
         for it in items:
             body.append(cell(0, *it, p45=p45))
         body.append("</div>")
-    tokens = """<div class="tokens"><h2 class="act">TOKENS</h2>
+    seams = "".join(f"<li><b>{it[0]} {html.escape(it[2])}</b> → {html.escape(it[6])}</li>" for _, items in acts for it in items)
+    tokens = f"""<div class="tokens"><h2 class="act">CARTE DES RACCORDS</h2><ul class="seams">{seams}</ul><h2 class="act">TOKENS</h2>
 <div class="sw"><i style="background:#0D0D0D"></i>canvas #0D0D0D</div>
 <div class="sw"><i style="background:#F4F1EC"></i>text #F4F1EC</div>
 <div class="sw"><i style="background:#B8A07E"></i>gold #B8A07E (signature seulement)</div>
@@ -121,6 +123,7 @@ figcaption .chip {{ font:800 italic 11px "Barlow Condensed"; background:#222; pa
 .tokens .sw {{ display:flex; align-items:center; gap:10px; font-size:14px; margin:6px 0; }}
 .tokens i {{ width:28px; height:28px; display:inline-block; outline:1px solid rgba(244,241,236,.3); }}
 .tokens p {{ font-size:13px; max-width:900px; }}
+.seams {{ columns:3; font-size:13px; padding-left:18px; }}
 </style></head><body>
 <header><h1>{html.escape(title)}</h1><p>{html.escape(dek)}</p><span class="tag">{html.escape(tag)}</span></header>
 {''.join(body)}
@@ -142,9 +145,9 @@ def shoot(html_path, png, w, h):
 
 def main(png=False):
     jobs = [
-        ("premium-916", "Option Premium · vidéos 9:16 · v1", "Esquisses statiques des concepts A, B et C, et de la fin commune. Le build habille ces mises en page sans les redessiner.", "1080×1920 · 15 s · 30 i/s · 128 BPM · 17 cadres", VIDEO, False, "A"),
-        ("premium-visuels-916", "Option Premium · images story · v1", "Visuels clés A, B, C et carte offre. PNG maîtres et JPG < 1 Mo.", "1080×1920 · 4 images", VIS916, False, None),
-        ("premium-visuels-45", "Option Premium · images post · v1", "Visuels clés A, B, C et carrousel de 5 slides au trait continu.", "1080×1350 · 8 images", VIS45, True, None),
+        ("premium-916", "Option Premium · vidéos 9:16 · v2", "Esquisses statiques des concepts A, B et C, et de la fin commune. Le build habille ces mises en page sans les redessiner.", "1080×1920 · 15 s · 30 i/s · 128 BPM · 18 cadres", VIDEO, False, "A"),
+        ("premium-visuels-916", "Option Premium · images story · v2", "Visuels clés A, B, C et carte offre. PNG maîtres et JPG < 1 Mo.", "1080×1920 · 4 images", VIS916, False, None),
+        ("premium-visuels-45", "Option Premium · images post · v2", "Visuels clés A, B, C et carrousel de 5 slides au trait continu.", "1080×1350 · 8 images", VIS45, True, None),
     ]
     for proj, title, dek, tag, acts, p45, sub in jobs:
         root = os.path.join(MD, proj)
@@ -165,7 +168,7 @@ def main(png=False):
                     shoot(page, os.path.join(prev, f"{fid}.png"), 1080, 1350 if p45 else 1920)
                     os.remove(page)
             n_rows = sum((len(it) + 3) // 4 for _, it in acts)
-            shoot(out, os.path.join(root, "storyboard.png"), 1330, 200 + n_rows * ((375 if p45 else 533) + 150) + 120 * len(acts) + 260)
+            shoot(out, os.path.join(root, "storyboard.png"), 1330, 190 + n_rows * ((375 if p45 else 533) + 170) + 70 * len(acts) + 560)
             print("png", prev)
 
 
