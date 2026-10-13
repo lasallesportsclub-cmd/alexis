@@ -156,7 +156,7 @@ def A4(n="02"):  # 02 analyse 3D (même mise en page pour C·01)
     return (pastille() + panel() + lab(108, 498, num(n, "ANALYSE 3D")) +
             f'<div class="a body muted" style="left:108px;top:558px;font-size:32px">Analyse de composition corporelle</div>' +
             relief(540, 590, 240, depth_color=CANVAS) +
-            lines(108, 800, [("h1", "CHAQUE", ""), ("h1", "SEMAINE.", "")]) +
+            lines(108, 770, [("h1", "CHAQUE", ""), ("h1", "SEMAINE.", "")]) +
             lab(108, 1012, '<span class="gold">1</span> ANALYSE 3D PAR SEMAINE') + grain())
 
 
@@ -180,13 +180,14 @@ def F6():  # Offre quand la voix dit « offertes » : le mot et sa condition dan
     return (lab(108, 420, "EN CE MOMENT", 44, "label muted") +
             lines(108, 520, [("h1", "SONT", ""), ("disp", '<span class="gold">OFFERTES.</span>', "")]) +
             trait(108, 785, 650) +
-            lines(108, 815, [("qual", f"PUIS 2{NB}€ TTC/SEM. (8{NB}€ TOUTES LES 4{NB}SEM.)", "font-size:40px"),
+            lines(108, 815, [("qual", "LES 4 PREMIÈRES SEMAINES DE L'OPTION", "font-size:40px"),
+                             ("qual", f"PUIS 2{NB}€ TTC/SEM. (8{NB}€ TOUTES LES 4{NB}SEM.)", "font-size:40px"),
                              ("qual", "EN PLUS DE VOTRE ABONNEMENT", "font-size:40px")]) +
             mention() + grain())
 
 
 def F7():  # Prix : le prix et ses qualificatifs dans la même image
-    return (lab(108, 440, "PUIS", 60, "h2 muted") +
+    return (lab(108, 440, "PUIS", None, "h2 muted") +
             plus(108, 548, 190) +
             f'<div class="a disp num" style="left:330px;top:514px;font-size:250px">2{NB}€</div>' +
             lab(108, 752, "TTC PAR SEMAINE", None, "h2") +
@@ -209,9 +210,10 @@ def B1():  # Accroche B — image 0
             lines(108, 660, [("disp", f"VOTRE {gold_fill('BOISSON')}", "font-size:126px"), ("disp", "VOUS ATTEND.", "font-size:126px")]) + grain())
 
 
-def B2():  # 01 les boissons, 4 mots au plus
+def B2():  # 01 les boissons, plan 1 (plan 2 identique : « L-CARNITINE, » « BOOSTER… »)
     return (pastille() + panel() + lab(108, 498, num("01", FONTAINE)) +
-            lines(108, 570, [("h1", "COLLAGÈNE,", ""), ("h1", "MULTIVITAMINES,", ""), ("h1", "L-CARNITINE,", ""), ("h1", "BOOSTER…", "")]) + grain())
+            lines(108, 600, [("h1", "COLLAGÈNE,", ""), ("h1", "MULTIVITAMINES,", "")]) +
+            ghost(560, 790, "01", 220) + grain())
 
 
 def B2b():  # « ou simplement de l'eau. » et les saveurs, une à la fois
@@ -244,8 +246,8 @@ def C3():
 
 def C4():  # 03 fontaine en deux temps
     return (pastille() + bande(72, 600, 936, 190, "03", FONTAINE) +
-            lab(108, 830, '<span class="gold">1</span> BOISSON TOUTES LES 30' + NB + 'MIN') +
-            clock(880, 852, 66) + grain())
+            lab(108, 868, '<span class="gold">1</span> BOISSON TOUTES LES 30' + NB + 'MIN') +
+            clock(880, 890, 66) + grain())
 
 
 # ─────────────────────────── Images story 9:16 ───────────────────────────
@@ -258,36 +260,36 @@ def S1():  # visuel clé A
             bande(72, 778, 936, 62, "01", FONTAINE, label_size=36, filet=False) +
             bande(72, 848, 936, 62, "02", "ANALYSE 3D", ' <span class="muted">· 1 PAR SEMAINE</span>', label_size=36, filet=False) +
             bande(72, 918, 936, 62, "03", "SALLE DE POSING", ' <span class="muted">· BIENTÔT</span>', label_size=36, filet=False) +
-            CTA(1000, size=40) + mention(1080) + grain())
+            CTA(1010, size=40) + mention(1080) + grain())
 
 
 def S2():  # visuel clé B
-    return (pastille() + clock(890, 540, 64) +
-            lines(108, 450, [("disp", "VOTRE BOISSON", "font-size:112px"), ("disp", "VOUS ATTEND.", "font-size:112px")]) +
-            lab(108, 676, num("01", FONTAINE), 38) +
-            f'<div class="a body" style="left:108px;top:728px;width:860px;font-size:34px">{BOISSONS}</div>' +
-            lab(108, 834, "PASSION · PASTÈQUE · ICE TEA · ANANAS · MULTIFRUIT", 36, "label muted") +
-            lab(108, 896, '<span class="gold">1</span> BOISSON TOUTES LES 30' + NB + 'MIN', 40) +
-            lab(108, 956, "AUSSI : ANALYSE 3D · SALLE DE POSING (BIENTÔT)", 32, "label muted") +
+    return (pastille() + clock(890, 530, 64) +
+            lines(108, 440, [("disp", "VOTRE BOISSON", "font-size:112px"), ("disp", "VOUS ATTEND.", "font-size:112px")]) +
+            lab(108, 664, num("01", FONTAINE), 38) +
+            f'<div class="a body" style="left:108px;top:716px;width:860px;font-size:34px">{BOISSONS}</div>' +
+            lab(108, 826, "PASSION · PASTÈQUE · ICE TEA · ANANAS · MULTIFRUIT", 36, "label muted") +
+            lab(108, 886, '<span class="gold">1</span> BOISSON TOUTES LES 30' + NB + 'MIN', 40) +
+            lab(108, 948, "AUSSI : ANALYSE 3D · SALLE DE POSING (BIENTÔT)", 32, "label muted") +
             CTA(1010, size=40) + mention(1080) + grain())
 
 
 def S3():  # visuel clé C
-    return (pastille() + relief(650, 440, 230) +
-            lines(108, 650, [("disp", "VOS PROGRÈS,", "font-size:116px"), ("disp", "EN 3D.", "font-size:116px")]) +
-            lab(108, 870, num("01", 'ANALYSE 3D · <span class="gold">1</span> PAR SEMAINE'), 40) +
-            f'<div class="a body muted" style="left:108px;top:920px;font-size:32px">Analyse de composition corporelle.</div>' +
-            lab(108, 970, "AUSSI : FONTAINE · SALLE DE POSING (BIENTÔT)", 32, "label muted") +
-            CTA(1018, size=40) + mention(1080) + grain())
+    return (pastille() + relief(650, 408, 210) +
+            lines(108, 619, [("disp", "VOS PROGRÈS,", "font-size:116px"), ("disp", "EN 3D.", "font-size:116px")]) +
+            lab(108, 832, num("01", 'ANALYSE 3D · <span class="gold">1</span> PAR SEMAINE'), 40) +
+            f'<div class="a body muted" style="left:108px;top:885px;font-size:32px">Analyse de composition corporelle.</div>' +
+            lab(108, 948, "AUSSI : FONTAINE · SALLE DE POSING (BIENTÔT)", 32, "label muted") +
+            CTA(1010, size=40) + mention(1080) + grain())
 
 
 def S4():  # carte offre
-    return (logo(108, 300, 170) + lab(330, 334, "OPTION PREMIUM", 40, "label gold") + plus(812, 300, 150) +
-            lab(108, 470, "ET EN CE MOMENT…", None, "h2 muted") +
-            lines(108, 560, [("disp", "4 SEMAINES", ""), ("disp", '<span class="gold">OFFERTES</span>', "")]) +
-            trait(108, 866, 650) +
-            lines(108, 892, [("qual", f"PUIS 2{NB}€ TTC/SEM. (8{NB}€ TOUTES LES 4{NB}SEM.)", "font-size:40px"), ("qual", "EN PLUS DE VOTRE ABONNEMENT", "font-size:40px")]) +
-            CTA(1008, size=44) + mention(1080) + grain())
+    return (logo(108, 300, 170) + lab(330, 334, "OPTION PREMIUM", 40, "label muted") + plus(812, 300, 150) +
+            lab(108, 466, "ET EN CE MOMENT…", None, "h2 muted") +
+            lines(108, 556, [("disp", "4 SEMAINES", ""), ("disp", '<span class="gold">OFFERTES</span>', "")]) +
+            trait(108, 862, 650) +
+            lines(108, 888, [("qual", f"PUIS 2{NB}€ TTC/SEM. (8{NB}€ TOUTES LES 4{NB}SEM.)", "font-size:40px"), ("qual", "EN PLUS DE VOTRE ABONNEMENT", "font-size:40px")]) +
+            CTA(1004, size=44) + mention(1080) + grain())
 
 
 # ─────────────────────────── Images post 4:5 ───────────────────────────
@@ -329,8 +331,8 @@ CAR_W = 1080
 CAR_PATH = [  # le trait monte vers la droite et descend vers la gauche (pente 0,42)
     (108, 720), (640, 720), (640 + SLOPE * 380, 340),           # slide 1 : souligne le titre, puis monte
     (1080 + 820, 340), (1080 + 820 + SLOPE * 200, 140),          # slide 2 : file au-dessus du titre, monte en haut
-    (3240 + 1000, 140), (3240 + 1000 - SLOPE * 820, 960),        # slides 3-4 : file en haut, redescend à droite du texte
-    (4320 + 610, 960),                                            # slide 5 : finit sous le CTA
+    (3240 + 1000, 140), (3240 + 1000 - SLOPE * 832, 972),        # slides 3-4 : file en haut, redescend à droite du texte
+    (4320 + 610, 972),                                            # slide 5 : finit sous le CTA
 ]
 
 
@@ -383,5 +385,5 @@ def K5():
             f'<div class="a disp num" style="left:236px;top:636px;font-size:132px">2{NB}€</div>' +
             lab(430, 640, "TTC PAR<br>SEMAINE", 60, "h2") +
             lines(108, 778, [("qual", f"SOIT 8{NB}€ TOUTES LES 4{NB}SEM.", ""), ("qual", "EN PLUS DE VOTRE ABONNEMENT", "")]) +
-            CTA(896, size=44) + logo(852, 870, 120) +
+            CTA(888, size=44) + logo(852, 862, 120) +
             mention(1015) + grain())

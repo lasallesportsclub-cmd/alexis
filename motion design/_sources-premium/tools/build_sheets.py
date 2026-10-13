@@ -21,22 +21,22 @@ CSS = open(os.path.join(SHARED, "premium.css"), encoding="utf-8").read()
 VIDEO = [
     ("A · 3 EN 1", [
         ("01", F.A1, "ACCROCHE", 0.0, 1.875, "<b>Image 0 :</b> titre et « + » or déjà posés (lancés à −0,35 s, frappe d'échelle, jamais d'opacité). La pastille et son qualificatif glissent à 0,3 s ; le filet souligne « PREMIUM. » quand la voix le dit.", "volet 3 bandes"),
-        ("02", F.A2, "LES 3 BANDES", 1.875, 2.344, "<b>1er temps du plan 01 :</b> le trait ouvre l'écran en 3 bandes (01, 02, 03, dans l'ordre de la voix), décalées de 0,06 s. Reconnaissance, pas lecture : chaque bande s'ouvre ensuite à son tour.", "la bande 01 s'ouvre"),
-        ("03", F.A3, "01 · FONTAINE", 2.344, 3.75, "<b>Suite du plan 01 :</b> la bande 01 s'ouvre. « UNE BOISSON », puis « TOUTES LES 30 MINUTES. » sur P5 ; l'aiguille trace le demi-tour de 30 min.", "volet vers 02"),
-        ("04", F.A4, "02 · ANALYSE 3D", 3.75, 5.625, "<b>P6 :</b> « UNE ANALYSE EN 3D, » puis « CHAQUE SEMAINE. » ; le relief « 3D » (couches opaques) pivote lentement ; l'étiquette « 1 ANALYSE 3D PAR SEMAINE » se pose. Frontière décalable à 6,09 s si P6 déborde.", "volet vers 03"),
-        ("05", F.A5, "03 · POSING (BIENTÔT)", 5.625, 7.5, "<b>Sans voix :</b> respiration sur la musique. « ARRIVE TRÈS BIENTÔT. » et son reflet de miroir sous un filet. La salle n'est jamais montrée.", "coupe sèche"),
+        ("02", F.A2, "VOLET 3 BANDES", 1.875, 2.344, "<b>Transition d'un temps :</b> le trait ouvre l'écran en 3 bandes (01, 02, 03, dans l'ordre de la voix), décalées de 0,06 s. Reconnaissance, pas lecture : chaque bande s'ouvre ensuite à son tour.", "la bande 01 s'ouvre"),
+        ("03", F.A3, "01 · FONTAINE", 2.344, 4.219, "<b>Plan 01 :</b> la bande 01 s'ouvre. « UNE BOISSON », puis « TOUTES LES 30 MINUTES. » sur P5 ; l'aiguille trace le demi-tour de 30 min.", "volet vers 02"),
+        ("04", F.A4, "02 · ANALYSE 3D", 4.219, 6.563, "<b>Deux plans sur P6 :</b> « UNE ANALYSE / EN 3D, » (4,22–5,16), puis « CHAQUE / SEMAINE. » (5,16–6,56) ; le relief « 3D » (couches opaques) pivote lentement ; l'étiquette « 1 ANALYSE 3D PAR SEMAINE » se pose.", "volet vers 03"),
+        ("05", F.A5, "03 · POSING (BIENTÔT)", 6.563, 7.5, "<b>Sans voix :</b> respiration sur la musique. « ARRIVE TRÈS BIENTÔT. » et son reflet de miroir sous un filet. La salle n'est jamais montrée.", "coupe sèche"),
     ]),
     ("FIN COMMUNE (A, B, C) · bornes calées sur la vraie durée de la 25 (≈ 3 s estimées)", [
         ("06", F.F6a, "CASSURE", 7.5, 7.969, "<b>0,47 s, musique coupée :</b> « ET EN CE MOMENT… » seul, en coupe sèche, lisible dès la première image.", "le texte se réduit en étiquette"),
-        ("07", F.F6b, "OFFRE · DROP", 7.969, 9.2, "<b>Réplique 25, 1er groupe :</b> le drop (8,44 s) frappe « LES 4 PREMIÈRES SEMAINES » ; « EN CE MOMENT » reste en étiquette. Puis « DE L'OPTION PREMIUM ».", "coupe"),
-        ("08", F.F6, "OFFRE · OFFERTES", 10.0, 10.97, "<b>Quand la voix dit « offertes » :</b> « SONT OFFERTES. » en or et sa condition complète entrent dans la même image ; le filet souligne. Mentions en place depuis 9,375 s.", "volet 3 bandes"),
+        ("07", F.F6b, "OFFRE · DROP", 7.969, 9.2, "<b>Réplique 25, avec la voix :</b> « LES 4 PREMIÈRES » entre à 7,97 s, « SEMAINES » frappe au drop (8,44 s) ; « EN CE MOMENT » reste en étiquette. Puis « DE L'OPTION PREMIUM ».", "coupe"),
+        ("08", F.F6, "OFFRE · OFFERTES", 10.0, 10.97, "<b>Quand la voix dit « offertes » :</b> « SONT OFFERTES. » en or et sa condition complète (« LES 4 PREMIÈRES SEMAINES DE L'OPTION », prix, « EN PLUS DE VOTRE ABONNEMENT ») entrent dans la même image ; le filet souligne. Mentions en place depuis 9,375 s.", "volet 3 bandes"),
         ("09", F.F7, "PRIX", 10.97, 12.19, "<b>Sans voix :</b> « PUIS », le « + » se trace et « 2 € » frappe ; « TTC PAR SEMAINE » et le qualificatif sont déjà là. Rappel des 3 avantages, posing « (BIENTÔT) ».", "volet 3 bandes"),
         ("10", F.F8, "CARTE FINALE", 12.19, 14.933, "<b>Le monogramme s'assemble par ses 3 bandes.</b> CTA « + ACTIVEZ-LA À L'ACCUEIL » (le groupe 1 de P9), puis « EN QUELQUES SECONDES. ». Statique sur les 40 % finaux.", "fin"),
     ]),
     ("B · LA FONTAINE", [
         ("11", F.B1, "ACCROCHE", 0.0, 1.406, "<b>Image 0 :</b> « VOTRE BOISSON VOUS ATTEND. » et le « + » posés ; « BOISSON » se remplit d'or de bas en haut, bord net (pas de jauge, pas de dessin). Pastille à 0,3 s. Coupe à 1,41 s.", "volet"),
-        ("12", F.B2, "01 · LES BOISSONS", 1.406, 3.281, "<b>P4 (début) :</b> les boissons s'empilent une par une, 4 mots au plus.", "coupe"),
-        ("13", F.B2b, "01 · DE L'EAU", 3.281, 5.625, "<b>P4 (fin) :</b> « OU SIMPLEMENT DE L'EAU. » ; les saveurs défilent à la verticale dans une fenêtre d'une ligne, une à la fois, lettres droites.", "volet"),
+        ("12", F.B2, "01 · LES BOISSONS", 1.406, 4.219, "<b>Deux plans sur P4 :</b> « COLLAGÈNE, / MULTIVITAMINES, » (1,41–2,81), puis « L-CARNITINE, / BOOSTER… » (2,81–4,22), un mot par temps.", "coupe"),
+        ("13", F.B2b, "01 · DE L'EAU", 4.219, 5.625, "<b>P4 (fin) :</b> « OU SIMPLEMENT DE L'EAU. » ; les saveurs défilent à la verticale dans une fenêtre d'une ligne, une à la fois, lettres droites.", "volet"),
         ("14", F.B3, "30 MIN · 02 · 03", 5.625, 7.5, "<b>P5 :</b> l'aiguille fait son demi-tour ; sous la voix, la bande 02 entre à 6,56 s puis la 03 à 7,03 s (un temps chacune).", "fin commune"),
     ]),
     ("C · VOS PROGRÈS EN 3D (numéros dans l'ordre de la voix)", [

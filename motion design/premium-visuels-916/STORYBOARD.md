@@ -9,6 +9,8 @@ mode: collaborative
 
 # Option Premium · images story · plan v2
 
+⚠ « + » de la pastille en négatif #0D0D0D (26 px), car un « + » or serait invisible sur la pastille or : écart au « + » or du §3, à valider.
+
 Chaque image est une scène figée d'une seconde dans `index.html`, exportée par `npx hyperframes snapshot --at <milieu> --no-end`, puis convertie en JPG (qualité 90, sRGB, moins de 1 Mo). Tokens, bans et règles des prix : voir `frame.md`.
 
 ## Frame 1 — Visuel clé A

@@ -119,11 +119,11 @@ Plat. Aucune ombre, aucun halo, aucune lueur, aucun dégradé. La profondeur vie
 
 ## Components
 
-- **« + » Premium** : SVG, deux barres, l'une à plat, l'autre penchée à 0,42. Épaisseur 22 % de la taille. Toujours en `gold`.
+- **« + » Premium** : SVG, deux barres, l'une à plat, l'autre penchée à 0,42. Épaisseur 22 % de la taille. En `gold`, sauf dans la pastille, où il est en négatif #0D0D0D (26 px) devant « 2 € ».
 - **Bande** : parallélogramme `surface` de 160 à 220 px de haut, extrémités coupées à 0,42, filet or de 6 px sur le bord d'attaque, étiquette en style `label` (numéro en or, nom en `text`).
 - **Pastille** : parallélogramme `gold`, hauteur 64 px, texte en style `pastille` couleur `canvas`.
 - **Bloc prix** : « + » or tracé, « 2 € » en display, puis « TTC PAR SEMAINE » en style h2, puis le qualificatif « SOIT 8 € TOUTES LES 4 SEM. · EN PLUS DE VOTRE ABONNEMENT » en style qualifier. Les trois dans le même bloc, toujours.
-- **Bloc offre** : « 4 SEMAINES » (text) et « OFFERTES » (gold) en display, puis « PUIS 2 € TTC/SEM. (8 € TOUTES LES 4 SEM.) » en style qualifier. Toujours ensemble.
+- **Bloc offre** : « 4 SEMAINES » (text) et « OFFERTES » (gold) en display, puis « PUIS 2 € TTC/SEM. (8 € TOUTES LES 4 SEM.) » et « EN PLUS DE VOTRE ABONNEMENT » en style qualifier. Toujours ensemble. En vidéo, quand la voix dit « sont offertes », le qualificatif commence par « LES 4 PREMIÈRES SEMAINES DE L'OPTION ».
 - **Panneau mentions** : `surface` opaque, x 108→972, DM Sans 500 40 px, interligne 1,18, texte de la variable `mentionPremium`. En vidéo : un seul élément sur son propre calque, au-dessus de toutes les transitions, en place à 9,375 s et immobile jusqu'à la fin. En images story : y 1080–1238.
 - **Logo** : `mono.png` et `word.png` du kit du PC, jamais redessinés ni recolorés hors de la version négative (blanc cassé sur noir). Zone de protection = hauteur du monogramme. Assemblé en vidéo par ses 3 bandes horizontales.
 

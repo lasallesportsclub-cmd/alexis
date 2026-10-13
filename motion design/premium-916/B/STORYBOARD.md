@@ -26,7 +26,9 @@ mode: collaborative
 
 - ⚠ Engagement : « sans engagement sur l'option » (Q2) contredit le calendrier S40 du Drive (« engagement d'un an sur l'option »).
 - ⚠ Écart au §6 : la réplique 25 finit par « offertes » (≈ 3 s). Le drop (8,44 s) frappe donc « LES 4 PREMIÈRES SEMAINES » et « OFFERTES » n'arrive en or, avec sa condition, que quand la voix le dit (≈ 10,0–10,4 s). Le prix suit sans voix, puis la carte finale ; bornes exactes sur le WAV.
+- ⚠ Conséquence de l'écart 25 : prix 10,97–12,19 s (au lieu de 9,38–11,25) ; carte finale 12,19–14,933 s, soit 2,74 s au lieu de 3,68 s, statique dès 13,84 s ; P9 (≈ 12,3–14,5 s) doit avoir posé « EN QUELQUES SECONDES. » avant 13,84 s. Si la 25 est plus courte sur le WAV, le prix et la carte finale récupèrent le temps.
 - ⚠ Pastille : ligne « EN CE MOMENT · EN PLUS DE VOTRE ABONNEMENT » ajoutée sous la version courte du §4 (le prix doit porter « en plus de votre abonnement » avant 9,38 s).
+- ⚠ « + » de la pastille en négatif #0D0D0D (26 px), car un « + » or serait invisible sur la pastille or : écart au « + » or du §3, à valider.
 - ⚠ Rappel « FONTAINE · ANALYSE 3D · POSING (BIENTÔT) » : « (BIENTÔT) » ajouté au rappel du §6 (Q3).
 - ⚠ Voix IA (Nika) : activer l'étiquette IA de Meta à la publication des vidéos, avec et sans musique (décision de Mehdi).
 - ⚠ P4 « booster » et « multivitamines » : à confirmer sur la fiche GYMWA (allégations nutritionnelles) ; proposition de repli : « caféine ».
@@ -52,12 +54,12 @@ mode: collaborative
 
 La fontaine devient une promesse personnelle.
 
-## Frame 2 — 01 · Les boissons
+## Frame 2 — 01 · Les boissons (deux plans)
 
-- scene: La bande 01 s'ouvre ; les boissons s'empilent une par une, 4 mots au plus.
-- duration: 1.875s
+- scene: La bande 01 s'ouvre. Plan 2a (1,41–2,81) : « COLLAGÈNE, » / « MULTIVITAMINES, ». Plan 2b (2,81–4,22) : « L-CARNITINE, » / « BOOSTER… ». Un mot par temps ; bornes calées sur les pauses du WAV de P4.
+- duration: 2.813s
 - start: 1.406s
-- poster: 3.0
+- poster: 2.4
 - transition_in: wipe
 - status: built
 - voiceover: P4, début (≈ 1,45 s →)
@@ -65,7 +67,7 @@ La fontaine devient une promesse personnelle.
 - blueprint: compose
 - rules: waterfall-entry
 - focal: la liste
-- onscreen: « COLLAGÈNE, » « MULTIVITAMINES, » « L-CARNITINE, » « BOOSTER… » · étiquette « 01 FONTAINE À BOISSON SPORTIVE »
+- onscreen: « COLLAGÈNE, » « MULTIVITAMINES, » → « L-CARNITINE, » « BOOSTER… » · étiquette « 01 FONTAINE À BOISSON SPORTIVE »
 - sfx: click sur chaque mot
 - constraint: no effect claimed for any drink
 - sketch: ../storyboard.html#frame-12
@@ -75,8 +77,8 @@ La variété, en toutes lettres.
 ## Frame 3 — 01 · De l'eau et les saveurs
 
 - scene: « OU SIMPLEMENT » / « DE L'EAU. » ; les saveurs défilent à la verticale dans une fenêtre d'une ligne, une à la fois, lettres droites (étiquette).
-- duration: 2.344s
-- start: 3.281s
+- duration: 1.406s
+- start: 4.219s
 - poster: 5.0
 - transition_in: cut
 - status: built
@@ -134,7 +136,7 @@ La cassure prépare l'offre.
 
 ## Frame 6 — Offre
 
-- scene: « ET EN CE MOMENT… » se réduit en étiquette « EN CE MOMENT ». Groupes de la 25, 4 mots au plus : au drop (8,44 s) « LES 4 PREMIÈRES SEMAINES » frappe, puis « DE L'OPTION PREMIUM », puis « SONT OFFERTES. » : « OFFERTES. » en or et « PUIS 2 € TTC/SEM. (8 € TOUTES LES 4 SEM.) » + « EN PLUS DE VOTRE ABONNEMENT » entrent dans la même image ; le filet souligne. Le panneau des mentions est en place à 9,375 s.
+- scene: « ET EN CE MOMENT… » se réduit en étiquette « EN CE MOMENT ». Groupes de la 25, 4 mots au plus, avec la voix : « LES 4 PREMIÈRES » entre en coupe à 7,969 s, « SEMAINES » frappe au drop (8,44 s) ; puis « DE L'OPTION PREMIUM » ; puis « SONT OFFERTES. » : « OFFERTES. » en or et le qualificatif « LES 4 PREMIÈRES SEMAINES DE L'OPTION » / « PUIS 2 € TTC/SEM. (8 € TOUTES LES 4 SEM.) » / « EN PLUS DE VOTRE ABONNEMENT » entrent dans la même image ; le filet souligne. Le panneau des mentions est en place à 9,375 s.
 - duration: 3.001s
 - start: 7.969s
 - poster: 10.4

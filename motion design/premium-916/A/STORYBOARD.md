@@ -26,7 +26,9 @@ mode: collaborative
 
 - ⚠ Engagement : « sans engagement sur l'option » (Q2) contredit le calendrier S40 du Drive (« engagement d'un an sur l'option »).
 - ⚠ Écart au §6 : la réplique 25 finit par « offertes » (≈ 3 s). Le drop (8,44 s) frappe donc « LES 4 PREMIÈRES SEMAINES » et « OFFERTES » n'arrive en or, avec sa condition, que quand la voix le dit (≈ 10,0–10,4 s). Le prix suit sans voix, puis la carte finale ; bornes exactes sur le WAV.
+- ⚠ Conséquence de l'écart 25 : prix 10,97–12,19 s (au lieu de 9,38–11,25) ; carte finale 12,19–14,933 s, soit 2,74 s au lieu de 3,68 s, statique dès 13,84 s ; P9 (≈ 12,3–14,5 s) doit avoir posé « EN QUELQUES SECONDES. » avant 13,84 s. Si la 25 est plus courte sur le WAV, le prix et la carte finale récupèrent le temps.
 - ⚠ Pastille : ligne « EN CE MOMENT · EN PLUS DE VOTRE ABONNEMENT » ajoutée sous la version courte du §4 (le prix doit porter « en plus de votre abonnement » avant 9,38 s).
+- ⚠ « + » de la pastille en négatif #0D0D0D (26 px), car un « + » or serait invisible sur la pastille or : écart au « + » or du §3, à valider.
 - ⚠ Rappel « FONTAINE · ANALYSE 3D · POSING (BIENTÔT) » : « (BIENTÔT) » ajouté au rappel du §6 (Q3).
 - ⚠ Voix IA (Nika) : activer l'étiquette IA de Meta à la publication des vidéos, avec et sans musique (décision de Mehdi).
 - ⚠ P4 « booster » et « multivitamines » : à confirmer sur la fiche GYMWA (allégations nutritionnelles) ; proposition de repli : « caféine ».
@@ -52,15 +54,15 @@ mode: collaborative
 
 La promesse et la signature sont lisibles même pour qui part à 1 s.
 
-## Frame 2 — Les 3 bandes (1er temps du plan 01)
+## Frame 2 — Volet 3 bandes (transition)
 
-- scene: Le trait ouvre l'écran en 3 bandes obliques décalées de 0,06 s : 01 FONTAINE À BOISSON SPORTIVE, 02 ANALYSE 3D, 03 SALLE DE POSING · BIENTÔT. Reconnaissance, pas lecture.
+- scene: Transition d'un temps : le trait ouvre l'écran en 3 bandes obliques décalées de 0,06 s : 01 FONTAINE À BOISSON SPORTIVE, 02 ANALYSE 3D, 03 SALLE DE POSING · BIENTÔT. Reconnaissance, pas lecture ; la voix attend la bande 01.
 - duration: 0.469s
 - start: 1.875s
 - poster: 2.1
 - transition_in: wipe
 - status: built
-- voiceover: P5 commence (≈ 2,0 s)
+- voiceover: aucune (P5 démarre avec la bande 01)
 - src: compositions/frames/02-fontaine.html
 - blueprint: compose
 - rules: gsap-effects (masked translate), css-marker-patterns
@@ -72,41 +74,41 @@ La promesse et la signature sont lisibles même pour qui part à 1 s.
 
 Les trois avantages vus en même temps, dans l'ordre de la voix.
 
-## Frame 3 — 01 · Fontaine (suite du plan 01)
+## Frame 3 — 01 · Fontaine
 
 - scene: La bande 01 s'ouvre. « UNE BOISSON » puis « TOUTES LES 30 MINUTES. » ; l'aiguille or trace le demi-tour de 30 min.
-- duration: 1.406s
+- duration: 1.875s
 - start: 2.344s
-- poster: 3.4
+- poster: 3.8
 - transition_in: wipe
 - status: built
-- voiceover: P5 « Une boisson toutes les trente minutes. » (≈ 2,0–3,8 s)
+- voiceover: P5 « Une boisson toutes les trente minutes. » (≈ 2,36–4,16 s)
 - src: compositions/frames/02-fontaine.html
 - blueprint: compose
 - rules: svg-path-draw, waterfall-entry
 - focal: « 30 MINUTES. » en or
 - onscreen: « UNE BOISSON » → « TOUTES LES » « 30 MINUTES. » · étiquette « 01 FONTAINE À BOISSON SPORTIVE »
-- sfx: click à 2,344 (étiquette) · whoosh-short à 3,6
+- sfx: click à 2,344 (étiquette) · whoosh-short à 4,1
 - constraint: no « à volonté » · no fruit · never « fontaine à eau »
 - sketch: ../storyboard.html#frame-03
 
 La limite d'une boisson toutes les 30 min est dite clairement.
 
-## Frame 4 — 02 · Analyse 3D
+## Frame 4 — 02 · Analyse 3D (deux plans)
 
-- scene: Le « 3D » en relief (couches opaques) pivote lentement. « UNE ANALYSE EN 3D, » puis « CHAQUE SEMAINE. » ; l'étiquette « 1 ANALYSE 3D PAR SEMAINE » se pose sous la bande. Frontière décalable à 6,09 s si P6 déborde.
-- duration: 1.875s
-- start: 3.750s
-- poster: 5.3
+- scene: Le « 3D » en relief (couches opaques) pivote lentement. Plan 4a (4,22–5,16) : « UNE ANALYSE » / « EN 3D, ». Plan 4b (5,16–6,56) : « CHAQUE » / « SEMAINE. » ; l'étiquette « 1 ANALYSE 3D PAR SEMAINE » se pose sous la bande.
+- duration: 2.344s
+- start: 4.219s
+- poster: 6.0
 - transition_in: wipe
 - status: built
-- voiceover: P6 « Une analyse en trois D, chaque semaine. » (≈ 3,85–5,85 s)
+- voiceover: P6 « Une analyse en trois D, chaque semaine. » (≈ 4,25–6,25 s)
 - src: compositions/frames/03-analyse.html
 - blueprint: compose
 - rules: 3d-text-depth-layers, waterfall-entry
 - focal: le relief « 3D »
 - onscreen: « UNE ANALYSE EN 3D, » → « CHAQUE » « SEMAINE. » · « Analyse de composition corporelle » · « 1 ANALYSE 3D PAR SEMAINE »
-- sfx: click à 5,2 (étiquette) · whoosh-short à 5,5
+- sfx: click à 5,2 (étiquette) · whoosh-short à 6,45
 - constraint: no fake scale screen · no body figure · no medical wording
 - sketch: ../storyboard.html#frame-04
 
@@ -115,9 +117,9 @@ La fréquence (une par semaine) est posée à côté de la promesse.
 ## Frame 5 — 03 · Salle de posing (bientôt)
 
 - scene: Respiration sans voix. « ARRIVE » / « TRÈS BIENTÔT. » en or et son reflet de miroir sous un filet ; « MIROIRS · ÉCLAIRAGE LED · MURS SOMBRES ».
-- duration: 1.875s
-- start: 5.625s
-- poster: 6.9
+- duration: 0.937s
+- start: 6.563s
+- poster: 7.1
 - transition_in: wipe
 - status: built
 - voiceover: aucune (musique seule)
@@ -126,7 +128,7 @@ La fréquence (une par semaine) est posée à côté de la promesse.
 - rules: css-marker-patterns, gsap-effects
 - focal: « TRÈS BIENTÔT. »
 - onscreen: « 03 SALLE DE POSING » « ARRIVE » « TRÈS BIENTÔT. » « MIROIRS · ÉCLAIRAGE LED · MURS SOMBRES »
-- sfx: sparkle très bas à 6,1 (reflet)
+- sfx: sparkle très bas à 6,7 (reflet)
 - constraint: no shot of the room · never « en retard »
 - sketch: ../storyboard.html#frame-05
 
@@ -154,7 +156,7 @@ La cassure prépare l'offre.
 
 ## Frame 7 — Offre
 
-- scene: « ET EN CE MOMENT… » se réduit en étiquette « EN CE MOMENT ». Groupes de la 25, 4 mots au plus : au drop (8,44 s) « LES 4 PREMIÈRES SEMAINES » frappe, puis « DE L'OPTION PREMIUM », puis « SONT OFFERTES. » : « OFFERTES. » en or et « PUIS 2 € TTC/SEM. (8 € TOUTES LES 4 SEM.) » + « EN PLUS DE VOTRE ABONNEMENT » entrent dans la même image ; le filet souligne. Le panneau des mentions est en place à 9,375 s.
+- scene: « ET EN CE MOMENT… » se réduit en étiquette « EN CE MOMENT ». Groupes de la 25, 4 mots au plus, avec la voix : « LES 4 PREMIÈRES » entre en coupe à 7,969 s, « SEMAINES » frappe au drop (8,44 s) ; puis « DE L'OPTION PREMIUM » ; puis « SONT OFFERTES. » : « OFFERTES. » en or et le qualificatif « LES 4 PREMIÈRES SEMAINES DE L'OPTION » / « PUIS 2 € TTC/SEM. (8 € TOUTES LES 4 SEM.) » / « EN PLUS DE VOTRE ABONNEMENT » entrent dans la même image ; le filet souligne. Le panneau des mentions est en place à 9,375 s.
 - duration: 3.001s
 - start: 7.969s
 - poster: 10.4
