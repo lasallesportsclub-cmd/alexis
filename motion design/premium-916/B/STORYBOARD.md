@@ -41,7 +41,7 @@ mode: collaborative
 - start: 0.000s
 - poster: 1.1
 - transition_in: cut
-- status: built
+- status: animated
 - voiceover: P2 « Votre boisson vous attend. » (≈ 0,05–1,4 s)
 - src: compositions/frames/01-accroche.html
 - blueprint: kinetic-type-beats
@@ -61,7 +61,7 @@ La fontaine devient une promesse personnelle.
 - start: 1.406s
 - poster: 2.4
 - transition_in: wipe
-- status: built
+- status: animated
 - voiceover: P4, début (≈ 1,45 s →)
 - src: compositions/frames/02-boissons.html
 - blueprint: compose
@@ -81,7 +81,7 @@ La variété, en toutes lettres.
 - start: 4.219s
 - poster: 5.0
 - transition_in: cut
-- status: built
+- status: animated
 - voiceover: P4, fin (→ ≈ 5,55 s)
 - src: compositions/frames/03-eau.html
 - blueprint: compose
@@ -101,7 +101,7 @@ Les saveurs sont dites en toutes lettres.
 - start: 5.625s
 - poster: 7.2
 - transition_in: wipe
-- status: built
+- status: animated
 - voiceover: P5 « Une boisson toutes les trente minutes. » (≈ 5,65–7,45 s)
 - src: compositions/frames/04-trente.html
 - blueprint: compose
@@ -121,7 +121,7 @@ La règle d'usage est claire ; les deux autres avantages sont nommés.
 - start: 7.500s
 - poster: 7.7
 - transition_in: cut
-- status: built
+- status: animated
 - voiceover: aucune (silence musical)
 - src: compositions/fin-commune.html
 - blueprint: compose
@@ -141,7 +141,7 @@ La cassure prépare l'offre.
 - start: 7.969s
 - poster: 10.4
 - transition_in: cut
-- status: built
+- status: animated
 - voiceover: 25 « Les 4 premières semaines de l'option Premium sont offertes. » (≈ 7,97–10,97 s)
 - src: compositions/fin-commune.html
 - blueprint: compose
@@ -161,7 +161,7 @@ Personne ne voit « OFFERTES » sans sa condition.
 - start: 10.970s
 - poster: 11.8
 - transition_in: wipe
-- status: built
+- status: animated
 - voiceover: aucune
 - src: compositions/fin-commune.html
 - blueprint: compose
@@ -181,7 +181,7 @@ Le prix TTC, la cadence et « en plus de votre abonnement » arrivent ensemble.
 - start: 12.190s
 - poster: 13.9
 - transition_in: wipe
-- status: built
+- status: animated
 - voiceover: P9 « Activez-la à l'accueil, en quelques secondes. » (≈ 12,3–14,5 s)
 - src: compositions/fin-commune.html
 - blueprint: logo-assemble-lockup

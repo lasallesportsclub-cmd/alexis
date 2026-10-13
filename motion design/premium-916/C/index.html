@@ -1,55 +1,55 @@
 <!doctype html>
-<html lang="en" data-resolution="portrait">
+<html lang="fr" data-resolution="portrait">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=1080, height=1920" />
     <script src="assets/vendor/gsap.min.js"></script>
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-      html,
-      body {
-        margin: 0;
-        width: 1080px;
-        height: 1920px;
-        overflow: hidden;
-        background: #0a0a0a;
-      }
-      #root {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: Inter, ui-sans-serif, system-ui, sans-serif;
-      }
-      #title {
-        color: #f4f4f5;
-        font-size: 72px;
-        font-weight: 600;
-        letter-spacing: -0.03em;
-      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #0D0D0D; }
+      #root { position: relative; width: 100%; height: 100%; overflow: hidden; background: #0D0D0D; }
+      [data-composition-id="main"] > div[data-composition-src] { position: absolute; inset: 0; }
+      #h-s01 { z-index: 1; }
+      #h-s02 { z-index: 2; }
+      #h-s03 { z-index: 3; }
+      #h-s04 { z-index: 4; }
+      #h-fin-commune { z-index: 5; }
+      #h-volet-1 { z-index: 25; }
+      #h-volet-2 { z-index: 25; }
+      #h-pastille { z-index: 30; }
+      #h-mentions { z-index: 40; }
     </style>
   </head>
   <body>
-    <div
-      id="root"
-      data-composition-id="main"
-      data-start="0"
-      data-duration="10"
-      data-width="1080"
-      data-height="1920"
-    >
-      <h1 id="title" class="clip" data-start="0" data-duration="10" data-track-index="0">Title</h1>
+    <!-- Option Premium LA SALLE · concept C · 9:16 · 15 s · 128 BPM. Généré par _sources-premium/tools/video.py -->
+    <div id="root" data-composition-id="main" data-start="0" data-duration="14.933" data-width="1080" data-height="1920" data-fps="30">
+      <div id="h-s01" data-composition-id="s01" data-composition-src="compositions/s01.html" data-start="0.000" data-duration="1.875" data-track-index="1" data-width="1080" data-height="1920"></div>
+      <div id="h-s02" data-composition-id="s02" data-composition-src="compositions/s02.html" data-start="1.875" data-duration="2.813" data-track-index="1" data-width="1080" data-height="1920"></div>
+      <div id="h-s03" data-composition-id="s03" data-composition-src="compositions/s03.html" data-start="4.688" data-duration="1.875" data-track-index="1" data-width="1080" data-height="1920"></div>
+      <div id="h-s04" data-composition-id="s04" data-composition-src="compositions/s04.html" data-start="6.563" data-duration="0.937" data-track-index="1" data-width="1080" data-height="1920"></div>
+      <div id="h-fin-commune" data-composition-id="fin-commune" data-composition-src="compositions/fin-commune.html" data-start="7.500" data-duration="7.433" data-track-index="1" data-width="1080" data-height="1920"></div>
+      <div id="h-volet-1" data-composition-id="volet-1" data-composition-src="compositions/volet-1.html" data-start="1.555" data-duration="0.660" data-track-index="2" data-width="1080" data-height="1920"></div>
+      <div id="h-volet-2" data-composition-id="volet-2" data-composition-src="compositions/volet-2.html" data-start="4.368" data-duration="0.660" data-track-index="2" data-width="1080" data-height="1920"></div>
+      <div id="h-pastille" data-composition-id="pastille" data-composition-src="compositions/pastille.html" data-start="0.000" data-duration="7.500" data-track-index="3" data-width="1080" data-height="1920"></div>
+      <div id="h-mentions" data-composition-id="mentions" data-composition-src="compositions/mentions.html" data-start="9.200" data-duration="5.733" data-track-index="4" data-width="1080" data-height="1920"></div>
+      <audio id="sfx-1" src=".media/audio/sfx/sfx_002.mp3" data-audio-group="sfx" data-start="0.000" data-track-index="31" data-volume="0.35"></audio>
+      <audio id="sfx-2" src=".media/audio/sfx/sfx_006.mp3" data-audio-group="sfx" data-start="0.300" data-track-index="32" data-volume="0.3"></audio>
+      <audio id="sfx-3" src=".media/audio/sfx/sfx_003.mp3" data-audio-group="sfx" data-start="3.900" data-track-index="33" data-volume="0.3"></audio>
+      <audio id="sfx-4" src=".media/audio/sfx/sfx_005.mp3" data-audio-group="sfx" data-start="5.028" data-track-index="34" data-volume="0.18"></audio>
+      <audio id="sfx-5" src=".media/audio/sfx/sfx_001.mp3" data-audio-group="sfx" data-start="6.563" data-track-index="35" data-volume="0.3"></audio>
+      <audio id="sfx-6" src=".media/audio/sfx/sfx_001.mp3" data-audio-group="sfx" data-start="1.575" data-track-index="36" data-volume="0.35"></audio>
+      <audio id="sfx-7" src=".media/audio/sfx/sfx_001.mp3" data-audio-group="sfx" data-start="4.388" data-track-index="37" data-volume="0.35"></audio>
+      <audio id="sfx-8" src=".media/audio/sfx/sfx_004.mp3" data-audio-group="sfx" data-start="7.969" data-duration="0.468" data-media-start="9.564" data-track-index="38" data-volume="0.32"></audio>
+      <audio id="sfx-9" src=".media/audio/sfx/sfx_002.mp3" data-audio-group="sfx" data-start="8.438" data-track-index="39" data-volume="0.4"></audio>
+      <audio id="sfx-10" src=".media/audio/sfx/sfx_006.mp3" data-audio-group="sfx" data-start="10.000" data-track-index="40" data-volume="0.3"></audio>
+      <audio id="sfx-11" src=".media/audio/sfx/sfx_001.mp3" data-audio-group="sfx" data-start="10.670" data-track-index="41" data-volume="0.35"></audio>
+      <audio id="sfx-12" src=".media/audio/sfx/sfx_002.mp3" data-audio-group="sfx" data-start="11.200" data-track-index="42" data-volume="0.35"></audio>
+      <audio id="sfx-13" src=".media/audio/sfx/sfx_001.mp3" data-audio-group="sfx" data-start="11.890" data-track-index="43" data-volume="0.35"></audio>
+      <audio id="sfx-14" src=".media/audio/sfx/sfx_001.mp3" data-audio-group="sfx" data-start="12.250" data-track-index="44" data-volume="0.25"></audio>
+      <audio id="sfx-15" src=".media/audio/sfx/sfx_002.mp3" data-audio-group="sfx" data-start="12.300" data-track-index="45" data-volume="0.3"></audio>
     </div>
     <script>
-      const tl = gsap.timeline({ paused: true });
-      // Example: tl.fromTo("#title", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.6 }, 0);
-      window.__timelines["main"] = tl;
-      tl.seek(0);
+      window.__timelines["main"] = gsap.timeline({ paused: true });
     </script>
   </body>
 </html>

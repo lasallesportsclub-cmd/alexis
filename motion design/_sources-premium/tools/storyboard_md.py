@@ -144,7 +144,7 @@ def block(n, title, src, t0, t1, poster, tin, scene, vo, onscreen, bp, rules, fo
 - start: {t0:.3f}s
 - poster: {poster}
 - transition_in: {tin}
-- status: built
+- status: animated
 - voiceover: {vo}
 - src: {src}
 - blueprint: {bp}
@@ -199,7 +199,7 @@ def write_images(proj, fmt, name, items):
 - duration: 1s
 - start: {i}s
 - poster: {i + 0.5}
-- status: built
+- status: animated
 - voiceover: onscreen
 - src: compositions/frames/{i + 1:02d}.html
 - onscreen: {onscreen}

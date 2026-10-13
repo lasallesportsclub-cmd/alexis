@@ -60,3 +60,11 @@ Ce projet : **concept C · VOS PROGRÈS EN 3D**, vidéo 15 s en story 9:16, 30 i
 - **Interdits** : voir `frame.md`, section What NOT to Do. Lexique interdit : « fontaine à eau », « abonnement Premium », « offre limitée », « gratuit », « inscription en ligne », « minceur », « brûle », « kilo », « détox », « illimité », « avant/après », tout tutoiement, tout concurrent, « sans engagement » non suivi de « sur l'option ». « À volonté » n'est pas utilisé dans cette version.
 - **⚠ Drive** : aucune source sur le Drive pour « une boisson toutes les 30 minutes » ni pour « une analyse par semaine ». Ce sont des faits donnés par Mehdi et Alexis (brief du 12/10). Le livret ingrédients signale la caféine du Power Drink (50 mg par verre) : aucune allégation sur les boissons.
 - **Zones 9:16** : texte entre x 108 et 972, y 290 et 1240 ; décor entre x 72 et 1008 ; mentions dans le panneau y 1040–1240.
+
+## Décisions du 13/10/2026 (Mehdi ou Alexis)
+
+- Storyboard v2 validé ; construction lancée en automation.
+- Réplique 25 : écart au §6 validé (« OFFERTES » quand la voix le dit ; carte finale ≈ 2,7 s).
+- Engagement : « sans engagement sur l'option » confirmé une seconde fois, malgré le calendrier S40.
+- Pastille : ligne « EN CE MOMENT · EN PLUS DE VOTRE ABONNEMENT » et « + » en négatif validés.
+- Brouillon sans voix ni musique rendu le 13/10 ; rendu final quand les répliques de Nika et la musique Sound Collection sont déposées (bornes à recaler dans `_sources-premium/tools/video.py`, TIMING et COMMON).

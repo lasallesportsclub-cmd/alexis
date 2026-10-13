@@ -41,7 +41,7 @@ mode: collaborative
 - start: 0.000s
 - poster: 1.2
 - transition_in: cut
-- status: built
+- status: animated
 - voiceover: P1 « Passez en version Premium. » (≈ 0,05–1,5 s)
 - src: compositions/frames/01-accroche.html
 - blueprint: kinetic-type-beats
@@ -61,7 +61,7 @@ La promesse et la signature sont lisibles même pour qui part à 1 s.
 - start: 1.875s
 - poster: 2.1
 - transition_in: wipe
-- status: built
+- status: animated
 - voiceover: aucune (P5 démarre avec la bande 01)
 - src: compositions/frames/02-fontaine.html
 - blueprint: compose
@@ -81,7 +81,7 @@ Les trois avantages vus en même temps, dans l'ordre de la voix.
 - start: 2.344s
 - poster: 3.8
 - transition_in: wipe
-- status: built
+- status: animated
 - voiceover: P5 « Une boisson toutes les trente minutes. » (≈ 2,36–4,16 s)
 - src: compositions/frames/02-fontaine.html
 - blueprint: compose
@@ -101,7 +101,7 @@ La limite d'une boisson toutes les 30 min est dite clairement.
 - start: 4.219s
 - poster: 6.0
 - transition_in: wipe
-- status: built
+- status: animated
 - voiceover: P6 « Une analyse en trois D, chaque semaine. » (≈ 4,25–6,25 s)
 - src: compositions/frames/03-analyse.html
 - blueprint: compose
@@ -121,7 +121,7 @@ La fréquence (une par semaine) est posée à côté de la promesse.
 - start: 6.563s
 - poster: 7.1
 - transition_in: wipe
-- status: built
+- status: animated
 - voiceover: aucune (musique seule)
 - src: compositions/frames/04-posing.html
 - blueprint: compose
@@ -141,7 +141,7 @@ On cite la salle sans la présenter comme une preuve.
 - start: 7.500s
 - poster: 7.7
 - transition_in: cut
-- status: built
+- status: animated
 - voiceover: aucune (silence musical)
 - src: compositions/fin-commune.html
 - blueprint: compose
@@ -161,7 +161,7 @@ La cassure prépare l'offre.
 - start: 7.969s
 - poster: 10.4
 - transition_in: cut
-- status: built
+- status: animated
 - voiceover: 25 « Les 4 premières semaines de l'option Premium sont offertes. » (≈ 7,97–10,97 s)
 - src: compositions/fin-commune.html
 - blueprint: compose
@@ -181,7 +181,7 @@ Personne ne voit « OFFERTES » sans sa condition.
 - start: 10.970s
 - poster: 11.8
 - transition_in: wipe
-- status: built
+- status: animated
 - voiceover: aucune
 - src: compositions/fin-commune.html
 - blueprint: compose
@@ -201,7 +201,7 @@ Le prix TTC, la cadence et « en plus de votre abonnement » arrivent ensemble.
 - start: 12.190s
 - poster: 13.9
 - transition_in: wipe
-- status: built
+- status: animated
 - voiceover: P9 « Activez-la à l'accueil, en quelques secondes. » (≈ 12,3–14,5 s)
 - src: compositions/fin-commune.html
 - blueprint: logo-assemble-lockup

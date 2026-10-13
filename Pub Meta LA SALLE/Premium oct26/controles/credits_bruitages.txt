@@ -1,0 +1,14 @@
+Bruitages des vidéos option Premium LA SALLE
+
+Source : bibliothèque intégrée de HyperFrames (media-use, fournisseur « bundled.sfx »), fichiers issus de Pixabay,
+licence commerciale sans attribution obligatoire (voir audio/assets/sfx/CREDITS.md dans le skill media-use).
+
+sfx_001  whoosh-short    volets, entrées de bandes
+sfx_002  impact-bass-1   image 0, drop, « 2 € », « + » du CTA
+sfx_003  click           étiquettes, mots de la liste (B), saveurs (B)
+sfx_004  riser           fin du riser avant le drop (8,44 s)
+sfx_005  sparkle         reflet de la salle de posing
+sfx_006  pop             pastille, « OFFERTES »
+
+Aucune musique sous droits n'est utilisée dans les brouillons. La musique finale sera un titre de la Sound Collection
+Meta fourni par Mehdi (licence d'usage sur Facebook et Instagram).

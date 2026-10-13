@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="fr">
+  <head><meta charset="UTF-8" /></head>
+  <body>
+    <template id="fin-commune-template">
+      <style>
+/* LA SALLE · Option Premium · atomes de la charte « Le Trait Oblique » v2 (source unique : frame.md) */
+@font-face { font-family: "Barlow Condensed"; font-weight: 700; font-style: normal; font-display: block; src: url("assets/fonts/barlow-condensed-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Condensed"; font-weight: 800; font-style: normal; font-display: block; src: url("assets/fonts/barlow-condensed-latin-800-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Condensed"; font-weight: 800; font-style: italic; font-display: block; src: url("assets/fonts/barlow-condensed-latin-800-italic.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Condensed"; font-weight: 900; font-style: normal; font-display: block; src: url("assets/fonts/barlow-condensed-latin-900-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Condensed"; font-weight: 900; font-style: italic; font-display: block; src: url("assets/fonts/barlow-condensed-latin-900-italic.woff2") format("woff2"); }
+@font-face { font-family: "DM Sans"; font-weight: 400; font-style: normal; font-display: block; src: url("assets/fonts/dm-sans-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "DM Sans"; font-weight: 500; font-style: normal; font-display: block; src: url("assets/fonts/dm-sans-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "DM Sans"; font-weight: 700; font-style: normal; font-display: block; src: url("assets/fonts/dm-sans-latin-700-normal.woff2") format("woff2"); }
+
+.fr {
+  --canvas: #0D0D0D; --text: #F4F1EC; --gold: #B8A07E; --surface: #222222;
+  --muted: rgba(244,241,236,0.62); --ghost: rgba(184,160,126,0.16); --hair: rgba(244,241,236,0.18);
+  position: relative; width: 1080px; height: 1920px; overflow: hidden;
+  background: var(--canvas); color: var(--text);
+  font-family: "Barlow Condensed", sans-serif; font-kerning: normal;
+}
+.fr.p45 { height: 1350px; }
+.fr * { margin: 0; padding: 0; box-sizing: border-box; }
+.fr .a { position: absolute; }
+
+/* Typographie */
+.fr .disp  { font-weight: 900; font-size: 168px; line-height: .86; letter-spacing: -.01em; text-transform: uppercase; white-space: nowrap; }
+.fr .h1    { font-weight: 900; font-size: 112px; line-height: .9;  letter-spacing: -.005em; text-transform: uppercase; white-space: nowrap; }
+.fr .h2    { font-weight: 800; font-size: 76px;  line-height: .95; text-transform: uppercase; white-space: nowrap; }
+.fr .label { font-weight: 800; font-style: italic; font-size: 44px; letter-spacing: .04em; text-transform: uppercase; white-space: nowrap; line-height: 1; }
+.fr .qual  { font-weight: 800; font-size: 36px; letter-spacing: .03em; text-transform: uppercase; line-height: 1.15; white-space: nowrap; }
+.fr .body  { font-family: "DM Sans", sans-serif; font-weight: 500; font-size: 36px; line-height: 1.3; }
+.fr .num   { font-variant-numeric: tabular-nums; }
+.fr .gold  { color: var(--gold); }
+.fr .muted { color: var(--muted); }
+
+/* Pastille or, extrémités coupées à 0,42 (64 px de haut → 27 px) */
+.fr .pastille {
+  height: 64px; padding: 0 46px; background: var(--gold); color: var(--canvas);
+  font-weight: 800; font-style: italic; font-size: 36px; letter-spacing: .02em; text-transform: uppercase;
+  display: flex; align-items: center; white-space: nowrap;
+  clip-path: polygon(27px 0, 100% 0, calc(100% - 27px) 100%, 0 100%);
+}
+
+/* Bande : surface #222, extrémité droite coupée à 0,42, filet or sur le bord d'attaque (style inline : --h, --d = 0.42 × h) */
+.fr .bande { background: var(--surface); clip-path: polygon(0 0, 100% 0, calc(100% - var(--d)) 100%, 0 100%); }
+.fr .filet { background: var(--gold); clip-path: polygon(calc(100% - 6.5px) 0, 100% 0, calc(100% - var(--d)) 100%, calc(100% - var(--d) - 6.5px) 100%); }
+.fr .bande .label { position: absolute; left: 36px; top: 50%; transform: translateY(-52%); }
+
+/* « + » Premium : SVG deux barres, barre verticale penchée à 0,42 */
+.fr .plus { fill: var(--gold); overflow: visible; }
+
+/* Panneau des mentions : fond opaque, DM Sans 500 40 px */
+.fr .mention {
+  left: 108px; width: 864px; background: var(--surface); color: var(--text);
+  font-family: "DM Sans", sans-serif; font-weight: 500; font-size: 40px; line-height: 1.18; letter-spacing: -.012em;
+  padding: 8px 22px;
+}
+
+/* Grain fin, gris, en incrustation : garde la valeur moyenne du fond (#0D0D0D) ; amplitude ≈ ±0,014 */
+.fr::after {
+  content: "";
+  position: absolute; inset: 0; pointer-events: none; opacity: .7; mix-blend-mode: overlay; z-index: 90;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='256' height='256'><filter id='n' color-interpolation-filters='sRGB'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+
+.layer { position: absolute; inset: 0; }
+.mask { position: absolute; overflow: hidden; padding: 0.2em 0.06em 0.08em 0; margin-top: -0.2em; }
+.mask > div { display: block; }
+.fr.ov { background: transparent; }
+.fr.ov::after { display: none; }
+
+        #root { position: absolute; inset: 0; }
+      </style>
+      <div id="root" data-composition-id="fin-commune" data-width="1080" data-height="1920" data-duration="7.433">
+        <div id="fin-commune-fond" class="fr clip" data-start="0" data-duration="7.433" data-track-index="0">
+<div id="fi-stage" class="layer"><div id="fi-cas" class="layer" style="transform-origin:108px 740px"><div class="a " style="left:108px;top:600px"><div class="disp" style="">ET EN CE</div><div class="disp" style="">MOMENT…</div></div></div><div id="fi-lab" class="layer"><div class="a label muted" style="left:108px;top:420px;font-size:44px;">EN CE MOMENT</div></div><div id="fi-g1a" class="mask" style="left:108px;top:520px"><div id="fi-g1a-t" class="h1" style="">LES 4 PREMIÈRES</div></div><div id="fi-g1b" class="layer" style="transform-origin:108px 690px"><div class="a " style="left:108px;top:621px"><div class="disp" style="">SEMAINES</div></div></div><div id="fi-g2a" class="mask" style="left:108px;top:520px"><div id="fi-g2a-t" class="h1" style="">DE L'OPTION</div></div><div id="fi-g2b" class="mask" style="left:108px;top:621px"><div id="fi-g2b-t" class="disp" style="">PREMIUM</div></div><div id="fi-g3" class="layer"><div class="a " style="left:108px;top:520px"><div class="h1" style="">SONT</div></div><div id="fi-off" class="layer" style="transform-origin:108px 690px"><div class="a " style="left:108px;top:621px"><div class="disp" style=""><span class="gold">OFFERTES.</span></div></div></div><div id="fi-trait" class="layer"><div class="a " style="left:108px;top:785px;width:650px;height:6px;background:var(--gold);clip-path:polygon(2.5px 0,100% 0,calc(100% - 2.5px) 100%,0 100%)"></div></div><div class="a " style="left:108px;top:815px"><div class="qual" style="font-size:40px">LES 4 PREMIÈRES SEMAINES DE L'OPTION</div><div class="qual" style="font-size:40px">PUIS 2 € TTC/SEM. (8 € TOUTES LES 4 SEM.)</div><div class="qual" style="font-size:40px">EN PLUS DE VOTRE ABONNEMENT</div></div></div></div><div id="fi-prix" class="layer" style="background:var(--canvas)"><div class="a h2 muted" style="left:108px;top:440px;">PUIS</div><svg id="fi-plus-h" class="a" style="left:108px;top:548px;width:198px;height:190px;fill:#B8A07E" viewBox="-2 0 104 100"><polygon points="8.6,39 100.6,39 91.4,61 -0.6,61"/></svg><svg id="fi-plus-v" class="a" style="left:108px;top:548px;width:198px;height:190px;fill:#B8A07E" viewBox="-2 0 104 100"><polygon points="59.05,0 82.95,0 40.95,100 17.05,100"/></svg><div id="fi-2e" class="layer" style="transform-origin:420px 640px"><div class="a disp num" style="left:330px;top:514px;font-size:250px">2 €</div></div><div class="a h2" style="left:108px;top:752px;">TTC PAR SEMAINE</div><div class="a " style="left:108px;top:846px"><div class="qual" style="font-size:40px">SOIT 8 € TOUTES LES 4 SEM.</div><div class="qual" style="font-size:40px">EN PLUS DE VOTRE ABONNEMENT</div></div><div class="a label muted" style="left:108px;top:960px;font-size:38px;">FONTAINE · ANALYSE 3D · POSING (BIENTÔT)</div></div><div id="fi-carte" class="layer" style="background:var(--canvas)"><div id="fi-logo0" class="layer" style="clip-path:inset(330.0px 0px 1532.7px 0px)"><div class="a" role="img" aria-label="LA SALLE" style="left:108px;top:330px;width:280px;height:171.3px;background:url(assets/img/logo-negatif-provisoire.png) 0 0 / 100% 100% no-repeat"></div></div><div id="fi-logo1" class="layer" style="clip-path:inset(387.3px 0px 1475.4px 0px)"><div class="a" role="img" aria-label="LA SALLE" style="left:108px;top:330px;width:280px;height:171.3px;background:url(assets/img/logo-negatif-provisoire.png) 0 0 / 100% 100% no-repeat"></div></div><div id="fi-logo2" class="layer" style="clip-path:inset(444.6px 0px 1418.1px 0px)"><div class="a" role="img" aria-label="LA SALLE" style="left:108px;top:330px;width:280px;height:171.3px;background:url(assets/img/logo-negatif-provisoire.png) 0 0 / 100% 100% no-repeat"></div></div><div id="fi-op" class="layer"><div class="a label muted" style="left:108px;top:626px;font-size:40px;">OPTION PREMIUM</div></div><div id="fi-ctap" class="layer" style="transform-origin:150px 768px"><svg class="a plus " style="left:108px;top:726px;width:87px;height:84px;fill:#B8A07E" viewBox="-2 0 104 100"><polygon points="8.6,39 100.6,39 91.4,61 -0.6,61"/><polygon points="59.05,0 82.95,0 40.95,100 17.05,100"/></svg></div><div id="fi-cta" class="mask" style="left:216px;top:734px"><div id="fi-cta-t" class="label" style="font-size:68px">ACTIVEZ-LA À L'ACCUEIL</div></div><div id="fi-sec" class="mask" style="left:108px;top:856px"><div id="fi-sec-t" class="h2" style="">EN QUELQUES SECONDES.</div></div></div><div id="fi-v1" class="layer"><div id="fv1-b0" class="a" style="left:0;top:0px;width:1700px;height:640px"><div style="position:absolute;inset:0;background:var(--surface);clip-path:polygon(269px 0,100% 0,calc(100% - 269px) 100%,0 100%)"></div><div style="position:absolute;inset:0;background:var(--gold);clip-path:polygon(calc(100% - 7px) 0,100% 0,calc(100% - 269px) 100%,calc(100% - 276px) 100%)"></div></div><div id="fv1-b1" class="a" style="left:0;top:640px;width:1700px;height:640px"><div style="position:absolute;inset:0;background:var(--surface);clip-path:polygon(269px 0,100% 0,calc(100% - 269px) 100%,0 100%)"></div><div style="position:absolute;inset:0;background:var(--gold);clip-path:polygon(calc(100% - 7px) 0,100% 0,calc(100% - 269px) 100%,calc(100% - 276px) 100%)"></div></div><div id="fv1-b2" class="a" style="left:0;top:1280px;width:1700px;height:640px"><div style="position:absolute;inset:0;background:var(--surface);clip-path:polygon(269px 0,100% 0,calc(100% - 269px) 100%,0 100%)"></div><div style="position:absolute;inset:0;background:var(--gold);clip-path:polygon(calc(100% - 7px) 0,100% 0,calc(100% - 269px) 100%,calc(100% - 276px) 100%)"></div></div></div><div id="fi-v2" class="layer"><div id="fv2-b0" class="a" style="left:0;top:0px;width:1700px;height:640px"><div style="position:absolute;inset:0;background:var(--surface);clip-path:polygon(269px 0,100% 0,calc(100% - 269px) 100%,0 100%)"></div><div style="position:absolute;inset:0;background:var(--gold);clip-path:polygon(calc(100% - 7px) 0,100% 0,calc(100% - 269px) 100%,calc(100% - 276px) 100%)"></div></div><div id="fv2-b1" class="a" style="left:0;top:640px;width:1700px;height:640px"><div style="position:absolute;inset:0;background:var(--surface);clip-path:polygon(269px 0,100% 0,calc(100% - 269px) 100%,0 100%)"></div><div style="position:absolute;inset:0;background:var(--gold);clip-path:polygon(calc(100% - 7px) 0,100% 0,calc(100% - 269px) 100%,calc(100% - 276px) 100%)"></div></div><div id="fv2-b2" class="a" style="left:0;top:1280px;width:1700px;height:640px"><div style="position:absolute;inset:0;background:var(--surface);clip-path:polygon(269px 0,100% 0,calc(100% - 269px) 100%,0 100%)"></div><div style="position:absolute;inset:0;background:var(--gold);clip-path:polygon(calc(100% - 7px) 0,100% 0,calc(100% - 269px) 100%,calc(100% - 276px) 100%)"></div></div></div>
+        </div>
+      </div>
+      <script>
+
+      const tl = gsap.timeline({ paused: true });
+      // Coupes sèches : 1 ms (une durée nulle appliquerait l'état final dès la création)
+      const show = (s, t) => tl.fromTo(s, { visibility: "hidden" }, { visibility: "visible", duration: 0.001, ease: "none", immediateRender: true }, t);
+      const hide = (s, t) => tl.fromTo(s, { visibility: "visible" }, { visibility: "hidden", duration: 0.001, ease: "none", immediateRender: false }, t);
+      // Le masque reste masqué jusqu'à l'entrée de sa ligne (aucun texte en attente dans la page)
+      const fall = (s, t, d = 0.18) => { show(s.replace(/-t$/, ""), t); tl.fromTo(s, { yPercent: 118 }, { yPercent: 0, duration: d, ease: "power4.out" }, t); };
+      const slam = (s, t, k = 1.28) => { show(s, t); tl.fromTo(s, { scale: k }, { scale: 1, duration: 0.16, ease: "power4.out" }, t); };
+      const wipe = (s, t, d = 0.22) => tl.fromTo(s, { clipPath: "inset(0px 100% 0px 0px)" }, { clipPath: "inset(0px 0% 0px 0px)", duration: d, ease: "power3.out" }, t);
+      const drop = (s, t, d = 0.2) => tl.fromTo(s, { clipPath: "inset(0px 0px 100% 0px)" }, { clipPath: "inset(0px 0px 0% 0px)", duration: d, ease: "power2.out" }, t);
+      const shake = (s, t) => tl.to(s, { keyframes: [{ x: 7, y: -5, duration: 1 / 30 }, { x: -5, y: 4, duration: 1 / 30 }, { x: 0, y: 0, duration: 1 / 30 }], ease: "none" }, t);
+
+
+      // Cassure : « ET EN CE MOMENT… » seul, en coupe sèche
+      tl.fromTo("#fi-cas", { scale: 1.05 }, { scale: 1, duration: 0.2, ease: "power2.out" }, 0);
+      hide("#fi-cas", 0.469);
+      show("#fi-lab", 0.469);
+      // Réplique 25, 4 mots au plus à la fois
+      fall("#fi-g1a-t", 0.469);
+      slam("#fi-g1b", 0.938);
+      shake("#fi-stage", 0.938);
+      hide("#fi-g1a", 1.700); hide("#fi-g1b", 1.700);
+      fall("#fi-g2a-t", 1.700); fall("#fi-g2b-t", 1.760);
+      hide("#fi-g2a", 2.500); hide("#fi-g2b", 2.500);
+      // « OFFERTES. » et sa condition complète dans la même image
+      show("#fi-g3", 2.500);
+      tl.fromTo("#fi-off", { scale: 1.22 }, { scale: 1, duration: 0.16, ease: "power4.out" }, 2.500);
+      wipe("#fi-trait", 2.600, 0.25);
+      // Volet → prix (sans voix) : le prix et ses qualificatifs dans la même image ; le « + » se trace, « 2 € » frappe
+      tl.fromTo("#fv1-b0", { x: -1750 }, { x: -310, duration: 0.22, ease: "power3.in" }, 3.150);
+      tl.fromTo("#fv1-b0", { x: -310 }, { x: 1150, duration: 0.22, ease: "power3.out", immediateRender: false }, 3.490);
+      tl.fromTo("#fv1-b1", { x: -1750 }, { x: -310, duration: 0.22, ease: "power3.in" }, 3.200);
+      tl.fromTo("#fv1-b1", { x: -310 }, { x: 1150, duration: 0.22, ease: "power3.out", immediateRender: false }, 3.540);
+      tl.fromTo("#fv1-b2", { x: -1750 }, { x: -310, duration: 0.22, ease: "power3.in" }, 3.250);
+      tl.fromTo("#fv1-b2", { x: -310 }, { x: 1150, duration: 0.22, ease: "power3.out", immediateRender: false }, 3.590);
+      show("#fi-prix", 3.470); hide("#fi-g3", 3.470); hide("#fi-lab", 3.470);
+      tl.fromTo("#fi-plus-h", { clipPath: "inset(0% 100% 0% 0%)" }, { clipPath: "inset(0% 0% 0% 0%)", duration: 0.16, ease: "power2.out" }, 3.570);
+      tl.fromTo("#fi-plus-v", { clipPath: "inset(0% 0% 100% 0%)" }, { clipPath: "inset(0% 0% 0% 0%)", duration: 0.16, ease: "power2.out" }, 3.650);
+      slam("#fi-2e", 3.700, 1.3);
+      // Volet → carte finale : le monogramme s'assemble par ses 3 bandes
+      tl.fromTo("#fv2-b0", { x: -1750 }, { x: -310, duration: 0.22, ease: "power3.in" }, 4.370);
+      tl.fromTo("#fv2-b0", { x: -310 }, { x: 1150, duration: 0.22, ease: "power3.out", immediateRender: false }, 4.710);
+      tl.fromTo("#fv2-b1", { x: -1750 }, { x: -310, duration: 0.22, ease: "power3.in" }, 4.420);
+      tl.fromTo("#fv2-b1", { x: -310 }, { x: 1150, duration: 0.22, ease: "power3.out", immediateRender: false }, 4.760);
+      tl.fromTo("#fv2-b2", { x: -1750 }, { x: -310, duration: 0.22, ease: "power3.in" }, 4.470);
+      tl.fromTo("#fv2-b2", { x: -310 }, { x: 1150, duration: 0.22, ease: "power3.out", immediateRender: false }, 4.810);
+      show("#fi-carte", 4.690); hide("#fi-prix", 4.690); hide("#fi-2e", 4.690);
+      tl.fromTo("#fi-logo0", { x: -260 }, { x: 0, duration: 0.24, ease: "power3.out" }, 4.730);
+      tl.fromTo("#fi-logo1", { x: 260 }, { x: 0, duration: 0.24, ease: "power3.out" }, 4.790);
+      tl.fromTo("#fi-logo2", { x: -260 }, { x: 0, duration: 0.24, ease: "power3.out" }, 4.850);
+      wipe("#fi-op", 5.090, 0.24);
+      slam("#fi-ctap", 4.800, 1.35);
+      fall("#fi-cta-t", 4.840);
+      fall("#fi-sec-t", 5.900);
+      window.__timelines["fin-commune"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

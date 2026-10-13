@@ -41,7 +41,7 @@ mode: collaborative
 - start: 0.000s
 - poster: 1.2
 - transition_in: cut
-- status: built
+- status: animated
 - voiceover: P3 « Vos progrès, en trois D. » (≈ 0,05–1,4 s)
 - src: compositions/frames/01-accroche.html
 - blueprint: kinetic-type-beats
@@ -61,7 +61,7 @@ Le suivi de progression, sans promesse de résultat.
 - start: 1.875s
 - poster: 4.2
 - transition_in: wipe
-- status: built
+- status: animated
 - voiceover: P6 « Une analyse en trois D, chaque semaine. » (≈ 2,0–4,0 s)
 - src: compositions/frames/02-analyse.html
 - blueprint: compose
@@ -81,7 +81,7 @@ La fréquence est claire.
 - start: 4.688s
 - poster: 6.0
 - transition_in: wipe
-- status: built
+- status: animated
 - voiceover: aucune
 - src: compositions/frames/03-posing.html
 - blueprint: compose
@@ -101,7 +101,7 @@ On cite la salle sans la montrer.
 - start: 6.563s
 - poster: 7.2
 - transition_in: wipe
-- status: built
+- status: animated
 - voiceover: aucune
 - src: compositions/frames/04-fontaine.html
 - blueprint: compose
@@ -121,7 +121,7 @@ Le troisième avantage, avec sa limite.
 - start: 7.500s
 - poster: 7.7
 - transition_in: cut
-- status: built
+- status: animated
 - voiceover: aucune (silence musical)
 - src: compositions/fin-commune.html
 - blueprint: compose
@@ -141,7 +141,7 @@ La cassure prépare l'offre.
 - start: 7.969s
 - poster: 10.4
 - transition_in: cut
-- status: built
+- status: animated
 - voiceover: 25 « Les 4 premières semaines de l'option Premium sont offertes. » (≈ 7,97–10,97 s)
 - src: compositions/fin-commune.html
 - blueprint: compose
@@ -161,7 +161,7 @@ Personne ne voit « OFFERTES » sans sa condition.
 - start: 10.970s
 - poster: 11.8
 - transition_in: wipe
-- status: built
+- status: animated
 - voiceover: aucune
 - src: compositions/fin-commune.html
 - blueprint: compose
@@ -181,7 +181,7 @@ Le prix TTC, la cadence et « en plus de votre abonnement » arrivent ensemble.
 - start: 12.190s
 - poster: 13.9
 - transition_in: wipe
-- status: built
+- status: animated
 - voiceover: P9 « Activez-la à l'accueil, en quelques secondes. » (≈ 12,3–14,5 s)
 - src: compositions/fin-commune.html
 - blueprint: logo-assemble-lockup
