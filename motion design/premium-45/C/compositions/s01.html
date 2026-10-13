@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="fr">
+  <head><meta charset="UTF-8" /></head>
+  <body>
+    <template id="s01-template">
+      <style>
+/* LA SALLE · Option Premium · atomes de la charte « Le Trait Oblique » v2 (source unique : frame.md) */
+@font-face { font-family: "Barlow Condensed"; font-weight: 700; font-style: normal; font-display: block; src: url("assets/fonts/barlow-condensed-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Condensed"; font-weight: 800; font-style: normal; font-display: block; src: url("assets/fonts/barlow-condensed-latin-800-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Condensed"; font-weight: 800; font-style: italic; font-display: block; src: url("assets/fonts/barlow-condensed-latin-800-italic.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Condensed"; font-weight: 900; font-style: normal; font-display: block; src: url("assets/fonts/barlow-condensed-latin-900-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Condensed"; font-weight: 900; font-style: italic; font-display: block; src: url("assets/fonts/barlow-condensed-latin-900-italic.woff2") format("woff2"); }
+@font-face { font-family: "DM Sans"; font-weight: 400; font-style: normal; font-display: block; src: url("assets/fonts/dm-sans-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "DM Sans"; font-weight: 500; font-style: normal; font-display: block; src: url("assets/fonts/dm-sans-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "DM Sans"; font-weight: 700; font-style: normal; font-display: block; src: url("assets/fonts/dm-sans-latin-700-normal.woff2") format("woff2"); }
+
+.fr {
+  --canvas: #0D0D0D; --text: #F4F1EC; --gold: #B8A07E; --surface: #222222;
+  --muted: rgba(244,241,236,0.62); --ghost: rgba(184,160,126,0.16); --hair: rgba(244,241,236,0.18);
+  position: relative; width: 1080px; height: 1920px; overflow: hidden;
+  background: var(--canvas); color: var(--text);
+  font-family: "Barlow Condensed", sans-serif; font-kerning: normal;
+}
+.fr.p45 { height: 1350px; }
+.fr * { margin: 0; padding: 0; box-sizing: border-box; }
+.fr .a { position: absolute; }
+
+/* Typographie */
+.fr .disp  { font-weight: 900; font-size: 168px; line-height: .86; letter-spacing: -.01em; text-transform: uppercase; white-space: nowrap; }
+.fr .h1    { font-weight: 900; font-size: 112px; line-height: .9;  letter-spacing: -.005em; text-transform: uppercase; white-space: nowrap; }
+.fr .h2    { font-weight: 800; font-size: 76px;  line-height: .95; text-transform: uppercase; white-space: nowrap; }
+.fr .label { font-weight: 800; font-style: italic; font-size: 44px; letter-spacing: .04em; text-transform: uppercase; white-space: nowrap; line-height: 1; }
+.fr .qual  { font-weight: 800; font-size: 36px; letter-spacing: .03em; text-transform: uppercase; line-height: 1.15; white-space: nowrap; }
+.fr .body  { font-family: "DM Sans", sans-serif; font-weight: 500; font-size: 36px; line-height: 1.3; }
+.fr .num   { font-variant-numeric: tabular-nums; }
+.fr .gold  { color: var(--gold); }
+.fr .muted { color: var(--muted); }
+
+/* Pastille or, extrémités coupées à 0,42 (64 px de haut → 27 px) */
+.fr .pastille {
+  height: 64px; padding: 0 46px; background: var(--gold); color: var(--canvas);
+  font-weight: 800; font-style: italic; font-size: 36px; letter-spacing: .02em; text-transform: uppercase;
+  display: flex; align-items: center; white-space: nowrap;
+  clip-path: polygon(27px 0, 100% 0, calc(100% - 27px) 100%, 0 100%);
+}
+
+/* Bande : surface #222, extrémité droite coupée à 0,42, filet or sur le bord d'attaque (style inline : --h, --d = 0.42 × h) */
+.fr .bande { background: var(--surface); clip-path: polygon(0 0, 100% 0, calc(100% - var(--d)) 100%, 0 100%); }
+.fr .filet { background: var(--gold); clip-path: polygon(calc(100% - 6.5px) 0, 100% 0, calc(100% - var(--d)) 100%, calc(100% - var(--d) - 6.5px) 100%); }
+.fr .bande .label { position: absolute; left: 36px; top: 50%; transform: translateY(-52%); }
+
+/* « + » Premium : SVG deux barres, barre verticale penchée à 0,42 */
+.fr .plus { fill: var(--gold); overflow: visible; }
+
+/* Panneau des mentions : fond opaque, DM Sans 500 40 px */
+.fr .mention {
+  left: 108px; width: 864px; background: var(--surface); color: var(--text);
+  font-family: "DM Sans", sans-serif; font-weight: 500; font-size: 40px; line-height: 1.18; letter-spacing: -.012em;
+  padding: 8px 22px;
+}
+
+/* Grain fin, gris, en incrustation : garde la valeur moyenne du fond (#0D0D0D) ; amplitude ≈ ±0,014 */
+.fr::after {
+  content: "";
+  position: absolute; inset: 0; pointer-events: none; opacity: .7; mix-blend-mode: overlay; z-index: 90;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='256' height='256'><filter id='n' color-interpolation-filters='sRGB'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+
+.layer { position: absolute; inset: 0; }
+.mask { position: absolute; overflow: hidden; padding: 0.2em 0.06em 0.08em 0; margin-top: -0.2em; }
+.mask > div { display: block; }
+.fr.ov { background: transparent; }
+.fr.ov::after { display: none; }
+
+        #root { position: absolute; inset: 0; }
+      </style>
+      <div id="root" data-composition-id="s01" data-width="1080" data-height="1350" data-duration="1.875">
+        <div id="s01-fond" class="fr p45 clip" data-start="0" data-duration="1.875" data-track-index="0">
+<div class="a" data-layout-allow-overflow style="left:0;top:-60px;width:1080px;height:1920px"><div id="c1-stage" class="layer" style="transform-origin:540px 760px"><div class="a" style="left:108px;top:450px;perspective:1600px"><div id="c1-rel" style="position:relative;transform-style:preserve-3d;font-weight:900;font-size:330px;line-height:.86;letter-spacing:-.02em"><div aria-hidden="true" data-layout-ignore style="position:absolute;left:0;top:0;transform:translateZ(-42.0px);color:#222222">3D</div><div aria-hidden="true" data-layout-ignore style="position:absolute;left:0;top:0;transform:translateZ(-38.5px);color:#222222">3D</div><div aria-hidden="true" data-layout-ignore style="position:absolute;left:0;top:0;transform:translateZ(-35.0px);color:#222222">3D</div><div aria-hidden="true" data-layout-ignore style="position:absolute;left:0;top:0;transform:translateZ(-31.5px);color:#222222">3D</div><div aria-hidden="true" data-layout-ignore style="position:absolute;left:0;top:0;transform:translateZ(-28.0px);color:#222222">3D</div><div aria-hidden="true" data-layout-ignore style="position:absolute;left:0;top:0;transform:translateZ(-24.5px);color:#222222">3D</div><div aria-hidden="true" data-layout-ignore style="position:absolute;left:0;top:0;transform:translateZ(-21.0px);color:#222222">3D</div><div aria-hidden="true" data-layout-ignore style="position:absolute;left:0;top:0;transform:translateZ(-17.5px);color:#222222">3D</div><div aria-hidden="true" data-layout-ignore style="position:absolute;left:0;top:0;transform:translateZ(-14.0px);color:#222222">3D</div><div aria-hidden="true" data-layout-ignore style="position:absolute;left:0;top:0;transform:translateZ(-10.5px);color:#222222">3D</div><div aria-hidden="true" data-layout-ignore style="position:absolute;left:0;top:0;transform:translateZ(-7.0px);color:#222222">3D</div><div aria-hidden="true" data-layout-ignore style="position:absolute;left:0;top:0;transform:translateZ(-3.5px);color:#222222">3D</div><div style="position:relative">3D</div></div></div><div id="c1-plus" class="layer" style="transform-origin:878px 555px"><svg class="a plus " style="left:790px;top:470px;width:177px;height:170px;fill:#B8A07E" viewBox="-2 0 104 100"><polygon points="8.6,39 100.6,39 91.4,61 -0.6,61"/><polygon points="59.05,0 82.95,0 40.95,100 17.05,100"/></svg></div><div class="a " style="left:108px;top:770px"><div class="disp" style="font-size:140px">VOS PROGRÈS,</div><div class="disp" style="font-size:140px">EN 3D.</div></div></div></div>
+        </div>
+      </div>
+      <script>
+
+      const tl = gsap.timeline({ paused: true });
+      // Coupes sèches : 1 ms (une durée nulle appliquerait l'état final dès la création)
+      const show = (s, t) => tl.fromTo(s, { visibility: "hidden" }, { visibility: "visible", duration: 0.001, ease: "none", immediateRender: true }, t);
+      const hide = (s, t) => tl.fromTo(s, { visibility: "visible" }, { visibility: "hidden", duration: 0.001, ease: "none", immediateRender: false }, t);
+      // Le masque reste masqué jusqu'à l'entrée de sa ligne (aucun texte en attente dans la page)
+      const fall = (s, t, d = 0.18) => { show(s.replace(/-t$/, ""), t); tl.fromTo(s, { yPercent: 118 }, { yPercent: 0, duration: d, ease: "power4.out" }, t); };
+      const slam = (s, t, k = 1.28) => { show(s, t); tl.fromTo(s, { scale: k }, { scale: 1, duration: 0.16, ease: "power4.out" }, t); };
+      const wipe = (s, t, d = 0.22) => tl.fromTo(s, { clipPath: "inset(0px 100% 0px 0px)" }, { clipPath: "inset(0px 0% 0px 0px)", duration: d, ease: "power3.out" }, t);
+      const drop = (s, t, d = 0.2) => tl.fromTo(s, { clipPath: "inset(0px 0px 100% 0px)" }, { clipPath: "inset(0px 0px 0% 0px)", duration: d, ease: "power2.out" }, t);
+      const shake = (s, t) => tl.to(s, { keyframes: [{ x: 7, y: -5, duration: 1 / 30 }, { x: -5, y: 4, duration: 1 / 30 }, { x: 0, y: 0, duration: 1 / 30 }], ease: "none" }, t);
+
+
+      tl.fromTo("#c1-rel", { rotationY: -30, rotationX: 6 }, { rotationY: 4, rotationX: 6, duration: 1.875, ease: "none" }, 0);
+      tl.fromTo("#c1-plus", { scale: 1.16, rotation: -6 }, { scale: 1, rotation: 0, duration: 0.3, ease: "power3.out" }, 0);
+      tl.fromTo("#c1-stage", { scale: 1 }, { scale: 1.03, duration: 1.875, ease: "none" }, 0);
+      window.__timelines["s01"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

@@ -1,8 +1,14 @@
-"""Génère les compositions HyperFrames des vidéos Premium (9:16) à partir des cadres validés.
+"""Génère les compositions HyperFrames des vidéos Premium (story 9:16 et post 4:5) à partir des cadres validés.
 
-Toutes les bornes de temps viennent de TIMING (secondes, temps global). Elles sont estimées tant que les WAV
-de Nika ne sont pas déposés : il suffit de les recaler ici puis de relancer `python3 video.py A`.
-Usage : python3 video.py A [B C]
+Toutes les bornes de temps viennent de TIMING (secondes, temps global). Elles avaient été estimées pour la voix de Nika ;
+décision du 13/10/2026 : vidéos livrées sans voix ni musique, sur ce minutage. Pour recaler : modifier ici puis relancer.
+Usage : python3 video.py A [B C]          → premium-916/<concept> (1080×1920)
+        python3 video.py --45 A [B C]     → premium-45/<concept>  (1080×1350)
+
+4:5 (règle de frame.md, adaptée au film) : la pastille passe à y 150, les mentions à y 1015–1215, les volets ont 3 bandes
+de 450 px. Les scènes 1 à 4 (sans mentions) remontent de 60 px pour que le bloc reste centré sous la pastille (y 390–990) ;
+la fin commune remonte de 100 px pour laisser 70 px au moins au-dessus des mentions. Les titres gardent leur taille 9:16 :
+à largeur égale ils tiennent dans la zone 4:5 ; la réduction ×0,85 ne sert qu'aux images, plus chargées.
 """
 import json
 import os
@@ -17,6 +23,24 @@ MD = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 CSS = open(os.path.join(MD, "_sources-premium", "shared", "premium.css"), encoding="utf-8").read()
 W, H = 1080, 1920
 END = 14.933
+# Paramètres du format (9:16 par défaut ; set_format("45") pour le post 4:5)
+FMT = {"916": dict(H=1920, DY=0, DY_FIN=0, PAST_Y=300, MENT_Y=1040, DIR="premium-916", LABEL="9:16", RES="portrait"),
+       "45": dict(H=1350, DY=-60, DY_FIN=-100, PAST_Y=150, MENT_Y=1015, DIR="premium-45", LABEL="4:5", RES="portrait")}
+CUR = FMT["916"]
+
+
+def set_format(key):
+    global H, CUR
+    CUR = FMT[key]
+    H = CUR["H"]
+
+
+def stage(inner, dy=None):
+    """Calque 1080×1920 décalé de dy : les cadres 9:16 validés gardent leurs coordonnées (masques, clip-path, origines)."""
+    dy = CUR["DY"] if dy is None else dy
+    if not dy:
+        return inner
+    return f'<div class="a" data-layout-allow-overflow style="left:0;top:{dy}px;width:{W}px;height:1920px">{inner}</div>'
 
 # ─── Minutage commun (fin commune, pastille, mentions) : identique pour A, B et C ───
 COMMON = {
@@ -103,11 +127,13 @@ def relief_anim(id_, x, y, size, depth_color, layers=12):
 def bands_volet(id_):
     """Volet 3 bandes plein cadre : bandes #222 aux bords coupés à 0,42, filet or sur le bord d'attaque."""
     out = []
+    bh = H // 3
+    d = round(0.42 * bh)
     for i in range(3):
         out.append(
-            f'<div id="{id_}-b{i}" class="a" style="left:0;top:{i*640}px;width:1700px;height:640px">'
-            f'<div style="position:absolute;inset:0;background:var(--surface);clip-path:polygon(269px 0,100% 0,calc(100% - 269px) 100%,0 100%)"></div>'
-            f'<div style="position:absolute;inset:0;background:var(--gold);clip-path:polygon(calc(100% - 7px) 0,100% 0,calc(100% - 269px) 100%,calc(100% - 276px) 100%)"></div></div>')
+            f'<div id="{id_}-b{i}" class="a" style="left:0;top:{i*bh}px;width:1700px;height:{bh}px">'
+            f'<div style="position:absolute;inset:0;background:var(--surface);clip-path:polygon({d}px 0,100% 0,calc(100% - {d}px) 100%,0 100%)"></div>'
+            f'<div style="position:absolute;inset:0;background:var(--gold);clip-path:polygon(calc(100% - 7px) 0,100% 0,calc(100% - {d}px) 100%,calc(100% - {d + 7}px) 100%)"></div></div>')
     return "".join(out)
 
 
@@ -119,8 +145,9 @@ def bands_volet_js(id_, t):
         for i in range(3))
 
 
-def subcomp(cid, dur, inner, js, ground=True, h=H):
-    cls = "fr" if ground else "fr ov"
+def subcomp(cid, dur, inner, js, ground=True, h=None):
+    h = h or H
+    cls = ("fr" if ground else "fr ov") + (" p45" if h == 1350 else "")
     return f"""<!doctype html>
 <html lang="fr">
   <head><meta charset="UTF-8" /></head>
@@ -206,7 +233,7 @@ def scene_A3(T):
     u = lambda g: g - t0  # noqa: E731
     inner = (F.panel() + F.lab(108, 498, F.num("02", "ANALYSE 3D")) +
              f'<div class="a body muted" style="left:108px;top:558px;font-size:32px">Analyse de composition corporelle</div>' +
-             relief_anim("a3-rel", 540, 590, 240, CANVAS) +
+             relief_anim("a3-rel", 660, 575, 200, CANVAS) +
              mask("a3-g1a", 108, 770, "h1", "UNE ANALYSE") + mask("a3-g1b", 108, 871, "h1", "EN 3D,") +
              mask("a3-g2a", 108, 770, "h1", "CHAQUE") + mask("a3-g2b", 108, 871, "h1", "SEMAINE.") +
              f'<div id="a3-etiq" class="layer">{F.lab(108, 1012, "<span class=\"gold\">1</span> ANALYSE 3D PAR SEMAINE")}</div>')
@@ -329,7 +356,7 @@ def scene_C2(T):
     u = lambda g: g - t0  # noqa: E731
     inner = (F.panel() + F.lab(108, 498, F.num("01", "ANALYSE 3D")) +
              f'<div class="a body muted" style="left:108px;top:558px;font-size:32px">Analyse de composition corporelle</div>' +
-             relief_anim("c2-rel", 540, 590, 240, CANVAS) +
+             relief_anim("c2-rel", 660, 575, 200, CANVAS) +
              mask("c2-g1a", 108, 770, "h1", "UNE ANALYSE") + mask("c2-g1b", 108, 871, "h1", "EN 3D,") +
              mask("c2-g2a", 108, 770, "h1", "CHAQUE") + mask("c2-g2b", 108, 871, "h1", "SEMAINE.") +
              f'<div id="c2-etiq" class="layer">{F.lab(108, 1012, "<span class=\"gold\">1</span> ANALYSE 3D PAR SEMAINE")}</div>')
@@ -377,7 +404,7 @@ def scene_C4(T):
 
 def comp_pastille():
     d = COMMON["fin"]
-    inner = f'<div id="pa-p" class="layer">{F.pastille()}</div>'
+    inner = f'<div id="pa-p" class="layer">{F.pastille(y=CUR["PAST_Y"])}</div>'
     js = """
       wipe("#pa-p", 0.3, 0.24);"""
     return d, inner, js
@@ -385,10 +412,12 @@ def comp_pastille():
 
 def comp_mentions():
     d = END - (COMMON["mentions"] - 0.175)
-    inner = f'<div class="layer" style="clip-path:inset(0px 0px 680px 0px)"><div id="me-p" class="layer">{F.mention()}</div></div>'
-    js = """
-      // Le panneau monte depuis sous y 1240 (masque fixe) et finit en place à 9,375 s
-      tl.fromTo("#me-p", { y: 220 }, { y: 0, duration: 0.175, ease: "power3.out" }, 0);"""
+    bas = CUR["MENT_Y"] + 200
+    inner = (f'<div class="layer" style="clip-path:inset(0px 0px {H - bas}px 0px)">'
+             f'<div id="me-p" class="layer">{F.mention(CUR["MENT_Y"])}</div></div>')
+    js = f"""
+      // Le panneau monte depuis sous y {bas} (masque fixe) et finit en place à 9,375 s
+      tl.fromTo("#me-p", {{ y: 220 }}, {{ y: 0, duration: 0.175, ease: "power3.out" }}, 0);"""
     return d, inner, js
 
 
@@ -404,7 +433,7 @@ def comp_fin():
     qual = [("qual", "LES 4 PREMIÈRES SEMAINES DE L'OPTION", "font-size:40px"),
             ("qual", f"PUIS 2{NB}€ TTC/SEM. (8{NB}€ TOUTES LES 4{NB}SEM.)", "font-size:40px"),
             ("qual", "EN PLUS DE VOTRE ABONNEMENT", "font-size:40px")]
-    inner = (
+    inner = stage(dy=CUR["DY_FIN"], inner=
         # cassure et offre
         f'<div id="fi-stage" class="layer">'
         f'<div id="fi-cas" class="layer" style="transform-origin:108px 740px">{F.lines(108, 600, [("disp", "ET EN CE", ""), ("disp", "MOMENT…", "")])}</div>'
@@ -432,9 +461,9 @@ def comp_fin():
         + f'<div id="fi-op" class="layer">{F.lab(108, 626, "OPTION PREMIUM", 40, "label muted")}</div>'
         + f'<div id="fi-ctap" class="layer" style="transform-origin:150px 768px">{F.plus(108, 726, 84)}</div>'
         + mask("fi-cta", 216, 734, "label", "ACTIVEZ-LA À L'ACCUEIL", "font-size:68px")
-        + mask("fi-sec", 108, 856, "h2", "EN QUELQUES SECONDES.") + '</div>'
+        + mask("fi-sec", 108, 856, "h2", "EN QUELQUES SECONDES.") + '</div>') + (
         # volets internes
-        + f'<div id="fi-v1" class="layer">{bands_volet("fv1")}</div><div id="fi-v2" class="layer">{bands_volet("fv2")}</div>')
+        f'<div id="fi-v1" class="layer">{bands_volet("fv1")}</div><div id="fi-v2" class="layer">{bands_volet("fv2")}</div>')
     js = f"""
       // Cassure : « ET EN CE MOMENT… » seul, en coupe sèche
       tl.fromTo("#fi-cas", {{ scale: 1.05 }}, {{ scale: 1, duration: 0.2, ease: "power2.out" }}, 0);
@@ -503,12 +532,13 @@ def sfx_list(concept, T):
 
 def index_html(concept, hosts, audios):
     zs = "\n".join(f"      #h-{h[0]} {{ z-index: {h[4]}; }}" for h in hosts)
+    fmt, res = CUR["LABEL"], CUR["RES"]
     hs = "\n".join(
         f'      <div id="h-{cid}" data-composition-id="{cid}" data-composition-src="compositions/{cid}.html" '
         f'data-start="{s:.3f}" data-duration="{d:.3f}" data-track-index="{ti}" data-width="{W}" data-height="{H}"></div>'
         for cid, s, d, ti, z in hosts)
     return f"""<!doctype html>
-<html lang="fr" data-resolution="portrait">
+<html lang="fr" data-resolution="{res}">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width={W}, height={H}" />
@@ -522,7 +552,7 @@ def index_html(concept, hosts, audios):
     </style>
   </head>
   <body>
-    <!-- Option Premium LA SALLE · concept {concept} · 9:16 · 15 s · 128 BPM. Généré par _sources-premium/tools/video.py -->
+    <!-- Option Premium LA SALLE · concept {concept} · {fmt} · 15 s · 128 BPM. Généré par _sources-premium/tools/video.py -->
     <div id="root" data-composition-id="main" data-start="0" data-duration="{END}" data-width="{W}" data-height="{H}" data-fps="30">
 {hs}
 {audios}
@@ -541,12 +571,13 @@ SCENES = {"A": [scene_A1, scene_A2, scene_A3, scene_A4], "B": [scene_B1, scene_B
 
 def build(concept):
     T = TIMING[concept]
-    root = os.path.join(MD, "premium-916", concept)
+    root = os.path.join(MD, CUR["DIR"], concept)
     comp = os.path.join(root, "compositions")
     os.makedirs(comp, exist_ok=True)
     hosts = []
     for i, fn in enumerate(SCENES[concept]):
         d, inner, js = fn(T)
+        inner = stage(inner)
         cid = f"s{i + 1:02d}"
         open(os.path.join(comp, f"{cid}.html"), "w", encoding="utf-8").write(subcomp(cid, d, inner, js))
         hosts.append((cid, T["s"][i], d, 1, i + 1))
@@ -566,11 +597,15 @@ def build(concept):
     hosts.append(("mentions", COMMON["mentions"] - 0.175, d, 4, 40))
     audios = "\n".join(sfx_list(concept, T))
     open(os.path.join(root, "index.html"), "w", encoding="utf-8").write(index_html(concept, hosts, audios))
-    json.dump({"concept": concept, "timing": T, "common": COMMON, "end": END},
+    json.dump({"concept": concept, "format": f"{W}x{H}", "timing": T, "common": COMMON, "end": END},
               open(os.path.join(root, "timing.json"), "w"), ensure_ascii=False, indent=2)
     print("construit", root, len(hosts), "sous-compositions")
 
 
 if __name__ == "__main__":
-    for c in sys.argv[1:] or ["A"]:
+    args = sys.argv[1:]
+    if "--45" in args:
+        args.remove("--45")
+        set_format("45")
+    for c in args or ["A"]:
         build(c)

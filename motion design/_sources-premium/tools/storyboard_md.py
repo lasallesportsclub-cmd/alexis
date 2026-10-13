@@ -4,7 +4,7 @@ import os
 MD = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 
 HEAD_VIDEO = """---
-format: 1080x1920
+format: {fmt}
 duration: 14.933s
 message: "Option Premium LA SALLE : fontaine, analyse 3D et salle de posing pour +2 € TTC/sem., à activer à l'accueil"
 arc: Accroche → 3 avantages → cassure → offre → prix → carte finale
@@ -12,7 +12,7 @@ audience: "adhérents LA SALLE et abonnés Instagram, 18+"
 mode: collaborative
 ---
 
-# Option Premium · concept {concept} · plan v2
+# Option Premium · concept {concept} · plan v2{titre_fmt}
 
 **Ce film dit aux adhérents de LA SALLE que l'option Premium (fontaine, analyse 3D, salle de posing bientôt) s'ajoute pour 2 € TTC par semaine, en plus de leur abonnement, avec 4 semaines offertes en ce moment, et qu'on l'active à l'accueil.**
 
@@ -22,8 +22,8 @@ mode: collaborative
 - **Atomes récurrents** : le « + » or (image 0 entier, pastille en négatif, prix, CTA), les 3 bandes obliques (numérotées dans l'ordre de la voix), le filet or.
 - **Bans** : écran noir ou logo en ouverture, fondu enchaîné ou d'opacité, halo, dégradé, glitch, fausse interface (jauge, écran de balance), icône de personne, fruit dessiné, slideshow (plans immobiles qui se suivent) et screensaver (mouvement sans intention).
 - **Held frame** : la carte finale, statique sur ses derniers 40 %.
-- **Voix** : Nika, une seule voix, {n_vo} répliques ({vo_list}). Durées **estimées** ; toutes les bornes sont recalées sur les WAV.
-- **Son** : musique Sound Collection (en attente) creusée de 8 à 10 dB sous la voix (`carve.mjs --strength 0.4`) ; bruitages de la bibliothèque intégrée (whoosh-short sur chaque volet, impact-bass-1 sur le « + » et le drop, click sur les étiquettes). Version sans musique livrée.
+- **Voix** : aucune (décision du 13/10/2026 : « fais sans les voix et musique »). Le texte cinétique garde le minutage prévu pour les {n_vo} répliques de Nika ({vo_list}).
+- **Son** : bruitages seuls, de la bibliothèque intégrée (whoosh-short sur chaque volet, impact-bass-1 sur le « + » et le drop, click sur les étiquettes) ; pas de musique. Mastering −14 LUFS, crête vraie ≤ −1,5 dBTP. Une seule version par vidéo.
 - **Pastille** : de 0,3 à 7,5 s, avec sa ligne « EN CE MOMENT · EN PLUS DE VOTRE ABONNEMENT » dans le même bloc.
 - **Mentions** : un seul panneau sur son propre calque, au-dessus de toutes les transitions, en place à 9,375 s (glissement terminé à 9,375) et immobile jusqu'à 14,933 s.
 
@@ -35,7 +35,7 @@ mode: collaborative
 - ⚠ Pastille : ligne « EN CE MOMENT · EN PLUS DE VOTRE ABONNEMENT » ajoutée sous la version courte du §4 (le prix doit porter « en plus de votre abonnement » avant 9,38 s).
 - ⚠ « + » de la pastille en négatif #0D0D0D (26 px), car un « + » or serait invisible sur la pastille or : écart au « + » or du §3, à valider.
 - ⚠ Rappel « FONTAINE · ANALYSE 3D · POSING (BIENTÔT) » : « (BIENTÔT) » ajouté au rappel du §6 (Q3).
-- ⚠ Voix IA (Nika) : activer l'étiquette IA de Meta à la publication des vidéos, avec et sans musique (décision de Mehdi).
+- Voix IA (Nika) : sans objet, les vidéos sont livrées sans voix.
 - ⚠ P4 « booster » et « multivitamines » : à confirmer sur la fiche GYMWA (allégations nutritionnelles) ; proposition de repli : « caféine ».
 - ⚠ Logo : `mono.png` et `word.png` attendus ; la carte finale assemble le monogramme par ses 3 bandes horizontales.
 
@@ -160,12 +160,23 @@ def block(n, title, src, t0, t1, poster, tin, scene, vo, onscreen, bp, rules, fo
 """
 
 
+NOTE_45 = """
+## Post 4:5
+
+Mêmes plans, même minutage, mêmes textes et bruitages que la story 9:16 (`../../premium-916/{concept}/`), recomposés en 1080×1350 par `video.py --45` : pastille à y 150, scènes 1 à 4 remontées de 60 px, fin commune remontée de 100 px, mentions à y 1015–1215, volets en 3 bandes de 450 px. Les croquis renvoient au storyboard 9:16.
+"""
+
+
 def write_video(concept, frames, vo_list, n_vo, sheet_ids):
-    out = HEAD_VIDEO.format(concept=concept, vo_list=vo_list, n_vo=n_vo)
-    allf = frames + [(len(frames) + 1 + i, *f[1:]) for i, f in enumerate(FRAMES_SHARED)]
-    for f, sid in zip(allf, sheet_ids):
-        out += block(*f, sketch=f"../storyboard.html#frame-{sid}")
-    open(os.path.join(MD, "premium-916", concept, "STORYBOARD.md"), "w", encoding="utf-8").write(out)
+    for proj, fmt, titre, sk in (("premium-916", "1080x1920", "", "../storyboard.html"),
+                                 ("premium-45", "1080x1350", " · post 4:5", "../../premium-916/storyboard.html")):
+        out = HEAD_VIDEO.format(concept=concept, vo_list=vo_list, n_vo=n_vo, fmt=fmt, titre_fmt=titre)
+        if proj == "premium-45":
+            out = out.replace("\n## Still open", NOTE_45.format(concept=concept) + "\n## Still open")
+        allf = frames + [(len(frames) + 1 + i, *f[1:]) for i, f in enumerate(FRAMES_SHARED)]
+        for f, sid in zip(allf, sheet_ids):
+            out += block(*f, sketch=f"{sk}#frame-{sid}")
+        open(os.path.join(MD, proj, concept, "STORYBOARD.md"), "w", encoding="utf-8").write(out)
 
 
 write_video("A", FRAMES_A, "P1, P5, P6, 25, P9", 5, ["01", "02", "03", "04", "05", "06", "07+08", "09", "10"])
@@ -199,7 +210,7 @@ def write_images(proj, fmt, name, items):
 - duration: 1s
 - start: {i}s
 - poster: {i + 0.5}
-- status: animated
+- status: built
 - voiceover: onscreen
 - src: compositions/frames/{i + 1:02d}.html
 - onscreen: {onscreen}

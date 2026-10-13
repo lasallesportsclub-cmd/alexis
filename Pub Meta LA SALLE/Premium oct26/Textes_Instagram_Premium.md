@@ -95,6 +95,20 @@ LA SALLE, Urban Valley, 4 rue Maria Sibylla Merian, 78700 Conflans-Sainte-Honori
 
 ---
 
+## Vidéos A, B, C (`videos/`)
+
+Les vidéos durent 15 s, sans voix ni musique : tout le message est écrit à l'écran, avec des bruitages. Il n'y a donc pas de sous-titres à ajouter.
+
+| Vidéo | Story ou reel | Post du fil | Légende |
+|---|---|---|---|
+| A · 3 en 1 | `LA_SALLE_Premium_A_story_9x16.mp4` | `LA_SALLE_Premium_A_post_4x5.mp4` | celle du post 2 (visuel clé A) |
+| B · la fontaine | `LA_SALLE_Premium_B_story_9x16.mp4` | `LA_SALLE_Premium_B_post_4x5.mp4` | celle du post 3 (visuel clé B) |
+| C · vos progrès en 3D | `LA_SALLE_Premium_C_story_9x16.mp4` | `LA_SALLE_Premium_C_post_4x5.mp4` | celle du post 4 (visuel clé C) |
+
+Les mentions légales sont incrustées de 9,4 s à la fin : choisissez une image de couverture où elles ne sont pas, par exemple l'image 0, qui porte la promesse et le « + » doré.
+
+---
+
 ## Stories (`images/story/`) : sticker conseillé
 
 Chaque image story laisse vide une zone d'environ 900×220 px, vers y 1320–1540, pour le sticker natif.
@@ -117,7 +131,7 @@ N'utilisez pas le sticker compte à rebours : l'offre n'a pas de date de fin.
 | Mardi 13/10 (lancement de la version 2) | Story | 01 carte offre, avec le sondage |
 | Mardi 13/10 | Post | Carrousel (5 slides) |
 | Jour du happening (pas encore fixé) | Story et post | Concept D, à produire une fois la date connue |
-| Ensuite (dès que la voix et la musique sont prêtes) | Reel et story | Vidéo A, en 9:16 puis 4:5 |
+| Ensuite | Reel et story | Vidéo A (9:16), puis vidéo A en post 4:5 |
 | Semaine suivante | Story | 02, 03, 04 (visuels clés A, B, C), un par jour |
 | Après le 18/10 | Reel et post | Vidéos B et C, et visuels clés B et C en post |
 

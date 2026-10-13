@@ -68,3 +68,6 @@ Ce projet : **concept B · LA FONTAINE**, vidéo 15 s en story 9:16, 30 i/s.
 - Engagement : « sans engagement sur l'option » confirmé une seconde fois, malgré le calendrier S40.
 - Pastille : ligne « EN CE MOMENT · EN PLUS DE VOTRE ABONNEMENT » et « + » en négatif validés.
 - Brouillon sans voix ni musique rendu le 13/10 ; rendu final quand les répliques de Nika et la musique Sound Collection sont déposées (bornes à recaler dans `_sources-premium/tools/video.py`, TIMING et COMMON).
+- **Après les brouillons (13/10/2026)** : « fais sans les voix et musique ». Vidéos finales livrées sans voix ni musique, bruitages seuls, sur le minutage prévu pour la voix (texte cinétique gardé tel quel). Une seule version par vidéo : sans musique, « avec » et « sans » musique seraient identiques. Mastering −14 LUFS, crête vraie ≤ −1,5 dBTP, H.264 CRF 18 (`_sources-premium/tools/master.py`).
+- Correction avant le rendu final : le relief « 3D » des plans « UNE ANALYSE EN 3D » (A·02, C·01) est réduit (240 → 200 px) et déplacé à droite ; il touchait le haut de « UNE ANALYSE ».
+- Versions post 4:5 produites le 13/10 dans `motion design/premium-45/` (« Oui, maintenant »).

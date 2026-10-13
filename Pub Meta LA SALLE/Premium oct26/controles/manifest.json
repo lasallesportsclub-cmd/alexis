@@ -1,9 +1,13 @@
 {
   "kit": "Option Premium LA SALLE",
-  "version": "v1 images",
+  "version": "v2 images et vidéos",
   "date": "2026-10-13",
-  "statut": "brouillon à valider, non publié",
+  "statut": "à valider par Mehdi, non publié",
   "logo": "provisoire (signature 170 px du Drive) — voir A_valider.md",
+  "decisions": [
+    "vidéos sans voix ni musique, bruitages seuls (13/10/2026)",
+    "un seul fichier par vidéo : sans musique, les versions « avec » et « sans » musique seraient identiques"
+  ],
   "fichiers": [
     {
       "fichier": "images/story/01_LA_SALLE_Premium_offre_story_9x16.jpg",
@@ -220,10 +224,82 @@
       "sha256": "b8282a5a5568a2e27e9f7f5b57a3c35726cee912225f3a31356660d3976771cf",
       "source": "motion design/premium-visuels-45",
       "profil": "sRGB"
+    },
+    {
+      "fichier": "videos/LA_SALLE_Premium_A_post_4x5.mp4",
+      "largeur": 1080,
+      "hauteur": 1350,
+      "octets": 3149515,
+      "sha256": "2af2ca3edfbd645058f81cd1b2f93e2a797d75f620540d1b5187389ac735fef7",
+      "duree_s": 14.933,
+      "sonie_LUFS": -14.0,
+      "crete_vraie_dBTP": -1.9,
+      "source": "motion design/premium-45/A",
+      "audio": "bruitages seuls (sans voix ni musique, décision du 13/10/2026)"
+    },
+    {
+      "fichier": "videos/LA_SALLE_Premium_A_story_9x16.mp4",
+      "largeur": 1080,
+      "hauteur": 1920,
+      "octets": 3862089,
+      "sha256": "693627b71e2db98ab5175152cbca97db0a9ad028198212c5ca418ed8b63bdc85",
+      "duree_s": 14.933,
+      "sonie_LUFS": -14.0,
+      "crete_vraie_dBTP": -1.9,
+      "source": "motion design/premium-916/A",
+      "audio": "bruitages seuls (sans voix ni musique, décision du 13/10/2026)"
+    },
+    {
+      "fichier": "videos/LA_SALLE_Premium_B_post_4x5.mp4",
+      "largeur": 1080,
+      "hauteur": 1350,
+      "octets": 2857136,
+      "sha256": "764511b09b66475112f14e3c6cdc87e3661e9f2dd41ff7f136def67c788cbebe",
+      "duree_s": 14.933,
+      "sonie_LUFS": -14.0,
+      "crete_vraie_dBTP": -2.0,
+      "source": "motion design/premium-45/B",
+      "audio": "bruitages seuls (sans voix ni musique, décision du 13/10/2026)"
+    },
+    {
+      "fichier": "videos/LA_SALLE_Premium_B_story_9x16.mp4",
+      "largeur": 1080,
+      "hauteur": 1920,
+      "octets": 3653123,
+      "sha256": "96ab2f044efe70079fa18d628916206a039c587adee2b638ad3d08c9f5cfbe7c",
+      "duree_s": 14.933,
+      "sonie_LUFS": -14.0,
+      "crete_vraie_dBTP": -2.0,
+      "source": "motion design/premium-916/B",
+      "audio": "bruitages seuls (sans voix ni musique, décision du 13/10/2026)"
+    },
+    {
+      "fichier": "videos/LA_SALLE_Premium_C_post_4x5.mp4",
+      "largeur": 1080,
+      "hauteur": 1350,
+      "octets": 3099402,
+      "sha256": "807a72f55d979e9dd0c696d2dbe9253927c9576320e6f5d370cab24d77ecf8bc",
+      "duree_s": 14.933,
+      "sonie_LUFS": -14.0,
+      "crete_vraie_dBTP": -1.9,
+      "source": "motion design/premium-45/C",
+      "audio": "bruitages seuls (sans voix ni musique, décision du 13/10/2026)"
+    },
+    {
+      "fichier": "videos/LA_SALLE_Premium_C_story_9x16.mp4",
+      "largeur": 1080,
+      "hauteur": 1920,
+      "octets": 3904881,
+      "sha256": "d337ca6c8df92d847487c5de23ab1d389fdaf352d3caec41e0164e3241673949",
+      "duree_s": 14.933,
+      "sonie_LUFS": -14.0,
+      "crete_vraie_dBTP": -1.9,
+      "source": "motion design/premium-916/C",
+      "audio": "bruitages seuls (sans voix ni musique, décision du 13/10/2026)"
     }
   ],
   "en_attente": [
-    "vidéos A, B, C (voix Nika, musique Sound Collection)",
-    "logo mono.png/word.png"
+    "logo mono.png/word.png",
+    "concept D (date du happening non fixée)"
   ]
 }

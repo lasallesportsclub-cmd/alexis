@@ -17,8 +17,8 @@ mode: collaborative
 - **Atomes récurrents** : le « + » or (image 0 entier, pastille en négatif, prix, CTA), les 3 bandes obliques (numérotées dans l'ordre de la voix), le filet or.
 - **Bans** : écran noir ou logo en ouverture, fondu enchaîné ou d'opacité, halo, dégradé, glitch, fausse interface (jauge, écran de balance), icône de personne, fruit dessiné, slideshow (plans immobiles qui se suivent) et screensaver (mouvement sans intention).
 - **Held frame** : la carte finale, statique sur ses derniers 40 %.
-- **Voix** : Nika, une seule voix, 4 répliques (P3, P6, 25, P9). Durées **estimées** ; toutes les bornes sont recalées sur les WAV.
-- **Son** : musique Sound Collection (en attente) creusée de 8 à 10 dB sous la voix (`carve.mjs --strength 0.4`) ; bruitages de la bibliothèque intégrée (whoosh-short sur chaque volet, impact-bass-1 sur le « + » et le drop, click sur les étiquettes). Version sans musique livrée.
+- **Voix** : aucune (décision du 13/10/2026 : « fais sans les voix et musique »). Le texte cinétique garde le minutage prévu pour les 4 répliques de Nika (P3, P6, 25, P9).
+- **Son** : bruitages seuls, de la bibliothèque intégrée (whoosh-short sur chaque volet, impact-bass-1 sur le « + » et le drop, click sur les étiquettes) ; pas de musique. Mastering −14 LUFS, crête vraie ≤ −1,5 dBTP. Une seule version par vidéo.
 - **Pastille** : de 0,3 à 7,5 s, avec sa ligne « EN CE MOMENT · EN PLUS DE VOTRE ABONNEMENT » dans le même bloc.
 - **Mentions** : un seul panneau sur son propre calque, au-dessus de toutes les transitions, en place à 9,375 s (glissement terminé à 9,375) et immobile jusqu'à 14,933 s.
 
@@ -30,7 +30,7 @@ mode: collaborative
 - ⚠ Pastille : ligne « EN CE MOMENT · EN PLUS DE VOTRE ABONNEMENT » ajoutée sous la version courte du §4 (le prix doit porter « en plus de votre abonnement » avant 9,38 s).
 - ⚠ « + » de la pastille en négatif #0D0D0D (26 px), car un « + » or serait invisible sur la pastille or : écart au « + » or du §3, à valider.
 - ⚠ Rappel « FONTAINE · ANALYSE 3D · POSING (BIENTÔT) » : « (BIENTÔT) » ajouté au rappel du §6 (Q3).
-- ⚠ Voix IA (Nika) : activer l'étiquette IA de Meta à la publication des vidéos, avec et sans musique (décision de Mehdi).
+- Voix IA (Nika) : sans objet, les vidéos sont livrées sans voix.
 - ⚠ P4 « booster » et « multivitamines » : à confirmer sur la fiche GYMWA (allégations nutritionnelles) ; proposition de repli : « caféine ».
 - ⚠ Logo : `mono.png` et `word.png` attendus ; la carte finale assemble le monogramme par ses 3 bandes horizontales.
 
