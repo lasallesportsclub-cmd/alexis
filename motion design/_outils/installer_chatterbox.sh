@@ -13,8 +13,10 @@ log() { printf '\n== %s\n' "$*"; }
 log "Environnement Python dédié"
 command -v uv >/dev/null || python3 -m pip install -q --user uv
 [ -x "$VENV/bin/python" ] || uv venv -q --python 3.12 "$VENV" || uv venv -q "$VENV"
-uv pip install -q --python "$VENV/bin/python" chatterbox-tts soundfile
-"$VENV/bin/python" -c "import torch, chatterbox; from chatterbox.mtl_tts import ChatterboxMultilingualTTS; print('chatterbox', 'torch', torch.__version__, ': OK')"
+# setuptools < 81 : le filigrane PerTh importe pkg_resources, retiré des versions récentes de setuptools
+# (sans lui : « TypeError: 'NoneType' object is not callable » au chargement du modèle)
+uv pip install -q --python "$VENV/bin/python" chatterbox-tts soundfile "setuptools<81"
+"$VENV/bin/python" -W ignore -c "import torch, perth; from chatterbox.mtl_tts import ChatterboxMultilingualTTS; assert perth.PerthImplicitWatermarker; print('chatterbox', 'torch', torch.__version__, ': OK')"
 
 for rc in "${HOME}/.bashrc" "${HOME}/.profile"; do
   grep -q 'CHATTERBOX_PYTHON=' "$rc" 2>/dev/null || echo "export CHATTERBOX_PYTHON=\"$VENV/bin/python\"" >> "$rc"
