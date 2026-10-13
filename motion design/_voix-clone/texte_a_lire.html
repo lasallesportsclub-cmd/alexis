@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Texte à lire · voix LA SALLE</title>
+<style>
+  @font-face { font-family: "Barlow Condensed"; font-weight: 800; src: url("../_sources-premium/fonts/barlow-condensed-latin-800-normal.woff2") format("woff2"); }
+  @font-face { font-family: "Barlow Condensed"; font-weight: 800; font-style: italic; src: url("../_sources-premium/fonts/barlow-condensed-latin-800-italic.woff2") format("woff2"); }
+  @font-face { font-family: "DM Sans"; font-weight: 400; src: url("../_sources-premium/fonts/dm-sans-latin-400-normal.woff2") format("woff2"); }
+  @font-face { font-family: "DM Sans"; font-weight: 500; src: url("../_sources-premium/fonts/dm-sans-latin-500-normal.woff2") format("woff2"); }
+  @font-face { font-family: "DM Sans"; font-weight: 700; src: url("../_sources-premium/fonts/dm-sans-latin-700-normal.woff2") format("woff2"); }
+
+  @page { size: A4; margin: 16mm 18mm 16mm 18mm; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "DM Sans", sans-serif; color: #111; background: #fff; font-size: 11pt; line-height: 1.4; }
+  h1, h2, .tag { font-family: "Barlow Condensed", sans-serif; font-weight: 800; text-transform: uppercase; letter-spacing: .02em; }
+  h1 { font-size: 34pt; line-height: 1; }
+  .gold { color: #8a7350; }
+  .sub { font-size: 11pt; color: #555; margin: 6pt 0 12pt; }
+  .page { break-after: page; }
+  .page:last-child { break-after: auto; }
+
+  /* Page de consignes */
+  .box { border: 1.5pt solid #111; padding: 8pt 10pt; margin-bottom: 9pt; break-inside: avoid; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 9pt; }
+  .box h2 { font-size: 15pt; margin-bottom: 4pt; }
+  .check { list-style: none; }
+  .check li { padding-left: 20pt; position: relative; margin: 3pt 0; }
+  .check li::before { content: ""; position: absolute; left: 0; top: 2pt; width: 11pt; height: 11pt; border: 1.3pt solid #111; }
+  .warn { background: #f2efe9; border-color: #8a7350; }
+  table.pron { width: 100%; border-collapse: collapse; font-size: 12pt; }
+  table.pron td { padding: 3pt 6pt; border-bottom: .8pt solid #ccc; }
+  table.pron td:first-child { font-weight: 700; width: 45%; }
+
+  /* Pages de lecture */
+  .head { display: flex; justify-content: space-between; align-items: flex-end; border-bottom: 3pt solid #111; padding-bottom: 6pt; margin-bottom: 8pt; }
+  .head h2 { font-size: 26pt; line-height: 1; }
+  .takes { font-size: 11pt; white-space: nowrap; }
+  .takes span { display: inline-block; width: 11pt; height: 11pt; border: 1.3pt solid #111; margin: 0 3pt -1pt 8pt; }
+  .tone { font-size: 12pt; margin-bottom: 4pt; }
+  .tone b { font-family: "Barlow Condensed", sans-serif; font-style: italic; font-weight: 800; text-transform: uppercase; font-size: 13pt; letter-spacing: .03em; }
+  .silence { font-size: 11pt; color: #666; font-style: italic; margin: 8pt 0 10pt; }
+  .read { font-size: 20pt; font-weight: 500; line-height: 1.5; }
+  .read p { margin: 0 0 10pt; break-inside: avoid; }
+  .read.dense { font-size: 18pt; }
+  .read.dense p { margin-bottom: 8pt; }
+  .read p::before { content: "▸ "; color: #8a7350; font-size: 14pt; }
+  .read.prose p::before { content: ""; }
+  .hint { font-size: 12pt; color: #6b5a3e; font-style: italic; font-weight: 400; white-space: nowrap; }
+  .foot { font-size: 10pt; color: #777; margin-top: 10pt; border-top: .8pt solid #ccc; padding-top: 5pt; }
+</style>
+</head>
+<body>
+
+<section class="page">
+  <h1>Enregistrer la voix <span class="gold">+</span> LA SALLE</h1>
+  <p class="sub">Feuille à imprimer et à poser devant vous. Lecture : environ 2 min 40, en 4 fichiers. Ce texte sert seulement à capter la voix : il n'est jamais diffusé.</p>
+
+  <div class="box warn">
+    <h2>Avant tout</h2>
+    <ul class="check">
+      <li>L'autorisation de clonage de la voix est signée (<i>Autorisation_clone_voix</i>).</li>
+    </ul>
+  </div>
+
+  <div class="grid">
+  <div class="box">
+    <h2>1 · Le téléphone</h2>
+    <ul class="check">
+      <li>Mode avion activé (aucune notification pendant l'enregistrement).</li>
+      <li><b>iPhone</b> : app <b>Dictaphone</b>. Dans Réglages › Apps › Dictaphone › Qualité audio, choisir <b>Sans perte</b>.</li>
+      <li><b>Android</b> : app <b>Enregistreur</b> (Google) ou <b>Enregistreur vocal</b> (Samsung), qualité la plus haute.</li>
+      <li>Batterie et espace de stockage suffisants.</li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <h2>2 · La pièce et la position</h2>
+    <ul class="check">
+      <li>Pièce calme et « molle » : rideaux, canapé, placard de vêtements. Jamais la salle de sport.</li>
+      <li>Portes et fenêtres fermées ; clim, ventilateur, radio et télé coupés.</li>
+      <li>Téléphone posé (pile de livres) à <b>20 cm de la bouche</b>, micro vers vous, un peu de côté.</li>
+      <li>Pas de bracelet, pas de clés, on ne tape pas sur la table.</li>
+      <li>Un verre d'eau bu ; le texte lu une fois à voix haute, sans enregistrer.</li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <h2>3 · Pendant</h2>
+    <ul class="check">
+      <li>Un fichier par partie : <b>1_pub</b>, <b>2_pose</b>, <b>3_questions</b>, <b>4_phrases</b>.</li>
+      <li>Au début de chaque fichier : <b>3 secondes de silence</b>, puis on lit.</li>
+      <li>Une erreur ? On ne coupe pas : petite pause, puis on redit toute la phrase.</li>
+      <li>Votre voix de tous les jours, naturelle. On n'imite pas un speaker.</li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <h2>4 · Après</h2>
+    <ul class="check">
+      <li>Réécoute au casque : ni écho, ni bruit de fond, ni son qui sature.</li>
+      <li>Les 4 fichiers déposés sur le Drive, dossier <b>LA SALLE / Voix off / clone</b>, sans partager le lien. Pas sur GitHub.</li>
+    </ul>
+  </div>
+  </div>
+
+  <div class="box">
+    <h2>Prononciation</h2>
+    <table class="pron">
+      <tr><td>trois D</td><td>« trois dé »</td></tr>
+      <tr><td>L-carnitine</td><td>« elle-carnitine »</td></tr>
+      <tr><td>LA SALLE</td><td>« la salle », bien détaché</td></tr>
+      <tr><td>Conflans-Sainte-Honorine</td><td>« con-flan sainte-o-no-rine »</td></tr>
+    </table>
+  </div>
+</section>
+
+<section class="page">
+  <div class="head"><h2>Partie 1 · Ton pub</h2><div class="takes">Fichier <b>1_pub</b> · prise<span></span>1<span></span>2<span></span>3</div></div>
+  <p class="tone"><b>Énergique et souriant</b>, comme une pub radio. Débit plutôt rapide. ≈ 45 s.</p>
+  <p class="silence">(3 secondes de silence)</p>
+  <div class="read">
+    <p>Passez en version Premium.</p>
+    <p>Bienvenue à LA SALLE, à Conflans-Sainte-Honorine.</p>
+    <p>Votre boisson vous attend : une boisson toutes les trente minutes.</p>
+    <p>Une analyse en trois D <span class="hint">(trois dé)</span>, chaque semaine.</p>
+    <p>Activez-la à l'accueil, en quelques secondes.</p>
+    <p>Nouvelle saison, nouvelle énergie : on vous attend.</p>
+    <p>Musculation, cardio, coaching : tout est là pour progresser.</p>
+    <p>Deux euros par semaine, toutes taxes comprises, en plus de votre abonnement.</p>
+    <p>Ne remettez pas à demain : c'est maintenant que ça commence.</p>
+    <p>LA SALLE, Urban Valley. On se voit à l'entraînement !</p>
+  </div>
+</section>
+
+<section class="page">
+  <div class="head"><h2>Partie 2 · Ton posé</h2><div class="takes">Fichier <b>2_pose</b> · prise<span></span>1<span></span>2<span></span>3</div></div>
+  <p class="tone"><b>Calme et chaleureux</b>, comme si vous expliquiez à un adhérent à l'accueil. ≈ 40 s.</p>
+  <p class="silence">(3 secondes de silence)</p>
+  <div class="read prose">
+    <p>Quand on reprend le sport, le plus difficile, c'est souvent de pousser la porte.</p>
+    <p>Ici, l'équipe prend le temps de vous accueillir, de comprendre ce que vous cherchez et de vous montrer les machines.</p>
+    <p>Vous avancez à votre rythme, semaine après semaine, et vous voyez vos progrès.</p>
+    <p>Il n'y a pas de bonne ou de mauvaise façon de commencer : il y a juste le premier jour.</p>
+    <p>Alors, si vous avez une question, passez nous voir. On est là pour ça.</p>
+  </div>
+</section>
+
+<section class="page">
+  <div class="head"><h2>Partie 3 · Questions</h2><div class="takes">Fichier <b>3_questions</b> · prise<span></span>1<span></span>2<span></span>3</div></div>
+  <p class="tone"><b>Vivant</b> : la voix monte sur les questions, elle claque sur les exclamations. ≈ 25 s.</p>
+  <p class="silence">(3 secondes de silence)</p>
+  <div class="read">
+    <p>Vous avez déjà essayé la fontaine ?</p>
+    <p>Et si c'était le bon moment ?</p>
+    <p>Vous cherchez une salle près de chez vous ?</p>
+    <p>C'est parti !</p>
+    <p>Prêts ? On y va !</p>
+    <p>Vous hésitez encore ? Venez voir par vous-même.</p>
+    <p>Bravo, vous l'avez fait !</p>
+  </div>
+</section>
+
+<section class="page">
+  <div class="head"><h2>Partie 4 · Chiffres</h2><div class="takes">Fichier <b>4_phrases</b> · prise<span></span>1<span></span>2<span></span>3</div></div>
+  <p class="tone"><b>Naturel et articulé</b>, sans forcer. ≈ 50 s.</p>
+  <p class="silence">(3 secondes de silence)</p>
+  <div class="read dense">
+    <p>Un, deux, trois, quatre, cinq, six, sept, huit, neuf, dix.</p>
+    <p>Onze, quinze, vingt, trente, quarante, cinquante, soixante-dix, quatre-vingt-dix, cent, mille.</p>
+    <p>Lundi, mercredi et vendredi, à dix-huit heures trente.</p>
+    <p>Le premier janvier, le quatorze juillet, le trente et un décembre.</p>
+    <p>Collagène, multivitamines, L-carnitine <span class="hint">(elle-carnitine)</span>, booster, ou simplement de l'eau.</p>
+    <p>Le chat de Gilles joue avec un vieux jouet jaune près du fauteuil.</p>
+    <p>Une brise fraîche souffle sur la Seine, entre Conflans et Andrésy.</p>
+    <p>Zoé et Hugo choisissent un yaourt, un kiwi et des noix.</p>
+    <p>Chaque effort compte, chaque séance aussi.</p>
+    <p>Huit euros toutes les quatre semaines.</p>
+  </div>
+  <p class="foot">C'est terminé. Réécoutez au casque, puis déposez les 4 fichiers sur le Drive : LA SALLE / Voix off / clone.</p>
+</section>
+
+</body>
+</html>
