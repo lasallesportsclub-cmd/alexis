@@ -1,0 +1,30 @@
+{
+  "_doc": "Feuille de repères de la pub « Vos questions » (15 s, 120 BPM, temps = 0,5 s). Source unique des instants : la musique (tools/musique.py) et le storyboard s'y calent. Secondes depuis le début.",
+  "bpm": 120,
+  "duree": 15.0,
+  "cassure": [8.0, 8.5],
+  "evenements": [
+    { "t": 0.0, "type": "question", "frame": 1, "texte": "Vous ouvrez à quelle heure ?" },
+    { "t": 0.5, "type": "saisie", "frame": 1 },
+    { "t": 1.0, "type": "reponse", "frame": 1, "texte": "6H – 23H" },
+    { "t": 1.5, "type": "precision", "frame": 1, "texte": "7J/7" },
+    { "t": 2.5, "type": "question", "frame": 2, "texte": "C'est grand ?" },
+    { "t": 3.0, "type": "saisie", "frame": 2 },
+    { "t": 3.5, "type": "reponse", "frame": 2, "texte": "1 200 m²" },
+    { "t": 4.0, "type": "precision", "frame": 2, "texte": "MUSCULATION · CARDIO" },
+    { "t": 5.0, "type": "question", "frame": 3, "texte": "Je suis exigeante… c'est propre ?" },
+    { "t": 5.5, "type": "saisie", "frame": 3 },
+    { "t": 6.0, "type": "avis", "frame": 3, "texte": "Super salle super propre" },
+    { "t": 7.5, "type": "question", "frame": 4, "texte": "Et l'accueil ?" },
+    { "t": 8.0, "type": "saisie-cassure", "frame": 4 },
+    { "t": 8.5, "type": "avis", "frame": 4, "texte": "Accueil chaleureux.", "drop": true },
+    { "t": 10.0, "type": "question", "frame": 5, "texte": "Je peux passer voir ?" },
+    { "t": 10.5, "type": "saisie", "frame": 5 },
+    { "t": 11.0, "type": "reponse-courte", "frame": 5, "texte": "Avec plaisir. On vous attend !" },
+    { "t": 11.5, "type": "volet", "frame": 5 },
+    { "t": 12.0, "type": "logo", "frame": 6 },
+    { "t": 13.0, "type": "cta", "frame": 6, "texte": "UNE QUESTION ? ÉCRIVEZ-NOUS." },
+    { "t": 13.25, "type": "infos", "frame": 6 },
+    { "t": 14.0, "type": "final", "frame": 6 }
+  ]
+}

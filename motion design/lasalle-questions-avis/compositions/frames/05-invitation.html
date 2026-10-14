@@ -1,0 +1,120 @@
+<template>
+  <style>
+@font-face{font-family:"Barlow Condensed";font-weight:700;font-style:italic;font-display:block;src:url("assets/fonts/BarlowCondensed-700-Italic.woff2") format("woff2");}
+@font-face{font-family:"Barlow Condensed";font-weight:700;font-style:normal;font-display:block;src:url("assets/fonts/BarlowCondensed-700.woff2") format("woff2");}
+@font-face{font-family:"Barlow Condensed";font-weight:800;font-style:italic;font-display:block;src:url("assets/fonts/BarlowCondensed-800-Italic.woff2") format("woff2");}
+@font-face{font-family:"Barlow Condensed";font-weight:800;font-style:normal;font-display:block;src:url("assets/fonts/BarlowCondensed-800.woff2") format("woff2");}
+@font-face{font-family:"Barlow Condensed";font-weight:900;font-style:italic;font-display:block;src:url("assets/fonts/BarlowCondensed-900-Italic.woff2") format("woff2");}
+@font-face{font-family:"Barlow Condensed";font-weight:900;font-style:normal;font-display:block;src:url("assets/fonts/BarlowCondensed-900.woff2") format("woff2");}
+@font-face{font-family:"DM Sans";font-weight:400;font-style:normal;font-display:block;src:url("assets/fonts/DMSans-400.woff2") format("woff2");}
+@font-face{font-family:"DM Sans";font-weight:500;font-style:normal;font-display:block;src:url("assets/fonts/DMSans-500.woff2") format("woff2");}
+@font-face{font-family:"DM Sans";font-weight:700;font-style:normal;font-display:block;src:url("assets/fonts/DMSans-700.woff2") format("woff2");}
+
+#root{position:absolute;left:0;top:0;width:1080px;height:1920px;overflow:hidden}
+.clip{position:absolute;left:0;top:0;width:1080px;height:1920px}
+.lsq-fond{position:absolute;left:0;top:0;width:1080px;height:1920px;overflow:hidden;background:#0D0D0D}
+.lsq-fond img{position:absolute;left:-135px;top:-240px;width:1350px;height:2400px;object-fit:cover}
+.lsq-voile{position:absolute;inset:0;background:rgba(13,13,13,0.42)}
+.lsq-q{position:absolute;left:108px;top:520px;max-width:780px;padding:30px 64px 32px 36px;background:#F4F1EC;color:#0D0D0D;
+  font:500 50px/1.18 "DM Sans";clip-path:polygon(0 0,100% 0,calc(100% - var(--coupe,49px)) 100%,0 100%)}
+.lsq-r{position:absolute;right:108px;top:700px;padding:34px 44px 38px 96px;background:#222222;color:#F4F1EC;text-align:right;
+  font:900 150px/0.88 "Barlow Condensed";text-transform:uppercase;letter-spacing:-0.01em;font-variant-numeric:tabular-nums;
+  clip-path:polygon(var(--coupe,92px) 0,100% 0,100% 100%,0 100%)}
+.lsq-r .lsq-precision{display:block;margin-top:18px;font:italic 800 56px/1 "Barlow Condensed";letter-spacing:0.05em;color:#B8A07E}
+.lsq-filet{position:absolute;top:0;bottom:0;left:0;width:6px;background:#B8A07E;transform-origin:50% 100%}
+.lsq-saisie{position:absolute;right:108px;top:700px;width:190px;height:96px;background:#222222;
+  clip-path:polygon(40px 0,100% 0,100% 100%,0 100%)}
+.lsq-saisie i{position:absolute;top:42px;width:30px;height:12px;background:rgba(244,241,236,0.62);
+  clip-path:polygon(5px 0,100% 0,calc(100% - 5px) 100%,0 100%)}
+.lsq-avis{position:absolute;left:108px;top:700px;width:864px;padding:40px 52px 50px 52px;box-sizing:border-box;background:#0D0D0D;
+  border:2px solid rgba(244,241,236,0.18);clip-path:polygon(0 0,calc(100% - 48px) 0,100% 114px,100% 100%,0 100%)}
+.lsq-avis .lsq-haut{display:flex;align-items:center;justify-content:space-between;margin-bottom:30px}
+.lsq-avis .lsq-etoiles{display:flex;gap:12px}
+.lsq-avis .lsq-etoiles svg{width:50px;height:50px}
+.lsq-avis .lsq-source{font:italic 800 38px/1 "Barlow Condensed";letter-spacing:0.05em;color:rgba(244,241,236,0.62);text-transform:uppercase}
+.lsq-avis .lsq-texte{font:500 66px/1.12 "DM Sans";color:#F4F1EC}
+.lsq-avis .lsq-guillemet{color:#B8A07E;font-weight:700}
+
+.lsq-q.l1{height:120px;--coupe:50px;white-space:nowrap}
+.lsq-q.l2{height:180px;--coupe:76px}
+.lsq-q,.lsq-r,.lsq-avis{box-sizing:border-box}
+.lsq-r{padding-top:36px}
+.lsq-masque{display:block;overflow:hidden}
+.lsq-entete{position:absolute;left:108px;top:300px;height:52px;display:flex;align-items:center;gap:18px}
+.lsq-entete-mono{width:76px;height:44px;background:url("assets/img/mono.png") 0 0/76px 44px no-repeat}
+.lsq-entete-nom{font:italic 800 38px/1 "Barlow Condensed";letter-spacing:0.05em;text-transform:uppercase;color:#F4F1EC;white-space:nowrap}
+
+.lsq-fond::after{content:"";position:absolute;inset:0;opacity:.7;mix-blend-mode:overlay;pointer-events:none;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='256' height='256'><filter id='n' color-interpolation-filters='sRGB'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.lsq-masque>span{display:block}
+.lsq-avis .lsq-etoiles svg path{fill:none;stroke:rgba(244,241,236,0.62);stroke-width:1.4}
+.lsq-geante{position:absolute;top:860px;width:120px;height:44px;background:rgba(244,241,236,0.62);
+  clip-path:polygon(18px 0,100% 0,calc(100% - 18px) 100%,0 100%)}
+
+.f05-invitation-bande{position:absolute;left:0;width:1700px;height:640px}
+.f05-invitation-bande-fond{position:absolute;inset:0;background:#222222;clip-path:polygon(269px 0,1700px 0,1431px 640px,0 640px)}
+.f05-invitation-bande-filet{position:absolute;inset:0;background:#B8A07E;clip-path:polygon(269px 0,275px 0,6px 640px,0 640px)}
+
+  </style>
+  <div id="root" data-composition-id="05-invitation" data-width="1080" data-height="1920" data-duration="2">
+    <div id="f05-invitation-f1" class="clip" data-start="0" data-duration="2" data-track-index="0"><div class="lsq-fond" data-layout-allow-overflow><img id="f05-invitation-f1-img" src="assets/img/fond-halteres.jpg" alt="" /><div class="lsq-voile"></div></div></div>
+    <div id="f05-invitation-ch" class="clip" data-start="0" data-duration="2" data-track-index="1"><div class="lsq-entete"><div class="lsq-entete-mono"></div><div class="lsq-entete-nom">LA SALLE · CONFLANS</div></div></div>
+    <div id="f05-invitation-cq" class="clip" data-start="0" data-duration="2" data-track-index="2"><div id="f05-invitation-q" class="lsq-q l1">Je peux passer voir ?</div></div>
+    <div id="f05-invitation-cs" class="clip" data-start="0.5" data-duration="0.5" data-track-index="3"><div id="f05-invitation-s" class="lsq-saisie" style="top:700px;transform-origin:100% 50%"><i id="f05-invitation-s-b0" style="left:42px"></i><i id="f05-invitation-s-b1" style="left:82px"></i><i id="f05-invitation-s-b2" style="left:122px"></i></div></div>
+    <div id="f05-invitation-cr" class="clip" data-start="1" data-duration="1" data-track-index="4"><div id="f05-invitation-r" class="lsq-r" style="top:700px;height:240px;--coupe:101px;transform-origin:100% 50%;font-size:104px;line-height:0.9"><div id="f05-invitation-r-filet" class="lsq-filet"></div>AVEC PLAISIR.<span class="lsq-precision lsq-masque"><span id="f05-invitation-p">ON VOUS ATTEND !</span></span></div></div>
+    <div id="f05-invitation-cb" class="clip" data-start="1.5" data-duration="0.5" data-track-index="6"><div id="f05-invitation-b0" class="f05-invitation-bande" style="top:0px"><div class="f05-invitation-bande-fond"></div><div class="f05-invitation-bande-filet"></div></div><div id="f05-invitation-b1" class="f05-invitation-bande" style="top:640px"><div class="f05-invitation-bande-fond"></div><div class="f05-invitation-bande-filet"></div></div><div id="f05-invitation-b2" class="f05-invitation-bande" style="top:1280px"><div class="f05-invitation-bande-fond"></div><div class="f05-invitation-bande-filet"></div></div></div>
+  </div>
+  <script src="assets/vendor/gsap.min.js"></script>
+  <script>
+  (function () {
+  const ID = "05-invitation";
+  const tl = gsap.timeline({ paused: true });
+
+  const R = (id) => document.getElementById("f" + ID + "-" + id);
+  const OR = "#B8A07E", GRIS = "rgba(244,241,236,0.62)";
+  // zoom avant lent d'une photo de fond sur toute sa fenêtre
+  const zoom = (id, t, d, de = 1.0, a = 1.06) =>
+    tl.fromTo(R(id), { scale: de }, { scale: a, duration: d, ease: "none" }, t);
+  // bulle de la cliente : monte de 40 px, échelle 0,92 → 1
+  const question = (t) => tl.fromTo(R("q"), { y: 40, scale: 0.92 }, { y: 0, scale: 1, duration: 0.18, ease: "power3.out" }, t);
+  // indicateur de saisie : la bulle s'ouvre, puis 3 barres s'allument en or en doubles croches
+  const saisie = (t, prefixe = "s") => {
+    if (R(prefixe)) tl.fromTo(R(prefixe), { scale: 0.6 }, { scale: 1, duration: 0.1, ease: "power3.out" }, t);
+    [0, 1, 2].forEach((k) => {
+      const b = R(prefixe + "-b" + k);
+      tl.fromTo(b, { backgroundColor: GRIS, y: 0 }, { backgroundColor: OR, y: -8, duration: 0.05, ease: "power2.out" }, t + k * 0.125);
+      tl.to(b, { y: 0, duration: 0.08, ease: "power2.in" }, t + k * 0.125 + 0.06);
+    });
+  };
+  // réponse de LA SALLE : frappe d'échelle, le filet or se trace de bas en haut
+  const reponse = (t) => {
+    tl.fromTo(R("r"), { scale: 1.22 }, { scale: 1, duration: 0.22, ease: "power4.out" }, t);
+    gsap.set(R("r-filet"), { skewX: -22.78, transformOrigin: "0% 100%" });
+    tl.fromTo(R("r-filet"), { scaleY: 0 }, { scaleY: 1, duration: 0.2, ease: "power3.out" }, t);
+  };
+  // précision : glisse depuis le bas dans son masque
+  const precision = (t) => tl.fromTo(R("p"), { yPercent: 110 }, { yPercent: 0, duration: 0.2, ease: "power3.out" }, t);
+  // carte d'avis : frappe, puis les 5 étoiles s'allument une par une en doubles croches
+  const avis = (t) => {
+    tl.fromTo(R("a"), { scale: 1.1, y: 30 }, { scale: 1, y: 0, duration: 0.22, ease: "power4.out" }, t);
+    [0, 1, 2, 3, 4].forEach((k) => {
+      const e = R("e" + k);
+      tl.fromTo(e.querySelector("path"), { fill: "rgba(0,0,0,0)", stroke: GRIS }, { fill: OR, stroke: OR, duration: 0.03, ease: "none" }, t + k * 0.125);
+      tl.fromTo(e, { scale: 1.5 }, { scale: 1, duration: 0.15, ease: "power3.out" }, t + k * 0.125);
+    });
+  };
+
+
+  zoom("f1-img", 0, 2.0, 1.0, 1.05);
+  question(0);
+  saisie(0.5);
+  reponse(1.0);
+  precision(1.25);
+  // volet : les bandes entrent par la droite et s'arrêtent (vitesse nulle) en couvrant tout le cadre à 2,0 s
+  [0, 1, 2].forEach((k) => tl.fromTo(R("b" + k), { x: 1180 }, { x: -300, duration: 0.375, ease: "power2.out" }, 1.5 + k * 0.0625));
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines[ID] = tl;
+  })();
+  </script>
+</template>
