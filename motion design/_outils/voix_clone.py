@@ -9,6 +9,7 @@ Réglages utiles :
     --exageration 0.5   expressivité (0.3 posé · 0.5 naturel · 0.7 pub énergique)
     --cfg 0.5           fidélité au rythme de la référence (baisser à 0.3 si le débit est trop lent)
     --graine 7          même graine = même rendu, pour pouvoir refaire une réplique à l'identique
+    --brut              sans la finition (finition_voix.py : débris de fin, pauses > 0,45 s, fondus)
 La référence : 10 à 20 s de voix propre, sans musique ni écho, dans le ton voulu (extrait des enregistrements du Drive).
 Seules les voix dont la personne a signé l'autorisation de clonage peuvent servir de référence.
 """
@@ -19,6 +20,9 @@ import sys
 import soundfile as sf
 import torch
 from chatterbox.mtl_tts import ChatterboxMultilingualTTS
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from finition_voix import finir  # noqa: E402
 
 
 def main():
@@ -32,6 +36,7 @@ def main():
     ap.add_argument("--exageration", type=float, default=0.5)
     ap.add_argument("--cfg", type=float, default=0.5)
     ap.add_argument("--graine", type=int, default=7)
+    ap.add_argument("--brut", action="store_true")
     a = ap.parse_args()
     if not a.texte and not a.lot:
         ap.error("--texte ou --lot est requis")
@@ -52,8 +57,10 @@ def main():
         torch.manual_seed(a.graine)
         wav = model.generate(texte, language_id=a.langue, audio_prompt_path=a.ref,
                              exaggeration=a.exageration, cfg_weight=a.cfg)
-        sf.write(sortie, wav.squeeze(0).cpu().numpy(), model.sr)
-        print(f"{sortie} : {wav.shape[-1] / model.sr:.2f} s · « {texte} »", flush=True)
+        y = wav.squeeze(0).cpu().numpy()
+        y = y if a.brut else finir(y, model.sr)
+        sf.write(sortie, y, model.sr, subtype="PCM_16")
+        print(f"{sortie} : {len(y) / model.sr:.2f} s · « {texte} »", flush=True)
 
 
 if __name__ == "__main__":
