@@ -5,3 +5,6 @@ snapshots/
 node_modules/
 *.tmp.*
 __pycache__/
+# Voix (prises réelles et clonées) : jamais dans ce dépôt public, voir _sources-premium/tools/voix.py
+premium-916/*/assets/voix/
+premium-45/*/assets/voix/

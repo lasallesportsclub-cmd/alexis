@@ -75,8 +75,8 @@
 
         #root { position: absolute; inset: 0; }
       </style>
-      <div id="root" data-composition-id="s03" data-width="1080" data-height="1920" data-duration="1.406">
-        <div id="s03-fond" class="fr clip" data-start="0" data-duration="1.406" data-track-index="0">
+      <div id="root" data-composition-id="s03" data-width="1080" data-height="1920" data-duration="1.270">
+        <div id="s03-fond" class="fr clip" data-start="0" data-duration="1.270" data-track-index="0">
 <div class="a bande " style="left:72px;top:460px;width:936px;height:530px;--d:222.6px"></div><div class="a filet " style="left:72px;top:460px;width:936px;height:530px;--d:222.6px"></div><div class="a label" style="left:108px;top:498px;"><span class="gold">01</span>  FONTAINE À BOISSON SPORTIVE</div><div id="b3-l1" class="mask" style="left:108px;top:600px"><div id="b3-l1-t" class="h1" style="">OU SIMPLEMENT</div></div><div id="b3-l2" class="mask" style="left:108px;top:701px"><div id="b3-l2-t" class="disp" style="">DE L'EAU.</div></div><div class="a" style="left:108px;top:888px;width:560px;height:52px;overflow:hidden"><div class="label muted" style="position:absolute;left:0;top:0">SAVEUR ·</div><div id="b3-s0" class="label" style="position:absolute;left:180px;top:0;color:var(--text)">PASSION</div><div id="b3-s1" class="label" style="position:absolute;left:180px;top:0;color:var(--text)">PASTÈQUE</div><div id="b3-s2" class="label" style="position:absolute;left:180px;top:0;color:var(--text)">ICE TEA</div><div id="b3-s3" class="label" style="position:absolute;left:180px;top:0;color:var(--text)">ANANAS</div><div id="b3-s4" class="label" style="position:absolute;left:180px;top:0;color:var(--text)">MULTIFRUIT</div></div>
         </div>
       </div>
@@ -93,16 +93,16 @@
       const drop = (s, t, d = 0.2) => tl.fromTo(s, { clipPath: "inset(0px 0px 100% 0px)" }, { clipPath: "inset(0px 0px 0% 0px)", duration: d, ease: "power2.out" }, t);
       const shake = (s, t) => tl.to(s, { keyframes: [{ x: 7, y: -5, duration: 1 / 30 }, { x: -5, y: 4, duration: 1 / 30 }, { x: 0, y: 0, duration: 1 / 30 }], ease: "none" }, t);
 
-      fall("#b3-l1-t", 0.031); fall("#b3-l2-t", 0.201);
-      tl.fromTo("#b3-s0", { yPercent: 130 }, { yPercent: 0, duration: 0.14, ease: "power3.out" }, 0.031);
-      tl.fromTo("#b3-s0", { yPercent: 0 }, { yPercent: -130, duration: 0.14, ease: "power3.in", immediateRender: false }, 0.301);
-      tl.fromTo("#b3-s1", { yPercent: 130 }, { yPercent: 0, duration: 0.14, ease: "power3.out" }, 0.311);
-      tl.fromTo("#b3-s1", { yPercent: 0 }, { yPercent: -130, duration: 0.14, ease: "power3.in", immediateRender: false }, 0.581);
-      tl.fromTo("#b3-s2", { yPercent: 130 }, { yPercent: 0, duration: 0.14, ease: "power3.out" }, 0.591);
-      tl.fromTo("#b3-s2", { yPercent: 0 }, { yPercent: -130, duration: 0.14, ease: "power3.in", immediateRender: false }, 0.861);
-      tl.fromTo("#b3-s3", { yPercent: 130 }, { yPercent: 0, duration: 0.14, ease: "power3.out" }, 0.871);
-      tl.fromTo("#b3-s3", { yPercent: 0 }, { yPercent: -130, duration: 0.14, ease: "power3.in", immediateRender: false }, 1.141);
-      tl.fromTo("#b3-s4", { yPercent: 130 }, { yPercent: 0, duration: 0.14, ease: "power3.out" }, 1.151);
+      fall("#b3-l1-t", 0.020); fall("#b3-l2-t", 0.804);
+      tl.fromTo("#b3-s0", { yPercent: 130 }, { yPercent: 0, duration: 0.14, ease: "power3.out" }, 0.030);
+      tl.fromTo("#b3-s0", { yPercent: 0 }, { yPercent: -130, duration: 0.14, ease: "power3.in", immediateRender: false }, 0.255);
+      tl.fromTo("#b3-s1", { yPercent: 130 }, { yPercent: 0, duration: 0.14, ease: "power3.out" }, 0.265);
+      tl.fromTo("#b3-s1", { yPercent: 0 }, { yPercent: -130, duration: 0.14, ease: "power3.in", immediateRender: false }, 0.490);
+      tl.fromTo("#b3-s2", { yPercent: 130 }, { yPercent: 0, duration: 0.14, ease: "power3.out" }, 0.500);
+      tl.fromTo("#b3-s2", { yPercent: 0 }, { yPercent: -130, duration: 0.14, ease: "power3.in", immediateRender: false }, 0.725);
+      tl.fromTo("#b3-s3", { yPercent: 130 }, { yPercent: 0, duration: 0.14, ease: "power3.out" }, 0.735);
+      tl.fromTo("#b3-s3", { yPercent: 0 }, { yPercent: -130, duration: 0.14, ease: "power3.in", immediateRender: false }, 0.960);
+      tl.fromTo("#b3-s4", { yPercent: 130 }, { yPercent: 0, duration: 0.14, ease: "power3.out" }, 0.970);
       window.__timelines["s03"] = tl;
       </script>
     </template>

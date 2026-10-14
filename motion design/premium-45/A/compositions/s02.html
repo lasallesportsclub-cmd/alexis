@@ -106,13 +106,13 @@
       // Horloge : cercle tracé, puis demi-tour or pendant « 30 MINUTES »
       show("#a2-clock", 0.62);
       tl.fromTo("#a2-clock-c", { strokeDashoffset: 578.1 }, { strokeDashoffset: 0, duration: 0.35, ease: "power2.out" }, 0.62);
-      tl.fromTo("#a2-clock-a", { strokeDashoffset: 289.0 }, { strokeDashoffset: 0, duration: 0.9, ease: "none" }, 1.175);
-      tl.fromTo("#a2-clock-n", { rotation: 0, svgOrigin: "112.0 112.0" }, { rotation: 180, svgOrigin: "112.0 112.0", duration: 0.9, ease: "none" }, 1.175);
+      tl.fromTo("#a2-clock-a", { strokeDashoffset: 289.0 }, { strokeDashoffset: 0, duration: 0.9, ease: "none" }, 0.965);
+      tl.fromTo("#a2-clock-n", { rotation: 0, svgOrigin: "112.0 112.0" }, { rotation: 180, svgOrigin: "112.0 112.0", duration: 0.9, ease: "none" }, 0.965);
       // P5 : « UNE BOISSON » puis « TOUTES LES 30 MINUTES. »
-      fall("#a2-g1-t", 0.485);
-      hide("#a2-g1", 1.175);
-      fall("#a2-g2a-t", 1.175);
-      fall("#a2-g2b-t", 1.255);
+      fall("#a2-g1-t", 0.455);
+      hide("#a2-g1", 0.965);
+      fall("#a2-g2a-t", 0.965);
+      fall("#a2-g2b-t", 1.045);
       window.__timelines["s02"] = tl;
       </script>
     </template>

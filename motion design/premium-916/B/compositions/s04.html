@@ -75,8 +75,8 @@
 
         #root { position: absolute; inset: 0; }
       </style>
-      <div id="root" data-composition-id="s04" data-width="1080" data-height="1920" data-duration="1.875">
-        <div id="s04-fond" class="fr clip" data-start="0" data-duration="1.875" data-track-index="0">
+      <div id="root" data-composition-id="s04" data-width="1080" data-height="1920" data-duration="1.490">
+        <div id="s04-fond" class="fr clip" data-start="0" data-duration="1.490" data-track-index="0">
 <div class="a bande " style="left:72px;top:460px;width:936px;height:400px;--d:168.0px"></div><div class="a filet " style="left:72px;top:460px;width:936px;height:400px;--d:168.0px"></div><div class="a label" style="left:108px;top:498px;"><span class="gold">01</span>  FONTAINE À BOISSON SPORTIVE</div><svg id="b4-clock" class="a" style="left:690px;top:540px;width:200px;height:200px" viewBox="0 0 200 200"><circle id="b4-clock-c" cx="100.0" cy="100.0" r="80" fill="none" stroke="rgba(244,241,236,0.18)" stroke-width="4" stroke-dasharray="502.7" transform="rotate(-90 100.0 100.0)"/><path id="b4-clock-a" d="M 100.0 20.0 A 80 80 0 0 1 100.0 180.0" fill="none" stroke="#B8A07E" stroke-width="13" stroke-dasharray="251.3"/><g id="b4-clock-n"><line x1="100.0" y1="100.0" x2="100.0" y2="42" stroke="#B8A07E" stroke-width="8"/></g><circle cx="100.0" cy="100.0" r="10" fill="#B8A07E"/></svg><div id="b4-g1" class="mask" style="left:108px;top:690px"><div id="b4-g1-t" class="disp" style="font-size:132px">UNE BOISSON</div></div><div id="b4-g2a" class="mask" style="left:108px;top:620px"><div id="b4-g2a-t" class="h1" style="">TOUTES LES</div></div><div id="b4-g2b" class="mask" style="left:108px;top:721px"><div id="b4-g2b-t" class="disp" style="font-size:132px"><span class="gold">30 MINUTES.</span></div></div><div id="b4-b02" class="layer"><div class="a bande " style="left:72px;top:880px;width:936px;height:64px;--d:26.9px"><div class="label" style="font-size:36px;"><span class="gold">02</span>  ANALYSE 3D <span class="muted">· 1 PAR SEMAINE</span></div></div></div><div id="b4-b03" class="layer"><div class="a bande " style="left:72px;top:954px;width:936px;height:64px;--d:26.9px"><div class="label" style="font-size:36px;"><span class="gold">03</span>  SALLE DE POSING <span class="muted">· BIENTÔT</span></div></div></div>
         </div>
       </div>
@@ -95,13 +95,13 @@
 
 
       tl.fromTo("#b4-clock-c", { strokeDashoffset: 502.7 }, { strokeDashoffset: 0, duration: 0.3, ease: "power2.out" }, 0.02);
-      tl.fromTo("#b4-clock-a", { strokeDashoffset: 251.3 }, { strokeDashoffset: 0, duration: 0.9, ease: "none" }, 0.675);
-      tl.fromTo("#b4-clock-n", { rotation: 0, svgOrigin: "100.0 100.0" }, { rotation: 180, svgOrigin: "100.0 100.0", duration: 0.9, ease: "none" }, 0.675);
-      fall("#b4-g1-t", 0.025);
-      hide("#b4-g1", 0.675);
-      fall("#b4-g2a-t", 0.675); fall("#b4-g2b-t", 0.755);
-      tl.fromTo("#b4-b02", { x: -1120 }, { x: 0, duration: 0.22, ease: "power3.out" }, 0.938);
-      tl.fromTo("#b4-b03", { x: -1120 }, { x: 0, duration: 0.22, ease: "power3.out" }, 1.406);
+      tl.fromTo("#b4-clock-a", { strokeDashoffset: 251.3 }, { strokeDashoffset: 0, duration: 0.9, ease: "none" }, 0.520);
+      tl.fromTo("#b4-clock-n", { rotation: 0, svgOrigin: "100.0 100.0" }, { rotation: 180, svgOrigin: "100.0 100.0", duration: 0.9, ease: "none" }, 0.520);
+      fall("#b4-g1-t", 0.020);
+      hide("#b4-g1", 0.520);
+      fall("#b4-g2a-t", 0.520); fall("#b4-g2b-t", 0.600);
+      tl.fromTo("#b4-b02", { x: -1120 }, { x: 0, duration: 0.22, ease: "power3.out" }, 0.770);
+      tl.fromTo("#b4-b03", { x: -1120 }, { x: 0, duration: 0.22, ease: "power3.out" }, 0.920);
       window.__timelines["s04"] = tl;
       </script>
     </template>

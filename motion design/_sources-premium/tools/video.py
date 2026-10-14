@@ -2,8 +2,11 @@
 
 Toutes les bornes de temps viennent de TIMING (secondes, temps global). Elles avaient été estimées pour la voix de Nika ;
 décision du 13/10/2026 : vidéos livrées sans voix ni musique, sur ce minutage. Pour recaler : modifier ici puis relancer.
+Version voix « ton pub » (14/10/2026) : --voix recale les textes sur les répliques préparées par voix.py (POSE_VOIX) et
+ajoute les pistes voix. Les fichiers voix restent hors du dépôt (assets/voix/ ignoré par git).
 Usage : python3 video.py A [B C]          → premium-916/<concept> (1080×1920)
         python3 video.py --45 A [B C]     → premium-45/<concept>  (1080×1350)
+        python3 video.py [--45] --voix A B C
 
 4:5 (règle de frame.md, adaptée au film) : la pastille passe à y 150, les mentions à y 1015–1215, les volets ont 3 bandes
 de 450 px. Les scènes 1 à 4 (sans mentions) remontent de 60 px pour que le bloc reste centré sous la pastille (y 390–990) ;
@@ -65,6 +68,57 @@ TIMING = {
           "p5_1": 5.65, "p5_2": 6.3, "b02": 6.563, "b03": 7.031},
     "C": {"s": [0.0, 1.875, 4.688, 6.563], "volets": [1.875, 4.688], "p6_1": 2.0, "p6_2": 3.281, "etiq": 3.9},
 }
+
+# ─── Voix « ton pub » : début de parole de chaque réplique (temps global) ───
+# Les textes tombent une image (AVANCE) avant leur mot ; repères des mots dans ~/voix-clone/premium/final/voix.json.
+POSE_VOIX = {
+    "A": [("P1", 0.06), ("P5", 2.36), ("P6", 4.27)],
+    "B": [("P2", 0.06), ("P4a", 1.46), ("P4b", 4.79), ("P5r", 6.06)],   # B : coupes sèches avant « ou » et « une »
+    "C": [("P3", 0.06), ("P6", 2.0)],
+}
+POSE_FIN = [("25", 7.97), ("P9", 12.31)]
+AVANCE = 0.03
+VOIX_JSON = os.path.expanduser("~/voix-clone/premium/final/voix.json")
+SFX_VOIX = 0.72  # bruitages sous la voix (−2,9 dB ; les répliques sont à −16,4 LUFS, voir voix.py)
+
+
+def timing_voix(concept):
+    """Minutage recalé sur la voix : TIMING du concept, valeurs de COMMON, et data-start de chaque réplique."""
+    V = json.load(open(VOIX_JSON))
+    poses = POSE_VOIX[concept] + POSE_FIN
+    debut = {n: round(t - V[n]["parole"][0], 3) for n, t in poses}
+    dit = lambda n: round(dict(poses)[n] - AVANCE, 3)                      # noqa: E731
+    mot = lambda n, k: round(debut[n] + V[n]["reperes"][k] - AVANCE, 3)    # noqa: E731
+    T = json.loads(json.dumps(TIMING[concept]))
+    C = {"g25_1": dit("25"), "drop": mot("25", "semaines"), "g25_2": mot("25", "de"), "g25_3": mot("25", "sont"),
+         "p9_1": dit("P9"), "p9_2": mot("P9", "en")}
+    if concept == "A":
+        T.update(premium=mot("P1", "premium"), p5_1=dit("P5"), p5_2=mot("P5", "toutes"),
+                 p6_1=dit("P6"), p6_2=mot("P6", "chaque"))
+        T["etiq"] = round(T["p6_2"] + 0.25, 3)
+    if concept == "B":
+        s3, s4 = round(dit("P4b") - 0.02, 3), round(dit("P5r") - 0.02, 3)
+        T["s"], T["volets"] = [0.0, 1.406, s3, s4], [1.406]
+        T["p4"] = [mot("P4a", k) for k in ("collagene", "multivitamines", "carnitine", "booster")]
+        T["eau"] = [dit("P4b"), mot("P4b", "eau")]
+        pas = round((s4 - s3 - 0.33) / 4, 3)
+        T["saveurs"] = [round(s3 + 0.03 + pas * i, 3) for i in range(5)]
+        T.update(p5_1=dit("P5r"), p5_2=mot("P5r", "toutes"))
+        T["b02"] = round(T["p5_2"] + 0.25, 3)
+        T["b03"] = round(T["b02"] + 0.15, 3)
+    if concept == "C":
+        T.update(p6_1=dit("P6"), p6_2=mot("P6", "chaque"))
+        T["etiq"] = round(T["p6_2"] + 0.25, 3)
+    pistes = [(n, debut[n], V[n]["duree"]) for n, _ in poses]
+    return T, C, pistes
+
+
+def voix_audio(pistes):
+    return "\n".join(
+        f'      <audio id="voix-{n}" src="assets/voix/{n}.wav" data-audio-group="voix" data-start="{s:.3f}" '
+        f'data-duration="{d:.3f}" data-track-index="{20 + i}" data-volume="1"></audio>'
+        for i, (n, s, d) in enumerate(pistes))
+
 
 EXTRA_CSS = """
 .layer { position: absolute; inset: 0; }
@@ -499,11 +553,22 @@ def comp_fin():
     return d, inner, js
 
 
+SFX_GAIN = 1.0   # SFX_VOIX avec --voix
+SFX_COURTS = {}  # avec --voix : {fichier: (durée, fondu de sortie)}, pour que la traîne des impacts (2 s) ne couvre pas la voix
+ZONES_VOIX = []  # avec --voix : (début, fin) de chaque réplique ; un bruitage qui tombe dessus est baissé de 6 dB
+
+
 def sfx(n, src, start, vol, dur=None, media_start=None):
+    fo = ""
+    if dur is None and os.path.basename(src) in SFX_COURTS:
+        dur, f = SFX_COURTS[os.path.basename(src)]
+        fo = f' data-fade-out="{f:.2f}"'
+    if any(a < start + (dur or 0.5) and start < b for a, b in ZONES_VOIX):
+        vol *= 0.5
     ms = f' data-media-start="{media_start:.3f}"' if media_start is not None else ""
     du = f' data-duration="{dur:.3f}"' if dur is not None else ""
-    return (f'      <audio id="sfx-{n}" src="{src}" data-audio-group="sfx" data-start="{start:.3f}"{du}{ms} '
-            f'data-track-index="{30 + int(n)}" data-volume="{vol}"></audio>')
+    return (f'      <audio id="sfx-{n}" src="{src}" data-audio-group="sfx" data-start="{start:.3f}"{du}{ms}{fo} '
+            f'data-track-index="{30 + int(n)}" data-volume="{round(vol * SFX_GAIN, 3)}"></audio>')
 
 
 def sfx_list(concept, T):
@@ -530,7 +595,7 @@ def sfx_list(concept, T):
     return out
 
 
-def index_html(concept, hosts, audios):
+def index_html(concept, hosts, audios, voix=False):
     zs = "\n".join(f"      #h-{h[0]} {{ z-index: {h[4]}; }}" for h in hosts)
     fmt, res = CUR["LABEL"], CUR["RES"]
     hs = "\n".join(
@@ -552,7 +617,7 @@ def index_html(concept, hosts, audios):
     </style>
   </head>
   <body>
-    <!-- Option Premium LA SALLE · concept {concept} · {fmt} · 15 s · 128 BPM. Généré par _sources-premium/tools/video.py -->
+    <!-- Option Premium LA SALLE · concept {concept} · {fmt} · 15 s · 128 BPM{" · voix « ton pub »" if voix else ""}. Généré par _sources-premium/tools/video.py -->
     <div id="root" data-composition-id="main" data-start="0" data-duration="{END}" data-width="{W}" data-height="{H}" data-fps="30">
 {hs}
 {audios}
@@ -569,8 +634,12 @@ SCENES = {"A": [scene_A1, scene_A2, scene_A3, scene_A4], "B": [scene_B1, scene_B
           "C": [scene_C1, scene_C2, scene_C3, scene_C4]}
 
 
-def build(concept):
-    T = TIMING[concept]
+def build(concept, voix=False):
+    T, pistes = TIMING[concept], []
+    if voix:
+        T, C, pistes = timing_voix(concept)
+        COMMON.update(C)
+        ZONES_VOIX[:] = [(st, st + d) for _, st, d in pistes]
     root = os.path.join(MD, CUR["DIR"], concept)
     comp = os.path.join(root, "compositions")
     os.makedirs(comp, exist_ok=True)
@@ -584,6 +653,9 @@ def build(concept):
     d, inner, js = comp_fin()
     open(os.path.join(comp, "fin-commune.html"), "w", encoding="utf-8").write(subcomp("fin-commune", d, inner, js))
     hosts.append(("fin-commune", COMMON["fin"], d, 1, 5))
+    for f in os.listdir(comp):  # volets d'un minutage précédent (B voix n'en a qu'un)
+        if f.startswith("volet-"):
+            os.remove(os.path.join(comp, f))
     for k, t in enumerate(T["volets"]):
         d, inner, js = comp_volet(t)
         cid = f"volet-{k + 1}"
@@ -595,9 +667,10 @@ def build(concept):
     d, inner, js = comp_mentions()
     open(os.path.join(comp, "mentions.html"), "w", encoding="utf-8").write(subcomp("mentions", d, inner, js, ground=False))
     hosts.append(("mentions", COMMON["mentions"] - 0.175, d, 4, 40))
-    audios = "\n".join(sfx_list(concept, T))
-    open(os.path.join(root, "index.html"), "w", encoding="utf-8").write(index_html(concept, hosts, audios))
-    json.dump({"concept": concept, "format": f"{W}x{H}", "timing": T, "common": COMMON, "end": END},
+    audios = "\n".join(sfx_list(concept, T) + ([voix_audio(pistes)] if voix else []))
+    open(os.path.join(root, "index.html"), "w", encoding="utf-8").write(index_html(concept, hosts, audios, voix))
+    json.dump({"concept": concept, "format": f"{W}x{H}", "timing": T, "common": COMMON, "end": END,
+               "voix": [{"replique": n, "start": st, "duree": d} for n, st, d in pistes]},
               open(os.path.join(root, "timing.json"), "w"), ensure_ascii=False, indent=2)
     print("construit", root, len(hosts), "sous-compositions")
 
@@ -607,5 +680,10 @@ if __name__ == "__main__":
     if "--45" in args:
         args.remove("--45")
         set_format("45")
+    voix = "--voix" in args
+    if voix:
+        args.remove("--voix")
+        SFX_GAIN = SFX_VOIX
+        SFX_COURTS = {"sfx_002.mp3": (0.8, 0.5)}
     for c in args or ["A"]:
-        build(c)
+        build(c, voix)

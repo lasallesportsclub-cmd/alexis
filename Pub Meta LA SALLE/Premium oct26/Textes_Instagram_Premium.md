@@ -99,6 +99,8 @@ LA SALLE, Urban Valley, 4 rue Maria Sibylla Merian, 78700 Conflans-Sainte-Honori
 
 Les vidéos durent 15 s, sans voix ni musique : tout le message est écrit à l'écran, avec des bruitages. Il n'y a donc pas de sous-titres à ajouter.
 
+Versions avec voix (`videos_voix/`, fichiers `…_voix.mp4`, livrés hors GitHub) : même légende et même couverture. La voix dit ce qui est écrit à l'écran, donc pas de sous-titres non plus. Une partie de la voix est clonée par IA : activez l'étiquette « Info IA » au moment de publier (voir A_valider.md, versions avec voix, point 2).
+
 | Vidéo | Story ou reel | Post du fil | Légende |
 |---|---|---|---|
 | A · 3 en 1 | `LA_SALLE_Premium_A_story_9x16.mp4` | `LA_SALLE_Premium_A_post_4x5.mp4` | celle du post 2 (visuel clé A) |

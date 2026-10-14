@@ -96,19 +96,19 @@
 
       // Cassure : « ET EN CE MOMENT… » seul, en coupe sèche
       tl.fromTo("#fi-cas", { scale: 1.05 }, { scale: 1, duration: 0.2, ease: "power2.out" }, 0);
-      hide("#fi-cas", 0.469);
-      show("#fi-lab", 0.469);
+      hide("#fi-cas", 0.440);
+      show("#fi-lab", 0.440);
       // Réplique 25, 4 mots au plus à la fois
-      fall("#fi-g1a-t", 0.469);
-      slam("#fi-g1b", 0.938);
-      shake("#fi-stage", 0.938);
-      hide("#fi-g1a", 1.700); hide("#fi-g1b", 1.700);
-      fall("#fi-g2a-t", 1.700); fall("#fi-g2b-t", 1.760);
-      hide("#fi-g2a", 2.500); hide("#fi-g2b", 2.500);
+      fall("#fi-g1a-t", 0.440);
+      slam("#fi-g1b", 1.230);
+      shake("#fi-stage", 1.230);
+      hide("#fi-g1a", 1.550); hide("#fi-g1b", 1.550);
+      fall("#fi-g2a-t", 1.550); fall("#fi-g2b-t", 1.610);
+      hide("#fi-g2a", 2.400); hide("#fi-g2b", 2.400);
       // « OFFERTES. » et sa condition complète dans la même image
-      show("#fi-g3", 2.500);
-      tl.fromTo("#fi-off", { scale: 1.22 }, { scale: 1, duration: 0.16, ease: "power4.out" }, 2.500);
-      wipe("#fi-trait", 2.600, 0.25);
+      show("#fi-g3", 2.400);
+      tl.fromTo("#fi-off", { scale: 1.22 }, { scale: 1, duration: 0.16, ease: "power4.out" }, 2.400);
+      wipe("#fi-trait", 2.500, 0.25);
       // Volet → prix (sans voix) : le prix et ses qualificatifs dans la même image ; le « + » se trace, « 2 € » frappe
       tl.fromTo("#fv1-b0", { x: -1750 }, { x: -310, duration: 0.22, ease: "power3.in" }, 3.150);
       tl.fromTo("#fv1-b0", { x: -310 }, { x: 1150, duration: 0.22, ease: "power3.out", immediateRender: false }, 3.490);
@@ -132,9 +132,9 @@
       tl.fromTo("#fi-logo1", { x: 260 }, { x: 0, duration: 0.24, ease: "power3.out" }, 4.790);
       tl.fromTo("#fi-logo2", { x: -260 }, { x: 0, duration: 0.24, ease: "power3.out" }, 4.850);
       wipe("#fi-op", 5.090, 0.24);
-      slam("#fi-ctap", 4.800, 1.35);
-      fall("#fi-cta-t", 4.840);
-      fall("#fi-sec-t", 5.900);
+      slam("#fi-ctap", 4.780, 1.35);
+      fall("#fi-cta-t", 4.820);
+      fall("#fi-sec-t", 6.200);
       window.__timelines["fin-commune"] = tl;
       </script>
     </template>

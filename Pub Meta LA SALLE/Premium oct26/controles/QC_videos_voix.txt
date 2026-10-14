@@ -1,0 +1,107 @@
+GO technique — vidéos option Premium LA SALLE avec voix « ton pub », story 9:16 et post 4:5
+
+Fichiers hors dépôt (videos_voix/ est ignoré par git) : la voix d'une personne ne va pas sur ce dépôt public.
+Ce n'est pas un accord de diffusion : rien n'est publié sans l'accord explicite de Mehdi. L'écoute reste juge :
+ce contrôle vérifie que chaque mot attendu est prononcé, pas le ton.
+
+Voix : passe-haut 80 Hz, compression douce, présence +2 dB, −16,4 LUFS par réplique, crêtes limitées à
+−4,5 dBFS ; le rendu sort à −14 LUFS et master.py copie l'audio sans le renormaliser.
+Bruitages sous la voix : −2,9 dB en général, −6 dB de plus quand ils tombent sur une réplique, impacts
+raccourcis à 0,8 s avec fondu de 0,5 s. Pendant la parole, ils restent au moins 6 dB sous la voix.
+
+LA_SALLE_Premium_A_story_9x16_voix.mp4
+  OK présences obligatoires à l'écran
+  OK lexique interdit absent
+  OK image 1080×1920, 30/1 i/s
+  OK durée 14.933 s (cible 14,90–15,00)
+  OK vidéo h264 High yuv420p
+  OK x264 crf 18.0, maxrate 11000 kb/s, bufsize 22000 kb/s
+  OK audio aac 48000 Hz 2 canaux
+  OK sonie intégrée -14.1 LUFS (cible −14 ± 0,5)
+  OK crête vraie -2.9 dBTP (≤ −1,5)
+  OK +faststart (moov en tête)
+  OK poids 3.89 Mo (≤ 25 Mo)
+  OK voix retranscrite = texte attendu
+  Entendu (whisper) : « Passer en version premium. Une boisson toutes les 30 minutes. Une analyse en 3D chaque semaine. Les 4 premières semaines de l'option premium sont offertes. Activez-la à l'accueil en quelques secondes. »
+  Voix : P1, P6, P9 : prises réelles ; P5 et 25 : voix clonée
+
+LA_SALLE_Premium_B_story_9x16_voix.mp4
+  OK présences obligatoires à l'écran
+  OK lexique interdit absent
+  OK image 1080×1920, 30/1 i/s
+  OK durée 14.933 s (cible 14,90–15,00)
+  OK vidéo h264 High yuv420p
+  OK x264 crf 18.0, maxrate 11000 kb/s, bufsize 22000 kb/s
+  OK audio aac 48000 Hz 2 canaux
+  OK sonie intégrée -13.8 LUFS (cible −14 ± 0,5)
+  OK crête vraie -2.9 dBTP (≤ −1,5)
+  OK +faststart (moov en tête)
+  OK poids 3.55 Mo (≤ 25 Mo)
+  OK voix retranscrite = texte attendu
+  Entendu (whisper) : « Votre boisson vous attend. Collagène, multivitamine, L-carnitine, booster ou simplement de l'eau. Une boisson toutes les 30 minutes. Les 4 premières semaines de l'option premium sont offertes. Activez-la à l'accueil en quelques secondes. »
+  Voix : P2, P4, P9 : prises réelles (P4 resserrée, ×1,12) ; P5 et 25 : voix clonée
+
+LA_SALLE_Premium_C_story_9x16_voix.mp4
+  OK présences obligatoires à l'écran
+  OK lexique interdit absent
+  OK image 1080×1920, 30/1 i/s
+  OK durée 14.933 s (cible 14,90–15,00)
+  OK vidéo h264 High yuv420p
+  OK x264 crf 18.0, maxrate 11000 kb/s, bufsize 22000 kb/s
+  OK audio aac 48000 Hz 2 canaux
+  OK sonie intégrée -14.4 LUFS (cible −14 ± 0,5)
+  OK crête vraie -2.9 dBTP (≤ −1,5)
+  OK +faststart (moov en tête)
+  OK poids 4.03 Mo (≤ 25 Mo)
+  OK voix retranscrite = texte attendu
+  Entendu (whisper) : « Vos progrès en 3D. Une analyse en 3D chaque semaine. Les quatre premières semaines de l'option premium sont offertes. Activez-la à l'accueil en quelques secondes. »
+  Voix : P6, P9 : prises réelles ; P3 et 25 : voix clonée
+
+LA_SALLE_Premium_A_post_4x5_voix.mp4
+  OK présences obligatoires à l'écran
+  OK lexique interdit absent
+  OK image 1080×1350, 30/1 i/s
+  OK durée 14.933 s (cible 14,90–15,00)
+  OK vidéo h264 High yuv420p
+  OK x264 crf 18.0, maxrate 11000 kb/s, bufsize 22000 kb/s
+  OK audio aac 48000 Hz 2 canaux
+  OK sonie intégrée -14.1 LUFS (cible −14 ± 0,5)
+  OK crête vraie -2.9 dBTP (≤ −1,5)
+  OK +faststart (moov en tête)
+  OK poids 3.15 Mo (≤ 25 Mo)
+  OK voix retranscrite = texte attendu
+  Entendu (whisper) : « Passer en version premium. Une boisson toutes les 30 minutes. Une analyse en 3D chaque semaine. Les 4 premières semaines de l'option premium sont offertes. Activez-la à l'accueil en quelques secondes. »
+  Voix : P1, P6, P9 : prises réelles ; P5 et 25 : voix clonée
+
+LA_SALLE_Premium_B_post_4x5_voix.mp4
+  OK présences obligatoires à l'écran
+  OK lexique interdit absent
+  OK image 1080×1350, 30/1 i/s
+  OK durée 14.933 s (cible 14,90–15,00)
+  OK vidéo h264 High yuv420p
+  OK x264 crf 18.0, maxrate 11000 kb/s, bufsize 22000 kb/s
+  OK audio aac 48000 Hz 2 canaux
+  OK sonie intégrée -13.8 LUFS (cible −14 ± 0,5)
+  OK crête vraie -2.9 dBTP (≤ −1,5)
+  OK +faststart (moov en tête)
+  OK poids 2.68 Mo (≤ 25 Mo)
+  OK voix retranscrite = texte attendu
+  Entendu (whisper) : « Votre boisson vous attend. Collagène, multivitamine, L-carnitine, booster ou simplement de l'eau. Une boisson toutes les 30 minutes. Les 4 premières semaines de l'option premium sont offertes. Activez-la à l'accueil en quelques secondes. »
+  Voix : P2, P4, P9 : prises réelles (P4 resserrée, ×1,12) ; P5 et 25 : voix clonée
+
+LA_SALLE_Premium_C_post_4x5_voix.mp4
+  OK présences obligatoires à l'écran
+  OK lexique interdit absent
+  OK image 1080×1350, 30/1 i/s
+  OK durée 14.933 s (cible 14,90–15,00)
+  OK vidéo h264 High yuv420p
+  OK x264 crf 18.0, maxrate 11000 kb/s, bufsize 22000 kb/s
+  OK audio aac 48000 Hz 2 canaux
+  OK sonie intégrée -14.4 LUFS (cible −14 ± 0,5)
+  OK crête vraie -2.9 dBTP (≤ −1,5)
+  OK +faststart (moov en tête)
+  OK poids 3.12 Mo (≤ 25 Mo)
+  OK voix retranscrite = texte attendu
+  Entendu (whisper) : « Vos progrès en 3D. Une analyse en 3D chaque semaine. Les quatre premières semaines de l'option premium sont offertes. Activez-la à l'accueil en quelques secondes. »
+  Voix : P6, P9 : prises réelles ; P3 et 25 : voix clonée
+
