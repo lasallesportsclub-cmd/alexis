@@ -1,0 +1,17 @@
+# Outils Python du studio vidéo (installés par scripts/setup-video-tools.sh)
+# NE PAS installer moviepy : il impose Pillow<12 et casse pdfplumber + le kit pub (RAQM).
+pillow>=12
+numpy
+scipy
+fonttools
+brotli
+opencv-python-headless
+librosa
+soundfile
+pydub
+audioop-lts; python_version >= "3.13"
+faster-whisper
+click
+platformdirs
+tqdm
+# scenedetect est installé à part avec --no-deps (sinon il tire opencv-python, doublon du headless)
