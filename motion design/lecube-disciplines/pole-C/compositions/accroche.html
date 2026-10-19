@@ -22,17 +22,12 @@
 .trait{position:absolute;height:8px;background:#B27639;transform-origin:0 50%}
   </style>
   <div id="root" data-composition-id="accroche" data-width="1080" data-height="1920" data-duration="3">
-    <div id="accroche-p0" class="clip" data-start="0" data-duration="0.5" data-track-index="0"><div id="accroche-p0-ph" class="ph" style="background-image:url(assets/img/pole-drapeau.jpg)"></div><div class="voile"></div></div>
-    <div id="accroche-m0" class="clip" data-start="0" data-duration="0.5" data-track-index="1"><div class="a mot" style="left:72px;top:430px;">FORCE.</div></div>
-    <div id="accroche-p1" class="clip" data-start="0.5" data-duration="0.5" data-track-index="90"><div id="accroche-p1-ph" class="ph" style="background-image:url(assets/img/pole-pont.jpg)"></div><div class="voile"></div></div>
-    <div id="accroche-m1" class="clip" data-start="0.5" data-duration="0.5" data-track-index="2"><div id="accroche-m1-t" class="a mot" style="left:72px;top:430px;">SOUPLESSE.</div></div>
-    <div id="accroche-p2" class="clip" data-start="1" data-duration="0.5" data-track-index="0"><div id="accroche-p2-ph" class="ph" style="background-image:url(assets/img/pole-equilibre.jpg)"></div><div class="voile"></div></div>
-    <div id="accroche-m2" class="clip" data-start="1" data-duration="0.5" data-track-index="3"><div id="accroche-m2-t" class="a mot" style="left:72px;top:430px;">ÉQUILIBRE.</div></div>
-    <div id="accroche-p3" class="clip" data-start="1.5" data-duration="0.5" data-track-index="90"><div id="accroche-p3-ph" class="ph" style="background-image:url(assets/img/pole-dos.jpg)"></div><div class="voile"></div></div>
-    <div id="accroche-m3" class="clip" data-start="1.5" data-duration="0.5" data-track-index="4"><div id="accroche-m3-t" class="a mot" style="left:72px;top:430px;">GAINAGE.</div></div>
-    <div id="accroche-pf" class="clip" data-start="2" data-duration="1" data-track-index="0"><div id="accroche-pf-ph" class="ph" style="background-image:url(assets/img/pole-nb.jpg)"></div><div class="voile" style="background:rgba(10,10,10,0.6)"></div></div>
-    <div id="accroche-tout" class="clip" data-start="2" data-duration="1" data-track-index="5"><div class="masque" style="left:72px;top:440px;font-size:120px;"><div id="accroche-tout-t" class="ttl" style="font-size:120px">TOUT ÇA,</div></div></div>
-    <div id="accroche-barre" class="clip" data-start="2.5" data-duration="0.5" data-track-index="6"><div class="masque" style="left:72px;top:570px;font-size:120px;"><div id="accroche-barre-t" class="ttl br" style="font-size:120px">SUR UNE BARRE.</div></div></div>
+    <div id="accroche-p0" class="clip" data-start="0" data-duration="1.5" data-track-index="0"><div id="accroche-p0-ph" class="ph" style="background-image:url(assets/img/pole-drapeau.jpg)"></div><div class="voile"></div></div>
+    <div id="accroche-p0l0" class="clip" data-start="0" data-duration="1.5" data-track-index="1"><div class="a ttl" style="left:72px;top:440px;font-size:120px">CECI N’EST PAS</div></div>
+    <div id="accroche-p0l1" class="clip" data-start="0" data-duration="1.5" data-track-index="2"><div class="a ttl" style="left:72px;top:570px;font-size:120px">DE LA MAGIE.</div></div>
+    <div id="accroche-p1" class="clip" data-start="1.5" data-duration="1.5" data-track-index="90"><div id="accroche-p1-ph" class="ph" style="background-image:url(assets/img/pole-dos.jpg)"></div><div class="voile"></div></div>
+    <div id="accroche-p1l0" class="clip" data-start="1.5" data-duration="1.5" data-track-index="3"><div class="masque" style="left:72px;top:440px;font-size:120px;"><div id="accroche-p1l0-t" class="ttl" style="font-size:120px">C’EST DE</div></div></div>
+    <div id="accroche-p1l1" class="clip" data-start="1.75" data-duration="1.25" data-track-index="4"><div class="masque" style="left:72px;top:570px;font-size:120px;"><div id="accroche-p1l1-t" class="ttl br" style="font-size:120px">L’ENTRAÎNEMENT.</div></div></div>
   </div>
   <script src="assets/vendor/gsap.min.js"></script>
   <script>
@@ -46,16 +41,10 @@
   const trace = (id, t, d = 0.2) => tl.fromTo($(id), { scaleX: 0 }, { scaleX: 1, duration: d, ease: "power3.out" }, t);
   const zoom = (id, t, d, a = 1.06) => tl.fromTo($(id), { scale: 1 }, { scale: a, duration: d, ease: "none" }, t);
 
-  zoom("accroche-p0-ph", 0, 0.5, 1.05);
-  zoom("accroche-p1-ph", 0.5, 0.5, 1.05);
-  frappe("accroche-m1-t", 0.5, 1.18, 0.14);
-  zoom("accroche-p2-ph", 1, 0.5, 1.05);
-  frappe("accroche-m2-t", 1, 1.18, 0.14);
-  zoom("accroche-p3-ph", 1.5, 0.5, 1.05);
-  frappe("accroche-m3-t", 1.5, 1.18, 0.14);
-  zoom("accroche-pf-ph", 2, 1, 1.06);
-  chute("accroche-tout-t", 2);
-  chute("accroche-barre-t", 2.5);
+  zoom("accroche-p0-ph", 0, 1.5, 1.05);
+  zoom("accroche-p1-ph", 1.5, 1.5, 1.05);
+  chute("accroche-p1l0-t", 1.5);
+  chute("accroche-p1l1-t", 1.75);
   window.__timelines = window.__timelines || {};
   window.__timelines["accroche"] = tl;
   })();

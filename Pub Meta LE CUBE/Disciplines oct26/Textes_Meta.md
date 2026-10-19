@@ -2,7 +2,9 @@
 
 À valider avec les vidéos. Rien n'est publié. Tutoiement, sans prix ni offre. Les ⚠ renvoient à `A_valider.md`.
 
-## Pole Dance
+## Pole Dance (variantes A, B, C et D)
+
+Même texte pour les quatre variantes : le test ne doit comparer que l'accroche de la vidéo.
 
 **Texte principal**
 

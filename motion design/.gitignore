@@ -12,3 +12,5 @@ premium-45/*/assets/voix/
 lecube-chrono/[ABC]/assets/
 # Pubs LE CUBE par discipline : photos de personnes, jamais dans ce dépôt public (sources : ~/lecube-sources)
 lecube-disciplines/*/assets/
+# Musiques des pubs par discipline : régénérées à l'identique par tools/musique.py (graine fixe)
+lecube-disciplines/_communs/*.wav

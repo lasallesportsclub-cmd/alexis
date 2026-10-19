@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: 1080px; height: 1920px; overflow: hidden; background: #0A0A0A; }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; background: #0A0A0A; }
+      [data-composition-id="main"] > div[data-composition-src] { position: absolute; inset: 0; }
+      #h-bandeau { z-index: 50; }
+    </style>
+  </head>
+  <body>
+    <!-- LE CUBE · POLE DANCE · variante D · 9:16 · 15 s · 120 BPM. Généré par lecube-disciplines/tools/build.py -->
+    <div id="root" data-composition-id="main" data-start="0" data-duration="15" data-width="1080" data-height="1920" data-fps="30">
+      <div id="h-accroche" data-composition-id="accroche" data-composition-src="compositions/accroche.html" data-start="0" data-duration="3" data-track-index="1" data-width="1080" data-height="1920"></div>
+      <div id="h-etapes" data-composition-id="etapes" data-composition-src="compositions/etapes.html" data-start="3" data-duration="5.5" data-track-index="1" data-width="1080" data-height="1920"></div>
+      <div id="h-argument" data-composition-id="argument" data-composition-src="compositions/argument.html" data-start="8.5" data-duration="3" data-track-index="1" data-width="1080" data-height="1920"></div>
+      <div id="h-carte" data-composition-id="carte" data-composition-src="compositions/carte.html" data-start="11.5" data-duration="3.5" data-track-index="1" data-width="1080" data-height="1920"></div>
+      <div id="h-bandeau" data-composition-id="bandeau" data-composition-src="compositions/bandeau.html" data-start="0" data-duration="11.5" data-track-index="2" data-width="1080" data-height="1920"></div>
+      <audio id="musique" src="assets/audio/musique.wav" data-start="0" data-duration="15" data-track-index="10" data-volume="1"></audio>
+    </div>
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>

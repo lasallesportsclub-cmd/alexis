@@ -1,0 +1,60 @@
+<template>
+  <style>
+@font-face{font-family:"Oswald";font-weight:600;font-style:normal;font-display:block;src:url("assets/fonts/oswald-latin-600-normal.woff2") format("woff2");}
+@font-face{font-family:"Oswald";font-weight:700;font-style:normal;font-display:block;src:url("assets/fonts/oswald-latin-700-normal.woff2") format("woff2");}
+@font-face{font-family:"Inter";font-weight:600;font-style:normal;font-display:block;src:url("assets/fonts/inter-latin-600-normal.woff2") format("woff2");}
+@font-face{font-family:"Anton";font-weight:400;font-style:normal;font-display:block;src:url("assets/fonts/anton-latin-400-normal.woff2") format("woff2");}
+#root{position:absolute;left:0;top:0;width:1080px;height:1920px;overflow:hidden}
+.clip{position:absolute;left:0;top:0;width:1080px;height:1920px}
+.ph{position:absolute;left:0;top:0;width:1080px;height:1920px;background-size:cover;background-position:center;transform-origin:50% 45%}
+.voile{position:absolute;left:0;top:0;width:1080px;height:1920px;background:linear-gradient(180deg,rgba(10,10,10,.7) 0%,rgba(10,10,10,.56) 30%,rgba(10,10,10,.16) 60%,rgba(10,10,10,.28) 100%)}
+.noir{position:absolute;left:0;top:0;width:1080px;height:1920px;background:#0A0A0A}
+.a{position:absolute}
+.centre{left:0;width:1080px;text-align:center}
+.mot{font:700 170px/1 "Oswald";color:#F5F2EC;text-transform:uppercase;white-space:nowrap}
+.ttl{font:700 104px/1.02 "Oswald";color:#F5F2EC;text-transform:uppercase;white-space:nowrap}
+.num{font-family:"Anton";font-weight:400;line-height:.9;color:#B27639;white-space:nowrap}
+.det{font:600 30px/1.2 "Inter";letter-spacing:.06em;color:rgba(245,242,236,.92);text-transform:uppercase;white-space:nowrap}
+.br{color:#B27639}
+.pl{background:#0A0A0A;padding:.07em .2em .03em}
+.masque{position:absolute;overflow:hidden;padding:.16em .04em .14em 0;margin-top:-.16em}
+.masque>div{display:block}
+.trait{position:absolute;height:8px;background:#B27639;transform-origin:0 50%}
+  </style>
+  <div id="root" data-composition-id="carte" data-width="1080" data-height="1920" data-duration="3.5">
+    <div id="carte-fond" class="clip" data-start="0" data-duration="3.5" data-track-index="0"><div id="carte-fond-ph" class="ph" style="background-image:url(assets/img/pole-dos.jpg)"></div><div class="voile" style="background:rgba(10,10,10,0.74)"></div></div>
+    <div id="carte-nom" class="clip" data-start="0" data-duration="3.5" data-track-index="1"><div id="carte-nom-t" class="a centre ttl" style="top:470px;font-size:170px">POLE DANCE</div></div>
+    <div id="carte-cube" class="clip" data-start="0.12" data-duration="3.38" data-track-index="2"><div id="carte-cube-t" class="a centre det" style="top:664px;font-size:34px;letter-spacing:.3em;color:#B27639">AU CUBE · CONFLANS</div></div>
+    <div id="carte-trait" class="clip" data-start="0.2" data-duration="3.3" data-track-index="3"><div id="carte-trait-t" class="trait" style="left:420px;top:724px;width:240px;transform-origin:50% 50%"></div></div>
+    <div id="carte-niv" class="clip" data-start="0.3" data-duration="3.2" data-track-index="4"><div id="carte-niv-t" class="a centre det" style="top:760px;">DE L’INITIATION À L’INTER · CERCEAU</div></div>
+    <div id="carte-cta1" class="clip" data-start="1" data-duration="2.5" data-track-index="5"><div id="carte-cta1-t" class="a centre ttl br" style="top:850px;">RÉSERVE TA</div></div>
+    <div id="carte-cta2" class="clip" data-start="1.12" data-duration="2.38" data-track-index="6"><div id="carte-cta2-t" class="a centre ttl br" style="top:954px;">SÉANCE D’ESSAI</div></div>
+    <div id="carte-chevron" class="clip" data-start="1.5" data-duration="2" data-track-index="7"><svg id="carte-chevron-t" class="a" style="left:500px;top:1084px;width:80px;height:50px" viewBox="0 0 80 50"><polyline points="6,8 40,42 74,8" fill="none" stroke="#B27639" stroke-width="9" stroke-linecap="square"/></svg></div>
+    <div id="carte-adresse" class="clip" data-start="1.25" data-duration="2.25" data-track-index="8"><div id="carte-adresse-t" class="a centre det" style="top:1176px;font-size:26px">LE CUBE · ZAC DES BOUTRIES · CONFLANS-SAINTE-HONORINE</div></div>
+  </div>
+  <script src="assets/vendor/gsap.min.js"></script>
+  <script>
+  (function () {
+  const tl = gsap.timeline({ paused: true });
+
+  const $ = (id) => document.getElementById(id);
+  const frappe = (id, t, k = 1.25, d = 0.16) => tl.fromTo($(id), { scale: k }, { scale: 1, duration: d, ease: "power4.out" }, t);
+  const chute = (id, t, d = 0.2) => tl.fromTo($(id), { yPercent: 110 }, { yPercent: 0, duration: d, ease: "power3.out" }, t);
+  const balaie = (id, t, d = 0.24) => tl.fromTo($(id), { clipPath: "inset(0px 100% 0px 0px)" }, { clipPath: "inset(0px 0% 0px 0px)", duration: d, ease: "power3.out" }, t);
+  const trace = (id, t, d = 0.2) => tl.fromTo($(id), { scaleX: 0 }, { scaleX: 1, duration: d, ease: "power3.out" }, t);
+  const zoom = (id, t, d, a = 1.06) => tl.fromTo($(id), { scale: 1 }, { scale: a, duration: d, ease: "none" }, t);
+
+  zoom("carte-fond-ph", 0, 3.5, 1.04);
+  frappe("carte-nom-t", 0, 1.2);
+  balaie("carte-cube-t", 0.12);
+  trace("carte-trait-t", 0.2);
+  balaie("carte-niv-t", 0.3);
+  frappe("carte-cta1-t", 1);
+  frappe("carte-cta2-t", 1.12);
+  tl.fromTo($("carte-chevron-t"), { y: 0 }, { y: 16, duration: 0.25, ease: "power1.inOut", yoyo: true, repeat: 7 }, 1.5);
+  balaie("carte-adresse-t", 1.25);
+  window.__timelines = window.__timelines || {};
+  window.__timelines["carte"] = tl;
+  })();
+  </script>
+</template>

@@ -1,15 +1,16 @@
-"""Génère le projet HyperFrames d'une pub LE CUBE par discipline (15 s, 9:16), avec de vraies photos de pratiquants.
+"""Génère les projets HyperFrames des pubs LE CUBE par discipline (15 s, 9:16), avec de vraies photos de pratiquants.
 
-Structure commune, instants dans tools/cues_<discipline>.json (comme la musique) :
-  accroche (0–3) : quatre mots, un par temps, chacun sur sa photo, puis la phrase en deux temps qui les relie
+Une discipline = plusieurs variantes (A, B, C…) qui ne diffèrent que par l'accroche : un projet <discipline>-<V>/ par
+variante, pour un test A/B. Structure commune, instants dans tools/cues_<discipline>.json (comme la musique) :
+  accroche (0–3) : plans successifs, chacun sa photo et ses lignes ; la ligne posée à 0 s est déjà là à l'image 0
   étapes (3–8,5) : quatre étapes numérotées 01 → 04, une photo et deux lignes chacune
   argument (8,5–11,5) : cassure « ET TOI ? » sur noir, puis la phrase qui rassure
   carte (11,5–15) : discipline, niveaux, « RÉSERVE TA SÉANCE D'ESSAI », chevron vers le bouton, adresse
   bandeau (0–11,5, au-dessus) : « <DISCIPLINE> · LE CUBE », pour que celui qui part tôt sache où il est
 Les photos montrent des personnes : elles viennent de ~/lecube-sources/img/ (tools/photos.py) et sont copiées dans
-<discipline>/assets/img/, dossier ignoré par git (dépôt public). Design : frame.md.
+<discipline>-<V>/assets/img/, dossier ignoré par git (dépôt public). Design : frame.md.
 
-Usage : python3 tools/build.py pole
+Usage : python3 tools/build.py pole [A B C D]
 """
 import json
 import os
@@ -130,26 +131,29 @@ def masque(cls, texte, left=72, top=0, style="", centre=False):
 
 
 def apos(s):
-    return s.replace("'", "’")
+    return s.replace("'", "’").replace(" ?", FINE + "?")
 
 
 # ─────────────────────────── accroche (0–3 s) ───────────────────────────
-def accroche(C):
-    a = C["accroche"]
-    c = Compo("accroche", a["tout"] + 1.0)
-    mots = a["mots"]
-    for k, (t, mot, img) in enumerate(mots):
-        fin = mots[k + 1][0] if k + 1 < len(mots) else a["tout"]
-        c.photo(f"p{k}", img, t, fin - t, 1.05)
-        if k == 0:   # la frame 0 porte déjà le premier mot, net et posé : pas d'entrée animée
-            c.calque(f"m{k}", t, fin - t, bloc("mot", apos(mot), top=430).replace('id="ID" ', ""))
-        else:
-            c.texte(f"m{k}", t, fin - t, bloc("mot", apos(mot), top=430), "frappe", k=1.18, d=0.14)
-    t2, t3 = a["tout"], a["barre"]
-    c.photo("pf", a["photo_fin"], t2, c.duree - t2, 1.06)
-    p1, p2 = a["phrase"]
-    c.texte("tout", t2, c.duree - t2, masque("ttl", apos(p1), top=440, style="font-size:120px"), "chute")
-    c.texte("barre", t3, c.duree - t3, masque("ttl br", apos(p2), top=570, style="font-size:120px"), "chute")
+TAILLES = {"mot": 170, "ttl": 120}      # « mot » : un seul mot qui frappe ; « ttl » : une phrase, ligne à ligne
+
+
+def accroche(C, v):
+    plans = C["accroches"][v]["plans"]
+    c = Compo("accroche", C["fin_accroche"])
+    for k, p in enumerate(plans):
+        fin = plans[k + 1]["t"] if k + 1 < len(plans) else c.duree
+        c.photo(f"p{k}", p["photo"], p["t"], fin - p["t"], 1.05)
+        for j, l in enumerate(p["lignes"]):
+            genre = l["style"].split()[0]
+            style = f'font-size:{TAILLES[genre]}px'
+            nom, d = f"p{k}l{j}", fin - l["t"]
+            if l["t"] == 0:      # image 0 : la ligne est déjà posée, nette, sans entrée animée
+                c.calque(nom, 0, d, bloc(l["style"], apos(l["texte"]), top=l["top"], style=style).replace('id="ID" ', ""))
+            elif genre == "mot":
+                c.texte(nom, l["t"], d, bloc(l["style"], apos(l["texte"]), top=l["top"], style=style), "frappe", k=1.18, d=0.14)
+            else:
+                c.texte(nom, l["t"], d, masque(l["style"], apos(l["texte"]), top=l["top"], style=style), "chute")
     return c
 
 
@@ -219,7 +223,7 @@ def bandeau(C):
     return c
 
 
-def index_html(d, C, hotes):
+def index_html(v, C, hotes):
     hs = "\n".join(f'      <div id="h-{cid}" data-composition-id="{cid}" data-composition-src="compositions/{cid}.html" '
                    f'data-start="{r(s)}" data-duration="{r(du)}" data-track-index="{p}" data-width="1080" data-height="1920"></div>'
                    for cid, s, du, p in hotes)
@@ -238,7 +242,7 @@ def index_html(d, C, hotes):
     </style>
   </head>
   <body>
-    <!-- LE CUBE · {C["discipline"]} · 9:16 · 15 s · 120 BPM. Généré par lecube-disciplines/tools/build.py -->
+    <!-- LE CUBE · {C["discipline"]} · variante {v} · 9:16 · 15 s · 120 BPM. Généré par lecube-disciplines/tools/build.py -->
     <div id="root" data-composition-id="main" data-start="0" data-duration="{r(C["duree"])}" data-width="1080" data-height="1920" data-fps="30">
 {hs}
       <audio id="musique" src="assets/audio/musique.wav" data-start="0" data-duration="{r(C["duree"])}" data-track-index="10" data-volume="1"></audio>
@@ -252,10 +256,54 @@ def index_html(d, C, hotes):
 """
 
 
+def squelette(proj, nom):
+    """Fichiers de projet HyperFrames (CLI épinglée en 0.8.174), repris du projet « LE CHRONO » A."""
+    if os.path.exists(os.path.join(proj, "hyperframes.json")):
+        return
+    os.makedirs(proj, exist_ok=True)
+    modele = os.path.join(RACINE, "..", "lecube-chrono", "A")
+    for f in ("hyperframes.json", "AGENTS.md", "CLAUDE.md"):
+        shutil.copy(os.path.join(modele, f), proj)
+    paquet = json.load(open(os.path.join(modele, "package.json"), encoding="utf-8"))
+    paquet["name"] = nom.lower()
+    json.dump(paquet, open(os.path.join(proj, "package.json"), "w", encoding="utf-8"), indent=2)
+    json.dump({"id": nom.lower(), "name": nom.lower()}, open(os.path.join(proj, "meta.json"), "w", encoding="utf-8"), indent=2)
+
+
+def brief(C, d, v):
+    a = C["accroches"][v]
+    lignes = " / ".join(l["texte"] for p in a["plans"] for l in p["lignes"])
+    return f"""---
+workflow: general-video
+flow: automation
+storyboard: no
+destination: meta-reels
+aspect: 1080x1920
+language: fr
+length: 15s
+narration: no
+---
+
+## Intent
+
+Pub LE CUBE « {C["discipline"]} » avec de vraies photos de pratiquants, variante {v} (« {a["titre"]} ») d'un test A/B : seule
+l'accroche (0–3 s) change d'une variante à l'autre. Accroche : {lignes}. Montage généré par `../tools/build.py {d}` depuis
+`../tools/cues_{d}.json` ; design : `../frame.md`.
+
+## Assets
+
+- Photos de pratiquants : `../tools/photos.py` (sources hors dépôt). Personnes reconnaissables : autorisations écrites
+  à obtenir avant diffusion.
+- Musique : originale, synthétisée (`../tools/musique.py {d} {v}`), 120 BPM.
+"""
+
+
 def main():
-    for d in sys.argv[1:] or ["pole"]:
-        C = json.load(open(os.path.join(ICI, f"cues_{d}.json"), encoding="utf-8"))
-        proj = os.path.join(RACINE, d)
+    d = sys.argv[1] if len(sys.argv) > 1 else "pole"
+    C = json.load(open(os.path.join(ICI, f"cues_{d}.json"), encoding="utf-8"))
+    for v in sys.argv[2:] or list(C["accroches"]):
+        proj = os.path.join(RACINE, f"{d}-{v}")
+        squelette(proj, f"{d}-{v}")
         comp = os.path.join(proj, "compositions")
         os.makedirs(comp, exist_ok=True)
         assets = os.path.join(proj, "assets")
@@ -268,14 +316,15 @@ def main():
         for f in sorted(os.listdir(IMAGES)):
             if f.startswith(d + "-"):
                 shutil.copy(os.path.join(IMAGES, f), os.path.join(assets, "img"))
-        son = os.path.join(RACINE, "_communs", f"musique_{d}.wav")
+        son = os.path.join(RACINE, "_communs", f"musique_{d}_{v}.wav")
         if os.path.exists(son):
             shutil.copy(son, os.path.join(assets, "audio", "musique.wav"))
-        compos = [(accroche(C), 0.0, 1), (etapes(C), C["etapes"][0]["t"], 1), (argument(C), C["cassure"][0], 1),
+        compos = [(accroche(C, v), 0.0, 1), (etapes(C), C["etapes"][0]["t"], 1), (argument(C), C["cassure"][0], 1),
                   (carte(C), C["carte"], 1), (bandeau(C), 0.0, 2)]
         for c, _, _ in compos:
             open(os.path.join(comp, f"{c.cid}.html"), "w", encoding="utf-8").write(c.html())
-        open(os.path.join(proj, "index.html"), "w", encoding="utf-8").write(index_html(d, C, [(c.cid, s, c.duree, p) for c, s, p in compos]))
+        open(os.path.join(proj, "index.html"), "w", encoding="utf-8").write(index_html(v, C, [(c.cid, s, c.duree, p) for c, s, p in compos]))
+        open(os.path.join(proj, "BRIEF.md"), "w", encoding="utf-8").write(brief(C, d, v))
         print(f"construit {proj} : " + ", ".join(f"{c.cid} {r(s)}+{r(c.duree)}" for c, s, _ in compos))
 
 

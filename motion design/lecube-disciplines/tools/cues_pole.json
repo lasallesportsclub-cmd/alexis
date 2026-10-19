@@ -1,100 +1,278 @@
 {
-  "_doc": "Feuille de repères de la pub LE CUBE « POLE DANCE » (15 s, 120 BPM, un temps = 0,5 s). Source unique des instants pour la musique (musique.py) et les compositions (build.py). Secondes depuis le début. Photos : noms de tools/photos.py.",
-  "discipline": "POLE DANCE",
-  "bpm": 120,
-  "duree": 15.0,
-  "accroche": {
-    "mots": [
-      [
-        0.0,
-        "FORCE.",
-        "pole-drapeau"
-      ],
-      [
-        0.5,
-        "SOUPLESSE.",
-        "pole-pont"
-      ],
-      [
-        1.0,
-        "ÉQUILIBRE.",
-        "pole-equilibre"
-      ],
-      [
-        1.5,
-        "GAINAGE.",
-        "pole-dos"
-      ]
-    ],
-    "tout": 2.0,
-    "barre": 2.5,
-    "photo_fin": "pole-nb",
-    "phrase": [
-      "TOUT ÇA,",
-      "SUR UNE BARRE."
-    ]
-  },
-  "etapes": [
+ "_doc": "Feuille de repères des pubs LE CUBE « POLE DANCE » (15 s, 120 BPM, un temps = 0,5 s). Source unique des instants pour la musique (musique.py) et les compositions (build.py). Secondes depuis le début. Photos : noms de tools/photos.py. Quatre variantes A à D : seule l'accroche (0–3 s) change, le reste est commun (test A/B). Accroche = plans successifs ; chaque plan a sa photo et ses lignes (t, texte, style, top) ; la ligne posée à 0 s est déjà là à l'image 0. Mehdi (photo pole-dos) ouvre les variantes A, B et D et porte la réponse de C.",
+ "discipline": "POLE DANCE",
+ "bpm": 120,
+ "duree": 15.0,
+ "fin_accroche": 3.0,
+ "accroches": {
+  "A": {
+   "titre": "Les quatre mots",
+   "plans": [
     {
-      "t": 3.0,
-      "fin": 4.5,
-      "numero": "01",
-      "ligne1": "TU COMMENCES",
-      "ligne2": "AU SOL.",
-      "photo": "pole-etirement"
+     "t": 0.0,
+     "photo": "pole-dos",
+     "lignes": [
+      {
+       "t": 0.0,
+       "texte": "FORCE.",
+       "style": "mot",
+       "top": 430
+      }
+     ]
     },
     {
-      "t": 4.5,
-      "fin": 6.0,
-      "numero": "02",
-      "ligne1": "TU MONTES",
-      "ligne2": "SUR LA BARRE.",
-      "photo": "pole-assis"
+     "t": 0.5,
+     "photo": "pole-pont",
+     "lignes": [
+      {
+       "t": 0.5,
+       "texte": "SOUPLESSE.",
+       "style": "mot",
+       "top": 430
+      }
+     ]
     },
     {
-      "t": 6.0,
-      "fin": 7.5,
-      "numero": "03",
-      "ligne1": "TU PASSES",
-      "ligne2": "TÊTE EN BAS.",
-      "photo": "pole-grand-ecart"
+     "t": 1.0,
+     "photo": "pole-equilibre",
+     "lignes": [
+      {
+       "t": 1.0,
+       "texte": "ÉQUILIBRE.",
+       "style": "mot",
+       "top": 430
+      }
+     ]
     },
     {
-      "t": 7.5,
-      "fin": 8.5,
-      "numero": "04",
-      "ligne1": "TU",
-      "ligne2": "T'ENVOLES.",
-      "photo": "pole-drapeau"
+     "t": 1.5,
+     "photo": "pole-drapeau",
+     "lignes": [
+      {
+       "t": 1.5,
+       "texte": "GAINAGE.",
+       "style": "mot",
+       "top": 430
+      }
+     ]
+    },
+    {
+     "t": 2.0,
+     "photo": "pole-nb",
+     "lignes": [
+      {
+       "t": 2.0,
+       "texte": "TOUT ÇA,",
+       "style": "ttl",
+       "top": 440
+      },
+      {
+       "t": 2.5,
+       "texte": "SUR UNE BARRE.",
+       "style": "ttl br",
+       "top": 570
+      }
+     ]
     }
-  ],
-  "cassure": [
-    8.5,
-    9.0
-  ],
-  "argument": {
-    "t": 9.0,
-    "fin": 11.5,
-    "deuxieme": 10.5,
-    "photos": [
-      "pole-pont",
-      "pole-etirement"
-    ],
-    "lignes": [
-      [
-        "PAS BESOIN",
-        "D'ÊTRE SOUPLE",
-        "POUR COMMENCER."
-      ],
-      [
-        "ÇA SE TRAVAILLE",
-        "ICI."
-      ]
-    ]
+   ]
   },
-  "carte": 11.5,
-  "cta": 12.5,
-  "fin": 14.5,
-  "carte_photo": "pole-dos",
-  "carte_detail": "DE L'INITIATION À L'INTER · CERCEAU"
+  "B": {
+   "titre": "Le cliché",
+   "plans": [
+    {
+     "t": 0.0,
+     "photo": "pole-dos",
+     "lignes": [
+      {
+       "t": 0.0,
+       "texte": "LA POLE,",
+       "style": "ttl",
+       "top": 440
+      },
+      {
+       "t": 0.0,
+       "texte": "C'EST QUE POUR",
+       "style": "ttl",
+       "top": 570
+      },
+      {
+       "t": 0.5,
+       "texte": "LES FILLES ?",
+       "style": "ttl br",
+       "top": 700
+      }
+     ]
+    },
+    {
+     "t": 1.5,
+     "photo": "pole-drapeau",
+     "lignes": [
+      {
+       "t": 1.5,
+       "texte": "T'ES SÛR ?",
+       "style": "mot br",
+       "top": 430
+      }
+     ]
+    }
+   ]
+  },
+  "C": {
+   "titre": "Pas de magie",
+   "plans": [
+    {
+     "t": 0.0,
+     "photo": "pole-drapeau",
+     "lignes": [
+      {
+       "t": 0.0,
+       "texte": "CECI N'EST PAS",
+       "style": "ttl",
+       "top": 440
+      },
+      {
+       "t": 0.0,
+       "texte": "DE LA MAGIE.",
+       "style": "ttl",
+       "top": 570
+      }
+     ]
+    },
+    {
+     "t": 1.5,
+     "photo": "pole-dos",
+     "lignes": [
+      {
+       "t": 1.5,
+       "texte": "C'EST DE",
+       "style": "ttl",
+       "top": 440
+      },
+      {
+       "t": 1.75,
+       "texte": "L'ENTRAÎNEMENT.",
+       "style": "ttl br",
+       "top": 570
+      }
+     ]
+    }
+   ]
+  },
+  "D": {
+   "titre": "À Conflans",
+   "plans": [
+    {
+     "t": 0.0,
+     "photo": "pole-dos",
+     "lignes": [
+      {
+       "t": 0.0,
+       "texte": "À CONFLANS,",
+       "style": "ttl",
+       "top": 440
+      }
+     ]
+    },
+    {
+     "t": 0.75,
+     "photo": "pole-drapeau",
+     "lignes": [
+      {
+       "t": 0.75,
+       "texte": "ON FAIT ÇA.",
+       "style": "mot br",
+       "top": 430
+      }
+     ]
+    },
+    {
+     "t": 1.5,
+     "photo": "pole-grand-ecart",
+     "lignes": [
+      {
+       "t": 1.5,
+       "texte": "ET ÇA.",
+       "style": "mot br",
+       "top": 430
+      }
+     ]
+    },
+    {
+     "t": 2.25,
+     "photo": "pole-equilibre",
+     "lignes": [
+      {
+       "t": 2.25,
+       "texte": "ET ÇA.",
+       "style": "mot br",
+       "top": 430
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "etapes": [
+  {
+   "t": 3.0,
+   "fin": 4.5,
+   "numero": "01",
+   "ligne1": "TU COMMENCES",
+   "ligne2": "AU SOL.",
+   "photo": "pole-etirement"
+  },
+  {
+   "t": 4.5,
+   "fin": 6.0,
+   "numero": "02",
+   "ligne1": "TU MONTES",
+   "ligne2": "SUR LA BARRE.",
+   "photo": "pole-assis"
+  },
+  {
+   "t": 6.0,
+   "fin": 7.5,
+   "numero": "03",
+   "ligne1": "TU PASSES",
+   "ligne2": "TÊTE EN BAS.",
+   "photo": "pole-grand-ecart"
+  },
+  {
+   "t": 7.5,
+   "fin": 8.5,
+   "numero": "04",
+   "ligne1": "TU",
+   "ligne2": "T'ENVOLES.",
+   "photo": "pole-drapeau"
+  }
+ ],
+ "cassure": [
+  8.5,
+  9.0
+ ],
+ "argument": {
+  "t": 9.0,
+  "fin": 11.5,
+  "deuxieme": 10.5,
+  "photos": [
+   "pole-pont",
+   "pole-etirement"
+  ],
+  "lignes": [
+   [
+    "PAS BESOIN",
+    "D'ÊTRE SOUPLE",
+    "POUR COMMENCER."
+   ],
+   [
+    "ÇA SE TRAVAILLE",
+    "ICI."
+   ]
+  ]
+ },
+ "carte": 11.5,
+ "cta": 12.5,
+ "fin": 14.5,
+ "carte_photo": "pole-dos",
+ "carte_detail": "DE L'INITIATION À L'INTER · CERCEAU"
 }

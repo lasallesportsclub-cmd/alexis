@@ -2,14 +2,16 @@
 
 Instruments repris de lecube-chrono/tools/musique.py (synthèse pure, aucun échantillon, aucun morceau sous droits,
 pas de MusicGen). Arrangement propre aux pubs par discipline :
-  accroche : un impact et une frappe sur chacun des quatre mots, groove en demi-temps, souffle puis impact à « barre »
+  accroche (propre à chaque variante) : un impact et une frappe à chaque ligne qui tombe, un souffle avant chaque
+           changement de plan sans texte, groove en demi-temps
   étapes : groove qui s'installe (grosse caisse aux temps 1 et 3, claquement au 3), arpège en croches, un glissé
            et un impact à chaque étape, montée avant la cassure
   cassure : un demi-temps de silence (« ET TOI ? »), puis reprise à quatre temps avec impact et crash
   carte : impact à la carte et à l'appel à l'action, fondu final
 Instants : tools/cues_<discipline>.json, la même feuille que les compositions.
 
-Usage : ~/.venvs/hyperframes-audio/bin/python tools/musique.py pole
+Fichiers _communs/musique_<discipline>_<V>.wav non suivis par git : graine fixe, on les régénère à l’identique.
+Usage : ~/.venvs/hyperframes-audio/bin/python tools/musique.py pole [A B C D]
 (numpy, scipy, soundfile, pyloudnorm ; cible −14 LUFS intégrés, crête vraie ≤ −1,5 dBTP)
 """
 import json
@@ -48,7 +50,7 @@ def pincee(midi, d=0.42):
     return x * np.minimum(1, t / 0.003) * np.exp(-t / 0.16)
 
 
-def arranger(C):
+def arranger(C, v):
     cass, fin = C["cassure"], C["fin"]
     bat, basse, pad, arp, fx = (m.stereo() for _ in range(5))
     GC, FR, CH = m.grosse_caisse(), m.frappe(), m.charley()
@@ -86,13 +88,14 @@ def arranger(C):
         t1 = min(t1, cass[0]) if t0 < cass[0] else t1
         m.poser(pad, t0, m.nappe(m.NAPPE[nom], t1 - t0 + 0.2), 1.1 if t0 < 9 else 1.3)
 
-    a = C["accroche"]
-    for k, (t, _, _) in enumerate(a["mots"]):          # un coup par mot
+    plans = C["accroches"][v]["plans"]
+    tombes = sorted({l["t"] for p in plans for l in p["lignes"]})
+    for k, t in enumerate(tombes):                      # un coup par ligne qui tombe
         m.poser(fx, t, m.impact(0.9 if k == 0 else 0.6), 0.6 if k == 0 else 0.42)
         m.poser(fx, t, FR, 0.3, 0.1 * (-1) ** k)
+    for p in plans[1:]:                                 # glissé avant chaque changement de plan
+        m.poser(fx, p["t"] - 0.2, m.souffle(0.26, 0.2), 0.28)
     m.poser(fx, 0.0, m.crash(1.2), 0.3)
-    m.poser(fx, a["tout"] - 0.2, m.souffle(0.26, 0.2), 0.32)
-    m.poser(fx, a["barre"], m.impact(0.8), 0.5)
     for e in C["etapes"]:
         m.poser(fx, e["t"] - 0.18, m.souffle(0.24, 0.16), 0.3)
         m.poser(fx, e["t"], m.impact(0.6), 0.4)
@@ -132,7 +135,12 @@ def main():
     d = sys.argv[1] if len(sys.argv) > 1 else "pole"
     C = json.load(open(os.path.join(ICI, f"cues_{d}.json"), encoding="utf-8"))
     assert abs(C["duree"] - N / SR) < 1e-6
-    x = arranger(C)
+    for v in sys.argv[2:] or list(C["accroches"]):
+        ecrire(C, d, v)
+
+
+def ecrire(C, d, v):
+    x = arranger(C, v)
     mesure = pyln.Meter(SR)
     for _ in range(4):
         x *= 10 ** ((-14.0 - mesure.integrated_loudness(x.T)) / 20)
@@ -142,7 +150,8 @@ def main():
     tp = m.crete_vraie(x)
     if tp > -1.6:
         x *= 10 ** ((-1.6 - tp) / 20)
-    sortie = os.path.join(ICI, "..", "_communs", f"musique_{d}.wav")
+    sortie = os.path.join(ICI, "..", "_communs", f"musique_{d}_{v}.wav")
+    os.makedirs(os.path.dirname(sortie), exist_ok=True)
     sf.write(sortie, x.T, SR, subtype="PCM_24")
     print(f"{sortie} : {x.shape[1] / SR:.3f} s · {mesure.integrated_loudness(x.T):.1f} LUFS · crête vraie {m.crete_vraie(x):.2f} dBTP")
 

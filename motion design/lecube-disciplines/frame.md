@@ -9,6 +9,6 @@ tutoiement ; aucun prix. Ce qui change, parce que ces pubs montrent de vraies pe
 - Voile en dégradé : dense en haut, sous les textes (y 290–900), léger sur les corps. Les lignes posées sur un corps
   ont un bandeau noir plein (`.pl`) : le bronze sur la peau ne se lit pas.
 - Bandeau « <DISCIPLINE> · LE CUBE » en haut de 0 à 11,5 s, cadre bronze.
-- Rythme 120 BPM : accroche à quatre mots (un par temps, le premier déjà posé à l'image 0), quatre étapes
+- Rythme 120 BPM : accroche (variantes A, B, C… : plans successifs, la première ligne déjà posée à l’image 0), quatre étapes
   numérotées, cassure « ET TOI ? », phrase qui rassure, carte finale avec chevron vers le bouton.
 - Zone utile Reels : y 290–1250, x 72–1008.
