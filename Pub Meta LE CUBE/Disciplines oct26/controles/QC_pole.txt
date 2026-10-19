@@ -1,0 +1,13 @@
+QC — LE_CUBE_Pole_Dance_story_9x16.mp4
+OK   Format 1080×1920, H.264 High, yuv420p, 30 i/s
+OK   Durée 15.000 s (14,90–15,00)
+OK   Poids 6.4 Mo (≤ 25)
+OK   faststart (moov avant mdat)
+OK   Audio AAC 48000 Hz, 2 canaux
+OK   Sonie -14.1 LUFS (−14 ± 0,5)
+OK   Crête vraie -1.7 dBTP (≤ −1,5)
+OK   Textes attendus présents
+OK   Aucun mot interdit
+
+Verdict : GO technique
+Reste à valider par Mehdi : les points ⚠ de A_valider.md (droit à l'image d'abord), puis l'écoute de la musique.

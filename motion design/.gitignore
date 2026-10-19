@@ -10,3 +10,5 @@ premium-916/*/assets/voix/
 premium-45/*/assets/voix/
 # LE CUBE « LE CHRONO » : assets recopiés depuis _communs/ par tools/build.py
 lecube-chrono/[ABC]/assets/
+# Pubs LE CUBE par discipline : photos de personnes, jamais dans ce dépôt public (sources : ~/lecube-sources)
+lecube-disciplines/*/assets/

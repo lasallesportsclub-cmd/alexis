@@ -1,0 +1,100 @@
+{
+  "_doc": "Feuille de repères de la pub LE CUBE « POLE DANCE » (15 s, 120 BPM, un temps = 0,5 s). Source unique des instants pour la musique (musique.py) et les compositions (build.py). Secondes depuis le début. Photos : noms de tools/photos.py.",
+  "discipline": "POLE DANCE",
+  "bpm": 120,
+  "duree": 15.0,
+  "accroche": {
+    "mots": [
+      [
+        0.0,
+        "FORCE.",
+        "pole-drapeau"
+      ],
+      [
+        0.5,
+        "SOUPLESSE.",
+        "pole-pont"
+      ],
+      [
+        1.0,
+        "ÉQUILIBRE.",
+        "pole-equilibre"
+      ],
+      [
+        1.5,
+        "GAINAGE.",
+        "pole-dos"
+      ]
+    ],
+    "tout": 2.0,
+    "barre": 2.5,
+    "photo_fin": "pole-nb",
+    "phrase": [
+      "TOUT ÇA,",
+      "SUR UNE BARRE."
+    ]
+  },
+  "etapes": [
+    {
+      "t": 3.0,
+      "fin": 4.5,
+      "numero": "01",
+      "ligne1": "TU COMMENCES",
+      "ligne2": "AU SOL.",
+      "photo": "pole-etirement"
+    },
+    {
+      "t": 4.5,
+      "fin": 6.0,
+      "numero": "02",
+      "ligne1": "TU MONTES",
+      "ligne2": "SUR LA BARRE.",
+      "photo": "pole-assis"
+    },
+    {
+      "t": 6.0,
+      "fin": 7.5,
+      "numero": "03",
+      "ligne1": "TU PASSES",
+      "ligne2": "TÊTE EN BAS.",
+      "photo": "pole-grand-ecart"
+    },
+    {
+      "t": 7.5,
+      "fin": 8.5,
+      "numero": "04",
+      "ligne1": "TU",
+      "ligne2": "T'ENVOLES.",
+      "photo": "pole-drapeau"
+    }
+  ],
+  "cassure": [
+    8.5,
+    9.0
+  ],
+  "argument": {
+    "t": 9.0,
+    "fin": 11.5,
+    "deuxieme": 10.5,
+    "photos": [
+      "pole-pont",
+      "pole-etirement"
+    ],
+    "lignes": [
+      [
+        "PAS BESOIN",
+        "D'ÊTRE SOUPLE",
+        "POUR COMMENCER."
+      ],
+      [
+        "ÇA SE TRAVAILLE",
+        "ICI."
+      ]
+    ]
+  },
+  "carte": 11.5,
+  "cta": 12.5,
+  "fin": 14.5,
+  "carte_photo": "pole-dos",
+  "carte_detail": "DE L'INITIATION À L'INTER · CERCEAU"
+}
