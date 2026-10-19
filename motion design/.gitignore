@@ -8,3 +8,5 @@ __pycache__/
 # Voix (prises réelles et clonées) : jamais dans ce dépôt public, voir _sources-premium/tools/voix.py
 premium-916/*/assets/voix/
 premium-45/*/assets/voix/
+# LE CUBE « LE CHRONO » : assets recopiés depuis _communs/ par tools/build.py
+lecube-chrono/[ABC]/assets/

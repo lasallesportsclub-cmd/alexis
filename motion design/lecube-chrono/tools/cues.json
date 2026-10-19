@@ -1,0 +1,18 @@
+{
+  "_doc": "Feuille de repères de la pub LE CUBE « LE CHRONO » (15 s, 120 BPM, un temps = 0,5 s). Source unique des instants pour la musique (musique.py) et les compositions (build.py). Secondes depuis le début.",
+  "bpm": 120,
+  "duree": 15.0,
+  "chrono": {"depart": 15, "premier_tic": 0.5, "pas": 1.0},
+  "accroche": [0.0, 3.0],
+  "rounds": [
+    {"t": 3.0, "fin": 4.5, "numero": 1, "nom": "CROSSFIT CSH", "detail": "WOD · HALTÉRO · GYM", "photos": ["rig", "chrono-led"]},
+    {"t": 4.5, "fin": 6.0, "numero": 2, "nom": "HYROX", "detail": "ENDURANCE · ENGINE · SIMULATION", "photos": ["piste", "rameurs"]},
+    {"t": 6.0, "fin": 7.5, "numero": 3, "nom": "BOXING CLUB", "detail": "ANGLAISE · KICK · MMA · MUAY THAÏ", "photos": ["portique", "ring"]},
+    {"t": 7.5, "fin": 8.5, "numero": 4, "nom": "POLE DANCE", "detail": "DE L'INITIATION À L'INTER · CERCEAU", "photos": []}
+  ],
+  "cassure": [8.5, 9.0],
+  "argument": {"t": 9.0, "fin": 11.5, "deuxieme": 10.5, "photos": ["boxes", "kettlebells"]},
+  "carte": 11.5,
+  "cta": 12.5,
+  "fin": 14.5
+}

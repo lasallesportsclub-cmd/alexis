@@ -1,0 +1,67 @@
+<template>
+  <style>
+@font-face{font-family:"Oswald";font-weight:600;font-style:normal;font-display:block;src:url("assets/fonts/oswald-latin-600-normal.woff2") format("woff2");}
+@font-face{font-family:"Oswald";font-weight:700;font-style:normal;font-display:block;src:url("assets/fonts/oswald-latin-700-normal.woff2") format("woff2");}
+@font-face{font-family:"Inter";font-weight:400;font-style:normal;font-display:block;src:url("assets/fonts/inter-latin-400-normal.woff2") format("woff2");}
+@font-face{font-family:"Inter";font-weight:600;font-style:normal;font-display:block;src:url("assets/fonts/inter-latin-600-normal.woff2") format("woff2");}
+@font-face{font-family:"Inter";font-weight:700;font-style:normal;font-display:block;src:url("assets/fonts/inter-latin-700-normal.woff2") format("woff2");}
+@font-face{font-family:"Anton";font-weight:400;font-style:normal;font-display:block;src:url("assets/fonts/anton-latin-400-normal.woff2") format("woff2");}
+#root{position:absolute;left:0;top:0;width:1080px;height:1920px;overflow:hidden}
+.clip{position:absolute;left:0;top:0;width:1080px;height:1920px}
+.ph{position:absolute;left:0;top:0;width:1080px;height:1920px;background-size:cover;background-position:center;transform-origin:50% 42%}
+.voile{position:absolute;left:0;top:0;width:1080px;height:1920px;background:rgba(10,10,10,.52)}
+.noir{position:absolute;left:0;top:0;width:1080px;height:1920px;background:#0A0A0A}
+.a{position:absolute}
+.centre{left:0;width:1080px;text-align:center}
+.lab{font:600 44px/1 "Oswald";letter-spacing:.25em;color:#B27639;text-transform:uppercase;white-space:nowrap}
+.nom{font:700 136px/1 "Oswald";color:#F5F2EC;text-transform:uppercase;white-space:nowrap}
+.det{font:600 32px/1.2 "Inter";letter-spacing:.06em;color:rgba(245,242,236,.9);text-transform:uppercase;white-space:nowrap}
+.ttl{font:700 104px/1.02 "Oswald";color:#F5F2EC;text-transform:uppercase;white-space:nowrap}
+.num{font-family:"Anton";font-weight:400;line-height:.9;color:#B27639;white-space:nowrap}
+.br{color:#B27639}
+.masque{position:absolute;overflow:hidden;padding:.16em .04em .14em 0;margin-top:-.16em}
+.masque>div{display:block}
+.trait{position:absolute;height:8px;background:#B27639;transform-origin:0 50%}
+  </style>
+  <div id="root" data-composition-id="accroche" data-width="1080" data-height="1920" data-duration="3">
+    <div id="accroche-p0" class="clip" data-start="0" data-duration="0.5" data-track-index="0"><div id="accroche-p0-ph" class="ph" style="background-image:url(assets/img/rig-wallballs.jpg)"></div><div class="voile"></div></div>
+    <div id="accroche-p1" class="clip" data-start="0.5" data-duration="0.5" data-track-index="90"><div id="accroche-p1-ph" class="ph" style="background-image:url(assets/img/sacs.jpg)"></div><div class="voile"></div></div>
+    <div id="accroche-p2" class="clip" data-start="1" data-duration="0.5" data-track-index="0"><div id="accroche-p2-ph" class="ph" style="background-image:url(assets/img/traineaux.jpg)"></div><div class="voile"></div></div>
+    <div id="accroche-p3" class="clip" data-start="1.5" data-duration="0.5" data-track-index="90"><div id="accroche-p3-ph" class="ph" style="background-image:url(assets/img/tatami.jpg)"></div><div class="voile" style="background:rgba(10,10,10,.66)"></div></div>
+    <div id="accroche-p4" class="clip" data-start="2" data-duration="0.5" data-track-index="0"><div id="accroche-p4-ph" class="ph" style="background-image:url(assets/img/kettlebells.jpg)"></div><div class="voile" style="background:rgba(10,10,10,.66)"></div></div>
+    <div id="accroche-p5" class="clip" data-start="2.5" data-duration="0.5" data-track-index="90"><div id="accroche-p5-ph" class="ph" style="background-image:url(assets/img/rig.jpg)"></div><div class="voile" style="background:rgba(10,10,10,.66)"></div></div>
+    <div id="accroche-n165" class="clip" data-start="0" data-duration="3" data-track-index="1"><div id="accroche-n165-t" class="a num" style="left:96px;top:560px;font-size:400px">165</div></div>
+    <div id="accroche-cours" class="clip" data-start="0" data-duration="3" data-track-index="2"><div id="accroche-cours-t" class="a ttl" style="left:96px;top:930px;font-size:110px">COURS</div></div>
+    <div id="accroche-sem" class="clip" data-start="1" data-duration="2" data-track-index="3"><div class="masque" style="left:96px;top:1062px;font-size:76px;"><div id="accroche-sem-t" class="ttl" style="font-size:76px">EN UNE SEMAINE.</div></div></div>
+    <div id="accroche-lieu" class="clip" data-start="2" data-duration="1" data-track-index="4"><div class="masque" style="left:96px;top:1150px;font-size:76px;"><div id="accroche-lieu-t" class="ttl br" style="font-size:76px">UN SEUL LIEU.</div></div></div>
+  </div>
+  <script src="assets/vendor/gsap.min.js"></script>
+  <script>
+  (function () {
+  const tl = gsap.timeline({ paused: true });
+
+  const $ = (id) => document.getElementById(id);
+  // Coupes sèches : 1 ms (une durée nulle appliquerait l'état final dès la création)
+  const montre = (id, t) => tl.fromTo($(id), { visibility: "hidden" }, { visibility: "visible", duration: 0.001, ease: "none", immediateRender: true }, t);
+  const cache = (id, t) => tl.fromTo($(id), { visibility: "visible" }, { visibility: "hidden", duration: 0.001, ease: "none", immediateRender: false }, t);
+  const frappe = (id, t, k = 1.25, d = 0.16) => tl.fromTo($(id), { scale: k }, { scale: 1, duration: d, ease: "power4.out" }, t);
+  const chute = (id, t, d = 0.2) => tl.fromTo($(id), { yPercent: 110 }, { yPercent: 0, duration: d, ease: "power3.out" }, t);
+  const balaie = (id, t, d = 0.24) => tl.fromTo($(id), { clipPath: "inset(0px 100% 0px 0px)" }, { clipPath: "inset(0px 0% 0px 0px)", duration: d, ease: "power3.out" }, t);
+  const trace = (id, t, d = 0.2) => tl.fromTo($(id), { scaleX: 0 }, { scaleX: 1, duration: d, ease: "power3.out" }, t);
+  const zoom = (id, t, d, a = 1.06) => tl.fromTo($(id), { scale: 1 }, { scale: a, duration: d, ease: "none" }, t);
+
+  zoom("accroche-p0-ph", 0, 0.5, 1.03);
+  zoom("accroche-p1-ph", 0.5, 0.5, 1.03);
+  zoom("accroche-p2-ph", 1, 0.5, 1.03);
+  zoom("accroche-p3-ph", 1.5, 0.5, 1.03);
+  zoom("accroche-p4-ph", 2, 0.5, 1.03);
+  zoom("accroche-p5-ph", 2.5, 0.5, 1.03);
+  frappe("accroche-n165-t", 0, 1.1, 0.3);
+  frappe("accroche-cours-t", 0, 1.08, 0.3);
+  chute("accroche-sem-t", 1);
+  chute("accroche-lieu-t", 2);
+  window.__timelines = window.__timelines || {};
+  window.__timelines["accroche"] = tl;
+  })();
+  </script>
+</template>

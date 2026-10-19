@@ -1,0 +1,96 @@
+<template>
+  <style>
+@font-face{font-family:"Oswald";font-weight:600;font-style:normal;font-display:block;src:url("assets/fonts/oswald-latin-600-normal.woff2") format("woff2");}
+@font-face{font-family:"Oswald";font-weight:700;font-style:normal;font-display:block;src:url("assets/fonts/oswald-latin-700-normal.woff2") format("woff2");}
+@font-face{font-family:"Inter";font-weight:400;font-style:normal;font-display:block;src:url("assets/fonts/inter-latin-400-normal.woff2") format("woff2");}
+@font-face{font-family:"Inter";font-weight:600;font-style:normal;font-display:block;src:url("assets/fonts/inter-latin-600-normal.woff2") format("woff2");}
+@font-face{font-family:"Inter";font-weight:700;font-style:normal;font-display:block;src:url("assets/fonts/inter-latin-700-normal.woff2") format("woff2");}
+@font-face{font-family:"Anton";font-weight:400;font-style:normal;font-display:block;src:url("assets/fonts/anton-latin-400-normal.woff2") format("woff2");}
+#root{position:absolute;left:0;top:0;width:1080px;height:1920px;overflow:hidden}
+.clip{position:absolute;left:0;top:0;width:1080px;height:1920px}
+.ph{position:absolute;left:0;top:0;width:1080px;height:1920px;background-size:cover;background-position:center;transform-origin:50% 42%}
+.voile{position:absolute;left:0;top:0;width:1080px;height:1920px;background:rgba(10,10,10,.52)}
+.noir{position:absolute;left:0;top:0;width:1080px;height:1920px;background:#0A0A0A}
+.a{position:absolute}
+.centre{left:0;width:1080px;text-align:center}
+.lab{font:600 44px/1 "Oswald";letter-spacing:.25em;color:#B27639;text-transform:uppercase;white-space:nowrap}
+.nom{font:700 136px/1 "Oswald";color:#F5F2EC;text-transform:uppercase;white-space:nowrap}
+.det{font:600 32px/1.2 "Inter";letter-spacing:.06em;color:rgba(245,242,236,.9);text-transform:uppercase;white-space:nowrap}
+.ttl{font:700 104px/1.02 "Oswald";color:#F5F2EC;text-transform:uppercase;white-space:nowrap}
+.num{font-family:"Anton";font-weight:400;line-height:.9;color:#B27639;white-space:nowrap}
+.br{color:#B27639}
+.masque{position:absolute;overflow:hidden;padding:.16em .04em .14em 0;margin-top:-.16em}
+.masque>div{display:block}
+.trait{position:absolute;height:8px;background:#B27639;transform-origin:0 50%}
+  </style>
+  <div id="root" data-composition-id="rounds" data-width="1080" data-height="1920" data-duration="5.5">
+    <div id="rounds-r0a" class="clip" data-start="0" data-duration="0.75" data-track-index="0"><div id="rounds-r0a-ph" class="ph" style="background-image:url(assets/img/rig.jpg)"></div><div class="voile" style="background:rgba(10,10,10,.66)"></div></div>
+    <div id="rounds-r0b" class="clip" data-start="0.75" data-duration="0.75" data-track-index="90"><div id="rounds-r0b-ph" class="ph" style="background-image:url(assets/img/chrono-led.jpg)"></div><div class="voile"></div></div>
+    <div id="rounds-r0lab" class="clip" data-start="0" data-duration="1.5" data-track-index="1"><div id="rounds-r0lab-t" class="a lab" style="left:96px;top:600px;">ROUND 1</div></div>
+    <div id="rounds-r0nom" class="clip" data-start="0" data-duration="1.5" data-track-index="2"><div id="rounds-r0nom-t" class="a nom" style="left:96px;top:656px;">CROSSFIT CSH</div></div>
+    <div id="rounds-r0trait" class="clip" data-start="0.1" data-duration="1.4" data-track-index="3"><div id="rounds-r0trait-t" class="trait" style="left:100px;top:812px;width:150px"></div></div>
+    <div id="rounds-r0det" class="clip" data-start="0.25" data-duration="1.25" data-track-index="4"><div id="rounds-r0det-t" class="a det" style="left:96px;top:840px;">WOD · HALTÉRO · GYM</div></div>
+    <div id="rounds-r1a" class="clip" data-start="1.5" data-duration="0.75" data-track-index="0"><div id="rounds-r1a-ph" class="ph" style="background-image:url(assets/img/piste.jpg)"></div><div class="voile"></div></div>
+    <div id="rounds-r1b" class="clip" data-start="2.25" data-duration="0.75" data-track-index="90"><div id="rounds-r1b-ph" class="ph" style="background-image:url(assets/img/rameurs.jpg)"></div><div class="voile"></div></div>
+    <div id="rounds-r1lab" class="clip" data-start="1.5" data-duration="1.5" data-track-index="5"><div id="rounds-r1lab-t" class="a lab" style="left:96px;top:600px;">ROUND 2</div></div>
+    <div id="rounds-r1nom" class="clip" data-start="1.5" data-duration="1.5" data-track-index="6"><div id="rounds-r1nom-t" class="a nom" style="left:96px;top:656px;">HYROX</div></div>
+    <div id="rounds-r1trait" class="clip" data-start="1.6" data-duration="1.4" data-track-index="7"><div id="rounds-r1trait-t" class="trait" style="left:100px;top:812px;width:150px"></div></div>
+    <div id="rounds-r1det" class="clip" data-start="1.75" data-duration="1.25" data-track-index="8"><div id="rounds-r1det-t" class="a det" style="left:96px;top:840px;">ENDURANCE · ENGINE · SIMULATION</div></div>
+    <div id="rounds-r2a" class="clip" data-start="3" data-duration="0.75" data-track-index="0"><div id="rounds-r2a-ph" class="ph" style="background-image:url(assets/img/portique.jpg)"></div><div class="voile"></div></div>
+    <div id="rounds-r2b" class="clip" data-start="3.75" data-duration="0.75" data-track-index="90"><div id="rounds-r2b-ph" class="ph" style="background-image:url(assets/img/ring.jpg)"></div><div class="voile"></div></div>
+    <div id="rounds-r2lab" class="clip" data-start="3" data-duration="1.5" data-track-index="9"><div id="rounds-r2lab-t" class="a lab" style="left:96px;top:600px;">ROUND 3</div></div>
+    <div id="rounds-r2nom" class="clip" data-start="3" data-duration="1.5" data-track-index="10"><div id="rounds-r2nom-t" class="a nom" style="left:96px;top:656px;">BOXING CLUB</div></div>
+    <div id="rounds-r2trait" class="clip" data-start="3.1" data-duration="1.4" data-track-index="11"><div id="rounds-r2trait-t" class="trait" style="left:100px;top:812px;width:150px"></div></div>
+    <div id="rounds-r2det" class="clip" data-start="3.25" data-duration="1.25" data-track-index="12"><div id="rounds-r2det-t" class="a det" style="left:96px;top:840px;">ANGLAISE · KICK · MMA · MUAY THAÏ</div></div>
+    <div id="rounds-r3noir" class="clip" data-start="4.5" data-duration="1" data-track-index="0"><div class="noir"></div></div>
+    <div id="rounds-r3pole" class="clip" data-start="4.5" data-duration="1" data-track-index="13"><div id="rounds-r3pole-t" class="a" style="left:836px;top:300px;width:16px;height:950px;background:#B27639;transform-origin:50% 100%"></div></div>
+    <div id="rounds-r3cerceau" class="clip" data-start="4.65" data-duration="0.85" data-track-index="14"><svg class="a" style="left:560px;top:880px;width:300px;height:300px" viewBox="0 0 300 300"><circle id="rounds-r3cerceau-t" cx="150" cy="150" r="132" fill="none" stroke="#B27639" stroke-width="10" stroke-dasharray="829.4" transform="rotate(-90 150 150)"/></svg></div>
+    <div id="rounds-r3lab" class="clip" data-start="4.5" data-duration="1" data-track-index="15"><div id="rounds-r3lab-t" class="a lab" style="left:96px;top:600px;">ROUND 4</div></div>
+    <div id="rounds-r3nom" class="clip" data-start="4.5" data-duration="1" data-track-index="16"><div id="rounds-r3nom-t" class="a nom" style="left:96px;top:656px;">POLE DANCE</div></div>
+    <div id="rounds-r3trait" class="clip" data-start="4.6" data-duration="0.9" data-track-index="17"><div id="rounds-r3trait-t" class="trait" style="left:100px;top:812px;width:150px"></div></div>
+    <div id="rounds-r3det" class="clip" data-start="4.75" data-duration="0.75" data-track-index="18"><div id="rounds-r3det-t" class="a det" style="left:96px;top:840px;">DE L'INITIATION À L'INTER · CERCEAU</div></div>
+  </div>
+  <script src="assets/vendor/gsap.min.js"></script>
+  <script>
+  (function () {
+  const tl = gsap.timeline({ paused: true });
+
+  const $ = (id) => document.getElementById(id);
+  // Coupes sèches : 1 ms (une durée nulle appliquerait l'état final dès la création)
+  const montre = (id, t) => tl.fromTo($(id), { visibility: "hidden" }, { visibility: "visible", duration: 0.001, ease: "none", immediateRender: true }, t);
+  const cache = (id, t) => tl.fromTo($(id), { visibility: "visible" }, { visibility: "hidden", duration: 0.001, ease: "none", immediateRender: false }, t);
+  const frappe = (id, t, k = 1.25, d = 0.16) => tl.fromTo($(id), { scale: k }, { scale: 1, duration: d, ease: "power4.out" }, t);
+  const chute = (id, t, d = 0.2) => tl.fromTo($(id), { yPercent: 110 }, { yPercent: 0, duration: d, ease: "power3.out" }, t);
+  const balaie = (id, t, d = 0.24) => tl.fromTo($(id), { clipPath: "inset(0px 100% 0px 0px)" }, { clipPath: "inset(0px 0% 0px 0px)", duration: d, ease: "power3.out" }, t);
+  const trace = (id, t, d = 0.2) => tl.fromTo($(id), { scaleX: 0 }, { scaleX: 1, duration: d, ease: "power3.out" }, t);
+  const zoom = (id, t, d, a = 1.06) => tl.fromTo($(id), { scale: 1 }, { scale: a, duration: d, ease: "none" }, t);
+
+  zoom("rounds-r0a-ph", 0, 0.75, 1.06);
+  zoom("rounds-r0b-ph", 0.75, 0.75, 1.06);
+  balaie("rounds-r0lab-t", 0, 0.18);
+  frappe("rounds-r0nom-t", 0, 1.2);
+  trace("rounds-r0trait-t", 0.1);
+  balaie("rounds-r0det-t", 0.25);
+  zoom("rounds-r1a-ph", 1.5, 0.75, 1.06);
+  zoom("rounds-r1b-ph", 2.25, 0.75, 1.06);
+  balaie("rounds-r1lab-t", 1.5, 0.18);
+  frappe("rounds-r1nom-t", 1.5, 1.2);
+  trace("rounds-r1trait-t", 1.6);
+  balaie("rounds-r1det-t", 1.75);
+  zoom("rounds-r2a-ph", 3, 0.75, 1.06);
+  zoom("rounds-r2b-ph", 3.75, 0.75, 1.06);
+  balaie("rounds-r2lab-t", 3, 0.18);
+  frappe("rounds-r2nom-t", 3, 1.2);
+  trace("rounds-r2trait-t", 3.1);
+  balaie("rounds-r2det-t", 3.25);
+  frappe("rounds-r3pole-t", 4.5, 0, 0.3);
+  tl.fromTo($("rounds-r3cerceau-t"), { strokeDashoffset: 829.4 }, { strokeDashoffset: 0, duration: 0.4, ease: "power2.out" }, 4.65);
+  balaie("rounds-r3lab-t", 4.5, 0.18);
+  frappe("rounds-r3nom-t", 4.5, 1.2);
+  trace("rounds-r3trait-t", 4.6);
+  balaie("rounds-r3det-t", 4.75);
+  window.__timelines = window.__timelines || {};
+  window.__timelines["rounds"] = tl;
+  })();
+  </script>
+</template>
