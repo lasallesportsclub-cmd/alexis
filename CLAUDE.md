@@ -2,7 +2,15 @@
 
 Les 21 skills HyperFrames de HeyGen sont installés dans `.claude/skills/` et suivis dans `skills-lock.json`.
 Point d'entrée : `/hyperframes`, qui oriente vers le bon workflow (`/motion-graphics`, `/product-launch-video`, `/general-video`, etc.).
-Pour les mettre à jour : `npx skills update -p -y`.
+Pour les mettre à jour : `npx skills update -p -y`. La commande range les skills mis à jour dans `.agents/skills/` et laisse des liens symboliques dans `.claude/skills/`. Il faut les remplacer par de vraies copies, comme dans le reste du dépôt :
+
+```sh
+cd .claude/skills && for d in *; do [ -L "$d" ] && t=$(readlink -f "$d") && rm "$d" && cp -r "$t" "$d"; done; cd ../.. && rm -rf .agents
+```
+
+Pour vérifier qu'aucun skill nouveau n'est sorti : `npx skills add heygen-com/hyperframes --list`, à comparer avec `skills-lock.json`.
+
+Tous les projets HyperFrames du dépôt sont figés sur `hyperframes@0.8.181` (vérifié le 20/10/2026, `check` OK sur les 17). Pour monter de version : `npx hyperframes@latest upgrade --project <dossier>`, puis `check`. GSAP reste en 3.14.2, la version que suivent les skills HyperFrames.
 
 ## En session cloud
 

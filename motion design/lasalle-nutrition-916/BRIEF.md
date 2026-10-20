@@ -21,4 +21,4 @@ format: story 1080×1920, 4 images + 4 vidéos de 5 s
 - **Musique :** aucune. Elle s'ajoute dans Instagram. MusicGen est exclu.
 - **Livraison :** « Pub Meta LA SALLE/Nutrition accueil oct26/ ». Les JPG et MP4 sont hors git, car ils contiennent le visuel partenaire avec des modèles.
 
-Reconstruire : `python3 tools/build.py`, puis `npx --yes hyperframes@0.8.174 render --quality delivery -o renders/nutrition.mp4`, puis `python3 tools/livrer.py`.
+Reconstruire : `python3 tools/build.py`, puis `npm run render -- --quality delivery -o renders/nutrition.mp4`, puis `python3 tools/livrer.py`.

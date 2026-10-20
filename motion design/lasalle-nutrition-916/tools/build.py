@@ -9,7 +9,7 @@ Chaque story reprend la direction artistique de sa marque (relevée dans frame.m
 Une scène = une sous-composition (compositions/sN.html) montée dans index.html à t = 5 × (N−1).
 Les images fixes sont prises à la fin de chaque scène (tout est en place), les vidéos sont découpées dans le rendu.
 
-Sources hors dépôt (dépôt public) : ~/nutri-sources/raw (Drive, lecture seule) et ~/nutri-sources/fonts (@fontsource/inter).
+Sources hors dépôt (dépôt public) : ~/nutri-sources/raw (Drive, lecture seule) et ~/nutri-sources/fonts (@fontsource/inter 5.3.0).
 assets/ est ignoré par git : ce script le reconstruit à l'identique.
 Usage : python3 tools/build.py
 """
@@ -59,7 +59,7 @@ def assets():
         os.makedirs(os.path.join(a, d), exist_ok=True)
     fs = os.path.join(SRC, "fonts", "package")
     if not os.path.isdir(fs):
-        sys.exit("Police Inter absente : cd ~/nutri-sources/fonts && npm pack @fontsource/inter@5.1.1 && tar -xzf fontsource-inter-5.1.1.tgz")
+        sys.exit("Police Inter absente : cd ~/nutri-sources/fonts && npm pack @fontsource/inter@5.3.0 && tar -xzf fontsource-inter-5.3.0.tgz")
     for f in POLICES:
         shutil.copy(os.path.join(fs, "files", f), os.path.join(a, "fonts", f))
     shutil.copy(os.path.join(fs, "LICENSE"), os.path.join(a, "fonts", "OFL-inter.txt"))

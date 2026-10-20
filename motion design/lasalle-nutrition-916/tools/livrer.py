@@ -7,7 +7,7 @@
 
 Les images et vidéos montrent le visuel partenaire Nutripure (avec ses modèles) et l'étagère de l'accueil : elles vont
 dans « Pub Meta LA SALLE/Nutrition accueil oct26/ », où les JPG et MP4 sont ignorés par git (dépôt public).
-Usage : python3 tools/livrer.py   (après tools/build.py et le rendu : npx hyperframes@0.8.174 render --quality delivery -o renders/nutrition.mp4)
+Usage : python3 tools/livrer.py   (après tools/build.py et le rendu : npm run render -- --quality delivery -o renders/nutrition.mp4)
 """
 import html
 import json
@@ -20,7 +20,7 @@ import tempfile
 ICI = os.path.dirname(os.path.abspath(__file__))
 RACINE = os.path.dirname(ICI)
 LIVRAISON = os.path.normpath(os.path.join(RACINE, "..", "..", "Pub Meta LA SALLE", "Nutrition accueil oct26"))
-HF = ["npx", "--yes", "hyperframes@0.8.174"]
+HF = ["npx", "--yes", re.search(r"hyperframes@[0-9.]+", open(os.path.join(RACINE, "package.json")).read()).group()]  # version figée du projet
 DUREE = 5.0
 STORIES = [("s1", "1_marques"), ("s2", "2_nutrimuscle"), ("s3", "3_nutripure"), ("s4", "4_question")]
 ATTENDUS = {

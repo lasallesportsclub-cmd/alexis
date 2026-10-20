@@ -25,7 +25,7 @@ Les sites nutripure.fr et nutrimuscle.com ainsi qu'Instagram ne sont pas accessi
 | Images | pots blancs, logo « Nm » carré, bandeau bleu clair par produit | sachets kraft, cuisine bois, scènes de vie lumineuses |
 | Ton | factuel, ingrédients marqués (Creapure®, Peptan®, Naticol®), « Sportivement » | direct et positif : « À chaque objectif sa protéine ! » |
 
-Inter vient de @fontsource/inter 5.1.1 (licence OFL), embarqué en local dans `assets/fonts`. Helvetica n'est pas libre : Inter la remplace pour Nutrimuscle.
+Inter vient de @fontsource/inter 5.3.0 (licence OFL), embarqué en local dans `assets/fonts`. Helvetica n'est pas libre : Inter la remplace pour Nutrimuscle.
 
 ## Les 4 stories (1080×1920, 5 s chacune)
 
