@@ -12,6 +12,19 @@ Pour vérifier qu'aucun skill nouveau n'est sorti : `npx skills add heygen-com/h
 
 Tous les projets HyperFrames du dépôt sont figés sur `hyperframes@0.8.181` (vérifié le 20/10/2026, `check` OK sur les 17). Pour monter de version : `npx hyperframes@latest upgrade --project <dossier>`, puis `check`. GSAP reste en 3.14.2, la version que suivent les skills HyperFrames.
 
+## Nouveautés des skills à appliquer (mise à jour du 20/10/2026)
+
+- **Effets sonores :**
+  - `media-use` cherche d'abord sur Openverse (CC0 / CC BY, sans compte). Openverse est bloqué en session cloud.
+  - En repli : la bibliothèque intégrée, `.claude/skills/media-use/audio/assets/sfx/`, avec 19 sons Pixabay (whoosh, impacts, riser, pop…). Leur licence permet l'usage commercial sans attribution.
+  - Pour une pub publiée : seulement nos sons synthétisés, la bibliothèque Pixabay ou du CC0. Un son CC BY impose un crédit là où la vidéo est publiée : à éviter en pub Meta. Jamais de NC, SA ou ND.
+- **Vérification :**
+  - Regarder les images en pleine résolution, pas seulement la planche : le début, chaque scène et chaque moment signalé.
+  - Comparer l'aperçu (`snapshot`) et le rendu décodé aux mêmes instants. Exemple de test SSIM : `lasalle-nutrition-916/tools/livrer.py`.
+  - Mettre les captures jetables dans un dossier temporaire, puis supprimer ce dossier. Ne jamais supprimer tout `.hyperframes`, qui contient l'historique du projet.
+- **Storyboard :** la planche est maintenant `boards/storyboard.html`, avec des images dans `boards/stills/` capturées par `snapshot` à partir des cadres posés dans la composition. Il n'y a plus de croquis dessinés à part.
+- **Suivi de consommation :** `npx hyperframes usage --json` renvoie aussi un champ `spend` (pour les forfaits facturés à l'usage).
+
 ## En session cloud
 
 - Avant le premier rendu, lancer `npx hyperframes browser ensure`. Cette commande télécharge Chrome Headless Shell (~114 Mo), qui n'est pas conservé d'une session à l'autre.

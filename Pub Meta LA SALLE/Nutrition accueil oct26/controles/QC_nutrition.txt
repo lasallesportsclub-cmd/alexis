@@ -5,6 +5,7 @@ OK   Durée 5.00 s (4,95–5,05)
 OK   Poids 2.4 Mo (≤ 30)
 OK   faststart (moov avant mdat)
 OK   Piste son AAC muette (musique ajoutée dans Instagram)
+OK   Rendu décodé = aperçu à 4.6 s (SSIM 0.988 ≥ 0,97)
 OK   Textes attendus présents
 OK   Aucun mot interdit ni allégation
 Verdict : GO technique
@@ -16,6 +17,7 @@ OK   Durée 5.00 s (4,95–5,05)
 OK   Poids 1.2 Mo (≤ 30)
 OK   faststart (moov avant mdat)
 OK   Piste son AAC muette (musique ajoutée dans Instagram)
+OK   Rendu décodé = aperçu à 4.6 s (SSIM 0.991 ≥ 0,97)
 OK   Textes attendus présents
 OK   Aucun mot interdit ni allégation
 Verdict : GO technique
@@ -27,6 +29,7 @@ OK   Durée 5.00 s (4,95–5,05)
 OK   Poids 0.9 Mo (≤ 30)
 OK   faststart (moov avant mdat)
 OK   Piste son AAC muette (musique ajoutée dans Instagram)
+OK   Rendu décodé = aperçu à 4.6 s (SSIM 0.990 ≥ 0,97)
 OK   Textes attendus présents
 OK   Aucun mot interdit ni allégation
 Verdict : GO technique
@@ -38,6 +41,7 @@ OK   Durée 5.00 s (4,95–5,05)
 OK   Poids 0.3 Mo (≤ 30)
 OK   faststart (moov avant mdat)
 OK   Piste son AAC muette (musique ajoutée dans Instagram)
+OK   Rendu décodé = aperçu à 4.6 s (SSIM 0.995 ≥ 0,97)
 OK   Textes attendus présents
 OK   Aucun mot interdit ni allégation
 Verdict : GO technique

@@ -89,6 +89,11 @@ def main():
         head = open(mp4, "rb").read(200000)
         faststart = head.find(b"moov") != -1 and (head.find(b"mdat") == -1 or head.find(b"moov") < head.find(b"mdat"))
         pi, si = sonde(images[i])
+        # Règle des skills HyperFrames (oct. 2026) : comparer l'aperçu et le rendu décodé au même instant
+        r = subprocess.run(["ffmpeg", "-nostats", "-ss", f"{DUREE - 0.4:g}", "-i", mp4, "-i", images[i], "-frames:v", "1",
+                            "-lavfi", "[0:v][1:v]ssim", "-f", "null", "-"], capture_output=True, text=True)
+        m = re.search(r"All:([0-9.]+)", r.stderr)
+        ssim = float(m.group(1)) if m else 0.0
         t = texte(cid)
         absents = [m for m in ATTENDUS[cid] if m.replace("’", "'").lower() not in t.lower()]  # capitales posées par le CSS
         interdits = [m for m in INTERDITS if m.lower() in f" {t.lower()} "]
@@ -100,6 +105,7 @@ def main():
             (f"Poids {taille:.1f} Mo (≤ 30)", taille <= 30),
             ("faststart (moov avant mdat)", faststart),
             ("Piste son AAC muette (musique ajoutée dans Instagram)", a is not None and a["codec_name"] == "aac"),
+            (f"Rendu décodé = aperçu à {DUREE - 0.4:g} s (SSIM {ssim:.3f} ≥ 0,97)", ssim >= 0.97),
             ("Textes attendus présents" + (f" (absents : {absents})" if absents else ""), not absents),
             ("Aucun mot interdit ni allégation" + (f" (trouvés : {interdits})" if interdits else ""), not interdits),
         ]
