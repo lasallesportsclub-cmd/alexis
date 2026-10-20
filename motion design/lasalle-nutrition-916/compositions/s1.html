@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr">
+  <head><meta charset="UTF-8" /></head>
+  <body>
+    <template id="s1-template">
+      <style>
+
+@font-face { font-family: "Inter"; font-weight: 400; font-style: normal; font-display: block; src: url("assets/fonts/inter-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 500; font-style: normal; font-display: block; src: url("assets/fonts/inter-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 600; font-style: normal; font-display: block; src: url("assets/fonts/inter-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 700; font-style: normal; font-display: block; src: url("assets/fonts/inter-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 800; font-style: normal; font-display: block; src: url("assets/fonts/inter-latin-800-normal.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 900; font-style: normal; font-display: block; src: url("assets/fonts/inter-latin-900-normal.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 800; font-style: italic; font-display: block; src: url("assets/fonts/inter-latin-800-italic.woff2") format("woff2"); }
+@font-face { font-family: "Inter"; font-weight: 900; font-style: italic; font-display: block; src: url("assets/fonts/inter-latin-900-italic.woff2") format("woff2"); }
+.st { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden; font-family: "Inter", sans-serif; color: #111111; }
+.st * { margin: 0; padding: 0; box-sizing: border-box; }
+.st .a { position: absolute; }
+.st .nw { white-space: nowrap; }
+.st .kick { font-weight: 700; font-size: 30px; letter-spacing: .14em; text-transform: uppercase; white-space: nowrap; line-height: 1; }
+.st .nm { font-weight: 800; letter-spacing: -.02em; line-height: 1; white-space: nowrap; }
+.st .np { font-weight: 900; font-style: italic; letter-spacing: -.01em; line-height: 1; white-space: nowrap; text-transform: uppercase; }
+.st .corps { font-weight: 500; font-size: 42px; line-height: 1.3; color: #142323; }
+.st .pied { left: 0; top: 1580px; width: 1080px; height: 340px; background: #00253A; }
+.st .pied img { position: absolute; left: 72px; top: 44px; width: 170px; }
+.st .pied p { position: absolute; left: 282px; top: 62px; color: #FFFFFF; font-weight: 500; font-size: 32px; line-height: 1.35; white-space: nowrap; }
+
+        #s1-root { position: absolute; inset: 0; }
+      </style>
+      <div id="s1-root" data-composition-id="s1" data-width="1080" data-height="1920" data-duration="5">
+        <div id="s1-scene" class="st clip" data-start="0" data-duration="5" data-track-index="0" style="background:#F7F5F3">
+  <div class="a" style="left:0;top:0;width:1080px;height:967px;overflow:hidden" data-layout-allow-overflow>
+    <img id="s1-photo" src="assets/img/etagere.jpg" style="display:block;width:1080px;height:967px;object-fit:cover" alt="">
+  </div>
+  <div id="s1-pastille" class="a np" style="left:72px;top:922px;padding:20px 30px 18px;background:#77D2F5;border-radius:6px;font-size:50px">Disponibles à l’accueil</div>
+  <div class="a" style="left:66px;top:1060px;width:960px;height:130px;overflow:hidden" data-layout-allow-overflow><div id="s1-nm" class="nm" style="font-size:128px;color:#00253A">NUTRIMUSCLE</div></div>
+  <div class="a" style="left:66px;top:1188px;width:960px;height:124px;overflow:hidden" data-layout-allow-overflow><div id="s1-np" class="np" style="font-size:114px">&amp; NUTRIPURE</div></div>
+  <p id="s1-corps" class="a corps" style="left:72px;top:1340px;width:936px">Protéines, créatine, collagène, magnésium : une sélection des deux marques vous attend à l’accueil de LA SALLE.</p>
+  <div class="a pied"><img src="assets/img/logo-negatif-provisoire.png" alt="LA SALLE"><p>LA SALLE · Urban Valley<br>Conflans-Sainte-Honorine</p></div>
+        </div>
+      </div>
+      <script>
+        const tl = gsap.timeline({ paused: true });
+
+      tl.from("#s1-photo", { scale: 1.08, duration: 5, ease: "none" }, 0);
+      tl.from("#s1-pastille", { x: -700, duration: 0.5, ease: "power3.out" }, 0.15);
+      tl.from("#s1-nm", { yPercent: 105, duration: 0.55, ease: "power3.out" }, 0.4);
+      tl.from("#s1-np", { yPercent: 105, duration: 0.55, ease: "power3.out" }, 0.62);
+      tl.from("#s1-corps", { y: 40, opacity: 0, duration: 0.5, ease: "power2.out" }, 0.95);
+        window.__timelines["s1"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

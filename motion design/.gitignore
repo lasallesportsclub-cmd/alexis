@@ -14,3 +14,5 @@ lecube-chrono/[ABC]/assets/
 lecube-disciplines/*/assets/
 # Musiques des pubs par discipline : régénérées à l'identique par tools/musique.py (graine fixe)
 lecube-disciplines/_communs/*.wav
+# Stories nutrition : assets recopiés depuis ~/nutri-sources par tools/build.py (photos et visuel partenaire)
+lasalle-nutrition-916/assets/

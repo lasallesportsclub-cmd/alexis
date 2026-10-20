@@ -1,0 +1,45 @@
+QC — story 1_marques : LA_SALLE_Nutrition_1_marques_story_9x16.jpg + LA_SALLE_Nutrition_1_marques_story_9x16.mp4
+OK   Image JPG 1080×1920
+OK   Vidéo 1080×1920, H.264 High, yuv420p, 30 i/s
+OK   Durée 5.00 s (4,95–5,05)
+OK   Poids 2.4 Mo (≤ 30)
+OK   faststart (moov avant mdat)
+OK   Piste son AAC muette (musique ajoutée dans Instagram)
+OK   Textes attendus présents
+OK   Aucun mot interdit ni allégation
+Verdict : GO technique
+
+QC — story 2_nutrimuscle : LA_SALLE_Nutrition_2_nutrimuscle_story_9x16.jpg + LA_SALLE_Nutrition_2_nutrimuscle_story_9x16.mp4
+OK   Image JPG 1080×1920
+OK   Vidéo 1080×1920, H.264 High, yuv420p, 30 i/s
+OK   Durée 5.00 s (4,95–5,05)
+OK   Poids 1.2 Mo (≤ 30)
+OK   faststart (moov avant mdat)
+OK   Piste son AAC muette (musique ajoutée dans Instagram)
+OK   Textes attendus présents
+OK   Aucun mot interdit ni allégation
+Verdict : GO technique
+
+QC — story 3_nutripure : LA_SALLE_Nutrition_3_nutripure_story_9x16.jpg + LA_SALLE_Nutrition_3_nutripure_story_9x16.mp4
+OK   Image JPG 1080×1920
+OK   Vidéo 1080×1920, H.264 High, yuv420p, 30 i/s
+OK   Durée 5.00 s (4,95–5,05)
+OK   Poids 0.9 Mo (≤ 30)
+OK   faststart (moov avant mdat)
+OK   Piste son AAC muette (musique ajoutée dans Instagram)
+OK   Textes attendus présents
+OK   Aucun mot interdit ni allégation
+Verdict : GO technique
+
+QC — story 4_question : LA_SALLE_Nutrition_4_question_story_9x16.jpg + LA_SALLE_Nutrition_4_question_story_9x16.mp4
+OK   Image JPG 1080×1920
+OK   Vidéo 1080×1920, H.264 High, yuv420p, 30 i/s
+OK   Durée 5.00 s (4,95–5,05)
+OK   Poids 0.3 Mo (≤ 30)
+OK   faststart (moov avant mdat)
+OK   Piste son AAC muette (musique ajoutée dans Instagram)
+OK   Textes attendus présents
+OK   Aucun mot interdit ni allégation
+Verdict : GO technique
+
+Reste à valider par Mehdi : les points ⚠ de A_valider.md (stock du jour, Daily Protein, visuel partenaire).
