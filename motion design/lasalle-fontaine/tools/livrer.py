@@ -60,7 +60,7 @@ def texte(projet):
     h = " ".join(open(os.path.join(dossier, f), encoding="utf-8").read() for f in sorted(os.listdir(dossier)))
     h = re.sub(r"<script.*?</script>|<style.*?</style>", " ", h, flags=re.S)
     h = re.sub(r'<(\w+)[^>]*class="[^"]*\b(kick|t8|t9)\b[^"]*"[^>]*>(.*?)</\1>',
-               lambda m: " " + re.sub(r"<[^>]+>", "", m.group(3)).upper() + " ", h, flags=re.S)
+               lambda m: " " + html.unescape(re.sub(r"<[^>]+>", "", m.group(3))).upper() + " ", h, flags=re.S)
     h = re.sub(r"<br\s*/?>", " ", h)
     t = html.unescape(re.sub(r"<[^>]+>", " ", h))
     t = t.replace(" ", " ").replace(" ", " ").replace("’", "'")

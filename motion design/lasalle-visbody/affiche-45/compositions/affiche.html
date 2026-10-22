@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+  <head><meta charset="UTF-8" /></head>
+  <body>
+    <template id="affiche-template">
+      <style>
+@font-face { font-family: "Barlow Condensed"; font-weight: 700; font-style: normal; font-display: block; src: url("assets/fonts/barlow-condensed-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Condensed"; font-weight: 800; font-style: normal; font-display: block; src: url("assets/fonts/barlow-condensed-latin-800-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Condensed"; font-weight: 800; font-style: italic; font-display: block; src: url("assets/fonts/barlow-condensed-latin-800-italic.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Condensed"; font-weight: 900; font-style: normal; font-display: block; src: url("assets/fonts/barlow-condensed-latin-900-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Condensed"; font-weight: 900; font-style: italic; font-display: block; src: url("assets/fonts/barlow-condensed-latin-900-italic.woff2") format("woff2"); }
+@font-face { font-family: "DM Sans"; font-weight: 400; font-style: normal; font-display: block; src: url("assets/fonts/dm-sans-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "DM Sans"; font-weight: 500; font-style: normal; font-display: block; src: url("assets/fonts/dm-sans-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "DM Sans"; font-weight: 700; font-style: normal; font-display: block; src: url("assets/fonts/dm-sans-latin-700-normal.woff2") format("woff2"); }
+
+.fr { position: absolute; inset: 0; overflow: hidden; color: #F4F1EC; font-family: "Barlow Condensed", sans-serif; font-kerning: normal; }
+.fr * { margin: 0; padding: 0; box-sizing: border-box; }
+.fr .a { position: absolute; }
+.fr .m { position: absolute; overflow: hidden; }
+.fr .kick { font-family: "DM Sans", sans-serif; font-weight: 500; font-size: 34px; letter-spacing: .16em; text-transform: uppercase; color: #B8A07E; white-space: nowrap; line-height: 1; display: flex; align-items: center; gap: 18px; }
+.fr .t9 { font-weight: 900; text-transform: uppercase; line-height: .88; letter-spacing: -.005em; white-space: nowrap; }
+.fr .t8 { font-weight: 800; text-transform: uppercase; line-height: 1; white-space: nowrap; }
+.fr .it { font-style: italic; }
+.fr .or { color: #B8A07E; }
+.fr .creux { color: transparent; -webkit-text-stroke: 3px rgba(244,241,236,.14); background-image: linear-gradient(transparent, transparent); -webkit-background-clip: text; background-clip: text; }  /* chiffre fantôme au trait */
+.fr .corps { font-family: "DM Sans", sans-serif; font-weight: 500; line-height: 1.3; color: #F4F1EC; letter-spacing: -.01em; }
+.fr .num { font-variant-numeric: tabular-nums; }
+.fr .plus { fill: #B8A07E; overflow: visible; display: block; flex: none; }
+.fr .mention { background: #222222; color: #F4F1EC; font-family: "DM Sans", sans-serif; font-weight: 500; letter-spacing: -.01em; }
+.fr .filet { background: #B8A07E; }
+.fr .point { width: 22px; height: 22px; border-radius: 50%; background: #B8A07E; outline: 7px solid rgba(184,160,126,.28); }
+.fr .plaque { background: #B8A07E; color: #0D0D0D; font-weight: 800; font-style: italic; text-transform: uppercase; white-space: nowrap; display: inline-flex; align-items: center; clip-path: polygon(var(--c) 0, 100% 0, calc(100% - var(--c)) 100%, 0 100%); }
+.fr .plaque sup { font-size: .55em; vertical-align: .75em; margin-left: .04em; }
+.fr .cadre { border: 2px solid rgba(184,160,126,.85); color: #F4F1EC; font-weight: 800; text-transform: uppercase; letter-spacing: .06em; white-space: nowrap; display: inline-flex; align-items: center; gap: 16px; }
+.fr .etape { display: flex; align-items: baseline; }
+.fr .etape .n { font-weight: 800; font-style: italic; color: #B8A07E; flex: none; }
+.fr .vf { left: 0; top: 0; width: 818px; height: 1920px; background: #B8A07E; clip-path: polygon(806px 0, 818px 0, 12px 100%, 0 100%); }
+
+        #affiche-root { position: absolute; inset: 0; }
+      </style>
+      <div id="affiche-root" data-composition-id="affiche" data-width="1080" data-height="1350" data-duration="1">
+        <div id="affiche-scene" class="fr clip" data-start="0" data-duration="1" data-track-index="0" style="width:1080px;height:1350px">
+
+<div class="fond"><div id="b1" class="b" style="left:-567px;width:947px;clip-path:polygon(567px 0,100% 0,calc(100% - 567px) 100%,0 100%)"></div><div id="b2" class="b" style="left:820px;width:987px;clip-path:polygon(567px 0,100% 0,calc(100% - 567px) 100%,0 100%)"></div></div>
+<div class="a t9 creux" aria-hidden="true" data-layout-allow-overflow style="left:520px;top:640px;font-size:760px">IA</div>
+<div class="a kick" style="left:108px;top:150px">L’intelligence artificielle</div>
+<div class="a t9" style="left:104px;top:206px;font-size:132px">Votre</div>
+<div class="a t9" style="left:104px;top:322px;font-size:132px">programme,</div>
+<div class="a t9 it or" style="left:104px;top:438px;font-size:132px">par l’IA.</div>
+<div class="a etape" style="left:108px;top:640px"><span class="n num" style="font-size:76px;width:118px">01</span><p class="corps" style="font-size:44px;width:700px">Votre analyse 3D.</p></div>
+<div class="a etape" style="left:108px;top:750px"><span class="n num" style="font-size:76px;width:118px">02</span><p class="corps" style="font-size:44px;width:700px">Votre objectif, fixé<br>avec votre coach.</p></div>
+<div class="a etape" style="left:108px;top:920px"><span class="n num" style="font-size:76px;width:118px">03</span><p class="corps" style="font-size:44px;width:700px">Un programme d’entraînement adapté aux machines de LA&nbsp;SALLE.</p></div>
+
+<div class="a filet" style="left:0;top:1236px;width:1080px;height:6px"></div>
+
+        </div>
+      </div>
+      <script>
+        const tl = gsap.timeline({ paused: true });
+
+        window.__timelines["affiche"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

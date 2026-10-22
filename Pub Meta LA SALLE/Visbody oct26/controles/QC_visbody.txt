@@ -1,0 +1,37 @@
+QC — LA_SALLE_Visbody_affiche_programme_IA_post_4x5.jpg (+ PNG maître)
+OK   Image 1080×1350 (4:5)
+OK   Poids JPG 0.13 Mo (< 1)
+OK   check HyperFrames passé, contraste AA 50/50 (affiche-45)
+OK   Textes de l'affiche présents
+OK   Aucun mot interdit ni allégation
+Verdict : GO technique
+
+QC — LA_SALLE_Visbody_story_9x16.mp4
+OK   Format 1080×1920, H.264 High, yuv420p, 60 i/s
+OK   Durée 36.000 s (35.9–36)
+OK   Poids 10.3 Mo (≤ 25)
+OK   faststart (moov avant mdat)
+OK   Audio AAC 48000 Hz, 2 canaux
+OK   Sonie -14.1 LUFS (-14 ± 0,5)
+OK   Crête vraie -1.6 dBTP (≤ −1,5)
+OK   Aperçu = rendu décodé à la fin de chaque scène (SSIM 0.993, 0.996, 0.996, 0.995, 0.992, 0.992, 0.995, 0.994, 0.996 ≥ 0,97)
+OK   check HyperFrames passé, contraste AA 4/4 (story-916)
+OK   Textes des 8 visuels et des 3 ajouts présents
+OK   Aucun mot interdit ni allégation
+Verdict : GO technique
+
+QC — LA_SALLE_Visbody_story_9x16_bruitages.mp4
+OK   Format 1080×1920, H.264 High, yuv420p, 60 i/s
+OK   Durée 36.000 s (35.9–36)
+OK   Poids 10.2 Mo (≤ 25)
+OK   faststart (moov avant mdat)
+OK   Audio AAC 48000 Hz, 2 canaux
+OK   Sonie -18.3 LUFS (-18 ± 0,5)
+OK   Crête vraie -1.6 dBTP (≤ −1,5)
+OK   Aperçu = rendu décodé à la fin de chaque scène (SSIM 0.993, 0.996, 0.996, 0.995, 0.992, 0.992, 0.995, 0.994, 0.996 ≥ 0,97)
+OK   check HyperFrames passé, contraste AA 4/4 (story-916)
+OK   Textes des 8 visuels et des 3 ajouts présents
+OK   Aucun mot interdit ni allégation
+Verdict : GO technique
+
+Reste à valider par Mehdi : les points ⚠ de A_valider.md, puis l'écoute de la musique (contrôlée par mesures seulement).
