@@ -38,8 +38,8 @@
 
         #volets-root { position: absolute; inset: 0; }
       </style>
-      <div id="volets-root" data-composition-id="volets" data-width="1080" data-height="1920" data-duration="36">
-        <div id="volets-scene" class="fr clip" data-start="0" data-duration="36" data-track-index="0" style="width:1080px;height:1920px">
+      <div id="volets-root" data-composition-id="volets" data-width="1080" data-height="1920" data-duration="39">
+        <div id="volets-scene" class="fr clip" data-start="0" data-duration="39" data-track-index="0" style="width:1080px;height:1920px">
 <div id="filet0" class="a vf" data-layout-allow-overflow></div>
 <div id="filet1" class="a vf" data-layout-allow-overflow></div>
 <div id="filet2" class="a vf" data-layout-allow-overflow></div>
@@ -53,11 +53,11 @@
         const tl = gsap.timeline({ paused: true });
         tl.fromTo("#filet0", { x: -812 }, { x: 1074, duration: 0.9, ease: "sine.inOut" }, 4.55);
         tl.fromTo("#filet1", { x: -812 }, { x: 1074, duration: 0.9, ease: "sine.inOut" }, 8.55);
-        tl.fromTo("#filet2", { x: -812 }, { x: 1074, duration: 0.9, ease: "sine.inOut" }, 16.05);
-        tl.fromTo("#filet3", { x: -812 }, { x: 1074, duration: 0.9, ease: "sine.inOut" }, 20.55);
-        tl.fromTo("#filet4", { x: -812 }, { x: 1074, duration: 0.9, ease: "sine.inOut" }, 24.55);
-        tl.fromTo("#filet5", { x: -812 }, { x: 1074, duration: 0.9, ease: "sine.inOut" }, 28.05);
-        tl.fromTo("#filet6", { x: -812 }, { x: 1074, duration: 0.9, ease: "sine.inOut" }, 32.05);
+        tl.fromTo("#filet2", { x: -812 }, { x: 1074, duration: 0.9, ease: "sine.inOut" }, 19.05);
+        tl.fromTo("#filet3", { x: -812 }, { x: 1074, duration: 0.9, ease: "sine.inOut" }, 23.55);
+        tl.fromTo("#filet4", { x: -812 }, { x: 1074, duration: 0.9, ease: "sine.inOut" }, 27.55);
+        tl.fromTo("#filet5", { x: -812 }, { x: 1074, duration: 0.9, ease: "sine.inOut" }, 31.05);
+        tl.fromTo("#filet6", { x: -812 }, { x: 1074, duration: 0.9, ease: "sine.inOut" }, 35.05);
 
         window.__timelines["volets"] = tl;
       </script>

@@ -1,4 +1,4 @@
-"""Analyse 3D Visbody M60 LA SALLE : story animée (9:16, 36 s, 60 i/s) et affiche « programme IA » (4:5).
+"""Analyse 3D Visbody M60 LA SALLE : story animée (9:16, 39 s, 60 i/s) et affiche « programme IA » (4:5).
 
 Écrit :
   story-916/index.html, compositions/*.html  la story : les 8 visuels fournis le 22/10/2026 rejoués texte par texte,
@@ -14,6 +14,7 @@ Repères : SCENES et T ci-dessous ; reperes() les donne en absolu à tools/musiq
 
 Usage : python3 tools/build.py   (puis tools/musique.py, rendu, tools/livrer.py)
 """
+import json
 import os
 import shutil
 import sys
@@ -24,9 +25,9 @@ MD = os.path.normpath(os.path.join(RACINE, ".."))
 SOURCES = os.path.expanduser(os.environ.get("VISBODY_SOURCES", "~/visbody-sources"))
 
 # Story : (id, coupe, temps jusqu'à la coupe suivante) ; coupes sur la grille de 120 BPM (un temps = 0,5 s)
-SCENES = [("s1", 0.0, 2.5), ("s2", 2.5, 2.5), ("s3", 5.0, 4.0), ("s4", 9.0, 7.5), ("s5", 16.5, 4.5),
-          ("s6", 21.0, 4.0), ("s7", 25.0, 3.5), ("s8", 28.5, 4.0), ("s9", 32.5, 3.5)]
-DUREE = 36.0
+SCENES = [("s1", 0.0, 2.5), ("s2", 2.5, 2.5), ("s3", 5.0, 4.0), ("s4", 9.0, 10.5), ("s5", 19.5, 4.5),
+          ("s6", 24.0, 4.0), ("s7", 28.0, 3.5), ("s8", 31.5, 4.0), ("s9", 35.5, 3.5)]
+DUREE = 39.0
 FPS = 60
 VOLET = 0.9                # dévoilement en biais, centré sur chaque coupe
 COUPES_SECHES = {"s2"}     # « UNE BALANCE » arrive en coupe sèche, sur le silence
@@ -37,8 +38,11 @@ T = {
     "s2": {"ia": 0.5, "tech": 0.95},
     "s3": {"badge": 0.05, "l1": 0.15, "l2": 0.3, "l3": 0.45, "machine": 0.5, "sous": 1.0, "pastille": 1.5,
            "qual": 1.65, "mention": 1.8},
-    "s4": {"kick": 0.05, "l1": 0.15, "l2": 0.35, "etapes": 0.7, "pas": 0.35, "bascule": 3.0, "tag": 3.25,
-           "machine": 3.35, "legendes": 3.9, "pas_leg": 0.55, "mention": 5.4},
+    # s4, premier temps : l'avatar sort du plateau, le scan descend (tours) puis remonte (maillage) ; les 3 étapes
+    # du visuel « Le principe » en sous-titres synchronisés. Second temps : la machine et ses 3 légendes.
+    "s4": {"kick": 0.05, "l1": 0.15, "l2": 0.35, "plateau": 0.45, "montee": 0.75, "e0": 0.8, "descente": 2.0,
+           "e1": 2.0, "remontee": 3.5, "e2": 4.9, "bascule": 6.0, "tag": 6.25, "machine": 6.35, "legendes": 6.9,
+           "pas_leg": 0.55, "mention": 8.4},
     "s5": {"kick": 0.05, "l1": 0.15, "l2": 0.35, "items": 0.7, "pas": 0.2, "corps": 1.9, "mention": 2.2},
     "s6": {"kick": 0.05, "l1": 0.15, "l2": 0.3, "l3": 0.45, "etapes": 0.95, "pas": 0.4},
     "s7": {"kick": 0.05, "l1": 0.15, "l2": 0.35, "l3": 0.7, "l4": 0.95, "l5": 1.25, "corps": 1.8},
@@ -123,6 +127,7 @@ FOND_CSS = """
 PAD = 30
 DEVOILE_DEBUT = "polygon(0px 0px, 0px 0px, -806px 1920px, 0px 1920px)"
 DEVOILE_FIN = "polygon(0px 0px, 1886px 0px, 1080px 1920px, 0px 1920px)"
+SCAN = 1.4                 # durée d'un passage du scan (descente, puis remontée)
 # Visbody M60 détourée : 918×1878 px, issue d'une capture (1 px de la capture = 3 px), origine (26, 120)
 M60 = (918, 1878, 26, 120)
 
@@ -197,7 +202,8 @@ def reperes():
     c = dict((cid, t) for cid, t, _ in SCENES)
     return {
         "ia": c["s2"] + T["s2"]["ia"],
-        "etapes": [c["s4"] + T["s4"]["etapes"] + i * T["s4"]["pas"] for i in range(3)],
+        "etapes": [c["s4"] + T["s4"][f"e{i}"] for i in range(3)],
+        "scan": {k: c["s4"] + T["s4"][k] for k in ("plateau", "montee", "descente", "remontee")},
         "bascule": c["s4"] + T["s4"]["bascule"],
         "legendes": [c["s4"] + T["s4"]["legendes"] + i * T["s4"]["pas_leg"] for i in range(3)],
         "items": [c["s5"] + T["s5"]["items"] + i * T["s5"]["pas"] for i in range(len(RESULTATS))],
@@ -318,13 +324,22 @@ def s4():
                      f'<div id="s4-p{i}" class="a point" style="left:{px_ - 11}px;top:{py - 11}px"></div>\n'
                      + cache(456, py - 24, 540, f'<div class="t8" style="font-size:50px">{titre}</div>', f"s4-lt{i}") + "\n"
                      + cache(456, py + 36, 528, f'<p class="corps" style="font-size:36px">{texte}</p>', f"s4-lb{i}") + "\n")
+    # Avatar 3D (assets/js/avatar.js, Three.js) : toile de 640×1120 à droite, rendue depuis le temps de la scène
+    debut, fin = bornes("s4")
+    R = {"largeur": 640, "hauteur": 1120, "plateau": [at("s4", "plateau"), 0.5], "montee": [at("s4", "montee"), 0.8],
+         "descente": [at("s4", "descente"), SCAN], "remontee": [at("s4", "remontee"), SCAN], "fin": round(fin - debut, 3)}
+    sous_titres = "".join(
+        cache(96, 1474, 900, f'<div class="etape"><span class="n num" style="font-size:88px;width:132px">{i + 1:02d}</span>'
+              f'<p class="corps" style="font-size:50px;width:752px">{e}</p></div>', f"s4-e{i}", 24)
+        for i, e in enumerate(ETAPES_SCAN))
     contenu = f"""
 {cache(96, 236, 888, '<div class="kick" style="font-size:38px">Le principe</div>', "s4-kick")}
 {cache(96, 236, 888, '<div class="kick" style="font-size:38px">Comment ça marche</div>', "s4-kick2")}
 {cache(92, 296, 900, '<div class="t9" style="font-size:150px">Un scan</div>', "s4-l1")}
 {cache(92, 430, 900, '<div class="t9 it or" style="font-size:150px">à 360°</div>', "s4-l2")}
-<div id="s4-etapes" class="a" style="left:0;top:0;width:1080px;height:1920px">
-{etapes("s4-e", ETAPES_SCAN, 700, [140, 270], 88, 54)}
+<div id="s4-scan" class="a" style="left:0;top:0;width:1080px;height:1920px">
+<canvas id="s4-avatar" class="a" width="{R['largeur']}" height="{R['hauteur']}" style="left:440px;top:330px;width:{R['largeur']}px;height:{R['hauteur']}px"></canvas>
+{sous_titres}
 </div>
 <div id="s4-tag" class="a cadre" style="left:96px;top:600px;padding:14px 26px;font-size:40px">{plus(30)}1 analyse / semaine</div>
 <div id="s4-machine" class="a" style="left:{X0}px;top:{Y0}px;width:{W}px;height:{round(M60[1] * W / M60[0])}px">
@@ -333,12 +348,23 @@ def s4():
 {legendes}
 <p id="s4-mention" class="a mention" style="left:96px;top:1516px;width:888px;padding:14px 24px;font-size:30px;line-height:1.28">{MENTION_SANTE_SCAN}</p>
 """
-    debut, fin = bornes("s4")
     b, tm = at("s4", "bascule"), at("s4", "machine")
-    js = (monte("s4-kick", at("s4", "kick"), 0.55) + monte("s4-l1", at("s4", "l1")) + monte("s4-l2", at("s4", "l2"))
-          + "".join(monte(f"s4-e{i}", at("s4", "etapes", i), 0.65, 24) for i in range(3))
+    e = [at("s4", f"e{i}") for i in range(3)]
+    js = (f'''        const scan = {{ t: 0 }};
+        let rendre = null;
+        window.__hf = window.__hf || {{}};
+        window.__hf.buildReady = window.__hf.buildReady || {{}};
+        window.__hf.buildReady["s4-avatar"] = import("./assets/js/avatar.js").then((m) => {{
+          rendre = m.creer(document.getElementById("s4-avatar"), {json.dumps(R)});
+          rendre(scan.t);
+        }});
+        tl.to(scan, {{ t: {R["fin"]}, duration: {R["fin"]}, ease: "none", onUpdate: () => {{ if (rendre) rendre(scan.t); }} }}, 0);
+'''
+          + monte("s4-kick", at("s4", "kick"), 0.55) + monte("s4-l1", at("s4", "l1")) + monte("s4-l2", at("s4", "l2"))
+          + monte("s4-e0", e[0], 0.65, 24) + sort("s4-e0", e[1] - 0.05, 0.4, 24) + monte("s4-e1", e[1] + 0.25, 0.65, 24)
+          + sort("s4-e1", e[2] - 0.05, 0.4, 24) + monte("s4-e2", e[2] + 0.25, 0.65, 24)
           + f'        tl.set("#s4-kick2", {{ yPercent: 100, y: {2 * PAD} }}, 0);\n'
-          + f'        tl.to("#s4-etapes", {{ x: -1150, duration: 0.55, ease: "power2.in" }}, {b});\n'
+          + f'        tl.to("#s4-scan", {{ x: -1150, duration: 0.6, ease: "power2.in" }}, {b});\n'
           + sort("s4-kick", b) + monte("s4-kick2", b + 0.3, 0.55)
           + f'        tl.fromTo("#s4-tag", {{ clipPath: "inset(0% 100% 0% 0%)" }}, {{ clipPath: "inset(0% 0% 0% 0%)", duration: 0.5, ease: "power3.out" }}, {at("s4", "tag")});\n'
           + f'        tl.fromTo("#s4-machine", {{ clipPath: "inset(100% 0% 0% 0%)", y: 70 }}, {{ clipPath: "inset(0% 0% 0% 0%)", y: 0, duration: 0.8, ease: "power2.out" }}, {tm});\n'
@@ -569,6 +595,11 @@ def projet(nom):
     if not os.path.exists(m):
         sys.exit(f"Absent : {m} (lancer tools/detourer.py)")
     shutil.copy2(m, os.path.join(p, "assets", "img", "m60.png"))
+    if nom == "story-916":                                     # avatar 3D de la scène du scan (Three.js 0.185.1, MIT)
+        os.makedirs(os.path.join(p, "assets", "js"), exist_ok=True)
+        shutil.copy2(os.path.join(RACINE, "_communs", "js", "avatar.js"), os.path.join(p, "assets", "js", "avatar.js"))
+        for f in ("three.module.min.js", "three.core.min.js", "MarchingCubes.js", "LICENSE-three.txt"):
+            shutil.copy2(os.path.join(RACINE, "_communs", "vendor", f), os.path.join(p, "assets", "vendor", f))
     musique = os.path.join(RACINE, "_communs", "musique_visbody.wav")
     if nom == "story-916" and os.path.exists(musique):
         shutil.copy2(musique, os.path.join(p, "assets", "audio", "musique.wav"))

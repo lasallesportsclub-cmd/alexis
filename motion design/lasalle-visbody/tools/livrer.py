@@ -172,9 +172,11 @@ def story(dvid, dctl, lignes):
     interdits = trouves(t_ecran)
     with tempfile.TemporaryDirectory() as tmp:
         instants = [round(t + dur - build.VOLET / 2 - 0.1, 2) for _, t, dur in build.SCENES[:-1]] + [round(d - 0.4, 2)]
+        sc = build.reperes()["scan"]
+        instants += [round(sc["descente"] + 0.7, 2), round(sc["remontee"] + build.SCAN + 0.3, 2)]   # avatar 3D en plein scan, puis maillé
         run(HF + ["snapshot", "--at", ",".join(f"{t:g}" for t in instants), "--no-end", "-o", tmp, "--timeout", "60000",
                   os.path.join(RACINE, "story-916")])
-        apercus = sorted(f for f in os.listdir(tmp) if f.startswith("frame-") and f.endswith(".png"))
+        apercus = sorted((f for f in os.listdir(tmp) if f.startswith("frame-") and f.endswith(".png")), key=lambda f: int(f.split("-")[1]))
         for version, wav in (("", "musique_visbody.wav"), ("_bruitages", "bruitages_visbody.wav")):
             video = os.path.join(dvid, f"{NOM}_story_9x16{version}.mp4")
             remix = os.path.join(tmp, f"remix{version}.mp4")
@@ -197,8 +199,8 @@ def story(dvid, dctl, lignes):
                 (f"Audio AAC {a['sample_rate']} Hz, {a['channels']} canaux", a["codec_name"] == "aac" and a["sample_rate"] == "48000" and a["channels"] == 2),
                 (f"Sonie {i:.1f} LUFS ({cible:g} ± 0,5)", abs(i - cible) <= 0.5),
                 (f"Crête vraie {tp:.1f} dBTP (≤ −1,5)", tp <= -1.5),
-                ("Aperçu = rendu décodé à la fin de chaque scène (SSIM " + ", ".join(f"{x:.3f}" for x in scores) + " ≥ 0,97)",
-                 len(scores) == len(build.SCENES) and min(scores) >= 0.97),
+                ("Aperçu = rendu décodé à la fin de chaque scène et pendant le scan (SSIM " + ", ".join(f"{x:.3f}" for x in scores) + " ≥ 0,97)",
+                 len(scores) == len(instants) and min(scores) >= 0.97),
                 (f"check HyperFrames passé, {verif[1]} (story-916)", verif[0] and verif[1].split()[-1].split("/")[0] == verif[1].split()[-1].split("/")[-1]),
                 ("Textes des 8 visuels et des 3 ajouts présents" + (f" (absents : {absents})" if absents else ""), not absents),
                 ("Aucun mot interdit ni allégation" + (f" (trouvés : {interdits})" if interdits else ""), not interdits),

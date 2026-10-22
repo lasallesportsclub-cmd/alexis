@@ -1,10 +1,12 @@
-"""Musique originale de la story Visbody LA SALLE : 36 s, 120 BPM, la mineur.
+"""Musique originale de la story Visbody LA SALLE : 39 s, 120 BPM, la mineur.
 
 Instruments repris de lecube-chrono/tools/musique.py (synthèse pure, aucun échantillon, aucun morceau sous droits,
 pas de MusicGen). Même écriture que lasalle-fontaine/tools/musique.py, calée sur les repères de tools/build.py
 (SCENES, VOLET, CASSURE, reperes()) :
   accroche (0–2,5 s) : impact et crash à l'image 0, groove en demi-temps
   cassure (2,5–3 s) : « UNE BALANCE » sur le silence, puis « IA. » frappe à la reprise avec impact et crash
+  scan de l'avatar : ouverture du plateau, apparition, faisceau qui descend (grave) puis remonte (aigu), cliquetis
+                     de données, carillon de validation ; batterie et arpège se taisent pendant les deux passages
   scènes suivantes : groove à quatre temps, arpège en croches, une note pincée par étape, légende, résultat qui entre,
                      impact quand « SEMAINE » frappe, montée avant « + 2 € », reprise plus dense jusqu'à la fin
   volets : un souffle doux sur toute la durée de chaque dévoilement (0,9 s)
@@ -43,7 +45,7 @@ DEBUT = {c: t for c, t, _ in build.SCENES}
 COUPES = [t for c, t, _ in build.SCENES[1:] if c not in build.COUPES_SECHES]   # dévoilements en biais
 
 # Une mesure = 2 s à partir de la reprise (3 s) : la mineur, fa, do, sol ; la mineur sur la carte finale
-ACCORDS = [(0, "Am")] + [(3.0 + 2 * i, ["Am", "F", "C", "G"][i % 4]) for i in range(15)] + [(33.0, "Am")]
+ACCORDS = [(0, "Am")] + [(3.0 + 2 * i, ["Am", "F", "C", "G"][i % 4]) for i in range(17)] + [(37.0, "Am")]
 NAPPE = {"Am": [57, 60, 64, 69], "F": [53, 57, 60, 65], "C": [55, 60, 64, 67], "G": [55, 59, 62, 67]}
 BASSE = {"Am": 45, "F": 41, "C": 36, "G": 43}
 ARPEGE = {"Am": [69, 72, 76, 81], "F": [65, 69, 72, 77], "C": [67, 72, 76, 79], "G": [67, 71, 74, 79]}
@@ -69,15 +71,62 @@ def silence(t):
     return CASS[0] - 1e-9 <= t < CASS[1] - 1e-9
 
 
+# ---------- sons du scan (synthèse : aucun échantillon) ----------
+def faisceau(d, f0, f1):
+    """Bourdonnement du faisceau : sinus et harmoniques qui glissent de f0 à f1, léger trémolo, sifflement aigu."""
+    t = m.tps(d)
+    f = f0 * (f1 / f0) ** (t / d)
+    ph = 2 * np.pi * np.cumsum(f) / SR
+    x = np.sin(ph) + 0.45 * np.sin(2 * ph) + 0.18 * np.sin(3 * ph) + 0.06 * np.sin(8 * ph)
+    x *= 1 - 0.3 * (0.5 + 0.5 * np.sin(2 * np.pi * 17 * t))
+    souffle = m.filtre(m.rng.standard_normal(len(t)), "bandpass", [2500, 7000]) * 0.08
+    e = np.minimum(1, t / 0.08) * np.minimum(1, (d - t) / 0.18)
+    return (x * 0.5 + souffle) * e
+
+
+def donnees(d, pas=0.07):
+    """Cliquetis de données : bips brefs à hauteur changeante (graine fixe)."""
+    x = np.zeros(int(round(d * SR)))
+    for i in range(int(d / pas)):
+        f = 1800 + 1400 * m.rng.random()
+        b = m.bip(0.018, f) * (0.5 + 0.5 * m.rng.random())
+        j = int(i * pas * SR)
+        x[j:j + len(b)] += b[:len(x) - j]
+    return x
+
+
+def carillon():
+    """Validation : deux notes cristallines (mi, puis la)."""
+    t = m.tps(0.9)
+    x = np.sin(2 * np.pi * 1318.5 * t) * np.exp(-t / 0.25)
+    t2 = m.tps(0.78)
+    y = np.zeros_like(x)
+    y[int(0.12 * SR):int(0.12 * SR) + len(t2)] = (np.sin(2 * np.pi * 1760 * t2) + 0.3 * np.sin(2 * np.pi * 3520 * t2)) * np.exp(-t2 / 0.3)
+    return (x + y) * np.minimum(1, np.arange(len(x)) / SR / 0.003)
+
+
+def apparition(d=0.8):
+    """L'avatar sort du plateau : glissé ascendant et scintillement."""
+    t = m.tps(d)
+    f = 220 * 3 ** (t / d)
+    x = np.sin(2 * np.pi * np.cumsum(f) / SR) * (t / d) ** 0.7 * np.exp(-np.maximum(0, t - 0.6 * d) / 0.12)
+    sc = m.filtre(m.rng.standard_normal(len(t)), "highpass", 5000) * (t / d) ** 2 * 0.25
+    return (x * 0.5 + sc) * np.minimum(1, (d - t) / 0.05)
+
+
 def arranger(bruitages=False):
     bat, basse, pad, arp, fx = (m.stereo() for _ in range(5))
     GC, FR, CH = m.grosse_caisse(), m.frappe(), m.charley()
     fin = DUREE - 1.0
     coups = []
+    R = build.reperes()
+    sc = R["scan"]
+    scan = (sc["descente"] - 0.1, sc["remontee"] + build.SCAN + 0.1)   # batterie et arpège se taisent pendant le scan
     for b in range(int(DUREE / TEMPS)):
         t = b * TEMPS
         if silence(t) or t >= fin:
             continue
+        calme = scan[0] <= t < scan[1]
         accroche = t < CASS[1]
         drop = t >= DEBUT["s8"]                            # reprise plus dense sur le prix et la carte finale
         if accroche:
@@ -86,7 +135,7 @@ def arranger(bruitages=False):
                 coups.append(t)
             if b % 4 == 2:
                 m.poser(bat, t, FR, 0.3, 0.05)
-        else:
+        elif not calme:
             m.poser(bat, t, GC, 0.8 if drop else 0.72)
             coups.append(t)
             if b % 2 == 1:
@@ -97,7 +146,7 @@ def arranger(bruitages=False):
                     m.poser(bat, t + k * DC, CH, 0.07, -0.3)
         r = BASSE[accord(t)]
         m.poser(basse, t, m.note_basse(r, 0.42 if not accroche else 0.9), 0.45 if not accroche or b % 2 == 0 else 0)
-        if t >= 0.5:
+        if t >= 0.5 and not calme:
             notes = ARPEGE[accord(t)]
             for k in range(2):
                 m.poser(arp, t + k * TEMPS / 2, pincee(notes[(b * 2 + k) % 4] + (12 if drop else 0)), 0.15, 0.35 * (-1) ** k)
@@ -113,14 +162,21 @@ def arranger(bruitages=False):
     # Repères de l'image
     m.poser(fx, 0.0, m.impact(0.9), 0.55)
     m.poser(fx, 0.0, m.crash(1.2), 0.3)
-    R = build.reperes()
     for t in COUPES:                                       # volets : souffle sur tout le dévoilement
         m.poser(fx, t - build.VOLET / 2, m.souffle(build.VOLET, build.VOLET / 2), 0.26)
         m.poser(fx, t, m.impact(0.45), 0.22)
     m.poser(fx, R["ia"], m.impact(1.0), 0.7)               # « IA. »
     m.poser(fx, R["ia"], m.crash(1.6), 0.45)
-    for i, t in enumerate(R["etapes"]):                    # étapes du scan
-        m.poser(fx, t, pincee(76 + [0, 3, 7][i], 0.35), 0.24, 0.3 * (-1) ** i)
+    m.poser(fx, sc["plateau"], m.impact(0.35), 0.25)       # le plateau s'ouvre
+    m.poser(fx, sc["plateau"], pincee(88, 0.6), 0.12)
+    m.poser(fx, sc["montee"], apparition(0.8), 0.32)       # l'avatar sort du plateau
+    for t0, f0, f1 in ((sc["descente"], 900, 300), (sc["remontee"], 300, 900)):   # descente, puis remontée
+        m.poser(fx, t0, faisceau(build.SCAN, f0, f1), 0.3)
+        m.poser(fx, t0, donnees(build.SCAN), 0.1, 0.25)
+        m.poser(fx, t0 - 0.12, m.souffle(0.3, 0.12), 0.2)
+    m.poser(fx, sc["remontee"] + build.SCAN, carillon(), 0.22)   # modèle 3D terminé
+    for i in (0, 2):                                       # sous-titres 01 et 03 (le 02 part avec le scan)
+        m.poser(fx, R["etapes"][i] + 0.25, pincee(76 + [0, 3, 7][i], 0.35), 0.2, 0.3 * (-1) ** i)
     m.poser(fx, R["bascule"] - 0.1, m.souffle(0.45, 0.2), 0.22)
     for i, t in enumerate(R["legendes"]):                  # légendes de la machine
         m.poser(fx, t, pincee(81 + [0, 3, 7][i], 0.3), 0.22, 0.4 * (-1) ** i)

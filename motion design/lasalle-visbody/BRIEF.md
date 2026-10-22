@@ -20,10 +20,27 @@ scannées (chose que tu peux rajouter sur une des affiches en respectant la char
 trois visuels de plus à intégrer.
 
 Livré :
-- `story-916/` : 9 scènes, 36 s, 60 i/s. Accroche « BIEN PLUS QU'UNE BALANCE. », ponctuation en coupe sèche sur le
-  silence « UNE BALANCE / IA. », puis les 8 visuels fournis rejoués texte par texte, et la scène « VOTRE PROGRAMME,
-  PAR L'IA. ».
+- `story-916/` : 9 scènes, 39 s, 60 i/s. Accroche « BIEN PLUS QU'UNE BALANCE. », ponctuation en coupe sèche sur le
+  silence « UNE BALANCE / IA. », puis les 8 visuels fournis rejoués texte par texte, l'avatar 3D scanné (demande
+  suivante, voir plus bas) et la scène « VOTRE PROGRAMME, PAR L'IA. ».
 - `affiche-45/` : le visuel « VOTRE PROGRAMME, PAR L'IA. » au format des affiches du carrousel (1080×1350).
+
+## Avatar scanné (demande du 22/10/2026)
+
+Dans ses mots : « intégrer une personne comme ça sur la balance (sur la vidéo elle serait dos au spectateur) […] un
+film qui scannerait la personne […] dos à nous, bras le long du corps, de couleur grise contrairement au bleu sur la
+photo et tu fais passer un scan de haut en bas et de bas en haut […] l'avatar apparaît d'abord […] des bruits lors du
+scan pour donner un aspect scientifique et futuriste », puis « que l'avatar soit mieux dessiné et paraisse plus
+humain ».
+
+- `_communs/js/avatar.js` (Three.js 0.185.1, MIT, dans `_communs/vendor/`) : silhouette décrite par une distance
+  signée (ellipsoïdes et cônes arrondis fusionnés en douceur : crâne, chignon, oreilles, trapèzes, omoplates, sillon de
+  la colonne, dorsaux, fessiers, ischios, mollets, talons, coudes, pouces), polygonisée par marching cubes (160³), matière
+  grise, cheveux plus soutenus. Rendue depuis le temps de la scène (tween GSAP → rendre(t)), donc seek déterministe.
+- Scan : plan or (anneau et voile translucide) ; à la descente, tours or au-dessus du front ; à la remontée, lignes
+  verticales sous le front ; bande claire sur le front. Lignes nettes, sans halo (charte).
+- Son (`tools/musique.py`) : faisceau glissant, cliquetis de données, carillon, apparition ; batterie coupée pendant
+  le scan.
 
 ## Recherche Visbody (22/10/2026)
 
