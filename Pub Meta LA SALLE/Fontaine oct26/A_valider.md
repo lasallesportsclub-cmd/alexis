@@ -9,6 +9,7 @@ Liste des ⚠ à trancher par Mehdi. **Rien n'est publié.**
 | `images/LA_SALLE_Fontaine_affiche_02-03_post_4x5.png` (+ `.jpg`) | 1080×1350 | L'affiche 02/03 « COMMENT ÇA MARCHE » retravaillée : mêmes textes, mot pour mot |
 | `videos/LA_SALLE_Fontaine_story_9x16.mp4` | 1080×1920, 34,5 s, 60 i/s | Version 3 : les visuels rejoués texte par texte, le parcours sur l'écran réel (scan, saveur, intensité, eau, « Début ») et la boisson qui coule dans la gourde, avec musique originale et bruitages |
 | `videos/LA_SALLE_Fontaine_story_9x16_bruitages.mp4` | 1080×1920, 34,5 s, 60 i/s | La même, bruitages seuls (pour ajouter une musique de la Sound Collection dans Instagram) |
+| `videos/extrait_parcours_versement.mp4` | 1080×1920, 16,5 s | Extrait de la story (7,5–24 s) pour voir d'un coup le parcours et le versement ; pas destiné à la publication |
 | `Guide_tournage.md` | — | Les plans à filmer avec un coach ou un adhérent pour une version plus humaine |
 | `controles/` | — | Rapport QC, planche à 2 i/s avec les zones Reels, image 0 |
 

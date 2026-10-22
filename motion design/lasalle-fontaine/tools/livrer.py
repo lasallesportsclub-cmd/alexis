@@ -92,8 +92,13 @@ def faststart(f):
 
 
 def ssim(video, t, image):
-    r = subprocess.run(["ffmpeg", "-nostats", "-ss", f"{t:g}", "-i", video, "-i", image, "-frames:v", "1",
-                        "-lavfi", "[0:v][1:v]ssim", "-f", "null", "-"], capture_output=True, text=True)
+    """SSIM entre l'aperçu à l'instant t et l'image n° round(t × FPS) du rendu décodé. On choisit l'image par son
+    numéro (et non avec -ss, qui peut tomber sur la voisine) : pendant la bascule, une image d'écart décale de 34 px."""
+    with tempfile.TemporaryDirectory() as tmp:
+        img = os.path.join(tmp, "rendu.png")
+        run(["ffmpeg", "-v", "error", "-y", "-i", video, "-vf", f"select=eq(n\\,{round(t * build.FPS)})", "-frames:v", "1", img])
+        r = subprocess.run(["ffmpeg", "-nostats", "-i", img, "-i", image, "-lavfi", "[0:v][1:v]ssim", "-f", "null", "-"],
+                           capture_output=True, text=True)
     m = re.search(r"All:([0-9.]+)", r.stderr)
     return float(m.group(1)) if m else 0.0
 

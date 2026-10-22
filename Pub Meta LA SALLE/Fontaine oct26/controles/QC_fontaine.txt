@@ -8,29 +8,29 @@ Verdict : GO technique
 
 QC — LA_SALLE_Fontaine_story_9x16.mp4
 OK   Format 1080×1920, H.264 High, yuv420p, 60 i/s
-OK   Durée 22.000 s (21.9–22)
-OK   Poids 6.8 Mo (≤ 25)
+OK   Durée 34.500 s (34.4–34.5)
+OK   Poids 10.6 Mo (≤ 25)
 OK   faststart (moov avant mdat)
 OK   Audio AAC 48000 Hz, 2 canaux
 OK   Sonie -14.1 LUFS (-14 ± 0,5)
 OK   Crête vraie -1.5 dBTP (≤ −1,5)
-OK   Aperçu = rendu décodé à la fin de chaque scène (SSIM 0.993, 0.995, 0.992, 0.996, 0.996, 0.996 ≥ 0,97)
+OK   Aperçu = rendu décodé à la fin de chaque scène, pendant la bascule et le versement (SSIM 0.985, 0.990, 0.990, 0.990, 0.990, 0.990, 0.990, 0.988, 0.985, 0.986 ≥ 0,97)
 OK   check HyperFrames passé, contraste AA 5/5 (story-916)
-OK   Textes des 6 visuels présents
+OK   Textes des visuels et du parcours présents
 OK   Aucun mot interdit ni allégation
 Verdict : GO technique
 
 QC — LA_SALLE_Fontaine_story_9x16_bruitages.mp4
 OK   Format 1080×1920, H.264 High, yuv420p, 60 i/s
-OK   Durée 22.000 s (21.9–22)
-OK   Poids 6.8 Mo (≤ 25)
+OK   Durée 34.500 s (34.4–34.5)
+OK   Poids 10.5 Mo (≤ 25)
 OK   faststart (moov avant mdat)
 OK   Audio AAC 48000 Hz, 2 canaux
-OK   Sonie -18.3 LUFS (-18 ± 0,5)
-OK   Crête vraie -2.4 dBTP (≤ −1,5)
-OK   Aperçu = rendu décodé à la fin de chaque scène (SSIM 0.993, 0.995, 0.992, 0.996, 0.996, 0.996 ≥ 0,97)
+OK   Sonie -18.2 LUFS (-18 ± 0,5)
+OK   Crête vraie -2.9 dBTP (≤ −1,5)
+OK   Aperçu = rendu décodé à la fin de chaque scène, pendant la bascule et le versement (SSIM 0.985, 0.990, 0.990, 0.990, 0.990, 0.990, 0.990, 0.988, 0.985, 0.986 ≥ 0,97)
 OK   check HyperFrames passé, contraste AA 5/5 (story-916)
-OK   Textes des 6 visuels présents
+OK   Textes des visuels et du parcours présents
 OK   Aucun mot interdit ni allégation
 Verdict : GO technique
 
