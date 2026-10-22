@@ -31,12 +31,15 @@
 .fr .filet { background: #B8A07E; }
 .fr .point { width: 22px; height: 22px; border-radius: 50%; background: #B8A07E; outline: 7px solid rgba(184,160,126,.28); }
 .fr .bande { display: flex; align-items: center; clip-path: polygon(37px 0, 100% 0, calc(100% - 37px) 100%, 0 100%); }
+.fr .tap { position: absolute; width: 96px; height: 96px; }
+.fr .tap .anneau { position: absolute; inset: 0; border: 7px solid #B8A07E; border-radius: 50%; outline: 3px solid #0D0D0D; }
+.fr .tap .pt { position: absolute; left: 33px; top: 33px; width: 30px; height: 30px; border-radius: 50%; background: #B8A07E; outline: 3px solid #0D0D0D; }
 .fr .vf { left: 0; top: 0; width: 818px; height: 1920px; background: #B8A07E; clip-path: polygon(806px 0, 818px 0, 12px 100%, 0 100%); }
 
         #volets-root { position: absolute; inset: 0; }
       </style>
-      <div id="volets-root" data-composition-id="volets" data-width="1080" data-height="1920" data-duration="22">
-        <div id="volets-scene" class="fr clip" data-start="0" data-duration="22" data-track-index="0" style="width:1080px;height:1920px">
+      <div id="volets-root" data-composition-id="volets" data-width="1080" data-height="1920" data-duration="34.5">
+        <div id="volets-scene" class="fr clip" data-start="0" data-duration="34.5" data-track-index="0" style="width:1080px;height:1920px">
 <div id="filet0" class="a vf" data-layout-allow-overflow></div>
 <div id="filet1" class="a vf" data-layout-allow-overflow></div>
 <div id="filet2" class="a vf" data-layout-allow-overflow></div>
@@ -48,9 +51,9 @@
         const tl = gsap.timeline({ paused: true });
         tl.fromTo("#filet0", { x: -812 }, { x: 1074, duration: 0.9, ease: "sine.inOut" }, 2.05);
         tl.fromTo("#filet1", { x: -812 }, { x: 1074, duration: 0.9, ease: "sine.inOut" }, 7.05);
-        tl.fromTo("#filet2", { x: -812 }, { x: 1074, duration: 0.9, ease: "sine.inOut" }, 11.05);
-        tl.fromTo("#filet3", { x: -812 }, { x: 1074, duration: 0.9, ease: "sine.inOut" }, 14.05);
-        tl.fromTo("#filet4", { x: -812 }, { x: 1074, duration: 0.9, ease: "sine.inOut" }, 18.05);
+        tl.fromTo("#filet2", { x: -812 }, { x: 1074, duration: 0.9, ease: "sine.inOut" }, 23.55);
+        tl.fromTo("#filet3", { x: -812 }, { x: 1074, duration: 0.9, ease: "sine.inOut" }, 26.55);
+        tl.fromTo("#filet4", { x: -812 }, { x: 1074, duration: 0.9, ease: "sine.inOut" }, 30.55);
 
         window.__timelines["volets"] = tl;
       </script>

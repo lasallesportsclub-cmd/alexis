@@ -36,8 +36,10 @@ ATTENDUS_AFFICHE = ["COMMENT ÇA MARCHE", "VOTRE BOISSON,", "À LA CARTE.", "ÉC
                     "PASSION · PASTÈQUE · ICE TEA · ANANAS · MULTIFRUIT", build.MENTION_CAFEINE]
 ATTENDUS_STORY = ["OPTION PREMIUM", "BIEN PLUS", "QUE DE", "L'EAU.", "La fontaine à boissons sportives de l'option Premium.",
                   "COMMENT ÇA MARCHE", "VOTRE BOISSON,", "À LA CARTE.", "ÉCRAN TACTILE 17″", *build.BOISSONS,
-                  "ÉTAPE 02", "CHOISISSEZ", "VOTRE SAVEUR", *build.SAVEURS, "Cinq saveurs, au choix sur l'écran tactile.",
-                  "ÉTAPE 03", "SERVEZ-VOUS", "1 BOISSON", "TOUTES LES", "30 MIN", "À chaque séance, aussi souvent que vous venez.",
+                  *[f"ÉTAPE {n}" for n, _, _, _ in build.ETAPES],
+                  *[html.unescape(x).upper().replace("’", "'") for _, a, b, _ in build.ETAPES for x in (a, b)],
+                  *[c for _, _, _, c in build.ETAPES if c], "QR CODE", "CARTE", build.VOLUME, "SERVEZ-VOUS.",
+                  "À CHAQUE SÉANCE", "1 BOISSON", "TOUTES LES", "30 MIN", "Aussi souvent que vous venez.",
                   "L'OPTION PREMIUM", "2 €", "TTC PAR SEMAINE", "Soit 8 € toutes les 4 semaines, en plus de votre abonnement.",
                   "3 AVANTAGES INCLUS", *[x for a in build.AVANTAGES for x in a], "ACTIVEZ-LA", "À L'ACCUEIL.",
                   "EN QUELQUES SECONDES.", "URBAN VALLEY · 7J/7 · 6H–23H", build.MENTION_CAFEINE, build.MENTION_OPTION]
@@ -163,10 +165,13 @@ def story(dvid, dctl, lignes):
     absents = manquants(ATTENDUS_STORY, t_ecran)
     interdits = trouves(t_ecran)
     with tempfile.TemporaryDirectory() as tmp:
+        R = build.reperes()                                  # fin de chaque scène, puis bascule et versement
         instants = [round(t + dur - build.VOLET / 2 - 0.1, 2) for _, t, dur in build.SCENES[:-1]] + [round(d - 0.4, 2)]
+        instants += [round(R["bascule"] + build.VOLET / 2, 2), round(R["ouvre"] + 0.8, 2), round(R["plein"] - 0.3, 2)]
         run(HF + ["snapshot", "--at", ",".join(f"{t:g}" for t in instants), "--no-end", "-o", tmp, "--timeout", "60000",
                   os.path.join(RACINE, "story-916")])
-        apercus = sorted(f for f in os.listdir(tmp) if f.startswith("frame-") and f.endswith(".png"))
+        apercus = sorted((f for f in os.listdir(tmp) if f.startswith("frame-") and f.endswith(".png")),
+                         key=lambda f: int(f.split("-")[1]))
         for version, wav in (("", "musique_fontaine.wav"), ("_bruitages", "bruitages_fontaine.wav")):
             video = os.path.join(dvid, f"{NOM}_story_9x16{version}.mp4")
             remix = os.path.join(tmp, f"remix{version}.mp4")
@@ -189,10 +194,10 @@ def story(dvid, dctl, lignes):
                 (f"Audio AAC {a['sample_rate']} Hz, {a['channels']} canaux", a["codec_name"] == "aac" and a["sample_rate"] == "48000" and a["channels"] == 2),
                 (f"Sonie {i:.1f} LUFS ({cible:g} ± 0,5)", abs(i - cible) <= 0.5),
                 (f"Crête vraie {tp:.1f} dBTP (≤ −1,5)", tp <= -1.5),
-                ("Aperçu = rendu décodé à la fin de chaque scène (SSIM " + ", ".join(f"{x:.3f}" for x in scores) + " ≥ 0,97)",
-                 len(scores) == len(build.SCENES) and min(scores) >= 0.97),
+                ("Aperçu = rendu décodé à la fin de chaque scène, pendant la bascule et le versement (SSIM "
+                 + ", ".join(f"{x:.3f}" for x in scores) + " ≥ 0,97)", len(scores) == len(instants) and min(scores) >= 0.97),
                 (f"check HyperFrames passé, {verif[1]} (story-916)", verif[0] and verif[1].split()[-1].split("/")[0] == verif[1].split()[-1].split("/")[-1]),
-                ("Textes des 6 visuels présents" + (f" (absents : {absents})" if absents else ""), not absents),
+                ("Textes des visuels et du parcours présents" + (f" (absents : {absents})" if absents else ""), not absents),
                 ("Aucun mot interdit ni allégation" + (f" (trouvés : {interdits})" if interdits else ""), not interdits),
             ])
     video = os.path.join(dvid, f"{NOM}_story_9x16.mp4")

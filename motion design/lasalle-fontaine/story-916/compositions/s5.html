@@ -31,24 +31,28 @@
 .fr .filet { background: #B8A07E; }
 .fr .point { width: 22px; height: 22px; border-radius: 50%; background: #B8A07E; outline: 7px solid rgba(184,160,126,.28); }
 .fr .bande { display: flex; align-items: center; clip-path: polygon(37px 0, 100% 0, calc(100% - 37px) 100%, 0 100%); }
+.fr .tap { position: absolute; width: 96px; height: 96px; }
+.fr .tap .anneau { position: absolute; inset: 0; border: 7px solid #B8A07E; border-radius: 50%; outline: 3px solid #0D0D0D; }
+.fr .tap .pt { position: absolute; left: 33px; top: 33px; width: 30px; height: 30px; border-radius: 50%; background: #B8A07E; outline: 3px solid #0D0D0D; }
 .fr .vf { left: 0; top: 0; width: 818px; height: 1920px; background: #B8A07E; clip-path: polygon(806px 0, 818px 0, 12px 100%, 0 100%); }
 
         #s5-root { position: absolute; inset: 0; }
       </style>
-      <div id="s5-root" data-composition-id="s5" data-width="1080" data-height="1920" data-duration="4.9">
-        <div id="s5-scene" class="fr clip" data-start="0" data-duration="4.9" data-track-index="0" style="width:1080px;height:1920px">
+      <div id="s5-root" data-composition-id="s5" data-width="1080" data-height="1920" data-duration="3.9">
+        <div id="s5-scene" class="fr clip" data-start="0" data-duration="3.9" data-track-index="0" style="width:1080px;height:1920px">
 <div class="fond"><div id="s5-b1" class="b" style="left:-806px;width:1186px;clip-path:polygon(806px 0,100% 0,calc(100% - 806px) 100%,0 100%)"></div><div id="s5-b2" class="b" style="left:820px;width:1226px;clip-path:polygon(806px 0,100% 0,calc(100% - 806px) 100%,0 100%)"></div></div>
 <div id="s5-c" class="a" style="inset:0">
 
-<div class="m" style="left:96px;top:206px;width:888px;padding:30px 0" data-layout-allow-overflow><div id="s5-kick"><div class="kick" style="font-size:38px"><svg class="plus" viewBox="-2 0 104 100" style="width:40px;height:38px;"><polygon points="8.6,39 100.6,39 91.4,61 -0.6,61"/><polygon points="59.05,0 82.95,0 40.95,100 17.05,100"/></svg>L’option Premium</div></div></div>
-<div id="s5-prix" class="a" style="left:96px;top:300px;display:flex;align-items:center;gap:26px">
-  <div id="s5-plus"><svg class="plus" viewBox="-2 0 104 100" style="width:200px;height:192px;"><polygon points="8.6,39 100.6,39 91.4,61 -0.6,61"/><polygon points="59.05,0 82.95,0 40.95,100 17.05,100"/></svg></div>
-  <div id="s5-deux" class="t9 num" style="font-size:410px;line-height:.86">2 €</div>
-</div>
-<div id="s5-ttc" class="a t8 it" style="left:96px;top:690px;font-size:116px">TTC par semaine</div>
-<p id="s5-soit" class="a corps" style="left:96px;top:836px;width:888px;font-size:50px">Soit 8&nbsp;€ toutes les 4 semaines,<br>en plus de votre abonnement.</p>
-<div class="m" style="left:96px;top:1026px;width:888px;padding:30px 0" data-layout-allow-overflow><div id="s5-kick2"><div class="kick" style="font-size:34px">3 avantages inclus</div></div></div>
-<div id="s5-b0" class="a bande" style="left:96px;top:1110px;width:888px;height:124px;background:#B8A07E;clip-path:polygon(52px 0,100% 0,calc(100% - 52px) 100%,0 100%)"><span class="t8 it num" style="font-size:64px;color:#0D0D0D;margin-left:76px;width:100px">01</span><span style="display:flex;flex-direction:column;gap:12px"><span class="t8" style="font-size:52px;color:#0D0D0D">FONTAINE À BOISSONS</span><span class="kick" style="font-size:26px;color:#0D0D0D;letter-spacing:.16em">EN SERVICE</span></span></div><div id="s5-b1" class="a bande" style="left:96px;top:1250px;width:888px;height:124px;background:#222222;clip-path:polygon(52px 0,100% 0,calc(100% - 52px) 100%,0 100%)"><span class="t8 it num" style="font-size:64px;color:#B8A07E;margin-left:76px;width:100px">02</span><span style="display:flex;flex-direction:column;gap:12px"><span class="t8" style="font-size:52px;color:#F4F1EC">ANALYSE CORPORELLE 3D</span><span class="kick" style="font-size:26px;color:#B8A07E;letter-spacing:.16em">DÈS LE 22/10</span></span></div><div id="s5-b2" class="a bande" style="left:96px;top:1390px;width:888px;height:124px;background:#222222;clip-path:polygon(52px 0,100% 0,calc(100% - 52px) 100%,0 100%)"><span class="t8 it num" style="font-size:64px;color:#B8A07E;margin-left:76px;width:100px">03</span><span style="display:flex;flex-direction:column;gap:12px"><span class="t8" style="font-size:52px;color:#F4F1EC">SALLE DE POSING</span><span class="kick" style="font-size:26px;color:#B8A07E;letter-spacing:.16em">TRÈS BIENTÔT</span></span></div>
+<div class="m" style="left:96px;top:206px;width:888px;padding:30px 0" data-layout-allow-overflow><div id="s5-kick"><div class="kick" style="font-size:38px">À chaque séance</div></div></div>
+<div class="m" style="left:90px;top:270px;width:960px;padding:30px 0" data-layout-allow-overflow><div id="s5-l2"><div class="t9 num" style="font-size:200px">1 boisson</div></div></div>
+<div class="m" style="left:90px;top:446px;width:960px;padding:30px 0" data-layout-allow-overflow><div id="s5-l3"><div class="t9" style="font-size:200px">toutes les</div></div></div>
+<div id="s5-l4" class="a t9 or num" style="left:90px;top:660px;font-size:340px;transform-origin:left center">30 min</div>
+<div class="m" style="left:96px;top:1030px;width:640px;padding:30px 0" data-layout-allow-overflow><div id="s5-corps"><p class="corps" style="font-size:50px">Aussi souvent<br>que vous venez.</p></div></div>
+<svg id="s5-horloge" class="a" aria-hidden="true" viewBox="0 0 220 220" style="left:764px;top:1050px;width:220px;height:220px;overflow:visible">
+  <circle cx="110" cy="110" r="100" fill="none" stroke="rgba(244,241,236,.18)" stroke-width="4"/>
+  <path id="s5-arc" d="M 110 10 A 100 100 0 0 1 110 210" fill="none" stroke="#B8A07E" stroke-width="10" pathLength="1" stroke-dasharray="1" stroke-dashoffset="0"/>
+  <line id="s5-aiguille" x1="110" y1="110" x2="110" y2="178" stroke="#B8A07E" stroke-width="6"/><circle cx="110" cy="110" r="9" fill="#B8A07E"/>
+</svg>
 
 </div>
         </div>
@@ -57,14 +61,13 @@
         const tl = gsap.timeline({ paused: true });
         tl.fromTo("#s5-scene", { clipPath: "polygon(0px 0px, 0px 0px, -806px 1920px, 0px 1920px)" }, { clipPath: "polygon(0px 0px, 1886px 0px, 1080px 1920px, 0px 1920px)", duration: 0.9, ease: "sine.inOut" }, 0);
         tl.fromTo("#s5-kick", { yPercent: 100, y: 60 }, { yPercent: 0, y: 0, duration: 0.55, ease: "power3.out" }, 0.500);
-        tl.fromTo("#s5-plus", { scale: 0, rotation: -90 }, { scale: 1, rotation: 0, duration: 0.45, ease: "back.out(1.6)" }, 0.95);
-        tl.fromTo("#s5-deux", { scale: 1.3, clipPath: "inset(0% 100% 0% 0%)" }, { scale: 1, clipPath: "inset(0% 0% 0% 0%)", duration: 0.45, ease: "power4.out", transformOrigin: "left center" }, 0.95);
-        tl.fromTo(["#s5-ttc", "#s5-soit"], { clipPath: "inset(0% 100% 0% 0%)" }, { clipPath: "inset(0% 0% 0% 0%)", duration: 0.5, ease: "power3.out" }, 0.95);
-        tl.fromTo("#s5-kick2", { yPercent: 100, y: 60 }, { yPercent: 0, y: 0, duration: 0.5, ease: "power3.out" }, 1.650);
-        tl.from("#s5-b0", { x: -1100, duration: 0.65, ease: "power3.out" }, 1.8);
-        tl.from("#s5-b1", { x: -1100, duration: 0.65, ease: "power3.out" }, 2.02);
-        tl.from("#s5-b2", { x: -1100, duration: 0.65, ease: "power3.out" }, 2.24);
-        tl.to("#s5-c", { x: -60, duration: 0.9, ease: "sine.in" }, 4.000);
+        tl.fromTo("#s5-l2", { yPercent: 100, y: 60 }, { yPercent: 0, y: 0, duration: 0.65, ease: "power3.out" }, 0.650);
+        tl.fromTo("#s5-l3", { yPercent: 100, y: 60 }, { yPercent: 0, y: 0, duration: 0.65, ease: "power3.out" }, 0.900);
+        tl.fromTo("#s5-l4", { scale: 1.3, clipPath: "inset(0% 100% 0% 0%)" }, { scale: 1, clipPath: "inset(0% 0% 0% 0%)", duration: 0.45, ease: "power4.out" }, 1.25);
+        tl.from("#s5-arc", { attr: { "stroke-dashoffset": 1 }, duration: 0.9, ease: "power2.inOut" }, 1.25);
+        tl.from("#s5-aiguille", { rotation: -180, svgOrigin: "110 110", duration: 0.9, ease: "power2.inOut" }, 1.25);
+        tl.fromTo("#s5-corps", { yPercent: 100, y: 60 }, { yPercent: 0, y: 0, duration: 0.7, ease: "power3.out" }, 1.800);
+        tl.to("#s5-c", { x: -60, duration: 0.9, ease: "sine.in" }, 3.000);
 
         window.__timelines["s5"] = tl;
       </script>

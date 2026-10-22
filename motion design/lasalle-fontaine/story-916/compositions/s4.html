@@ -31,42 +31,229 @@
 .fr .filet { background: #B8A07E; }
 .fr .point { width: 22px; height: 22px; border-radius: 50%; background: #B8A07E; outline: 7px solid rgba(184,160,126,.28); }
 .fr .bande { display: flex; align-items: center; clip-path: polygon(37px 0, 100% 0, calc(100% - 37px) 100%, 0 100%); }
+.fr .tap { position: absolute; width: 96px; height: 96px; }
+.fr .tap .anneau { position: absolute; inset: 0; border: 7px solid #B8A07E; border-radius: 50%; outline: 3px solid #0D0D0D; }
+.fr .tap .pt { position: absolute; left: 33px; top: 33px; width: 30px; height: 30px; border-radius: 50%; background: #B8A07E; outline: 3px solid #0D0D0D; }
 .fr .vf { left: 0; top: 0; width: 818px; height: 1920px; background: #B8A07E; clip-path: polygon(806px 0, 818px 0, 12px 100%, 0 100%); }
 
         #s4-root { position: absolute; inset: 0; }
       </style>
-      <div id="s4-root" data-composition-id="s4" data-width="1080" data-height="1920" data-duration="3.9">
-        <div id="s4-scene" class="fr clip" data-start="0" data-duration="3.9" data-track-index="0" style="width:1080px;height:1920px">
+      <div id="s4-root" data-composition-id="s4" data-width="1080" data-height="1920" data-duration="5.4">
+        <div id="s4-scene" class="fr clip" data-start="0" data-duration="5.4" data-track-index="0" style="width:1080px;height:1920px">
 <div class="fond"><div id="s4-b1" class="b" style="left:-806px;width:1186px;clip-path:polygon(806px 0,100% 0,calc(100% - 806px) 100%,0 100%)"></div><div id="s4-b2" class="b" style="left:820px;width:1226px;clip-path:polygon(806px 0,100% 0,calc(100% - 806px) 100%,0 100%)"></div></div>
 <div id="s4-c" class="a" style="inset:0">
 
-<div class="m" style="left:96px;top:206px;width:888px;padding:30px 0" data-layout-allow-overflow><div id="s4-kick"><div class="kick" style="font-size:38px">Étape <span class="num">03</span></div></div></div>
-<div class="m" style="left:92px;top:266px;width:900px;padding:30px 0" data-layout-allow-overflow><div id="s4-l1"><div class="t9" style="font-size:146px">Servez-vous</div></div></div>
-<div class="m" style="left:90px;top:510px;width:960px;padding:30px 0" data-layout-allow-overflow><div id="s4-l2"><div class="t9 num" style="font-size:200px">1 boisson</div></div></div>
-<div class="m" style="left:90px;top:686px;width:960px;padding:30px 0" data-layout-allow-overflow><div id="s4-l3"><div class="t9" style="font-size:200px">toutes les</div></div></div>
-<div id="s4-l4" class="a t9 or num" style="left:90px;top:900px;font-size:340px;transform-origin:left center">30 min</div>
-<div class="m" style="left:96px;top:1270px;width:640px;padding:30px 0" data-layout-allow-overflow><div id="s4-corps"><p class="corps" style="font-size:50px">À chaque séance, aussi souvent que vous venez.</p></div></div>
-<svg id="s4-horloge" class="a" aria-hidden="true" viewBox="0 0 220 220" style="left:764px;top:1300px;width:220px;height:220px;overflow:visible">
-  <circle cx="110" cy="110" r="100" fill="none" stroke="rgba(244,241,236,.18)" stroke-width="4"/>
-  <path id="s4-arc" d="M 110 10 A 100 100 0 0 1 110 210" fill="none" stroke="#B8A07E" stroke-width="10" pathLength="1" stroke-dasharray="1" stroke-dashoffset="0"/>
-  <line id="s4-aiguille" x1="110" y1="110" x2="110" y2="178" stroke="#B8A07E" stroke-width="6"/><circle cx="110" cy="110" r="9" fill="#B8A07E"/>
+<div id="s4-app" class="a" style="left:-74.25px;top:-563.312px;width:1228.5px;height:943.312px"><img id="s4-e0" class="a" src="assets/img/ecran-debut.jpg" alt="" style="left:146.25px;top:95.0625px;width:936px;height:748.8px"><img class="a" src="assets/img/cadre.png" alt="" style="left:0;top:0;width:1228.5px;height:943.312px"></div>
+<svg id="s4-buse" class="a" aria-hidden="true" viewBox="0 0 100 70" style="left:490px;top:378px;width:100px;height:70px">
+  <rect x="8" y="0" width="84" height="14" fill="#3A3A3A"/><rect x="28" y="14" width="44" height="40" fill="#8E8E8E"/>
+  <rect x="28" y="30" width="44" height="6" fill="#6B6B6B"/><rect x="38" y="54" width="24" height="16" fill="#5A5A5A"/>
+  <rect x="34" y="14" width="7" height="40" fill="#B5B5B5"/>
 </svg>
+<div class="a" style="left:330px;top:1239px;width:420px;height:22px;background:#222222"></div>
+<div class="a filet" style="left:330px;top:1239px;width:420px;height:4px"></div>
+<canvas id="s4-verse" class="a" width="480" height="830" style="left:300px;top:440px;width:480px;height:830px"></canvas>
+<div id="s4-compteur" class="a t9 num" style="left:40px;top:1300px;width:1000px;text-align:center;font-size:170px;transform-origin:50% 50%">0,7 L</div>
+<div class="m" style="left:40px;top:1470px;width:1000px;padding:30px 0" data-layout-allow-overflow><div id="s4-titre"><div class="t9" style="font-size:140px;text-align:center">Servez-vous.</div></div></div>
 
 </div>
         </div>
       </div>
       <script>
         const tl = gsap.timeline({ paused: true });
-        tl.fromTo("#s4-scene", { clipPath: "polygon(0px 0px, 0px 0px, -806px 1920px, 0px 1920px)" }, { clipPath: "polygon(0px 0px, 1886px 0px, 1080px 1920px, 0px 1920px)", duration: 0.9, ease: "sine.inOut" }, 0);
-        tl.fromTo("#s4-kick", { yPercent: 100, y: 60 }, { yPercent: 0, y: 0, duration: 0.55, ease: "power3.out" }, 0.500);
-        tl.fromTo("#s4-l1", { yPercent: 100, y: 60 }, { yPercent: 0, y: 0, duration: 0.65, ease: "power3.out" }, 0.600);
-        tl.fromTo("#s4-l2", { yPercent: 100, y: 60 }, { yPercent: 0, y: 0, duration: 0.65, ease: "power3.out" }, 0.900);
-        tl.fromTo("#s4-l3", { yPercent: 100, y: 60 }, { yPercent: 0, y: 0, duration: 0.65, ease: "power3.out" }, 1.150);
-        tl.fromTo("#s4-l4", { scale: 1.3, clipPath: "inset(0% 100% 0% 0%)" }, { scale: 1, clipPath: "inset(0% 0% 0% 0%)", duration: 0.45, ease: "power4.out" }, 1.5);
-        tl.from("#s4-arc", { attr: { "stroke-dashoffset": 1 }, duration: 0.9, ease: "power2.inOut" }, 1.5);
-        tl.from("#s4-aiguille", { rotation: -180, svgOrigin: "110 110", duration: 0.9, ease: "power2.inOut" }, 1.5);
-        tl.fromTo("#s4-corps", { yPercent: 100, y: 60 }, { yPercent: 0, y: 0, duration: 0.7, ease: "power3.out" }, 2.050);
-        tl.to("#s4-c", { x: -60, duration: 0.9, ease: "sine.in" }, 3.000);
+        tl.fromTo("#s4-scene", { y: 1163.31 }, { y: 0, duration: 0.9, ease: "sine.inOut" }, 0);
+        const R = {"cx": 540, "buse": 448, "jet": 26, "v0": 900, "g": 23500, "plein": 800, "gourde": {"col": 640, "epaule": 690, "corps": 770, "bas": 1236, "rayon": 36, "demiCol": 80, "demi": 150}, "ox": 300, "oy": 440, "l": 480, "h": 830, "ouvre": 0.95, "ferme": 3.25, "gouttes": [3.7, 4.2]};
+        // Versement de la boisson sous la buse : jet, remplissage de la gourde, bulles, gouttes, vaguelettes.
+        // Dessin à plat (charte « Le Trait Oblique » : aplats, aucun dégradé, aucune ombre). Recopié tel quel dans la
+        // composition du versement par tools/build.py. Rendu déterministe : rendre(t) ne dépend que de t (secondes, temps
+        // local de la scène), jamais de l'image précédente, pour que le rendu image par image et les retours en arrière
+        // donnent la même image. R : géométrie et instants posés par build.py (coordonnées de la scène, px et s).
+        function versement(canvas, R) {
+          const ctx = canvas.getContext("2d");
+          const OR = "#B8A07E", BLANC = "rgba(244,241,236,", G = R.g;
+          const cx = R.cx, yn = R.buse, w0 = R.jet, v0 = R.v0;
+          const g = R.gourde;                       // { col, epaule, corps, bas, rayon, demiCol, demi }
+          const yFond = g.bas - 4, yPlein = R.plein;
+          const lisse = (a, b, x) => { const u = Math.min(1, Math.max(0, (x - a) / (b - a))); return u * u * (3 - 2 * u); };
+          // Hasard reproductible : valeur dans [0, 1) pour un entier et un canal
+          const h = (i, k) => { const s = Math.sin(i * 127.1 + k * 311.7) * 43758.5453; return s - Math.floor(s); };
+
+          const tAtteint = R.ouvre + chute(yn, yFond);           // la tête du jet touche le fond
+          function chute(y0, y1) { const d = y1 - y0; return (-v0 + Math.sqrt(v0 * v0 + 2 * G * d)) / G; }
+          function niveau(t) {                                    // fraction remplie, débit constant, fin adoucie
+            const u = Math.min(1, Math.max(0, (t - tAtteint) / (R.ferme + chute(yn, yPlein) - tAtteint)));
+            return u < 0.92 ? u : 0.92 + 0.08 * Math.sin((u - 0.92) / 0.08 * Math.PI / 2);
+          }
+          const surface = (t) => yFond - (yFond - yPlein) * niveau(t);
+
+          function contour(dedans) {                              // gourde vue de face, à large goulot
+            const e = dedans ? 0 : 3, c = g.demiCol + e, d = g.demi + e, r = g.rayon;
+            ctx.beginPath();
+            ctx.moveTo(cx - c, g.col);
+            ctx.lineTo(cx - c, g.epaule);
+            ctx.bezierCurveTo(cx - c, g.epaule + 40, cx - d, g.corps - 40, cx - d, g.corps);
+            ctx.lineTo(cx - d, g.bas - r);
+            ctx.quadraticCurveTo(cx - d, g.bas + e, cx - d + r, g.bas + e);
+            ctx.lineTo(cx + d - r, g.bas + e);
+            ctx.quadraticCurveTo(cx + d, g.bas + e, cx + d, g.bas - r);
+            ctx.lineTo(cx + d, g.corps);
+            ctx.bezierCurveTo(cx + d, g.corps - 40, cx + c, g.epaule + 40, cx + c, g.epaule);
+            ctx.lineTo(cx + c, g.col);
+          }
+
+          function largeur(y) {                                   // le jet s'affine en accélérant (débit conservé)
+            const v = Math.sqrt(v0 * v0 + 2 * G * Math.max(0, y - yn));
+            return w0 * Math.sqrt(v0 / v);
+          }
+
+          function jet(t, yS) {
+            if (t < R.ouvre) return;
+            const tau = t - R.ouvre;
+            const tete = Math.min(yS, yn + v0 * tau + 0.5 * G * tau * tau);
+            let queue = yn;
+            if (t > R.ferme) { const k = t - R.ferme; queue = yn + v0 * 0.4 * k + 0.5 * G * k * k; }
+            if (queue >= tete - 1) return;
+            const gauche = [], droite = [], reflet = [];
+            for (let y = queue; ; y = Math.min(tete, y + 5)) {
+              const f = (y - yn) / (yFond - yn);
+              const a = 0.5 + 2.4 * f;
+              const x = cx + a * Math.sin(0.045 * y - 24 * t) + 0.5 * a * Math.sin(0.11 * y - 43 * t + 1.3);
+              let w = largeur(y) * (1 + 0.1 * f * Math.sin(0.07 * y - 58 * t));
+              if (t > R.ferme) w *= lisse(queue, queue + 40, y);  // la queue du jet s'effile
+              w *= lisse(tete + 2, tete - 14, y) * 0.35 + 0.65;   // tête arrondie
+              gauche.push([x - w / 2, y]); droite.push([x + w / 2, y]); reflet.push([x - 0.3 * w, x - 0.12 * w, y]);
+              if (y >= tete) break;
+            }
+            ctx.fillStyle = OR;
+            ctx.beginPath();
+            gauche.forEach(([x, y], i) => (i ? ctx.lineTo(x, y) : ctx.moveTo(x, y)));
+            for (let i = droite.length - 1; i >= 0; i--) ctx.lineTo(droite[i][0], droite[i][1]);
+            ctx.closePath(); ctx.fill();
+            if (tete < yS - 2) { const w = largeur(tete) * 0.6; ctx.beginPath(); ctx.arc(gauche[gauche.length - 1][0] + w / 2 + 1, tete, w / 2 + 1, 0, 7); ctx.fill(); }
+            ctx.fillStyle = BLANC + "0.42)";
+            ctx.beginPath();
+            reflet.forEach(([a], i) => (i ? ctx.lineTo(a, reflet[i][2]) : ctx.moveTo(a, reflet[i][2])));
+            for (let i = reflet.length - 1; i >= 0; i--) ctx.lineTo(reflet[i][1], reflet[i][2]);
+            ctx.closePath(); ctx.fill();
+          }
+
+          function onde(x, t, yS, actif) {                         // surface : houle, cratère sous le jet, anneaux, ballottement
+            const dx = x - cx, ad = Math.abs(dx);
+            let y = yS + actif * (1.6 * Math.sin(0.05 * x - 9 * t) + 1.0 * Math.sin(0.09 * x + 13 * t + 0.7));
+            y += actif * (5 * Math.exp(-((dx / 16) ** 2)) + 2.6 * Math.sin(0.12 * ad - 26 * t) * Math.exp(-ad / 90));
+            const apres = t - R.ferme - 0.25;
+            if (apres > 0) y += 5 * Math.exp(-apres / 0.55) * Math.cos(2 * Math.PI * 1.7 * apres) * (dx / g.demi);
+            return y;
+          }
+
+          function rendre(t) {
+            ctx.setTransform(1, 0, 0, 1, -R.ox, -R.oy);
+            ctx.clearRect(R.ox, R.oy, canvas.width, canvas.height);
+            const yS = surface(t);
+            const touche = t >= tAtteint && t < R.ferme + chute(yn, yS) + 0.02;
+            const actif = touche ? 1 : t > tAtteint ? Math.exp(-(t - R.ferme - chute(yn, yS)) / 0.3) : 0;
+
+            // Corps de la gourde (paroi translucide à plat)
+            contour(true); ctx.closePath(); ctx.fillStyle = BLANC + "0.05)"; ctx.fill();
+
+            // Liquide, découpé dans la gourde
+            ctx.save();
+            contour(true); ctx.closePath(); ctx.clip();
+            if (t >= tAtteint) {
+              const x0 = cx - g.demi - 6, x1 = cx + g.demi + 6;
+              ctx.beginPath(); ctx.moveTo(x0, onde(x0, t, yS, actif));
+              for (let x = x0; x <= x1; x += 4) ctx.lineTo(x, onde(x, t, yS, actif));
+              ctx.lineTo(x1, g.bas + 10); ctx.lineTo(x0, g.bas + 10); ctx.closePath();
+              ctx.fillStyle = OR; ctx.fill();
+              // Bulles entraînées sous le jet, puis bulles qui remontent de tout le volume
+              ctx.lineWidth = 1.6;
+              for (let i = 0; i < 260; i++) {
+                const ti = tAtteint + i / 70;
+                if (ti > Math.min(t, R.ferme + 0.15)) break;
+                const age = t - ti, prof = 14 + 80 * h(i, 1) * (0.4 + 0.6 * (1 - niveau(ti)));
+                const x = cx + (h(i, 2) - 0.5) * 70 + (h(i, 3) - 0.5) * 60 * age + 3 * Math.sin(9 * age + i);
+                const y = surface(ti) + prof * (1 - Math.exp(-age / 0.07)) - (150 + 110 * h(i, 4)) * Math.max(0, age - 0.06);
+                if (y <= onde(x, t, yS, actif) + 3 || age > 2.5) continue;
+                const r = 1.6 + 4 * h(i, 5) ** 2;
+                ctx.beginPath(); ctx.arc(x, y, r, 0, 7); ctx.strokeStyle = BLANC + "0.6)"; ctx.stroke();
+              }
+              for (let i = 0; i < 90; i++) {
+                const ti = tAtteint + 0.3 + i / 18;
+                if (ti > t) break;
+                const age = t - ti, x0 = cx - g.demi + 18 + (2 * g.demi - 36) * h(i, 6);
+                const x = x0 + 4 * Math.sin(6 * age + 7 * h(i, 7));
+                const y = g.bas - 10 - (110 + 140 * h(i, 8)) * age;
+                if (y <= onde(x, t, yS, actif) + 3) continue;
+                ctx.beginPath(); ctx.arc(x, y, 1.3 + 2.2 * h(i, 9), 0, 7); ctx.strokeStyle = BLANC + "0.45)"; ctx.stroke();
+              }
+              // Ménisque
+              ctx.beginPath(); ctx.moveTo(x0, onde(x0, t, yS, actif));
+              for (let x = x0; x <= x1; x += 4) ctx.lineTo(x, onde(x, t, yS, actif));
+              ctx.lineWidth = 3; ctx.strokeStyle = BLANC + "0.55)"; ctx.stroke();
+              // Écume au point d'impact
+              if (actif > 0.05) {
+                ctx.fillStyle = BLANC + (0.5 * actif).toFixed(3) + ")";
+                for (let k = 0; k < 4; k++) {
+                  const ph = Math.floor(t * 30) + k * 17;
+                  ctx.beginPath();
+                  ctx.ellipse(cx + (h(ph, 10) - 0.5) * 26, yS + 2 + (h(ph, 11) - 0.5) * 3, 10 + 14 * h(ph, 12), 3 + 3 * h(ph, 13), 0, 0, 7);
+                  ctx.fill();
+                }
+              }
+            }
+            ctx.restore();
+
+            jet(t, yS);
+
+            // Gouttes projetées à l'impact (balistiques) et gouttes qui tombent de la buse après la fermeture
+            ctx.fillStyle = OR;
+            for (let i = 0; i < 140; i++) {
+              const ti = tAtteint + 0.02 + i / 30;
+              if (ti > Math.min(t, R.ferme)) break;
+              const age = t - ti, vx = (h(i, 14) - 0.5) * 520, vy = -(700 + 800 * h(i, 15));
+              const y0 = surface(ti), x = cx + (h(i, 16) - 0.5) * 16 + vx * age, y = y0 + vy * age + 0.5 * G * age * age;
+              if (age > 0.3 || (age > 0.02 && y > surface(t))) continue;
+              ctx.beginPath(); ctx.arc(x, y, 1.8 + 2.4 * h(i, 17), 0, 7); ctx.fill();
+            }
+            for (const td of R.gouttes) {                          // la goutte grossit 0,12 s au bout de la buse, puis tombe
+              if (t < td) continue;
+              const age = t - td;
+              if (age < 0.12) { const c = age / 0.12; ctx.beginPath(); ctx.ellipse(cx, yn + 4 * c, 4 * c, 5 * c, 0, 0, 7); ctx.fill(); continue; }
+              const y = yn + 4 + 0.5 * G * (age - 0.12) ** 2;
+              if (y > surface(t)) continue;
+              ctx.beginPath(); ctx.ellipse(cx, y, 4, 6, 0, 0, 7); ctx.fill();
+            }
+
+            // Paroi : contour, reflet vertical, lèvre du goulot, graduation de la contenance servie
+            ctx.lineJoin = "round";
+            contour(false); ctx.lineWidth = 6; ctx.strokeStyle = BLANC + "0.92)"; ctx.stroke();
+            ctx.fillStyle = BLANC + "0.16)";
+            ctx.fillRect(cx - g.demi + 20, g.corps + 30, 9, g.bas - g.corps - 80);
+            ctx.fillStyle = BLANC + "0.92)";
+            ctx.fillRect(cx - g.demiCol - 12, g.col - 6, 2 * g.demiCol + 24, 10);
+            ctx.fillStyle = OR;
+            ctx.fillRect(cx + g.demi - 34, yPlein - 2, 34, 4);
+            for (let k = 1; k < 7; k++) {
+              const y = yFond - (yFond - yPlein) * k / 7;
+              ctx.fillStyle = BLANC + "0.35)"; ctx.fillRect(cx + g.demi - 18, y - 1, 18, 2);
+            }
+          }
+          rendre.niveau = niveau;                                 // le compteur de contenance suit le même niveau
+          return rendre;
+        }
+        const rendre = versement(document.getElementById("s4-verse"), R);
+        const compteur = document.getElementById("s4-compteur");
+        const etat = { t: 0 };
+        const dessiner = () => {
+          rendre(etat.t);
+          const v = Math.floor(rendre.niveau(etat.t) * 0.7 * 10 + 1e-6) / 10;
+          compteur.textContent = v.toFixed(1).replace(".", ",") + " L";
+        };
+        tl.to(etat, { t: 5.400, duration: 5.400, ease: "none", onUpdate: dessiner }, 0);
+        dessiner();
+        tl.to("#s4-compteur", { color: "#B8A07E", duration: 0.25, ease: "power1.out" }, 3.389);
+        tl.fromTo("#s4-compteur", { scale: 1 }, { scale: 1.1, duration: 0.18, ease: "power2.out", yoyo: true, repeat: 1 }, 3.389);
+        tl.fromTo("#s4-titre", { yPercent: 100, y: 60 }, { yPercent: 0, y: 0, duration: 0.65, ease: "power3.out" }, 3.500);
+        tl.to("#s4-c", { x: -60, duration: 0.9, ease: "sine.in" }, 4.500);
 
         window.__timelines["s4"] = tl;
       </script>

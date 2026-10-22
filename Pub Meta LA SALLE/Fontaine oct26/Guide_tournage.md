@@ -23,13 +23,27 @@ de tournage.
 - Tenez le téléphone à deux mains (ou sur un pied), mouvements lents.
 - **5 à 8 s par plan**, avec 2 s de marge avant et après l'action. **3 prises par plan.**
 
+## Priorité : le versement et l'écran (version 3 de la story)
+
+Dans la story v3, l'écran est déjà réel (vos 4 photos), mais la buse, la gourde et la boisson qui coule sont dessinées.
+Deux plans suffisent pour passer en images réelles, **sans personne à l'image** si seules les mains apparaissent
+(une autorisation reste prudente pour la personne dont on voit les mains) :
+
+- **Le versement (plan 3)** : téléphone sur un pied ou posé, vertical, à hauteur de la buse, de profil ou de trois
+  quarts ; la gourde transparente ou ouverte, bien éclairée ; **60 i/s** (ou ralenti 120 i/s). Lancez la vidéo, appuyez
+  sur « Début » hors champ, filmez jusqu'à ce que le versement s'arrête, plus 3 s. Gardez le son : le vrai bruit de
+  l'écoulement remplacera le mien (musique de la salle coupée).
+- **L'écran (plan 2)** : de face, à 40 cm, sans reflet de plafond (inclinez légèrement le téléphone) ; un doigt choisit
+  Multifruits, « moyen », « eau fraîche », puis « Début », lentement, une seconde entre chaque choix. Si vous scannez
+  votre carte ou le QR code au lecteur, filmez aussi ce geste (sans écran d'appli visible).
+
 ## Les plans
 
 | N° | Plan | Ce qu'on voit | Où il va dans la story |
 |---|---|---|---|
 | 1 | **Arrivée** | Plan moyen : l'adhérent, en tenue, s'approche de la fontaine après une série, la serviette sur l'épaule. Visage facultatif. | Sous « BIEN PLUS QUE DE L'EAU. » (0–2,5 s) |
-| 2 | **L'écran** | Par-dessus l'épaule, puis gros plan : le doigt choisit une boisson, puis une saveur, sur l'écran tactile. | « VOTRE BOISSON, À LA CARTE. » et « CHOISISSEZ VOTRE SAVEUR » |
-| 3 | **Le versement** | Très gros plan de côté, en 60 i/s : la boisson coule dans la gourde. Une lumière derrière fait briller le liquide. | Transition vers « SERVEZ-VOUS » |
+| 2 | **L'écran** | Par-dessus l'épaule, puis gros plan : le doigt choisit une boisson, puis une saveur, sur l'écran tactile. | Étapes 01 à 05 du parcours |
+| 3 | **Le versement** | Très gros plan de côté, en 60 i/s : la boisson coule dans la gourde. Une lumière derrière fait briller le liquide. | Remplace le versement dessiné (« 0,7 L · SERVEZ-VOUS. ») |
 | 4 | **La gorgée** | Plan moyen : il reprend sa gourde, boit, repart vers les machines. | « 1 BOISSON TOUTES LES 30 MIN » |
 | 5 | **Le coach** | Le coach, en tenue du club, face caméra, dit une phrase (voir ci-dessous). Une prise par phrase. | Avant « + 2 € » ou à la place de l'accroche |
 | 6 | **Plan large** | La fontaine à sa place dans la salle : avancez lentement vers elle pendant 6 s, sans personne. | Remplace la photo de la fontaine (scène 2) |
