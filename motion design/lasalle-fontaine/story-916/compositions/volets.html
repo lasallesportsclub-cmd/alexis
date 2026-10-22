@@ -31,25 +31,27 @@
 .fr .filet { background: #B8A07E; }
 .fr .point { width: 22px; height: 22px; border-radius: 50%; background: #B8A07E; outline: 7px solid rgba(184,160,126,.28); }
 .fr .bande { display: flex; align-items: center; clip-path: polygon(37px 0, 100% 0, calc(100% - 37px) 100%, 0 100%); }
+.fr .vf { left: 0; top: 0; width: 818px; height: 1920px; background: #B8A07E; clip-path: polygon(806px 0, 818px 0, 12px 100%, 0 100%); }
 
         #volets-root { position: absolute; inset: 0; }
       </style>
-      <div id="volets-root" data-composition-id="volets" data-width="1080" data-height="1920" data-duration="20">
-        <div id="volets-scene" class="fr clip" data-start="0" data-duration="20" data-track-index="0" style="width:1080px;height:1920px">
-<div id="volet0" class="a volet" data-layout-allow-overflow><div class="vb"></div><div class="vf"></div></div>
-<div id="volet1" class="a volet" data-layout-allow-overflow><div class="vb"></div><div class="vf"></div></div>
-<div id="volet2" class="a volet" data-layout-allow-overflow><div class="vb"></div><div class="vf"></div></div>
-<div id="volet3" class="a volet" data-layout-allow-overflow><div class="vb"></div><div class="vf"></div></div>
-<div id="volet4" class="a volet" data-layout-allow-overflow><div class="vb"></div><div class="vf"></div></div>
+      <div id="volets-root" data-composition-id="volets" data-width="1080" data-height="1920" data-duration="22">
+        <div id="volets-scene" class="fr clip" data-start="0" data-duration="22" data-track-index="0" style="width:1080px;height:1920px">
+<div id="filet0" class="a vf" data-layout-allow-overflow></div>
+<div id="filet1" class="a vf" data-layout-allow-overflow></div>
+<div id="filet2" class="a vf" data-layout-allow-overflow></div>
+<div id="filet3" class="a vf" data-layout-allow-overflow></div>
+<div id="filet4" class="a vf" data-layout-allow-overflow></div>
         </div>
       </div>
       <script>
         const tl = gsap.timeline({ paused: true });
-        tl.fromTo("#volet0", { x: -2800 }, { x: 1080, duration: 0.5, ease: "power1.inOut" }, 2.25);
-        tl.fromTo("#volet1", { x: -2800 }, { x: 1080, duration: 0.5, ease: "power1.inOut" }, 6.75);
-        tl.fromTo("#volet2", { x: -2800 }, { x: 1080, duration: 0.5, ease: "power1.inOut" }, 10.25);
-        tl.fromTo("#volet3", { x: -2800 }, { x: 1080, duration: 0.5, ease: "power1.inOut" }, 13.25);
-        tl.fromTo("#volet4", { x: -2800 }, { x: 1080, duration: 0.5, ease: "power1.inOut" }, 16.75);
+        tl.fromTo("#filet0", { x: -812 }, { x: 1074, duration: 0.9, ease: "sine.inOut" }, 2.05);
+        tl.fromTo("#filet1", { x: -812 }, { x: 1074, duration: 0.9, ease: "sine.inOut" }, 7.05);
+        tl.fromTo("#filet2", { x: -812 }, { x: 1074, duration: 0.9, ease: "sine.inOut" }, 11.05);
+        tl.fromTo("#filet3", { x: -812 }, { x: 1074, duration: 0.9, ease: "sine.inOut" }, 14.05);
+        tl.fromTo("#filet4", { x: -812 }, { x: 1074, duration: 0.9, ease: "sine.inOut" }, 18.05);
+
         window.__timelines["volets"] = tl;
       </script>
     </template>

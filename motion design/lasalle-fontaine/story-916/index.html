@@ -15,23 +15,21 @@
 .fond::after { content: ""; position: absolute; inset: 0; opacity: .7; mix-blend-mode: overlay;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='256' height='256'><filter id='n' color-interpolation-filters='sRGB'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>"); }
 
-      .volet { left: 0; top: 0; width: 2800px; height: 1920px; transform: translateX(-2800px); }
-      .volet .vb { position: absolute; inset: 0; background: #0D0D0D; clip-path: polygon(806px 0, 100% 0, calc(100% - 806px) 100%, 0 100%); }
-      .volet .vf { position: absolute; inset: 0; background: #B8A07E; clip-path: polygon(calc(100% - 12px) 0, 100% 0, calc(100% - 806px) 100%, calc(100% - 818px) 100%); }
     </style>
   </head>
   <body>
-    <!-- Story fontaine à boisson sportive : 6 visuels rejoués texte par texte, 20 s, 120 BPM ; coupes à 2.5, 7, 10.5, 13.5, 17 s -->
-    <div id="root" data-composition-id="main" data-start="0" data-duration="20" data-width="1080" data-height="1920" data-fps="30">
-      <div id="h-fond" data-composition-id="fond" data-composition-src="compositions/fond.html" data-start="0" data-duration="20" data-track-index="0" data-width="1080" data-height="1920"></div>
-      <div id="h-s1" data-composition-id="s1" data-composition-src="compositions/s1.html" data-start="0" data-duration="2.5" data-track-index="1" data-width="1080" data-height="1920"></div>
-      <div id="h-s2" data-composition-id="s2" data-composition-src="compositions/s2.html" data-start="2.5" data-duration="4.5" data-track-index="1" data-width="1080" data-height="1920"></div>
-      <div id="h-s3" data-composition-id="s3" data-composition-src="compositions/s3.html" data-start="7" data-duration="3.5" data-track-index="1" data-width="1080" data-height="1920"></div>
-      <div id="h-s4" data-composition-id="s4" data-composition-src="compositions/s4.html" data-start="10.5" data-duration="3" data-track-index="1" data-width="1080" data-height="1920"></div>
-      <div id="h-s5" data-composition-id="s5" data-composition-src="compositions/s5.html" data-start="13.5" data-duration="3.5" data-track-index="1" data-width="1080" data-height="1920"></div>
-      <div id="h-s6" data-composition-id="s6" data-composition-src="compositions/s6.html" data-start="17" data-duration="3" data-track-index="1" data-width="1080" data-height="1920"></div>
-      <div id="h-volets" data-composition-id="volets" data-composition-src="compositions/volets.html" data-start="0" data-duration="20" data-track-index="3" data-width="1080" data-height="1920"></div>
-      <audio id="musique" src="assets/audio/musique.wav" data-start="0" data-duration="20" data-track-index="10" data-volume="1"></audio>
+    <!-- Story fontaine à boisson sportive : 6 visuels rejoués texte par texte, 22 s, 60 i/s, 120 BPM.
+         Coupes à 2.5, 7.5, 11.5, 14.5, 18.5 s : la scène suivante se dévoile en biais en 0.9 s, centrées sur la coupe. -->
+    <div id="root" data-composition-id="main" data-start="0" data-duration="22" data-width="1080" data-height="1920" data-fps="60">
+      <div id="h-fond" data-composition-id="fond" data-composition-src="compositions/fond.html" data-start="0" data-duration="22" data-track-index="0" data-width="1080" data-height="1920" style="z-index:0"></div>
+      <div id="h-s1" data-composition-id="s1" data-composition-src="compositions/s1.html" data-start="0" data-duration="2.95" data-track-index="1" data-width="1080" data-height="1920" style="z-index:1"></div>
+      <div id="h-s2" data-composition-id="s2" data-composition-src="compositions/s2.html" data-start="2.05" data-duration="5.9" data-track-index="2" data-width="1080" data-height="1920" style="z-index:2"></div>
+      <div id="h-s3" data-composition-id="s3" data-composition-src="compositions/s3.html" data-start="7.05" data-duration="4.9" data-track-index="1" data-width="1080" data-height="1920" style="z-index:3"></div>
+      <div id="h-s4" data-composition-id="s4" data-composition-src="compositions/s4.html" data-start="11.05" data-duration="3.9" data-track-index="2" data-width="1080" data-height="1920" style="z-index:4"></div>
+      <div id="h-s5" data-composition-id="s5" data-composition-src="compositions/s5.html" data-start="14.05" data-duration="4.9" data-track-index="1" data-width="1080" data-height="1920" style="z-index:5"></div>
+      <div id="h-s6" data-composition-id="s6" data-composition-src="compositions/s6.html" data-start="18.05" data-duration="3.95" data-track-index="2" data-width="1080" data-height="1920" style="z-index:6"></div>
+      <div id="h-volets" data-composition-id="volets" data-composition-src="compositions/volets.html" data-start="0" data-duration="22" data-track-index="3" data-width="1080" data-height="1920" style="z-index:20"></div>
+      <audio id="musique" src="assets/audio/musique.wav" data-start="0" data-duration="22" data-track-index="10" data-volume="1"></audio>
     </div>
     <script>
       window.__timelines["main"] = gsap.timeline({ paused: true });

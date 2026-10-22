@@ -1,12 +1,12 @@
-"""Musique originale de la story fontaine LA SALLE : 20 s, 120 BPM, la mineur.
+"""Musique originale de la story fontaine LA SALLE : 22 s, 120 BPM, la mineur.
 
 Instruments repris de lecube-chrono/tools/musique.py (synthèse pure, aucun échantillon, aucun morceau sous droits,
-pas de MusicGen). Arrangement calé sur les repères de tools/build.py (SCENES, CASSURE) :
+pas de MusicGen). Arrangement calé sur les repères de tools/build.py (SCENES, VOLET, CASSURE, reperes()) :
   accroche (0–2,5 s) : impact et crash à l'image 0, groove en demi-temps
   scènes 2 à 4 : groove à quatre temps, arpège en croches, une note pincée par boisson et par saveur qui entre,
                  impact quand « 30 MIN » frappe, montée avant la cassure
-  volets : un souffle centré sur chaque coupe
-  cassure (13,5–14 s) : silence, puis reprise sur « + 2 € » avec impact et crash
+  volets : un souffle doux sur toute la durée de chaque dévoilement (0,9 s)
+  cassure (14,5–15 s) : silence, puis reprise sur « + 2 € » avec impact et crash
   carte finale : impact, accord tenu, fondu sur la dernière seconde
 
 Fichier _communs/musique_fontaine.wav non suivi par git : graine fixe, on le régénère à l'identique.
@@ -34,14 +34,15 @@ _spec.loader.exec_module(m)
 
 SR = m.SR
 DUREE = build.DUREE
-m.N = N = int(round(SR * DUREE))      # les instruments écrivent dans des pistes de 20 s
+m.N = N = int(round(SR * DUREE))      # les instruments écrivent dans des pistes de la durée de la story
 TEMPS = 0.5
 DC = TEMPS / 4
 CASS = build.CASSURE
 DEBUT = {c: t for c, t, _ in build.SCENES}
 COUPES = [t for _, t, _ in build.SCENES[1:]]
 
-ACCORDS = [(0, "Am"), (2, "F"), (4, "C"), (6, "G"), (8, "Am"), (10, "F"), (12, "G"), (14, "Am"), (16, "F"), (18, "Am")]
+ACCORDS = [(0, "Am"), (2, "F"), (4, "C"), (6, "G"), (8, "Am"), (10, "F"), (12, "C"), (14, "G"), (15, "Am"), (17, "F"),
+           (18.5, "C"), (20, "Am")]
 NAPPE = {"Am": [57, 60, 64, 69], "F": [53, 57, 60, 65], "C": [55, 60, 64, 67], "G": [55, 59, 62, 67]}
 BASSE = {"Am": 45, "F": 41, "C": 36, "G": 43}
 ARPEGE = {"Am": [69, 72, 76, 81], "F": [65, 69, 72, 77], "C": [67, 72, 76, 79], "G": [67, 71, 74, 79]}
@@ -111,23 +112,23 @@ def arranger(bruitages=False):
     # Repères de l'image
     m.poser(fx, 0.0, m.impact(0.9), 0.55)
     m.poser(fx, 0.0, m.crash(1.2), 0.3)
-    for t in COUPES:                                       # volets
-        m.poser(fx, t - 0.25, m.souffle(0.5, 0.25), 0.34)
+    R = build.reperes()
+    for t in COUPES:                                       # volets : souffle sur tout le dévoilement
+        m.poser(fx, t - build.VOLET / 2, m.souffle(build.VOLET, build.VOLET / 2), 0.26)
         if t != CASS[0]:
-            m.poser(fx, t, m.impact(0.5), 0.3)
-    s2, s3, s4, s5 = DEBUT["s2"], DEBUT["s3"], DEBUT["s4"], DEBUT["s5"]
-    for i in range(6):                                     # puces des boissons
-        m.poser(fx, s2 + 2.05 + 0.14 * i, pincee(81 + [0, 3, 7, 12, 7, 3][i], 0.3), 0.22, 0.4 * (-1) ** i)
-    for i in range(5):                                     # saveurs
-        m.poser(fx, s3 + 0.6 + 0.22 * i, pincee(76 + [0, 3, 5, 7, 12][i], 0.35), 0.24, 0.3 * (-1) ** i)
-    m.poser(fx, s4 + 0.95, m.impact(0.8), 0.5)             # « 30 MIN »
-    m.poser(fx, s4 + 0.95, FR, 0.3)
+            m.poser(fx, t, m.impact(0.45), 0.22)
+    for i, t in enumerate(R["puces"]):                     # puces des boissons
+        m.poser(fx, t, pincee(81 + [0, 3, 7, 12, 7, 3][i], 0.3), 0.22, 0.4 * (-1) ** i)
+    for i, t in enumerate(R["saveurs"]):                   # saveurs
+        m.poser(fx, t, pincee(76 + [0, 3, 5, 7, 12][i], 0.35), 0.24, 0.3 * (-1) ** i)
+    m.poser(fx, R["trente"], m.impact(0.8), 0.5)           # « 30 MIN »
+    m.poser(fx, R["trente"], FR, 0.3)
     m.poser(fx, CASS[0] - 1.0, m.monte(1.0), 0.38)
-    m.poser(fx, CASS[1], m.impact(1.0), 0.7)               # « + 2 € »
-    m.poser(fx, CASS[1], m.crash(1.6), 0.45)
-    for i in range(3):                                     # bandes des avantages
-        m.poser(fx, s5 + 1.2 + 0.2 * i - 0.08, m.souffle(0.22, 0.1), 0.2)
-    m.poser(fx, DEBUT["s6"] + 0.35, m.impact(0.6), 0.35)   # « À L'ACCUEIL. »
+    m.poser(fx, R["prix"], m.impact(1.0), 0.7)             # « + 2 € »
+    m.poser(fx, R["prix"], m.crash(1.6), 0.45)
+    for t in R["bandes"]:                                  # bandes des avantages
+        m.poser(fx, t - 0.08, m.souffle(0.3, 0.12), 0.2)
+    m.poser(fx, R["accueil"], m.impact(0.6), 0.35)         # « À L'ACCUEIL. »
     m.poser(fx, fin, m.crash(0.8), 0.25)
 
     respire = np.ones(N)
@@ -159,16 +160,17 @@ def arranger(bruitages=False):
 def main():
     bruitages = "--bruitages" in sys.argv
     cible = -18.0 if bruitages else -14.0              # bruitages seuls : laissés sous la musique ajoutée dans Instagram
+    plafond = -3.0 if bruitages else -1.9               # bruitages : impacts isolés, l'AAC fait plus déborder la crête
     x = arranger(bruitages)
     mesure = pyln.Meter(SR)
-    for _ in range(4):
+    for _ in range(6):
         x *= 10 ** ((cible - mesure.integrated_loudness(x.T)) / 20)
-        x = m.limiteur(x)
+        x = m.limiteur(x, plafond)
         if abs(mesure.integrated_loudness(x.T) - cible) < 0.15:
             break
     tp = m.crete_vraie(x)
-    if tp > -1.6:
-        x *= 10 ** ((-1.6 - tp) / 20)
+    if tp > plafond + 0.3:
+        x *= 10 ** ((plafond + 0.3 - tp) / 20)
     sortie = os.path.join(ICI, "..", "_communs", "bruitages_fontaine.wav" if bruitages else "musique_fontaine.wav")
     os.makedirs(os.path.dirname(sortie), exist_ok=True)
     sf.write(sortie, x.T, SR, subtype="PCM_24")

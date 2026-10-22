@@ -7,29 +7,29 @@ OK   Aucun mot interdit ni allégation
 Verdict : GO technique
 
 QC — LA_SALLE_Fontaine_story_9x16.mp4
-OK   Format 1080×1920, H.264 High, yuv420p, 30 i/s
-OK   Durée 20.000 s (19.9–20)
-OK   Poids 4.1 Mo (≤ 25)
+OK   Format 1080×1920, H.264 High, yuv420p, 60 i/s
+OK   Durée 22.000 s (21.9–22)
+OK   Poids 6.8 Mo (≤ 25)
 OK   faststart (moov avant mdat)
 OK   Audio AAC 48000 Hz, 2 canaux
 OK   Sonie -14.1 LUFS (-14 ± 0,5)
 OK   Crête vraie -1.5 dBTP (≤ −1,5)
-OK   Aperçu = rendu décodé à la fin de chaque scène (SSIM 0.984, 0.992, 0.985, 0.992, 0.993, 0.995 ≥ 0,97)
-OK   check HyperFrames passé, contraste AA 26/26 (story-916)
+OK   Aperçu = rendu décodé à la fin de chaque scène (SSIM 0.993, 0.995, 0.992, 0.996, 0.996, 0.996 ≥ 0,97)
+OK   check HyperFrames passé, contraste AA 5/5 (story-916)
 OK   Textes des 6 visuels présents
 OK   Aucun mot interdit ni allégation
 Verdict : GO technique
 
 QC — LA_SALLE_Fontaine_story_9x16_bruitages.mp4
-OK   Format 1080×1920, H.264 High, yuv420p, 30 i/s
-OK   Durée 20.000 s (19.9–20)
-OK   Poids 4.1 Mo (≤ 25)
+OK   Format 1080×1920, H.264 High, yuv420p, 60 i/s
+OK   Durée 22.000 s (21.9–22)
+OK   Poids 6.8 Mo (≤ 25)
 OK   faststart (moov avant mdat)
 OK   Audio AAC 48000 Hz, 2 canaux
 OK   Sonie -18.3 LUFS (-18 ± 0,5)
-OK   Crête vraie -1.7 dBTP (≤ −1,5)
-OK   Aperçu = rendu décodé à la fin de chaque scène (SSIM 0.984, 0.992, 0.985, 0.992, 0.993, 0.995 ≥ 0,97)
-OK   check HyperFrames passé, contraste AA 26/26 (story-916)
+OK   Crête vraie -2.4 dBTP (≤ −1,5)
+OK   Aperçu = rendu décodé à la fin de chaque scène (SSIM 0.993, 0.995, 0.992, 0.996, 0.996, 0.996 ≥ 0,97)
+OK   check HyperFrames passé, contraste AA 5/5 (story-916)
 OK   Textes des 6 visuels présents
 OK   Aucun mot interdit ni allégation
 Verdict : GO technique

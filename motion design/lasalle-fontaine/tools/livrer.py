@@ -1,16 +1,16 @@
-"""Livraison fontaine LA SALLE : affiche 02/03 retravaillée (PNG + JPG) et story 9:16 (avec musique, bruitages seuls).
+"""Livraison fontaine LA SALLE : affiche 02/03 retravaillée (PNG + JPG) et story 9:16, 60 i/s (avec musique, bruitages seuls).
 
 1. Affiche : snapshot de affiche-45 à 0,5 s → PNG maître et JPG (qualité 90, sRGB, < 1 Mo).
 2. Story : l'image du rendu (story-916/renders/story.mp4) est reprise avec le WAV d'origine (le rendu HyperFrames baisse
-   la musique de 1,6 dB), puis master.py (Premium) en mode direct. Version « bruitages seuls » à −18 LUFS, sans
-   normalisation, pour ajouter une musique de la Sound Collection à la publication.
+   la musique de 1,6 dB), puis réencodée en H.264 60 i/s (master.py fixe 30 i/s ; mêmes réglages sinon, CRF 16).
+   Version « bruitages seuls » à −18 LUFS pour ajouter une musique de la Sound Collection à la publication.
 3. Contrôles : format, durée, poids, faststart, sonie, crête vraie, aperçu = rendu décodé (SSIM), textes, mots interdits,
    planche à 2 i/s avec les zones Reels, image 0.
 
 Les fichiers montrent la photo fabricant de la fontaine (logo de la marque à l'écran) : images, vidéos et planches vont
 dans « Pub Meta LA SALLE/Fontaine oct26/ », où ils sont ignorés par git (dépôt public). Le rapport QC est suivi.
 Usage : python3 tools/livrer.py   (après build.py, musique.py, musique.py --bruitages et le rendu :
-        npx --yes hyperframes@0.8.181 render --quality delivery -o renders/story.mp4, dans story-916)
+        npx --yes hyperframes@0.8.181 render --fps 60 --quality delivery -o renders/story.mp4, dans story-916)
 """
 import html
 import json
@@ -104,6 +104,27 @@ def check(projet):
     return "Check passed" in sortie, (f"contraste AA {m.group(1)}/{m.group(2)}" if m else "contraste non mesuré")
 
 
+def encoder(src, dst, duree):
+    """Réglages de master.py (H.264 High, BT.709, faststart), mais à 60 i/s et en CRF 16 : les volets et les entrées
+    restent nets, sans blocs sur les aplats sombres. Piste AAC copiée ; si l'encodage AAC fait dépasser la crête
+    vraie de −1,5 dBTP, elle est réencodée avec un gain fixe abaissé de 0,3 dB à chaque essai (comme master.py)."""
+    image = dst + ".image.mp4"
+    run(["ffmpeg", "-hide_banner", "-y", "-i", src, "-t", f"{duree}", "-an",
+         "-c:v", "libx264", "-preset", "slow", "-crf", "16", "-maxrate", "20M", "-bufsize", "40M",
+         "-profile:v", "high", "-pix_fmt", "yuv420p", "-r", str(build.FPS),
+         "-color_primaries", "bt709", "-color_trc", "bt709", "-colorspace", "bt709", image])
+    gain = None
+    for _ in range(6):
+        audio = ["-c:a", "copy"] if gain is None else [
+            "-af", f"volume={gain}dB,aresample=48000", "-c:a", "aac", "-b:a", "256k", "-ar", "48000", "-ac", "2"]
+        run(["ffmpeg", "-hide_banner", "-y", "-i", image, "-i", src, "-map", "0:v", "-map", "1:a", "-t", f"{duree}",
+             "-c:v", "copy", *audio, "-movflags", "+faststart", dst])
+        if master.controle(dst)[1] <= master.TP_MAX:
+            break
+        gain = -0.3 if gain is None else round(gain - 0.3, 1)
+    os.remove(image)
+
+
 def ligne(nom, tests):
     return [f"QC — {nom}", *(f"{'OK ' if ok else 'NON'}  {n}" for n, ok in tests),
             f"Verdict : {'GO technique' if all(ok for _, ok in tests) else 'À CORRIGER'}", ""]
@@ -142,7 +163,7 @@ def story(dvid, dctl, lignes):
     absents = manquants(ATTENDUS_STORY, t_ecran)
     interdits = trouves(t_ecran)
     with tempfile.TemporaryDirectory() as tmp:
-        instants = [round(t + dur - 0.35, 2) for _, t, dur in build.SCENES]
+        instants = [round(t + dur - build.VOLET / 2 - 0.1, 2) for _, t, dur in build.SCENES[:-1]] + [round(d - 0.4, 2)]
         run(HF + ["snapshot", "--at", ",".join(f"{t:g}" for t in instants), "--no-end", "-o", tmp, "--timeout", "60000",
                   os.path.join(RACINE, "story-916")])
         apercus = sorted(f for f in os.listdir(tmp) if f.startswith("frame-") and f.endswith(".png"))
@@ -152,10 +173,7 @@ def story(dvid, dctl, lignes):
             run(["ffmpeg", "-hide_banner", "-y", "-i", rendu, "-i", os.path.join(RACINE, "_communs", wav),
                  "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "256k", "-ar", "48000", "-ac", "2",
                  "-t", f"{d:g}", remix])
-            if version:
-                master.encode_direct(remix, video, d)
-            else:
-                master.main(remix, video, d)
+            encoder(remix, video, d)
             p, s = sonde(video)
             v, a = s["video"], s["audio"]
             duree, taille = float(p["format"]["duration"]), int(p["format"]["size"]) / 1e6
@@ -163,8 +181,8 @@ def story(dvid, dctl, lignes):
             scores = [ssim(video, t, os.path.join(tmp, f)) for t, f in zip(instants, apercus)]
             cible = -18.0 if version else -14.0
             lignes += ligne(os.path.basename(video), [
-                ("Format 1080×1920, H.264 High, yuv420p, 30 i/s", v["width"] == 1080 and v["height"] == 1920 and v["codec_name"] == "h264"
-                 and v.get("profile") == "High" and v["pix_fmt"] == "yuv420p" and v["r_frame_rate"] == "30/1"),
+                (f"Format 1080×1920, H.264 High, yuv420p, {build.FPS} i/s", v["width"] == 1080 and v["height"] == 1920 and v["codec_name"] == "h264"
+                 and v.get("profile") == "High" and v["pix_fmt"] == "yuv420p" and v["r_frame_rate"] == f"{build.FPS}/1"),
                 (f"Durée {duree:.3f} s ({d - 0.1:g}–{d:g})", d - 0.1 <= duree <= d + 0.001),
                 (f"Poids {taille:.1f} Mo (≤ 25)", taille <= 25),
                 ("faststart (moov avant mdat)", faststart(video)),

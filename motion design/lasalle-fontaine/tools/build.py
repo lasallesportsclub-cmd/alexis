@@ -1,4 +1,4 @@
-"""Fontaine à boisson sportive LA SALLE : affiche 02/03 retravaillée (4:5) et story animée (9:16, 20 s).
+"""Fontaine à boisson sportive LA SALLE : affiche 02/03 retravaillée (4:5) et story animée (9:16, 22 s, 60 i/s).
 
 Écrit :
   affiche-45/index.html                    affiche « COMMENT ÇA MARCHE » 1080×1350 (scène figée d'une seconde)
@@ -8,7 +8,7 @@ Recopie dans <projet>/assets/ (ignorés par git) :
   musique (story-916, fichier produit par tools/musique.py).
 
 Les textes sont ceux des visuels fournis le 22/10/2026, mot pour mot ; seuls la mise en page et le mouvement changent.
-Repères (secondes) : SCENES ci-dessous, partagés avec tools/musique.py et tools/livrer.py.
+Repères (secondes) : SCENES et T ci-dessous ; reperes() les donne en absolu à tools/musique.py et tools/livrer.py.
 
 Usage : python3 tools/build.py   (puis tools/musique.py, rendu, tools/livrer.py)
 """
@@ -21,10 +21,22 @@ RACINE = os.path.normpath(os.path.join(ICI, ".."))
 MD = os.path.normpath(os.path.join(RACINE, ".."))
 SOURCES = os.path.expanduser(os.environ.get("FONTAINE_SOURCES", "~/fontaine-sources"))
 
-# Story : (id, début, durée) ; coupes sur la grille de 120 BPM (un temps = 0,5 s)
-SCENES = [("s1", 0.0, 2.5), ("s2", 2.5, 4.5), ("s3", 7.0, 3.5), ("s4", 10.5, 3.0), ("s5", 13.5, 3.5), ("s6", 17.0, 3.0)]
-DUREE = 20.0
-CASSURE = (13.5, 14.0)     # musique coupée, « + 2 € » frappe à la reprise
+# Story : (id, coupe, temps jusqu'à la coupe suivante) ; coupes sur la grille de 120 BPM (un temps = 0,5 s)
+SCENES = [("s1", 0.0, 2.5), ("s2", 2.5, 5.0), ("s3", 7.5, 4.0), ("s4", 11.5, 3.0), ("s5", 14.5, 4.0), ("s6", 18.5, 3.5)]
+DUREE = 22.0
+FPS = 60                   # mouvements et volets fluides (retour du 22/10 : transitions saccadées en 30 i/s)
+VOLET = 0.9                # dévoilement en biais, centré sur chaque coupe
+CASSURE = (14.5, 15.0)     # musique coupée, « + 2 € » frappe à la reprise
+# Entrées de chaque scène, en secondes après sa coupe ; « pas » = écart entre deux éléments d'une liste
+T = {
+    "s1": {"filet": 0.15, "sous": 0.5},
+    "s2": {"kick": 0.05, "l1": 0.15, "l2": 0.35, "machine": 0.45, "point": 1.2, "trait": 1.3, "ct": 1.55, "cb": 1.85,
+           "kick2": 2.35, "puces": 2.5, "pas": 0.15, "mention": 2.75},
+    "s3": {"kick": 0.05, "l1": 0.15, "l2": 0.35, "saveurs": 0.65, "pas": 0.25, "corps": 2.0},
+    "s4": {"kick": 0.05, "l1": 0.15, "l2": 0.45, "l3": 0.7, "l4": 1.05, "corps": 1.6},
+    "s5": {"kick": 0.05, "prix": 0.5, "kick2": 1.2, "bandes": 1.35, "pas": 0.22},
+    "s6": {"logo": 0.0, "l1": 0.15, "l2": 0.35, "l3": 0.65, "l4": 0.85, "mention": 0.6},
+}
 
 PLUS = ('<svg class="plus" viewBox="-2 0 104 100" style="{s}"><polygon points="8.6,39 100.6,39 91.4,61 -0.6,61"/>'
         '<polygon points="59.05,0 82.95,0 40.95,100 17.05,100"/></svg>')
@@ -63,6 +75,7 @@ CSS = POLICES + """
 .fr .filet { background: #B8A07E; }
 .fr .point { width: 22px; height: 22px; border-radius: 50%; background: #B8A07E; outline: 7px solid rgba(184,160,126,.28); }
 .fr .bande { display: flex; align-items: center; clip-path: polygon(37px 0, 100% 0, calc(100% - 37px) 100%, 0 100%); }
+.fr .vf { left: 0; top: 0; width: 818px; height: 1920px; background: #B8A07E; clip-path: polygon(806px 0, 818px 0, 12px 100%, 0 100%); }
 """
 
 # Fond commun : canvas, deux bandes obliques à peine plus claires (pente 0,42, comme les visuels), grain fin
@@ -84,11 +97,6 @@ def fond(h, cid=""):
 
 def plus(taille, extra=""):
     return PLUS.format(s=f"width:{taille}px;height:{round(taille * 100 / 104)}px;{extra}")
-
-
-def masque(left, top, w, h, inner, mid=""):
-    i = f' id="{mid}"' if mid else ""
-    return f'<div class="m" style="left:{left}px;top:{top}px;width:{w}px;height:{h}px" data-layout-allow-overflow><div{i}>{inner}</div></div>'
 
 
 def composition(cid, w, h, duree, corps, script):
@@ -198,193 +206,245 @@ def index_affiche():
 
 
 # ---------------------------------------------------------------- story (9:16)
+# Plein cadre (retour du 22/10 : « tout est compact ») : texte entre x 96–984 et y 210–1660, corps plus grands.
+# Transitions : la scène suivante se dévoile en biais (pente 0,42) sous un filet or, en VOLET s centrées sur la coupe ;
+# la scène qui sort glisse de 60 px. Les caches (.m) prennent la hauteur réelle de leur texte, plus PAD en haut et
+# en bas : un texte reste invisible tant qu'il n'est pas entré (correctif du « Saveur, intensité » apparu trop tôt).
+PAD = 30
+DEVOILE_DEBUT = "polygon(0px 0px, 0px 0px, -806px 1920px, 0px 1920px)"
+DEVOILE_FIN = "polygon(0px 0px, 1886px 0px, 1080px 1920px, 0px 1920px)"
+
+
+def bornes(cid):
+    """Début et fin de la scène dans la story : elle chevauche ses voisines de VOLET/2 de chaque côté."""
+    i = [c for c, _, _ in SCENES].index(cid)
+    coupe = SCENES[i][1]
+    debut = 0.0 if i == 0 else coupe - VOLET / 2
+    fin = DUREE if i == len(SCENES) - 1 else SCENES[i + 1][1] + VOLET / 2
+    return debut, fin
+
+
+def at(cid, cle, k=0):
+    """Instant local (dans la scène) d'une entrée de T, décalée de k pas."""
+    debut, _ = bornes(cid)
+    coupe = dict((c, t) for c, t, _ in SCENES)[cid]
+    return round(coupe - debut + T[cid][cle] + k * T[cid].get("pas", 0), 3)
+
+
+def reperes():
+    """Instants absolus des entrées, pour tools/musique.py."""
+    c = dict((cid, t) for cid, t, _ in SCENES)
+    return {
+        "puces": [c["s2"] + T["s2"]["puces"] + i * T["s2"]["pas"] for i in range(len(BOISSONS))],
+        "saveurs": [c["s3"] + T["s3"]["saveurs"] + i * T["s3"]["pas"] for i in range(len(SAVEURS))],
+        "trente": c["s4"] + T["s4"]["l4"],
+        "prix": c["s5"] + T["s5"]["prix"],
+        "bandes": [c["s5"] + T["s5"]["bandes"] + i * T["s5"]["pas"] for i in range(len(AVANTAGES))],
+        "accueil": c["s6"] + T["s6"]["l2"],
+    }
+
+
+def cache(left, top, w, inner, mid, pad=PAD):
+    """Glissement masqué : top est le haut du texte ; le cache déborde de pad au-dessus et au-dessous."""
+    return (f'<div class="m" style="left:{left}px;top:{top - pad}px;width:{w}px;padding:{pad}px 0" '
+            f'data-layout-allow-overflow><div id="{mid}">{inner}</div></div>')
+
+
+def monte(mid, t, d=0.65, pad=PAD, ease="power3.out"):
+    """Le texte part de sous le cache : sa hauteur + 2 × pad, pour que les accents (À, É) restent cachés aussi."""
+    return (f'        tl.fromTo("#{mid}", {{ yPercent: 100, y: {2 * pad} }}, '
+            f'{{ yPercent: 0, y: 0, duration: {d}, ease: "{ease}" }}, {t:.3f});\n')
+
+
+def scene(cid, contenu, js):
+    """Fond opaque identique à celui de la story (le volet ne révèle que le texte), contenu dans #<cid>-c,
+    dévoilement en biais à l'entrée (sauf s1), glissement de 60 px à la sortie (sauf s6)."""
+    debut, fin = bornes(cid)
+    corps = f'{fond(1920, cid + "-")}\n<div id="{cid}-c" class="a" style="inset:0">\n{contenu}\n</div>'
+    if cid != SCENES[0][0]:
+        js = (f'        tl.fromTo("#{cid}-scene", {{ clipPath: "{DEVOILE_DEBUT}" }}, {{ clipPath: "{DEVOILE_FIN}", '
+              f'duration: {VOLET}, ease: "sine.inOut" }}, 0);\n') + js
+    if cid != SCENES[-1][0]:
+        js += (f'        tl.to("#{cid}-c", {{ x: -60, duration: {VOLET}, ease: "sine.in" }}, '
+               f'{fin - debut - VOLET:.3f});\n')
+    return composition(cid, 1080, 1920, round(fin - debut, 3), corps, js)
+
+
+def puces_masquees(ids, taille, h, pad, prefixe):
+    c = round(0.42 * h)
+    return "".join(
+        f'<div class="m" style="position:relative;height:{h}px" data-layout-allow-overflow><div id="{prefixe}{k}" class="puce" '
+        f'style="--c:{c}px;height:{h}px;padding:0 {pad}px;font-size:{taille}px">{b}</div></div>'
+        for k, b in enumerate(ids))
+
+
 def s1():
-    corps = f"""
-<div class="a kick" style="left:108px;top:318px">{plus(34)}Option Premium</div>
-<img class="a" src="assets/img/logo-complet.png" alt="LA SALLE" style="left:792px;top:290px;width:180px">
-<div id="s1-titre" class="a" style="left:104px;top:470px">
-  <div class="t9 or" style="font-size:164px">Bien plus</div>
-  <div class="t9" style="font-size:164px">que de</div>
-  <div class="t9" style="font-size:164px">l’eau.</div>
+    _, fin = bornes("s1")
+    contenu = f"""
+<div class="a kick" style="left:96px;top:236px;font-size:38px">{plus(40)}Option Premium</div>
+<img class="a" src="assets/img/logo-complet.png" alt="LA SALLE" style="left:774px;top:212px;width:210px">
+<div id="s1-titre" class="a" style="left:92px;top:560px">
+  <div class="t9 or" style="font-size:168px;line-height:.92">Bien plus</div>
+  <div class="t9" style="font-size:168px;line-height:.92">que de</div>
+  <div class="t9" style="font-size:168px;line-height:.92">l’eau.</div>
 </div>
-{masque(108, 950, 864, 130, '<p class="corps" style="font-size:46px">La fontaine à boissons sportives<br>de l’option Premium.</p>', "s1-sous")}
-<div class="a" style="left:108px;top:1170px">{plus(52)}</div>
-<div id="s1-filet" class="a filet" style="left:182px;top:1192px;width:898px;height:6px;transform-origin:left center"></div>
+{cache(96, 1120, 888, '<p class="corps" style="font-size:54px">La fontaine à boissons sportives<br>de l’option Premium.</p>', "s1-sous")}
+<div class="a" style="left:96px;top:1560px">{plus(60)}</div>
+<div id="s1-filet" class="a filet" style="left:178px;top:1586px;width:902px;height:6px;transform-origin:left center"></div>
 """
-    js = """
-        tl.fromTo("#s1-titre", { scale: 1 }, { scale: 1.035, duration: 2.5, ease: "none", transformOrigin: "left center" }, 0);
-        tl.from("#s1-filet", { scaleX: 0, duration: 0.8, ease: "power2.out" }, 0.15);
-        tl.from("#s1-sous", { yPercent: 110, duration: 0.5, ease: "power3.out" }, 0.5);
-"""
-    return corps, js
+    js = (f'        tl.fromTo("#s1-titre", {{ scale: 1 }}, {{ scale: 1.03, duration: {fin:g}, ease: "none", transformOrigin: "left center" }}, 0);\n'
+          f'        tl.from("#s1-filet", {{ scaleX: 0, duration: 1.0, ease: "power2.out" }}, {at("s1", "filet")});\n'
+          + monte("s1-sous", at("s1", "sous")))
+    return scene("s1", contenu, js)
 
 
 def s2():
-    # Fontaine 1158×849 affichée sur 520 px : 1 px de la capture = 1,347 px
-    W, X0, Y0 = 520, 52, 574
+    # Fontaine 1158×849 affichée sur 620 px : 1 px de la capture = 1,606 px
+    W, X0, Y0 = 620, 40, 616
     k = 3 * W / 1158
-    ex, ey = round(X0 + (292 - 36) * k), 702
-    corps = f"""
-{masque(108, 300, 864, 40, '<div class="kick">Comment ça marche</div>', "s2-kick")}
-{masque(100, 340, 900, 102, '<div class="t9" style="font-size:114px">Votre boisson,</div>', "s2-l1")}
-{masque(100, 438, 900, 106, '<div class="t9 it or" style="font-size:114px">À la carte.</div>', "s2-l2")}
+    ex, ey = round(X0 + (292 - 36) * k), 758
+    debut, fin = bornes("s2")
+    contenu = f"""
+{cache(96, 236, 888, '<div class="kick" style="font-size:38px">Comment ça marche</div>', "s2-kick")}
+{cache(92, 296, 900, '<div class="t9" style="font-size:140px">Votre boisson,</div>', "s2-l1")}
+{cache(92, 424, 900, '<div class="t9 it or" style="font-size:140px">À la carte.</div>', "s2-l2")}
 <div id="s2-machine" class="a" style="left:{X0}px;top:{Y0}px;width:{W}px;height:{round(849 * W / 1158)}px">
   <img id="s2-img" src="assets/img/fontaine.png" alt="" style="display:block;width:{W}px">
 </div>
-<div id="s2-trait" class="a filet" style="left:{ex}px;top:{ey - 1}px;width:{574 - ex}px;height:3px;transform-origin:left center"></div>
+<div id="s2-trait" class="a filet" style="left:{ex}px;top:{ey - 1}px;width:{586 - ex}px;height:3px;transform-origin:left center"></div>
 <div id="s2-point" class="a point" style="left:{ex - 11}px;top:{ey - 11}px"></div>
-{masque(588, 676, 400, 52, '<div class="t8" style="font-size:48px">Écran tactile 17″</div>', "s2-ct")}
-{masque(588, 734, 392, 180, '<p class="corps" style="font-size:34px">Saveur, intensité, température&nbsp;: vous composez votre boisson.</p>', "s2-cb")}
-{masque(108, 978, 864, 36, '<div class="kick" style="font-size:30px">Au choix</div>', "s2-kick2")}
-<div class="a" style="left:104px;top:1016px;width:880px;display:flex;flex-wrap:wrap;gap:10px 10px">{puces(BOISSONS, 37, 56, 26, 0, "s2-p")}</div>
-<p id="s2-mention" class="a mention" style="left:72px;top:1146px;width:936px;padding:12px 24px;font-size:28px;line-height:1.28">{MENTION_CAFEINE}</p>
+{cache(600, 734, 400, '<div class="t8" style="font-size:48px">Écran tactile 17″</div>', "s2-ct")}
+{cache(600, 798, 384, '<p class="corps" style="font-size:38px">Saveur, intensité, température&nbsp;: vous composez votre boisson.</p>', "s2-cb")}
+{cache(96, 1150, 888, '<div class="kick" style="font-size:34px">Au choix</div>', "s2-kick2")}
+<div class="a" style="left:92px;top:1196px;width:900px;display:flex;flex-wrap:wrap;gap:14px 12px">{puces_masquees(BOISSONS, 44, 74, 32, "s2-p")}</div>
+<p id="s2-mention" class="a mention" style="left:96px;top:1420px;width:888px;padding:16px 26px;font-size:32px;line-height:1.28">{MENTION_CAFEINE}</p>
 """
-    js = """
-        tl.from("#s2-kick", { yPercent: 110, duration: 0.4, ease: "power3.out" }, 0.05);
-        tl.from("#s2-l1", { yPercent: 105, duration: 0.5, ease: "power3.out" }, 0.1);
-        tl.from("#s2-l2", { yPercent: 105, duration: 0.5, ease: "power3.out" }, 0.3);
-        tl.fromTo("#s2-machine", { clipPath: "inset(100% 0% 0% 0%)", y: 80 }, { clipPath: "inset(0% 0% 0% 0%)", y: 0, duration: 0.6, ease: "power3.out" }, 0.45);
-        tl.fromTo("#s2-img", { scale: 1 }, { scale: 1.04, duration: 4.05, ease: "none", transformOrigin: "50% 60%" }, 0.45);
-        tl.from("#s2-point", { scale: 0, duration: 0.3, ease: "back.out(2)" }, 1.05);
-        tl.from("#s2-trait", { scaleX: 0, duration: 0.3, ease: "power2.out" }, 1.1);
-        tl.from("#s2-ct", { yPercent: 110, duration: 0.4, ease: "power3.out" }, 1.25);
-        tl.from("#s2-cb", { yPercent: 102, duration: 0.5, ease: "power3.out" }, 1.45);
-        tl.from("#s2-kick2", { yPercent: 110, duration: 0.4, ease: "power3.out" }, 1.95);
-"""
-    js += "".join(
-        f'        tl.from("#s2-p{i}", {{ clipPath: "inset(0% 100% 0% 0%)", x: -30, duration: 0.3, ease: "power3.out" }}, {2.05 + 0.14 * i:.2f});\n'
-        for i in range(len(BOISSONS)))
-    js += '        tl.from("#s2-mention", { clipPath: "inset(0% 0% 100% 0%)", duration: 0.4, ease: "power2.out" }, 2.2);\n'
-    return corps, js
+    js = (monte("s2-kick", at("s2", "kick"), 0.55) + monte("s2-l1", at("s2", "l1")) + monte("s2-l2", at("s2", "l2"))
+          + f'        tl.fromTo("#s2-machine", {{ clipPath: "inset(100% 0% 0% 0%)", y: 70 }}, {{ clipPath: "inset(0% 0% 0% 0%)", y: 0, duration: 0.8, ease: "power2.out" }}, {at("s2", "machine")});\n'
+          + f'        tl.fromTo("#s2-img", {{ scale: 1 }}, {{ scale: 1.04, duration: {fin - debut - at("s2", "machine"):.3f}, ease: "none", transformOrigin: "50% 60%" }}, {at("s2", "machine")});\n'
+          + f'        tl.from("#s2-point", {{ scale: 0, duration: 0.35, ease: "back.out(2)" }}, {at("s2", "point")});\n'
+          + f'        tl.from("#s2-trait", {{ scaleX: 0, duration: 0.4, ease: "power2.inOut" }}, {at("s2", "trait")});\n'
+          + monte("s2-ct", at("s2", "ct"), 0.55) + monte("s2-cb", at("s2", "cb"), 0.7)
+          + monte("s2-kick2", at("s2", "kick2"), 0.5)
+          + "".join(monte(f"s2-p{i}", at("s2", "puces", i), 0.5, 0) for i in range(len(BOISSONS)))
+          + f'        tl.from("#s2-mention", {{ clipPath: "inset(0% 0% 100% 0%)", duration: 0.5, ease: "power2.out" }}, {at("s2", "mention")});\n')
+    return scene("s2", contenu, js)
 
 
 def s3():
+    debut, fin = bornes("s3")
     lignes = "".join(
-        masque(100, 606 + 101 * i, 900, 104,
-               f'<div class="t9{" creux" if i % 2 else ""}" style="font-size:114px;line-height:.9">{s}</div>', f"s3-f{i}")
+        cache(92, 640 + 137 * i, 900, f'<div class="t9{" creux" if i % 2 else ""}" style="font-size:152px;line-height:.9">{s}</div>', f"s3-f{i}", 22)
         for i, s in enumerate(SAVEURS))
-    corps = f"""
-<div id="s3-deux" class="a t9 creux" aria-hidden="true" style="left:600px;top:760px;font-size:980px;-webkit-text-stroke:3px rgba(244,241,236,.16)">2</div>
-{masque(108, 300, 864, 40, '<div class="kick">Étape <span class="num">02</span></div>', "s3-kick")}
-{masque(100, 344, 900, 114, '<div class="t9" style="font-size:128px">Choisissez</div>', "s3-l1")}
-{masque(100, 456, 900, 116, '<div class="t9" style="font-size:128px">votre saveur</div>', "s3-l2")}
+    contenu = f"""
+<div id="s3-deux" class="a t9 creux" aria-hidden="true" style="left:560px;top:640px;font-size:1150px;-webkit-text-stroke:3px rgba(244,241,236,.14)">2</div>
+{cache(96, 236, 888, '<div class="kick" style="font-size:38px">Étape <span class="num">02</span></div>', "s3-kick")}
+{cache(92, 296, 900, '<div class="t9" style="font-size:146px">Choisissez</div>', "s3-l1")}
+{cache(92, 430, 900, '<div class="t9" style="font-size:146px">votre saveur</div>', "s3-l2")}
 {lignes}
-{masque(108, 1150, 864, 120, '<p class="corps" style="font-size:42px">Cinq saveurs, au choix<br>sur l’écran tactile.</p>', "s3-corps")}
+{cache(96, 1420, 888, '<p class="corps" style="font-size:50px">Cinq saveurs, au choix<br>sur l’écran tactile.</p>', "s3-corps")}
 """
-    js = """
-        tl.fromTo("#s3-deux", { y: 120 }, { y: 0, duration: 3.5, ease: "none" }, 0);
-        tl.from("#s3-kick", { yPercent: 110, duration: 0.4, ease: "power3.out" }, 0.05);
-        tl.from("#s3-l1", { yPercent: 105, duration: 0.5, ease: "power3.out" }, 0.1);
-        tl.from("#s3-l2", { yPercent: 105, duration: 0.5, ease: "power3.out" }, 0.28);
-"""
-    js += "".join(
-        f'        tl.from("#s3-f{i}", {{ xPercent: -105, duration: 0.42, ease: "power3.out" }}, {0.6 + 0.22 * i:.2f});\n'
-        for i in range(len(SAVEURS)))
-    js += '        tl.from("#s3-corps", { yPercent: 102, duration: 0.5, ease: "power3.out" }, 1.8);\n'
-    return corps, js
+    js = (f'        tl.fromTo("#s3-deux", {{ y: 140 }}, {{ y: 0, duration: {fin - debut:.3f}, ease: "none" }}, 0);\n'
+          + monte("s3-kick", at("s3", "kick"), 0.55) + monte("s3-l1", at("s3", "l1")) + monte("s3-l2", at("s3", "l2"))
+          + "".join(f'        tl.fromTo("#s3-f{i}", {{ xPercent: -105 }}, {{ xPercent: 0, duration: 0.6, ease: "power3.out" }}, {at("s3", "saveurs", i)});\n'
+                    for i in range(len(SAVEURS)))
+          + monte("s3-corps", at("s3", "corps"), 0.7))
+    return scene("s3", contenu, js)
 
 
 def s4():
-    corps = f"""
-<svg id="s4-horloge" class="a" aria-hidden="true" viewBox="0 0 220 220" style="left:792px;top:868px;width:220px;height:220px;overflow:visible">
-  <circle cx="110" cy="110" r="96" fill="none" stroke="rgba(244,241,236,.18)" stroke-width="4"/>
-  <path id="s4-arc" d="M 110 14 A 96 96 0 0 1 110 206" fill="none" stroke="#B8A07E" stroke-width="10" pathLength="1" stroke-dasharray="1" stroke-dashoffset="0"/>
-  <line x1="110" y1="110" x2="110" y2="178" stroke="#B8A07E" stroke-width="6"/><circle cx="110" cy="110" r="9" fill="#B8A07E"/>
+    contenu = f"""
+{cache(96, 236, 888, '<div class="kick" style="font-size:38px">Étape <span class="num">03</span></div>', "s4-kick")}
+{cache(92, 296, 900, '<div class="t9" style="font-size:146px">Servez-vous</div>', "s4-l1")}
+{cache(90, 540, 960, '<div class="t9 num" style="font-size:200px">1 boisson</div>', "s4-l2")}
+{cache(90, 716, 960, '<div class="t9" style="font-size:200px">toutes les</div>', "s4-l3")}
+<div id="s4-l4" class="a t9 or num" style="left:90px;top:900px;font-size:340px;transform-origin:left center">30 min</div>
+{cache(96, 1300, 640, '<p class="corps" style="font-size:50px">À chaque séance, aussi souvent que vous venez.</p>', "s4-corps")}
+<svg id="s4-horloge" class="a" aria-hidden="true" viewBox="0 0 220 220" style="left:764px;top:1300px;width:220px;height:220px;overflow:visible">
+  <circle cx="110" cy="110" r="100" fill="none" stroke="rgba(244,241,236,.18)" stroke-width="4"/>
+  <path id="s4-arc" d="M 110 10 A 100 100 0 0 1 110 210" fill="none" stroke="#B8A07E" stroke-width="10" pathLength="1" stroke-dasharray="1" stroke-dashoffset="0"/>
+  <line id="s4-aiguille" x1="110" y1="110" x2="110" y2="178" stroke="#B8A07E" stroke-width="6"/><circle cx="110" cy="110" r="9" fill="#B8A07E"/>
 </svg>
-{masque(108, 300, 864, 40, '<div class="kick">Étape <span class="num">03</span></div>', "s4-kick")}
-{masque(100, 344, 900, 114, '<div class="t9" style="font-size:128px">Servez-vous</div>', "s4-l1")}
-{masque(96, 520, 940, 164, '<div class="t9 num" style="font-size:184px">1 boisson</div>', "s4-l2")}
-{masque(96, 682, 940, 164, '<div class="t9" style="font-size:184px">toutes les</div>', "s4-l3")}
-<div id="s4-l4" class="a t9 or num" style="left:96px;top:858px;font-size:272px;transform-origin:left center">30 min</div>
-{masque(108, 1136, 864, 120, '<p class="corps" style="font-size:42px">À chaque séance, aussi souvent<br>que vous venez.</p>', "s4-corps")}
 """
-    js = """
-        tl.from("#s4-kick", { yPercent: 110, duration: 0.4, ease: "power3.out" }, 0.05);
-        tl.from("#s4-l1", { yPercent: 105, duration: 0.5, ease: "power3.out" }, 0.1);
-        tl.from("#s4-l2", { yPercent: 105, duration: 0.45, ease: "power3.out" }, 0.4);
-        tl.from("#s4-l3", { yPercent: 105, duration: 0.45, ease: "power3.out" }, 0.62);
-        tl.fromTo("#s4-l4", { scale: 1.32, clipPath: "inset(0% 100% 0% 0%)" }, { scale: 1, clipPath: "inset(0% 0% 0% 0%)", duration: 0.35, ease: "power4.out" }, 0.95);
-        tl.from("#s4-arc", { attr: { "stroke-dashoffset": 1 }, duration: 0.7, ease: "power2.inOut" }, 0.95);
-        tl.from("#s4-corps", { yPercent: 102, duration: 0.5, ease: "power3.out" }, 1.45);
-"""
-    return corps, js
+    t4 = at("s4", "l4")
+    js = (monte("s4-kick", at("s4", "kick"), 0.55) + monte("s4-l1", at("s4", "l1"))
+          + monte("s4-l2", at("s4", "l2")) + monte("s4-l3", at("s4", "l3"))
+          + f'        tl.fromTo("#s4-l4", {{ scale: 1.3, clipPath: "inset(0% 100% 0% 0%)" }}, {{ scale: 1, clipPath: "inset(0% 0% 0% 0%)", duration: 0.45, ease: "power4.out" }}, {t4});\n'
+          + f'        tl.from("#s4-arc", {{ attr: {{ "stroke-dashoffset": 1 }}, duration: 0.9, ease: "power2.inOut" }}, {t4});\n'
+          + f'        tl.from("#s4-aiguille", {{ rotation: -180, svgOrigin: "110 110", duration: 0.9, ease: "power2.inOut" }}, {t4});\n'
+          + monte("s4-corps", at("s4", "corps"), 0.7))
+    return scene("s4", contenu, js)
 
 
 def s5():
     bandes = ""
     for i, (n, nom, etat) in enumerate(AVANTAGES):
-        fond_b, coul_n, coul_e = ("#B8A07E", "#0D0D0D", "#0D0D0D") if i == 0 else ("#222222", "#B8A07E", "#B8A07E")
-        coul_t = "#0D0D0D" if i == 0 else "#F4F1EC"
-        bandes += (f'<div id="s5-b{i}" class="a bande" style="left:108px;top:{962 + 98 * i}px;width:864px;height:88px;background:{fond_b}">'
-                   f'<span class="t8 it num" style="font-size:50px;color:{coul_n};margin-left:62px;width:66px">{n}</span>'
-                   f'<span class="t8" style="font-size:50px;color:{coul_t}">{nom}</span>'
-                   f'<span class="kick" style="font-size:22px;color:{coul_e};letter-spacing:.14em;margin-left:auto;margin-right:62px">{etat}</span></div>')
-    corps = f"""
-<div class="a kick" style="left:108px;top:300px">{plus(34)}L’option Premium</div>
-<div id="s5-prix" class="a" style="left:108px;top:356px;display:flex;align-items:center;gap:22px">
-  <div id="s5-plus">{plus(170)}</div>
-  <div id="s5-deux" class="t9 num" style="font-size:330px;line-height:.86">2 €</div>
+        fond_b, coul_n, coul_t, coul_e = (("#B8A07E", "#0D0D0D", "#0D0D0D", "#0D0D0D") if i == 0
+                                          else ("#222222", "#B8A07E", "#F4F1EC", "#B8A07E"))
+        bandes += (f'<div id="s5-b{i}" class="a bande" style="left:96px;top:{1110 + 140 * i}px;width:888px;height:124px;background:{fond_b};'
+                   f'clip-path:polygon(52px 0,100% 0,calc(100% - 52px) 100%,0 100%)">'
+                   f'<span class="t8 it num" style="font-size:64px;color:{coul_n};margin-left:76px;width:100px">{n}</span>'
+                   f'<span style="display:flex;flex-direction:column;gap:12px">'
+                   f'<span class="t8" style="font-size:52px;color:{coul_t}">{nom}</span>'
+                   f'<span class="kick" style="font-size:26px;color:{coul_e};letter-spacing:.16em">{etat}</span></span></div>')
+    tp = at("s5", "prix")
+    contenu = f"""
+{cache(96, 236, 888, f'<div class="kick" style="font-size:38px">{plus(40)}L’option Premium</div>', "s5-kick")}
+<div id="s5-prix" class="a" style="left:96px;top:300px;display:flex;align-items:center;gap:26px">
+  <div id="s5-plus">{plus(200)}</div>
+  <div id="s5-deux" class="t9 num" style="font-size:410px;line-height:.86">2 €</div>
 </div>
-<div id="s5-ttc" class="a t8 it" style="left:108px;top:664px;font-size:96px">TTC par semaine</div>
-<p id="s5-soit" class="a corps" style="left:108px;top:772px;width:864px;font-size:42px">Soit 8&nbsp;€ toutes les 4 semaines,<br>en plus de votre abonnement.</p>
-{masque(108, 918, 864, 36, '<div class="kick" style="font-size:30px">3 avantages inclus</div>', "s5-kick2")}
+<div id="s5-ttc" class="a t8 it" style="left:96px;top:690px;font-size:116px">TTC par semaine</div>
+<p id="s5-soit" class="a corps" style="left:96px;top:836px;width:888px;font-size:50px">Soit 8&nbsp;€ toutes les 4 semaines,<br>en plus de votre abonnement.</p>
+{cache(96, 1056, 888, '<div class="kick" style="font-size:34px">3 avantages inclus</div>', "s5-kick2")}
 {bandes}
 """
-    js = """
-        tl.fromTo("#s5-plus", { scale: 0, rotation: -90 }, { scale: 1, rotation: 0, duration: 0.35, ease: "back.out(1.6)" }, 0.5);
-        tl.fromTo("#s5-deux", { scale: 1.3, clipPath: "inset(0% 100% 0% 0%)" }, { scale: 1, clipPath: "inset(0% 0% 0% 0%)", duration: 0.35, ease: "power4.out", transformOrigin: "left center" }, 0.5);
-        tl.fromTo(["#s5-ttc", "#s5-soit"], { clipPath: "inset(0% 100% 0% 0%)" }, { clipPath: "inset(0% 0% 0% 0%)", duration: 0.35, ease: "power3.out" }, 0.5);
-        tl.from("#s5-kick2", { yPercent: 110, duration: 0.35, ease: "power3.out" }, 1.05);
-        tl.from("#s5-b0", { x: -1100, duration: 0.45, ease: "power3.out" }, 1.2);
-        tl.from("#s5-b1", { x: -1100, duration: 0.45, ease: "power3.out" }, 1.4);
-        tl.from("#s5-b2", { x: -1100, duration: 0.45, ease: "power3.out" }, 1.6);
-"""
-    return corps, js
+    js = (monte("s5-kick", at("s5", "kick"), 0.55)
+          + f'        tl.fromTo("#s5-plus", {{ scale: 0, rotation: -90 }}, {{ scale: 1, rotation: 0, duration: 0.45, ease: "back.out(1.6)" }}, {tp});\n'
+          + f'        tl.fromTo("#s5-deux", {{ scale: 1.3, clipPath: "inset(0% 100% 0% 0%)" }}, {{ scale: 1, clipPath: "inset(0% 0% 0% 0%)", duration: 0.45, ease: "power4.out", transformOrigin: "left center" }}, {tp});\n'
+          + f'        tl.fromTo(["#s5-ttc", "#s5-soit"], {{ clipPath: "inset(0% 100% 0% 0%)" }}, {{ clipPath: "inset(0% 0% 0% 0%)", duration: 0.5, ease: "power3.out" }}, {tp});\n'
+          + monte("s5-kick2", at("s5", "kick2"), 0.5)
+          + "".join(f'        tl.from("#s5-b{i}", {{ x: -1100, duration: 0.65, ease: "power3.out" }}, {at("s5", "bandes", i)});\n'
+                    for i in range(len(AVANTAGES))))
+    return scene("s5", contenu, js)
 
 
 def s6():
-    corps = f"""
-<div id="s6-logo" class="a" style="left:375px;top:290px;width:330px"><img src="assets/img/logo-complet.png" alt="LA SALLE" style="display:block;width:330px"></div>
-{masque(40, 560, 1000, 134, '<div class="t9" style="font-size:152px;text-align:center">Activez-la</div>', "s6-l1")}
-{masque(40, 694, 1000, 138, '<div class="t9" style="font-size:152px;text-align:center">à l’accueil.</div>', "s6-l2")}
-{masque(40, 852, 1000, 80, '<div class="t8 it or" style="font-size:72px;text-align:center">En quelques secondes.</div>', "s6-l3")}
-{masque(40, 966, 1000, 40, '<div class="kick" style="justify-content:center;font-size:32px">Urban Valley · 7J/7 · 6H–23H</div>', "s6-l4")}
-<p id="s6-mention" class="a mention" style="left:108px;top:1040px;width:864px;padding:16px 26px;font-size:34px;line-height:1.26;text-align:center">{MENTION_OPTION}</p>
+    contenu = f"""
+<div id="s6-logo" class="a" style="left:330px;top:250px;width:420px"><img src="assets/img/logo-complet.png" alt="LA SALLE" style="display:block;width:420px"></div>
+{cache(40, 620, 1000, '<div class="t9" style="font-size:180px;text-align:center">Activez-la</div>', "s6-l1")}
+{cache(40, 785, 1000, '<div class="t9" style="font-size:180px;text-align:center">à l’accueil.</div>', "s6-l2")}
+{cache(40, 1010, 1000, '<div class="t8 it or" style="font-size:88px;text-align:center">En quelques secondes.</div>', "s6-l3")}
+{cache(40, 1172, 1000, '<div class="kick" style="justify-content:center;font-size:38px">Urban Valley · 7J/7 · 6H–23H</div>', "s6-l4")}
+<p id="s6-mention" class="a mention" style="left:96px;top:1290px;width:888px;padding:20px 30px;font-size:36px;line-height:1.26;text-align:center">{MENTION_OPTION}</p>
 """
-    js = """
-        tl.from("#s6-logo", { clipPath: "inset(0% 0% 100% 0%)", y: -30, duration: 0.4, ease: "power3.out" }, 0);
-        tl.from("#s6-l1", { yPercent: 105, duration: 0.45, ease: "power3.out" }, 0.15);
-        tl.from("#s6-l2", { yPercent: 105, duration: 0.45, ease: "power3.out" }, 0.35);
-        tl.from("#s6-l3", { yPercent: 105, duration: 0.45, ease: "power3.out" }, 0.6);
-        tl.from("#s6-l4", { yPercent: 110, duration: 0.4, ease: "power3.out" }, 0.8);
-        tl.from("#s6-mention", { clipPath: "inset(100% 0% 0% 0%)", duration: 0.4, ease: "power2.out" }, 0.5);
-"""
-    return corps, js
+    js = (f'        tl.from("#s6-logo", {{ clipPath: "inset(0% 0% 100% 0%)", y: -30, duration: 0.6, ease: "power3.out" }}, {at("s6", "logo")});\n'
+          + monte("s6-l1", at("s6", "l1")) + monte("s6-l2", at("s6", "l2")) + monte("s6-l3", at("s6", "l3"))
+          + monte("s6-l4", at("s6", "l4"), 0.55)
+          + f'        tl.from("#s6-mention", {{ clipPath: "inset(100% 0% 0% 0%)", duration: 0.6, ease: "power2.out" }}, {at("s6", "mention")});\n')
+    return scene("s6", contenu, js)
 
 
 def volets():
-    """Volet oblique entre deux scènes : bande #0D0D0D (pente 0,42) au filet or sur le bord d'attaque, 0,5 s centrée sur la coupe."""
+    """Filet or sur le bord du dévoilement : même durée, même courbe que le clip-path de la scène qui entre."""
     coupes = [t for _, t, _ in SCENES[1:]]
-    corps = "\n".join(f'<div id="volet{i}" class="a volet" data-layout-allow-overflow><div class="vb"></div><div class="vf"></div></div>' for i, _ in enumerate(coupes))
-    js = "\n".join(
-        f'        tl.fromTo("#volet{i}", {{ x: -2800 }}, {{ x: 1080, duration: 0.5, ease: "power1.inOut" }}, {t - 0.25:g});'
+    corps = "\n".join(f'<div id="filet{i}" class="a vf" data-layout-allow-overflow></div>' for i, _ in enumerate(coupes))
+    js = "".join(
+        f'        tl.fromTo("#filet{i}", {{ x: -812 }}, {{ x: 1074, duration: {VOLET}, ease: "sine.inOut" }}, {t - VOLET / 2:g});\n'
         for i, t in enumerate(coupes))
-    return corps, js
+    return composition("volets", 1080, 1920, DUREE, corps, js)
 
 
 def fond_story():
-    js = """
-        tl.fromTo("#fb1", { x: 0 }, { x: -90, duration: %g, ease: "none" }, 0);
-        tl.fromTo("#fb2", { x: 0 }, { x: -60, duration: %g, ease: "none" }, 0);
-""" % (DUREE, DUREE)
-    return fond(1920, "f"), js
+    return composition("fond", 1080, 1920, DUREE, fond(1920, "f"), "")
 
 
 def index_story():
-    hotes = "\n".join(
-        f'      <div id="h-{c}" data-composition-id="{c}" data-composition-src="compositions/{c}.html" data-start="{t:g}" '
-        f'data-duration="{d:g}" data-track-index="1" data-width="1080" data-height="1920"></div>'
-        for c, t, d in SCENES)
+    hotes = []
+    for z, (c, _, _) in enumerate(SCENES, start=1):
+        debut, fin = bornes(c)
+        hotes.append(f'      <div id="h-{c}" data-composition-id="{c}" data-composition-src="compositions/{c}.html" data-start="{debut:g}" '
+                     f'data-duration="{fin - debut:g}" data-track-index="{1 + (z + 1) % 2}" data-width="1080" data-height="1920" style="z-index:{z}"></div>')
     coupes = ", ".join(f"{t:g}" for _, t, _ in SCENES[1:])
     return f"""<!doctype html>
 <html lang="fr" data-resolution="portrait">
@@ -398,17 +458,15 @@ def index_story():
       #root {{ position: relative; width: 100%; height: 100%; overflow: hidden; background: #0D0D0D; }}
       [data-composition-id="main"] > div[data-composition-src] {{ position: absolute; inset: 0; }}
 {FOND_CSS}
-      .volet {{ left: 0; top: 0; width: 2800px; height: 1920px; transform: translateX(-2800px); }}
-      .volet .vb {{ position: absolute; inset: 0; background: #0D0D0D; clip-path: polygon(806px 0, 100% 0, calc(100% - 806px) 100%, 0 100%); }}
-      .volet .vf {{ position: absolute; inset: 0; background: #B8A07E; clip-path: polygon(calc(100% - 12px) 0, 100% 0, calc(100% - 806px) 100%, calc(100% - 818px) 100%); }}
     </style>
   </head>
   <body>
-    <!-- Story fontaine à boisson sportive : 6 visuels rejoués texte par texte, 20 s, 120 BPM ; coupes à {coupes} s -->
-    <div id="root" data-composition-id="main" data-start="0" data-duration="{DUREE:g}" data-width="1080" data-height="1920" data-fps="30">
-      <div id="h-fond" data-composition-id="fond" data-composition-src="compositions/fond.html" data-start="0" data-duration="{DUREE:g}" data-track-index="0" data-width="1080" data-height="1920"></div>
-{hotes}
-      <div id="h-volets" data-composition-id="volets" data-composition-src="compositions/volets.html" data-start="0" data-duration="{DUREE:g}" data-track-index="3" data-width="1080" data-height="1920"></div>
+    <!-- Story fontaine à boisson sportive : 6 visuels rejoués texte par texte, {DUREE:g} s, {FPS} i/s, 120 BPM.
+         Coupes à {coupes} s : la scène suivante se dévoile en biais en {VOLET} s, centrées sur la coupe. -->
+    <div id="root" data-composition-id="main" data-start="0" data-duration="{DUREE:g}" data-width="1080" data-height="1920" data-fps="{FPS}">
+      <div id="h-fond" data-composition-id="fond" data-composition-src="compositions/fond.html" data-start="0" data-duration="{DUREE:g}" data-track-index="0" data-width="1080" data-height="1920" style="z-index:0"></div>
+{chr(10).join(hotes)}
+      <div id="h-volets" data-composition-id="volets" data-composition-src="compositions/volets.html" data-start="0" data-duration="{DUREE:g}" data-track-index="3" data-width="1080" data-height="1920" style="z-index:20"></div>
       <audio id="musique" src="assets/audio/musique.wav" data-start="0" data-duration="{DUREE:g}" data-track-index="10" data-volume="1"></audio>
     </div>
     <script>
@@ -503,9 +561,8 @@ def main():
     ecrire(os.path.join(a, "compositions", "affiche.html"), affiche())
     s = projet("story-916", 1080, 1920)
     ecrire(os.path.join(s, "index.html"), index_story())
-    for (cid, _, d), f in zip(SCENES + [("fond", 0, DUREE), ("volets", 0, DUREE)], (s1, s2, s3, s4, s5, s6, fond_story, volets)):
-        corps, js = f()
-        ecrire(os.path.join(s, "compositions", f"{cid}.html"), composition(cid, 1080, 1920, d, corps, js))
+    for cid, f in zip([c for c, _, _ in SCENES] + ["fond", "volets"], (s1, s2, s3, s4, s5, s6, fond_story, volets)):
+        ecrire(os.path.join(s, "compositions", f"{cid}.html"), f())
     print("Écrit :", a, s)
 
 

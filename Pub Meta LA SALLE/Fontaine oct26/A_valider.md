@@ -7,8 +7,8 @@ Liste des ⚠ à trancher par Mehdi. **Rien n'est publié.**
 | Fichier | Format | Contenu |
 |---|---|---|
 | `images/LA_SALLE_Fontaine_affiche_02-03_post_4x5.png` (+ `.jpg`) | 1080×1350 | L'affiche 02/03 « COMMENT ÇA MARCHE » retravaillée : mêmes textes, mot pour mot |
-| `videos/LA_SALLE_Fontaine_story_9x16.mp4` | 1080×1920, 20 s | Les 6 visuels rejoués texte par texte, avec musique originale et bruitages |
-| `videos/LA_SALLE_Fontaine_story_9x16_bruitages.mp4` | 1080×1920, 20 s | La même, bruitages seuls (pour ajouter une musique de la Sound Collection dans Instagram) |
+| `videos/LA_SALLE_Fontaine_story_9x16.mp4` | 1080×1920, 22 s, 60 i/s | Les 6 visuels rejoués texte par texte, avec musique originale et bruitages |
+| `videos/LA_SALLE_Fontaine_story_9x16_bruitages.mp4` | 1080×1920, 22 s, 60 i/s | La même, bruitages seuls (pour ajouter une musique de la Sound Collection dans Instagram) |
 | `Guide_tournage.md` | — | Les plans à filmer avec un coach ou un adhérent pour une version plus humaine |
 | `controles/` | — | Rapport QC, planche à 2 i/s avec les zones Reels, image 0 |
 
@@ -24,18 +24,23 @@ envoyées dans la conversation, à déposer sur le Drive du club.
 - Mention caféine sur un panneau opaque, 27 px au lieu d'environ 12 px.
 - Contraste vérifié par `check` : 95 textes sur 95 au niveau WCAG AA.
 
-### Déroulé de la story (20 s, 120 BPM)
+### Déroulé de la story (22 s, 120 BPM, 60 i/s)
+
+Version 2 (retours du 22/10) : plein cadre et textes plus grands ; transitions plus lentes et fluides ; la légende
+« ÉCRAN TACTILE 17″ » apparaît dans l'ordre (point et flèche, titre, puis texte : le texte n'apparaît plus avant).
 
 | Temps | Visuel rejoué | Mouvement |
 |---|---|---|
 | 0–2,5 s | BIEN PLUS QUE DE L'EAU. | déjà en place à l'image 0, filet or qui se trace, sous-titre |
-| 2,5–7 s | COMMENT ÇA MARCHE · VOTRE BOISSON, À LA CARTE. | la fontaine monte, légende de l'écran, les 6 boissons une à une, mention caféine |
-| 7–10,5 s | ÉTAPE 02 · CHOISISSEZ VOTRE SAVEUR | les 5 saveurs glissent une à une (pleines et au trait) |
-| 10,5–13,5 s | ÉTAPE 03 · SERVEZ-VOUS · 1 BOISSON TOUTES LES 30 MIN | « 30 MIN » frappe, l'arc de l'horloge trace une demi-heure |
-| 13,5–17 s | + L'OPTION PREMIUM · +2 € TTC PAR SEMAINE · 3 AVANTAGES | 0,5 s de silence, puis « + 2 € » frappe ; les 3 bandes entrent |
-| 17–20 s | ACTIVEZ-LA À L'ACCUEIL. EN QUELQUES SECONDES. | logo, appel, horaires, mentions ; immobile sur la fin |
+| 2,5–7,5 s | COMMENT ÇA MARCHE · VOTRE BOISSON, À LA CARTE. | la fontaine monte, point, flèche, titre puis texte de la légende, les 6 boissons une à une, mention caféine |
+| 7,5–11,5 s | ÉTAPE 02 · CHOISISSEZ VOTRE SAVEUR | les 5 saveurs glissent une à une (pleines et au trait) |
+| 11,5–14,5 s | ÉTAPE 03 · SERVEZ-VOUS · 1 BOISSON TOUTES LES 30 MIN | « 30 MIN » frappe, l'horloge trace une demi-heure |
+| 14,5–18,5 s | + L'OPTION PREMIUM · +2 € TTC PAR SEMAINE · 3 AVANTAGES | 0,5 s de silence, puis « + 2 € » frappe ; les 3 bandes entrent |
+| 18,5–22 s | ACTIVEZ-LA À L'ACCUEIL. EN QUELQUES SECONDES. | logo, appel, horaires, mentions ; immobile sur la fin |
 
-Entre deux visuels : un volet oblique noir au filet or (pente du monogramme).
+Entre deux visuels : le visuel suivant se dévoile en biais (pente du monogramme) sous un filet or, en 0,9 s avec une
+accélération douce ; le visuel qui sort glisse légèrement vers la gauche. Rendu en 60 images/s, encodage plus fin
+(CRF 16) pour éviter les blocs sur les fonds sombres.
 
 ## À trancher
 
@@ -64,12 +69,14 @@ Entre deux visuels : un volet oblique noir au filet or (pente du monogramme).
 7. **Légende « 1 BOISSON / 30 MIN » de l'affiche 02/03.** Elle n'est pas répétée dans la scène 2 de la story, puisque
    la scène 4 dit la même chose avec la même phrase.
 8. **Mentions.** Celle du prix reprend votre texte (« Conditions à l'accueil »). Le kit Premium disait « Sans
-   engagement sur l'option » : la question de l'engagement (calendrier S40 du Drive) reste ouverte. Les mentions font
-   27 à 34 px sur panneau opaque, sous le plancher de 40 px de la charte, pour tenir dans les zones Reels.
+   engagement sur l'option » : la question de l'engagement (calendrier S40 du Drive) reste ouverte. Dans la story, les
+   mentions font 32 et 36 px sur panneau opaque (27 px sur l'affiche), sous le plancher de 40 px de la charte.
 9. **Musique.** Synthèse originale, sans droits à payer ni crédit, contrôlée par mesures seulement (−14 LUFS, crête
-   −1,5 dBTP) : à écouter avant validation. Sinon, prenez la version « bruitages seuls » et ajoutez une musique de la
+   ≤ −1,5 dBTP) : à écouter avant validation. Sinon, prenez la version « bruitages seuls » et ajoutez une musique de la
    Sound Collection en publiant, en gardant les bruitages audibles.
-10. **Durée et usage.** 20 s pour 6 visuels, en story organique. Pour une publicité Meta, il faudrait une version de
+10. **Durée et usage.** 22 s pour 6 visuels, en story organique, mise en page plein cadre (texte jusqu'à y ≈ 1 650).
+    Publiée en Reel, la légende et les boutons d'Instagram peuvent recouvrir le bas de certaines scènes (mentions,
+    bandes des avantages) : dites-moi si elle doit aussi servir en Reel, je fais une variante. Pour une publicité Meta, il faudrait une version de
     15 s et 3 ou 4 accroches à tester (méthode de la pub motion) : dites-moi si vous la voulez.
 11. **Vidéos libres de droits en ligne.** Les banques de vidéos (Pexels, Pixabay) sont bloquées dans cette session. De
     plus, une vidéo de banque montre une autre salle et des inconnus, alors que la charte privilégie les vraies images

@@ -31,31 +31,35 @@
 .fr .filet { background: #B8A07E; }
 .fr .point { width: 22px; height: 22px; border-radius: 50%; background: #B8A07E; outline: 7px solid rgba(184,160,126,.28); }
 .fr .bande { display: flex; align-items: center; clip-path: polygon(37px 0, 100% 0, calc(100% - 37px) 100%, 0 100%); }
+.fr .vf { left: 0; top: 0; width: 818px; height: 1920px; background: #B8A07E; clip-path: polygon(806px 0, 818px 0, 12px 100%, 0 100%); }
 
         #s1-root { position: absolute; inset: 0; }
       </style>
-      <div id="s1-root" data-composition-id="s1" data-width="1080" data-height="1920" data-duration="2.5">
-        <div id="s1-scene" class="fr clip" data-start="0" data-duration="2.5" data-track-index="0" style="width:1080px;height:1920px">
+      <div id="s1-root" data-composition-id="s1" data-width="1080" data-height="1920" data-duration="2.95">
+        <div id="s1-scene" class="fr clip" data-start="0" data-duration="2.95" data-track-index="0" style="width:1080px;height:1920px">
+<div class="fond"><div id="s1-b1" class="b" style="left:-806px;width:1186px;clip-path:polygon(806px 0,100% 0,calc(100% - 806px) 100%,0 100%)"></div><div id="s1-b2" class="b" style="left:820px;width:1226px;clip-path:polygon(806px 0,100% 0,calc(100% - 806px) 100%,0 100%)"></div></div>
+<div id="s1-c" class="a" style="inset:0">
 
-<div class="a kick" style="left:108px;top:318px"><svg class="plus" viewBox="-2 0 104 100" style="width:34px;height:33px;"><polygon points="8.6,39 100.6,39 91.4,61 -0.6,61"/><polygon points="59.05,0 82.95,0 40.95,100 17.05,100"/></svg>Option Premium</div>
-<img class="a" src="assets/img/logo-complet.png" alt="LA SALLE" style="left:792px;top:290px;width:180px">
-<div id="s1-titre" class="a" style="left:104px;top:470px">
-  <div class="t9 or" style="font-size:164px">Bien plus</div>
-  <div class="t9" style="font-size:164px">que de</div>
-  <div class="t9" style="font-size:164px">l’eau.</div>
+<div class="a kick" style="left:96px;top:236px;font-size:38px"><svg class="plus" viewBox="-2 0 104 100" style="width:40px;height:38px;"><polygon points="8.6,39 100.6,39 91.4,61 -0.6,61"/><polygon points="59.05,0 82.95,0 40.95,100 17.05,100"/></svg>Option Premium</div>
+<img class="a" src="assets/img/logo-complet.png" alt="LA SALLE" style="left:774px;top:212px;width:210px">
+<div id="s1-titre" class="a" style="left:92px;top:560px">
+  <div class="t9 or" style="font-size:168px;line-height:.92">Bien plus</div>
+  <div class="t9" style="font-size:168px;line-height:.92">que de</div>
+  <div class="t9" style="font-size:168px;line-height:.92">l’eau.</div>
 </div>
-<div class="m" style="left:108px;top:950px;width:864px;height:130px" data-layout-allow-overflow><div id="s1-sous"><p class="corps" style="font-size:46px">La fontaine à boissons sportives<br>de l’option Premium.</p></div></div>
-<div class="a" style="left:108px;top:1170px"><svg class="plus" viewBox="-2 0 104 100" style="width:52px;height:50px;"><polygon points="8.6,39 100.6,39 91.4,61 -0.6,61"/><polygon points="59.05,0 82.95,0 40.95,100 17.05,100"/></svg></div>
-<div id="s1-filet" class="a filet" style="left:182px;top:1192px;width:898px;height:6px;transform-origin:left center"></div>
+<div class="m" style="left:96px;top:1090px;width:888px;padding:30px 0" data-layout-allow-overflow><div id="s1-sous"><p class="corps" style="font-size:54px">La fontaine à boissons sportives<br>de l’option Premium.</p></div></div>
+<div class="a" style="left:96px;top:1560px"><svg class="plus" viewBox="-2 0 104 100" style="width:60px;height:58px;"><polygon points="8.6,39 100.6,39 91.4,61 -0.6,61"/><polygon points="59.05,0 82.95,0 40.95,100 17.05,100"/></svg></div>
+<div id="s1-filet" class="a filet" style="left:178px;top:1586px;width:902px;height:6px;transform-origin:left center"></div>
 
+</div>
         </div>
       </div>
       <script>
         const tl = gsap.timeline({ paused: true });
-
-        tl.fromTo("#s1-titre", { scale: 1 }, { scale: 1.035, duration: 2.5, ease: "none", transformOrigin: "left center" }, 0);
-        tl.from("#s1-filet", { scaleX: 0, duration: 0.8, ease: "power2.out" }, 0.15);
-        tl.from("#s1-sous", { yPercent: 110, duration: 0.5, ease: "power3.out" }, 0.5);
+        tl.fromTo("#s1-titre", { scale: 1 }, { scale: 1.03, duration: 2.95, ease: "none", transformOrigin: "left center" }, 0);
+        tl.from("#s1-filet", { scaleX: 0, duration: 1.0, ease: "power2.out" }, 0.15);
+        tl.fromTo("#s1-sous", { yPercent: 100, y: 60 }, { yPercent: 0, y: 0, duration: 0.65, ease: "power3.out" }, 0.500);
+        tl.to("#s1-c", { x: -60, duration: 0.9, ease: "sine.in" }, 2.050);
 
         window.__timelines["s1"] = tl;
       </script>
