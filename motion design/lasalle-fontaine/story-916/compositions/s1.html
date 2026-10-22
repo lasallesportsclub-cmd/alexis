@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fr">
+  <head><meta charset="UTF-8" /></head>
+  <body>
+    <template id="s1-template">
+      <style>
+@font-face { font-family: "Barlow Condensed"; font-weight: 700; font-style: normal; font-display: block; src: url("assets/fonts/barlow-condensed-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Condensed"; font-weight: 800; font-style: normal; font-display: block; src: url("assets/fonts/barlow-condensed-latin-800-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Condensed"; font-weight: 800; font-style: italic; font-display: block; src: url("assets/fonts/barlow-condensed-latin-800-italic.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Condensed"; font-weight: 900; font-style: normal; font-display: block; src: url("assets/fonts/barlow-condensed-latin-900-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Condensed"; font-weight: 900; font-style: italic; font-display: block; src: url("assets/fonts/barlow-condensed-latin-900-italic.woff2") format("woff2"); }
+@font-face { font-family: "DM Sans"; font-weight: 400; font-style: normal; font-display: block; src: url("assets/fonts/dm-sans-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "DM Sans"; font-weight: 500; font-style: normal; font-display: block; src: url("assets/fonts/dm-sans-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "DM Sans"; font-weight: 700; font-style: normal; font-display: block; src: url("assets/fonts/dm-sans-latin-700-normal.woff2") format("woff2"); }
+
+.fr { position: absolute; inset: 0; overflow: hidden; color: #F4F1EC; font-family: "Barlow Condensed", sans-serif; font-kerning: normal; }
+.fr * { margin: 0; padding: 0; box-sizing: border-box; }
+.fr .a { position: absolute; }
+.fr .m { position: absolute; overflow: hidden; }
+.fr .kick { font-family: "DM Sans", sans-serif; font-weight: 500; font-size: 34px; letter-spacing: .16em; text-transform: uppercase; color: #B8A07E; white-space: nowrap; line-height: 1; display: flex; align-items: center; gap: 18px; }
+.fr .t9 { font-weight: 900; text-transform: uppercase; line-height: .88; letter-spacing: -.005em; white-space: nowrap; }
+.fr .t8 { font-weight: 800; text-transform: uppercase; line-height: 1; white-space: nowrap; }
+.fr .it { font-style: italic; }
+.fr .or { color: #B8A07E; }
+.fr .creux { color: transparent; -webkit-text-stroke: 3px #F4F1EC; background-image: linear-gradient(transparent, transparent); -webkit-background-clip: text; background-clip: text; }  /* lettres au trait (visuel ÉTAPE 02) */
+.fr .corps { font-family: "DM Sans", sans-serif; font-weight: 500; line-height: 1.3; color: #F4F1EC; letter-spacing: -.01em; }
+.fr .num { font-variant-numeric: tabular-nums; }
+.fr .plus { fill: #B8A07E; overflow: visible; display: block; flex: none; }
+.fr .puce { background: #222222; color: #F4F1EC; font-weight: 800; text-transform: uppercase; white-space: nowrap; display: flex; align-items: center; clip-path: polygon(var(--c) 0, 100% 0, calc(100% - var(--c)) 100%, 0 100%); }
+.fr .mention { background: #222222; color: #F4F1EC; font-family: "DM Sans", sans-serif; font-weight: 500; letter-spacing: -.01em; }
+.fr .filet { background: #B8A07E; }
+.fr .point { width: 22px; height: 22px; border-radius: 50%; background: #B8A07E; outline: 7px solid rgba(184,160,126,.28); }
+.fr .bande { display: flex; align-items: center; clip-path: polygon(37px 0, 100% 0, calc(100% - 37px) 100%, 0 100%); }
+
+        #s1-root { position: absolute; inset: 0; }
+      </style>
+      <div id="s1-root" data-composition-id="s1" data-width="1080" data-height="1920" data-duration="2.5">
+        <div id="s1-scene" class="fr clip" data-start="0" data-duration="2.5" data-track-index="0" style="width:1080px;height:1920px">
+
+<div class="a kick" style="left:108px;top:318px"><svg class="plus" viewBox="-2 0 104 100" style="width:34px;height:33px;"><polygon points="8.6,39 100.6,39 91.4,61 -0.6,61"/><polygon points="59.05,0 82.95,0 40.95,100 17.05,100"/></svg>Option Premium</div>
+<img class="a" src="assets/img/logo-complet.png" alt="LA SALLE" style="left:792px;top:290px;width:180px">
+<div id="s1-titre" class="a" style="left:104px;top:470px">
+  <div class="t9 or" style="font-size:164px">Bien plus</div>
+  <div class="t9" style="font-size:164px">que de</div>
+  <div class="t9" style="font-size:164px">l’eau.</div>
+</div>
+<div class="m" style="left:108px;top:950px;width:864px;height:130px" data-layout-allow-overflow><div id="s1-sous"><p class="corps" style="font-size:46px">La fontaine à boissons sportives<br>de l’option Premium.</p></div></div>
+<div class="a" style="left:108px;top:1170px"><svg class="plus" viewBox="-2 0 104 100" style="width:52px;height:50px;"><polygon points="8.6,39 100.6,39 91.4,61 -0.6,61"/><polygon points="59.05,0 82.95,0 40.95,100 17.05,100"/></svg></div>
+<div id="s1-filet" class="a filet" style="left:182px;top:1192px;width:898px;height:6px;transform-origin:left center"></div>
+
+        </div>
+      </div>
+      <script>
+        const tl = gsap.timeline({ paused: true });
+
+        tl.fromTo("#s1-titre", { scale: 1 }, { scale: 1.035, duration: 2.5, ease: "none", transformOrigin: "left center" }, 0);
+        tl.from("#s1-filet", { scaleX: 0, duration: 0.8, ease: "power2.out" }, 0.15);
+        tl.from("#s1-sous", { yPercent: 110, duration: 0.5, ease: "power3.out" }, 0.5);
+
+        window.__timelines["s1"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

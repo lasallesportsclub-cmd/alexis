@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+  <head><meta charset="UTF-8" /></head>
+  <body>
+    <template id="affiche-template">
+      <style>
+@font-face { font-family: "Barlow Condensed"; font-weight: 700; font-style: normal; font-display: block; src: url("assets/fonts/barlow-condensed-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Condensed"; font-weight: 800; font-style: normal; font-display: block; src: url("assets/fonts/barlow-condensed-latin-800-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Condensed"; font-weight: 800; font-style: italic; font-display: block; src: url("assets/fonts/barlow-condensed-latin-800-italic.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Condensed"; font-weight: 900; font-style: normal; font-display: block; src: url("assets/fonts/barlow-condensed-latin-900-normal.woff2") format("woff2"); }
+@font-face { font-family: "Barlow Condensed"; font-weight: 900; font-style: italic; font-display: block; src: url("assets/fonts/barlow-condensed-latin-900-italic.woff2") format("woff2"); }
+@font-face { font-family: "DM Sans"; font-weight: 400; font-style: normal; font-display: block; src: url("assets/fonts/dm-sans-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "DM Sans"; font-weight: 500; font-style: normal; font-display: block; src: url("assets/fonts/dm-sans-latin-500-normal.woff2") format("woff2"); }
+@font-face { font-family: "DM Sans"; font-weight: 700; font-style: normal; font-display: block; src: url("assets/fonts/dm-sans-latin-700-normal.woff2") format("woff2"); }
+
+.fr { position: absolute; inset: 0; overflow: hidden; color: #F4F1EC; font-family: "Barlow Condensed", sans-serif; font-kerning: normal; }
+.fr * { margin: 0; padding: 0; box-sizing: border-box; }
+.fr .a { position: absolute; }
+.fr .m { position: absolute; overflow: hidden; }
+.fr .kick { font-family: "DM Sans", sans-serif; font-weight: 500; font-size: 34px; letter-spacing: .16em; text-transform: uppercase; color: #B8A07E; white-space: nowrap; line-height: 1; display: flex; align-items: center; gap: 18px; }
+.fr .t9 { font-weight: 900; text-transform: uppercase; line-height: .88; letter-spacing: -.005em; white-space: nowrap; }
+.fr .t8 { font-weight: 800; text-transform: uppercase; line-height: 1; white-space: nowrap; }
+.fr .it { font-style: italic; }
+.fr .or { color: #B8A07E; }
+.fr .creux { color: transparent; -webkit-text-stroke: 3px #F4F1EC; background-image: linear-gradient(transparent, transparent); -webkit-background-clip: text; background-clip: text; }  /* lettres au trait (visuel ÉTAPE 02) */
+.fr .corps { font-family: "DM Sans", sans-serif; font-weight: 500; line-height: 1.3; color: #F4F1EC; letter-spacing: -.01em; }
+.fr .num { font-variant-numeric: tabular-nums; }
+.fr .plus { fill: #B8A07E; overflow: visible; display: block; flex: none; }
+.fr .puce { background: #222222; color: #F4F1EC; font-weight: 800; text-transform: uppercase; white-space: nowrap; display: flex; align-items: center; clip-path: polygon(var(--c) 0, 100% 0, calc(100% - var(--c)) 100%, 0 100%); }
+.fr .mention { background: #222222; color: #F4F1EC; font-family: "DM Sans", sans-serif; font-weight: 500; letter-spacing: -.01em; }
+.fr .filet { background: #B8A07E; }
+.fr .point { width: 22px; height: 22px; border-radius: 50%; background: #B8A07E; outline: 7px solid rgba(184,160,126,.28); }
+.fr .bande { display: flex; align-items: center; clip-path: polygon(37px 0, 100% 0, calc(100% - 37px) 100%, 0 100%); }
+
+        #affiche-root { position: absolute; inset: 0; }
+      </style>
+      <div id="affiche-root" data-composition-id="affiche" data-width="1080" data-height="1350" data-duration="1">
+        <div id="affiche-scene" class="fr clip" data-start="0" data-duration="1" data-track-index="0" style="width:1080px;height:1350px">
+
+<div class="fond"><div id="b1" class="b" style="left:-567px;width:947px;clip-path:polygon(567px 0,100% 0,calc(100% - 567px) 100%,0 100%)"></div><div id="b2" class="b" style="left:820px;width:987px;clip-path:polygon(567px 0,100% 0,calc(100% - 567px) 100%,0 100%)"></div></div>
+<img class="a" src="assets/img/logo-mono.png" alt="LA SALLE" style="left:108px;top:84px;height:70px">
+<div class="a kick" style="left:auto;right:108px;top:102px;letter-spacing:.14em"><span class="num">02</span><span style="color:rgba(244,241,236,.62)">/ 03</span></div>
+<div class="a kick" style="left:108px;top:196px">Comment ça marche</div>
+<div class="a t9" style="left:104px;top:236px;font-size:118px">Votre boisson,</div>
+<div class="a t9 it or" style="left:104px;top:340px;font-size:118px">À la carte.</div>
+<img class="a" src="assets/img/fontaine.png" alt="" style="left:64px;top:476px;width:540px">
+<div class="a filet" style="left:422px;top:583px;width:174px;height:3px"></div>
+<div class="a point" style="left:411px;top:573px"></div>
+<div class="a filet" style="left:371px;top:789px;width:225px;height:3px"></div>
+<div class="a point" style="left:360px;top:779px"></div>
+<div class="a t8" style="left:612px;top:562px;font-size:46px">Écran tactile 17″</div>
+<p class="a corps" style="left:612px;top:618px;width:362px;font-size:31px">Saveur, intensité, température&nbsp;: vous composez votre boisson.</p>
+<div class="a t8" style="left:612px;top:768px;font-size:46px">1 boisson / 30 min</div>
+<p class="a corps" style="left:612px;top:824px;width:362px;font-size:31px">À chaque séance, aussi souvent que vous venez.</p>
+<div class="a kick" style="left:108px;top:924px;font-size:30px">Au choix</div>
+<div class="a" style="left:104px;top:964px;width:880px;display:flex;flex-wrap:wrap;gap:12px 10px"><div id="p0" class="puce" style="--c:26px;height:62px;padding:0 28px;font-size:37px">COLLAGÈNE</div><div id="p1" class="puce" style="--c:26px;height:62px;padding:0 28px;font-size:37px">L-CARNITINE</div><div id="p2" class="puce" style="--c:26px;height:62px;padding:0 28px;font-size:37px">MULTIVITAMINES</div><div id="p3" class="puce" style="--c:26px;height:62px;padding:0 28px;font-size:37px">BCAA</div><div id="p4" class="puce" style="--c:26px;height:62px;padding:0 28px;font-size:37px">BOISSON CAFÉINÉE</div><div id="p5" class="puce" style="--c:26px;height:62px;padding:0 28px;font-size:37px">EAU AROMATISÉE</div></div>
+<div class="a kick" style="left:108px;top:1122px;font-size:30px">5 saveurs</div>
+<div class="a t8" style="left:108px;top:1158px;font-size:40px;letter-spacing:.02em">Passion · Pastèque · Ice tea · Ananas · Multifruit</div>
+<p class="a mention" style="left:72px;top:1222px;width:936px;padding:12px 24px;font-size:27px;line-height:1.28">Boisson caféinée : teneur élevée en caféine, déconseillée aux enfants et aux femmes enceintes ou allaitantes. Visuel non contractuel.</p>
+
+        </div>
+      </div>
+      <script>
+        const tl = gsap.timeline({ paused: true });
+
+        window.__timelines["affiche"] = tl;
+      </script>
+    </template>
+  </body>
+</html>

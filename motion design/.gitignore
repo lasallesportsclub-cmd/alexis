@@ -16,3 +16,7 @@ lecube-disciplines/*/assets/
 lecube-disciplines/_communs/*.wav
 # Stories nutrition : assets recopiés depuis ~/nutri-sources par tools/build.py (photos et visuel partenaire)
 lasalle-nutrition-916/assets/
+# Fontaine à boisson sportive : assets recopiés par tools/build.py (photo fabricant de la fontaine hors dépôt : ~/fontaine-sources)
+lasalle-fontaine/*/assets/
+# Musique et bruitages de la story fontaine : régénérés à l'identique par tools/musique.py (graine fixe)
+lasalle-fontaine/_communs/*.wav
