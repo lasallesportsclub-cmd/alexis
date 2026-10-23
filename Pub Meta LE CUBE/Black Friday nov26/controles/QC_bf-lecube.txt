@@ -1,0 +1,12 @@
+QC — LE_CUBE_Black_Friday_story_9x16.mp4 (nom Meta : CUBE_BF_story_musique_v1)
+OK   Format 1080×1920, H.264 High, 30 i/s
+OK   Durée 10.00 s (9,9–10,0)
+OK   Poids 0.6 Mo (≤ 25)
+OK   Sonie -14.1 LUFS (−14 ± 0,5)
+OK   Crête vraie -1.7 dBTP (≤ −1,5)
+OK   HyperFrames check : 0 erreur
+OK   Rendu décodé = aperçu (SSIM mini 1.000 ≥ 0,97)
+OK   Textes attendus présents
+OK   Aucun mot interdit
+Verdict : GO technique
+Reste à valider par Mehdi : l'offre et ses conditions (⚠), puis l'écoute de la musique.

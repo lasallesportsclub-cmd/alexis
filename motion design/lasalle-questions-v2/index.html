@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <script src="assets/vendor/gsap.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: #000;
+      }
+      #root {
+        position: relative;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: #0D0D0D;
+      }
+      .scene {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="15"
+      data-width="1080"
+      data-height="1920"
+    >
+      <div
+        id="el-01-horaires"
+        class="scene"
+        data-composition-id="01-horaires"
+        data-composition-src="compositions/frames/01-horaires.html"
+        data-start="0"
+        data-duration="2.5"
+        data-track-index="1"
+      ></div>
+
+      <div
+        id="el-02-taille"
+        class="scene"
+        data-composition-id="02-taille"
+        data-composition-src="compositions/frames/02-taille.html"
+        data-start="2.5"
+        data-duration="2.5"
+        data-track-index="1"
+      ></div>
+
+      <div
+        id="el-03-cours"
+        class="scene"
+        data-composition-id="03-cours"
+        data-composition-src="compositions/frames/03-cours.html"
+        data-start="5"
+        data-duration="2.5"
+        data-track-index="1"
+      ></div>
+
+      <div
+        id="el-04-essai"
+        class="scene"
+        data-composition-id="04-essai"
+        data-composition-src="compositions/frames/04-essai.html"
+        data-start="7.5"
+        data-duration="2.5"
+        data-track-index="1"
+      ></div>
+
+      <div
+        id="el-05-invitation"
+        class="scene"
+        data-composition-id="05-invitation"
+        data-composition-src="compositions/frames/05-invitation.html"
+        data-start="10"
+        data-duration="2"
+        data-track-index="1"
+      ></div>
+
+      <div
+        id="el-06-carte"
+        class="scene"
+        data-composition-id="06-carte"
+        data-composition-src="compositions/frames/06-carte.html"
+        data-start="12"
+        data-duration="3"
+        data-track-index="1"
+      ></div>
+
+      <!-- BGM -->
+      <audio
+        id="el-bgm"
+        src="assets/audio/musique.wav"
+        data-start="0"
+        data-duration="15"
+        data-track-index="11"
+        data-volume="1"
+      ></audio>
+
+    </div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = gsap.timeline({ paused: true });
+    </script>
+  </body>
+</html>
