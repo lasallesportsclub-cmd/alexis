@@ -8,14 +8,14 @@ Les textes sont dans les fichiers de la semaine (S43, S44), les images dans `vis
 | Date et heure | Compte | Format | Fichiers | Texte | Sticker | État |
 |---|---|---|---|---|---|---|
 | Sam. 24 oct., 10h00 | LA SALLE (Instagram + Facebook) | Carrousel 7 visuels | `S43_LA_SALLE_post_1.jpg` à `_7.jpg` | Légende S43 LA SALLE | — | Prêt |
-| Sam. 24 oct., 10h05 | LA SALLE | Story | `S43_LA_SALLE_story_1.jpg` | — | Lieu « LA SALLE » (à ajouter dans l'application) | Prêt |
-| Sam. 24 oct., 12h00 | LA SALLE | Story | `S43_LA_SALLE_story_2.jpg` | — | Sondage « Matin / Soir » : depuis l'application | Prêt |
+| Sam. 24 oct., 10h05 | LA SALLE | Story | `S43_LA_SALLE_story_1.jpg` | — | Lieu « LA SALLE », facultatif : se programme sans | Prêt |
+| Sam. 24 oct., 12h00 | LA SALLE | Story | `S43_LA_SALLE_story_2.jpg` | — | Sondage « Matin / Soir » : depuis l'application | Prêt, à publier à la main |
 | Dim. 25 oct., 8h00 | LA SALLE | Story | `S43_LA_SALLE_story_3.jpg` | — | — | Prêt |
 | Sam. 24 oct., 18h00 | Boxing Club Conflans (+ CrossFit CSH, Pole Dance Conflans en collaboration) | Post (ou Reel « travaux_cube-V4 » avec cette couverture) | `S43_LE_CUBE_post.jpg` | Légende S43 LE CUBE | — | ⚠ « 50 à 400 m² » à confirmer |
 | Sam. 24 oct., 18h05 | Boxing Club Conflans | Story | `S43_LE_CUBE_story_1.jpg` | — | — | ⚠ idem |
 | Sam. 24 oct., 19h00 | Boxing Club Conflans | Story | `S43_LE_CUBE_story_3.jpg` | — | Sondage « Oui / Jamais » : depuis l'application | ⚠ idem |
 | — | Boxing Club Conflans | Story | `S43_LE_CUBE_story_2.jpg` | — | Compte à rebours | En attente de la date d'ouverture |
-| Mar. 27 oct., 18h00 | LA SALLE | Post 4:5 | Kit Premium : version B `02_…_B_post_4x5` (fontaine), ou version A `03_…_C_post_4x5` si la balance est en service | Légende S44 LA SALLE, version A ou B | — | Prêt en version B ; ⚠ A si balance |
+| Mar. 27 oct., 18h00 | LA SALLE | Post 4:5 | Version B (fontaine) : `Pub Meta LA SALLE/Premium oct26/images/post/02_LA_SALLE_Premium_B_post_4x5.jpg` ; version A (analyse 3D) seulement si la balance est en service : `…/03_LA_SALLE_Premium_C_post_4x5.jpg` | Légende S44 LA SALLE, version A ou B | — | Prêt en version B ; ⚠ A si balance |
 | Jeu. 29 oct., 12h00 | LA SALLE | Story | `S44_LA_SALLE_story_3.jpg` | — | — | Prêt |
 | Ven. 30 oct., 12h00 | LA SALLE | Story | `S44_LA_SALLE_story_1.jpg` | — | Lieu « LA SALLE » | ⚠ Halloween à valider |
 | Sam. 31 oct., 9h00 | LA SALLE | Story | `S44_LA_SALLE_story_2.jpg` | — | Sondage entre deux costumes : depuis l'application | ⚠ Halloween à valider |
