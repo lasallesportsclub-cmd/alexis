@@ -16,3 +16,6 @@ lecube-disciplines/*/assets/
 lecube-disciplines/_communs/*.wav
 # Stories nutrition : assets recopiés depuis ~/nutri-sources par tools/build.py (photos et visuel partenaire)
 lasalle-nutrition-916/assets/
+# Pub LE CUBE tirée du film V1 : plans du film (personnes) et musiques régénérées par tools/musique.py (graine fixe)
+lecube-v1/*/assets/
+lecube-v1/_communs/

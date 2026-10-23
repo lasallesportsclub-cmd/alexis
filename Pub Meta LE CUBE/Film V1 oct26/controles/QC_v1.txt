@@ -1,0 +1,43 @@
+QC — LE_CUBE_V1_A_story_9x16_ANIMATIQUE.mp4 (variante A : « Tout est au Cube »)
+     Images : ANIMATIQUE, cartons numérotés à la place des plans du film
+OK   Format 1080×1920, H.264 High, yuv420p, 30 i/s
+OK   Durée 15.000 s (14,90–15,00)
+OK   Poids 3.3 Mo (≤ 25)
+OK   faststart (moov avant mdat)
+OK   Audio AAC 48000 Hz, 2 canaux
+OK   Sonie -14.1 LUFS (−14 ± 0,5)
+OK   Crête vraie -1.6 dBTP (≤ −1,5)
+OK   Rendu décodé = aperçu sur 12 instants (SSIM mini 0.970 ≥ 0,97)
+OK   Textes attendus présents
+OK   Aucun mot interdit
+Verdict : GO technique de l’animatique (pas encore diffusable)
+
+QC — LE_CUBE_V1_B_story_9x16_ANIMATIQUE.mp4 (variante B : « Ton sport à Conflans »)
+     Images : ANIMATIQUE, cartons numérotés à la place des plans du film
+OK   Format 1080×1920, H.264 High, yuv420p, 30 i/s
+OK   Durée 15.000 s (14,90–15,00)
+OK   Poids 3.2 Mo (≤ 25)
+OK   faststart (moov avant mdat)
+OK   Audio AAC 48000 Hz, 2 canaux
+OK   Sonie -13.9 LUFS (−14 ± 0,5)
+OK   Crête vraie -1.7 dBTP (≤ −1,5)
+OK   Rendu décodé = aperçu sur 12 instants (SSIM mini 0.970 ≥ 0,97)
+OK   Textes attendus présents
+OK   Aucun mot interdit
+Verdict : GO technique de l’animatique (pas encore diffusable)
+
+QC — LE_CUBE_V1_C_story_9x16_ANIMATIQUE.mp4 (variante C : « Tu tiens ? »)
+     Images : ANIMATIQUE, cartons numérotés à la place des plans du film
+OK   Format 1080×1920, H.264 High, yuv420p, 30 i/s
+OK   Durée 15.000 s (14,90–15,00)
+OK   Poids 3.4 Mo (≤ 25)
+OK   faststart (moov avant mdat)
+OK   Audio AAC 48000 Hz, 2 canaux
+OK   Sonie -14.1 LUFS (−14 ± 0,5)
+OK   Crête vraie -1.7 dBTP (≤ −1,5)
+OK   Rendu décodé = aperçu sur 12 instants (SSIM mini 0.970 ≥ 0,97)
+OK   Textes attendus présents
+OK   Aucun mot interdit
+Verdict : GO technique de l’animatique (pas encore diffusable)
+
+Reste à valider par Mehdi : les points ⚠ de A_valider.md (droit à l'image et contrat RM Visual d'abord), puis l'écoute de la musique.

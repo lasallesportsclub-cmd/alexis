@@ -1,0 +1,102 @@
+{
+ "_doc": "Pub LE CUBE tirée du film « LE CUBE V1 » de RM Visual (15,9 s, 1920×1080, 50 i/s). Plan de montage : doc « Pub réseaux LE CUBE — analyse du film V1 et plan de montage » (23/10/2026), étapes recalées sur la grille de 120 BPM (3,0 / 4,5 / 6,0 / 7,5 / 8,5 s). Source unique des instants pour la musique (musique.py) et les compositions (build.py). Médias : « v1:N » = plan N du film en vidéo, recadré en 9:16 sur son centre ; « v1img:N@t » = image fixe du film à t s. Durée à l'écran d'un plan = jusqu'au plan suivant (ou « d ») ; si le plan est plus court, il est ralenti (vitesse = durée utile ÷ durée à l'écran). Sans le film, chaque plan est remplacé par un carton numéroté (animatique). Une ligne dure jusqu'au plan suivant, ou jusqu'à « fin » si elle est donnée ; la ligne posée à 0 s est déjà là à l'image 0.",
+ "discipline": "LE CUBE",
+ "bandeau": "LE CUBE · CONFLANS",
+ "bpm": 120,
+ "duree": 15.0,
+ "fin_accroche": 3.0,
+ "film": {
+  "largeur": 1920,
+  "hauteur": 1080,
+  "marge": 0.03,
+  "plans": {
+   "1": {"debut": 0.0, "fin": 0.5, "centre": 0.38, "quoi": "Logo Le Cube peint au sol"},
+   "3": {"debut": 0.8, "fin": 1.3, "centre": 0.65, "quoi": "SkiErg"},
+   "4": {"debut": 1.3, "fin": 1.7, "centre": 0.5, "quoi": "Saut dans le grand hall"},
+   "5": {"debut": 1.7, "fin": 2.1, "centre": 0.55, "quoi": "Rameur en contre-jour"},
+   "8": {"debut": 2.6, "fin": 3.3, "centre": 0.5, "quoi": "Poussée de traîneau"},
+   "9": {"debut": 3.3, "fin": 3.7, "centre": 0.3, "quoi": "Wall balls"},
+   "13": {"debut": 4.8, "fin": 5.3, "centre": 0.58, "quoi": "Toes-to-bar au rig"},
+   "14": {"debut": 5.3, "fin": 5.7, "centre": 0.7, "quoi": "Rig avec anneaux"},
+   "16": {"debut": 5.9, "fin": 6.4, "centre": 0.5, "quoi": "Épaulé-développé"},
+   "17": {"debut": 6.4, "fin": 7.3, "centre": 0.5, "quoi": "Studio pole"},
+   "19": {"debut": 7.7, "fin": 8.0, "centre": 0.55, "quoi": "Figure inversée"},
+   "20": {"debut": 8.0, "fin": 8.6, "centre": 0.43, "quoi": "Figure devant la baie vitrée"},
+   "25": {"debut": 10.4, "fin": 11.3, "centre": 0.45, "quoi": "Échauffement autour des sacs"},
+   "29": {"debut": 12.8, "fin": 13.2, "centre": 0.55, "quoi": "Tatamis"},
+   "30": {"debut": 13.2, "fin": 13.5, "centre": 0.6, "quoi": "Ring"},
+   "32": {"debut": 13.7, "fin": 14.5, "centre": 0.33, "quoi": "Low-kicks au sac"},
+   "33": {"debut": 14.5, "fin": 15.2, "centre": 0.55, "quoi": "Pattes d'ours"},
+   "35": {"debut": 15.4, "fin": 15.9, "centre": 0.5, "quoi": "Sparring sur le ring"}
+  }
+ },
+ "accroches": {
+  "A": {
+   "titre": "Tout est au Cube",
+   "plans": [
+    {"t": 0.0, "photo": "v1:20", "lignes": [
+     {"t": 0.0, "texte": "HYROX, CROSSFIT,", "style": "ttl", "top": 440},
+     {"t": 0.0, "texte": "POLE, BOXE.", "style": "ttl", "top": 570}]},
+    {"t": 1.0, "photo": "v1:32", "lignes": [
+     {"t": 1.0, "texte": "TOUT EST", "style": "ttl", "top": 440},
+     {"t": 1.25, "texte": "AU CUBE.", "style": "ttl br", "top": 570}]},
+    {"t": 2.0, "photo": "v1:8", "lignes": [
+     {"t": 2.0, "texte": "À CONFLANS.", "style": "mot br", "top": 430}]}
+   ]
+  },
+  "B": {
+   "titre": "Ton sport à Conflans",
+   "plans": [
+    {"t": 0.0, "photo": "v1:20", "lignes": [
+     {"t": 0.0, "texte": "TU CHERCHES", "style": "ttl", "top": 440},
+     {"t": 0.0, "texte": "TON SPORT", "style": "ttl", "top": 570},
+     {"t": 0.5, "texte": "À CONFLANS ?", "style": "ttl br", "top": 700}]},
+    {"t": 1.0, "photo": "v1:32", "lignes": [
+     {"t": 1.0, "texte": "IL EST", "style": "ttl", "top": 440, "fin": 3.0},
+     {"t": 1.25, "texte": "PEUT-ÊTRE ICI.", "style": "ttl br", "top": 570, "fin": 3.0}]},
+    {"t": 2.3, "photo": "v1:8", "lignes": []}
+   ]
+  },
+  "C": {
+   "titre": "Tu tiens ?",
+   "plans": [
+    {"t": 0.0, "photo": "v1:8", "lignes": [
+     {"t": 0.0, "texte": "4 SPORTS EN", "style": "ttl", "top": 440, "fin": 3.0},
+     {"t": 0.0, "texte": "15 SECONDES.", "style": "ttl", "top": 570, "fin": 3.0}]},
+    {"t": 0.75, "photo": "v1:4", "lignes": [
+     {"t": 0.75, "texte": "TU TIENS ?", "style": "mot br", "top": 720, "fin": 3.0}]},
+    {"t": 1.5, "photo": "v1:20", "lignes": []},
+    {"t": 2.25, "photo": "v1:32", "lignes": []}
+   ]
+  }
+ },
+ "etapes": [
+  {"t": 3.0, "fin": 4.5, "numero": "01", "ligne1": "HYROX", "ligne2": "TU POUSSES.", "plans": [{"m": "v1:3", "d": 0.5}, {"m": "v1:5", "d": 0.5}, {"m": "v1:9"}]},
+  {"t": 4.5, "fin": 6.0, "numero": "02", "ligne1": "CROSSFIT", "ligne2": "TU SOULÈVES.", "plans": [{"m": "v1:13", "d": 0.75}, {"m": "v1:16"}]},
+  {"t": 6.0, "fin": 7.5, "numero": "03", "ligne1": "POLE DANCE", "ligne2": "TU T'ENVOLES.", "plans": [{"m": "v1:17", "d": 1.0}, {"m": "v1:19"}]},
+  {"t": 7.5, "fin": 8.5, "numero": "04", "ligne1": "BOXE", "ligne2": "TU FRAPPES.", "plans": [{"m": "v1:33", "d": 0.5}, {"m": "v1:35"}]}
+ ],
+ "cassure": [8.5, 9.0],
+ "argument": {
+  "t": 9.0,
+  "fin": 11.5,
+  "deuxieme": 10.5,
+  "segments": [
+   {"t": 9.0, "m": "v1img:30@13.35"},
+   {"t": 9.5, "m": "v1img:29@13.0"},
+   {"t": 10.0, "m": "v1img:14@5.5"},
+   {"t": 10.5, "m": "v1:25"}
+  ],
+  "lignes": [
+   ["UN RING.", "DES TATAMIS.", "UN RIG."],
+   ["TOUT ÇA,", "À CONFLANS."]
+  ]
+ },
+ "carte": 11.5,
+ "cta": 12.5,
+ "fin": 14.5,
+ "carte_photo": "v1img:1@0.25",
+ "carte_titre": "LE CUBE",
+ "carte_sous": "HYROX · CROSSFIT · POLE DANCE · BOXE",
+ "carte_adresse": "ZAC DES BOUTRIES · CONFLANS-SAINTE-HONORINE"
+}
