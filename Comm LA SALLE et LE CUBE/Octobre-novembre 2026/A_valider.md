@@ -11,6 +11,7 @@ Il suit le calendrier de communication du Drive (S43 à S48) et le plan de commu
 | `visuels/` | 60 visuels typographiques (30 posts 4:5 et 30 stories 9:16), sans photo ni personne, prêts à publier une fois validés |
 | `Pubs_novembre.md` | Les pubs Meta de novembre : déjà livrées, nouvelles (Vos questions v2, Black Friday ×2, cartes cadeaux) et leurs ⚠ |
 | `Messages_adherents.md` | E-mails et SMS pour SmartMessaging : fin des 4 semaines Premium, parcours de fidélisation, 11 novembre, Black Friday |
+| `../Rayon nutrition/` | Rubrique « Rayon nutrition » de LA SALLE (ajoutée le 28/10) : une story par semaine et un post tous les quinze jours, de novembre à janvier, avec ses propres points à valider |
 
 ## Semaine par semaine
 

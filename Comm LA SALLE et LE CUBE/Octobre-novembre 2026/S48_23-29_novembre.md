@@ -72,3 +72,11 @@ Planning proposé : teasing en story le mardi 24 et le jeudi 26, post le vendred
 - ⚠ Engagement à mentionner (12 mois pour LA SALLE ? et pour LE CUBE ?).
 - ⚠ Aucune fausse réduction : on n'affiche pas de prix barré. L'offre reprise dans la pub doit être identique.
 - « Illimité » n'est employé que comme nom de formule du CUBE, jamais pour LA SALLE.
+
+---
+
+## LA SALLE · Rayon nutrition
+
+- Mardi 24 novembre, 18h : story « Le produit de la semaine », créatine Creapure® de Nutrimuscle (`NUT_S48_story.jpg`).
+
+Textes, légendes et règles : `../Rayon nutrition/Rubrique_novembre-janvier.md`. Visuels : `../Rayon nutrition/visuels/`.

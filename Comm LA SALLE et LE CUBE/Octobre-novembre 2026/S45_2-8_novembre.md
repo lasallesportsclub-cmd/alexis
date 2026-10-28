@@ -85,3 +85,12 @@ Temps fort : rentrée le lundi 2 novembre ; Movember.
 - ⚠ Règles d'usage de la marque CrossFit pour un affilié (nom « CrossFit CSH », pas de logo modifié).
 - ⚠ Formules Essentiel, Performance et Illimité : noms de la grille LE CUBE, sans prix dans ce post.
 - Aucune promesse de résultat.
+
+---
+
+## LA SALLE · Rayon nutrition
+
+- Mardi 3 novembre, 18h : story « Le produit de la semaine », Native Whey Protimuscle (`NUT_S45_story.jpg`).
+- Jeudi 5 novembre, 12h : post « Le rayon nutrition », carrousel de 8 visuels (`NUT_P1_rayon_post_1.jpg` à `_8.jpg`).
+
+Textes, légendes et règles : `../Rayon nutrition/Rubrique_novembre-janvier.md`. Visuels : `../Rayon nutrition/visuels/`.

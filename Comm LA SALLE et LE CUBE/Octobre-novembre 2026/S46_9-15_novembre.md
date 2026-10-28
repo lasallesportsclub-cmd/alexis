@@ -86,3 +86,11 @@ Les cours retenus sont ceux que l'équipe cite dans sa réponse type aux demande
 **À vérifier :**
 - ⚠ Choix de l'athlète et autorisation écrite (photo, prénom, citation).
 - Aucune donnée d'adhérent sans accord : pas de nom de famille, pas de poids de corps.
+
+---
+
+## LA SALLE · Rayon nutrition
+
+- Mardi 10 novembre, 18h : story « Le produit de la semaine », Muscle Protein de Nutripure (`NUT_S46_story.jpg`).
+
+Textes, légendes et règles : `../Rayon nutrition/Rubrique_novembre-janvier.md`. Visuels : `../Rayon nutrition/visuels/`.

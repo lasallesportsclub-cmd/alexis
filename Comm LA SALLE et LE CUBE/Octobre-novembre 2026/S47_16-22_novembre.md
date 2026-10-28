@@ -68,3 +68,12 @@ Le calendrier prévoyait « Ramène ton pote » : le tutoiement ne correspond pa
 **À vérifier :**
 - ⚠ Séance d'essai à 25 € remboursée en cas d'abonnement : offre toujours valable ? Comment est-elle remboursée (déduite du premier mois) ?
 - ⚠ Accord écrit des coachs filmés ; photos d'un tiers seulement avec licence et crédit.
+
+---
+
+## LA SALLE · Rayon nutrition
+
+- Mardi 17 novembre, 18h : story « Le produit de la semaine », BCAA Xtend (`NUT_S47_story.jpg`).
+- Jeudi 19 novembre, 12h : post « Les protéines, à quoi servent-elles ? », carrousel de 5 visuels (`NUT_P2_proteines_post_1.jpg` à `_5.jpg`).
+
+Textes, légendes et règles : `../Rayon nutrition/Rubrique_novembre-janvier.md`. Visuels : `../Rayon nutrition/visuels/`.
