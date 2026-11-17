@@ -1,0 +1,57 @@
+QC — LA_SALLE_Visbody_story_courte_A_scan_9x16.mp4
+OK   Format 1080×1920, H.264 High, yuv420p, 60 i/s
+OK   Durée 12.000 s (11.9–12, 12 s au plus)
+OK   Poids 3.4 Mo (≤ 25)
+OK   faststart (moov avant mdat)
+OK   Audio AAC 48000 Hz, 2 canaux
+OK   Sonie -14.5 LUFS (-14 ± 0,5)
+OK   Crête vraie -2.0 dBTP (≤ −1,5)
+OK   Aperçu = rendu décodé (SSIM 0.985, 0.985, 0.984, 0.990, 0.990, 0.987, 0.985, 0.986 ≥ 0,97)
+OK   check HyperFrames passé, contraste AA 25/25 (story-916-courte-A)
+OK   Textes présents
+OK   Aucun mot interdit ni allégation
+Verdict : GO technique
+
+QC — LA_SALLE_Visbody_story_courte_A_scan_9x16_bruitages.mp4
+OK   Format 1080×1920, H.264 High, yuv420p, 60 i/s
+OK   Durée 12.000 s (11.9–12, 12 s au plus)
+OK   Poids 3.4 Mo (≤ 25)
+OK   faststart (moov avant mdat)
+OK   Audio AAC 48000 Hz, 2 canaux
+OK   Sonie -18.2 LUFS (-18 ± 0,5)
+OK   Crête vraie -3.3 dBTP (≤ −1,5)
+OK   Aperçu = rendu décodé (SSIM 0.985, 0.985, 0.984, 0.990, 0.990, 0.987, 0.985, 0.986 ≥ 0,97)
+OK   check HyperFrames passé, contraste AA 25/25 (story-916-courte-A)
+OK   Textes présents
+OK   Aucun mot interdit ni allégation
+Verdict : GO technique
+
+QC — LA_SALLE_Visbody_story_courte_B_resultats_9x16.mp4
+OK   Format 1080×1920, H.264 High, yuv420p, 60 i/s
+OK   Durée 10.000 s (9.9–10, 12 s au plus)
+OK   Poids 2.6 Mo (≤ 25)
+OK   faststart (moov avant mdat)
+OK   Audio AAC 48000 Hz, 2 canaux
+OK   Sonie -14.1 LUFS (-14 ± 0,5)
+OK   Crête vraie -2.1 dBTP (≤ −1,5)
+OK   Aperçu = rendu décodé (SSIM 0.985, 0.989, 0.989, 0.989, 0.991, 0.985 ≥ 0,97)
+OK   check HyperFrames passé, contraste AA 22/22 (story-916-courte-B)
+OK   Textes présents
+OK   Aucun mot interdit ni allégation
+Verdict : GO technique
+
+QC — LA_SALLE_Visbody_story_courte_B_resultats_9x16_bruitages.mp4
+OK   Format 1080×1920, H.264 High, yuv420p, 60 i/s
+OK   Durée 10.000 s (9.9–10, 12 s au plus)
+OK   Poids 2.5 Mo (≤ 25)
+OK   faststart (moov avant mdat)
+OK   Audio AAC 48000 Hz, 2 canaux
+OK   Sonie -18.4 LUFS (-18 ± 0,5)
+OK   Crête vraie -2.3 dBTP (≤ −1,5)
+OK   Aperçu = rendu décodé (SSIM 0.985, 0.989, 0.989, 0.989, 0.991, 0.985 ≥ 0,97)
+OK   check HyperFrames passé, contraste AA 22/22 (story-916-courte-B)
+OK   Textes présents
+OK   Aucun mot interdit ni allégation
+Verdict : GO technique
+
+Reste à valider : les points ⚠ de A_valider.md, puis l'écoute de la musique (contrôlée par mesures seulement).

@@ -14,6 +14,21 @@ Demande : « lancer une comm sur la balance connectée Visbody, qui est enfin mi
   Ni offre datée, ni allégation à prouver ;
 - `Textes_publication.md` : légende du post, conseils pour la story, message court pour l'accueil ou les adhérents.
 
+## Stories courtes (17/11/2026)
+
+Retour : « les vidéos sont trop longues pour le format story, 10/12 secondes max […] plus dynamique, garde les éléments
+clés essentiels, propose-moi 2 stories ». Deux stories en coupes franches sur le tempo (120 BPM), sans volet :
+
+| Story | Durée | Déroulé |
+|---|---|---|
+| A « Le scan » (`videos/LA_SALLE_Visbody_story_courte_A_scan_9x16.mp4`) | 12 s | 0–2 s EN SERVICE · BIEN PLUS QU'UNE BALANCE. (image 0) · 2–3,5 s UNE BALANCE IA. (silence d'un quart de temps, puis « IA. » frappe) · 3,5–8 s UN SCAN À 360° : l'avatar sort du plateau, le scan descend puis remonte, les 5 résultats tombent un par un · 8–10 s + 2 € TTC PAR SEMAINE · 1 ANALYSE 3D PAR SEMAINE · 10–12 s ACTIVEZ-LA À L'ACCUEIL. et mentions |
+| B « Vos résultats » (`videos/LA_SALLE_Visbody_story_courte_B_resultats_9x16.mp4`) | 10 s | 0–2 s EN SERVICE · VOS PROGRÈS, EN 3D. avec la machine (image 0) · 2–5 s CE QUE VOUS DÉCOUVREZ : les 5 résultats, un par demi-temps, « EN 1 SCAN À 360° » · 5–6,5 s UNE BALANCE IA. · 6,5–8 s + 2 € · 8–10 s ACTIVEZ-LA À L'ACCUEIL. et mentions |
+
+Gardé : « EN SERVICE », « bien plus qu'une balance », « balance IA », le scan de l'avatar (A), les résultats, le prix,
+l'appel à l'accueil, les mentions (prix et santé, sur la dernière image). Retiré pour tenir en 12 s : le programme IA,
+« 3ᴱ salle de France », l'offre « 4 semaines offertes » (⚠ 7), les légendes de la machine, l'évolution, les 3
+avantages, les horaires. Les mentions défilent 2 s : en story, l'adhérent peut maintenir l'image pour les lire.
+
 ## Livrables
 
 | Fichier | Format | Contenu |

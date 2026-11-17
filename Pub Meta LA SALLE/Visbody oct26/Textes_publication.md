@@ -26,14 +26,17 @@ Ordre conseillé des images du carrousel : affiche « EN SERVICE », « UN SCAN 
 « CE QUE VOUS DÉCOUVREZ », « SUIVEZ VOTRE ÉVOLUTION », « + 2 € », « ACTIVEZ-LA À L'ACCUEIL ».
 L'affiche « VOTRE PROGRAMME, PAR L'IA. » seulement si le programme IA est confirmé (⚠ 1).
 
-## Story
+## Stories (10 à 12 s)
 
-- Vidéo : `LA_SALLE_Visbody_story_9x16.mp4` (version complète) ou `LA_SALLE_Visbody_story_9x16_version_prudente.mp4`
-  (sans le programme IA ni « 3ᴱ salle de France », publiable sans attendre les preuves).
-- Si vous ajoutez une musique de la Sound Collection d'Instagram : prenez la version `_bruitages`, et gardez les
-  bruitages audibles.
-- Sticker texte possible sur la dernière image : « À l'accueil, dès aujourd'hui ». Pas de sticker lien (rien à
-  réserver en ligne).
+Deux propositions, au choix ou à publier l'une après l'autre (par exemple A le jour J, B quelques jours plus tard) :
+- **A « Le scan »** (12 s) : `LA_SALLE_Visbody_story_courte_A_scan_9x16.mp4` : « EN SERVICE · Bien plus qu'une
+  balance. », « Une balance IA. », l'avatar 3D scanné avec les 5 résultats, « + 2 € », « Activez-la à l'accueil. ».
+- **B « Vos résultats »** (10 s) : `LA_SALLE_Visbody_story_courte_B_resultats_9x16.mp4` : « EN SERVICE · Vos
+  progrès, en 3D. » avec la machine, les 5 résultats, « Une balance IA. », « + 2 € », « Activez-la à l'accueil. ».
+
+Si vous ajoutez une musique de la Sound Collection d'Instagram, prenez la version `_bruitages` et gardez les
+bruitages audibles. Sticker texte possible sur la dernière image : « À l'accueil, dès aujourd'hui ». Pas de sticker
+lien (rien à réserver en ligne). Les stories longues (35 et 39 s) restent disponibles pour un Reel.
 
 ## Message court (affichage à l'accueil, écran, SMS ou e-mail aux adhérents)
 

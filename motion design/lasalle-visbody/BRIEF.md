@@ -38,6 +38,18 @@ Dans ses mots : « il faudrait qu'on lance une comm sur la balance connectée Vi
   datée ni allégation à prouver.
 - Textes de publication : `Pub Meta LA SALLE/Visbody oct26/Textes_publication.md`. Rien n'est publié avant validation.
 
+## Stories courtes (retour du 17/11/2026)
+
+Dans ses mots : « les vidéos sont trop longues pour le format story, 10/12 secondes max. Garde ce que tu as fait mais
+adapte, rends-le plus dynamique et garde les éléments clés essentiels. Propose-moi 2 stories […] et le post ».
+
+- `tools/courtes.py` → `story-916-courte-A/` (« Le scan », 12 s, avatar 3D au scan accéléré) et `story-916-courte-B/`
+  (« Vos résultats », 10 s, la machine puis les 5 résultats) ; coupes franches sur 120 BPM, premier élément de chaque
+  scène dès la coupe ; ni programme IA, ni « 3e salle de France », ni offre datée.
+- `tools/musique_courtes.py` (groove serré, silence d'un quart de temps avant « IA. », sons du scan) et
+  `tools/livrer_courtes.py` (mêmes contrôles que la story longue, durée ≤ 12 s).
+- Le post reste l'affiche `lancement-45/` et la légende de `Textes_publication.md`.
+
 ## Avatar scanné (demande du 22/10/2026)
 
 Dans ses mots : « intégrer une personne comme ça sur la balance (sur la vidéo elle serait dos au spectateur) […] un
@@ -86,6 +98,7 @@ Pages : visbody.com/visbody-m60/, visbody.com/visbody-wellnesshub/, visbody.com 
 (cd story-916 && npx --yes hyperframes@0.8.181 check --timeout 60000 && npx --yes hyperframes@0.8.181 render --fps 60 --quality delivery -o renders/story.mp4)
 ~/.venvs/hyperframes-audio/bin/python -I tools/livrer.py
 # version prudente : mêmes commandes avec VISBODY_VARIANTE=prudente (projet story-916-prudente)
+# stories courtes : tools/courtes.py, tools/musique_courtes.py [--bruitages], rendu dans story-916-courte-{A,B}, tools/livrer_courtes.py
 ```
 
 ## Notes
