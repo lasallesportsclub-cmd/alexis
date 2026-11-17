@@ -15,9 +15,9 @@ Vouvoiement, aucun mot interdit, aucune promesse de résultat. Les ⚠ renvoient
 >
 > Activez-la à l'accueil, en quelques secondes.
 > Urban Valley · 7j/7 · 6h–23h ⚠
->
-> Outil de suivi sportif : il ne remplace pas un avis médical. Déconseillé aux porteurs de pacemaker ou d'implant
-> électronique et aux femmes enceintes. Conditions à l'accueil.
+
+Version validée dans son principe le 17/11 (dernier paragraphe retiré à la demande : les mentions santé et
+« Conditions à l'accueil » restent sur l'affiche elle-même).
 
 Si l'offre « 4 semaines offertes » est toujours valable (⚠), ajouter après le prix :
 « En ce moment : 4 semaines offertes, puis 2 € TTC par semaine. »
