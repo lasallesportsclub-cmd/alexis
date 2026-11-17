@@ -1,10 +1,16 @@
-"""Analyse 3D Visbody M60 LA SALLE : story animée (9:16, 39 s, 60 i/s) et affiche « programme IA » (4:5).
+"""Analyse 3D Visbody M60 LA SALLE : story animée (9:16, 39 s, 60 i/s), affiches « programme IA » et « en service » (4:5).
+
+Lancement (demande du 17/11/2026 : « la balance connectée Visbody est enfin mise en service ») : « EN SERVICE » à
+l'image 0, plus de date de mise en service ; affiche d'annonce lancement-45/ ; variante VISBODY_VARIANTE=prudente,
+sans les allégations encore à prouver (scène « programme par l'IA », « 3e salle de France équipée »).
 
 Écrit :
   story-916/index.html, compositions/*.html  la story : les 8 visuels fournis le 22/10/2026 rejoués texte par texte,
                                              plus l'accroche « BIEN PLUS QU'UNE BALANCE. », la ponctuation « UNE
                                              BALANCE IA. » et le visuel « VOTRE PROGRAMME, PAR L'IA. » (⚠ A_valider.md)
   affiche-45/index.html                      le visuel « programme IA » au format des affiches du carrousel (1080×1350)
+  lancement-45/index.html                    l'affiche d'annonce « EN SERVICE » (1080×1350)
+  story-916-prudente/                        avec VISBODY_VARIANTE=prudente : la story sans les allégations à prouver
 Recopie dans <projet>/assets/ (ignorés par git) : polices et GSAP (_sources-premium/), logo (lasalle-fontaine/_communs/
 img/), Visbody M60 détourée (~/visbody-sources, hors dépôt : photo fabricant, logo de la marque à l'écran), musique.
 
@@ -24,10 +30,20 @@ RACINE = os.path.normpath(os.path.join(ICI, ".."))
 MD = os.path.normpath(os.path.join(RACINE, ".."))
 SOURCES = os.path.expanduser(os.environ.get("VISBODY_SOURCES", "~/visbody-sources"))
 
+# Variante : "" (version complète) ou "prudente" (sans la scène « programme par l'IA » ni le badge « 3e salle de
+# France équipée », remplacé par « EN SERVICE ») ; projet, musique et fichiers livrés portent son nom
+VARIANTE = os.environ.get("VISBODY_VARIANTE", "")
+assert VARIANTE in ("", "prudente"), VARIANTE
+STORY = "story-916" + (f"-{VARIANTE}" if VARIANTE else "")
+SUFFIXE = f"_version_{VARIANTE}" if VARIANTE else ""
 # Story : (id, coupe, temps jusqu'à la coupe suivante) ; coupes sur la grille de 120 BPM (un temps = 0,5 s)
-SCENES = [("s1", 0.0, 2.5), ("s2", 2.5, 2.5), ("s3", 5.0, 4.0), ("s4", 9.0, 10.5), ("s5", 19.5, 4.5),
-          ("s6", 24.0, 4.0), ("s7", 28.0, 3.5), ("s8", 31.5, 4.0), ("s9", 35.5, 3.5)]
-DUREE = 39.0
+_DUREES = [("s1", 2.5), ("s2", 2.5), ("s3", 4.0), ("s4", 10.5), ("s5", 4.5), ("s6", 4.0), ("s7", 3.5), ("s8", 4.0),
+           ("s9", 3.5)]
+SCENES = []
+for _cid, _d in _DUREES:
+    if not (VARIANTE == "prudente" and _cid == "s6"):
+        SCENES.append((_cid, sum(d for _, _, d in SCENES), _d))
+DUREE = sum(d for _, _, d in SCENES)
 FPS = 60
 VOLET = 0.9                # dévoilement en biais, centré sur chaque coupe
 COUPES_SECHES = {"s2"}     # « UNE BALANCE » arrive en coupe sèche, sur le silence
@@ -67,8 +83,10 @@ MENTION_SANTE = ("Outil de suivi sportif, il ne remplace pas un avis médical. D
                  "ou d’implant électronique et aux femmes enceintes.")
 MENTION_OPTION = ("Option Premium : 2 € TTC par semaine, soit 8 € prélevés toutes les 4 semaines en plus de votre "
                   "abonnement. Une analyse 3D par semaine. Conditions à l’accueil.")
-AVANTAGES = [("01", "FONTAINE À BOISSONS", "EN SERVICE"), ("02", "ANALYSE CORPORELLE 3D", "DÈS LE 22/10"),
+AVANTAGES = [("01", "FONTAINE À BOISSONS", "EN SERVICE"), ("02", "ANALYSE CORPORELLE 3D", "EN SERVICE"),
              ("03", "SALLE DE POSING", "TRÈS BIENTÔT")]
+# Badge de la couverture : allégation comparative du visuel (⚠ preuve à fournir), « EN SERVICE » dans la variante prudente
+BADGE = "En service" if VARIANTE == "prudente" else "La 3<sup>e</sup>&nbsp;salle de France équipée"
 # ⚠ Textes ajoutés (pas dans les visuels fournis) : à valider par Mehdi, voir A_valider.md
 ACCROCHE = ["Bien plus", "qu’une", "balance."]
 ETAPES_IA = ["Votre analyse 3D.", "Votre objectif, fixé<br>avec votre coach.",
@@ -207,7 +225,7 @@ def reperes():
         "bascule": c["s4"] + T["s4"]["bascule"],
         "legendes": [c["s4"] + T["s4"]["legendes"] + i * T["s4"]["pas_leg"] for i in range(3)],
         "items": [c["s5"] + T["s5"]["items"] + i * T["s5"]["pas"] for i in range(len(RESULTATS))],
-        "etapes_ia": [c["s6"] + T["s6"]["etapes"] + i * T["s6"]["pas"] for i in range(3)],
+        "etapes_ia": [c["s6"] + T["s6"]["etapes"] + i * T["s6"]["pas"] for i in range(3)] if "s6" in c else [],
         "semaine": c["s7"] + T["s7"]["l5"],
         "prix": c["s8"] + T["s8"]["prix"],
         "bandes": [c["s8"] + T["s8"]["bandes"] + i * T["s8"]["pas"] for i in range(3)],
@@ -264,6 +282,7 @@ def s1():
     contenu = f"""
 <div class="a kick" style="left:96px;top:236px;font-size:38px">{plus(40)}Option Premium</div>
 <img class="a" src="assets/img/logo-complet.png" alt="LA SALLE" style="left:774px;top:212px;width:210px">
+<div class="a plaque" style="--c:{round(0.42 * 84)}px;left:96px;top:430px;height:84px;padding:0 46px;font-size:54px">En service</div>
 <div id="s1-titre" class="a" style="left:92px;top:600px">{lignes}</div>
 <div class="a" style="left:96px;top:1560px">{plus(60)}</div>
 <div id="s1-filet" class="a filet" style="left:178px;top:1586px;width:902px;height:6px;transform-origin:left center"></div>
@@ -290,14 +309,14 @@ def s3():
     W, X0, Y0 = 350, 640, 360
     c = round(0.42 * 76)
     contenu = f"""
-{cache(96, 236, 888, f'<div class="plaque" style="--c:{round(0.42 * 70)}px;height:70px;padding:0 40px;font-size:40px">La 3<sup>e</sup>&nbsp;salle de France équipée</div>', "s3-badge", 20)}
+{cache(96, 236, 888, f'<div class="plaque" style="--c:{round(0.42 * 70)}px;height:70px;padding:0 40px;font-size:40px">{BADGE}</div>', "s3-badge", 20)}
 {cache(92, 390, 560, '<div class="t9" style="font-size:132px">Vos</div>', "s3-l1")}
 {cache(92, 506, 560, '<div class="t9" style="font-size:132px">progrès,</div>', "s3-l2")}
 {cache(92, 622, 560, '<div class="t9 it or" style="font-size:132px">en 3D.</div>', "s3-l3")}
 <div id="s3-machine" class="a" style="left:{X0}px;top:{Y0}px;width:{W}px;height:{round(M60[1] * W / M60[0])}px">
   <img id="s3-img" src="assets/img/m60.png" alt="" style="display:block;width:{W}px">
 </div>
-{cache(96, 800, 530, '<p class="corps" style="font-size:44px">L’analyse corporelle Visbody M60, en service à LA SALLE dès le 22&nbsp;octobre.</p>', "s3-sous")}
+{cache(96, 800, 530, '<p class="corps" style="font-size:44px">L’analyse corporelle Visbody M60 est en service à LA&nbsp;SALLE.</p>', "s3-sous")}
 {cache(96, 1170, 900, f'<div class="plaque" style="--c:{c}px;height:76px;padding:0 40px;font-size:44px">4 semaines offertes, puis 2&nbsp;€ TTC/sem.</div>', "s3-pastille", 20)}
 {cache(96, 1266, 888, '<div class="t8" style="font-size:32px;letter-spacing:.03em">En ce moment · en plus de votre abonnement</div>', "s3-qual", 16)}
 <p id="s3-mention" class="a mention" style="left:96px;top:1340px;width:888px;padding:16px 26px;font-size:32px;line-height:1.28">{MENTION_OFFRE}</p>
@@ -554,7 +573,38 @@ def affiche():
     return composition("affiche", 1080, 1350, 1, corps, "")
 
 
-def index_affiche():
+# ---------------------------------------------------------------- affiche d'annonce « EN SERVICE » (4:5, lancement)
+LANCEMENT = ["Scan 3D à 360°", "Composition corporelle", "1 analyse 3D par semaine"]
+MENTION_LANCEMENT = ("Option Premium : 2 € TTC par semaine, soit 8 € toutes les 4 semaines en plus de votre abonnement. "
+                     "Conditions à l’accueil. " + MENTION_SANTE)
+
+
+def affiche_lancement():
+    """Annonce de la mise en service : l'accroche de la story, la machine, trois repères tirés des visuels, l'appel.
+    Ni offre datée ni allégation à prouver (voir A_valider.md)."""
+    W, X0, Y0 = 330, 682, 238
+    items = "".join(f'<div class="a t8" style="left:108px;top:{896 + 60 * i}px;font-size:44px;display:flex;align-items:center;gap:18px">'
+                    f'{plus(30)}{t}</div>\n' for i, t in enumerate(LANCEMENT))
+    corps = f"""
+{fond(1350)}
+<div class="a kick" style="left:108px;top:104px">{plus(34)}Option Premium</div>
+<img class="a" src="assets/img/logo-complet.png" alt="LA SALLE" style="left:812px;top:84px;width:160px">
+<div class="a plaque" style="--c:{round(0.42 * 76)}px;left:108px;top:180px;height:76px;padding:0 42px;font-size:48px">En service</div>
+<div class="a t9 or" style="left:104px;top:300px;font-size:136px">Bien plus</div>
+<div class="a t9" style="left:104px;top:425px;font-size:136px">qu’une</div>
+<div class="a t9" style="left:104px;top:550px;font-size:136px">balance.</div>
+<img class="a" src="assets/img/m60.png" alt="" style="left:{X0}px;top:{Y0}px;width:{W}px">
+<p class="a corps" style="left:108px;top:708px;width:560px;font-size:40px">L’analyse corporelle Visbody&nbsp;M60 est en service à LA&nbsp;SALLE.</p>
+{items}<div class="a t9 it or" style="left:682px;top:944px;font-size:66px;line-height:.95">Activez-la <br>à l’accueil.</div>
+<div class="a plaque" style="--c:{round(0.42 * 62)}px;left:108px;top:1090px;height:62px;padding:0 36px;font-size:38px">+&nbsp;2&nbsp;€ TTC par semaine</div>
+<p class="a mention" style="left:72px;top:1180px;width:936px;padding:14px 22px;font-size:25px;line-height:1.28">{MENTION_LANCEMENT}</p>
+"""
+    return composition("lancement", 1080, 1350, 1, corps, "")
+
+
+def index_affiche(cid="affiche"):
+    titre = {"affiche": "« VOTRE PROGRAMME, PAR L'IA. » au format du carrousel Visbody",
+             "lancement": "d'annonce « EN SERVICE » (lancement de l'analyse 3D)"}[cid]
     return """<!doctype html>
 <html lang="fr" data-resolution="portrait">
   <head>
@@ -570,16 +620,16 @@ def index_affiche():
     </style>
   </head>
   <body>
-    <!-- Affiche « VOTRE PROGRAMME, PAR L'IA. » au format du carrousel Visbody : scène figée d'une seconde, snapshot à 0,5 s -->
+    <!-- Affiche __TITRE__ : scène figée d'une seconde, snapshot à 0,5 s -->
     <div id="root" data-composition-id="main" data-start="0" data-duration="1" data-width="1080" data-height="1350" data-fps="30">
-      <div id="h-affiche" data-composition-id="affiche" data-composition-src="compositions/affiche.html" data-start="0" data-duration="1" data-track-index="1" data-width="1080" data-height="1350"></div>
+      <div id="h-__CID__" data-composition-id="__CID__" data-composition-src="compositions/__CID__.html" data-start="0" data-duration="1" data-track-index="1" data-width="1080" data-height="1350"></div>
     </div>
     <script>
       window.__timelines["main"] = gsap.timeline({ paused: true });
     </script>
   </body>
 </html>
-"""
+""".replace("__TITRE__", titre).replace("__CID__", cid)
 
 
 # ---------------------------------------------------------------- assets et projet
@@ -595,13 +645,13 @@ def projet(nom):
     if not os.path.exists(m):
         sys.exit(f"Absent : {m} (lancer tools/detourer.py)")
     shutil.copy2(m, os.path.join(p, "assets", "img", "m60.png"))
-    if nom == "story-916":                                     # avatar 3D de la scène du scan (Three.js 0.185.1, MIT)
+    if nom.startswith("story-916"):                            # avatar 3D de la scène du scan (Three.js 0.185.1, MIT)
         os.makedirs(os.path.join(p, "assets", "js"), exist_ok=True)
         shutil.copy2(os.path.join(RACINE, "_communs", "js", "avatar.js"), os.path.join(p, "assets", "js", "avatar.js"))
         for f in ("three.module.min.js", "three.core.min.js", "MarchingCubes.js", "LICENSE-three.txt"):
             shutil.copy2(os.path.join(RACINE, "_communs", "vendor", f), os.path.join(p, "assets", "vendor", f))
-    musique = os.path.join(RACINE, "_communs", "musique_visbody.wav")
-    if nom == "story-916" and os.path.exists(musique):
+    musique = os.path.join(RACINE, "_communs", f"musique_visbody{SUFFIXE}.wav")
+    if nom.startswith("story-916") and os.path.exists(musique):
         shutil.copy2(musique, os.path.join(p, "assets", "audio", "musique.wav"))
     ecrire(os.path.join(p, "hyperframes.json"), """{
   "$schema": "https://hyperframes.heygen.com/schema/hyperframes.json",
@@ -638,15 +688,25 @@ def ecrire(chemin, texte):
 
 
 def main():
-    a = projet("affiche-45")
-    ecrire(os.path.join(a, "index.html"), index_affiche())
-    ecrire(os.path.join(a, "compositions", "affiche.html"), affiche())
-    s = projet("story-916")
+    ecrits = []
+    if not VARIANTE:                                           # les affiches ne dépendent pas de la variante
+        a = projet("affiche-45")
+        ecrire(os.path.join(a, "index.html"), index_affiche())
+        ecrire(os.path.join(a, "compositions", "affiche.html"), affiche())
+        lc = projet("lancement-45")
+        ecrire(os.path.join(lc, "index.html"), index_affiche("lancement"))
+        ecrire(os.path.join(lc, "compositions", "lancement.html"), affiche_lancement())
+        ecrits += [a, lc]
+    s = projet(STORY)
+    for f in os.listdir(os.path.join(s, "compositions")):      # pas de scène orpheline d'une autre variante
+        os.remove(os.path.join(s, "compositions", f))
     ecrire(os.path.join(s, "index.html"), index_story())
-    ids = [c for c, _, _ in SCENES]
-    for cid, f in zip(ids + ["fond", "volets"], (s1, s2, s3, s4, s5, s6, s7, s8, s9, fond_story, volets)):
-        ecrire(os.path.join(s, "compositions", f"{cid}.html"), f())
-    print("Écrit :", a, s)
+    scenes = {"s1": s1, "s2": s2, "s3": s3, "s4": s4, "s5": s5, "s6": s6, "s7": s7, "s8": s8, "s9": s9}
+    for cid, _, _ in SCENES:
+        ecrire(os.path.join(s, "compositions", f"{cid}.html"), scenes[cid]())
+    ecrire(os.path.join(s, "compositions", "fond.html"), fond_story())
+    ecrire(os.path.join(s, "compositions", "volets.html"), volets())
+    print("Écrit :", *ecrits, s)
 
 
 if __name__ == "__main__":

@@ -33,15 +33,18 @@ NOM = "LA_SALLE_Visbody"
 ATTENDUS_AFFICHE = ["L'INTELLIGENCE ARTIFICIELLE", "VOTRE", "PROGRAMME,", "PAR L'IA.", "01", "02", "03",
                     "Votre analyse 3D.", "Votre objectif, fixé avec votre coach.",
                     "Un programme d'entraînement adapté aux machines de LA SALLE."]
-ATTENDUS_STORY = ["OPTION PREMIUM", "BIEN PLUS", "QU'UNE", "BALANCE.", "NOUVEAU · ANALYSE 3D", "UNE BALANCE", "IA.",
-                  build.TECH, "SALLE DE FRANCE ÉQUIPÉE", "VOS", "PROGRÈS,", "EN 3D.",
-                  "L'analyse corporelle Visbody M60, en service à LA SALLE dès le 22 octobre.",
+ATTENDUS_LANCEMENT = ["OPTION PREMIUM", "EN SERVICE", "BIEN PLUS", "QU'UNE", "BALANCE.",
+                      "L'analyse corporelle Visbody M60 est en service à LA SALLE.", *[x.upper() for x in build.LANCEMENT],
+                      "ACTIVEZ-LA À L'ACCUEIL.", "+ 2 € TTC PAR SEMAINE", build.MENTION_LANCEMENT]
+ATTENDUS_STORY = ["OPTION PREMIUM", "EN SERVICE", "BIEN PLUS", "QU'UNE", "BALANCE.", "NOUVEAU · ANALYSE 3D", "UNE BALANCE", "IA.",
+                  build.TECH, "EN SERVICE" if build.VARIANTE else "SALLE DE FRANCE ÉQUIPÉE", "VOS", "PROGRÈS,", "EN 3D.",
+                  "L'analyse corporelle Visbody M60 est en service à LA SALLE.",
                   "4 SEMAINES OFFERTES, PUIS 2 € TTC/SEM.", "EN CE MOMENT · EN PLUS DE VOTRE ABONNEMENT", build.MENTION_OFFRE,
                   "LE PRINCIPE", "COMMENT ÇA MARCHE", "UN SCAN", "À 360°", *build.ETAPES_SCAN, "1 ANALYSE / SEMAINE",
                   *[x.upper() for x, _ in build.LEGENDES], *[y for _, y in build.LEGENDES], build.MENTION_SANTE_SCAN,
                   "VOS RÉSULTATS", "CE QUE VOUS", "DÉCOUVREZ", *[r.upper() for r in build.RESULTATS],
                   "Un rapport complet à chaque analyse.", build.MENTION_SANTE,
-                  "L'INTELLIGENCE ARTIFICIELLE", "VOTRE", "PROGRAMME,", "PAR L'IA.", *build.ETAPES_IA,
+                  *([] if build.VARIANTE else ["L'INTELLIGENCE ARTIFICIELLE", "VOTRE", "PROGRAMME,", "PAR L'IA.", *build.ETAPES_IA]),
                   "VOTRE SUIVI", "SUIVEZ VOTRE", "ÉVOLUTION", "1 ANALYSE", "3D PAR", "SEMAINE",
                   "Incluse dans l'option Premium. Comparez vos résultats d'une analyse à l'autre.",
                   "L'OPTION PREMIUM", "2 €", "TTC PAR SEMAINE", "Soit 8 € toutes les 4 semaines, en plus de votre abonnement.",
@@ -98,8 +101,13 @@ def faststart(f):
 
 
 def ssim(video, t, image):
-    r = subprocess.run(["ffmpeg", "-nostats", "-ss", f"{t:g}", "-i", video, "-i", image, "-frames:v", "1",
-                        "-lavfi", "[0:v][1:v]ssim", "-f", "null", "-"], capture_output=True, text=True)
+    """SSIM entre l'aperçu à l'instant t et l'image n° round(t × FPS) du rendu décodé (choisie par son numéro : -ss
+    peut tomber sur la voisine, ce qui fausse la mesure pendant un mouvement rapide)."""
+    with tempfile.TemporaryDirectory() as tmp:
+        img = os.path.join(tmp, "rendu.png")
+        run(["ffmpeg", "-v", "error", "-y", "-i", video, "-vf", f"select=eq(n\\,{round(t * build.FPS)})", "-frames:v", "1", img])
+        r = subprocess.run(["ffmpeg", "-nostats", "-i", img, "-i", image, "-lavfi", "[0:v][1:v]ssim", "-f", "null", "-"],
+                           capture_output=True, text=True)
     m = re.search(r"All:([0-9.]+)", r.stderr)
     return float(m.group(1)) if m else 0.0
 
@@ -138,36 +146,36 @@ def ligne(nom, tests):
             f"Verdict : {'GO technique' if all(ok for _, ok in tests) else 'À CORRIGER'}", ""]
 
 
-def affiche(dimg, lignes):
+def affiche(dimg, lignes, projet="affiche-45", nom="affiche_programme_IA", attendus=ATTENDUS_AFFICHE):
     with tempfile.TemporaryDirectory() as tmp:
-        run(HF + ["snapshot", "--at", "0.5", "--no-end", "-o", tmp, "--timeout", "60000", os.path.join(RACINE, "affiche-45")])
+        run(HF + ["snapshot", "--at", "0.5", "--no-end", "-o", tmp, "--timeout", "60000", os.path.join(RACINE, projet)])
         png_tmp = os.path.join(tmp, "frame-00-at-0.5s.png")
-        png = os.path.join(dimg, f"{NOM}_affiche_programme_IA_post_4x5.png")
+        png = os.path.join(dimg, f"{NOM}_{nom}_post_4x5.png")
         jpg = png[:-4] + ".jpg"
         run(["ffmpeg", "-v", "error", "-y", "-i", png_tmp, "-frames:v", "1", "-update", "1", png])
         run(["ffmpeg", "-v", "error", "-y", "-i", png_tmp, "-q:v", "2", jpg])
     _, s = sonde(jpg)
-    verif = check("affiche-45")
+    verif = check(projet)
     poids = os.path.getsize(jpg) / 1e6
-    t = texte("affiche-45")
-    absents = manquants(ATTENDUS_AFFICHE, t)
+    t = texte(projet)
+    absents = manquants(attendus, t)
     interdits = trouves(t)
     lignes += ligne(os.path.basename(jpg) + " (+ PNG maître)", [
         ("Image 1080×1350 (4:5)", s["video"]["width"] == 1080 and s["video"]["height"] == 1350),
         (f"Poids JPG {poids:.2f} Mo (< 1)", poids < 1),
-        (f"check HyperFrames passé, {verif[1]} (affiche-45)", verif[0] and verif[1].split()[-1].split("/")[0] == verif[1].split()[-1].split("/")[-1]),
+        (f"check HyperFrames passé, {verif[1]} ({projet})", verif[0] and verif[1].split()[-1].split("/")[0] == verif[1].split()[-1].split("/")[-1]),
         ("Textes de l'affiche présents" + (f" (absents : {absents})" if absents else ""), not absents),
         ("Aucun mot interdit ni allégation" + (f" (trouvés : {interdits})" if interdits else ""), not interdits),
     ])
 
 
 def story(dvid, dctl, lignes):
-    rendu = os.path.join(RACINE, "story-916", "renders", "story.mp4")
+    rendu = os.path.join(RACINE, build.STORY, "renders", "story.mp4")
     if not os.path.exists(rendu):
         sys.exit(f"Rendu absent : {rendu}")
     d = build.DUREE
-    verif = check("story-916")
-    t_ecran = texte("story-916")
+    verif = check(build.STORY)
+    t_ecran = texte(build.STORY)
     absents = manquants(ATTENDUS_STORY, t_ecran)
     interdits = trouves(t_ecran)
     with tempfile.TemporaryDirectory() as tmp:
@@ -175,10 +183,10 @@ def story(dvid, dctl, lignes):
         sc = build.reperes()["scan"]
         instants += [round(sc["descente"] + 0.7, 2), round(sc["remontee"] + build.SCAN + 0.3, 2)]   # avatar 3D en plein scan, puis maillé
         run(HF + ["snapshot", "--at", ",".join(f"{t:g}" for t in instants), "--no-end", "-o", tmp, "--timeout", "60000",
-                  os.path.join(RACINE, "story-916")])
+                  os.path.join(RACINE, build.STORY)])
         apercus = sorted((f for f in os.listdir(tmp) if f.startswith("frame-") and f.endswith(".png")), key=lambda f: int(f.split("-")[1]))
-        for version, wav in (("", "musique_visbody.wav"), ("_bruitages", "bruitages_visbody.wav")):
-            video = os.path.join(dvid, f"{NOM}_story_9x16{version}.mp4")
+        for version, wav in (("", f"musique_visbody{build.SUFFIXE}.wav"), ("_bruitages", f"bruitages_visbody{build.SUFFIXE}.wav")):
+            video = os.path.join(dvid, f"{NOM}_story_9x16{build.SUFFIXE}{version}.mp4")
             remix = os.path.join(tmp, f"remix{version}.mp4")
             run(["ffmpeg", "-hide_banner", "-y", "-i", rendu, "-i", os.path.join(RACINE, "_communs", wav),
                  "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "256k", "-ar", "48000", "-ac", "2",
@@ -201,15 +209,15 @@ def story(dvid, dctl, lignes):
                 (f"Crête vraie {tp:.1f} dBTP (≤ −1,5)", tp <= -1.5),
                 ("Aperçu = rendu décodé à la fin de chaque scène et pendant le scan (SSIM " + ", ".join(f"{x:.3f}" for x in scores) + " ≥ 0,97)",
                  len(scores) == len(instants) and min(scores) >= 0.97),
-                (f"check HyperFrames passé, {verif[1]} (story-916)", verif[0] and verif[1].split()[-1].split("/")[0] == verif[1].split()[-1].split("/")[-1]),
-                ("Textes des 8 visuels et des 3 ajouts présents" + (f" (absents : {absents})" if absents else ""), not absents),
+                (f"check HyperFrames passé, {verif[1]} ({build.STORY})", verif[0] and verif[1].split()[-1].split("/")[0] == verif[1].split()[-1].split("/")[-1]),
+                ("Textes des visuels et des ajouts présents" + (f" (absents : {absents})" if absents else ""), not absents),
                 ("Aucun mot interdit ni allégation" + (f" (trouvés : {interdits})" if interdits else ""), not interdits),
             ])
-    video = os.path.join(dvid, f"{NOM}_story_9x16.mp4")
+    video = os.path.join(dvid, f"{NOM}_story_9x16{build.SUFFIXE}.mp4")
     vf = ("fps=2,drawbox=x=0:y=0:w=1080:h=270:color=red@0.25:t=fill,drawbox=x=0:y=1250:w=1080:h=670:color=red@0.25:t=fill,"
           "drawbox=x=950:y=900:w=130:h=1020:color=red@0.25:t=fill,scale=216:384,tile=10x4")
-    run(["ffmpeg", "-v", "error", "-y", "-i", video, "-vf", vf, "-frames:v", "1", "-q:v", "3", os.path.join(dctl, "planche_story_2ips.jpg")])
-    run(["ffmpeg", "-v", "error", "-y", "-i", video, "-frames:v", "1", "-q:v", "2", os.path.join(dctl, "image0_story.jpg")])
+    run(["ffmpeg", "-v", "error", "-y", "-i", video, "-vf", vf, "-frames:v", "1", "-q:v", "3", os.path.join(dctl, f"planche_story{build.SUFFIXE}_2ips.jpg")])
+    run(["ffmpeg", "-v", "error", "-y", "-i", video, "-frames:v", "1", "-q:v", "2", os.path.join(dctl, f"image0_story{build.SUFFIXE}.jpg")])
 
 
 def main():
@@ -217,10 +225,12 @@ def main():
     for x in (dimg, dvid, dctl):
         os.makedirs(x, exist_ok=True)
     lignes = []
-    affiche(dimg, lignes)
+    if not build.VARIANTE:                                     # les affiches ne dépendent pas de la variante
+        affiche(dimg, lignes)
+        affiche(dimg, lignes, "lancement-45", "affiche_lancement_en_service", ATTENDUS_LANCEMENT)
     story(dvid, dctl, lignes)
     lignes.append("Reste à valider par Mehdi : les points ⚠ de A_valider.md, puis l'écoute de la musique (contrôlée par mesures seulement).")
-    open(os.path.join(dctl, "QC_visbody.txt"), "w", encoding="utf-8").write("\n".join(lignes) + "\n")
+    open(os.path.join(dctl, f"QC_visbody{build.SUFFIXE}.txt"), "w", encoding="utf-8").write("\n".join(lignes) + "\n")
     print("\n".join(lignes))
 
 

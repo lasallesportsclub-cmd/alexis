@@ -45,7 +45,7 @@ DEBUT = {c: t for c, t, _ in build.SCENES}
 COUPES = [t for c, t, _ in build.SCENES[1:] if c not in build.COUPES_SECHES]   # dévoilements en biais
 
 # Une mesure = 2 s à partir de la reprise (3 s) : la mineur, fa, do, sol ; la mineur sur la carte finale
-ACCORDS = [(0, "Am")] + [(3.0 + 2 * i, ["Am", "F", "C", "G"][i % 4]) for i in range(17)] + [(37.0, "Am")]
+ACCORDS = [(0, "Am")] + [(3.0 + 2 * i, ["Am", "F", "C", "G"][i % 4]) for i in range(int((DUREE - 5) / 2))] + [(DUREE - 2, "Am")]
 NAPPE = {"Am": [57, 60, 64, 69], "F": [53, 57, 60, 65], "C": [55, 60, 64, 67], "G": [55, 59, 62, 67]}
 BASSE = {"Am": 45, "F": 41, "C": 36, "G": 43}
 ARPEGE = {"Am": [69, 72, 76, 81], "F": [65, 69, 72, 77], "C": [67, 72, 76, 79], "G": [67, 71, 74, 79]}
@@ -234,7 +234,7 @@ def main():
     tp = m.crete_vraie(x)
     if tp > plafond + 0.3:
         x *= 10 ** ((plafond + 0.3 - tp) / 20)
-    sortie = os.path.join(ICI, "..", "_communs", "bruitages_visbody.wav" if bruitages else "musique_visbody.wav")
+    sortie = os.path.join(ICI, "..", "_communs", f"{'bruitages' if bruitages else 'musique'}_visbody{build.SUFFIXE}.wav")
     os.makedirs(os.path.dirname(sortie), exist_ok=True)
     sf.write(sortie, x.T, SR, subtype="PCM_24")
     print(f"{os.path.normpath(sortie)} : {x.shape[1] / SR:.3f} s · {mesure.integrated_loudness(x.T):.1f} LUFS · "

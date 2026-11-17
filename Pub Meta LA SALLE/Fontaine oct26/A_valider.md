@@ -90,9 +90,8 @@ signe maintenant le versement.
    du guide de tournage), ou m'envoyer la photo d'origine du fabricant avec son accord pour un usage publicitaire.
 10. **Faits repris des visuels, absents du brief validé du 13/10** : « écran tactile 17″ », « saveur, intensité,
     température », « BCAA » (absent de la liste validée : collagène, multivitamines, L-carnitine, booster, eau),
-    « 7J/7 · 6H–23H » et « DÈS LE 22/10 » pour l'analyse 3D. Gardés mot pour mot. À confirmer.
-11. **« DÈS LE 22/10 ».** La story sera vue après le 22/10 : si l'analyse 3D est bien en service, je propose
-    « EN SERVICE », comme pour la fontaine.
+    « 7J/7 · 6H–23H ». Gardés mot pour mot. À confirmer.
+11. ~~« DÈS LE 22/10 »~~ : réglé le 17/11, l'analyse 3D est en service ; la bande 02 dit « EN SERVICE ».
 12. **« Multivitamines »** reste une allégation nutritionnelle implicite (point 3 du kit Premium) : licite seulement si
     la boisson apporte assez de vitamines (au moins 7,5 % des VNR pour 100 ml pour une boisson). À vérifier sur la fiche
     produit, sinon remplacer par le nom exact de la boisson. Collagène, L-carnitine et BCAA sont cités comme choix, sans

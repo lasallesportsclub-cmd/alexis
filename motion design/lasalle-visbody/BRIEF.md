@@ -25,6 +25,19 @@ Livré :
   suivante, voir plus bas) et la scène « VOTRE PROGRAMME, PAR L'IA. ».
 - `affiche-45/` : le visuel « VOTRE PROGRAMME, PAR L'IA. » au format des affiches du carrousel (1080×1350).
 
+## Lancement (demande du 17/11/2026)
+
+Dans ses mots : « il faudrait qu'on lance une comm sur la balance connectée Visbody, qui est enfin mise en service
+[…] même chose qu'avec la boisson pour la comm », puis « avant d'envoyer la comm, montre-moi pour que je valide ».
+
+- Story : plaque « EN SERVICE » à l'image 0, plus de date de mise en service, bande 02 « EN SERVICE ».
+- `VISBODY_VARIANTE=prudente` → `story-916-prudente/` (35 s) : sans la scène du programme IA (⚠ WellnessHub) et
+  « EN SERVICE » à la place du badge « 3ᴱ salle de France équipée » (⚠ preuve) ; musique, bruitages et fichiers
+  livrés suffixés `_version_prudente`.
+- `lancement-45/` : affiche d'annonce « EN SERVICE » (accroche, machine, 3 repères, prix, appel, mentions), sans offre
+  datée ni allégation à prouver.
+- Textes de publication : `Pub Meta LA SALLE/Visbody oct26/Textes_publication.md`. Rien n'est publié avant validation.
+
 ## Avatar scanné (demande du 22/10/2026)
 
 Dans ses mots : « intégrer une personne comme ça sur la balance (sur la vidéo elle serait dos au spectateur) […] un
@@ -72,6 +85,7 @@ Pages : visbody.com/visbody-m60/, visbody.com/visbody-wellnesshub/, visbody.com 
 ~/.venvs/hyperframes-audio/bin/python -I tools/build.py
 (cd story-916 && npx --yes hyperframes@0.8.181 check --timeout 60000 && npx --yes hyperframes@0.8.181 render --fps 60 --quality delivery -o renders/story.mp4)
 ~/.venvs/hyperframes-audio/bin/python -I tools/livrer.py
+# version prudente : mêmes commandes avec VISBODY_VARIANTE=prudente (projet story-916-prudente)
 ```
 
 ## Notes

@@ -1,6 +1,18 @@
 # À valider avant diffusion : analyse 3D Visbody M60
 
-Liste des ⚠ à trancher par Mehdi. **Rien n'est publié.**
+Liste des ⚠ à trancher par Mehdi. **Rien n'est publié** : tout est montré pour validation avant publication.
+
+## Lancement (17/11/2026)
+
+Demande : « lancer une comm sur la balance connectée Visbody, qui est enfin mise en service ». Changements :
+- story : plaque or « EN SERVICE » dès l'image 0, sous « + OPTION PREMIUM » ; « en service à LA SALLE dès le
+  22 octobre » devient « est en service à LA SALLE » ; bande 02 des avantages : « EN SERVICE » (au lieu de
+  « DÈS LE 22/10 ») ; même correction dans la story fontaine ;
+- **version prudente** de la story (35 s) : sans la scène « VOTRE PROGRAMME, PAR L'IA. » et avec « EN SERVICE » à
+  la place du badge « LA 3ᴱ SALLE DE FRANCE ÉQUIPÉE ». Elle se publie sans attendre les réponses aux points 1 et 3 ;
+- **affiche d'annonce « EN SERVICE »** (4:5) : accroche, machine, trois repères, prix, appel à l'accueil, mentions.
+  Ni offre datée, ni allégation à prouver ;
+- `Textes_publication.md` : légende du post, conseils pour la story, message court pour l'accueil ou les adhérents.
 
 ## Livrables
 
@@ -8,6 +20,9 @@ Liste des ⚠ à trancher par Mehdi. **Rien n'est publié.**
 |---|---|---|
 | `videos/LA_SALLE_Visbody_story_9x16.mp4` | 1080×1920, 39 s, 60 i/s | 9 scènes : accroche, ponctuation « UNE BALANCE IA. », les 8 visuels fournis, l'avatar 3D scanné, le programme par l'IA ; musique originale et bruitages |
 | `videos/LA_SALLE_Visbody_story_9x16_bruitages.mp4` | 1080×1920, 39 s, 60 i/s | La même, bruitages seuls (pour ajouter une musique de la Sound Collection dans Instagram) |
+| `videos/LA_SALLE_Visbody_story_9x16_version_prudente.mp4` (+ `_bruitages`) | 1080×1920, 35 s, 60 i/s | Version prudente : sans la scène du programme IA ni le badge « 3ᴱ salle de France », « EN SERVICE » à la place |
+| `images/LA_SALLE_Visbody_affiche_lancement_en_service_post_4x5.png` (+ `.jpg`) | 1080×1350 | Affiche d'annonce « EN SERVICE » |
+| `Textes_publication.md` | — | Légende du post, story, message court |
 | `images/LA_SALLE_Visbody_affiche_programme_IA_post_4x5.png` (+ `.jpg`) | 1080×1350 | Le nouveau visuel « VOTRE PROGRAMME, PAR L'IA. », au format et dans la charte du carrousel |
 | `controles/` | — | Rapport QC, planche à 2 i/s avec les zones Reels, image 0 |
 
@@ -61,10 +76,13 @@ Entre deux scènes : dévoilement en biais de 0,9 s sous un filet or (comme la s
    apparaît dans les textes. La charte exclut les logos de marques tierces, et un visuel de marque demande son accord.
    La photo vient d'une capture, détourée et agrandie : elle reste un peu douce. Le mieux : une photo de la vraie
    machine au club (de face, à 2 m, fond dégagé). Je remplace le fichier et je régénère tout.
-5. **« Dès le 22 octobre » / « DÈS LE 22/10 ».** Après le 22/10, je propose « EN SERVICE ».
+5. ~~« Dès le 22 octobre » / « DÈS LE 22/10 »~~ : réglé le 17/11, la machine est en service (« EN SERVICE »).
 6. **Mentions santé.** Reprises telles quelles et lisibles (30 à 32 px sur panneau opaque). À vérifier : que les
    contre-indications (pacemaker, implant électronique, grossesse) correspondent à la notice de la M60.
-7. **Qualificatif ajouté sous la pastille.** La charte demande « EN CE MOMENT · EN PLUS DE VOTRE ABONNEMENT » sous
+7. **Offre « 4 SEMAINES OFFERTES, PUIS 2 € TTC/SEM. » (scène 3, dans les deux versions) : toujours valable ?**
+   Elle vient de votre couverture d'octobre. Sans date de fin connue, je n'ai rien ajouté d'urgent ; si l'offre est
+   terminée, je retire la pastille et sa mention en une commande. L'affiche d'annonce ne la mentionne pas.
+   **Qualificatif ajouté sous la pastille.** La charte demande « EN CE MOMENT · EN PLUS DE VOTRE ABONNEMENT » sous
    « 4 SEMAINES OFFERTES, PUIS 2 € TTC/SEM. ». Il n'était pas sur la couverture : je l'ai ajouté.
 8. **Visuels fusionnés.** Les deux couvertures (photo et carrousel) forment une seule scène ; leurs deux sous-titres
    disaient la même chose, j'ai gardé celui du carrousel. Les deux « UN SCAN À 360° » forment une scène en deux temps.

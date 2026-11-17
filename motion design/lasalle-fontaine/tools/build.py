@@ -147,7 +147,7 @@ MENTION_CAFEINE = ("Boisson caféinée : teneur élevée en caféine, déconseil
                    "ou allaitantes. Visuel non contractuel.")
 MENTION_OPTION = ("Option Premium : 2 € TTC par semaine, soit 8 € prélevés toutes les 4 semaines en plus de votre "
                   "abonnement. Une boisson toutes les 30 minutes. Conditions à l’accueil.")
-AVANTAGES = [("01", "FONTAINE À BOISSONS", "EN SERVICE"), ("02", "ANALYSE CORPORELLE 3D", "DÈS LE 22/10"),
+AVANTAGES = [("01", "FONTAINE À BOISSONS", "EN SERVICE"), ("02", "ANALYSE CORPORELLE 3D", "EN SERVICE"),
              ("03", "SALLE DE POSING", "TRÈS BIENTÔT")]
 # Parcours sur l'écran (demande du 22/10, dans l'ordre de l'interface réelle) : (étiquette, ligne 1, ligne 2, corps)
 ETAPES = [("01", "Scannez votre", "QR code ou carte.", None),
