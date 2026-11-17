@@ -1,0 +1,29 @@
+QC — LA_SALLE_Visbody_story_9x16_version_prudente.mp4
+OK   Format 1080×1920, H.264 High, yuv420p, 60 i/s
+OK   Durée 35.000 s (34.9–35)
+OK   Poids 10.9 Mo (≤ 25)
+OK   faststart (moov avant mdat)
+OK   Audio AAC 48000 Hz, 2 canaux
+OK   Sonie -14.0 LUFS (-14 ± 0,5)
+OK   Crête vraie -1.6 dBTP (≤ −1,5)
+OK   Aperçu = rendu décodé à la fin de chaque scène et pendant le scan (SSIM 0.985, 0.990, 0.989, 0.989, 0.990, 0.990, 0.986, 0.990, 0.986, 0.984 ≥ 0,97)
+OK   check HyperFrames passé, contraste AA 4/4 (story-916-prudente)
+OK   Textes des visuels et des ajouts présents
+OK   Aucun mot interdit ni allégation
+Verdict : GO technique
+
+QC — LA_SALLE_Visbody_story_9x16_version_prudente_bruitages.mp4
+OK   Format 1080×1920, H.264 High, yuv420p, 60 i/s
+OK   Durée 35.000 s (34.9–35)
+OK   Poids 10.8 Mo (≤ 25)
+OK   faststart (moov avant mdat)
+OK   Audio AAC 48000 Hz, 2 canaux
+OK   Sonie -18.2 LUFS (-18 ± 0,5)
+OK   Crête vraie -2.5 dBTP (≤ −1,5)
+OK   Aperçu = rendu décodé à la fin de chaque scène et pendant le scan (SSIM 0.985, 0.990, 0.989, 0.989, 0.990, 0.990, 0.986, 0.990, 0.986, 0.984 ≥ 0,97)
+OK   check HyperFrames passé, contraste AA 4/4 (story-916-prudente)
+OK   Textes des visuels et des ajouts présents
+OK   Aucun mot interdit ni allégation
+Verdict : GO technique
+
+Reste à valider par Mehdi : les points ⚠ de A_valider.md, puis l'écoute de la musique (contrôlée par mesures seulement).
